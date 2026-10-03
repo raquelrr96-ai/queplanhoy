@@ -7,6 +7,8 @@ import json
 import os
 import re
 
+import build_site
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARTICLES_FILE = os.path.join(BASE_DIR, "data", "articles.json")
 QUEUE_FILE = os.path.join(BASE_DIR, "data", "keyword_queue.json")
@@ -14,7 +16,8 @@ SITEMAP_FILE = os.path.join(BASE_DIR, "public", "sitemap.xml")
 
 CITY_KNOWLEDGE_BASE = {
     "Madrid": {
-        "image": "images/madrid.jpg",
+        "image": "images/terraza-secreta-planes-madrid.jpg",
+        "imageAlt": "Terraza jardín interior escondido en el centro de Madrid con vermut y aperitivo",
         "neighborhoods": [
             "Malasaña",
             "Chamberí",
@@ -531,7 +534,7 @@ def generate_seo_article(
 
   existing_articles.insert(0, new_article)
   save_json(ARTICLES_FILE, existing_articles)
-  regenerate_sitemap(existing_articles)
+  build_site.build_all()
   return new_article
 
 

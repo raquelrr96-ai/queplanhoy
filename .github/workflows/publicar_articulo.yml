@@ -35,7 +35,7 @@ jobs:
           python3 agent/seo_agent.py --next
           git config user.name "Agente SEO HoyQuePlan"
           git config user.email "agente@queplanhoy.es"
-          git add data/ public/data/ public/sitemap.xml
+          git add data/ public/
           git commit -m "chore(seo): publicar nuevo artículo automático de planes" || echo "Sin cambios"
           git push
 
