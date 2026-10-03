@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HoyQuePlan | Planes Diferentes, Gratis y en Pareja en Madrid, Barcelona, Valencia, Sevilla y Toledo</title>
+  <meta name="description" content="¿Hoy qué plan hacemos? Guía local de planes originales, baratos, gratis y citas en pareja en Madrid, Barcelona, Valencia, Sevilla y Toledo con precios reales." />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/index.css" />
+  <script type="application/ld+json" id="schema-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "HoyQuePlan",
+    "url": "https://queplanhoy.es",
+    "description": "Planes originales, gratis y en pareja en Madrid, Barcelona, Valencia, Sevilla y Toledo."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Barra superior de control del Agente y Sitemap SEO -->
+  <div class="top-utility-bar">
+    <div class="top-utility-inner">
+      <div class="agent-status-indicator" id="agent-top-status">
+        <span class="status-dot"></span>
+        <span>AGENTE SEO ACTIVO: Publicación cada 3 días · Top 5 Ciudades (Madrid · Barcelona · Valencia · Sevilla · Toledo)</span>
+      </div>
+      <div class="utility-actions">
+        <a href="/sitemap.xml" target="_blank" class="utility-link-btn" id="view-sitemap-link">Ver Sitemap.xml (Google SEO)</a>
+        <button type="button" class="utility-link-btn" id="top-trigger-agent-btn">⚡ Probar Agente Generador</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cabecera Editorial -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand-logo" id="brand-home-link">
+        <span class="brand-name">¿Hoy<span>QuéPlan</span>?</span>
+        <span class="brand-tagline">Madrid · Barcelona · Valencia · Sevilla · Toledo</span>
+      </a>
+
+      <nav class="city-nav" aria-label="Filtrar por ciudad">
+        <button type="button" class="city-filter-btn active" data-city="all" id="filter-city-all">Todas (5)</button>
+        <button type="button" class="city-filter-btn" data-city="Madrid" id="filter-city-madrid">Madrid</button>
+        <button type="button" class="city-filter-btn" data-city="Barcelona" id="filter-city-barcelona">Barcelona</button>
+        <button type="button" class="city-filter-btn" data-city="Valencia" id="filter-city-valencia">Valencia</button>
+        <button type="button" class="city-filter-btn" data-city="Sevilla" id="filter-city-sevilla">Sevilla</button>
+        <button type="button" class="city-filter-btn" data-city="Toledo" id="filter-city-toledo">Toledo</button>
+      </nav>
+
+      <button type="button" class="open-agent-studio-btn" id="open-agent-modal-btn">
+        <span>🤖 Estudio del Agente SEO</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Hero Editorial -->
+    <section class="editorial-hero" aria-labelledby="main-hero-heading">
+      <div class="hero-copy">
+        <span class="hero-kicker">HOYQUEPLAN · LA GUÍA PARA SALIR DE LA RUTINA</span>
+        <h1 class="hero-title" id="main-hero-heading">¿Hoy qué plan hacemos? Ideas diferentes, baratas y en pareja.</h1>
+        <p class="hero-subtitle">
+          Seleccionamos planes fuera de lo típico en <strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong>: atardeceres en barca, talleres de cerámica y vino, patios mudéjares gratuitos y callejones con historia.
+        </p>
+        <div class="hero-QuickStats">
+          <div class="stat-item">
+            <span class="stat-value" id="stat-total-articles">6 Guías</span>
+            <span class="stat-label">Optimizadas para Long-Tail SEO</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">Top 5 Ciudades</span>
+            <span class="stat-label">Madrid, Bcn, Valencia, Sevilla y Toledo</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">Cada 3 días</span>
+            <span class="stat-label">Frecuencia del Agente IA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-featured-card" id="hero-featured-card" role="button" tabindex="0" aria-label="Leer artículo destacado">
+        <!-- Se rellena dinámicamente con el último artículo publicado -->
+      </div>
+    </section>
+
+    <!-- Barra de Filtros ("El Triángulo de Oro") -->
+    <section class="filter-toolbar" aria-label="Filtrar por estilo de plan">
+      <div class="style-pills">
+        <button type="button" class="style-pill-btn active" data-category="all" id="filter-cat-all">Todos los estilos</button>
+        <button type="button" class="style-pill-btn" data-category="Gratis y Baratos" id="filter-cat-cheap">💸 Gratis y Baratos</button>
+        <button type="button" class="style-pill-btn" data-category="Planes Diferentes" id="filter-cat-unique">✨ Planes Diferentes</button>
+        <button type="button" class="style-pill-btn" data-category="En Pareja" id="filter-cat-couple">❤️ En Pareja</button>
+      </div>
+      <div class="search-box-wrapper">
+        <input
+          type="search"
+          id="article-search-input"
+          class="search-input"
+          placeholder="Buscar ciudad o plan (ej. Valencia, Albufera, Triana, gratis...)"
+          aria-label="Buscar planes"
+        />
+      </div>
+    </section>
+
+    <!-- Grid de Artículos SEO -->
+    <section aria-label="Artículos publicados">
+      <div class="articles-grid" id="articles-grid-container">
+        <!-- Artículos renderizados por app.js -->
+      </div>
+    </section>
+
+    <!-- Explicación de Arquitectura SEO + Monetización integrada en el prototipo -->
+    <aside class="strategy-showcase" aria-labelledby="strategy-heading">
+      <div class="strategy-header">
+        <div>
+          <span class="hero-kicker">ESTRATEGIA DE CRECIMIENTO ORGÁNICO DE HOYQUEPLAN</span>
+          <h2 class="strategy-title" id="strategy-heading">Top 5 Ciudades + Agente Cada 3 Días + Afiliación Nativa</h2>
+        </div>
+        <button type="button" class="open-agent-studio-btn" id="bottom-open-agent-btn">
+          ⚡ Generar un artículo nuevo ahora
+        </button>
+      </div>
+
+      <div class="strategy-columns">
+        <div class="strategy-box">
+          <h3>1. Clústeres en 5 Ciudades Clave</h3>
+          <p>Enfocar el agente en Madrid, Barcelona, Valencia, Sevilla y Toledo crea densidad de artículos en cada ciudad para que Google reconozca tu autoridad temática rápido.</p>
+          <span class="mono-tag">Schema.org FAQPage + Sitemap XML</span>
+        </div>
+        <div class="strategy-box">
+          <h3>2. Agente Cada 3 Días (0 €/mes)</h3>
+          <p>El archivo <code>publicar_articulo.yml</code> ejecuta <code>agent/seo_agent.py</code> gratis en GitHub Actions cada 72 h, rotando entre las 5 ciudades automáticamente.</p>
+          <span class="mono-tag">cron: '0 7 */3 * *'</span>
+        </div>
+        <div class="strategy-box">
+          <h3>3. Afiliados de Alta Conversión</h3>
+          <p>Cada ciudad tiene su propio gancho ganador: <strong>Albufera</strong> en Valencia, <strong>Triana/Santa Cruz</strong> en Sevilla, <strong>Subterráneos</strong> en Toledo y <strong>Candlelight/Cerámica</strong> en Madrid y Bcn.</p>
+          <span class="mono-tag">Civitatis · Fever · GetYourGuide</span>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal Lector de Artículo + Rayos-X SEO -->
+  <div class="modal-backdrop" id="article-reader-modal" role="dialog" aria-modal="true" aria-labelledby="reader-article-title">
+    <div class="modal-dialog">
+      <div class="modal-top-bar">
+        <button type="button" class="seo-xray-toggle" id="toggle-seo-xray-btn">
+          🔍 Ver Rayos-X SEO (Lo que lee Google)
+        </button>
+        <button type="button" class="modal-close-btn" id="close-reader-modal-btn">Cerrar ✕</button>
+      </div>
+      <article class="article-reader-content" id="article-reader-body">
+        <!-- Contenido completo del artículo + Rayos-X SEO + Bloque Afiliado -->
+      </article>
+    </div>
+  </div>
+
+  <!-- Modal Estudio del Agente Automatizado -->
+  <div class="modal-backdrop" id="agent-studio-modal" role="dialog" aria-modal="true" aria-labelledby="agent-studio-title">
+    <div class="modal-dialog">
+      <div class="modal-top-bar">
+        <strong id="agent-studio-title" style="font-family: var(--font-serif); font-size: 1.15rem;">
+          🤖 Estudio del Agente SEO de ¿HoyQuéPlan? (5 Ciudades)
+        </strong>
+        <button type="button" class="modal-close-btn" id="close-agent-modal-btn">Cerrar ✕</button>
+      </div>
+      <div class="article-reader-content">
+        <p style="color: var(--ink-secondary); margin-bottom: 1.25rem; font-size: 0.92rem;">
+          Este es el panel de tu agente (<code>agent/seo_agent.py</code>). Va rotando entre <strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong> cada 3 días. Pruébalo en vivo pulsando el botón o escribiendo cualquier búsqueda:
+        </p>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.75rem;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.2rem;">📅 Cola Programada (Rotación 5 Ciudades)</h3>
+          <button type="button" class="open-agent-studio-btn" id="run-next-queue-btn">
+            ⚡ Publicar Siguiente de la Cola Ahora
+          </button>
+        </div>
+
+        <div class="queue-list" id="keyword-queue-container">
+          <!-- Cola de keywords renderizada dinámicamente -->
+        </div>
+
+        <hr style="border: none; border-top: 1px solid var(--border-hairline); margin: 1.75rem 0;" />
+
+        <h3 style="font-family: var(--font-serif); font-size: 1.2rem; margin-bottom: 0.75rem;">
+          ✍️ O pídele al Agente un Artículo Personalizado en Cualquiera de las 5 Ciudades
+        </h3>
+        <form id="custom-agent-form">
+          <div class="agent-form-grid">
+            <div class="form-control">
+              <label for="custom-city-select">Ciudad</label>
+              <select id="custom-city-select" required>
+                <option value="Madrid">Madrid</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Toledo">Toledo</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="custom-category-select">Estilo / Pilar</label>
+              <select id="custom-category-select" required>
+                <option value="Gratis y Baratos">💸 Gratis y Baratos</option>
+                <option value="Planes Diferentes">✨ Planes Diferentes</option>
+                <option value="En Pareja">❤️ En Pareja</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-control" style="margin-bottom: 1rem;">
+            <label for="custom-keyword-input">Palabra Clave de Búsqueda en Google (Long-Tail)</label>
+            <input
+              type="text"
+              id="custom-keyword-input"
+              placeholder="Ej: planes en valencia domingo por la tarde baratos"
+              required
+            />
+          </div>
+          <button type="submit" class="open-agent-studio-btn" id="submit-custom-agent-btn">
+            🚀 Generar y Publicar Artículo SEO
+          </button>
+        </form>
+
+        <div class="agent-log-terminal" id="agent-log-output"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p><strong>¿HoyQuéPlan?</strong> — Prototipo funcional de Web Editorial + Agente SEO Automatizado (Madrid · Barcelona · Valencia · Sevilla · Toledo).</p>
+    <p style="margin-top: 0.35rem;">Coste estimado de infraestructura: ~10 €/año (Dominio) + 0 €/mes (Hosting Cloudflare Pages / Vercel + GitHub Actions).</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

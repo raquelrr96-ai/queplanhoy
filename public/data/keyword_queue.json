@@ -1,0 +1,67 @@
+[
+  {
+    "id": "kw-valencia-cita-barata",
+    "keyword": "citas originales valencia por menos de 15 euros",
+    "city": "Valencia",
+    "category": "En Pareja",
+    "categoryIcon": "❤️",
+    "searchVolume": "2.400 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (12/100)",
+    "scheduledFor": "En 3 días (Automático)",
+    "status": "pending",
+    "suggestedTitle": "5 Citas Originales en Valencia por menos de 15 €: Jardines de Monforte, Vermut en el Cabanyal y Jazz",
+    "affiliateHook": "Fever / Civitatis (Conciertos a la luz de las velas en Valencia)"
+  },
+  {
+    "id": "kw-sevilla-gratis-domingo",
+    "keyword": "que hacer en sevilla gratis domingo por la manana",
+    "city": "Sevilla",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
+    "searchVolume": "2.700 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (14/100)",
+    "scheduledFor": "En 6 días (Automático)",
+    "status": "pending",
+    "suggestedTitle": "7 Planes Gratis en Sevilla para un Domingo: Mercadillo del Jueves, Patios Mudéjares y Triana",
+    "affiliateHook": "Civitatis (Free Tour por Triana y Santa Cruz)"
+  },
+  {
+    "id": "kw-madrid-lluvia",
+    "keyword": "planes en madrid cuando llueve originales y baratos",
+    "city": "Madrid",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "searchVolume": "2.900 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (14/100)",
+    "scheduledFor": "En 9 días (Automático)",
+    "status": "pending",
+    "suggestedTitle": "6 Planes en Madrid Cuando Llueve (Invernaderos, Cafés Ocultos y Cultura por menos de 12 €)",
+    "affiliateHook": "Fever (Exposiciones inmersivas y Candlelight)"
+  },
+  {
+    "id": "kw-barcelona-cita-barata",
+    "keyword": "citas originales barcelona en pareja menos de 20 euros",
+    "city": "Barcelona",
+    "category": "En Pareja",
+    "categoryIcon": "❤️",
+    "searchVolume": "2.100 búsquedas/mes",
+    "keywordDifficulty": "Baja (19/100)",
+    "scheduledFor": "En 12 días (Automático)",
+    "status": "pending",
+    "suggestedTitle": "5 Citas en Barcelona por menos de 20 €: Laberintos Románticos, Vermut y Jazz en Vivo",
+    "affiliateHook": "TheFork / GetYourGuide (Clubes de Jazz en El Born)"
+  },
+  {
+    "id": "kw-toledo-gratis-1-dia",
+    "keyword": "que ver en toledo gratis fuera de lo turistico",
+    "city": "Toledo",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
+    "searchVolume": "1.800 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (11/100)",
+    "scheduledFor": "En 15 días (Automático)",
+    "status": "pending",
+    "suggestedTitle": "Toledo Gratis: 7 Rincones Medievales sin Pagar Entrada (Con Ruta a Pie)",
+    "affiliateHook": "Civitatis (Free Tour por el Toledo de las 3 Culturas)"
+  }
+]

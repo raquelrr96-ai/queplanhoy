@@ -1,0 +1,35 @@
+name: Publicar Artículo SEO Cada 3 Días (RutaSecreta)
+
+on:
+  schedule:
+    # Se ejecuta automáticamente cada 3 días a las 09:00 AM (Hora España)
+    - cron: '0 7 */3 * *'
+  workflow_dispatch: # También permite pulsarlo manualmente con 1 clic desde GitHub
+
+jobs:
+  generar-y-publicar-articulo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Descargar código de la web
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Ejecutar el Agente SEO (Siguiente Keyword de la Cola)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 agent/seo_agent.py --next
+
+      - name: Guardar nuevo artículo y actualizar Sitemap en la web
+        run: |
+          git config user.name "Agente SEO RutaSecreta"
+          git config user.email "agente@rutasecreta.es"
+          git add data/ public/data/ public/sitemap.xml
+          git commit -m "chore(seo): publicar nuevo artículo automático de planes" || echo "Sin cambios"
+          git push
