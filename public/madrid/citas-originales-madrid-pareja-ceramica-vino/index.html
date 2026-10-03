@@ -145,13 +145,18 @@
 
       
     <div style="background: var(--bg-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 2rem; overflow-x: auto;">
-      <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--terracotta); margin-bottom: 0.65rem;">
-        📋 Resumen rápido de la ruta en Madrid
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+        <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--terracotta);">
+          📋 Resumen rápido e índice interactivo (Madrid)
+        </div>
+        <a href="https://api.whatsapp.com/send?text=Mira%20qu%C3%A9%20planes%20para%20hacer%20en%20Madrid%3A%205%20Citas%20Originales%20en%20Madrid%20para%20salir%20de%20la%20t%C3%ADpica%20cena%20%28Cer%C3%A1mica%2C%20Vino%20y%20Velas%29%20https%3A//queplanhoy.es/madrid/citas-originales-madrid-pareja-ceramica-vino/" target="_blank" rel="noopener" style="font-size: 0.8rem; font-weight: 700; color: var(--olive); text-decoration: none; background: var(--olive-bg); padding: 0.35rem 0.75rem; border-radius: var(--radius-pill); border: 1px solid rgba(47, 107, 79, 0.25);">
+          📲 Compartir planes por WhatsApp
+        </a>
       </div>
       <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left;">
         <thead>
           <tr style="border-bottom: 2px solid var(--border-strong);">
-            <th style="padding: 0.5rem 0.85rem;">Lugar / Plan</th>
+            <th style="padding: 0.5rem 0.85rem;">Lugar / Plan (Pulsa para ir)</th>
             <th style="padding: 0.5rem 0.85rem;">Ubicación y Transporte</th>
             <th style="padding: 0.5rem 0.85rem;">Precio</th>
           </tr>
@@ -159,12 +164,16 @@
         <tbody>
           
           <tr>
-            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600;">Estudios de Cerámica Creativa (Barrio de las Letras / Chamberí)</td>
+            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600;">
+              <a href="#plan-1" style="color: var(--terracotta); text-decoration: none;">1. Estudios de Cerámica Creativa (Barrio de las Letras / Chamberí) ↓</a>
+            </td>
             <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); color: var(--ink-secondary);">Calle de Fernando el Católico / Calle Huertas (Metro: Quevedo / Antón Martín)</td>
             <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600; color: var(--olive);">24 € – 29 € por persona (incluye pieza de cerámica, pinturas, horneado y 2 copas de vino)</td>
           </tr>
           <tr>
-            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600;">Ateneo de Madrid / Círculo de Bellas Artes</td>
+            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600;">
+              <a href="#plan-2" style="color: var(--terracotta); text-decoration: none;">2. Ateneo de Madrid / Círculo de Bellas Artes ↓</a>
+            </td>
             <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); color: var(--ink-secondary);">Calle del Prado, 21 (Metro: Sevilla - L2)</td>
             <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600; color: var(--olive);">Desde 19 € según zona</td>
           </tr>
@@ -173,19 +182,21 @@
     </div>
 
       
-      <section class="reader-section">
+      <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. Taller de &#x27;Cerámica y Vino&#x27; a media luz en Chamberí o Malasaña</h2>
         <div class="venue-meta-bar">
           <span>📍 <strong>Dirección y cómo llegar:</strong> Calle de Fernando el Católico / Calle Huertas (Metro: Quevedo / Antón Martín)</span>
           <span>💶 <strong>Precio:</strong> 24 € – 29 € por persona (incluye pieza de cerámica, pinturas, horneado y 2 copas de vino)</span>
+          <a href="https://www.google.com/maps/search/?api=1&query=Estudios%20de%20Cer%C3%A1mica%20Creativa%20%28Barrio%20de%20las%20Letras%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none;">🗺️ Ver en Google Maps →</a>
         </div>
         <p style="font-size: 1.04rem; color: var(--ink-primary); line-height: 1.75;">Se ha convertido en la cita favorita en Madrid por una razón: quita toda la presión de una primera o segunda cita porque tenéis las manos ocupadas creando algo juntos mientras tomáis un buen Mencía o Rioja con música indie de fondo.</p>
       </section>
-      <section class="reader-section">
+      <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. Concierto íntimo a la luz de 1.500 velas en un palacio histórico</h2>
         <div class="venue-meta-bar">
           <span>📍 <strong>Dirección y cómo llegar:</strong> Calle del Prado, 21 (Metro: Sevilla - L2)</span>
           <span>💶 <strong>Precio:</strong> Desde 19 € según zona</span>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ateneo%20de%20Madrid%20/%20C%C3%ADrculo%20de%20Bellas%20Artes%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none;">🗺️ Ver en Google Maps →</a>
         </div>
         <p style="font-size: 1.04rem; color: var(--ink-primary); line-height: 1.75;">Escuchar las bandas sonoras de Hans Zimmer, Queen o Ludovico Einaudi interpretadas por un cuarteto de cuerda en una cátedra histórica iluminada únicamente por velas es un acierto garantizado antes de ir a picar algo por el Barrio de las Letras.</p>
       </section>
@@ -235,6 +246,28 @@
       </h2>
       <div class="articles-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem;">
         
+  <article class="article-card" data-category="Este Fin de Semana" data-search="qué planes hacer este fin de semana en madrid: feria barroca de valdemoro, mercadillos y rutas gratis si te preguntas qué planes hacer hoy o este fin de semana en madrid sin hacer siempre lo mismo: viajar al siglo de oro en la feria barroca de valdemoro, música al sol entre trenes antiguos y rutas de aperitivo. valdemoro (cercanías c-3) delicias la latina centro">
+    <a href="../../madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/planes-este-fin-de-semana-madrid-feria-barroca.jpg" alt="Feria Barroca de Valdemoro y mercadillo artesanal de fin de semana en la Comunidad de Madrid" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Madrid</span>
+        <span class="card-price-tag">Gratis (0 € – 8 €)</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">📅 Este Fin de Semana</span>
+          <span style="color: var(--ink-muted); font-size: 0.76rem;">⏱ 5 min de lectura</span>
+        </div>
+        <h2 class="card-title" style="font-size: 1.25rem;">Qué planes hacer este fin de semana en Madrid: Feria Barroca de Valdemoro, Mercadillos y Rutas Gratis</h2>
+        <p class="card-excerpt">Si te preguntas qué planes hacer hoy o este fin de semana en Madrid sin hacer siempre lo mismo: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">📍 Valdemoro (Cercanías C-3) · Delicias · La Latina · Centro</span>
+          <span class="card-read-link">Leer guía →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="Gratis y Baratos" data-search="7 planes en madrid por menos de 10 € (que parecen de lujo este fin de semana) no hace falta dejarse medio sueldo para vivir un sábado inolvidable en madrid. desde un jardín renacentista en la latina hasta una sesión de cine en un palacio de 1922 por solo 3 €. la latina lavapiés chueca antón martín">
     <a href="../../madrid/planes-madrid-menos-de-10-euros-parecen-de-lujo/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -273,28 +306,6 @@
         <p class="card-excerpt">Más allá de la Ciudad de las Artes y la Malvarrosa: te llevamos en autobús urbano hasta el embarcadero más tranquilo de L&#x27;Albufera al caer el sol, a un búnker de 1938 y a tomar horchata recién molida entre campos de chufa.</p>
         <div class="card-footer">
           <span class="card-neighborhoods">📍 El Palmar / Albufera · Ruzafa · El Carmen · Alboraya</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
-
-  <article class="article-card" data-category="En Pareja" data-search="5 planes en sevilla en pareja y gratis (patios ocultos, azoteas y flamenco íntimo) mientras todo el mundo hace cola en el real alcázar, hay casas-palacio mudéjares en sevilla llenas de buganvillas y azulejos del siglo xvi donde puedes pasear casi a solas con tu pareja. santa cruz triana feria / alameda san bartolomé">
-    <a href="../../sevilla/planes-en-sevilla-en-pareja-diferentes-baratos/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/patio-mudejar-planes-sevilla.jpg" alt="Patio andaluz mudéjar con naranjos, azulejos y flores en el barrio de Santa Cruz de Sevilla" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Sevilla</span>
-        <span class="card-price-tag">0 € – 18 €</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">❤️ En Pareja</span>
-          <span style="color: var(--ink-muted); font-size: 0.76rem;">⏱ 6 min de lectura</span>
-        </div>
-        <h2 class="card-title" style="font-size: 1.25rem;">5 Planes en Sevilla en Pareja y Gratis (Patios Ocultos, Azoteas y Flamenco Íntimo)</h2>
-        <p class="card-excerpt">Mientras todo el mundo hace cola en el Real Alcázar, hay casas-palacio mudéjares en Sevilla llenas de buganvillas y azulejos del siglo XVI donde puedes pasear casi a solas con tu pareja.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">📍 Santa Cruz · Triana · Feria / Alameda · San Bartolomé</span>
           <span class="card-read-link">Leer guía →</span>
         </div>
       </div>

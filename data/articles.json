@@ -1,5 +1,67 @@
 [
   {
+    "id": "madrid-planes-este-fin-de-semana-feria-barroca",
+    "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
+    "title": "Qué planes hacer este fin de semana en Madrid: Feria Barroca de Valdemoro, Mercadillos y Rutas Gratis",
+    "metaTitle": "Planes este Fin de Semana en Madrid: Qué Hacer Hoy (Agenda 2026) | Qué Plan Hoy",
+    "metaDescription": "¿Buscas qué planes hacer hoy o este fin de semana en Madrid? Guía actualizada: Feria Barroca de Valdemoro (gratis), mercadillos, exposiciones y planes baratos.",
+    "city": "Madrid",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "readTime": "5 min",
+    "publishedAt": "2026-10-03",
+    "targetKeyword": "planes este fin de semana madrid que hacer hoy",
+    "searchVolume": "8.100 búsquedas/mes",
+    "keywordDifficulty": "Media-Baja (21/100)",
+    "image": "images/planes-este-fin-de-semana-madrid-feria-barroca.jpg",
+    "imageAlt": "Feria Barroca de Valdemoro y mercadillo artesanal de fin de semana en la Comunidad de Madrid",
+    "excerpt": "Si te preguntas qué planes hacer hoy o este fin de semana en Madrid sin hacer siempre lo mismo: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.",
+    "priceRange": "Gratis (0 € – 8 €)",
+    "neighborhoods": ["Valdemoro (Cercanías C-3)", "Delicias", "La Latina", "Centro"],
+    "affiliate": {
+      "partner": "Civitatis",
+      "badge": "Especial Fin de Semana en Madrid",
+      "title": "Free Tour por el Madrid Histórico + Visitas Guiadas de Fin de Semana",
+      "description": "Completa tu sábado o domingo descubriendo los secretos del Madrid de los Austrias y el Barrio de las Letras con un guía experto local.",
+      "price": "Gratis (Reserva online en 1 minuto)",
+      "ctaText": "Ver horarios para este fin de semana →",
+      "commissionNote": "Enlace de afiliado Civitatis"
+    },
+    "sections": [
+      {
+        "heading": "1. Feria Barroca de Valdemoro: viaje al Siglo de Oro con mercado, pasacalles y teatro (Gratis)",
+        "venue": "Feria Barroca de Valdemoro (Plaza de la Constitución y Casco Histórico)",
+        "location": "Plaza de la Constitución, Valdemoro (Cercanías C-3 desde Sol o Atocha en 27 min)",
+        "price": "Acceso y espectáculos de calle 100% gratuitos",
+        "content": "Uno de los planes más diferentes para hacer este fin de semana en Madrid es acercarse a la Feria Barroca de Valdemoro, que conmemora el privilegio de Feria concedido en 1603 por Felipe III. Todo el casco histórico se transforma en una villa del siglo XVII con más de cien puestos de artesanía, gastronomía tradicional, cetrería, malabares, música barroca en vivo y espectáculos nocturnos de fuego."
+      },
+      {
+        "heading": "2. Mercadillo de diseño, foodtrucks y música en directo entre locomotoras del siglo XIX",
+        "venue": "Museo del Ferrocarril de Madrid (Delicias)",
+        "location": "Paseo de las Delicias, 61 (Metro: Delicias - L3 / Cercanías Delicias)",
+        "price": "Entrada gratuita (reservar pase horario online)",
+        "content": "Si buscas qué hacer hoy sábado o domingo a mediodía sin salir de la capital, pasear entre vagones históricos mientras escuchas bandas en directo en la terraza exterior y pruebas puestos de artesanos locales es un plan redondo tanto en pareja como con amigos."
+      },
+      {
+        "heading": "3. Ruta de mañana por las galerías de anticuarios de Ribera de Curtidores y vermut",
+        "venue": "Nuevas Galerías del Rastro y Plaza del General Vara de Rey",
+        "location": "Calle Ribera de Curtidores, 12 (Metro: La Latina - L5 / Puerta de Toledo)",
+        "price": "Paseo gratis / Vermut de grifo y tosta: 4,50 €",
+        "content": "En lugar de quedarte solo en la cuesta principal del Rastro el domingo, entra a los patios interiores de las Galerías Piquer y las Nuevas Galerías, donde se esconden los verdaderos talleres de restauración y tiendas vintage de Madrid."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cómo llegar a la Feria Barroca de Valdemoro desde Madrid centro en transporte público?",
+        "answer": "La forma más rápida es tomar la línea C-3 de Cercanías Renfe desde Puerta del Sol o Atocha en dirección Aranjuez; tarda unos 27 minutos hasta la estación de Valdemoro, o bien los autobuses interurbanos 422 y 428 desde Legazpi."
+      },
+      {
+        "question": "¿Qué planes hacer hoy en Madrid gratis si voy sin reserva?",
+        "answer": "La Feria Barroca de Valdemoro, los jardines del Príncipe de Anglona en La Latina, el Invernadero de Arganzuela en Legazpi y las rutas por el Madrid de los Austrias son de acceso libre sin necesidad de entrada anticipada."
+      }
+    ]
+  },
+  {
     "id": "madrid-menos-10-euros",
     "slug": "planes-madrid-menos-de-10-euros-parecen-de-lujo",
     "title": "7 Planes en Madrid por menos de 10 € (que parecen de lujo este fin de semana)",

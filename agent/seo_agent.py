@@ -348,10 +348,55 @@ CITY_KNOWLEDGE_BASE = {
 }
 
 CATEGORY_ICONS = {
+    "Este Fin de Semana": "📅",
     "Gratis y Baratos": "💸",
     "Planes Diferentes": "✨",
     "En Pareja": "❤️",
 }
+
+
+def fetch_live_weekend_events(city: str, max_items: int = 2) -> list:
+  """Consulta en tiempo real Google News España (RSS) sobre planes, ferias y mercadillos
+
+  que tienen lugar este fin de semana en la ciudad indicada.
+  """
+  import urllib.parse
+  import urllib.request
+  import xml.etree.ElementTree as ET
+
+  query = f'planes "este fin de semana" {city} OR feria OR mercadillo OR exposicion'
+  url = (
+      "https://news.google.com/rss/search?q="
+      + urllib.parse.quote(query)
+      + "&hl=es&gl=ES&ceid=ES:es"
+  )
+  discovered = []
+  try:
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=8) as resp:
+      xml_bytes = resp.read()
+    root = ET.fromstring(xml_bytes)
+    for item in root.findall("./channel/item"):
+      raw_title = item.findtext("title") or ""
+      # Limpiar el nombre del medio al final (" - Medio")
+      clean_title = raw_title.rsplit(" - ", 1)[0].strip()
+      if len(clean_title) > 25 and city.lower() in clean_title.lower():
+        discovered.append({
+            "name": f"Agenda en vivo: {clean_title}",
+            "location": f"Centro y barrios de {city} (Transporte público recomendado)",
+            "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+            "desc": (
+                f"Destacado en la agenda cultural de {city} para este fin de"
+                f" semana: «{clean_title}». Una propuesta ideal si buscas qué"
+                f" planes hacer hoy en {city} combinando cultura, ocio al aire"
+                " libre y gastronomía local."
+            ),
+        })
+      if len(discovered) >= max_items:
+        break
+  except Exception:
+    pass
+  return discovered
 
 
 def slugify(text: str) -> str:
@@ -451,8 +496,18 @@ def generate_seo_article(
   slug = slugify(keyword if len(keyword) > 12 else suggested_title)
   today_str = date.today().isoformat()
 
+  raw_venues = list(kb["venues"])
+  if (
+      category == "Este Fin de Semana"
+      or "fin de semana" in keyword.lower()
+      or "que hacer hoy" in keyword.lower()
+  ):
+    live_events = fetch_live_weekend_events(city, max_items=2)
+    if live_events:
+      raw_venues = live_events + raw_venues[:2]
+
   sections = []
-  for idx, v in enumerate(kb["venues"], start=1):
+  for idx, v in enumerate(raw_venues, start=1):
     sections.append({
         "heading": f"{idx}. {v['name']}",
         "venue": v["name"],

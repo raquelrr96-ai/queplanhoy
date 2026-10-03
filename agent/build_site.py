@@ -14,6 +14,7 @@ from datetime import date
 import html
 import json
 import os
+import urllib.parse
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARTICLES_FILE = os.path.join(BASE_DIR, "data", "articles.json")
@@ -23,92 +24,93 @@ SITE_URL = "https://queplanhoy.es"
 CITIES = {
     "Madrid": {
         "slug": "madrid",
-        "h1": "Planes en Madrid: qué hacer hoy fuera de lo típico",
+        "h1": "Planes en Madrid hoy y este fin de semana: qué hacer fuera de lo típico",
         "metaTitle": (
-            "Planes en Madrid Hoy: Originales, Gratis y en Pareja (2026) | Qué"
+            "Qué Planes Hacer Hoy en Madrid y Este Fin de Semana (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "Descubre los mejores planes en Madrid para hoy y este fin de"
-            " semana: ideas por menos de 10 €, citas originales en pareja,"
-            " jardines ocultos y cultura."
+            "¿Qué planes hacer hoy en Madrid? Agenda de planes este fin de"
+            " semana, ferias como la Feria Barroca de Valdemoro, ideas gratis y"
+            " citas en pareja."
         ),
         "intro": (
-            "Nuestra selección de rincones secretos, talleres creativos,"
-            " jardines gratuitos y planes en pareja en Madrid con precios"
-            " exactos y paradas de Metro."
+            "Descubre qué planes hacer hoy y este fin de semana en Madrid:"
+            " ferias históricas, mercados al aire libre, terrazas secretas,"
+            " jardines gratuitos y citas originales con paradas de Metro y"
+            " precios reales."
         ),
     },
     "Barcelona": {
         "slug": "barcelona",
-        "h1": "Planes en Barcelona: miradores, citas y rincones sin colas",
+        "h1": "Planes en Barcelona hoy y este fin de semana: miradores, citas y agenda",
         "metaTitle": (
-            "Planes en Barcelona Hoy: Originales, Gratis y en Pareja (2026) |"
+            "Qué Planes Hacer Hoy en Barcelona y Este Fin de Semana (2026) |"
             " Qué Plan Hoy"
         ),
         "metaDesc": (
-            "Guía local de planes diferentes, baratos y en pareja en Barcelona:"
-            " miradores alternativos a los Bunkers, jardines históricos y rutas"
-            " por barrios."
+            "¿Qué planes hacer hoy en Barcelona? Guía de planes este fin de"
+            " semana, miradores sin colas, jardines gratis y citas originales"
+            " en pareja."
         ),
         "intro": (
-            "Explora una Barcelona lejos de las aglomeraciones: desde jardines"
-            " neoclásicos gratuitos hasta terrazas con vistas al Mediterráneo y"
-            " planes en pareja."
+            "Explora qué planes hacer hoy y este fin de semana en Barcelona"
+            " lejos de las aglomeraciones: desde jardines neoclásicos gratuitos"
+            " hasta terrazas con vistas al Mediterráneo y planes en pareja."
         ),
     },
     "Valencia": {
         "slug": "valencia",
-        "h1": "Planes en Valencia: atardeceres, huerta y cultura local",
+        "h1": "Planes en Valencia hoy y este fin de semana: atardeceres, huerta y cultura",
         "metaTitle": (
-            "Planes en Valencia Hoy: Originales, Gratis y en Pareja (2026) |"
-            " Qué Plan Hoy"
+            "Qué Planes Hacer Hoy en Valencia y Este Fin de Semana (2026) | Qué"
+            " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué hacer hoy en Valencia? Planes diferentes, baratos y en"
-            " pareja: puestas de sol en barca en L'Albufera, rutas por la"
-            " huerta, El Cabanyal y Ruzafa."
+            "¿Qué planes hacer hoy en Valencia? Planes este fin de semana,"
+            " ideas baratas y en pareja: atardecer en barca en L'Albufera,"
+            " rutas por la huerta y El Cabanyal."
         ),
         "intro": (
-            "Los mejores planes para disfrutar de Valencia todo el año:"
+            "Los mejores planes que hacer hoy y este fin de semana en Valencia:"
             " escapadas en autobús urbano a L'Albufera, jardines escondidos y"
             " tapeo en barrios marineros."
         ),
     },
     "Sevilla": {
         "slug": "sevilla",
-        "h1": "Planes en Sevilla: casas-palacio, patios y rutas al atardecer",
+        "h1": "Planes en Sevilla hoy y este fin de semana: casas-palacio, patios y rutas",
         "metaTitle": (
-            "Planes en Sevilla Hoy: Originales, Gratis y en Pareja (2026) | Qué"
+            "Qué Planes Hacer Hoy en Sevilla y Este Fin de Semana (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "Descubre planes originales, gratis y en pareja en Sevilla:"
-            " casas-palacio mudéjares sin colas, atardeceres en Triana y"
-            " callejuelas de Santa Cruz."
+            "¿Qué planes hacer hoy en Sevilla? Descubre planes este fin de"
+            " semana, gratis y en pareja: casas-palacio mudéjares sin colas,"
+            " Triana y Santa Cruz."
         ),
         "intro": (
-            "Vive Sevilla con ojos locales: palacios gratuitos, rutas al"
-            " anochecer por la antigua judería y planes auténticos en Triana y"
-            " la Calle Feria."
+            "Vive Sevilla con ojos locales este fin de semana: palacios"
+            " gratuitos, mercadillos históricos, rutas al anochecer por la"
+            " antigua judería y planes auténticos en Triana."
         ),
     },
     "Toledo": {
         "slug": "toledo",
-        "h1": "Planes en Toledo: escapadas, rutas nocturnas y rincones ocultos",
+        "h1": "Planes en Toledo hoy y este fin de semana: escapadas y rutas nocturnas",
         "metaTitle": (
-            "Planes en Toledo: Qué Hacer de Día, de Noche y en Pareja | Qué"
+            "Qué Planes Hacer Hoy en Toledo y Este Fin de Semana (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "Guía de planes diferentes en Toledo a 33 minutos de Madrid: ruta"
-            " de cobertizos iluminados, baños árabes en pareja, senda del Tajo"
-            " y subterráneos."
+            "¿Qué planes hacer hoy o este fin de semana en Toledo? Ruta de"
+            " cobertizos iluminados, baños árabes en pareja, senda del Tajo y"
+            " subterráneos a 33 min de Madrid."
         ),
         "intro": (
-            "A solo 33 minutos en tren desde Madrid: descubre qué hacer en"
-            " Toledo cuando se marchan los autobuses turísticos, desde"
-            " pasadizos medievales hasta baños árabes."
+            "A solo 33 minutos en tren desde Madrid: descubre qué planes hacer"
+            " hoy y este fin de semana en Toledo, desde pasadizos medievales"
+            " iluminados hasta baños árabes."
         ),
     },
 }
@@ -366,6 +368,10 @@ def build_listing_page(
         <p class="hero-subtitle">{html.escape(subtitle)}</p>
         <div class="hero-QuickStats">
           <div class="stat-item">
+            <span class="stat-value">📅 Este Fin de Semana</span>
+            <span class="stat-label">Agenda de ferias y eventos</span>
+          </div>
+          <div class="stat-item">
             <span class="stat-value">💸 Gratis y Baratos</span>
             <span class="stat-label">Ideas por menos de 10 €</span>
           </div>
@@ -385,6 +391,7 @@ def build_listing_page(
     <section class="filter-toolbar" aria-label="Filtrar por estilo de plan">
       <div class="style-pills">
         <button type="button" class="style-pill-btn active" data-category="all" id="filter-cat-all">Todos los planes</button>
+        <button type="button" class="style-pill-btn" data-category="Este Fin de Semana" id="filter-cat-weekend">📅 Este Fin de Semana</button>
         <button type="button" class="style-pill-btn" data-category="Gratis y Baratos" id="filter-cat-cheap">💸 Gratis y Baratos</button>
         <button type="button" class="style-pill-btn" data-category="Planes Diferentes" id="filter-cat-unique">✨ Planes Diferentes</button>
         <button type="button" class="style-pill-btn" data-category="En Pareja" id="filter-cat-couple">❤️ En Pareja</button>
@@ -394,7 +401,7 @@ def build_listing_page(
           type="search"
           id="article-search-input"
           class="search-input"
-          placeholder="Buscar barrio o plan (ej. Albufera, Triana, gratis...)"
+          placeholder="Buscar plan, feria o barrio (ej. Valdemoro, Albufera, gratis...)"
           aria-label="Buscar planes"
         />
       </div>
@@ -488,26 +495,38 @@ def build_article_page(art: dict, all_articles: list):
       ],
   }
 
-  # Tabla Resumen Rápida (Ideal para Featured Snippets de Google y utilidad real del lector)
+  # Tabla Resumen Rápida con saltos directos (#plan-1, #plan-2...) para máxima usabilidad móvil y Featured Snippets
   table_rows = []
-  for sec in art.get("sections", []):
+  for idx, sec in enumerate(art.get("sections", []), start=1):
     venue_label = sec.get("venue", sec["heading"])
     table_rows.append(f"""
           <tr>
-            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600;">{html.escape(venue_label)}</td>
+            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600;">
+              <a href="#plan-{idx}" style="color: var(--terracotta); text-decoration: none;">{idx}. {html.escape(venue_label)} ↓</a>
+            </td>
             <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); color: var(--ink-secondary);">{html.escape(sec['location'])}</td>
             <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600; color: var(--olive);">{html.escape(sec['price'])}</td>
           </tr>""")
 
+  wa_text = urllib.parse.quote(
+      f"Mira qué planes para hacer en {city_name}: {art['title']} {canonical_url}"
+  )
+  wa_share_url = f"https://api.whatsapp.com/send?text={wa_text}"
+
   summary_table_html = f"""
     <div style="background: var(--bg-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 2rem; overflow-x: auto;">
-      <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--terracotta); margin-bottom: 0.65rem;">
-        📋 Resumen rápido de la ruta en {html.escape(city_name)}
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+        <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--terracotta);">
+          📋 Resumen rápido e índice interactivo ({html.escape(city_name)})
+        </div>
+        <a href="{wa_share_url}" target="_blank" rel="noopener" style="font-size: 0.8rem; font-weight: 700; color: var(--olive); text-decoration: none; background: var(--olive-bg); padding: 0.35rem 0.75rem; border-radius: var(--radius-pill); border: 1px solid rgba(47, 107, 79, 0.25);">
+          📲 Compartir planes por WhatsApp
+        </a>
       </div>
       <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left;">
         <thead>
           <tr style="border-bottom: 2px solid var(--border-strong);">
-            <th style="padding: 0.5rem 0.85rem;">Lugar / Plan</th>
+            <th style="padding: 0.5rem 0.85rem;">Lugar / Plan (Pulsa para ir)</th>
             <th style="padding: 0.5rem 0.85rem;">Ubicación y Transporte</th>
             <th style="padding: 0.5rem 0.85rem;">Precio</th>
           </tr>
@@ -519,13 +538,17 @@ def build_article_page(art: dict, all_articles: list):
     </div>"""
 
   sections_html = []
-  for sec in art.get("sections", []):
+  for idx, sec in enumerate(art.get("sections", []), start=1):
+    venue_name = sec.get("venue", sec["heading"])
+    maps_query = urllib.parse.quote(f"{venue_name}, {city_name}, España")
+    maps_url = f"https://www.google.com/maps/search/?api=1&query={maps_query}"
     sections_html.append(f"""
-      <section class="reader-section">
+      <section class="reader-section" id="plan-{idx}" style="scroll-margin-top: 90px;">
         <h2>{html.escape(sec['heading'])}</h2>
         <div class="venue-meta-bar">
           <span>📍 <strong>Dirección y cómo llegar:</strong> {html.escape(sec['location'])}</span>
           <span>💶 <strong>Precio:</strong> {html.escape(sec['price'])}</span>
+          <a href="{maps_url}" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none;">🗺️ Ver en Google Maps →</a>
         </div>
         <p style="font-size: 1.04rem; color: var(--ink-primary); line-height: 1.75;">{html.escape(sec['content'])}</p>
       </section>""")
@@ -684,9 +707,10 @@ def build_about_page():
     <section class="reader-section">
       <h2>Cómo seleccionamos cada plan</h2>
       <p style="margin-top: 0.5rem;">
-        Nos enfocamos en cinco ciudades clave de España (<strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong>) y organizamos nuestras guías en tres pilares:
+        Nos enfocamos en cinco ciudades clave de España (<strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong>) y organizamos nuestras guías en cuatro pilares:
       </p>
       <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
+        <li><strong>📅 Planes este Fin de Semana:</strong> Ferias históricas (como la Feria Barroca de Valdemoro), mercadillos especiales y eventos que suceden cada semana.</li>
         <li><strong>💸 Planes Gratis y Baratos:</strong> Cultura, miradores, jardines históricos y rutas por menos de 10 €.</li>
         <li><strong>✨ Planes Diferentes:</strong> Rincones poco conocidos, talleres creativos y alternativas fuera del circuito turístico habitual.</li>
         <li><strong>❤️ Planes en Pareja:</strong> Citas originales y escapadas cercanas con encanto.</li>
@@ -695,13 +719,13 @@ def build_about_page():
     <section class="reader-section">
       <h2>Datos prácticos verificados</h2>
       <p style="margin-top: 0.5rem;">
-        En todas nuestras rutas incluimos la dirección exacta, la parada de transporte público más cercana (Metro, EMT o tren Avant) y el rango de precios real en euros para que puedas planificar sin sorpresas.
+        En todas nuestras rutas incluimos la dirección exacta, enlace directo a Google Maps, la parada de transporte público más cercana (Metro, Cercanías, EMT o tren Avant) y el rango de precios real en euros para que puedas planificar sin sorpresas.
       </p>
     </section>
     <section class="reader-section" style="border-bottom: none;">
       <h2>Independencia editorial y enlaces de reserva</h2>
       <p style="margin-top: 0.5rem;">
-        Algunas de nuestras guías incluyen enlaces a plataformas oficiales de reserva de actividades y visitas guiadas (como Civitatis, Fever o GetYourGuide). Si reservas a través de ellos, podemos recibir una pequeña comisión sin ningún coste adicional para ti, lo que nos permite mantener esta guía abierta, independiente y sin publicidad intrusiva.
+        Algunas de nuestras guías incluyen enlaces a plataformas oficiales de reserva de actividades y visitas guiadas (como Civitatis, Fever, GetYourGuide o Tiqets). Si reservas a través de ellos, podemos recibir una pequeña comisión sin ningún coste adicional para ti, lo que nos permite mantener esta guía abierta, independiente y sin publicidad intrusiva.
       </p>
     </section>
   </main>
@@ -757,23 +781,22 @@ def build_all():
       articles=articles,
       output_path=os.path.join(PUBLIC_DIR, "index.html"),
       title=(
-          "Qué Plan Hoy | Planes Diferentes, Gratis y en Pareja en Madrid,"
+          "Qué Plan Hoy | Qué Planes Hacer Hoy y Este Fin de Semana en Madrid,"
           " Barcelona, Valencia, Sevilla y Toledo"
       ),
       description=(
-          "¿Qué plan hoy? Guía local de planes originales, baratos, gratis y"
-          " citas en pareja en Madrid, Barcelona, Valencia, Sevilla y Toledo"
-          " con precios reales."
+          "¿Qué planes hacer hoy o este fin de semana? Guía local de planes"
+          " originales, ferias, ideas gratis y citas en pareja en Madrid,"
+          " Barcelona, Valencia, Sevilla y Toledo."
       ),
       canonical_url=f"{SITE_URL}/",
-      h1="¿Qué plan hoy? Ideas diferentes, baratas y en pareja.",
+      h1="¿Qué planes hacer hoy y este fin de semana?",
       subtitle=(
-          "Seleccionamos planes fuera de lo típico en Madrid, Barcelona,"
-          " Valencia, Sevilla y Toledo: atardeceres en barca, talleres de"
-          " cerámica y vino, patios mudéjares gratuitos y callejones con"
-          " historia."
+          "Agenda actualizada de planes este fin de semana, ferias históricas,"
+          " ideas baratas y citas en pareja en Madrid, Barcelona, Valencia,"
+          " Sevilla y Toledo con direcciones exactas y precios reales."
       ),
-      kicker="QUÉ PLAN HOY · LA GUÍA PARA SALIR DE LA RUTINA",
+      kicker="QUÉ PLAN HOY · AGENDA DE FIN DE SEMANA Y PLANES ORIGINALES",
       root_prefix="",
       active_city="all",
   )

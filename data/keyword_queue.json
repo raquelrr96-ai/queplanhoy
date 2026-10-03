@@ -1,5 +1,18 @@
 [
   {
+    "id": "kw-barcelona-finde-hoy",
+    "keyword": "que planes hacer hoy en barcelona y este fin de semana",
+    "city": "Barcelona",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "searchVolume": "6.800 búsquedas/mes",
+    "keywordDifficulty": "Baja (18/100)",
+    "scheduledFor": "Próximo viernes (Agenda en vivo)",
+    "status": "pending",
+    "suggestedTitle": "Planes este Fin de Semana en Barcelona: Qué Hacer Hoy (Mercadillos, Ferias y Rutas sin Colas)",
+    "affiliateHook": "Civitatis / GetYourGuide (Rutas y entradas fin de semana en Barcelona)"
+  },
+  {
     "id": "kw-valencia-cita-barata",
     "keyword": "citas originales valencia por menos de 15 euros",
     "city": "Valencia",
@@ -13,6 +26,19 @@
     "affiliateHook": "Fever / Civitatis (Conciertos a la luz de las velas en Valencia)"
   },
   {
+    "id": "kw-valencia-finde-hoy",
+    "keyword": "planes este fin de semana en valencia que hacer hoy",
+    "city": "Valencia",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "searchVolume": "5.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (16/100)",
+    "scheduledFor": "Siguiente fin de semana (Agenda en vivo)",
+    "status": "pending",
+    "suggestedTitle": "Qué Planes Hacer Hoy y este Fin de Semana en Valencia: Mercados, Albufera y Agenda Cultural",
+    "affiliateHook": "Civitatis (Paseo en barca por la Albufera y rutas por Valencia)"
+  },
+  {
     "id": "kw-sevilla-gratis-domingo",
     "keyword": "que hacer en sevilla gratis domingo por la manana",
     "city": "Sevilla",
@@ -24,6 +50,19 @@
     "status": "pending",
     "suggestedTitle": "7 Planes Gratis en Sevilla para un Domingo: Mercadillo del Jueves, Patios Mudéjares y Triana",
     "affiliateHook": "Civitatis (Free Tour por Triana y Santa Cruz)"
+  },
+  {
+    "id": "kw-sevilla-finde-hoy",
+    "keyword": "planes este fin de semana en sevilla que planes hacer hoy",
+    "city": "Sevilla",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "searchVolume": "4.900 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (15/100)",
+    "scheduledFor": "Agenda Fin de Semana (Automático)",
+    "status": "pending",
+    "suggestedTitle": "Planes este Fin de Semana en Sevilla: Qué Hacer Hoy (Mercadillos, Patios y Agenda Local)",
+    "affiliateHook": "Civitatis (Rutas de leyendas y tablaos en Triana)"
   },
   {
     "id": "kw-madrid-lluvia",
