@@ -138,6 +138,7 @@ def render_head(
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="r39_brjoi72KrHzBWebcsqi7PAGZnM9J0CL_H2ydaHY" />
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
