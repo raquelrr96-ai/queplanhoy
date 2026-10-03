@@ -64,6 +64,26 @@ CITY_KNOWLEDGE_BASE = {
                     " con espejos venecianos y lámparas de cristal."
                 ),
             },
+            {
+                "name": "Estación Fantasma de Chamberí (Andén 0) y aperitivo en Ponzano",
+                "location": "Plaza de Chamberí, s/n (Metro: Iglesia - L1 / Bilbao - L1, L4)",
+                "price": "Entrada gratuita al museo / Doble de cerveza y tapa: 3,80 €",
+                "desc": (
+                    "Una estación de Metro clausurada en 1966 que conserva"
+                    " intactos los carteles publicitarios de cerámica de los"
+                    " años 20 y los andenes históricos."
+                ),
+            },
+            {
+                "name": "Parque Histórico de El Capricho y Templete de Baco",
+                "location": "Paseo de la Alameda de Osuna, 25 (Metro: El Capricho - L5)",
+                "price": "Acceso 100% gratuito (Sábados, domingos y festivos)",
+                "desc": (
+                    "El jardín romántico del siglo XVIII de la Duquesa de Osuna"
+                    " con laberinto de laurel, embarcadero, cisnes negros y"
+                    " templetes neoclásicos."
+                ),
+            },
         ],
         "affiliate": {
             "partner": "Civitatis",
@@ -131,6 +151,26 @@ CITY_KNOWLEDGE_BASE = {
                 "desc": (
                     "Casi 400 metros de túneles excavados en la falda de"
                     " Montjuïc por los vecinos en 1937, conservados intactos."
+                ),
+            },
+            {
+                "name": "Jardins de Laribal y el anfiteatro del Teatre Grec",
+                "location": "Passeig de Santa Madrona, 2 (Metro: Espanya - L1, L3)",
+                "price": "Acceso 100% gratuito",
+                "desc": (
+                    "Jardines escalonados de 1922 con fuentes de cerámica,"
+                    " albercas y pérgolas que desembocan en el teatro al aire"
+                    " libre de Montjuïc."
+                ),
+            },
+            {
+                "name": "Recinto Modernista de Sant Pau y ruta de arquitectura en el Guinardó",
+                "location": "Carrer de Sant Antoni Maria Claret, 167 (Metro: Sant Pau | Dos de Maig - L5)",
+                "price": "Gratis primer domingo de mes y días de puertas abiertas (16 € general)",
+                "desc": (
+                    "El conjunto modernista más grande del mundo obra de Lluís"
+                    " Domènech i Montaner, conectado por galerías subterráneas"
+                    " y jardines."
                 ),
             },
         ],
@@ -201,6 +241,25 @@ CITY_KNOWLEDGE_BASE = {
                     " con instalaciones inmersivas de luz."
                 ),
             },
+            {
+                "name": "Atardecer en el Embarcadero de la Gola de Pujol en L'Albufera",
+                "location": "Parque Natural de la Albufera (Autobús EMT Línea 24 o 25 por 1,50 €)",
+                "price": "Mirador gratuito / Paseo en barca tradicional: 6,00 €",
+                "desc": (
+                    "Llega en autobús urbano hasta el embarcadero de madera de"
+                    " la Gola de Pujol para ver una de las puestas de sol más"
+                    " espectaculares del Mediterráneo."
+                ),
+            },
+            {
+                "name": "Ruta en bici por la Vía Xurra y horchata en alquería de la Huerta de Alboraya",
+                "location": "Inicio en Avenida de Aragón (Metro: Aragón - L5 / Palmaret - L3)",
+                "price": "Ruta gratis / Horchata artesana con fartons: 4,20 €",
+                "desc": (
+                    "Recorre sin coches los caminos históricos de la huerta"
+                    " valenciana entre acequias medievales y campos de chufa."
+                ),
+            },
         ],
         "affiliate": {
             "partner": "Civitatis",
@@ -263,6 +322,25 @@ CITY_KNOWLEDGE_BASE = {
                     " con un paseo al atardecer por la calle Betis."
                 ),
             },
+            {
+                "name": "Palacio de los Marqueses de la Algaba y Centro del Arte Mudéjar",
+                "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de Feria)",
+                "price": "Entrada 100% gratuita",
+                "desc": (
+                    "Un palacio mudéjar de 1474 con patio de arcos y jardines"
+                    " frescos en el corazón de la calle Feria."
+                ),
+            },
+            {
+                "name": "Plaza de Santa Marta y Callejón del Agua al anochecer",
+                "location": "Acceso por Plaza Virgen de los Reyes (Barrio de Santa Cruz)",
+                "price": "Acceso libre y gratuito",
+                "desc": (
+                    "La plazuela empedrada más pequeña y silenciosa de Sevilla,"
+                    " escondida tras un pasadizo con cuatro naranjos y un"
+                    " crucero renacentista."
+                ),
+            },
         ],
         "affiliate": {
             "partner": "Civitatis",
@@ -323,6 +401,26 @@ CITY_KNOWLEDGE_BASE = {
                     "Un yacimiento arqueológico al aire libre desde el que se"
                     " obtiene la vista más cercana e imponente de las murallas"
                     " de Toledo sin un solo autobús."
+                ),
+            },
+            {
+                "name": "Ruta de los Cobertizos iluminados de Santo Domingo el Real y Santa Clara",
+                "location": "Zona Norte del Casco Histórico (a 4 min de Plaza de Zocodover)",
+                "price": "Paseo 100% gratuito",
+                "desc": (
+                    "Pasadizos volados del siglo XVI que comunicaban los"
+                    " conventos y palacios toledanos y que al anochecer quedan"
+                    " en absoluto silencio bajo los faroles de forja."
+                ),
+            },
+            {
+                "name": "Baños Árabes de Medina Mudéjar y Termas Romanas de Amador de los Ríos",
+                "location": "Plaza de Santa Eulalia, 1 / Plaza Amador de los Ríos (Judería y Centro)",
+                "price": "Termas romanas gratis / Baños árabes desde 28 € por persona",
+                "desc": (
+                    "Descubre el Toledo subterráneo combinando las bóvedas"
+                    " romanas gratuitas del Consorcio con un baño termal bajo"
+                    " arcos mudéjares del siglo XII."
                 ),
             },
         ],
@@ -550,14 +648,6 @@ def generate_seo_article(
   existing_articles = load_json(ARTICLES_FILE)
   related_in_city = [a for a in existing_articles if a.get("city") == city]
 
-  if not suggested_title:
-    suggested_title = (
-        f"{keyword.capitalize()}: Guía Local de Planes en {city} (2026)"
-    )
-
-  slug = slugify(keyword if len(keyword) > 12 else suggested_title)
-  today_str = date.today().isoformat()
-
   raw_venues = list(kb["venues"])
   if (
       category == "Este Fin de Semana"
@@ -566,7 +656,7 @@ def generate_seo_article(
   ):
     live_events = fetch_live_weekend_events(city, max_items=2)
     if live_events:
-      raw_venues = live_events + raw_venues[:2]
+      raw_venues = (live_events + raw_venues)[:5]
 
   sections = []
   for idx, v in enumerate(raw_venues, start=1):
@@ -577,6 +667,19 @@ def generate_seo_article(
         "price": v["price"],
         "content": v["desc"],
     })
+
+  if not suggested_title:
+    suggested_title = (
+        f"{len(sections)} Planes en {city}: {keyword.capitalize()} (2026)"
+    )
+  else:
+    # Garantizar siempre que si el título empieza por un número (ej. "7 Planes..."), coincida exactamente con len(sections)
+    suggested_title = re.sub(
+        r"^\d+\b", str(len(sections)), suggested_title.strip()
+    )
+
+  slug = slugify(keyword if len(keyword) > 12 else suggested_title)
+  today_str = date.today().isoformat()
 
   if related_in_city:
     first_rel = related_in_city[0]
