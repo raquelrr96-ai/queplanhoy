@@ -14,7 +14,7 @@ SITEMAP_FILE = os.path.join(BASE_DIR, "public", "sitemap.xml")
 
 CITY_KNOWLEDGE_BASE = {
     "Madrid": {
-        "image": "/images/madrid.jpg",
+        "image": "images/madrid.jpg",
         "neighborhoods": [
             "Malasaña",
             "Chamberí",
@@ -82,7 +82,7 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Barcelona": {
-        "image": "/images/barcelona.jpg",
+        "image": "images/barcelona.jpg",
         "neighborhoods": [
             "El Born",
             "Gràcia",
@@ -151,7 +151,7 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Valencia": {
-        "image": "/images/valencia.jpg",
+        "image": "images/valencia.jpg",
         "neighborhoods": [
             "El Cabanyal",
             "Ruzafa",
@@ -218,7 +218,7 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Sevilla": {
-        "image": "/images/sevilla.jpg",
+        "image": "images/sevilla.jpg",
         "neighborhoods": [
             "Triana",
             "Calle Feria",
@@ -279,7 +279,7 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Toledo": {
-        "image": "/images/toledo.jpg",
+        "image": "images/toledo.jpg",
         "neighborhoods": [
             "Judería Mayor",
             "Barrio de los Conventos",

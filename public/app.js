@@ -9,10 +9,10 @@ const state = {
 
 async function fetchInitialData() {
   try {
-    let artRes = await fetch('/api/articles');
-    if (!artRes.ok) artRes = await fetch('/data/articles.json');
-    let queueRes = await fetch('/api/queue');
-    if (!queueRes.ok) queueRes = await fetch('/data/keyword_queue.json');
+    let artRes = await fetch('/api/articles').catch(() => ({ ok: false }));
+    if (!artRes || !artRes.ok) artRes = await fetch('data/articles.json');
+    let queueRes = await fetch('/api/queue').catch(() => ({ ok: false }));
+    if (!queueRes || !queueRes.ok) queueRes = await fetch('data/keyword_queue.json');
     state.articles = await artRes.json();
     state.queue = await queueRes.json();
     renderAll();
