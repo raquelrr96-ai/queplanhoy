@@ -639,7 +639,12 @@ def build_article_page(art: dict, all_articles: list):
         {html.escape(art['excerpt'])}
       </p>
 
-      <img src="{img_src}" alt="{html.escape(img_alt)}" class="reader-hero-img" width="860" height="480" />
+      <figure style="margin: 0 0 1.5rem 0;">
+        <img src="{img_src}" alt="{html.escape(img_alt)}" class="reader-hero-img" width="860" height="480" style="margin-bottom: 0.45rem;" />
+        <figcaption style="font-size: 0.78rem; color: var(--ink-muted); text-align: right;">
+          📷 Fotografía real: {html.escape(art.get('imageCredit', img_alt))}
+        </figcaption>
+      </figure>
 
       {summary_table_html}
 
@@ -716,16 +721,10 @@ def build_about_page():
         <li><strong>❤️ Planes en Pareja:</strong> Citas originales y escapadas cercanas con encanto.</li>
       </ul>
     </section>
-    <section class="reader-section">
-      <h2>Datos prácticos verificados</h2>
-      <p style="margin-top: 0.5rem;">
-        En todas nuestras rutas incluimos la dirección exacta, enlace directo a Google Maps, la parada de transporte público más cercana (Metro, Cercanías, EMT o tren Avant) y el rango de precios real en euros para que puedas planificar sin sorpresas.
-      </p>
-    </section>
     <section class="reader-section" style="border-bottom: none;">
-      <h2>Independencia editorial y enlaces de reserva</h2>
+      <h2>Datos prácticos y fotografías reales</h2>
       <p style="margin-top: 0.5rem;">
-        Algunas de nuestras guías incluyen enlaces a plataformas oficiales de reserva de actividades y visitas guiadas (como Civitatis, Fever, GetYourGuide o Tiqets). Si reservas a través de ellos, podemos recibir una pequeña comisión sin ningún coste adicional para ti, lo que nos permite mantener esta guía abierta, independiente y sin publicidad intrusiva.
+        En todas nuestras rutas incluimos la dirección exacta, enlace directo a Google Maps, la parada de transporte público más cercana (Metro, Cercanías, EMT o tren Avant), el rango de precios real en euros y fotografías reales de los lugares (con licencia libre o cedidas por archivos municipales y patrimoniales) para que puedas planificar sin sorpresas.
       </p>
     </section>
   </main>

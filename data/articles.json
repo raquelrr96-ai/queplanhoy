@@ -14,10 +14,15 @@
     "searchVolume": "8.100 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (21/100)",
     "image": "images/planes-este-fin-de-semana-madrid-feria-barroca.jpg",
-    "imageAlt": "Feria Barroca de Valdemoro y mercadillo artesanal de fin de semana en la Comunidad de Madrid",
+    "imageAlt": "Plaza de la Constitución y Torre del Reloj de Valdemoro del siglo XVII donde se celebra la Feria Barroca",
     "excerpt": "Si te preguntas qué planes hacer hoy o este fin de semana en Madrid sin hacer siempre lo mismo: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.",
     "priceRange": "Gratis (0 € – 8 €)",
-    "neighborhoods": ["Valdemoro (Cercanías C-3)", "Delicias", "La Latina", "Centro"],
+    "neighborhoods": [
+      "Valdemoro (Cercanías C-3)",
+      "Delicias",
+      "La Latina",
+      "Centro"
+    ],
     "affiliate": {
       "partner": "Civitatis",
       "badge": "Especial Fin de Semana en Madrid",
@@ -59,7 +64,8 @@
         "question": "¿Qué planes hacer hoy en Madrid gratis si voy sin reserva?",
         "answer": "La Feria Barroca de Valdemoro, los jardines del Príncipe de Anglona en La Latina, el Invernadero de Arganzuela en Legazpi y las rutas por el Madrid de los Austrias son de acceso libre sin necesidad de entrada anticipada."
       }
-    ]
+    ],
+    "imageCredit": "Plaza de la Constitución y Torre del Reloj de Valdemoro (Wikimedia Commons · Dominio Público CC0)"
   },
   {
     "id": "madrid-menos-10-euros",
@@ -76,10 +82,15 @@
     "searchVolume": "2.400 búsquedas/mes",
     "keywordDifficulty": "Baja (18/100)",
     "image": "images/terraza-secreta-planes-madrid.jpg",
-    "imageAlt": "Terraza jardín interior escondido en el centro de Madrid con vermut y aperitivo",
+    "imageAlt": "Fuente de piedra y parterres del Jardín del Príncipe de Anglona en el barrio de La Latina, Madrid",
     "excerpt": "No hace falta dejarse medio sueldo para vivir un sábado inolvidable en Madrid. Desde un jardín renacentista en La Latina hasta una sesión de cine en un palacio de 1922 por solo 3 €.",
     "priceRange": "0 € – 9,50 €",
-    "neighborhoods": ["La Latina", "Lavapiés", "Chueca", "Antón Martín"],
+    "neighborhoods": [
+      "La Latina",
+      "Lavapiés",
+      "Chueca",
+      "Antón Martín"
+    ],
     "affiliate": {
       "partner": "Fever / Civitatis",
       "badge": "Recomendación Top Reserva",
@@ -121,7 +132,8 @@
         "question": "¿Hace falta reservar con antelación para el Cine Doré?",
         "answer": "Sí, como las entradas cuestan solo 3 € suelen agotarse rápido para las sesiones de viernes y sábado tarde. Se pueden sacar online en la web oficial de la Filmoteca Española con 3 días de antelación."
       }
-    ]
+    ],
+    "imageCredit": "Jardín del Príncipe de Anglona en La Latina, Madrid (Wikimedia Commons · CC BY 3.0)"
   },
   {
     "id": "valencia-planes-diferentes-albufera",
@@ -138,10 +150,15 @@
     "searchVolume": "2.800 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (13/100)",
     "image": "images/barca-albufera-planes-valencia.jpg",
-    "imageAlt": "Barca tradicional de madera al atardecer en el embarcadero de la Albufera de Valencia",
+    "imageAlt": "Atardecer real en el embarcadero de L Albufera de Valencia con reflejos en el agua",
     "excerpt": "Más allá de la Ciudad de las Artes y la Malvarrosa: te llevamos en autobús urbano hasta el embarcadero más tranquilo de L'Albufera al caer el sol, a un búnker de 1938 y a tomar horchata recién molida entre campos de chufa.",
     "priceRange": "0 € – 12 €",
-    "neighborhoods": ["El Palmar / Albufera", "Ruzafa", "El Carmen", "Alboraya"],
+    "neighborhoods": [
+      "El Palmar / Albufera",
+      "Ruzafa",
+      "El Carmen",
+      "Alboraya"
+    ],
     "affiliate": {
       "partner": "Civitatis / Fever",
       "badge": "Plan Estrella en Valencia",
@@ -183,7 +200,8 @@
         "question": "¿Qué planes en pareja son recomendables en Valencia por la tarde?",
         "answer": "Combinar el atardecer en barca en la Albufera con una cena de tapas creativas en las calles peatonales de Ruzafa (como calle Sueca o Literato Azorín) es el plan en pareja mejor valorado."
       }
-    ]
+    ],
+    "imageCredit": "Embarcadero de L'Albufera de Valencia al atardecer (Wikimedia Commons · CC BY-SA 4.0)"
   },
   {
     "id": "sevilla-patios-citas-pareja",
@@ -203,7 +221,12 @@
     "imageAlt": "Patio andaluz mudéjar con naranjos, azulejos y flores en el barrio de Santa Cruz de Sevilla",
     "excerpt": "Mientras todo el mundo hace cola en el Real Alcázar, hay casas-palacio mudéjares en Sevilla llenas de buganvillas y azulejos del siglo XVI donde puedes pasear casi a solas con tu pareja.",
     "priceRange": "0 € – 18 €",
-    "neighborhoods": ["Santa Cruz", "Triana", "Feria / Alameda", "San Bartolomé"],
+    "neighborhoods": [
+      "Santa Cruz",
+      "Triana",
+      "Feria / Alameda",
+      "San Bartolomé"
+    ],
     "affiliate": {
       "partner": "Civitatis / Fever",
       "badge": "Favorito en Sevilla",
@@ -262,10 +285,15 @@
     "searchVolume": "3.600 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (24/100)",
     "image": "images/taller-ceramica-planes-pareja-madrid.jpg",
-    "imageAlt": "Mesa de taller artesanal de cerámica y copas de vino tinto con velas para cita en pareja en Madrid",
+    "imageAlt": "Templete de Baco de estilo neoclásico en los jardines históricos del Parque de El Capricho en Madrid",
     "excerpt": "Si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical.",
     "priceRange": "15 € – 32 €",
-    "neighborhoods": ["Malasaña", "Chamberí", "Atocha", "Retiro"],
+    "neighborhoods": [
+      "Malasaña",
+      "Chamberí",
+      "Atocha",
+      "Retiro"
+    ],
     "affiliate": {
       "partner": "Fever",
       "badge": "Plan Más Reservado en Pareja",
@@ -296,7 +324,8 @@
         "question": "¿Cuál es el mejor plan en pareja en Madrid si llueve?",
         "answer": "Un taller de cerámica y vino en Chamberí o una sesión en el Cine Doré seguida de una merienda en el interior ajardinado de Salvador Bachiller son opciones cubiertas perfectas para días de lluvia."
       }
-    ]
+    ],
+    "imageCredit": "Templete de Baco en el Parque de El Capricho, Madrid (Wikimedia Commons · CC BY-SA 4.0)"
   },
   {
     "id": "barcelona-miradores-secretos-gratis",
@@ -313,10 +342,15 @@
     "searchVolume": "1.900 búsquedas/mes",
     "keywordDifficulty": "Baja (15/100)",
     "image": "images/mirador-atardecer-planes-barcelona.jpg",
-    "imageAlt": "Vista panorámica al atardecer de Barcelona y el mar Mediterráneo desde los jardines de Montjuïc",
+    "imageAlt": "Vista panorámica real de Barcelona y el mar Mediterráneo al atardecer desde los Bunkers del Carmel",
     "excerpt": "Desde que cerraron el acceso nocturno a los Bunkers del Carmel, los barceloneses tienen nuevos rincones para ver caer el sol sobre el Mediterráneo sin agobios y sin gastar un euro.",
     "priceRange": "Gratis (0 €)",
-    "neighborhoods": ["Montjuïc", "El Born", "Horta-Guinardó", "Sarrià"],
+    "neighborhoods": [
+      "Montjuïc",
+      "El Born",
+      "Horta-Guinardó",
+      "Sarrià"
+    ],
     "affiliate": {
       "partner": "GetYourGuide / Civitatis",
       "badge": "Experiencia Recomendada",
@@ -347,7 +381,8 @@
         "question": "¿Qué museos son gratis los domingos en Barcelona?",
         "answer": "El primer domingo de cada mes son gratis todo el día el Museo Picasso (con reserva previa online), el MNAC y el MUHBA, y todos los domingos del año a partir de las 15:00 h muchos museos municipales abren sin coste."
       }
-    ]
+    ],
+    "imageCredit": "Mirador de los Bunkers del Carmel en Barcelona (Wikimedia Commons · CC BY-SA 4.0)"
   },
   {
     "id": "toledo-noche-pareja",
@@ -367,7 +402,12 @@
     "imageAlt": "Callejón medieval empedrado de Toledo iluminado por faroles al anochecer con la torre de la Catedral al fondo",
     "excerpt": "A las 19:00 horas ocurre un pequeño milagro en Toledo: los grupos de excursionistas vuelven a Madrid y el casco histórico medieval se queda en silencio bajo los faroles de forja.",
     "priceRange": "0 € – 28 €",
-    "neighborhoods": ["Barrio de los Conventos", "Judería Mayor", "Cobertizos", "Valle de Toledo"],
+    "neighborhoods": [
+      "Barrio de los Conventos",
+      "Judería Mayor",
+      "Cobertizos",
+      "Valle de Toledo"
+    ],
     "affiliate": {
       "partner": "Civitatis",
       "badge": "Top #1 Ventas en Toledo",

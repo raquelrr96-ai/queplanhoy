@@ -399,6 +399,69 @@ def fetch_live_weekend_events(city: str, max_items: int = 2) -> list:
   return discovered
 
 
+def fetch_real_commons_photo(
+    search_query: str, slug: str, fallback_image: str, fallback_alt: str
+) -> tuple:
+  """Busca y descarga una fotografía REAL con licencia libre (CC0 / CC BY / CC BY-SA / Public Domain)
+
+  desde Wikimedia Commons para el lugar o ciudad del artículo, evitando imágenes
+  con IA.
+  """
+  import urllib.parse
+  import urllib.request
+
+  api_url = (
+      "https://commons.wikimedia.org/w/api.php?action=query&generator=search"
+      "&gsrnamespace=6&gsrsearch="
+      + urllib.parse.quote(f"filetype:bitmap {search_query}")
+      + "&gsrlimit=6&prop=imageinfo&iiprop=url|extmetadata|dimensions"
+      "&iiurlwidth=1280&format=json"
+  )
+  try:
+    req = urllib.request.Request(
+        api_url,
+        headers={"User-Agent": "QuePlanHoyBot/1.0 (https://queplanhoy.es)"},
+    )
+    with urllib.request.urlopen(req, timeout=10) as resp:
+      data = json.loads(resp.read().decode("utf-8"))
+    pages = data.get("query", {}).get("pages", {})
+    for _, p in pages.items():
+      title = p.get("title", "")
+      if not title.lower().endswith((".jpg", ".jpeg")):
+        continue
+      ii = (p.get("imageinfo") or [{}])[0]
+      w = ii.get("width", 0)
+      h = ii.get("height", 0)
+      if w < 900 or w < h:
+        continue  # Preferimos fotos horizontales de buena resolución
+      lic = (
+          ii.get("extmetadata", {})
+          .get("LicenseShortName", {})
+          .get("value", "CC BY-SA")
+      )
+      thumb_url = ii.get("thumburl") or ii.get("url")
+      if not thumb_url:
+        continue
+      rel_path = f"images/{slug[:48]}.jpg"
+      abs_path = os.path.join(BASE_DIR, "public", rel_path)
+      os.makedirs(os.path.dirname(abs_path), exist_ok=True)
+      img_req = urllib.request.Request(
+          thumb_url,
+          headers={"User-Agent": "QuePlanHoyBot/1.0 (https://queplanhoy.es)"},
+      )
+      with urllib.request.urlopen(img_req, timeout=15) as img_resp:
+        with open(abs_path, "wb") as out_f:
+          out_f.write(img_resp.read())
+      clean_name = (
+          title.replace("File:", "").rsplit(".", 1)[0].replace("_", " ")
+      )
+      credit = f"{clean_name} (Wikimedia Commons · {lic})"
+      return rel_path, fallback_alt, credit
+  except Exception:
+    pass
+  return fallback_image, fallback_alt, f"Fotografía real de archivo ({fallback_alt})"
+
+
 def slugify(text: str) -> str:
   text = text.lower()
   replacements = {
@@ -529,6 +592,14 @@ def generate_seo_article(
       else ("10 € – 25 €" if category == "En Pareja" else "0 € – 15 €")
   )
 
+  photo_query = f"{raw_venues[0]['name']} {city}"
+  real_img, real_alt, real_credit = fetch_real_commons_photo(
+      search_query=photo_query,
+      slug=slug,
+      fallback_image=kb["image"],
+      fallback_alt=kb.get("imageAlt", suggested_title),
+  )
+
   new_article = {
       "id": f"{city.lower()}-{slug[:32]}",
       "slug": slug,
@@ -547,7 +618,9 @@ def generate_seo_article(
       "targetKeyword": keyword.lower(),
       "searchVolume": search_volume,
       "keywordDifficulty": difficulty,
-      "image": kb["image"],
+      "image": real_img,
+      "imageAlt": real_alt,
+      "imageCredit": real_credit,
       "excerpt": (
           f"Seleccionamos los mejores rincones para quienes buscan"
           f" «{keyword.lower()}» en {city} saliendo de lo típico: direcciones"
