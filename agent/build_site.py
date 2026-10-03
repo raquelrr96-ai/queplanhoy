@@ -797,9 +797,11 @@ def build_all():
 
   build_about_page()
   regenerate_sitemap(articles)
+  with open(os.path.join(PUBLIC_DIR, "CNAME"), "w", encoding="utf-8") as f:
+    f.write("queplanhoy.es\n")
   print(
       f"[OK] Sitio estático E-E-A-T generado: Portada + {len(CITIES)} ciudades"
-      f" + {len(articles)} guías + /sobre-nosotros/ + robots.txt + sitemap.xml."
+      f" + {len(articles)} guías + /sobre-nosotros/ + CNAME + sitemap.xml."
   )
 
 
