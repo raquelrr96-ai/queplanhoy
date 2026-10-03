@@ -799,6 +799,12 @@ def build_all():
   regenerate_sitemap(articles)
   with open(os.path.join(PUBLIC_DIR, "CNAME"), "w", encoding="utf-8") as f:
     f.write("queplanhoy.es\n")
+  with open(
+      os.path.join(PUBLIC_DIR, "googleb24ffbb97ddb75f6.html"),
+      "w",
+      encoding="utf-8",
+  ) as f:
+    f.write("google-site-verification: googleb24ffbb97ddb75f6.html")
   print(
       f"[OK] Sitio estático E-E-A-T generado: Portada + {len(CITIES)} ciudades"
       f" + {len(articles)} guías + /sobre-nosotros/ + CNAME + sitemap.xml."
