@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """Generador de Sitio Estático (SSG) para ¿Qué Plan Hoy? (queplanhoy.es).
 
-Diseñado con los estándares E-E-A-T de Google (Experience, Expertise, Authoritativeness,
-Trustworthiness) y Helpful Content:
+Diseño editorial limpio inspirado en revistas urbanas (Time Out, Madrid Secreto, Traveler):
   - /index.html (Portada general)
   - /madrid/, /barcelona/, /valencia/, /sevilla/, /toledo/ (Páginas de ciudad)
-  - /<ciudad>/<slug>/ (Páginas de cada guía con Tabla Resumen para Featured Snippets,
-    Schema.org Article + FAQPage + BreadcrumbList y Ficha de Verificación Editorial)
-  - /sobre-nosotros/ (Página de transparencia editorial y autoría para E-E-A-T y afiliados)
+  - /<ciudad>/<slug>/ (Páginas de cada guía con índice rápido, datos prácticos y Schema.org)
+  - /sobre-nosotros/ (Página de criterio editorial)
 """
 
 from datetime import date
@@ -35,9 +33,9 @@ CITIES = {
             " citas en pareja."
         ),
         "intro": (
-            "Nuestra selección de ferias históricas, mercados al aire libre,"
-            " terrazas secretas, jardines gratuitos y citas originales en"
-            " Madrid con paradas de Metro y precios reales."
+            "Ferias históricas, mercados al aire libre, jardines secretos y"
+            " citas originales en Madrid con direcciones exactas y precios"
+            " reales."
         ),
     },
     "Barcelona": {
@@ -53,9 +51,8 @@ CITIES = {
             " en pareja."
         ),
         "intro": (
-            "Explora una Barcelona lejos de las aglomeraciones: desde jardines"
-            " neoclásicos gratuitos hasta terrazas con vistas al Mediterráneo y"
-            " planes en pareja."
+            "Una Barcelona lejos de las aglomeraciones: desde jardines"
+            " neoclásicos gratuitos hasta terrazas con vistas al Mediterráneo."
         ),
     },
     "Valencia": {
@@ -71,9 +68,8 @@ CITIES = {
             " rutas por la huerta y El Cabanyal."
         ),
         "intro": (
-            "Los mejores planes para disfrutar de Valencia: escapadas en"
-            " autobús urbano a L'Albufera, jardines escondidos y tapeo en"
-            " barrios marineros."
+            "Escapadas en autobús urbano a L'Albufera, jardines escondidos y"
+            " tapeo en las bodegas históricas de El Cabanyal."
         ),
     },
     "Sevilla": {
@@ -89,9 +85,8 @@ CITIES = {
             " Triana y Santa Cruz."
         ),
         "intro": (
-            "Vive Sevilla con ojos locales: palacios gratuitos, mercadillos"
-            " históricos, rutas al anochecer por la antigua judería y planes"
-            " auténticos en Triana."
+            "Palacios gratuitos, mercadillos históricos, rutas al anochecer por"
+            " la antigua judería y planes auténticos en Triana."
         ),
     },
     "Toledo": {
@@ -107,9 +102,9 @@ CITIES = {
             " subterráneos a 33 min de Madrid."
         ),
         "intro": (
-            "A solo 33 minutos en tren desde Madrid: descubre qué hacer en"
-            " Toledo cuando se marchan los autobuses turísticos, desde"
-            " pasadizos medievales iluminados hasta baños árabes."
+            "A 33 minutos en tren desde Madrid: qué hacer en Toledo cuando se"
+            " marchan los autobuses turísticos, desde pasadizos iluminados"
+            " hasta baños árabes."
         ),
     },
 }
@@ -164,7 +159,7 @@ def render_header(root_prefix: str, active_city: str = "all") -> str:
   nav_items = [
       (
           "all",
-          "Todas las ciudades",
+          "Inicio",
           f"{root_prefix}index.html" if root_prefix else "./",
       ),
       ("Madrid", "Madrid", f"{root_prefix}madrid/"),
@@ -178,30 +173,15 @@ def render_header(root_prefix: str, active_city: str = "all") -> str:
     active_cls = " active" if key == active_city else ""
     links_html.append(
         f'<a href="{href}" class="city-filter-btn{active_cls}"'
-        f' id="nav-{key.lower()}" style="text-decoration:none;">{label}</a>'
+        f' id="nav-{key.lower()}">{label}</a>'
     )
 
   return f"""
-  <div class="top-utility-bar">
-    <div class="top-utility-inner">
-      <div class="agent-status-indicator" style="font-family: var(--font-sans); color: var(--bg-paper);">
-        <span>✨ Guía local de planes originales en España</span>
-      </div>
-      <div class="utility-actions">
-        <a href="{root_prefix}madrid/" class="utility-link-btn">Madrid</a>
-        <a href="{root_prefix}barcelona/" class="utility-link-btn">Barcelona</a>
-        <a href="{root_prefix}valencia/" class="utility-link-btn">Valencia</a>
-        <a href="{root_prefix}sevilla/" class="utility-link-btn">Sevilla</a>
-        <a href="{root_prefix}toledo/" class="utility-link-btn">Toledo</a>
-      </div>
-    </div>
-  </div>
-
   <header class="site-header">
     <div class="header-inner">
       <a href="{root_prefix if root_prefix else './'}" class="brand-logo" id="brand-home-link">
         <span class="brand-name">¿Qué<span>Plan</span>Hoy?</span>
-        <span class="brand-tagline">Madrid · Barcelona · Valencia · Sevilla · Toledo</span>
+        <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
         {''.join(links_html)}
@@ -219,44 +199,46 @@ def render_footer(root_prefix: str) -> str:
       </div>
       <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
-        <a href="{root_prefix}madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Madrid</a>
-        <a href="{root_prefix}barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Barcelona</a>
-        <a href="{root_prefix}valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Valencia</a>
-        <a href="{root_prefix}sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Sevilla</a>
-        <a href="{root_prefix}toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Toledo</a>
+        <a href="{root_prefix}madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
+        <a href="{root_prefix}barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
+        <a href="{root_prefix}valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
+        <a href="{root_prefix}sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
+        <a href="{root_prefix}toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
         <span>·</span>
-        <a href="{root_prefix}sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre Nosotros y Criterio Editorial</a>
+        <a href="{root_prefix}sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>
-      <p style="font-size: 0.78rem; margin-top: 0.5rem;">© {date.today().year} Qué Plan Hoy · Selección verificada en España.</p>
+      <p style="font-size: 0.78rem; margin-top: 0.5rem;">© {date.today().year} Qué Plan Hoy</p>
     </div>
   </footer>"""
 
 
-def render_article_card(art: dict, root_prefix: str) -> str:
+def render_article_card(
+    art: dict, root_prefix: str, is_lead: bool = False
+) -> str:
   city_slug = CITIES.get(art["city"], {"slug": art["city"].lower()})["slug"]
   article_href = f"{root_prefix}{city_slug}/{art['slug']}/"
   img_src = f"{root_prefix}{art['image'].lstrip('/')}"
   img_alt = art.get("imageAlt", art["title"])
   cat_label = art["category"]
   if art.get("weekendDates"):
-    cat_label = f"{cat_label} ({art['weekendDates']})"
+    cat_label = f"{cat_label} · {art['weekendDates']}"
+  lead_cls = " lead-card" if is_lead else ""
   return f"""
-  <article class="article-card" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
+  <article class="article-card{lead_cls}" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
     <a href="{article_href}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="{img_src}" alt="{html.escape(img_alt)}" class="card-image" loading="lazy" width="640" height="360" />
         <span class="card-city-tag">{html.escape(art['city'])}</span>
-        <span class="card-price-tag">{html.escape(art['priceRange'])}</span>
       </div>
       <div class="card-body">
         <div class="card-meta-top">
-          <span class="card-category">{art['categoryIcon']} {html.escape(cat_label)}</span>
-          <span style="color: var(--ink-muted); font-size: 0.76rem;">⏱ {html.escape(art['readTime'])} de lectura</span>
+          <span class="card-category">{html.escape(cat_label)}</span>
+          <span style="color: var(--ink-muted);">{html.escape(art['priceRange'])}</span>
         </div>
-        <h2 class="card-title" style="font-size: 1.25rem;">{html.escape(art['title'])}</h2>
+        <h2 class="card-title">{html.escape(art['title'])}</h2>
         <p class="card-excerpt">{html.escape(art['excerpt'])}</p>
         <div class="card-footer">
-          <span class="card-neighborhoods">📍 {html.escape(' · '.join(art['neighborhoods']))}</span>
+          <span class="card-neighborhoods">{html.escape(' · '.join(art['neighborhoods']))}</span>
           <span class="card-read-link">Leer guía →</span>
         </div>
       </div>
@@ -275,12 +257,23 @@ def render_filter_script() -> str:
       let currentQuery = '';
 
       function applyFilters() {
+        let firstVisible = true;
         cards.forEach(card => {
           const cat = card.getAttribute('data-category');
           const text = card.getAttribute('data-search') || '';
           const matchCat = currentCat === 'all' || cat === currentCat;
           const matchQuery = !currentQuery || text.includes(currentQuery);
-          card.style.display = (matchCat && matchQuery) ? 'flex' : 'none';
+          if (matchCat && matchQuery) {
+            card.style.display = 'flex';
+            if (firstVisible && cards.length > 1 && currentCat === 'all' && !currentQuery) {
+              card.classList.add('lead-card');
+            } else {
+              card.classList.remove('lead-card');
+            }
+            firstVisible = false;
+          } else {
+            card.style.display = 'none';
+          }
         });
       }
 
@@ -315,42 +308,11 @@ def build_listing_page(
     root_prefix: str,
     active_city: str,
 ):
-  featured = articles[0] if articles else None
-  featured_html = ""
-  if featured:
-    f_city_slug = CITIES.get(
-        featured["city"], {"slug": featured["city"].lower()}
-    )["slug"]
-    f_href = f"{root_prefix}{f_city_slug}/{featured['slug']}/"
-    f_img = f"{root_prefix}{featured['image'].lstrip('/')}"
-    f_alt = featured.get("imageAlt", featured["title"])
-    f_cat_label = featured["category"]
-    if featured.get("weekendDates"):
-      f_cat_label = f"{f_cat_label} ({featured['weekendDates']})"
-    featured_html = f"""
-      <a href="{f_href}" class="hero-featured-card" style="text-decoration: none; color: inherit;">
-        <img src="{f_img}" alt="{html.escape(f_alt)}" class="hero-featured-img" width="640" height="360" />
-        <div class="hero-featured-body">
-          <div class="hero-featured-meta">
-            <span>{html.escape(featured['city'].upper())}</span>
-            <span>·</span>
-            <span>{featured['categoryIcon']} {html.escape(f_cat_label)}</span>
-            <span>·</span>
-            <span style="color: var(--ink-muted);">{html.escape(featured['priceRange'])}</span>
-          </div>
-          <h2 class="hero-featured-heading">{html.escape(featured['title'])}</h2>
-          <p style="font-size: 0.88rem; color: var(--ink-secondary); margin-bottom: 0.65rem;">
-            {html.escape(featured['excerpt'])}
-          </p>
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--ink-muted);">
-            <span>📍 {html.escape(', '.join(featured['neighborhoods']))}</span>
-            <strong style="color: var(--terracotta);">Leer guía completa →</strong>
-          </div>
-        </div>
-      </a>"""
-
   cards_html = "\n".join(
-      render_article_card(a, root_prefix) for a in articles
+      render_article_card(
+          a, root_prefix, is_lead=(idx == 0 and len(articles) > 1)
+      )
+      for idx, a in enumerate(articles)
   )
 
   schema_ld = [{
@@ -366,49 +328,28 @@ def build_listing_page(
   {render_header(root_prefix, active_city)}
 
   <main class="main-container">
-    <section class="editorial-hero" aria-labelledby="main-hero-heading">
-      <div class="hero-copy">
-        <span class="hero-kicker">{html.escape(kicker)}</span>
-        <h1 class="hero-title" id="main-hero-heading">{html.escape(h1)}</h1>
-        <p class="hero-subtitle">{html.escape(subtitle)}</p>
-        <div class="hero-QuickStats">
-          <div class="stat-item">
-            <span class="stat-value">📅 Este Fin de Semana</span>
-            <span class="stat-label">Agenda de ferias y eventos</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">💸 Gratis y Baratos</span>
-            <span class="stat-label">Ideas por menos de 10 €</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">✨ Planes Diferentes</span>
-            <span class="stat-label">Para salir de la rutina</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">❤️ En Pareja</span>
-            <span class="stat-label">Citas y escapadas con encanto</span>
-          </div>
-        </div>
-      </div>
-      {featured_html}
-    </section>
+    <section class="page-header-section" aria-labelledby="main-hero-heading">
+      <span class="hero-kicker">{html.escape(kicker)}</span>
+      <h1 class="hero-title" id="main-hero-heading">{html.escape(h1)}</h1>
+      <p class="hero-subtitle">{html.escape(subtitle)}</p>
 
-    <section class="filter-toolbar" aria-label="Filtrar por estilo de plan">
-      <div class="style-pills">
-        <button type="button" class="style-pill-btn active" data-category="all" id="filter-cat-all">Todos los planes</button>
-        <button type="button" class="style-pill-btn" data-category="Este Fin de Semana" id="filter-cat-weekend">📅 Este Fin de Semana</button>
-        <button type="button" class="style-pill-btn" data-category="Gratis y Baratos" id="filter-cat-cheap">💸 Gratis y Baratos</button>
-        <button type="button" class="style-pill-btn" data-category="Planes Diferentes" id="filter-cat-unique">✨ Planes Diferentes</button>
-        <button type="button" class="style-pill-btn" data-category="En Pareja" id="filter-cat-couple">❤️ En Pareja</button>
-      </div>
-      <div class="search-box-wrapper">
-        <input
-          type="search"
-          id="article-search-input"
-          class="search-input"
-          placeholder="Buscar plan, feria o barrio (ej. Valdemoro, Albufera, gratis...)"
-          aria-label="Buscar planes"
-        />
+      <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
+        <div class="style-pills">
+          <button type="button" class="style-pill-btn active" data-category="all" id="filter-cat-all">Todos</button>
+          <button type="button" class="style-pill-btn" data-category="Este Fin de Semana" id="filter-cat-weekend">Este fin de semana</button>
+          <button type="button" class="style-pill-btn" data-category="Gratis y Baratos" id="filter-cat-cheap">Gratis y baratos</button>
+          <button type="button" class="style-pill-btn" data-category="Planes Diferentes" id="filter-cat-unique">Planes diferentes</button>
+          <button type="button" class="style-pill-btn" data-category="En Pareja" id="filter-cat-couple">En pareja</button>
+        </div>
+        <div class="search-box-wrapper">
+          <input
+            type="search"
+            id="article-search-input"
+            class="search-input"
+            placeholder="Buscar plan o barrio..."
+            aria-label="Buscar planes"
+          />
+        </div>
       </div>
     </section>
 
@@ -454,7 +395,7 @@ def build_article_page(art: dict, all_articles: list):
       "dateModified": art["publishedAt"],
       "author": {
           "@type": "Organization",
-          "name": "Redacción Qué Plan Hoy",
+          "name": "Qué Plan Hoy",
           "url": f"{SITE_URL}/sobre-nosotros/",
       },
       "publisher": {
@@ -500,47 +441,30 @@ def build_article_page(art: dict, all_articles: list):
       ],
   }
 
-  # Tabla Resumen Rápida con saltos directos (#plan-1, #plan-2...) para máxima usabilidad móvil y Featured Snippets
-  table_rows = []
+  toc_items = []
   for idx, sec in enumerate(art.get("sections", []), start=1):
     venue_label = sec.get("venue", sec["heading"])
-    table_rows.append(f"""
-          <tr>
-            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600;">
-              <a href="#plan-{idx}" style="color: var(--terracotta); text-decoration: none;">{idx}. {html.escape(venue_label)} ↓</a>
-            </td>
-            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); color: var(--ink-secondary);">{html.escape(sec['location'])}</td>
-            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600; color: var(--olive);">{html.escape(sec['price'])}</td>
-          </tr>""")
+    toc_items.append(
+        f'<li><a href="#plan-{idx}">{idx}. {html.escape(venue_label)}</a></li>'
+    )
 
   wa_text = urllib.parse.quote(
-      f"Mira qué planes para hacer en {city_name}: {art['title']} {canonical_url}"
+      f"Mira estos planes en {city_name}: {art['title']} {canonical_url}"
   )
   wa_share_url = f"https://api.whatsapp.com/send?text={wa_text}"
 
-  summary_table_html = f"""
-    <div style="background: var(--bg-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 2rem; overflow-x: auto;">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
-        <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--terracotta);">
-          📋 Resumen rápido e índice interactivo ({html.escape(city_name)})
-        </div>
-        <a href="{wa_share_url}" target="_blank" rel="noopener" style="font-size: 0.8rem; font-weight: 700; color: var(--olive); text-decoration: none; background: var(--olive-bg); padding: 0.35rem 0.75rem; border-radius: var(--radius-pill); border: 1px solid rgba(47, 107, 79, 0.25);">
-          📲 Compartir planes por WhatsApp
+  toc_html = f"""
+    <nav class="article-toc" aria-label="Índice de planes">
+      <div class="article-toc-header">
+        <span class="article-toc-title">En este artículo</span>
+        <a href="{wa_share_url}" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+          Enviar por WhatsApp ↗
         </a>
       </div>
-      <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left;">
-        <thead>
-          <tr style="border-bottom: 2px solid var(--border-strong);">
-            <th style="padding: 0.5rem 0.85rem;">Lugar / Plan (Pulsa para ir)</th>
-            <th style="padding: 0.5rem 0.85rem;">Ubicación y Transporte</th>
-            <th style="padding: 0.5rem 0.85rem;">Precio</th>
-          </tr>
-        </thead>
-        <tbody>
-          {''.join(table_rows)}
-        </tbody>
-      </table>
-    </div>"""
+      <ol class="article-toc-list">
+        {''.join(toc_items)}
+      </ol>
+    </nav>"""
 
   sections_html = []
   for idx, sec in enumerate(art.get("sections", []), start=1):
@@ -550,12 +474,12 @@ def build_article_page(art: dict, all_articles: list):
     sections_html.append(f"""
       <section class="reader-section" id="plan-{idx}" style="scroll-margin-top: 90px;">
         <h2>{html.escape(sec['heading'])}</h2>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">{html.escape(sec['content'])}</p>
         <div class="venue-meta-bar">
-          <span>📍 <strong>Dirección y cómo llegar:</strong> {html.escape(sec['location'])}</span>
-          <span>💶 <strong>Precio:</strong> {html.escape(sec['price'])}</span>
-          <a href="{maps_url}" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none;">🗺️ Ver en Google Maps →</a>
+          <span><strong>Dónde:</strong> {html.escape(sec['location'])}</span>
+          <span><strong>Precio:</strong> {html.escape(sec['price'])}</span>
+          <a href="{maps_url}" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
         </div>
-        <p style="font-size: 1.04rem; color: var(--ink-primary); line-height: 1.75;">{html.escape(sec['content'])}</p>
       </section>""")
 
   aff = art.get("affiliate", {})
@@ -575,8 +499,8 @@ def build_article_page(art: dict, all_articles: list):
     affiliate_html = f"""
       <aside class="affiliate-callout" aria-label="Actividad recomendada">
         <div style="flex: 1; min-width: 240px;">
-          <span class="affiliate-badge">✨ {html.escape(aff.get('badge', 'Plan Recomendado'))}</span>
-          <h3 style="font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 0.35rem;">
+          <span class="affiliate-badge">Para completar el plan</span>
+          <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.3rem;">
             {html.escape(aff.get('title', ''))}
           </h3>
           <p style="font-size: 0.92rem; color: var(--ink-secondary);">
@@ -584,9 +508,9 @@ def build_article_page(art: dict, all_articles: list):
           </p>
         </div>
         <div style="text-align: right;">
-          <div style="font-weight: 700; font-size: 1rem; margin-bottom: 0.45rem;">{html.escape(aff.get('price', ''))}</div>
+          <div style="font-weight: 600; font-size: 0.9rem; color: var(--ink-secondary); margin-bottom: 0.45rem;">{html.escape(aff.get('price', ''))}</div>
           <a href="{html.escape(aff_url)}" target="_blank" rel="noopener sponsored" class="affiliate-cta-btn">
-            {html.escape(aff.get('ctaText', 'Ver disponibilidad →'))}
+            {html.escape(aff.get('ctaText', 'Ver horarios y reservar →'))}
           </a>
         </div>
       </aside>"""
@@ -595,18 +519,9 @@ def build_article_page(art: dict, all_articles: list):
   for faq in art.get("faqs", []):
     faqs_html.append(f"""
       <div style="background: var(--bg-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-sm); padding: 1.15rem 1.35rem; margin-bottom: 0.85rem;">
-        <h3 style="font-size: 1.02rem; font-weight: 700; margin-bottom: 0.4rem;">{html.escape(faq['question'])}</h3>
-        <p style="font-size: 0.95rem; color: var(--ink-secondary);">{html.escape(faq['answer'])}</p>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem;">{html.escape(faq['question'])}</h3>
+        <p style="font-size: 0.94rem; color: var(--ink-secondary);">{html.escape(faq['answer'])}</p>
       </div>""")
-
-  # Bloque de Autoría y Verificación E-E-A-T para Google Quality Raters
-  eeat_box_html = f"""
-    <div style="background: var(--bg-subtle); border-left: 4px solid var(--terracotta); border-radius: var(--radius-sm); padding: 1.15rem 1.35rem; margin-top: 2.25rem; font-size: 0.88rem; color: var(--ink-secondary);">
-      <strong style="color: var(--ink-primary); display: block; margin-bottom: 0.25rem;">
-        ✔️ Guía verificada por el equipo editorial de ¿Qué Plan Hoy?
-      </strong>
-      Revisamos periódicamente las direcciones, tarifas vigentes y paradas de transporte público de cada propuesta en {html.escape(city_name)}. Si detectas algún cambio de horario en alguno de los locales, puedes escribirnos a través de nuestra página <a href="{root_prefix}sobre-nosotros/" style="color: var(--terracotta); font-weight: 600;">Sobre Nosotros</a>.
-    </div>"""
 
   related = [
       a
@@ -621,62 +536,64 @@ def build_article_page(art: dict, all_articles: list):
     ][: 3 - len(related)]
 
   related_cards = "\n".join(
-      render_article_card(r, root_prefix) for r in related[:3]
+      render_article_card(r, root_prefix, is_lead=False) for r in related[:3]
   )
+
+  cat_header = art["category"]
+  if art.get("weekendDates"):
+    cat_header = f"{cat_header} · {art['weekendDates']}"
 
   page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, faq_schema, breadcrumb_schema], full_img_url)}
 <body>
   {render_header(root_prefix, city_name)}
 
-  <main class="main-container" style="max-width: 860px;">
-    <nav aria-label="Migas de pan" style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1.25rem;">
+  <main class="main-container" style="max-width: 820px;">
+    <nav aria-label="Migas de pan" style="font-size: 0.84rem; color: var(--ink-muted); margin-bottom: 1.25rem;">
       <a href="{root_prefix}" style="color: var(--ink-secondary); text-decoration: none;">Inicio</a>
-      <span> › </span>
-      <a href="{root_prefix}{city_slug}/" style="color: var(--ink-secondary); text-decoration: none;">Planes en {html.escape(city_name)}</a>
-      <span> › </span>
+      <span> / </span>
+      <a href="{root_prefix}{city_slug}/" style="color: var(--ink-secondary); text-decoration: none;">{html.escape(city_name)}</a>
+      <span> / </span>
       <span style="color: var(--ink-primary);">{html.escape(art['category'])}</span>
     </nav>
 
     <article>
-      <div style="display: flex; gap: 0.6rem; align-items: center; font-size: 0.85rem; font-weight: 700; color: var(--terracotta); margin-bottom: 0.6rem; flex-wrap: wrap;">
-        <span>{html.escape(city_name.upper())}</span>
+      <div style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--terracotta); margin-bottom: 0.6rem; flex-wrap: wrap;">
+        <span>{html.escape(city_name)}</span>
         <span>·</span>
-        <span>{art['categoryIcon']} {html.escape(art['category'] + (f" ({art['weekendDates']})" if art.get('weekendDates') else ""))}</span>
+        <span>{html.escape(cat_header)}</span>
         <span>·</span>
-        <span style="color: var(--ink-muted); font-weight: 500;">Lectura: {html.escape(art['readTime'])} · Presupuesto: {html.escape(art['priceRange'])}</span>
+        <span style="color: var(--ink-muted); font-weight: 500; text-transform: none; letter-spacing: 0;">{html.escape(art['priceRange'])}</span>
       </div>
 
-      <h1 style="font-family: var(--font-serif); font-size: clamp(1.85rem, 3.5vw, 2.65rem); line-height: 1.16; margin-bottom: 1rem;">
+      <h1 style="font-family: var(--font-serif); font-size: clamp(1.85rem, 3.4vw, 2.55rem); line-height: 1.16; margin-bottom: 0.9rem;">
         {html.escape(art['title'])}
       </h1>
 
-      <p style="font-size: 1.12rem; color: var(--ink-secondary); margin-bottom: 1.25rem;">
+      <p style="font-size: 1.1rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         {html.escape(art['excerpt'])}
       </p>
 
-      <figure style="margin: 0 0 1.5rem 0;">
-        <img src="{img_src}" alt="{html.escape(img_alt)}" class="reader-hero-img" width="860" height="480" style="margin-bottom: 0.45rem;" />
+      <figure style="margin: 0 0 1.6rem 0;">
+        <img src="{img_src}" alt="{html.escape(img_alt)}" class="reader-hero-img" width="820" height="460" style="margin-bottom: 0.45rem;" />
         <figcaption style="font-size: 0.78rem; color: var(--ink-muted); text-align: right;">{html.escape(img_alt)}</figcaption>
       </figure>
 
-      {summary_table_html}
+      {toc_html}
 
       {''.join(sections_html)}
 
       {affiliate_html}
 
       <section style="margin-top: 2.5rem;" aria-labelledby="faq-heading">
-        <h2 id="faq-heading" style="font-family: var(--font-serif); font-size: 1.55rem; margin-bottom: 1.1rem;">
+        <h2 id="faq-heading" style="font-family: var(--font-serif); font-size: 1.45rem; margin-bottom: 1rem;">
           Preguntas frecuentes
         </h2>
         {''.join(faqs_html)}
       </section>
-
-      {eeat_box_html}
     </article>
 
     <section style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-hairline);">
-      <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 1.25rem;">
+      <h2 style="font-family: var(--font-serif); font-size: 1.45rem; margin-bottom: 1.25rem;">
         Más planes que te pueden gustar
       </h2>
       <div class="articles-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem;">
@@ -713,31 +630,31 @@ def build_about_page():
           ),
       },
   }
-  page_html = f"""{render_head("Sobre Nosotros y Criterio Editorial | Qué Plan Hoy", "Conoce cómo seleccionamos y verificamos los planes locales, gratuitos y en pareja de Qué Plan Hoy en Madrid, Barcelona, Valencia, Sevilla y Toledo.", canonical_url, root_prefix, [org_schema])}
+  page_html = f"""{render_head("Sobre Nosotros | Qué Plan Hoy", "Conoce cómo seleccionamos los planes locales, gratuitos y en pareja de Qué Plan Hoy en Madrid, Barcelona, Valencia, Sevilla y Toledo.", canonical_url, root_prefix, [org_schema])}
 <body>
   {render_header(root_prefix, "none")}
-  <main class="main-container" style="max-width: 780px;">
-    <span class="hero-kicker">TRANSPARENCIA Y CRITERIO LOCAL</span>
-    <h1 class="hero-title" style="margin-bottom: 1.25rem;">Sobre ¿Qué Plan Hoy?</h1>
-    <p style="font-size: 1.08rem; color: var(--ink-secondary); margin-bottom: 1.5rem;">
-      <strong>¿Qué Plan Hoy?</strong> nació con una misión sencilla: responder a la eterna pregunta de cada viernes por la tarde sin caer en las mismas diez recomendaciones masificadas de siempre.
+  <main class="main-container" style="max-width: 740px;">
+    <span class="hero-kicker">SOBRE NOSOTROS</span>
+    <h1 class="hero-title" style="margin-bottom: 1.25rem;">¿Qué es Qué Plan Hoy?</h1>
+    <p style="font-size: 1.06rem; color: var(--ink-secondary); margin-bottom: 1.5rem;">
+      <strong>¿Qué Plan Hoy?</strong> nació con una idea sencilla: responder a la pregunta de cada viernes por la tarde sin caer siempre en las mismas diez recomendaciones masificadas.
     </p>
     <section class="reader-section">
-      <h2>Cómo seleccionamos cada plan</h2>
+      <h2>Qué tipo de planes publicamos</h2>
       <p style="margin-top: 0.5rem;">
-        Nos enfocamos en cinco ciudades clave de España (<strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong>) y organizamos nuestras guías en cuatro pilares:
+        Seleccionamos propuestas en <strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong> pensadas tanto para quien vive en la ciudad como para quien hace una escapada de fin de semana:
       </p>
       <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
-        <li><strong>📅 Planes este Fin de Semana:</strong> Ferias históricas (como la Feria Barroca de Valdemoro), mercadillos especiales y eventos que suceden cada semana.</li>
-        <li><strong>💸 Planes Gratis y Baratos:</strong> Cultura, miradores, jardines históricos y rutas por menos de 10 €.</li>
-        <li><strong>✨ Planes Diferentes:</strong> Rincones poco conocidos, talleres creativos y alternativas fuera del circuito turístico habitual.</li>
-        <li><strong>❤️ Planes en Pareja:</strong> Citas originales y escapadas cercanas con encanto.</li>
+        <li><strong>Este fin de semana:</strong> Ferias históricas (como la Feria Barroca de Valdemoro), mercados puntuales y citas de agenda con sus fechas exactas.</li>
+        <li><strong>Gratis y baratos:</strong> Jardines ocultos, museos desconocidos, miradores y rutas por menos de 10 €.</li>
+        <li><strong>Planes diferentes:</strong> Alternativas fuera del circuito turístico habitual para salir de la rutina.</li>
+        <li><strong>En pareja:</strong> Citas originales, talleres creativos y paseos al atardecer.</li>
       </ul>
     </section>
     <section class="reader-section">
-      <h2>Datos prácticos verificados</h2>
+      <h2>Datos prácticos en cada ruta</h2>
       <p style="margin-top: 0.5rem;">
-        En todas nuestras rutas incluimos la dirección exacta, enlace directo a Google Maps, la parada de transporte público más cercana (Metro, Cercanías, EMT o tren Avant) y el rango de precios real en euros para que puedas planificar sin sorpresas.
+        En cada propuesta incluimos la dirección exacta, cómo llegar en transporte público (Metro, Cercanías, autobús o tren), el enlace directo a Google Maps y el precio real en euros.
       </p>
     </section>
     <section class="reader-section" style="border-bottom: none;">
@@ -810,11 +727,10 @@ def build_all():
       canonical_url=f"{SITE_URL}/",
       h1="Planes originales en tu ciudad: qué hacer fuera de lo típico",
       subtitle=(
-          "Selección local de planes diferentes, ferias históricas,"
-          " ideas gratis y citas en pareja en Madrid, Barcelona, Valencia,"
-          " Sevilla y Toledo con direcciones exactas y precios reales."
+          "Ferias de fin de semana, jardines secretos, ideas por menos de 10 €"
+          " y citas en pareja en Madrid, Barcelona, Valencia, Sevilla y Toledo."
       ),
-      kicker="QUÉ PLAN HOY · GUÍA DE PLANES ORIGINALES, GRATIS Y EN PAREJA",
+      kicker="GUÍA EDITORIAL DE PLANES",
       root_prefix="",
       active_city="all",
   )
@@ -829,7 +745,7 @@ def build_all():
         canonical_url=f"{SITE_URL}/{info['slug']}/",
         h1=info["h1"],
         subtitle=info["intro"],
-        kicker=f"GUÍA LOCAL DE {city_name.upper()} · QUÉ PLAN HOY",
+        kicker=f"GUÍA DE {city_name.upper()}",
         root_prefix="../",
         active_city=city_name,
     )
@@ -848,8 +764,8 @@ def build_all():
   ) as f:
     f.write("google-site-verification: googleb24ffbb97ddb75f6.html")
   print(
-      f"[OK] Sitio estático E-E-A-T generado: Portada + {len(CITIES)} ciudades"
-      f" + {len(articles)} guías + /sobre-nosotros/ + CNAME + sitemap.xml."
+      "[OK] Sitio estático E-E-A-T generado: Portada + 5 ciudades +"
+      f" {len(articles)} guías + /sobre-nosotros/ + CNAME + sitemap.xml."
   )
 
 
