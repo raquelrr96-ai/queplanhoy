@@ -384,7 +384,7 @@ def save_json(filepath: str, data):
 
 
 def regenerate_sitemap(
-    articles: list, base_url: str = "https://hoyqueplan.es"
+    articles: list, base_url: str = "https://queplanhoy.es"
 ):
   """Genera automáticamente public/sitemap.xml para las 5 ciudades y todos los artículos."""
   today = date.today().isoformat()
@@ -477,7 +477,7 @@ def generate_seo_article(
       "id": f"{city.lower()}-{slug[:32]}",
       "slug": slug,
       "title": suggested_title,
-      "metaTitle": f"{suggested_title[:50]} | HoyQuePlan",
+      "metaTitle": f"{suggested_title[:50]} | Qué Plan Hoy",
       "metaDescription": (
           f"Descubre los mejores {keyword.lower()} en {city}: direcciones"
           " exactas, paradas de transporte público, precios reales y planes"

@@ -1,4 +1,4 @@
-name: Publicar Artículo SEO Cada 3 Días y Desplegar Web (HoyQuePlan)
+name: Publicar Artículo SEO Cada 3 Días y Desplegar Web (QuePlanHoy)
 
 on:
   push:
