@@ -2,7 +2,7 @@
 """Agente Automatizado de Contenido SEO para HoyQuePlan (Madrid, Barcelona, Valencia, Sevilla y Toledo)."""
 
 import argparse
-from datetime import date
+from datetime import date, timedelta
 import json
 import os
 import re
@@ -633,6 +633,42 @@ def regenerate_sitemap(
     f.write(xml_content)
 
 
+MONTHS_ES = {
+    1: "enero",
+    2: "febrero",
+    3: "marzo",
+    4: "abril",
+    5: "mayo",
+    6: "junio",
+    7: "julio",
+    8: "agosto",
+    9: "septiembre",
+    10: "octubre",
+    11: "noviembre",
+    12: "diciembre",
+}
+
+
+def get_current_weekend_dates_es(ref_date: date | None = None) -> str:
+  """Calcula las fechas exactas de viernes a domingo del fin de semana actual o próximo."""
+  d = ref_date or date.today()
+  # weekday(): lunes=0 ... viernes=4, sábado=5, domingo=6
+  wd = d.weekday()
+  if wd <= 4:
+    friday = d + timedelta(days=(4 - wd))
+  elif wd == 5:
+    friday = d - timedelta(days=1)
+  else:
+    friday = d - timedelta(days=2)
+  sunday = friday + timedelta(days=2)
+  if friday.month == sunday.month:
+    return f"{friday.day} al {sunday.day} de {MONTHS_ES[sunday.month]} de {sunday.year}"
+  return (
+      f"{friday.day} de {MONTHS_ES[friday.month]} al {sunday.day} de"
+      f" {MONTHS_ES[sunday.month]} de {sunday.year}"
+  )
+
+
 def generate_seo_article(
     city: str,
     category: str,
@@ -649,8 +685,11 @@ def generate_seo_article(
   related_in_city = [a for a in existing_articles if a.get("city") == city]
 
   raw_venues = list(kb["venues"])
+  is_weekend_cat = category == "Este Fin de Semana"
+  weekend_dates = get_current_weekend_dates_es() if is_weekend_cat else ""
+
   if (
-      category == "Este Fin de Semana"
+      is_weekend_cat
       or "fin de semana" in keyword.lower()
       or "que hacer hoy" in keyword.lower()
   ):
@@ -669,14 +708,22 @@ def generate_seo_article(
     })
 
   if not suggested_title:
-    suggested_title = (
-        f"{len(sections)} Planes en {city}: {keyword.capitalize()} (2026)"
-    )
+    if is_weekend_cat:
+      suggested_title = (
+          f"{len(sections)} Planes este Fin de Semana en {city}"
+          f" ({weekend_dates}): {keyword.capitalize()}"
+      )
+    else:
+      suggested_title = (
+          f"{len(sections)} Planes en {city}: {keyword.capitalize()} (2026)"
+      )
   else:
     # Garantizar siempre que si el título empieza por un número (ej. "7 Planes..."), coincida exactamente con len(sections)
     suggested_title = re.sub(
         r"^\d+\b", str(len(sections)), suggested_title.strip()
     )
+    if is_weekend_cat and weekend_dates not in suggested_title:
+      suggested_title = f"{suggested_title} ({weekend_dates})"
 
   slug = slugify(keyword if len(keyword) > 12 else suggested_title)
   today_str = date.today().isoformat()
@@ -706,15 +753,17 @@ def generate_seo_article(
       "id": f"{city.lower()}-{slug[:32]}",
       "slug": slug,
       "title": suggested_title,
-      "metaTitle": f"{suggested_title[:50]} | Qué Plan Hoy",
+      "metaTitle": f"{suggested_title[:58]} | Qué Plan Hoy",
       "metaDescription": (
-          f"Descubre los mejores {keyword.lower()} en {city}: direcciones"
-          " exactas, paradas de transporte público, precios reales y planes"
-          " originales."
+          f"Descubre los mejores {keyword.lower()} en {city}"
+          + (f" ({weekend_dates})" if weekend_dates else "")
+          + ": direcciones exactas, paradas de transporte público, precios"
+          " reales y planes originales."
       ),
       "city": city,
       "category": category,
       "categoryIcon": cat_icon,
+      **({"weekendDates": weekend_dates} if weekend_dates else {}),
       "readTime": "6 min",
       "publishedAt": today_str,
       "targetKeyword": keyword.lower(),

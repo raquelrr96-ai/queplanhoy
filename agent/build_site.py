@@ -24,7 +24,7 @@ SITE_URL = "https://queplanhoy.es"
 CITIES = {
     "Madrid": {
         "slug": "madrid",
-        "h1": "Planes en Madrid hoy y este fin de semana: qué hacer fuera de lo típico",
+        "h1": "Planes en Madrid: qué hacer fuera de lo típico",
         "metaTitle": (
             "Qué Planes Hacer Hoy en Madrid y Este Fin de Semana (2026) | Qué"
             " Plan Hoy"
@@ -35,15 +35,14 @@ CITIES = {
             " citas en pareja."
         ),
         "intro": (
-            "Descubre qué planes hacer hoy y este fin de semana en Madrid:"
-            " ferias históricas, mercados al aire libre, terrazas secretas,"
-            " jardines gratuitos y citas originales con paradas de Metro y"
-            " precios reales."
+            "Nuestra selección de ferias históricas, mercados al aire libre,"
+            " terrazas secretas, jardines gratuitos y citas originales en"
+            " Madrid con paradas de Metro y precios reales."
         ),
     },
     "Barcelona": {
         "slug": "barcelona",
-        "h1": "Planes en Barcelona hoy y este fin de semana: miradores, citas y agenda",
+        "h1": "Planes en Barcelona: miradores, citas y rincones sin colas",
         "metaTitle": (
             "Qué Planes Hacer Hoy en Barcelona y Este Fin de Semana (2026) |"
             " Qué Plan Hoy"
@@ -54,14 +53,14 @@ CITIES = {
             " en pareja."
         ),
         "intro": (
-            "Explora qué planes hacer hoy y este fin de semana en Barcelona"
-            " lejos de las aglomeraciones: desde jardines neoclásicos gratuitos"
-            " hasta terrazas con vistas al Mediterráneo y planes en pareja."
+            "Explora una Barcelona lejos de las aglomeraciones: desde jardines"
+            " neoclásicos gratuitos hasta terrazas con vistas al Mediterráneo y"
+            " planes en pareja."
         ),
     },
     "Valencia": {
         "slug": "valencia",
-        "h1": "Planes en Valencia hoy y este fin de semana: atardeceres, huerta y cultura",
+        "h1": "Planes en Valencia: atardeceres, huerta y cultura local",
         "metaTitle": (
             "Qué Planes Hacer Hoy en Valencia y Este Fin de Semana (2026) | Qué"
             " Plan Hoy"
@@ -72,14 +71,14 @@ CITIES = {
             " rutas por la huerta y El Cabanyal."
         ),
         "intro": (
-            "Los mejores planes que hacer hoy y este fin de semana en Valencia:"
-            " escapadas en autobús urbano a L'Albufera, jardines escondidos y"
-            " tapeo en barrios marineros."
+            "Los mejores planes para disfrutar de Valencia: escapadas en"
+            " autobús urbano a L'Albufera, jardines escondidos y tapeo en"
+            " barrios marineros."
         ),
     },
     "Sevilla": {
         "slug": "sevilla",
-        "h1": "Planes en Sevilla hoy y este fin de semana: casas-palacio, patios y rutas",
+        "h1": "Planes en Sevilla: casas-palacio, patios y rutas al atardecer",
         "metaTitle": (
             "Qué Planes Hacer Hoy en Sevilla y Este Fin de Semana (2026) | Qué"
             " Plan Hoy"
@@ -90,14 +89,14 @@ CITIES = {
             " Triana y Santa Cruz."
         ),
         "intro": (
-            "Vive Sevilla con ojos locales este fin de semana: palacios"
-            " gratuitos, mercadillos históricos, rutas al anochecer por la"
-            " antigua judería y planes auténticos en Triana."
+            "Vive Sevilla con ojos locales: palacios gratuitos, mercadillos"
+            " históricos, rutas al anochecer por la antigua judería y planes"
+            " auténticos en Triana."
         ),
     },
     "Toledo": {
         "slug": "toledo",
-        "h1": "Planes en Toledo hoy y este fin de semana: escapadas y rutas nocturnas",
+        "h1": "Planes en Toledo: escapadas, rutas nocturnas y rincones ocultos",
         "metaTitle": (
             "Qué Planes Hacer Hoy en Toledo y Este Fin de Semana (2026) | Qué"
             " Plan Hoy"
@@ -108,9 +107,9 @@ CITIES = {
             " subterráneos a 33 min de Madrid."
         ),
         "intro": (
-            "A solo 33 minutos en tren desde Madrid: descubre qué planes hacer"
-            " hoy y este fin de semana en Toledo, desde pasadizos medievales"
-            " iluminados hasta baños árabes."
+            "A solo 33 minutos en tren desde Madrid: descubre qué hacer en"
+            " Toledo cuando se marchan los autobuses turísticos, desde"
+            " pasadizos medievales iluminados hasta baños árabes."
         ),
     },
 }
@@ -238,6 +237,9 @@ def render_article_card(art: dict, root_prefix: str) -> str:
   article_href = f"{root_prefix}{city_slug}/{art['slug']}/"
   img_src = f"{root_prefix}{art['image'].lstrip('/')}"
   img_alt = art.get("imageAlt", art["title"])
+  cat_label = art["category"]
+  if art.get("weekendDates"):
+    cat_label = f"{cat_label} ({art['weekendDates']})"
   return f"""
   <article class="article-card" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
     <a href="{article_href}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
@@ -248,7 +250,7 @@ def render_article_card(art: dict, root_prefix: str) -> str:
       </div>
       <div class="card-body">
         <div class="card-meta-top">
-          <span class="card-category">{art['categoryIcon']} {html.escape(art['category'])}</span>
+          <span class="card-category">{art['categoryIcon']} {html.escape(cat_label)}</span>
           <span style="color: var(--ink-muted); font-size: 0.76rem;">⏱ {html.escape(art['readTime'])} de lectura</span>
         </div>
         <h2 class="card-title" style="font-size: 1.25rem;">{html.escape(art['title'])}</h2>
@@ -322,6 +324,9 @@ def build_listing_page(
     f_href = f"{root_prefix}{f_city_slug}/{featured['slug']}/"
     f_img = f"{root_prefix}{featured['image'].lstrip('/')}"
     f_alt = featured.get("imageAlt", featured["title"])
+    f_cat_label = featured["category"]
+    if featured.get("weekendDates"):
+      f_cat_label = f"{f_cat_label} ({featured['weekendDates']})"
     featured_html = f"""
       <a href="{f_href}" class="hero-featured-card" style="text-decoration: none; color: inherit;">
         <img src="{f_img}" alt="{html.escape(f_alt)}" class="hero-featured-img" width="640" height="360" />
@@ -329,7 +334,7 @@ def build_listing_page(
           <div class="hero-featured-meta">
             <span>{html.escape(featured['city'].upper())}</span>
             <span>·</span>
-            <span>{featured['categoryIcon']} {html.escape(featured['category'])}</span>
+            <span>{featured['categoryIcon']} {html.escape(f_cat_label)}</span>
             <span>·</span>
             <span style="color: var(--ink-muted);">{html.escape(featured['priceRange'])}</span>
           </div>
@@ -636,7 +641,7 @@ def build_article_page(art: dict, all_articles: list):
       <div style="display: flex; gap: 0.6rem; align-items: center; font-size: 0.85rem; font-weight: 700; color: var(--terracotta); margin-bottom: 0.6rem; flex-wrap: wrap;">
         <span>{html.escape(city_name.upper())}</span>
         <span>·</span>
-        <span>{art['categoryIcon']} {html.escape(art['category'])}</span>
+        <span>{art['categoryIcon']} {html.escape(art['category'] + (f" ({art['weekendDates']})" if art.get('weekendDates') else ""))}</span>
         <span>·</span>
         <span style="color: var(--ink-muted); font-weight: 500;">Lectura: {html.escape(art['readTime'])} · Presupuesto: {html.escape(art['priceRange'])}</span>
       </div>
@@ -805,13 +810,13 @@ def build_all():
           " Barcelona, Valencia, Sevilla y Toledo."
       ),
       canonical_url=f"{SITE_URL}/",
-      h1="¿Qué planes hacer hoy y este fin de semana?",
+      h1="Planes originales en tu ciudad: qué hacer fuera de lo típico",
       subtitle=(
-          "Agenda actualizada de planes este fin de semana, ferias históricas,"
-          " ideas baratas y citas en pareja en Madrid, Barcelona, Valencia,"
+          "Selección local de planes diferentes, ferias históricas,"
+          " ideas gratis y citas en pareja en Madrid, Barcelona, Valencia,"
           " Sevilla y Toledo con direcciones exactas y precios reales."
       ),
-      kicker="QUÉ PLAN HOY · AGENDA DE FIN DE SEMANA Y PLANES ORIGINALES",
+      kicker="QUÉ PLAN HOY · GUÍA DE PLANES ORIGINALES, GRATIS Y EN PAREJA",
       root_prefix="",
       active_city="all",
   )
