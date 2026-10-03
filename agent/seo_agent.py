@@ -66,21 +66,20 @@ CITY_KNOWLEDGE_BASE = {
             },
         ],
         "affiliate": {
-            "partner": "Fever / Civitatis",
+            "partner": "Civitatis",
             "badge": "Top Experiencia en Madrid",
             "title": (
-                "Exposiciones Inmersivas y Conciertos Candlelight a Cubierto en"
-                " Madrid"
+                "Free Tour por el Madrid de los Austrias y el Siglo de Oro"
             ),
             "description": (
-                "Descubre las experiencias culturales mejor valoradas de esta"
-                " semana en Madrid: desde conciertos a la luz de las velas"
-                " hasta rutas históricas."
+                "Descubre las historias, pasadizos y plazas secretas del Madrid"
+                " de los Austrias y el Barrio de las Letras con guía local."
             ),
-            "price": "Desde 15 € por persona",
-            "ctaText": "Ver experiencias disponibles esta semana →",
+            "price": "Gratis (Propina libre)",
+            "url": "https://www.civitatis.com/es/madrid/free-tour-madrid/",
+            "ctaText": "Reservar Free Tour por Madrid →",
             "commissionNote": (
-                "Enlace de afiliado Fever/Civitatis (Comisión media: 10%)"
+                "Enlace directo a la actividad en Civitatis"
             ),
         },
     },
@@ -136,21 +135,21 @@ CITY_KNOWLEDGE_BASE = {
             },
         ],
         "affiliate": {
-            "partner": "GetYourGuide / TheFork",
+            "partner": "Civitatis",
             "badge": "Plan Estrella en Barcelona",
             "title": (
-                "Ruta de Tapas, Vino y Jazz en Vivo por el Barrio Gótico y El"
+                "Free Tour de los Misterios y Leyendas del Barrio Gótico y El"
                 " Born"
             ),
             "description": (
-                "Recorre bodegas centenarias de Barcelona con degustación de"
-                " vinos catalanes y tapas artesanas o reserva mesa con"
-                " descuento."
+                "Recorre al caer la tarde los callejones medievales del Barrio"
+                " Gótico y El Born descubriendo sus secretos mejor guardados."
             ),
-            "price": "Desde 19 € por persona",
-            "ctaText": "Ver disponibilidad y descuentos →",
+            "price": "Gratis (Propina libre)",
+            "url": "https://www.civitatis.com/es/barcelona/free-tour-misterios-leyendas-barrio-gotico/",
+            "ctaText": "Reservar Free Tour por el Barrio Gótico →",
             "commissionNote": (
-                "Enlace de afiliado GetYourGuide / TheFork (Comisión: 10% - 12%)"
+                "Enlace directo a la actividad en Civitatis"
             ),
         },
     },
@@ -204,21 +203,21 @@ CITY_KNOWLEDGE_BASE = {
             },
         ],
         "affiliate": {
-            "partner": "Fever / Civitatis",
+            "partner": "Civitatis",
             "badge": "Plan Favorito en Valencia",
             "title": (
-                "Paseo en Barca al Atardecer en L'Albufera + Conciertos"
-                " Candlelight Valencia"
+                "Excursión y Paseo en Barca Tradicional por la Albufera de"
+                " Valencia"
             ),
             "description": (
-                "Vive la puesta de sol desde el agua en la Albufera o disfruta"
-                " de un concierto a la luz de las velas en el Ateneo Mercantil"
-                " de Valencia."
+                "Vive la puesta de sol desde el agua navegando en barca"
+                " tradicional (albuferenc) por el Parque Natural de L'Albufera."
             ),
             "price": "Desde 12 € por persona",
-            "ctaText": "Consultar horarios y entradas en Valencia →",
+            "url": "https://www.civitatis.com/es/valencia/excursion-albufera/",
+            "ctaText": "Ver horarios del paseo en barca por L'Albufera →",
             "commissionNote": (
-                "Enlace de afiliado Fever / Civitatis (Comisión del 10% - 12%)"
+                "Enlace directo a la actividad en Civitatis"
             ),
         },
     },
@@ -269,18 +268,17 @@ CITY_KNOWLEDGE_BASE = {
             "partner": "Civitatis",
             "badge": "Top Ventas en Sevilla",
             "title": (
-                "Free Tour por Triana y Santa Cruz al Atardecer + Tablao"
-                " Íntimo"
+                "Free Tour por el Barrio de Triana al Atardecer"
             ),
             "description": (
-                "Descubre los patios ocultos y leyendas de la antigua judería"
-                " y la cuna del flamenco en Triana con un guía local sevillano."
+                "Descubre los corrales de vecinos, talleres de alfarería y la"
+                " historia del flamenco en Triana con un guía local sevillano."
             ),
             "price": "Gratis (Propina libre)",
-            "ctaText": "Reservar plaza gratis en Sevilla →",
+            "url": "https://www.civitatis.com/es/sevilla/free-tour-triana/",
+            "ctaText": "Reservar Free Tour por Triana →",
             "commissionNote": (
-                "Enlace de afiliado Civitatis (Alta conversión en escapadas a"
-                " Sevilla)"
+                "Enlace directo a la actividad en Civitatis"
             ),
         },
     },
@@ -332,16 +330,17 @@ CITY_KNOWLEDGE_BASE = {
             "partner": "Civitatis",
             "badge": "Imprescindible en Toledo",
             "title": (
-                "Free Tour por el Toledo de las 3 Culturas + Toledo Subterráneo"
+                "Free Tour por Toledo y las 3 Culturas con Guía Oficial"
             ),
             "description": (
                 "Descubre las historias de cristianos, judíos y musulmanes por"
                 " las callejuelas laberínticas de Toledo con guía oficial."
             ),
             "price": "Gratis (Reserva online en 1 minuto)",
-            "ctaText": "Reservar plaza gratis en Civitatis →",
+            "url": "https://www.civitatis.com/es/toledo/free-tour-toledo/",
+            "ctaText": "Reservar Free Tour por Toledo →",
             "commissionNote": (
-                "Enlace de afiliado Civitatis (Altísima conversión en Toledo)"
+                "Enlace directo a la actividad en Civitatis"
             ),
         },
     },

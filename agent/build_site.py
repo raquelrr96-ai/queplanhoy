@@ -554,7 +554,17 @@ def build_article_page(art: dict, all_articles: list):
       </section>""")
 
   aff = art.get("affiliate", {})
-  aff_url = aff.get("url", "https://www.civitatis.com/es/")
+  aff_url = aff.get(
+      "url", f"https://www.civitatis.com/es/{city_slug}/"
+  )
+  civitatis_aid = os.environ.get("CIVITATIS_AID", "").strip()
+  if (
+      civitatis_aid
+      and "civitatis.com" in aff_url
+      and "aid=" not in aff_url
+  ):
+    sep = "&" if "?" in aff_url else "?"
+    aff_url = f"{aff_url}{sep}aid={civitatis_aid}"
   affiliate_html = ""
   if aff:
     affiliate_html = f"""

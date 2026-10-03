@@ -26,11 +26,12 @@
     "affiliate": {
       "partner": "Civitatis",
       "badge": "Especial Fin de Semana en Madrid",
-      "title": "Free Tour por el Madrid Histórico + Visitas Guiadas de Fin de Semana",
+      "title": "Free Tour por el Madrid de los Austrias y el Siglo de Oro",
       "description": "Completa tu sábado o domingo descubriendo los secretos del Madrid de los Austrias y el Barrio de las Letras con un guía experto local.",
       "price": "Gratis (Reserva online en 1 minuto)",
-      "ctaText": "Ver horarios para este fin de semana →",
-      "commissionNote": "Enlace de afiliado Civitatis"
+      "ctaText": "Reservar Free Tour por Madrid en Civitatis →",
+      "commissionNote": "Enlace de afiliado Civitatis",
+      "url": "https://www.civitatis.com/es/madrid/free-tour-madrid/"
     },
     "sections": [
       {
@@ -94,11 +95,12 @@
     "affiliate": {
       "partner": "Fever / Civitatis",
       "badge": "Recomendación Top Reserva",
-      "title": "Free Tour por el Madrid de los Austrias y Leyendas Ocultas",
+      "title": "Free Tour por el Madrid de los Austrias y Leyendas",
       "description": "El complemento perfecto antes del vermut: recorre los pasadizos y callejones históricos con un guía local. Reserva gratis y paga según tu experiencia.",
       "price": "Gratis (Propina libre)",
-      "ctaText": "Ver disponibilidad del Free Tour →",
-      "commissionNote": "Enlace de afiliado (Comisión estimada: ~3 € - 8 € por reserva)"
+      "ctaText": "Reservar Free Tour de los Austrias →",
+      "commissionNote": "Enlace de afiliado (Comisión estimada: ~3 € - 8 € por reserva)",
+      "url": "https://www.civitatis.com/es/madrid/free-tour-madrid/"
     },
     "sections": [
       {
@@ -162,11 +164,12 @@
     "affiliate": {
       "partner": "Civitatis / Fever",
       "badge": "Plan Estrella en Valencia",
-      "title": "Paseo en Barca Tradicional al Atardecer por L'Albufera de Valencia",
+      "title": "Excursión y Paseo en Barca Tradicional por la Albufera de Valencia",
       "description": "Navega por la laguna natural en un 'albuferenc' de madera a la hora dorada con explicación de un barquero local de El Palmar.",
       "price": "Desde 6 € – 12 € por persona",
-      "ctaText": "Ver horarios del paseo al atardecer →",
-      "commissionNote": "Enlace de afiliado Civitatis (Alta conversión en parejas y fines de semana)"
+      "ctaText": "Ver horarios del paseo en barca por L'Albufera →",
+      "commissionNote": "Enlace de afiliado Civitatis (Alta conversión en parejas y fines de semana)",
+      "url": "https://www.civitatis.com/es/valencia/excursion-albufera/"
     },
     "sections": [
       {
@@ -297,11 +300,12 @@
     "affiliate": {
       "partner": "Fever",
       "badge": "Plan Más Reservado en Pareja",
-      "title": "Experiencia Cerámica & Vino + Conciertos Candlelight Madrid",
+      "title": "Tour de Vinos y Tapas por las Tabernas Históricas de Madrid",
       "description": "Reserva plaza para dos en el taller de pintura cerámica con vino en Chamberí o entradas para los conciertos a la luz de las velas en el Círculo de Bellas Artes.",
       "price": "Desde 22 € por persona",
-      "ctaText": "Consultar fechas y entradas →",
-      "commissionNote": "Enlace de afiliado Fever (Comisión del 10% sobre el carrito total)"
+      "ctaText": "Ver disponibilidad del Tour de Vinos y Tapas →",
+      "commissionNote": "Enlace de afiliado Fever (Comisión del 10% sobre el carrito total)",
+      "url": "https://www.civitatis.com/es/madrid/tour-tapas-vinos-madrid/"
     },
     "sections": [
       {
@@ -354,11 +358,12 @@
     "affiliate": {
       "partner": "GetYourGuide / Civitatis",
       "badge": "Experiencia Recomendada",
-      "title": "Paseo en Catamarán al Atardecer con Música en Directo desde Port Vell",
+      "title": "Free Tour por Montjuïc + Paseo en Catamarán al Atardecer en Barcelona",
       "description": "¿Quieres ver el skyline de Barcelona desde el mar? Sube a un catamarán ecológico al caer el sol con copa de cava o refresco incluido.",
       "price": "Desde 18 € por persona",
-      "ctaText": "Ver horarios del Catamarán al Atardecer →",
-      "commissionNote": "Enlace de afiliado GetYourGuide (Comisión del 12% por reserva)"
+      "ctaText": "Reservar Free Tour por Montjuïc →",
+      "commissionNote": "Enlace de afiliado GetYourGuide (Comisión del 12% por reserva)",
+      "url": "https://www.civitatis.com/es/barcelona/free-tour-montjuic/"
     },
     "sections": [
       {
