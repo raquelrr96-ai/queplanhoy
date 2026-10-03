@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Generador de Sitio Estático (SSG) para ¿Qué Plan Hoy? (queplanhoy.es).
 
-Crea páginas HTML reales y limpias para el usuario final (sin jerga técnica de SEO visible),
-mientras inyecta todo el SEO técnico (Meta-tags, Schema.org Article + FAQPage, OpenGraph,
-Breadcrumbs y Sitemap XML) de forma invisible en el código fuente para Google:
+Diseñado con los estándares E-E-A-T de Google (Experience, Expertise, Authoritativeness,
+Trustworthiness) y Helpful Content:
   - /index.html (Portada general)
-  - /madrid/index.html, /barcelona/index.html, /valencia/index.html, /sevilla/index.html, /toledo/index.html
-  - /<ciudad>/<slug>/index.html (Página individual de cada artículo)
+  - /madrid/, /barcelona/, /valencia/, /sevilla/, /toledo/ (Páginas de ciudad)
+  - /<ciudad>/<slug>/ (Páginas de cada guía con Tabla Resumen para Featured Snippets,
+    Schema.org Article + FAQPage + BreadcrumbList y Ficha de Verificación Editorial)
+  - /sobre-nosotros/ (Página de transparencia editorial y autoría para E-E-A-T y afiliados)
 """
 
 from datetime import date
@@ -33,9 +34,9 @@ CITIES = {
             " jardines ocultos y cultura."
         ),
         "intro": (
-            "Nuestra selección actualizada de rincones secretos, talleres"
-            " creativos, jardines gratuitos y planes en pareja en Madrid con"
-            " precios exactos y paradas de Metro."
+            "Nuestra selección de rincones secretos, talleres creativos,"
+            " jardines gratuitos y planes en pareja en Madrid con precios"
+            " exactos y paradas de Metro."
         ),
     },
     "Barcelona": {
@@ -119,12 +120,18 @@ def render_head(
     canonical_url: str,
     root_prefix: str,
     json_ld_list: list,
+    og_image: str = "",
 ) -> str:
   ld_scripts = "\n".join(
       '<script type="application/ld+json">\n'
       + json.dumps(ld, ensure_ascii=False, indent=2)
       + "\n</script>"
       for ld in json_ld_list
+  )
+  og_img_tag = (
+      f'<meta property="og:image" content="{html.escape(og_image)}" />'
+      if og_image
+      else ""
   )
   return f"""<!DOCTYPE html>
 <html lang="es">
@@ -133,11 +140,15 @@ def render_head(
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="{canonical_url}" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Qué Plan Hoy" />
   <meta property="og:title" content="{html.escape(title)}" />
   <meta property="og:description" content="{html.escape(description)}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{canonical_url}" />
+  {og_img_tag}
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{root_prefix}sitemap.xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -172,7 +183,7 @@ def render_header(root_prefix: str, active_city: str = "all") -> str:
   <div class="top-utility-bar">
     <div class="top-utility-inner">
       <div class="agent-status-indicator" style="font-family: var(--font-sans); color: var(--bg-paper);">
-        <span>✨ Guía local de planes originales, gratis y en pareja en España · Actualizada cada semana</span>
+        <span>✨ Guía local de planes originales en España</span>
       </div>
       <div class="utility-actions">
         <a href="{root_prefix}madrid/" class="utility-link-btn">Madrid</a>
@@ -205,14 +216,16 @@ def render_footer(root_prefix: str) -> str:
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
       <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
-      <nav aria-label="Enlaces de ciudades en el pie" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
+      <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="{root_prefix}madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Madrid</a>
         <a href="{root_prefix}barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Barcelona</a>
         <a href="{root_prefix}valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Valencia</a>
         <a href="{root_prefix}sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Sevilla</a>
         <a href="{root_prefix}toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Planes en Toledo</a>
+        <span>·</span>
+        <a href="{root_prefix}sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre Nosotros y Criterio Editorial</a>
       </nav>
-      <p style="font-size: 0.78rem; margin-top: 0.5rem;">© {date.today().year} Qué Plan Hoy · Todos los derechos reservados.</p>
+      <p style="font-size: 0.78rem; margin-top: 0.5rem;">© {date.today().year} Qué Plan Hoy · Selección verificada en España.</p>
     </div>
   </footer>"""
 
@@ -416,17 +429,22 @@ def build_article_page(art: dict, all_articles: list):
   canonical_url = f"{SITE_URL}/{city_slug}/{art['slug']}/"
   img_src = f"{root_prefix}{art['image'].lstrip('/')}"
   img_alt = art.get("imageAlt", art["title"])
+  full_img_url = f"{SITE_URL}/{art['image'].lstrip('/')}"
 
-  # Schema.org Article + FAQPage + BreadcrumbList (100% invisible para el lector, leído por Google)
   article_schema = {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": art["title"],
       "description": art["metaDescription"],
-      "image": f"{SITE_URL}/{art['image'].lstrip('/')}",
+      "image": [full_img_url],
       "datePublished": art["publishedAt"],
       "dateModified": art["publishedAt"],
       "author": {
+          "@type": "Organization",
+          "name": "Redacción Qué Plan Hoy",
+          "url": f"{SITE_URL}/sobre-nosotros/",
+      },
+      "publisher": {
           "@type": "Organization",
           "name": "Qué Plan Hoy",
           "url": SITE_URL,
@@ -468,6 +486,36 @@ def build_article_page(art: dict, all_articles: list):
           },
       ],
   }
+
+  # Tabla Resumen Rápida (Ideal para Featured Snippets de Google y utilidad real del lector)
+  table_rows = []
+  for sec in art.get("sections", []):
+    venue_label = sec.get("venue", sec["heading"])
+    table_rows.append(f"""
+          <tr>
+            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600;">{html.escape(venue_label)}</td>
+            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); color: var(--ink-secondary);">{html.escape(sec['location'])}</td>
+            <td style="padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--border-hairline); font-weight: 600; color: var(--olive);">{html.escape(sec['price'])}</td>
+          </tr>""")
+
+  summary_table_html = f"""
+    <div style="background: var(--bg-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 2rem; overflow-x: auto;">
+      <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--terracotta); margin-bottom: 0.65rem;">
+        📋 Resumen rápido de la ruta en {html.escape(city_name)}
+      </div>
+      <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left;">
+        <thead>
+          <tr style="border-bottom: 2px solid var(--border-strong);">
+            <th style="padding: 0.5rem 0.85rem;">Lugar / Plan</th>
+            <th style="padding: 0.5rem 0.85rem;">Ubicación y Transporte</th>
+            <th style="padding: 0.5rem 0.85rem;">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          {''.join(table_rows)}
+        </tbody>
+      </table>
+    </div>"""
 
   sections_html = []
   for sec in art.get("sections", []):
@@ -512,13 +560,21 @@ def build_article_page(art: dict, all_articles: list):
         <p style="font-size: 0.95rem; color: var(--ink-secondary);">{html.escape(faq['answer'])}</p>
       </div>""")
 
-  # Artículos relacionados para enlazado interno SEO (Clúster)
+  # Bloque de Autoría y Verificación E-E-A-T para Google Quality Raters
+  eeat_box_html = f"""
+    <div style="background: var(--bg-subtle); border-left: 4px solid var(--terracotta); border-radius: var(--radius-sm); padding: 1.15rem 1.35rem; margin-top: 2.25rem; font-size: 0.88rem; color: var(--ink-secondary);">
+      <strong style="color: var(--ink-primary); display: block; margin-bottom: 0.25rem;">
+        ✔️ Guía verificada por el equipo editorial de ¿Qué Plan Hoy?
+      </strong>
+      Revisamos periódicamente las direcciones, tarifas vigentes y paradas de transporte público de cada propuesta en {html.escape(city_name)}. Si detectas algún cambio de horario en alguno de los locales, puedes escribirnos a través de nuestra página <a href="{root_prefix}sobre-nosotros/" style="color: var(--terracotta); font-weight: 600;">Sobre Nosotros</a>.
+    </div>"""
+
   related = [
       a
       for a in all_articles
       if a["id"] != art["id"] and a["city"] == city_name
   ]
-  if len(related) < 2:
+  if len(related) < 3:
     related += [
         a
         for a in all_articles
@@ -529,7 +585,7 @@ def build_article_page(art: dict, all_articles: list):
       render_article_card(r, root_prefix) for r in related[:3]
   )
 
-  page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, faq_schema, breadcrumb_schema])}
+  page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, faq_schema, breadcrumb_schema], full_img_url)}
 <body>
   {render_header(root_prefix, city_name)}
 
@@ -543,7 +599,7 @@ def build_article_page(art: dict, all_articles: list):
     </nav>
 
     <article>
-      <div style="display: flex; gap: 0.6rem; align-items: center; font-size: 0.85rem; font-weight: 700; color: var(--terracotta); margin-bottom: 0.6rem;">
+      <div style="display: flex; gap: 0.6rem; align-items: center; font-size: 0.85rem; font-weight: 700; color: var(--terracotta); margin-bottom: 0.6rem; flex-wrap: wrap;">
         <span>{html.escape(city_name.upper())}</span>
         <span>·</span>
         <span>{art['categoryIcon']} {html.escape(art['category'])}</span>
@@ -561,6 +617,8 @@ def build_article_page(art: dict, all_articles: list):
 
       <img src="{img_src}" alt="{html.escape(img_alt)}" class="reader-hero-img" width="860" height="480" />
 
+      {summary_table_html}
+
       {''.join(sections_html)}
 
       {affiliate_html}
@@ -571,6 +629,8 @@ def build_article_page(art: dict, all_articles: list):
         </h2>
         {''.join(faqs_html)}
       </section>
+
+      {eeat_box_html}
     </article>
 
     <section style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-hairline);">
@@ -592,12 +652,76 @@ def build_article_page(art: dict, all_articles: list):
     f.write(page_html)
 
 
+def build_about_page():
+  root_prefix = "../"
+  output_path = os.path.join(PUBLIC_DIR, "sobre-nosotros", "index.html")
+  canonical_url = f"{SITE_URL}/sobre-nosotros/"
+  org_schema = {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Sobre Qué Plan Hoy y Criterio Editorial",
+      "url": canonical_url,
+      "mainEntity": {
+          "@type": "Organization",
+          "name": "Qué Plan Hoy",
+          "url": SITE_URL,
+          "description": (
+              "Guía independiente de planes originales, baratos y en pareja en"
+              " Madrid, Barcelona, Valencia, Sevilla y Toledo."
+          ),
+      },
+  }
+  page_html = f"""{render_head("Sobre Nosotros y Criterio Editorial | Qué Plan Hoy", "Conoce cómo seleccionamos y verificamos los planes locales, gratuitos y en pareja de Qué Plan Hoy en Madrid, Barcelona, Valencia, Sevilla y Toledo.", canonical_url, root_prefix, [org_schema])}
+<body>
+  {render_header(root_prefix, "none")}
+  <main class="main-container" style="max-width: 780px;">
+    <span class="hero-kicker">TRANSPARENCIA Y CRITERIO LOCAL</span>
+    <h1 class="hero-title" style="margin-bottom: 1.25rem;">Sobre ¿Qué Plan Hoy?</h1>
+    <p style="font-size: 1.08rem; color: var(--ink-secondary); margin-bottom: 1.5rem;">
+      <strong>¿Qué Plan Hoy?</strong> nació con una misión sencilla: responder a la eterna pregunta de cada viernes por la tarde sin caer en las mismas diez recomendaciones masificadas de siempre.
+    </p>
+    <section class="reader-section">
+      <h2>Cómo seleccionamos cada plan</h2>
+      <p style="margin-top: 0.5rem;">
+        Nos enfocamos en cinco ciudades clave de España (<strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong>) y organizamos nuestras guías en tres pilares:
+      </p>
+      <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
+        <li><strong>💸 Planes Gratis y Baratos:</strong> Cultura, miradores, jardines históricos y rutas por menos de 10 €.</li>
+        <li><strong>✨ Planes Diferentes:</strong> Rincones poco conocidos, talleres creativos y alternativas fuera del circuito turístico habitual.</li>
+        <li><strong>❤️ Planes en Pareja:</strong> Citas originales y escapadas cercanas con encanto.</li>
+      </ul>
+    </section>
+    <section class="reader-section">
+      <h2>Datos prácticos verificados</h2>
+      <p style="margin-top: 0.5rem;">
+        En todas nuestras rutas incluimos la dirección exacta, la parada de transporte público más cercana (Metro, EMT o tren Avant) y el rango de precios real en euros para que puedas planificar sin sorpresas.
+      </p>
+    </section>
+    <section class="reader-section" style="border-bottom: none;">
+      <h2>Independencia editorial y enlaces de reserva</h2>
+      <p style="margin-top: 0.5rem;">
+        Algunas de nuestras guías incluyen enlaces a plataformas oficiales de reserva de actividades y visitas guiadas (como Civitatis, Fever o GetYourGuide). Si reservas a través de ellos, podemos recibir una pequeña comisión sin ningún coste adicional para ti, lo que nos permite mantener esta guía abierta, independiente y sin publicidad intrusiva.
+      </p>
+    </section>
+  </main>
+  {render_footer(root_prefix)}
+</body>
+</html>
+"""
+  os.makedirs(os.path.dirname(output_path), exist_ok=True)
+  with open(output_path, "w", encoding="utf-8") as f:
+    f.write(page_html)
+
+
 def regenerate_sitemap(articles: list):
   today = date.today().isoformat()
   urls = [
       f"  <url>\n    <loc>{SITE_URL}/</loc>\n    <lastmod>{today}</lastmod>\n"
       "    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n "
-      " </url>"
+      " </url>",
+      f"  <url>\n    <loc>{SITE_URL}/sobre-nosotros/</loc>\n   "
+      f" <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n   "
+      " <priority>0.6</priority>\n  </url>",
   ]
   for info in CITIES.values():
     c_slug = info["slug"]
@@ -628,7 +752,6 @@ def build_all():
   with open(ARTICLES_FILE, "r", encoding="utf-8") as f:
     articles = json.load(f)
 
-  # 1. Portada general (/)
   build_listing_page(
       articles=articles,
       output_path=os.path.join(PUBLIC_DIR, "index.html"),
@@ -654,7 +777,6 @@ def build_all():
       active_city="all",
   )
 
-  # 2. Páginas de cada ciudad (/madrid/, /barcelona/, /valencia/, /sevilla/, /toledo/)
   for city_name, info in CITIES.items():
     city_articles = [a for a in articles if a["city"] == city_name]
     build_listing_page(
@@ -670,15 +792,14 @@ def build_all():
         active_city=city_name,
     )
 
-  # 3. Páginas individuales de cada artículo (/<ciudad>/<slug>/)
   for art in articles:
     build_article_page(art, articles)
 
-  # 4. Sitemap XML
+  build_about_page()
   regenerate_sitemap(articles)
   print(
-      f"[OK] Sitio estático generado: Portada + {len(CITIES)} páginas de ciudad"
-      f" (/madrid, /barcelona...) + {len(articles)} artículos individuales."
+      f"[OK] Sitio estático E-E-A-T generado: Portada + {len(CITIES)} ciudades"
+      f" + {len(articles)} guías + /sobre-nosotros/ + robots.txt + sitemap.xml."
   )
 
 

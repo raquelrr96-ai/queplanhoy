@@ -85,7 +85,8 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Barcelona": {
-        "image": "images/barcelona.jpg",
+        "image": "images/mirador-atardecer-planes-barcelona.jpg",
+        "imageAlt": "Vista panorámica al atardecer de Barcelona y el mar Mediterráneo desde los jardines de Montjuïc",
         "neighborhoods": [
             "El Born",
             "Gràcia",
@@ -154,7 +155,8 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Valencia": {
-        "image": "images/valencia.jpg",
+        "image": "images/barca-albufera-planes-valencia.jpg",
+        "imageAlt": "Barca tradicional de madera al atardecer en el embarcadero de la Albufera de Valencia",
         "neighborhoods": [
             "El Cabanyal",
             "Ruzafa",
@@ -221,7 +223,8 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Sevilla": {
-        "image": "images/sevilla.jpg",
+        "image": "images/patio-mudejar-planes-sevilla.jpg",
+        "imageAlt": "Patio andaluz mudéjar con naranjos, azulejos y flores en el barrio de Santa Cruz de Sevilla",
         "neighborhoods": [
             "Triana",
             "Calle Feria",
@@ -282,7 +285,8 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Toledo": {
-        "image": "images/toledo.jpg",
+        "image": "images/callejones-noche-planes-toledo.jpg",
+        "imageAlt": "Callejón medieval empedrado de Toledo iluminado por faroles al anochecer con la torre de la Catedral al fondo",
         "neighborhoods": [
             "Judería Mayor",
             "Barrio de los Conventos",
@@ -377,12 +381,6 @@ def load_json(filepath: str):
 
 def save_json(filepath: str, data):
   with open(filepath, "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-  # También sincronizamos en public/data/ para que el hosting gratuito (Cloudflare/Vercel/GitHub Pages) funcione sin servidor
-  public_data_dir = os.path.join(BASE_DIR, "public", "data")
-  os.makedirs(public_data_dir, exist_ok=True)
-  public_copy = os.path.join(public_data_dir, os.path.basename(filepath))
-  with open(public_copy, "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
 
