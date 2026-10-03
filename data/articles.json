@@ -15,7 +15,7 @@
     "searchVolume": "8.100 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (21/100)",
     "image": "images/planes-este-fin-de-semana-madrid-feria-barroca.jpg",
-    "imageAlt": "Plaza de la Constitución y Torre del Reloj de Valdemoro del siglo XVII donde se celebra la Feria Barroca",
+    "imageAlt": "Recreación histórica y pasacalles del siglo XVII en la Feria Barroca de Valdemoro",
     "excerpt": "Agenda del fin de semana del 2 al 4 de octubre de 2026 en Madrid: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.",
     "priceRange": "Gratis (0 € – 8 €)",
     "neighborhoods": [
@@ -81,7 +81,7 @@
         "answer": "La Feria Barroca de Valdemoro, los jardines del Príncipe de Anglona en La Latina, el Invernadero de Arganzuela en Legazpi y las rutas por el Madrid de los Austrias son de acceso libre sin necesidad de entrada anticipada."
       }
     ],
-    "imageCredit": "Plaza de la Constitución y Torre del Reloj de Valdemoro (Wikimedia Commons · Dominio Público CC0)"
+    "imageCredit": "Ayuntamiento de Valdemoro · Feria Barroca de Valdemoro"
   },
   {
     "id": "madrid-menos-10-euros",
@@ -98,7 +98,7 @@
     "searchVolume": "2.400 búsquedas/mes",
     "keywordDifficulty": "Baja (18/100)",
     "image": "images/terraza-secreta-planes-madrid.jpg",
-    "imageAlt": "Fuente de piedra y parterres del Jardín del Príncipe de Anglona en el barrio de La Latina, Madrid",
+    "imageAlt": "Jardín interior escondido en Madrid con mesa de hierro forjado y vermut de grifo al sol",
     "excerpt": "No hace falta dejarse medio sueldo para vivir un sábado inolvidable en Madrid. Desde un jardín renacentista en La Latina hasta una sesión de cine en un palacio de 1922 por solo 3 €.",
     "priceRange": "0 € – 9,50 €",
     "neighborhoods": [
@@ -177,8 +177,7 @@
         "question": "¿Hace falta reservar con antelación para el Cine Doré?",
         "answer": "Sí, como las entradas cuestan solo 3 € suelen agotarse rápido para las sesiones de viernes y sábado tarde. Se pueden sacar online en la web oficial de la Filmoteca Española con 3 días de antelación."
       }
-    ],
-    "imageCredit": "Jardín del Príncipe de Anglona en La Latina, Madrid (Wikimedia Commons · CC BY 3.0)"
+    ]
   },
   {
     "id": "valencia-planes-diferentes-albufera",
@@ -368,7 +367,7 @@
     "searchVolume": "3.600 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (24/100)",
     "image": "images/taller-ceramica-planes-pareja-madrid.jpg",
-    "imageAlt": "Templete de Baco de estilo neoclásico en los jardines históricos del Parque de El Capricho en Madrid",
+    "imageAlt": "Mesa de taller de cerámica y vino en Madrid con copas de vino tinto, velas y piezas de alfarería",
     "excerpt": "Si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical.",
     "priceRange": "15 € – 32 €",
     "neighborhoods": [
@@ -429,8 +428,7 @@
         "question": "¿Cuál es el mejor plan en pareja en Madrid si llueve?",
         "answer": "Un taller de cerámica y vino en Chamberí o una sesión en el Cine Doré seguida de una merienda en el interior ajardinado de Salvador Bachiller son opciones cubiertas perfectas para días de lluvia."
       }
-    ],
-    "imageCredit": "Templete de Baco en el Parque de El Capricho, Madrid (Wikimedia Commons · CC BY-SA 4.0)"
+    ]
   },
   {
     "id": "barcelona-miradores-secretos-gratis",

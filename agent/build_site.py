@@ -656,9 +656,7 @@ def build_article_page(art: dict, all_articles: list):
 
       <figure style="margin: 0 0 1.5rem 0;">
         <img src="{img_src}" alt="{html.escape(img_alt)}" class="reader-hero-img" width="860" height="480" style="margin-bottom: 0.45rem;" />
-        <figcaption style="font-size: 0.78rem; color: var(--ink-muted); text-align: right;">
-          📷 Fotografía real: {html.escape(art.get('imageCredit', img_alt))}
-        </figcaption>
+        {f'<figcaption style="font-size: 0.78rem; color: var(--ink-muted); text-align: right;">📷 Imagen: {html.escape(art["imageCredit"])}</figcaption>' if art.get("imageCredit") else ""}
       </figure>
 
       {summary_table_html}
