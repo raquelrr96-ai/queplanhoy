@@ -826,9 +826,70 @@ def run_next_from_queue() -> dict:
   return article
 
 
+def run_wednesday_weekend_all_cities() -> list:
+  """Publica todos los miércoles la guía 'Este Fin de Semana' para las 5 ciudades
+
+  (Madrid, Barcelona, Valencia, Sevilla y Toledo) con las fechas exactas del
+  viernes al domingo entrante y la agenda cultural en vivo de cada ciudad.
+  """
+  cities = ["Madrid", "Barcelona", "Valencia", "Sevilla", "Toledo"]
+  weekend_dates = get_current_weekend_dates_es()
+  existing_articles = load_json(ARTICLES_FILE)
+  published = []
+
+  # Recorremos en orden inverso para que al insertar en posición 0 queden:
+  # Madrid, Barcelona, Valencia, Sevilla, Toledo
+  for city in reversed(cities):
+    already_exists = any(
+        a.get("city") == city
+        and a.get("category") == "Este Fin de Semana"
+        and a.get("weekendDates") == weekend_dates
+        for a in existing_articles
+    )
+    if already_exists:
+      for a in existing_articles:
+        if (
+            a.get("city") == city
+            and a.get("category") == "Este Fin de Semana"
+            and a.get("weekendDates") == weekend_dates
+        ):
+          published.append(a)
+          break
+      continue
+
+    keyword = (
+        f"planes este fin de semana {city.lower()}"
+        f" {slugify(weekend_dates).replace('-', ' ')}"
+    )
+    suggested_title = (
+        f"5 Planes este Fin de Semana en {city} ({weekend_dates}):"
+        " Mercadillos, Cultura y Rutas Gratis"
+    )
+    art = generate_seo_article(
+        city=city,
+        category="Este Fin de Semana",
+        keyword=keyword,
+        suggested_title=suggested_title,
+        search_volume="8.400 búsquedas/mes",
+        difficulty="Baja (18/100)",
+    )
+    published.append(art)
+
+  build_site.build_all()
+  return list(reversed(published))
+
+
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(
       description="Agente SEO Generador de Artículos para HoyQuePlan"
+  )
+  parser.add_argument(
+      "--wednesday-all-cities",
+      action="store_true",
+      help=(
+          "Publica todos los miércoles los planes de 'Este Fin de Semana'"
+          " para las 5 ciudades (Madrid, Barcelona, Valencia, Sevilla y Toledo)"
+      ),
   )
   parser.add_argument(
       "--next",
@@ -845,7 +906,7 @@ if __name__ == "__main__":
       "--category",
       type=str,
       default="Planes Diferentes",
-      help="Categoría (Gratis y Baratos, Planes Diferentes, En Pareja)",
+      help="Categoría (Este Fin de Semana, Gratis y Baratos, Planes Diferentes, En Pareja)",
   )
   parser.add_argument(
       "--keyword", type=str, default="", help="Palabra clave Long-Tail a atacar"
@@ -855,8 +916,17 @@ if __name__ == "__main__":
   )
   args = parser.parse_args()
 
-  if args.next or not args.keyword:
+  if args.wednesday_all_cities:
+    arts = run_wednesday_weekend_all_cities()
+    for a in arts:
+      print(
+          f"[OK] [{a['city']}] Guía de Fin de Semana publicada/verificada:"
+          f" {a['title']}"
+      )
+  elif args.next or not args.keyword:
     art = run_next_from_queue()
+    print(f"[OK] Artículo SEO generado y publicado: {art['title']}")
+    print(f"     URL Slug: /{slugify(art['city'])}/{art['slug']}/")
   else:
     art = generate_seo_article(
         city=args.city,
@@ -864,5 +934,5 @@ if __name__ == "__main__":
         keyword=args.keyword,
         suggested_title=args.title,
     )
-  print(f"[OK] Artículo SEO generado y publicado: {art['title']}")
-  print(f"     URL Slug: /planes/{art['slug']}")
+    print(f"[OK] Artículo SEO generado y publicado: {art['title']}")
+    print(f"     URL Slug: /{slugify(art['city'])}/{art['slug']}/")
