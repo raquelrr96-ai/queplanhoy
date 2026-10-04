@@ -24,13 +24,13 @@ CITIES = {
         "slug": "madrid",
         "h1": "Planes en Madrid: qué hacer fuera de lo típico",
         "metaTitle": (
-            "Qué Planes Hacer Hoy en Madrid y Este Fin de Semana (2026) | Qué"
+            "Qué Plan Hacer en Madrid este Fin de Semana y Hoy (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué planes hacer hoy en Madrid? Agenda de planes este fin de"
-            " semana, ferias como la Feria Barroca de Valdemoro, ideas gratis y"
-            " citas en pareja."
+            "¿Buscas qué plan hacer en Madrid este fin de semana o qué planes"
+            " hacer hoy? Feria Barroca de Valdemoro, mercadillos, ideas gratis"
+            " por menos de 10 € y citas en pareja."
         ),
         "intro": (
             "Ferias históricas, mercados al aire libre, jardines secretos y"
@@ -42,13 +42,13 @@ CITIES = {
         "slug": "barcelona",
         "h1": "Planes en Barcelona: miradores, citas y rincones sin colas",
         "metaTitle": (
-            "Qué Planes Hacer Hoy en Barcelona y Este Fin de Semana (2026) |"
-            " Qué Plan Hoy"
+            "Qué Plan Hacer en Barcelona este Fin de Semana y Hoy (2026) | Qué"
+            " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué planes hacer hoy en Barcelona? Guía de planes este fin de"
-            " semana, miradores sin colas, jardines gratis y citas originales"
-            " en pareja."
+            "¿Qué plan hacer en Barcelona este fin de semana o hoy? Guía de"
+            " miradores sin colas, jardines gratis y citas originales en"
+            " pareja."
         ),
         "intro": (
             "Una Barcelona lejos de las aglomeraciones: desde jardines"
@@ -59,13 +59,13 @@ CITIES = {
         "slug": "valencia",
         "h1": "Planes en Valencia: atardeceres, huerta y cultura local",
         "metaTitle": (
-            "Qué Planes Hacer Hoy en Valencia y Este Fin de Semana (2026) | Qué"
+            "Qué Plan Hacer en Valencia este Fin de Semana y Hoy (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué planes hacer hoy en Valencia? Planes este fin de semana,"
-            " ideas baratas y en pareja: atardecer en barca en L'Albufera,"
-            " rutas por la huerta y El Cabanyal."
+            "¿Qué plan hacer en Valencia este fin de semana? Ideas baratas y"
+            " en pareja: atardecer en barca en L'Albufera, rutas por la huerta"
+            " y El Cabanyal."
         ),
         "intro": (
             "Escapadas en autobús urbano a L'Albufera, jardines escondidos y"
@@ -76,13 +76,13 @@ CITIES = {
         "slug": "sevilla",
         "h1": "Planes en Sevilla: casas-palacio, patios y rutas al atardecer",
         "metaTitle": (
-            "Qué Planes Hacer Hoy en Sevilla y Este Fin de Semana (2026) | Qué"
+            "Qué Plan Hacer en Sevilla este Fin de Semana y Hoy (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué planes hacer hoy en Sevilla? Descubre planes este fin de"
-            " semana, gratis y en pareja: casas-palacio mudéjares sin colas,"
-            " Triana y Santa Cruz."
+            "¿Qué plan hacer en Sevilla este fin de semana? Descubre planes"
+            " gratis y en pareja: casas-palacio mudéjares sin colas, Triana y"
+            " Santa Cruz."
         ),
         "intro": (
             "Palacios gratuitos, mercadillos históricos, rutas al anochecer por"
@@ -93,13 +93,13 @@ CITIES = {
         "slug": "toledo",
         "h1": "Planes en Toledo: escapadas, rutas nocturnas y rincones ocultos",
         "metaTitle": (
-            "Qué Planes Hacer Hoy en Toledo y Este Fin de Semana (2026) | Qué"
+            "Qué Plan Hacer en Toledo este Fin de Semana y Hoy (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué planes hacer hoy o este fin de semana en Toledo? Ruta de"
-            " cobertizos iluminados, baños árabes en pareja, senda del Tajo y"
-            " subterráneos a 33 min de Madrid."
+            "¿Qué plan hacer en Toledo este fin de semana? Ruta de cobertizos"
+            " iluminados, baños árabes en pareja, senda del Tajo y subterráneos"
+            " a 33 min de Madrid."
         ),
         "intro": (
             "A 33 minutos en tren desde Madrid: qué hacer en Toledo cuando se"
@@ -315,13 +315,59 @@ def build_listing_page(
       for idx, a in enumerate(articles)
   )
 
-  schema_ld = [{
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": title,
-      "description": description,
-      "url": canonical_url,
-  }]
+  city_label = (
+      active_city
+      if active_city != "all"
+      else "Madrid, Barcelona, Valencia, Sevilla y Toledo"
+  )
+  guide_links = []
+  for a in articles:
+    c_slug = CITIES.get(a["city"], {"slug": a["city"].lower()})["slug"]
+    href = f"{root_prefix}{c_slug}/{a['slug']}/"
+    guide_links.append(
+        f'<li style="margin-bottom:0.35rem;"><a href="{href}"'
+        ' style="color:var(--terracotta);font-weight:600;text-decoration:none;">'
+        f"{html.escape(a['title'])}</a> — {html.escape(a['priceRange'])}</li>"
+    )
+
+  seo_bottom_section = f"""
+    <section style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-hairline); max-width: 780px; color: var(--ink-secondary); font-size: 0.94rem;">
+      <h2 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--ink-primary); margin-bottom: 0.65rem;">
+        ¿Qué plan hacer en {html.escape(city_label)} este fin de semana?
+      </h2>
+      <p style="margin-bottom: 0.85rem;">
+        Si estás buscando <strong>qué plan hacer en {html.escape(city_label)} este fin de semana</strong> o ideas para salir hoy sin caer en los sitios turísticos de siempre, en nuestras guías seleccionamos cada semana ferias históricas, mercadillos de fin de semana, jardines ocultos gratuitos y citas originales en pareja con direcciones exactas y precios reales:
+      </p>
+      <ul style="margin-left: 1.25rem; line-height: 1.7;">
+        {''.join(guide_links)}
+      </ul>
+    </section>"""
+
+  schema_ld = [
+      {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": title,
+          "description": description,
+          "url": canonical_url,
+      },
+      {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": h1,
+          "itemListElement": [
+              {
+                  "@type": "ListItem",
+                  "position": idx,
+                  "name": a["title"],
+                  "url": (
+                      f"{SITE_URL}/{CITIES.get(a['city'], {'slug': a['city'].lower()})['slug']}/{a['slug']}/"
+                  ),
+              }
+              for idx, a in enumerate(articles, start=1)
+          ],
+      },
+  ]
 
   page_html = f"""{render_head(title, description, canonical_url, root_prefix, schema_ld)}
 <body>
@@ -358,6 +404,8 @@ def build_listing_page(
         {cards_html}
       </div>
     </section>
+
+    {seo_bottom_section}
   </main>
 
   {render_footer(root_prefix)}
@@ -403,6 +451,23 @@ def build_article_page(art: dict, all_articles: list):
           "name": "Qué Plan Hoy",
           "url": SITE_URL,
       },
+  }
+  itemlist_schema = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": art["title"],
+      "description": art["metaDescription"],
+      "numberOfItems": len(art.get("sections", [])),
+      "itemListElement": [
+          {
+              "@type": "ListItem",
+              "position": idx,
+              "name": sec.get("venue", sec["heading"]),
+              "description": sec["content"],
+              "url": f"{canonical_url}#plan-{idx}",
+          }
+          for idx, sec in enumerate(art.get("sections", []), start=1)
+      ],
   }
   faq_schema = {
       "@context": "https://schema.org",
@@ -543,7 +608,7 @@ def build_article_page(art: dict, all_articles: list):
   if art.get("weekendDates"):
     cat_header = f"{cat_header} · {art['weekendDates']}"
 
-  page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, faq_schema, breadcrumb_schema], full_img_url)}
+  page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, itemlist_schema, faq_schema, breadcrumb_schema], full_img_url)}
 <body>
   {render_header(root_prefix, city_name)}
 
