@@ -99,7 +99,7 @@ CITY_KNOWLEDGE_BASE = {
                 " de los Austrias y el Barrio de las Letras con guía local."
             ),
             "price": "Gratis (Propina libre)",
-            "url": "https://www.civitatis.com/es/madrid/free-tour-madrid/",
+            "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2Fentradas-para-palacio-de-liria-entrada-audioguia-p1010845%2F",
             "ctaText": "Reservar Free Tour por Madrid →",
             "commissionNote": (
                 "Enlace directo a la actividad en Civitatis"
@@ -189,7 +189,7 @@ CITY_KNOWLEDGE_BASE = {
                 " Gótico y El Born descubriendo sus secretos mejor guardados."
             ),
             "price": "Gratis (Propina libre)",
-            "url": "https://www.civitatis.com/es/barcelona/free-tour-misterios-leyendas-barrio-gotico/",
+            "url": "https://tiqets.tpk.lu/oclT7jKV",
             "ctaText": "Reservar Free Tour por el Barrio Gótico →",
             "commissionNote": (
                 "Enlace directo a la actividad en Civitatis"
@@ -276,7 +276,7 @@ CITY_KNOWLEDGE_BASE = {
                 " tradicional (albuferenc) por el Parque Natural de L'Albufera."
             ),
             "price": "Desde 12 € por persona",
-            "url": "https://www.civitatis.com/es/valencia/excursion-albufera/",
+            "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c65847%2Fentradas-para-valencia-pase-arte-y-ciencia-p1124390%2F",
             "ctaText": "Ver horarios del paseo en barca por L'Albufera →",
             "commissionNote": (
                 "Enlace directo a la actividad en Civitatis"
@@ -356,7 +356,7 @@ CITY_KNOWLEDGE_BASE = {
                 " historia del flamenco en Triana con un guía local sevillano."
             ),
             "price": "Gratis (Propina libre)",
-            "url": "https://www.civitatis.com/es/sevilla/free-tour-triana/",
+            "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c65870%2Fentradas-para-casa-de-salinas-tour-con-audioguia-p986387%2F",
             "ctaText": "Reservar Free Tour por Triana →",
             "commissionNote": (
                 "Enlace directo a la actividad en Civitatis"
@@ -438,7 +438,7 @@ CITY_KNOWLEDGE_BASE = {
                 " las callejuelas laberínticas de Toledo con guía oficial."
             ),
             "price": "Gratis (Reserva online en 1 minuto)",
-            "url": "https://www.civitatis.com/es/toledo/free-tour-toledo/",
+            "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c170113%2Fentradas-para-pulsera-turistica-de-toledo-p1031186%2F",
             "ctaText": "Reservar Free Tour por Toledo →",
             "commissionNote": (
                 "Enlace directo a la actividad en Civitatis"
