@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -224,8 +227,8 @@
         var pins = [{"idx": 1, "name": "Puente de San Martín y Senda Ecológica del Tajo", "location": "Bajada desde el Monasterio de San Juan de los Reyes (Oeste del Casco Histórico)", "price": "Acceso 100% gratuito", "lat": 39.8568, "lng": -4.0405, "image": "../../images/venues/tol-puente-san-martin-2.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Puente%20de%20San%20Mart%C3%ADn%20y%20Senda%20Ecol%C3%B3gica%20del%20Tajo%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Rutas de Patrimonio Desconocido del Consorcio de Toledo", "location": "Plaza Amador de los Ríos y Callejón de San Ginés (Centro Histórico)", "price": "Entrada 100% gratuita (Martes a sábado de 10:00 a 14:00 y de 17:00 a 19:00 h)", "lat": 39.8579, "lng": -4.0246, "image": "../../images/venues/tol-cuevas-hercules-termas.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rutas%20de%20Patrimonio%20Desconocido%20del%20Consorcio%20de%20Toledo%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Yacimiento y Mirador del Cerro del Bú", "location": "Cruzando la pasarela peatonal junto al Puente de Alcántara", "price": "Acceso libre y gratuito las 24 horas", "lat": 39.8541, "lng": -4.0203, "image": "../../images/venues/tol-cerro-del-bu.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yacimiento%20y%20Mirador%20del%20Cerro%20del%20B%C3%BA%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Cobertizos de Santo Domingo el Real, Santa Clara y San Pedro Mártir", "location": "Zona norte del Casco Histórico (a 5 minutos a pie de la Plaza de Zocodover)", "price": "Paseo 100% gratuito", "lat": 39.8601, "lng": -4.0261, "image": "../../images/venues/tol-cobertizos.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cobertizos%20de%20Santo%20Domingo%20el%20Real%2C%20Santa%20Clara%20y%20San%20Pedro%20M%C3%A1rtir%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Museo de Santa Cruz", "location": "Calle Miguel de Cervantes, 3 (Junto al arco de la Sangre en Zocodover)", "price": "Gratis miércoles toda la tarde y domingos (4,00 € resto de horario / Claustro y patio de libre acceso)", "lat": 39.8596, "lng": -4.0203, "image": "../../images/venues/tol-museo-santa-cruz.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20de%20Santa%20Cruz%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];

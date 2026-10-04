@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -224,8 +227,8 @@
         var pins = [{"idx": 1, "name": "Feria Barroca de Valdemoro (Plaza de la Constitución y Casco Histórico)", "location": "Plaza de la Constitución, Valdemoro (Cercanías C-3 desde Sol o Atocha en 27 min)", "price": "Acceso y espectáculos de calle 100% gratuitos", "lat": 40.1908, "lng": -3.6778, "image": "../../images/venues/madrid-valdemoro-plaza.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Feria%20Barroca%20de%20Valdemoro%20%28Plaza%20de%20la%20Constituci%C3%B3n%20y%20Casco%20Hist%C3%B3rico%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Museo del Ferrocarril de Madrid (Delicias)", "location": "Paseo de las Delicias, 61 (Metro: Delicias - L3 / Cercanías Delicias)", "price": "Entrada gratuita al mercado (reservar pase horario online)", "lat": 40.3999, "lng": -3.6932, "image": "../../images/venues/madrid-museo-ferrocarril.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20del%20Ferrocarril%20de%20Madrid%20%28Delicias%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Nuevas Galerías del Rastro y Plaza del General Vara de Rey", "location": "Calle Ribera de Curtidores, 12 (Metro: La Latina - L5 / Puerta de Toledo)", "price": "Paseo gratis / Vermut de grifo y tosta: 4,50 €", "lat": 40.4084, "lng": -3.7075, "image": "../../images/venues/madrid-rastro-curtidores.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nuevas%20Galer%C3%ADas%20del%20Rastro%20y%20Plaza%20del%20General%20Vara%20de%20Rey%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Invernadero del Palacio de Cristal de Arganzuela", "location": "Paseo de la Chopera, 10 (Metro: Legazpi - L3, L6)", "price": "Acceso 100% gratuito", "lat": 40.3934, "lng": -3.6997, "image": "../../images/venues/madrid-invernadero-arganzuela.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Invernadero%20del%20Palacio%20de%20Cristal%20de%20Arganzuela%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Jardines del Templo de Debod y Mirador de la Montaña del Príncipe Pío", "location": "Calle de Ferraz, 1 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)", "price": "Acceso libre y gratuito", "lat": 40.424, "lng": -3.7178, "image": "../../images/venues/madrid-templo-debod.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardines%20del%20Templo%20de%20Debod%20y%20Mirador%20de%20la%20Monta%C3%B1a%20del%20Pr%C3%ADncipe%20P%C3%ADo%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];

@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -224,8 +227,8 @@
         var pins = [{"idx": 1, "name": "Recinto Modernista de Sant Pau", "location": "Carrer de Sant Antoni Maria Claret, 167 (Metro: Sant Pau | Dos de Maig - L5)", "price": "16 € entrada general (Gratis primer domingo de mes) / Paseo por Avinguda Gaudí: Gratis", "lat": 41.4119, "lng": 2.1744, "image": "../../images/venues/bcn-sant-pau-2.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Recinto%20Modernista%20de%20Sant%20Pau%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Parc del Laberint d'Horta", "location": "Passeig dels Castanyers, 1 (Metro: Mundet - L3, salida Velòdrom)", "price": "2,23 € entrada general (Gratis miércoles y domingos)", "lat": 41.4404, "lng": 2.1463, "image": "../../images/venues/bcn-laberint-horta.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parc%20del%20Laberint%20d%27Horta%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Jardins de Laribal y Teatre Grec", "location": "Passeig de Santa Madrona, 2 (Metro: Espanya - L1, L3 / Paral·lel - L2, L3)", "price": "Acceso 100% gratuito", "lat": 41.3696, "lng": 2.1597, "image": "../../images/venues/bcn-teatre-grec-laribal.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardins%20de%20Laribal%20y%20Teatre%20Grec%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Bares acústicos del Passeig del Born y Carrer dels Flassaders", "location": "Carrer dels Flassaders y entorno de Santa Maria del Mar (Metro: Jaume I - L4)", "price": "Copa de vino o cóctel: 6,00 € – 10,00 €", "lat": 41.3847, "lng": 2.1825, "image": "../../images/venues/bcn-born-passeig.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bares%20ac%C3%BAsticos%20del%20Passeig%20del%20Born%20y%20Carrer%20dels%20Flassaders%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Mirador de l'Alcalde (Montjuïc)", "location": "Carretera de Montjuïc, 22 (Metro: Paral·lel + Funicular de Montjuïc)", "price": "Acceso libre y gratuito", "lat": 41.3665, "lng": 2.1683, "image": "../../images/venues/bcn-mirador-alcalde.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mirador%20de%20l%27Alcalde%20%28Montju%C3%AFc%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];

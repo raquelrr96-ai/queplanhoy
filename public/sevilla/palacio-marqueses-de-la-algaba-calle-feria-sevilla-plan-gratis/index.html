@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -217,8 +220,8 @@
         var pins = [{"idx": 1, "name": "Palacio de los Marqueses de la Algaba (Fachada y Jardines)", "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)", "price": "Entrada 100% gratuita (Lunes a sábado)", "lat": 37.3996, "lng": -5.9908, "image": "../../images/venues/sev-marqueses-algaba.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20%28Fachada%20y%20Jardines%29%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Centro del Arte Mudéjar de Sevilla (Interior del Palacio)", "location": "Planta baja y galería noble del Palacio de los Marqueses de la Algaba", "price": "Gratis", "lat": 37.3998, "lng": -5.9906, "image": "../../images/venues/sev-pabellon-mudejar.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20del%20Arte%20Mud%C3%A9jar%20de%20Sevilla%20%28Interior%20del%20Palacio%29%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Real Parroquia de Omnium Sanctorum y Calle Feria", "location": "Calle Feria, 98 (Justo frente al Palacio de los Marqueses de la Algaba)", "price": "Acceso libre", "lat": 37.3992, "lng": -5.9912, "image": "../../images/venues/sev-omnium-sanctorum.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Real%20Parroquia%20de%20Omnium%20Sanctorum%20y%20Calle%20Feria%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Mercado de Abastos de la Calle Feria y Alameda de Hércules", "location": "Calle Feria, 98 y Alameda de Hércules (a 3 minutos a pie)", "price": "Caña o vermut + tapa de pescado frito o chacinas: 3,50 € – 6,00 €", "lat": 37.3989, "lng": -5.9915, "image": "../../images/venues/sev-calle-feria.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Abastos%20de%20la%20Calle%20Feria%20y%20Alameda%20de%20H%C3%A9rcules%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];

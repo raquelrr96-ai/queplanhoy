@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -217,8 +220,8 @@
         var pins = [{"idx": 1, "name": "Palacio Desvalls y Jardín de los Bojes (Entrada del Laberint d'Horta)", "location": "Passeig dels Castanyers, 1 (Metro: Mundet - Línea 3, salida Velòdrom)", "price": "100% Gratis todos los miércoles y domingos (2,23 € entrada general resto de días)", "lat": 41.4398, "lng": 2.1458, "image": "../../images/venues/bcn-barrio-horta.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Palacio%20Desvalls%20y%20Jard%C3%ADn%20de%20los%20Bojes%20%28Entrada%20del%20Laberint%20d%27Horta%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Laberinto Vegetal y Terraza de los Templetes de Ariadna y Dánae", "location": "Primera y segunda terraza del Parc del Laberint d'Horta", "price": "Incluido en el acceso", "lat": 41.4404, "lng": 2.1463, "image": "../../images/venues/bcn-laberint-gruta.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Laberinto%20Vegetal%20y%20Terraza%20de%20los%20Templetes%20de%20Ariadna%20y%20D%C3%A1nae%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Pabellón Neoclásico de Carlos IV y Cascada del Jardín Romántico", "location": "Tercera terraza y bosque superior del Parc del Laberint", "price": "Incluido en el acceso", "lat": 41.4411, "lng": 2.1469, "image": "../../images/venues/bcn-laberint-cascada.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pabell%C3%B3n%20Neocl%C3%A1sico%20de%20Carlos%20IV%20y%20Cascada%20del%20Jard%C3%ADn%20Rom%C3%A1ntico%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Poema Visual de Joan Brossa (Velódromo) y Plaça d'Eivissa", "location": "Passeig dels Castanyers y centro histórico de Horta (a 10 min a pie)", "price": "Paseo gratis / Vermut casero con patatas bravas en terraza: 6,00 € – 8,50 €", "lat": 41.4312, "lng": 2.1601, "image": "../../images/venues/bcn-velodromo-horta.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Poema%20Visual%20de%20Joan%20Brossa%20%28Vel%C3%B3dromo%29%20y%20Pla%C3%A7a%20d%27Eivissa%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];

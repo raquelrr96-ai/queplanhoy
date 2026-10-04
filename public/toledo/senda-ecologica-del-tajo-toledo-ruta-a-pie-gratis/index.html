@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -217,8 +220,8 @@
         var pins = [{"idx": 1, "name": "Puente Romano de Alcántara (Inicio de la Senda Ecológica)", "location": "Paseo de la Rosa / Bajada de Alcántara (a 8 min a pie de la estación de tren de Toledo)", "price": "Recorrido 100% gratuito", "lat": 39.8604, "lng": -4.0177, "image": "../../images/venues/tol-puente-alcantara.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Puente%20Romano%20de%20Alc%C3%A1ntara%20%28Inicio%20de%20la%20Senda%20Ecol%C3%B3gica%29%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Molinos de Daicán y Mirador del Cerro del Bú", "location": "Primer kilómetro de la Senda Ecológica del Tajo (Orilla sur)", "price": "Gratis", "lat": 39.8541, "lng": -4.0203, "image": "../../images/venues/tol-cerro-del-bu.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Molinos%20de%20Daic%C3%A1n%20y%20Mirador%20del%20Cerro%20del%20B%C3%BA%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Pasarelas del Cañón del Tajo y Embarcadero de la Barca de Pasaje", "location": "Tramo central de la Senda Ecológica bajo la Roca Tarpeya y el Convento de San Gil", "price": "Gratis", "lat": 39.8522, "lng": -4.0285, "image": "../../images/venues/tol-senda-ecologica-tajo.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pasarelas%20del%20Ca%C3%B1%C3%B3n%20del%20Tajo%20y%20Embarcadero%20de%20la%20Barca%20de%20Pasaje%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Puente Medieval de San Martín y Barrio de la Judería", "location": "Puente de San Martín y Calle de los Reyes Católicos", "price": "Paseo gratis / Cazuelita de carcamusas toledanas con pan y caña o vino: 6,50 € – 9,00 €", "lat": 39.8568, "lng": -4.0405, "image": "../../images/venues/tol-puente-san-martin-2.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Puente%20Medieval%20de%20San%20Mart%C3%ADn%20y%20Barrio%20de%20la%20Juder%C3%ADa%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];

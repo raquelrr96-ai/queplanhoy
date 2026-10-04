@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -224,8 +227,8 @@
         var pins = [{"idx": 1, "name": "Plaça de Comas y jardines de Can Bruixa (Les Corts)", "location": "Plaça de Comas, s/n (Metro: Les Corts - L3)", "price": "Actividades y conciertos al aire libre 100% gratuitos", "lat": 41.3854, "lng": 2.1306, "image": "../../images/venues/bcn-les-corts-comas.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a%20de%20Comas%20y%20jardines%20de%20Can%20Bruixa%20%28Les%20Corts%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Passeig del Born y entorno del Mercat del Born", "location": "Plaça Comercial, 12 (Metro: Jaume I - L4 / Arc de Triomf - L1)", "price": "Acceso libre / Vermut artesano y tapa: 5,50 €", "lat": 41.3853, "lng": 2.1839, "image": "../../images/venues/bcn-born-passeig.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Passeig%20del%20Born%20y%20entorno%20del%20Mercat%20del%20Born%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Pabellón Mies van der Rohe y Museu Nacional (MNAC) en Montjuïc", "location": "Avinguda Francesc Ferrer i Guàrdia, 7 (Metro: Espanya - L1, L3)", "price": "Entrada 100% gratuita el domingo 4 de octubre", "lat": 41.3706, "lng": 2.1501, "image": "../../images/venues/bcn-pabellon-mies.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pabell%C3%B3n%20Mies%20van%20der%20Rohe%20y%20Museu%20Nacional%20%28MNAC%29%20en%20Montju%C3%AFc%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Jardins de Laribal y Teatre Grec (Montjuïc)", "location": "Passeig de Santa Madrona, 2 (Metro: Espanya / Funicular de Montjuïc)", "price": "Acceso libre y gratuito", "lat": 41.3696, "lng": 2.1597, "image": "../../images/venues/bcn-teatre-grec-laribal.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardins%20de%20Laribal%20y%20Teatre%20Grec%20%28Montju%C3%AFc%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Plaça de la Virreina y Carrer de Verdi (Vila de Gràcia)", "location": "Plaça de la Virreina (Metro: Fontana - L3)", "price": "Paseo gratis / Caña y bravas caseras: 6,00 €", "lat": 41.4046, "lng": 2.1569, "image": "../../images/venues/bcn-placa-virreina-gracia.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a%20de%20la%20Virreina%20y%20Carrer%20de%20Verdi%20%28Vila%20de%20Gr%C3%A0cia%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];

@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -223,8 +226,8 @@
         var pins = [{"idx": 1, "name": "Jardins de Laribal & Teatre Grec", "location": "Passeig de Santa Madrona, 2 (Metro: Espanya / Funicular de Montjuïc)", "price": "Acceso 100% gratuito", "lat": 41.3696, "lng": 2.1597, "image": "../../images/venues/bcn-pabellon-mies.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardins%20de%20Laribal%20%26%20Teatre%20Grec%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Mirador d'Horta / Parc de Collserola", "location": "Carretera d'Horta a Cerdanyola (Metro: Mundet - L3 + 12 min a pie)", "price": "Gratis", "lat": 41.4418, "lng": 2.1389, "image": "../../images/venues/bcn-mirador-horta-collserola.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mirador%20d%27Horta%20/%20Parc%20de%20Collserola%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Parc del Laberint d'Horta", "location": "Passeig dels Castanyers, 1 (Metro: Mundet - Línea 3)", "price": "Gratis miércoles y domingos (2,23 € resto de días)", "lat": 41.4404, "lng": 2.1463, "image": "../../images/venues/bcn-laberint-horta.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parc%20del%20Laberint%20d%27Horta%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Mirador de l'Alcalde (Ladera marítima de Montjuïc)", "location": "Carretera de Montjuïc, 30 (Teleférico o Autobús 150 desde Plaça Espanya)", "price": "Acceso libre y gratuito", "lat": 41.3665, "lng": 2.1683, "image": "../../images/venues/bcn-mirador-alcalde.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mirador%20de%20l%27Alcalde%20%28Ladera%20mar%C3%ADtima%20de%20Montju%C3%AFc%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Jardins del Turó del Putxet", "location": "Carrer de Manacor, 9 (FGC: El Putxet - L7 / Metro: Lesseps - L3)", "price": "100% Gratis", "lat": 41.4081, "lng": 2.1449, "image": "../../images/venues/bcn-turo-del-putxet.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardins%20del%20Tur%C3%B3%20del%20Putxet%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-5"}, {"idx": 6, "name": "Escalinata del Palau Nacional (MNAC) y Mirador de Plaça Espanya", "location": "Parc de Montjuïc, s/n (Metro: Espanya - L1, L3)", "price": "Terrazas exteriores gratuitas (Museo gratis sábados desde las 15:00 h)", "lat": 41.3688, "lng": 2.1536, "image": "../../images/venues/bcn-palau-nacional-mnac.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Escalinata%20del%20Palau%20Nacional%20%28MNAC%29%20y%20Mirador%20de%20Pla%C3%A7a%20Espanya%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-6"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];

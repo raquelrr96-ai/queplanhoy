@@ -21,7 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -216,8 +219,8 @@
         var pins = [{"idx": 1, "name": "Estudios de Cerámica Creativa (Barrio de las Letras / Chamberí)", "location": "Calle de Fernando el Católico / Calle Huertas (Metro: Quevedo / Antón Martín)", "price": "24 € – 29 € por persona (incluye pieza de cerámica, pinturas, horneado y 2 copas de vino)", "lat": 40.4316, "lng": -3.7062, "image": "../../images/venues/madrid-ceramica-vino.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Estudios%20de%20Cer%C3%A1mica%20Creativa%20%28Barrio%20de%20las%20Letras%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Ateneo de Madrid / Círculo de Bellas Artes", "location": "Calle del Prado, 21 (Metro: Sevilla - L2)", "price": "Desde 19 € según zona", "lat": 40.4182, "lng": -3.6966, "image": "../../images/venues/madrid-circulo-bellas-artes.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ateneo%20de%20Madrid%20/%20C%C3%ADrculo%20de%20Bellas%20Artes%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Parque de El Capricho de la Alameda de Osuna", "location": "Paseo de la Alameda de Osuna, 25 (Metro: El Capricho - Línea 5)", "price": "Entrada 100% gratuita (Abierto sábados, domingos y festivos)", "lat": 40.4561, "lng": -3.5986, "image": "../../images/venues/madrid-palacio-cristal-retiro-2.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20de%20El%20Capricho%20de%20la%20Alameda%20de%20Osuna%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Jardín Secreto de Salvador Bachiller / Barrio de Chamberí", "location": "Calle de la Montera, 37 (Metro: Gran Vía - L1, L5)", "price": "Té especial en tetera de hierro + tarta casera para compartir: 9,50 € – 14 €", "lat": 40.4193, "lng": -3.7022, "image": "../../images/venues/madrid-salon-te-jardin.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20Secreto%20de%20Salvador%20Bachiller%20/%20Barrio%20de%20Chamber%C3%AD%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Café Central / Sala Clamores (Huertas / Chamberí)", "location": "Plaza del Ángel, 10 (Metro: Sol / Antón Martín) o Calle de Alburquerque, 14 (Metro: Bilbao)", "price": "Entrada con concierto en directo desde 15 € – 18 €", "lat": 40.4143, "lng": -3.7016, "image": "../../images/venues/madrid-cafe-central-jazz.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Central%20/%20Sala%20Clamores%20%28Huertas%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">HOT</a>',
           maxZoom: 19
         }).addTo(map);
         var bounds = [];
