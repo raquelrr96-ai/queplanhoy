@@ -39,35 +39,45 @@
         "venue": "Feria Barroca de Valdemoro (Plaza de la Constitución y Casco Histórico)",
         "location": "Plaza de la Constitución, Valdemoro (Cercanías C-3 desde Sol o Atocha en 27 min)",
         "price": "Acceso y espectáculos de calle 100% gratuitos",
-        "content": "Uno de los planes más diferentes para hacer este fin de semana del viernes 2 al domingo 4 de octubre de 2026 en Madrid es acercarse a la Feria Barroca de Valdemoro, que conmemora el privilegio de Feria concedido en 1603 por Felipe III. Todo el casco histórico se transforma en una villa del siglo XVII con más de cien puestos de artesanía, gastronomía tradicional, exhibiciones de cetrería, malabares, música barroca en vivo y espectáculos nocturnos de fuego."
+        "content": "Uno de los planes más diferentes para hacer este fin de semana del viernes 2 al domingo 4 de octubre de 2026 en Madrid es acercarse a la Feria Barroca de Valdemoro, que conmemora el privilegio de Feria concedido en 1603 por Felipe III. Todo el casco histórico se transforma en una villa del siglo XVII con más de cien puestos de artesanía, gastronomía tradicional, exhibiciones de cetrería, malabares, música barroca en vivo y espectáculos nocturnos de fuego.",
+        "image": "images/venues/madrid-valdemoro-plaza.jpg",
+        "imageAlt": "Plaza de la Constitución de Valdemoro con sus soportales históricos donde se celebra la Feria Barroca"
       },
       {
         "heading": "2. Mercadillo de diseño, foodtrucks y música en directo entre locomotoras del siglo XIX",
         "venue": "Museo del Ferrocarril de Madrid (Delicias)",
         "location": "Paseo de las Delicias, 61 (Metro: Delicias - L3 / Cercanías Delicias)",
         "price": "Entrada gratuita al mercado (reservar pase horario online)",
-        "content": "Si buscas qué hacer hoy sábado o domingo a mediodía sin salir de la capital, pasear entre vagones históricos de madera mientras escuchas bandas en directo en la terraza exterior y pruebas puestos de artesanos locales es un plan redondo tanto en pareja como con amigos."
+        "content": "Si buscas qué hacer hoy sábado o domingo a mediodía sin salir de la capital, pasear entre vagones históricos de madera mientras escuchas bandas en directo en la terraza exterior y pruebas puestos de artesanos locales es un plan redondo tanto en pareja como con amigos.",
+        "image": "images/venues/madrid-museo-ferrocarril.jpg",
+        "imageAlt": "Locomotoras históricas bajo la gran nave de hierro del siglo XIX del Museo del Ferrocarril de Madrid en Delicias"
       },
       {
         "heading": "3. Ruta de mañana por las galerías de anticuarios de Ribera de Curtidores y vermut",
         "venue": "Nuevas Galerías del Rastro y Plaza del General Vara de Rey",
         "location": "Calle Ribera de Curtidores, 12 (Metro: La Latina - L5 / Puerta de Toledo)",
         "price": "Paseo gratis / Vermut de grifo y tosta: 4,50 €",
-        "content": "En lugar de quedarte solo en la cuesta principal del Rastro el domingo, entra a los patios interiores de las Galerías Piquer y las Nuevas Galerías, donde se esconden los verdaderos talleres de restauración, almonedas del siglo XX y tiendas vintage de Madrid."
+        "content": "En lugar de quedarte solo en la cuesta principal del Rastro el domingo, entra a los patios interiores de las Galerías Piquer y las Nuevas Galerías, donde se esconden los verdaderos talleres de restauración, almonedas del siglo XX y tiendas vintage de Madrid.",
+        "image": "images/venues/madrid-rastro-curtidores.jpg",
+        "imageAlt": "Ambiente de domingo por la mañana en la calle Ribera de Curtidores y las galerías de anticuarios de El Rastro"
       },
       {
         "heading": "4. Invernadero del Palacio de Cristal de Arganzuela y paseo por Madrid Río",
         "venue": "Invernadero del Palacio de Cristal de Arganzuela",
         "location": "Paseo de la Chopera, 10 (Metro: Legazpi - L3, L6)",
         "price": "Acceso 100% gratuito",
-        "content": "Este antiguo mercado de hierro y cristal de principios del siglo XX alberga cuatro microclimas con más de 9.000 especies de plantas tropicales, desérticas y estanques con carpas y tortugas. Es perfecto para la mañana del sábado o domingo antes de cruzar a tomar el aperitivo en Matadero."
+        "content": "Este antiguo mercado de hierro y cristal de principios del siglo XX alberga cuatro microclimas con más de 9.000 especies de plantas tropicales, desérticas y estanques con carpas y tortugas. Es perfecto para la mañana del sábado o domingo antes de cruzar a tomar el aperitivo en Matadero.",
+        "image": "images/venues/madrid-invernadero-arganzuela.jpg",
+        "imageAlt": "Interior tropical del Invernadero del Palacio de Cristal de Arganzuela junto a Madrid Río"
       },
       {
         "heading": "5. Atardecer acústico en el Templo de Debod y mirador del Parque del Oeste",
         "venue": "Jardines del Templo de Debod y Mirador de la Montaña del Príncipe Pío",
         "location": "Calle de Ferraz, 1 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)",
         "price": "Acceso libre y gratuito",
-        "content": "Termina el fin de semana viendo caer el sol detrás de la Casa de Campo y la Sierra de Guadarrama desde la balaustrada del Parque del Oeste, donde suelen tocar músicos de jazz y guitarra acústica al anochecer con vistas al Palacio Real."
+        "content": "Termina el fin de semana viendo caer el sol detrás de la Casa de Campo y la Sierra de Guadarrama desde la balaustrada del Parque del Oeste, donde suelen tocar músicos de jazz y guitarra acústica al anochecer con vistas al Palacio Real.",
+        "image": "images/venues/madrid-templo-debod.jpg",
+        "imageAlt": "El Templo de Debod iluminado al atardecer reflejado en los estanques del Parque del Oeste"
       }
     ],
     "faqs": [
@@ -97,8 +107,8 @@
     "targetKeyword": "que plan hacer en barcelona este fin de semana",
     "searchVolume": "6.800 búsquedas/mes",
     "keywordDifficulty": "Baja (18/100)",
-    "image": "images/planes-este-fin-de-semana-barcelona.jpg",
-    "imageAlt": "Mercado de artesanía y gastronomía al aire libre en el paseo arbolado del Born y la Ciutadella en Barcelona",
+    "image": "images/venues/bcn-mercat-del-born.jpg",
+    "imageAlt": "Estructura histórica de hierro y cristal del antiguo Mercat del Born en Barcelona",
     "excerpt": "Si buscas qué plan hacer en Barcelona este fin de semana (del 2 al 4 de octubre de 2026): arranque de la Fiesta Mayor de Les Corts, mercados al aire libre en El Born, primer domingo de museos gratis y vermut en Gràcia.",
     "priceRange": "Gratis (0 € – 10 €)",
     "neighborhoods": [
@@ -122,35 +132,45 @@
         "venue": "Plaça de Comas y jardines de Can Bruixa (Les Corts)",
         "location": "Plaça de Comas, s/n (Metro: Les Corts - L3)",
         "price": "Actividades y conciertos al aire libre 100% gratuitos",
-        "content": "El primer fin de semana de octubre arranca la Fiesta Mayor de Les Corts, que recupera el ambiente de antiguo pueblo independiente con exhibiciones castelleras el domingo a mediodía, pasacalles de gigantes, talleres gastronómicos y conciertos acústicos al aire libre lejos del turismo masivo del centro."
+        "content": "El primer fin de semana de octubre arranca la Fiesta Mayor de Les Corts, que recupera el ambiente de antiguo pueblo independiente con exhibiciones castelleras el domingo a mediodía, pasacalles de gigantes, talleres gastronómicos y conciertos acústicos al aire libre lejos del turismo masivo del centro.",
+        "image": "images/venues/bcn-les-corts-comas.jpg",
+        "imageAlt": "Sede histórica del distrito de Les Corts en la Plaça de Comas de Barcelona"
       },
       {
         "heading": "2. Mercado de diseño, artesanos y vermut al sol entre el Passeig del Born y la Ciutadella",
         "venue": "Passeig del Born y entorno del Mercat del Born",
         "location": "Plaça Comercial, 12 (Metro: Jaume I - L4 / Arc de Triomf - L1)",
         "price": "Acceso libre / Vermut artesano y tapa: 5,50 €",
-        "content": "Aprovecha la luz suave de principios de octubre para recorrer los puestos de cerámica, ilustración local y gastronomía de proximidad bajo los plátanos del Born, visitando gratis el yacimiento arqueológico de la Barcelona de 1700 dentro del antiguo mercado de hierro."
+        "content": "Aprovecha la luz suave de principios de octubre para recorrer los puestos de cerámica, ilustración local y gastronomía de proximidad bajo los plátanos del Born, visitando gratis el yacimiento arqueológico de la Barcelona de 1700 dentro del antiguo mercado de hierro.",
+        "image": "images/venues/bcn-born-passeig.jpg",
+        "imageAlt": "Paseo arbolado del Passeig del Born junto a Santa Maria del Mar en Barcelona"
       },
       {
         "heading": "3. Primer domingo de mes con entrada gratuita a los grandes museos y al Pabellón Mies van der Rohe",
         "venue": "Pabellón Mies van der Rohe y Museu Nacional (MNAC) en Montjuïc",
         "location": "Avinguda Francesc Ferrer i Guàrdia, 7 (Metro: Espanya - L1, L3)",
         "price": "Entrada 100% gratuita el domingo 4 de octubre",
-        "content": "Al coincidir este domingo 4 de octubre con el primer domingo del mes, numerosos museos y joyas arquitectónicas de Barcelona abren sus puertas gratis, incluyendo el icónico Pabellón de Barcelona de Mies van der Rohe, el MUHBA en la Plaça del Rei y el MNAC."
+        "content": "Al coincidir este domingo 4 de octubre con el primer domingo del mes, numerosos museos y joyas arquitectónicas de Barcelona abren sus puertas gratis, incluyendo el icónico Pabellón de Barcelona de Mies van der Rohe, el MUHBA en la Plaça del Rei y el MNAC.",
+        "image": "images/venues/bcn-pabellon-mies.jpg",
+        "imageAlt": "Estanque y arquitectura de mármol y cristal del Pabellón Mies van der Rohe en Montjuïc"
       },
       {
         "heading": "4. Paseo de otoño por los Jardins de Laribal y el anfiteatro oculto del Teatre Grec",
         "venue": "Jardins de Laribal y Teatre Grec (Montjuïc)",
         "location": "Passeig de Santa Madrona, 2 (Metro: Espanya / Funicular de Montjuïc)",
         "price": "Acceso libre y gratuito",
-        "content": "Después de visitar el pabellón, sube por las escalinatas de cerámica y fuentes árabes que diseñó Forestier en 1922 hasta la terraza del Teatre Grec, uno de los rincones más silenciosos de Barcelona para leer o tomar un café a media mañana."
+        "content": "Después de visitar el pabellón, sube por las escalinatas de cerámica y fuentes árabes que diseñó Forestier en 1922 hasta la terraza del Teatre Grec, uno de los rincones más silenciosos de Barcelona para leer o tomar un café a media mañana.",
+        "image": "images/venues/bcn-teatre-grec-laribal.jpg",
+        "imageAlt": "Gradas de piedra y jardines del Teatre Grec en la montaña de Montjuïc"
       },
       {
         "heading": "5. Tarde de librerías de barrio y aperitivo en la Plaça de la Virreina en Gràcia",
         "venue": "Plaça de la Virreina y Carrer de Verdi (Vila de Gràcia)",
         "location": "Plaça de la Virreina (Metro: Fontana - L3)",
         "price": "Paseo gratis / Caña y bravas caseras: 6,00 €",
-        "content": "Cierra el domingo paseando por las calles peatonales de la parte alta de Gràcia, curioseando en sus librerías independientes antes de sentarte en los escalones o terrazas frente a la iglesia de Sant Joan o de pasar a una sesión en versión original en los Cines Verdi."
+        "content": "Cierra el domingo paseando por las calles peatonales de la parte alta de Gràcia, curioseando en sus librerías independientes antes de sentarte en los escalones o terrazas frente a la iglesia de Sant Joan o de pasar a una sesión en versión original en los Cines Verdi.",
+        "image": "images/venues/bcn-placa-virreina-gracia.jpg",
+        "imageAlt": "Terrazas al aire libre frente a la iglesia de Sant Joan en la Plaça de la Virreina de Gràcia"
       }
     ],
     "faqs": [
@@ -179,8 +199,8 @@
     "targetKeyword": "que plan hacer en valencia este fin de semana",
     "searchVolume": "5.400 búsquedas/mes",
     "keywordDifficulty": "Baja (16/100)",
-    "image": "images/planes-este-fin-de-semana-valencia.jpg",
-    "imageAlt": "Paseo soleado de fin de semana entre naranjos y puentes de piedra históricos en el Jardín del Turia de Valencia",
+    "image": "images/venues/vlc-palau-generalitat.jpg",
+    "imageAlt": "Fachada gótica y torre del Palau de la Generalitat Valenciana en el barrio del Carmen",
     "excerpt": "Qué plan hacer en Valencia este fin de semana (del 2 al 4 de octubre de 2026): ambiente previo al 9 d'Octubre en el cauce del Turia, puertas abiertas en el Palau de la Generalitat, ruta por el Cabanyal y puesta de sol en la Albufera.",
     "priceRange": "Gratis (0 € – 9 €)",
     "neighborhoods": [
@@ -204,35 +224,45 @@
         "venue": "Palau de la Generalitat y Palau dels Borja (Barrio del Carmen)",
         "location": "Calle de los Caballeros, 2 (Plaza de Manises)",
         "price": "Entrada 100% gratuita",
-        "content": "El primer fin de semana de octubre marca el inicio de la programación cultural del 9 d'Octubre en Valencia, una ocasión única del año para entrar gratis sin cita a los patios góticos, el Salón Dorado artesonado y los jardines del Palau de la Generalitat en pleno corazón de Ciutat Vella."
+        "content": "El primer fin de semana de octubre marca el inicio de la programación cultural del 9 d'Octubre en Valencia, una ocasión única del año para entrar gratis sin cita a los patios góticos, el Salón Dorado artesonado y los jardines del Palau de la Generalitat en pleno corazón de Ciutat Vella.",
+        "image": "images/venues/vlc-la-beneficencia.jpg",
+        "imageAlt": "Patio histórico y arcadas de piedra en el barrio del Carmen de Valencia"
       },
       {
         "heading": "2. Mercado y paseo de mañana en bici bajo los puentes históricos del Jardín del Turia",
         "venue": "Jardín del Turia (Tramo Puente de la Exposición – Puente de las Flores)",
         "location": "Paseo de la Alameda / Jardín del Turia (Metro: Alameda - L3, L5, L7, L9)",
         "price": "Acceso libre y gratuito",
-        "content": "Con 23 grados al mediodía, recorrer el antiguo cauce del río Turia entre naranjos, exposiciones al aire libre y puestos de artesanía del mercado de otoño frente al Puente de la Exposición es el plan matinal más agradable de este sábado y domingo."
+        "content": "Con 23 grados al mediodía, recorrer el antiguo cauce del río Turia entre naranjos, exposiciones al aire libre y puestos de artesanía del mercado de otoño frente al Puente de la Exposición es el plan matinal más agradable de este sábado y domingo.",
+        "image": "images/venues/vlc-jardin-del-turia.jpg",
+        "imageAlt": "El Puente de las Flores sobre el antiguo cauce ajardinado del río Turia en Valencia"
       },
       {
         "heading": "3. Aperitivo marinero de clóchinas y vermut en las barracas modernistas de El Cabanyal",
         "venue": "Barrio de El Cabanyal (Calle Reina y entorno del Mercat del Cabanyal)",
         "location": "Calle Reina, 110 (Tranvía: Líneas 4 y 6 - Dr. Lluch / Metro Marítim)",
         "price": "Vermut de grifo y tapa marinera: 5,50 € – 8,00 €",
-        "content": "Acércate a mediodía a las calles de casas bajas recubiertas de azulejos policromados de El Cabanyal para tomar el aperitivo al sol en sus tabernas centenarias antes de caminar cinco minutos hasta el paseo de la Malvarrosa."
+        "content": "Acércate a mediodía a las calles de casas bajas recubiertas de azulejos policromados de El Cabanyal para tomar el aperitivo al sol en sus tabernas centenarias antes de caminar cinco minutos hasta el paseo de la Malvarrosa.",
+        "image": "images/venues/vlc-cabanyal-casas.jpg",
+        "imageAlt": "Paseo marítimo y entorno tradicional del barrio marinero de El Cabanyal en Valencia"
       },
       {
         "heading": "4. Tarde de arte inmersivo y restos del circo romano en el Palacio de Valeriola",
         "venue": "Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
         "location": "Calle del Mar, 31 (Junto a Plaza de la Reina)",
         "price": "Entrada general 10 € (Consultar descuentos de fin de semana)",
-        "content": "Si te apetece un plan cultural diferente el sábado por la tarde, este palacio del siglo XVII rehabilitado esconde en su subsuelo un tramo del circo romano de Valentia y un horno medieval integrados con grandes instalaciones de arte contemporáneo."
+        "content": "Si te apetece un plan cultural diferente el sábado por la tarde, este palacio del siglo XVII rehabilitado esconde en su subsuelo un tramo del circo romano de Valentia y un horno medieval integrados con grandes instalaciones de arte contemporáneo.",
+        "image": "images/venues/vlc-palacio-valeriola.jpg",
+        "imageAlt": "Patio y arquitectura restaurada del Palacio de Valeriola (Centro de Arte Hortensia Herrero)"
       },
       {
         "heading": "5. Atardecer de octubre desde el embarcadero de madera de la Gola de Pujol en L'Albufera",
         "venue": "Mirador y Embarcadero de la Gola de Pujol (Parque Natural de L'Albufera)",
         "location": "Carretera de El Saler (Autobús EMT Línea 24 o 25 desde el centro por 1,50 €)",
         "price": "Mirador gratuito / Paseo en barca tradicional: 6,00 €",
-        "content": "En octubre el sol cae sobre las aguas tranquilas de L'Albufera hacia las 19:40 h tiñendo toda la laguna de tonos cobrizos y violetas sin el calor del verano. Puedes llegar directamente desde la calle Colón en el autobús urbano número 25."
+        "content": "En octubre el sol cae sobre las aguas tranquilas de L'Albufera hacia las 19:40 h tiñendo toda la laguna de tonos cobrizos y violetas sin el calor del verano. Puedes llegar directamente desde la calle Colón en el autobús urbano número 25.",
+        "image": "images/venues/vlc-albufera-gola-pujol.jpg",
+        "imageAlt": "Aguas del Parque Natural de L'Albufera de Valencia al caer el sol"
       }
     ],
     "faqs": [
@@ -261,8 +291,8 @@
     "targetKeyword": "que plan hacer en sevilla este fin de semana",
     "searchVolume": "4.900 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (15/100)",
-    "image": "images/planes-este-fin-de-semana-sevilla.jpg",
-    "imageAlt": "Mercadillo dominical de arte y acuarelas bajo los árboles de la Plaza del Museo frente al Museo de Bellas Artes de Sevilla",
+    "image": "images/venues/sev-plaza-del-museo.jpg",
+    "imageAlt": "Plaza del Museo y fachada del Museo de Bellas Artes de Sevilla rodeada de arbolado",
     "excerpt": "Qué plan hacer en Sevilla este fin de semana (del 2 al 4 de octubre de 2026) aprovechando que bajan las temperaturas: el Mercadillo de Arte en la Plaza del Museo, casas-palacio gratuitas y ruta de tapeo por Triana.",
     "priceRange": "Gratis (0 € – 8 €)",
     "neighborhoods": [
@@ -286,35 +316,45 @@
         "venue": "Plaza del Museo y Museo de Bellas Artes de Sevilla",
         "location": "Plaza del Museo, 9 (Casco Antiguo, a 4 min de Plaza de Armas)",
         "price": "Acceso 100% gratuito",
-        "content": "Cada domingo de 10:00 a 14:00 h más de cincuenta acuarelistas, pintores e ilustradores locales montan sus caballetes a la sombra de los ficus gigantes de la Plaza del Museo. Después de pasear entre los puestos, entra gratis a los tres claustros ajardinados del antiguo Convento de la Merced."
+        "content": "Cada domingo de 10:00 a 14:00 h más de cincuenta acuarelistas, pintores e ilustradores locales montan sus caballetes a la sombra de los ficus gigantes de la Plaza del Museo. Después de pasear entre los puestos, entra gratis a los tres claustros ajardinados del antiguo Convento de la Merced.",
+        "image": "images/venues/sev-marqueses-algaba.jpg",
+        "imageAlt": "Patio porticado e interior museístico en el centro histórico de Sevilla"
       },
       {
         "heading": "2. Sábado en el Mercado de Productores y cervecerías al sol de la Alameda de Hércules",
         "venue": "Alameda de Hércules y Calle Feria",
         "location": "Alameda de Hércules, s/n (Barrio de Feria / San Lorenzo)",
         "price": "Paseo gratis / Caña y montadito en el Mercado de Feria: 3,80 €",
-        "content": "Con la llegada del otoño el centro de vida de los sábados a mediodía vuelve a la calle Feria y la Alameda de Hércules, donde puedes combinar el tapeo en las mesas exteriores del histórico Mercado de Feria (el más antiguo de Sevilla) con puestos de artesanía y librerías de viejo."
+        "content": "Con la llegada del otoño el centro de vida de los sábados a mediodía vuelve a la calle Feria y la Alameda de Hércules, donde puedes combinar el tapeo en las mesas exteriores del histórico Mercado de Feria (el más antiguo de Sevilla) con puestos de artesanía y librerías de viejo.",
+        "image": "images/venues/sev-alameda-hercules.jpg",
+        "imageAlt": "Columnas romanas y paseo peatonal arbolado de la Alameda de Hércules en Sevilla"
       },
       {
         "heading": "3. Jardines de la Casa de las Sirenas y Pabellón Mudéjar del Parque de María Luisa",
         "venue": "Palacete de la Casa de las Sirenas y Plaza de América",
         "location": "Alameda de Hércules, 30 / Plaza de América (Parque de María Luisa)",
         "price": "Entrada libre y gratuita",
-        "content": "Dos joyas arquitectónicas que puedes visitar gratis este fin de semana sin hacer las colas del Alcázar: el palacete francés del siglo XIX de la Casa de las Sirenas (con exposiciones temporales gratuitas) y los estanques de lotos frente al Pabellón Mudéjar."
+        "content": "Dos joyas arquitectónicas que puedes visitar gratis este fin de semana sin hacer las colas del Alcázar: el palacete francés del siglo XIX de la Casa de las Sirenas (con exposiciones temporales gratuitas) y los estanques de lotos frente al Pabellón Mudéjar.",
+        "image": "images/venues/sev-pabellon-mudejar.jpg",
+        "imageAlt": "Fachada de ladrillo y azulejos del Pabellón Mudéjar en la Plaza de América del Parque de María Luisa"
       },
       {
         "heading": "4. Ruta de alfarería histórica en el Centro Cerámica Triana y callejón de la Inquisición",
         "venue": "Centro Cerámica Triana y Paseo de Nuestra Señora de la O",
         "location": "Calle Callao, 16 (Junto al Puente de Triana y Mercado de Triana)",
         "price": "2,10 € entrada general",
-        "content": "Adéntrate en los antiguos hornos de ladrillo del siglo XIX de la fábrica Santa Ana en Triana y baja después por el estrecho Callejón de la Inquisición hasta el paseo fluvial junto al Guadalquivir."
+        "content": "Adéntrate en los antiguos hornos de ladrillo del siglo XIX de la fábrica Santa Ana en Triana y baja después por el estrecho Callejón de la Inquisición hasta el paseo fluvial junto al Guadalquivir.",
+        "image": "images/venues/sev-ceramica-triana.jpg",
+        "imageAlt": "Hornos históricos y piezas de alfarería tradicional en el Centro Cerámica Triana"
       },
       {
         "heading": "5. Atardecer en el Muelle de la Sal y paseo nocturno por la Judería de Santa Cruz",
         "venue": "Muelle de la Sal (Puente de Triana) y Plaza de Doña Elvira",
         "location": "Paseo de Cristóbal Colón / Barrio de Santa Cruz (Metro: Puerta de Jerez - L1)",
         "price": "Paseo 100% gratuito",
-        "content": "Termina el sábado o el domingo viendo encenderse el Puente de Isabel II sobre el río Guadalquivir y adéntrate al anochecer por el Pasaje del Agua y la Plaza de Doña Elvira bajo el aroma a azahar y dama de noche."
+        "content": "Termina el sábado o el domingo viendo encenderse el Puente de Isabel II sobre el río Guadalquivir y adéntrate al anochecer por el Pasaje del Agua y la Plaza de Doña Elvira bajo el aroma a azahar y dama de noche.",
+        "image": "images/venues/sev-muelle-sal-triana.jpg",
+        "imageAlt": "El Puente de Isabel II (Puente de Triana) iluminado al atardecer sobre el río Guadalquivir"
       }
     ],
     "faqs": [
@@ -343,8 +383,8 @@
     "targetKeyword": "que plan hacer en toledo este fin de semana",
     "searchVolume": "3.600 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (12/100)",
-    "image": "images/planes-este-fin-de-semana-toledo.jpg",
-    "imageAlt": "Puestos de artesanía tradicional al sol de otoño junto al Monasterio de San Juan de los Reyes en Toledo con vistas al valle del Tajo",
+    "image": "images/venues/tol-san-juan-reyes.jpg",
+    "imageAlt": "Monasterio gótico de San Juan de los Reyes en la Judería de Toledo",
     "excerpt": "Si te preguntas qué plan hacer en Toledo este fin de semana (del 2 al 4 de octubre de 2026): ruta por el patrimonio subterráneo gratuito, mercado de artesanía en la Judería, senda del Tajo con colores de otoño y los cobertizos al anochecer.",
     "priceRange": "Gratis (0 € – 10 €)",
     "neighborhoods": [
@@ -368,35 +408,45 @@
         "venue": "Senda Ecológica del Río Tajo (Tramo Alcántara – San Martín)",
         "location": "Inicio en el Puente Romano de Alcántara (a 10 min a pie de la estación de tren Avant)",
         "price": "Recorrido 100% gratuito",
-        "content": "El primer fin de semana de octubre es el mejor momento del año para recorrer a pie los 4 kilómetros del cañón del río Tajo bajo las murallas de Toledo: los álamos de la ribera empiezan a teñirse de dorado y caminarás junto a antiguos molinos medievales sin cruzarte con las multitudes del casco alto."
+        "content": "El primer fin de semana de octubre es el mejor momento del año para recorrer a pie los 4 kilómetros del cañón del río Tajo bajo las murallas de Toledo: los álamos de la ribera empiezan a teñirse de dorado y caminarás junto a antiguos molinos medievales sin cruzarte con las multitudes del casco alto.",
+        "image": "images/venues/tol-senda-ecologica-tajo.jpg",
+        "imageAlt": "El río Tajo y el puente histórico de Alcántara al inicio de la Senda Ecológica de Toledo"
       },
       {
         "heading": "2. Artesanía en la Judería y claustro gótico de San Juan de los Reyes",
         "venue": "Plaza de San Juan de los Reyes y Paseo de San Cristóbal",
         "location": "Calle de los Reyes Católicos, 17 (Barrio de la Judería)",
         "price": "Paseo exterior gratis / Entrada al claustro: 4,00 €",
-        "content": "Sube desde el Puente de San Martín hasta la Judería para recorrer los talleres de damasquinado, cerámica y cuero en torno a San Juan de los Reyes y asómate al mirador del Paseo de San Cristóbal sobre los cigarrales."
+        "content": "Sube desde el Puente de San Martín hasta la Judería para recorrer los talleres de damasquinado, cerámica y cuero en torno a San Juan de los Reyes y asómate al mirador del Paseo de San Cristóbal sobre los cigarrales.",
+        "image": "images/venues/tol-museo-santa-cruz.jpg",
+        "imageAlt": "Galería y arcos históricos del patrimonio monumental de Toledo"
       },
       {
         "heading": "3. Los subterráneos romanos gratuitos del Consorcio de Toledo (Termas y Cuevas de Hércules)",
         "venue": "Termas Romanas de Amador de los Ríos y Cuevas de Hércules",
         "location": "Plaza Amador de los Ríos y Callejón de San Ginés, 3 (Centro Histórico)",
         "price": "Entrada 100% gratuita (Viernes y sábado en horario de mañana y tarde)",
-        "content": "Poca gente sabe que el Consorcio de Toledo abre de forma totalmente gratuita las bóvedas subterráneas romanas del siglo I bajo el nivel de las calles medievales, incluyendo los depósitos hidráulicos de las míticas Cuevas de Hércules."
+        "content": "Poca gente sabe que el Consorcio de Toledo abre de forma totalmente gratuita las bóvedas subterráneas romanas del siglo I bajo el nivel de las calles medievales, incluyendo los depósitos hidráulicos de las míticas Cuevas de Hércules.",
+        "image": "images/venues/tol-cuevas-hercules-termas.jpg",
+        "imageAlt": "Muros y bóvedas subterráneas de las Termas Romanas de la Plaza de Amador de los Ríos en Toledo"
       },
       {
         "heading": "4. Domingo de museos gratis: Museo del Greco y Museo Sefardí (Sinagoga del Tránsito)",
         "venue": "Museo del Greco y Sinagoga del Tránsito (Judería)",
         "location": "Paseo del Tránsito, s/n (Judería de Toledo)",
         "price": "Gratis sábados desde las 14:00 h y domingos toda la mañana",
-        "content": "Tanto el sábado a partir de las 14:00 h como el domingo por la mañana, los dos museos estatales más bellos de la Judería son completamente gratuitos, con sus jardines renacentistas y la impresionante yesería mudéjar de la Sinagoga del Tránsito."
+        "content": "Tanto el sábado a partir de las 14:00 h como el domingo por la mañana, los dos museos estatales más bellos de la Judería son completamente gratuitos, con sus jardines renacentistas y la impresionante yesería mudéjar de la Sinagoga del Tránsito.",
+        "image": "images/venues/tol-sinagoga-transito-greco.jpg",
+        "imageAlt": "Yeserías hebreas y artesonado mudéjar de la Sinagoga del Tránsito en la Judería de Toledo"
       },
       {
         "heading": "5. Dulces en el torno conventual de San Clemente y paseo nocturno por los Cobertizos",
         "venue": "Convento de San Clemente y Cobertizos de Santo Domingo el Real",
         "location": "Calle San Clemente, 1 y Plaza de Santo Domingo el Real",
         "price": "Mazapán artesano desde 4,50 € / Paseo nocturno gratis",
-        "content": "Antes de que caiga la tarde, compra una cajita de mazapán recién horneado a través del torno de madera del Convento de San Clemente y espera al anochecer para cruzar los pasadizos techados del siglo XVI iluminados por faroles de hierro."
+        "content": "Antes de que caiga la tarde, compra una cajita de mazapán recién horneado a través del torno de madera del Convento de San Clemente y espera al anochecer para cruzar los pasadizos techados del siglo XVI iluminados por faroles de hierro.",
+        "image": "images/venues/tol-convento-san-clemente.jpg",
+        "imageAlt": "Portada renacentista del histórico edificio de San Clemente en Toledo"
       }
     ],
     "faqs": [
@@ -449,35 +499,45 @@
         "venue": "Invernadero del Palacio de Cristal de Arganzuela",
         "location": "Paseo de la Chopera, 10 (Metro: Legazpi - L3 y L6)",
         "price": "Entrada 100% gratuita",
-        "content": "Mientras el Palacio de Cristal del Retiro ofrece una de las estampas más fotogénicas de Madrid bajo la lluvia desde el estanque, el gran Invernadero de Cristal de Arganzuela (en la antigua nave de patatas de Matadero) permite pasear a cubierto entre 9.000 plantas tropicales, estanques con carpas y cuatro microclimas cálidos de martes a domingo."
+        "content": "Mientras el Palacio de Cristal del Retiro ofrece una de las estampas más fotogénicas de Madrid bajo la lluvia desde el estanque, el gran Invernadero de Cristal de Arganzuela (en la antigua nave de patatas de Matadero) permite pasear a cubierto entre 9.000 plantas tropicales, estanques con carpas y cuatro microclimas cálidos de martes a domingo.",
+        "image": "images/venues/madrid-invernadero-arganzuela.jpg",
+        "imageAlt": "Interior cubierto con vegetación tropical del Invernadero del Palacio de Cristal de Arganzuela"
       },
       {
         "heading": "2. El Salón de Baile del Museo Cerralbo",
         "venue": "Museo Cerralbo",
         "location": "Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)",
         "price": "3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)",
-        "content": "Uno de los palacios cubiertos más espectaculares de Madrid y sin las colas del eje del Prado. Conserva intacta la decoración original de 1893 del Marqués de Cerralbo, con galerías de espejos venecianos, lámparas de cristal de murano y su famoso Salón de Baile dorado."
+        "content": "Uno de los palacios cubiertos más espectaculares de Madrid y sin las colas del eje del Prado. Conserva intacta la decoración original de 1893 del Marqués de Cerralbo, con galerías de espejos venecianos, lámparas de cristal de murano y su famoso Salón de Baile dorado.",
+        "image": "images/venues/madrid-museo-cerralbo.jpg",
+        "imageAlt": "Palacio del Marqués de Cerralbo en el barrio de Argüelles de Madrid"
       },
       {
         "heading": "3. Jardín Secreto Acristalado y Salón de Té del Museo del Romanticismo",
         "venue": "Café del Jardín del Museo del Romanticismo",
         "location": "Calle de San Mateo, 13 (Metro: Tribunal - L1, L10 / Alonso Martínez - L4, L5, L10)",
         "price": "Acceso libre al café sin entrada al museo / Café y repostería: 4,50 € – 7,50 €",
-        "content": "Escondido en el interior de un palacete de 1776 entre Malasaña y Chueca, su salón interior junto al patio de magnolios permite merendar tarta casera o té caliente escuchando caer la lluvia en pleno silencio."
+        "content": "Escondido en el interior de un palacete de 1776 entre Malasaña y Chueca, su salón interior junto al patio de magnolios permite merendar tarta casera o té caliente escuchando caer la lluvia en pleno silencio.",
+        "image": "images/venues/madrid-museo-romanticismo.jpg",
+        "imageAlt": "Salones decimonónicos del Museo del Romanticismo en la calle San Mateo de Madrid"
       },
       {
         "heading": "4. Galería de Cristal del Palacio de Cibeles y mirador cubierto",
         "venue": "CentroCentro - Palacio de Cibeles",
         "location": "Plaza de Cibeles, 1 (Metro: Banco de España - L2)",
         "price": "Acceso a la Galería de Cristal y exposiciones: Gratis (Mirador: 3,00 €)",
-        "content": "La gran bóveda acristalada del antiguo Palacio de Comunicaciones funciona como una plaza pública cubierta e iluminada con luz natural aunque diluvie fuera, con salas de exposiciones gratuitas en las plantas superiores."
+        "content": "La gran bóveda acristalada del antiguo Palacio de Comunicaciones funciona como una plaza pública cubierta e iluminada con luz natural aunque diluvie fuera, con salas de exposiciones gratuitas en las plantas superiores.",
+        "image": "images/venues/madrid-palacio-cibeles-galeria.jpg",
+        "imageAlt": "Bóveda acristalada de la Galería de Cristal del Palacio de Cibeles en Madrid"
       },
       {
         "heading": "5. Sesión en versión original en el Cine Doré (Filmoteca Española)",
         "venue": "Cine Doré - Filmoteca Española",
         "location": "Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)",
         "price": "3,00 € por entrada (2,00 € con carné joven o estudiante)",
-        "content": "Un cine modernista de 1912 en el corazón de Lavapiés y Antón Martín con sala de butacas clásicas y cafetería interior. Por solo 3 € proyecta ciclos de cine clásico e independiente en versión original subtitulada."
+        "content": "Un cine modernista de 1912 en el corazón de Lavapiés y Antón Martín con sala de butacas clásicas y cafetería interior. Por solo 3 € proyecta ciclos de cine clásico e independiente en versión original subtitulada.",
+        "image": "images/venues/madrid-cine-dore.jpg",
+        "imageAlt": "Sala histórica de proyecciones del Cine Doré (Filmoteca Española) en la calle Santa Isabel"
       }
     ],
     "faqs": [
@@ -530,35 +590,45 @@
         "venue": "Recinto Modernista de Sant Pau",
         "location": "Carrer de Sant Antoni Maria Claret, 167 (Metro: Sant Pau | Dos de Maig - L5)",
         "price": "16 € entrada general (Gratis primer domingo de mes) / Paseo por Avinguda Gaudí: Gratis",
-        "content": "El conjunto modernista más grande de Europa, diseñado por Lluís Domènech i Montaner, es un oasis de pabellones de ladrillo visto, cúpulas de cerámica y jardines tranquilos. Al salir al anochecer, la fachada iluminada conectada con la Sagrada Familia por la peatonal Avinguda Gaudí ofrece uno de los paseos más románticos de Barcelona."
+        "content": "El conjunto modernista más grande de Europa, diseñado por Lluís Domènech i Montaner, es un oasis de pabellones de ladrillo visto, cúpulas de cerámica y jardines tranquilos. Al salir al anochecer, la fachada iluminada conectada con la Sagrada Familia por la peatonal Avinguda Gaudí ofrece uno de los paseos más románticos de Barcelona.",
+        "image": "images/venues/bcn-sant-pau-2.jpg",
+        "imageAlt": "Fuente y pabellones modernistas iluminados del Recinto de Sant Pau en Barcelona"
       },
       {
         "heading": "2. Perderse en el Parque del Laberinto de Horta",
         "venue": "Parc del Laberint d'Horta",
         "location": "Passeig dels Castanyers, 1 (Metro: Mundet - L3, salida Velòdrom)",
         "price": "2,23 € entrada general (Gratis miércoles y domingos)",
-        "content": "El jardín histórico más antiguo de Barcelona (1791) conserva un laberinto de cipreses recortados, templetes neoclásicos con columnas italianas, una cascada y un canal romántico rodeado de bosque mediterráneo."
+        "content": "El jardín histórico más antiguo de Barcelona (1791) conserva un laberinto de cipreses recortados, templetes neoclásicos con columnas italianas, una cascada y un canal romántico rodeado de bosque mediterráneo.",
+        "image": "images/venues/bcn-laberint-horta.jpg",
+        "imageAlt": "Laberinto de cipreses y templete neoclásico del Parc del Laberint d'Horta en Barcelona"
       },
       {
         "heading": "3. Los Jardins de Laribal y la terraza del Teatre Grec en Montjuïc",
         "venue": "Jardins de Laribal y Teatre Grec",
         "location": "Passeig de Santa Madrona, 2 (Metro: Espanya - L1, L3 / Paral·lel - L2, L3)",
         "price": "Acceso 100% gratuito",
-        "content": "Jardines escalonados de 1922 con fuentes de azulejos, escaleras de agua y pérgolas cubiertas de glicinias que desembocan en el anfiteatro de piedra del Teatre Grec."
+        "content": "Jardines escalonados de 1922 con fuentes de azulejos, escaleras de agua y pérgolas cubiertas de glicinias que desembocan en el anfiteatro de piedra del Teatre Grec.",
+        "image": "images/venues/bcn-teatre-grec-laribal.jpg",
+        "imageAlt": "Anfiteatro al aire libre del Teatre Grec rodeado por los Jardins de Laribal en Montjuïc"
       },
       {
         "heading": "4. Copa de vino o vermut con música en vivo en las bóvedas de El Born",
         "venue": "Bares acústicos del Passeig del Born y Carrer dels Flassaders",
         "location": "Carrer dels Flassaders y entorno de Santa Maria del Mar (Metro: Jaume I - L4)",
         "price": "Copa de vino o cóctel: 6,00 € – 10,00 €",
-        "content": "En las callejuelas medievales que rodean la basílica de Santa Maria del Mar encontrarás locales con arcos de piedra del siglo XIV donde se programan sesiones íntimas de jazz, swing y guitarra acústica."
+        "content": "En las callejuelas medievales que rodean la basílica de Santa Maria del Mar encontrarás locales con arcos de piedra del siglo XIV donde se programan sesiones íntimas de jazz, swing y guitarra acústica.",
+        "image": "images/venues/bcn-born-passeig.jpg",
+        "imageAlt": "Ambiente nocturno en el Passeig del Born junto a la basílica de Santa Maria del Mar"
       },
       {
         "heading": "5. Mirador de l'Alcalde y descenso por los jardines de Miramar",
         "venue": "Mirador de l'Alcalde (Montjuïc)",
         "location": "Carretera de Montjuïc, 22 (Metro: Paral·lel + Funicular de Montjuïc)",
         "price": "Acceso libre y gratuito",
-        "content": "Un mirador ajardinado en balcones sobre el puerto de Barcelona y la línea de costa mediterránea, mucho más tranquilo e íntimo al caer el sol que los búnkers del Carmel."
+        "content": "Un mirador ajardinado en balcones sobre el puerto de Barcelona y la línea de costa mediterránea, mucho más tranquilo e íntimo al caer el sol que los búnkers del Carmel.",
+        "image": "images/venues/bcn-mirador-alcalde.jpg",
+        "imageAlt": "Fuente y terrazas ajardinadas de Miramar y el Mirador de l'Alcalde en Montjuïc"
       }
     ],
     "faqs": [
@@ -611,35 +681,45 @@
         "venue": "Jardines de Monforte",
         "location": "Plaza de la Legión Española, s/n (Metro: Facultats - L3, L9 / Alameda - L3, L5, L7, L9)",
         "price": "Acceso 100% gratuito (Todos los días de 10:00 a 19:00 h)",
-        "content": "Escondido tras un muro junto a los Jardines del Real (Viveros), este jardín histórico de 1859 conserva treinta y tres estatuas de mármol italiano, un estanque de nenúfares, un laberinto de mirto y una pérgola de buganvillas en absoluto silencio."
+        "content": "Escondido tras un muro junto a los Jardines del Real (Viveros), este jardín histórico de 1859 conserva treinta y tres estatuas de mármol italiano, un estanque de nenúfares, un laberinto de mirto y una pérgola de buganvillas en absoluto silencio.",
+        "image": "images/venues/vlc-jardines-monforte-2.jpg",
+        "imageAlt": "Setos recortados, fuentes y estatuas clásicas en el interior de los Jardines de Monforte"
       },
       {
         "heading": "2. Los dos claustros del Centre del Carme Cultura Contemporània (CCCC)",
         "venue": "Centre del Carme (Antiguo Convento del Carmen)",
         "location": "Calle del Museo, 2 (Barrio del Carmen)",
         "price": "Entrada 100% gratuita todos los días",
-        "content": "El antiguo Real Monasterio del Carmen alberga un claustro gótico del siglo XIV y otro renacentista del XVI con exposiciones gratuitas de arte actual, fotografía y diseño, además de conciertos y actividades culturales de acceso libre."
+        "content": "El antiguo Real Monasterio del Carmen alberga un claustro gótico del siglo XIV y otro renacentista del XVI con exposiciones gratuitas de arte actual, fotografía y diseño, además de conciertos y actividades culturales de acceso libre.",
+        "image": "images/venues/vlc-centre-del-carme.jpg",
+        "imageAlt": "Claustro histórico del antiguo Real Monasterio del Carmen (Centre del Carme CCCC) en Valencia"
       },
       {
         "heading": "3. Paseo por las fachadas modernistas de azulejos de El Cabanyal",
         "venue": "Conjunto Histórico Protegido de El Cabanyal",
         "location": "Calles de la Reina, San Pedro y Barraca (Tranvía: Líneas 4 y 6 - Dr. Lluch)",
         "price": "Paseo 100% gratuito",
-        "content": "Recorre las antiguas casas de pescadores de finales del siglo XIX revestidas con cerámica vidriada de colores (modernismo popular marinero), un museo arquitectónico al aire libre a cinco minutos de la playa de las Arenas."
+        "content": "Recorre las antiguas casas de pescadores de finales del siglo XIX revestidas con cerámica vidriada de colores (modernismo popular marinero), un museo arquitectónico al aire libre a cinco minutos de la playa de las Arenas.",
+        "image": "images/venues/vlc-cabanyal-casas.jpg",
+        "imageAlt": "Entorno marinero del barrio histórico de El Cabanyal junto a la playa de Valencia"
       },
       {
         "heading": "4. Ruta a pie o en bici por la Vía Xurra entre alquerías de la Huerta",
         "venue": "Vía Verde Xurra (Valencia - Alboraya)",
         "location": "Inicio en Avenida de Aragón junto al Puente de Aragón (Metro: Aragón - L5, L7)",
         "price": "100% Gratis",
-        "content": "Antiguo trazado ferroviario reconvertido en paseo peatonal y ciclista sin coches que se adentra en apenas diez minutos en la huerta histórica de Alboraya entre acequias de origen árabe y campos de chufa."
+        "content": "Antiguo trazado ferroviario reconvertido en paseo peatonal y ciclista sin coches que se adentra en apenas diez minutos en la huerta histórica de Alboraya entre acequias de origen árabe y campos de chufa.",
+        "image": "images/venues/vlc-huerta-alboraya.jpg",
+        "imageAlt": "Campos de cultivo tradicionales de la Huerta de Alboraya al norte de Valencia"
       },
       {
         "heading": "5. Palacio del Marqués de Dos Aguas y tardes gratuitas en el Museo de Cerámica",
         "venue": "Museo Nacional de Cerámica y Artes Suntuarias González Martí",
         "location": "Calle del Poeta Querol, 2 (Centro Histórico)",
         "price": "Gratis sábados desde las 16:00 h y domingos todo el día (3,00 € resto de horario)",
-        "content": "Tras admirar gratis su impresionante portada barroca de alabastro en pleno centro, los sábados por la tarde y los domingos por la mañana puedes visitar sin coste sus salones palaciegos del siglo XIX y las carrozas históricas."
+        "content": "Tras admirar gratis su impresionante portada barroca de alabastro en pleno centro, los sábados por la tarde y los domingos por la mañana puedes visitar sin coste sus salones palaciegos del siglo XIX y las carrozas históricas.",
+        "image": "images/venues/vlc-marques-dos-aguas.jpg",
+        "imageAlt": "Fachada barroca y salones del Palacio del Marqués de Dos Aguas (Museo Nacional de Cerámica)"
       }
     ],
     "faqs": [
@@ -692,35 +772,45 @@
         "venue": "Plaza de América y Museo de Artes y Costumbres Populares (Pabellón Mudéjar)",
         "location": "Plaza de América, s/n, extremo sur del Parque de María Luisa (Metro: Prado de San Sebastián - L1)",
         "price": "Plaza 100% gratuita / Museo gratis para ciudadanos de la UE (1,50 € resto)",
-        "content": "Mucho más tranquila que la vecina Plaza de España, la Plaza de América proyectada por Aníbal González reúne tres edificios históricos rodeados de estanques, rosales y palomas blancas, presididos por la espectacular fachada de ladrillo y azulejos del Pabellón Mudéjar de 1914."
+        "content": "Mucho más tranquila que la vecina Plaza de España, la Plaza de América proyectada por Aníbal González reúne tres edificios históricos rodeados de estanques, rosales y palomas blancas, presididos por la espectacular fachada de ladrillo y azulejos del Pabellón Mudéjar de 1914.",
+        "image": "images/venues/sev-pabellon-mudejar-2.jpg",
+        "imageAlt": "Arquitectura regionalista del Pabellón Mudéjar en la Plaza de América del Parque de María Luisa"
       },
       {
         "heading": "2. El Palacio de los Marqueses de la Algaba y su jardín mudéjar",
         "venue": "Palacio de los Marqueses de la Algaba (Centro del Arte Mudéjar)",
         "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)",
         "price": "Entrada 100% gratuita de lunes a sábado",
-        "content": "Un palacio señorial de 1474 con patio porticado de columnas genovesas, artesonados históricos y jardines frescos al que se entra gratis sin colas en pleno barrio de Feria."
+        "content": "Un palacio señorial de 1474 con patio porticado de columnas genovesas, artesonados históricos y jardines frescos al que se entra gratis sin colas en pleno barrio de Feria.",
+        "image": "images/venues/sev-marqueses-algaba.jpg",
+        "imageAlt": "Patio mudéjar y renacentista del Palacio de los Marqueses de la Algaba en Sevilla"
       },
       {
         "heading": "3. El Centro Cerámica Triana y los antiguos hornos de alfarería",
         "venue": "Centro Cerámica Triana y Corrales de la Calle Alfarería",
         "location": "Calle Callao, 16 (Junto al Puente de Triana y Plaza del Altozano)",
         "price": "Paseo por talleres y corrales: Gratis (Museo: 2,10 €)",
-        "content": "Adéntrate en las calles Callao, Antillano Campos y Alfarería para ver en activo los obradores tradicionales de cerámica sevillana y los antiguos hornos de ladrillo del siglo XIX."
+        "content": "Adéntrate en las calles Callao, Antillano Campos y Alfarería para ver en activo los obradores tradicionales de cerámica sevillana y los antiguos hornos de ladrillo del siglo XIX.",
+        "image": "images/venues/sev-ceramica-triana.jpg",
+        "imageAlt": "Antiguos hornos de ladrillo y azulejería histórica en el Centro Cerámica Triana"
       },
       {
         "heading": "4. El Archivo General de Indias y sus galerías renacentistas",
         "venue": "Archivo General de Indias",
         "location": "Avenida de la Constitución, s/n (Junto a la Catedral)",
         "price": "Entrada 100% gratuita todos los días (Martes a domingo)",
-        "content": "A diferencia de la Catedral y el Alcázar, esta joya renacentista de Juan de Herrera (Patrimonio de la Humanidad) tiene entrada completamente gratuita y permite recorrer su gran escalera monumental de mármol y las exposiciones de mapas históricos de América."
+        "content": "A diferencia de la Catedral y el Alcázar, esta joya renacentista de Juan de Herrera (Patrimonio de la Humanidad) tiene entrada completamente gratuita y permite recorrer su gran escalera monumental de mármol y las exposiciones de mapas históricos de América.",
+        "image": "images/venues/sev-archivo-indias.jpg",
+        "imageAlt": "Galería abovedada del Archivo General de Indias en Sevilla"
       },
       {
         "heading": "5. La escondida Plaza de Santa Marta y el Callejón del Agua al atardecer",
         "venue": "Plaza de Santa Marta",
         "location": "Acceso por el estrecho pasadizo junto al Convento de la Encarnación (Plaza Virgen de los Reyes)",
         "price": "Acceso libre y gratuito",
-        "content": "A solo treinta metros de la Giralda pero oculta tras un estrecho callejón, esta diminuta plazuela con cuatro naranjos y un crucero de piedra del siglo XVI es uno de los lugares más silenciosos de Sevilla."
+        "content": "A solo treinta metros de la Giralda pero oculta tras un estrecho callejón, esta diminuta plazuela con cuatro naranjos y un crucero de piedra del siglo XVI es uno de los lugares más silenciosos de Sevilla.",
+        "image": "images/venues/sev-plaza-santa-marta.jpg",
+        "imageAlt": "Crucero renacentista y naranjos de la escondida Plaza de Santa Marta en el barrio de Santa Cruz"
       }
     ],
     "faqs": [
@@ -773,35 +863,45 @@
         "venue": "Puente de San Martín y Senda Ecológica del Tajo",
         "location": "Bajada desde el Monasterio de San Juan de los Reyes (Oeste del Casco Histórico)",
         "price": "Acceso 100% gratuito",
-        "content": "Construido en el siglo XIV con dos imponentes torreones defensivos sobre el río Tajo, el Puente de San Martín marca el inicio del tramo más bonito de la Senda Ecológica: un sendero peatonal junto al agua entre rocas graníticas, aves acuáticas y antiguos molinos medievales."
+        "content": "Construido en el siglo XIV con dos imponentes torreones defensivos sobre el río Tajo, el Puente de San Martín marca el inicio del tramo más bonito de la Senda Ecológica: un sendero peatonal junto al agua entre rocas graníticas, aves acuáticas y antiguos molinos medievales.",
+        "image": "images/venues/tol-puente-san-martin-2.jpg",
+        "imageAlt": "Torreón medieval y arcos de piedra del Puente de San Martín sobre el río Tajo"
       },
       {
         "heading": "2. Las Termas Romanas de Amador de los Ríos y las Cuevas de Hércules",
         "venue": "Rutas de Patrimonio Desconocido del Consorcio de Toledo",
         "location": "Plaza Amador de los Ríos y Callejón de San Ginés (Centro Histórico)",
         "price": "Entrada 100% gratuita (Martes a sábado de 10:00 a 14:00 y de 17:00 a 19:00 h)",
-        "content": "El Consorcio de Toledo abre gratuitamente al público varios espacios subterráneos de más de dos mil años de antigüedad bajo las casas del casco histórico, incluyendo las monumentales cisternas romanas de las Cuevas de Hércules."
+        "content": "El Consorcio de Toledo abre gratuitamente al público varios espacios subterráneos de más de dos mil años de antigüedad bajo las casas del casco histórico, incluyendo las monumentales cisternas romanas de las Cuevas de Hércules.",
+        "image": "images/venues/tol-cuevas-hercules-termas.jpg",
+        "imageAlt": "Restos arqueológicos subterráneos de las Termas Romanas de Amador de los Ríos en Toledo"
       },
       {
         "heading": "3. Mirador del Cerro del Bú al otro lado del Tajo",
         "venue": "Yacimiento y Mirador del Cerro del Bú",
         "location": "Cruzando la pasarela peatonal junto al Puente de Alcántara",
         "price": "Acceso libre y gratuito las 24 horas",
-        "content": "Mientras los autobuses turísticos se concentran en la carretera del Valle, este promontorio de la Edad del Bronce permite contemplar el Alcázar y las murallas de Toledo mucho más cerca y en completo silencio."
+        "content": "Mientras los autobuses turísticos se concentran en la carretera del Valle, este promontorio de la Edad del Bronce permite contemplar el Alcázar y las murallas de Toledo mucho más cerca y en completo silencio.",
+        "image": "images/venues/tol-cerro-del-bu.jpg",
+        "imageAlt": "Panorámica de las murallas y el Alcázar de Toledo desde la otra orilla del río Tajo"
       },
       {
         "heading": "4. Ruta de los Cobertizos del Barrio de los Conventos al caer la tarde",
         "venue": "Cobertizos de Santo Domingo el Real, Santa Clara y San Pedro Mártir",
         "location": "Zona norte del Casco Histórico (a 5 minutos a pie de la Plaza de Zocodover)",
         "price": "Paseo 100% gratuito",
-        "content": "Un laberinto de callejones empedrados atravesados por pasadizos elevados de madera y ladrillo del siglo XVI que comunicaban los conventos de clausura sin pisar la calle."
+        "content": "Un laberinto de callejones empedrados atravesados por pasadizos elevados de madera y ladrillo del siglo XVI que comunicaban los conventos de clausura sin pisar la calle.",
+        "image": "images/venues/tol-cobertizos.jpg",
+        "imageAlt": "Portada conventual y callejones históricos del barrio de los conventos de Toledo"
       },
       {
         "heading": "5. El Museo de Santa Cruz y su claustro plateresco",
         "venue": "Museo de Santa Cruz",
         "location": "Calle Miguel de Cervantes, 3 (Junto al arco de la Sangre en Zocodover)",
         "price": "Gratis miércoles toda la tarde y domingos (4,00 € resto de horario / Claustro y patio de libre acceso)",
-        "content": "Justo debajo de la Plaza de Zocodover, este antiguo hospital renacentista fundado por el Cardenal Mendoza cuenta con una espectacular escalera plateresca de Covarrubias, un claustro ajardinado de dos pisos y una colección de lienzos originales de El Greco."
+        "content": "Justo debajo de la Plaza de Zocodover, este antiguo hospital renacentista fundado por el Cardenal Mendoza cuenta con una espectacular escalera plateresca de Covarrubias, un claustro ajardinado de dos pisos y una colección de lienzos originales de El Greco.",
+        "image": "images/venues/tol-museo-santa-cruz.jpg",
+        "imageAlt": "Galería y claustro renacentista del Museo de Santa Cruz junto a Zocodover"
       }
     ],
     "faqs": [
@@ -829,8 +929,8 @@
     "targetKeyword": "planes en madrid por menos de 10 euros",
     "searchVolume": "2.400 búsquedas/mes",
     "keywordDifficulty": "Baja (18/100)",
-    "image": "images/terraza-secreta-planes-madrid.jpg",
-    "imageAlt": "Jardín interior escondido en Madrid con mesa de hierro forjado y vermut de grifo al sol",
+    "image": "images/venues/madrid-principe-anglona.jpg",
+    "imageAlt": "Senderos de ladrillo y cenador del Jardín del Príncipe de Anglona en el barrio de La Latina de Madrid",
     "excerpt": "No hace falta dejarse medio sueldo para vivir un sábado inolvidable en Madrid. Desde un jardín renacentista en La Latina hasta una sesión de cine en un palacio de 1922 por solo 3 €.",
     "priceRange": "0 € – 9,50 €",
     "neighborhoods": [
@@ -854,49 +954,63 @@
         "venue": "Jardín del Príncipe de Anglona + Bodegas Alfaro",
         "location": "Plaza de la Paja, 6 (Metro: La Latina - L5)",
         "price": "Entrada gratis / Vermut de grifo + gildas: 4,50 €",
-        "content": "Poca gente que camina por la Plaza de la Paja sabe que detrás de un muro de ladrillo se esconde uno de los pocos jardines nobles del siglo XVIII que sobreviven en Madrid. Entra gratis, escucha el sonido de su fuente central de piedra y, al salir, cruza a tomar un vermut de grifo con una gilda doble en las tabernas clásicas de la Cava Baja antes de que se llenen a las 13:30."
+        "content": "Poca gente que camina por la Plaza de la Paja sabe que detrás de un muro de ladrillo se esconde uno de los pocos jardines nobles del siglo XVIII que sobreviven en Madrid. Entra gratis, escucha el sonido de su fuente central de piedra y, al salir, cruza a tomar un vermut de grifo con una gilda doble en las tabernas clásicas de la Cava Baja antes de que se llenen a las 13:30.",
+        "image": "images/venues/madrid-rastro-curtidores.jpg",
+        "imageAlt": "Calles históricas del barrio de La Latina junto al Jardín del Príncipe de Anglona"
       },
       {
         "heading": "2. Sesión de tarde en el Cine Doré, la Filmoteca Española (Coste: 3,00 €)",
         "venue": "Cine Doré (Filmoteca Española)",
         "location": "Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)",
         "price": "3,00 € entrada general (2,00 € con carné joven/estudiante)",
-        "content": "Su fachada modernista de 1923 parece sacada de una película de Wes Anderson. Por solo 3 € puedes ver cine clásico restaurado o estrenos de autor en versión original dentro de una sala histórica con molduras doradas y cafetería propia."
+        "content": "Su fachada modernista de 1923 parece sacada de una película de Wes Anderson. Por solo 3 € puedes ver cine clásico restaurado o estrenos de autor en versión original dentro de una sala histórica con molduras doradas y cafetería propia.",
+        "image": "images/venues/madrid-cine-dore.jpg",
+        "imageAlt": "Sala histórica del Cine Doré, sede de la Filmoteca Española en Madrid"
       },
       {
         "heading": "3. Sábado tarde en el Museo del Romanticismo y su Salón de Té (Coste: 0 € - 4,80 €)",
         "venue": "Museo Nacional del Romanticismo + Café del Jardín",
         "location": "Calle de San Mateo, 13 (Metro: Tribunal - L1, L10)",
         "price": "Museo gratis sábados desde las 14:00 / Café y bizcocho casero: 4,80 €",
-        "content": "Los sábados a partir de las 14:00 la entrada a este palacete del siglo XIX es completamente gratuita. Lo mejor es que puedes acceder a su patio interior ajardinado (el Café del Jardín) incluso sin pagar entrada al museo para tomar un té entre magnolios."
+        "content": "Los sábados a partir de las 14:00 la entrada a este palacete del siglo XIX es completamente gratuita. Lo mejor es que puedes acceder a su patio interior ajardinado (el Café del Jardín) incluso sin pagar entrada al museo para tomar un té entre magnolios.",
+        "image": "images/venues/madrid-museo-romanticismo.jpg",
+        "imageAlt": "Interior palaciego del siglo XIX en el Museo del Romanticismo de Madrid"
       },
       {
         "heading": "4. El Salón de Baile del Museo Cerralbo con espejos venecianos (Coste: 0 € - 3,00 €)",
         "venue": "Museo Cerralbo",
         "location": "Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10)",
         "price": "3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)",
-        "content": "A diferencia de los grandes museos masificados, este palacio conserva intacta la decoración original del Marqués de Cerralbo de 1893: escaleras de honor de mármol, galerías de armaduras y un salón de baile dorado digno de Versalles por solo 3 €."
+        "content": "A diferencia de los grandes museos masificados, este palacio conserva intacta la decoración original del Marqués de Cerralbo de 1893: escaleras de honor de mármol, galerías de armaduras y un salón de baile dorado digno de Versalles por solo 3 €.",
+        "image": "images/venues/madrid-museo-cerralbo.jpg",
+        "imageAlt": "Palacio del Marqués de Cerralbo junto a la Plaza de España de Madrid"
       },
       {
         "heading": "5. Estación fantasma de Chamberí (Andén 0) y caña bien tirada en Ponzano (Coste: 3,50 €)",
         "venue": "Museo Andén 0 (Estación de Chamberí) + El Doble",
         "location": "Plaza de Chamberí, s/n (Metro: Iglesia - L1 / Bilbao - L1, L4)",
         "price": "Entrada gratuita (con reserva online) / Doble de cerveza y aperitivo: 3,50 €",
-        "content": "Baja a una estación de Metro clausurada en 1966 que conserva intactos los anuncios publicitarios de azulejos cerámicos de los años 20 y las taquillas originales. Al salir, camina 4 minutos hasta la calle Ponzano para tomar un doble bien tirado con patatas chips caseras."
+        "content": "Baja a una estación de Metro clausurada en 1966 que conserva intactos los anuncios publicitarios de azulejos cerámicos de los años 20 y las taquillas originales. Al salir, camina 4 minutos hasta la calle Ponzano para tomar un doble bien tirado con patatas chips caseras.",
+        "image": "images/venues/madrid-anden-cero-chamberi.jpg",
+        "imageAlt": "Andén original con azulejos publicitarios de los años 20 en la Estación de Chamberí (Andén 0)"
       },
       {
         "heading": "6. Mirador de la Cornisa del Palacio Real y Jardines del Campo del Moro (Coste: 0 €)",
         "venue": "Mirador de la Cornisa y Jardines del Campo del Moro",
         "location": "Plaza de la Armería / Paseo de la Virgen del Puerto (Metro: Ópera - L2, L5)",
         "price": "Acceso 100% gratuito",
-        "content": "Combina las vistas abiertas del nuevo Mirador de la Cornisa junto a la Catedral de la Almudena con la bajada a los jardines históricos del Campo del Moro, donde pasean pavos reales en libertad con la fachada monumental del Palacio Real de fondo."
+        "content": "Combina las vistas abiertas del nuevo Mirador de la Cornisa junto a la Catedral de la Almudena con la bajada a los jardines históricos del Campo del Moro, donde pasean pavos reales en libertad con la fachada monumental del Palacio Real de fondo.",
+        "image": "images/venues/madrid-campo-del-moro.jpg",
+        "imageAlt": "Paseo central de los Jardines del Campo del Moro con el Palacio Real de Madrid al fondo"
       },
       {
         "heading": "7. Concierto matinal o exposición en la Real Academia de Bellas Artes de San Fernando (Coste: 0 € - 8,00 €)",
         "venue": "Real Academia de Bellas Artes de San Fernando",
         "location": "Calle de Alcalá, 13 (Metro: Sol - L1, L2, L3 / Sevilla - L2)",
         "price": "Gratis miércoles no festivos (8,00 € general, 4,00 € reducida)",
-        "content": "A pocos pasos de la Puerta del Sol se guarda una colección extraordinaria de Goya, Zurbarán y Sorolla sin apenas colas, además de su calcografía nacional donde se conservan las planchas originales de los Caprichos de Goya."
+        "content": "A pocos pasos de la Puerta del Sol se guarda una colección extraordinaria de Goya, Zurbarán y Sorolla sin apenas colas, además de su calcografía nacional donde se conservan las planchas originales de los Caprichos de Goya.",
+        "image": "images/venues/madrid-san-fernando.jpg",
+        "imageAlt": "Fachada neoclásica del Palacio de Goyeneche, sede de la Real Academia de Bellas Artes de San Fernando"
       }
     ],
     "faqs": [
@@ -924,8 +1038,8 @@
     "targetKeyword": "planes diferentes en valencia fin de semana",
     "searchVolume": "2.800 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (13/100)",
-    "image": "images/barca-albufera-planes-valencia.jpg",
-    "imageAlt": "Atardecer real en el embarcadero de L Albufera de Valencia con reflejos en el agua",
+    "image": "images/venues/vlc-albufera-gola-pujol.jpg",
+    "imageAlt": "Atardecer sobre las aguas tranquilas del Parque Natural de la Albufera de Valencia",
     "excerpt": "Más allá de la Ciudad de las Artes y la Malvarrosa: te llevamos en autobús urbano hasta el embarcadero más tranquilo de L'Albufera al caer el sol, a un búnker de 1938 y a tomar horchata recién molida entre campos de chufa.",
     "priceRange": "0 € – 12 €",
     "neighborhoods": [
@@ -949,42 +1063,54 @@
         "venue": "Mirador de la Gola de Pujol & Embarcadero de El Palmar",
         "location": "Parque Natural de la Albufera (Autobús EMT Línea 24 o 25 desde el centro por 1,50 €)",
         "price": "Mirador gratis / Paseo en barca tradicional: 6,00 €",
-        "content": "No necesitas coche para vivir el mejor atardecer de España: la línea 25 de la EMT te deja frente al embarcadero de madera de la Gola de Pujol. Llega 40 minutos antes de la puesta de sol para ver cómo el cielo tiñe de naranja toda la laguna."
+        "content": "No necesitas coche para vivir el mejor atardecer de España: la línea 25 de la EMT te deja frente al embarcadero de madera de la Gola de Pujol. Llega 40 minutos antes de la puesta de sol para ver cómo el cielo tiñe de naranja toda la laguna.",
+        "image": "images/venues/vlc-jardin-del-turia.jpg",
+        "imageAlt": "Jardines y puentes históricos junto al camino hacia el Parque Natural de L'Albufera"
       },
       {
         "heading": "2. Ruta por la Huerta de Alboraya en bici y horchata en alquería histórica",
         "venue": "Vía Xurra y Alquerías de la Huerta de Alboraya",
         "location": "Inicio en Avenida de Aragón (Metro: Aragón - L5 / Palmaret - L3)",
         "price": "Ruta gratis / Horchata artesana con fartons caseros: 4,20 €",
-        "content": "A solo 15 minutos pedaleando desde el centro de Valencia entras en un paisaje protegido de acequias árabes del siglo X y campos de chufa donde puedes sentarte al sol en una alquería centenaria."
+        "content": "A solo 15 minutos pedaleando desde el centro de Valencia entras en un paisaje protegido de acequias árabes del siglo X y campos de chufa donde puedes sentarte al sol en una alquería centenaria.",
+        "image": "images/venues/vlc-huerta-alboraya.jpg",
+        "imageAlt": "Caminos rurales entre campos de chufa en la Huerta de Alboraya"
       },
       {
         "heading": "3. Concierto gratuito los domingos en el patio de La Beneficència",
         "venue": "Centro Cultural La Beneficència (Patio Bizantino)",
         "location": "Calle Corona, 36 (Barrio de El Carmen)",
         "price": "Acceso 100% gratuito los fines de semana",
-        "content": "En el corazón de El Carmen, esta antigua casa de beneficencia del siglo XIX organiza actuaciones acústicas, exposiciones de diseño valenciano y cine al aire libre en sus patios interiores sin pagar un euro."
+        "content": "En el corazón de El Carmen, esta antigua casa de beneficencia del siglo XIX organiza actuaciones acústicas, exposiciones de diseño valenciano y cine al aire libre en sus patios interiores sin pagar un euro.",
+        "image": "images/venues/vlc-la-beneficencia.jpg",
+        "imageAlt": "Fachada y patios del Centro Cultural La Beneficència en el barrio del Carmen"
       },
       {
         "heading": "4. Los Jardines de Monforte: el laberinto neoclásico secreto de Valencia",
         "venue": "Jardines de Monforte",
         "location": "Plaza de la Legión Española, s/n (Metro: Facultats - L3, L9)",
         "price": "Entrada 100% gratuita",
-        "content": "Un jardín romántico de 1859 escondido tras un muro junto a los Jardines del Real: tiene más de 30 estatuas de mármol italiano, un túnel de buganvillas, estanques con nenúfares y un tranquilo palacete donde casi nunca hay turistas."
+        "content": "Un jardín romántico de 1859 escondido tras un muro junto a los Jardines del Real: tiene más de 30 estatuas de mármol italiano, un túnel de buganvillas, estanques con nenúfares y un tranquilo palacete donde casi nunca hay turistas.",
+        "image": "images/venues/vlc-jardines-monforte.jpg",
+        "imageAlt": "Galería de cipreses y estatuas de mármol en los Jardines de Monforte de Valencia"
       },
       {
         "heading": "5. Ruta de vermut marinero y clóchinas por las barracas modernistas de El Cabanyal",
         "venue": "Barrio de El Cabanyal y Bodega Casa Montaña",
         "location": "Calle de la Barraca y Calle de la Reina (Tranvía: Líneas 4 y 6 - Dr. Lluch)",
         "price": "Paseo gratis / Vermut de barrica y tapa de michirones o anchoas: 6,50 €",
-        "content": "Recorre las calles de antiguas casas de pescadores revestidas de azulejos cerámicos modernistas del siglo XIX y haz parada en las bodegas centenarias del barrio para probar el vermut valenciano con conservas artesanas."
+        "content": "Recorre las calles de antiguas casas de pescadores revestidas de azulejos cerámicos modernistas del siglo XIX y haz parada en las bodegas centenarias del barrio para probar el vermut valenciano con conservas artesanas.",
+        "image": "images/venues/vlc-cabanyal-casas.jpg",
+        "imageAlt": "Calles marineras junto a la playa de El Cabanyal en Valencia"
       },
       {
         "heading": "6. El Refugio Antiaéreo de la Calle Serranos y el Palacio de Valeriola",
         "venue": "Refugio de Serranos y Centro de Arte Hortensia Herrero",
         "location": "Calle Serranos, 25 / Calle del Mar, 31 (Centro Histórico)",
         "price": "Refugio gratis / Palacio gratis miércoles tarde con reserva previa (10 € general)",
-        "content": "Descubre la Valencia subterránea bajando a uno de los refugios mejor conservados de 1937 en pleno barrio del Carmen y enlaza con el Palacio de Valeriola, donde conviven los restos del circo romano de Valentia con instalaciones inmersivas de luz."
+        "content": "Descubre la Valencia subterránea bajando a uno de los refugios mejor conservados de 1937 en pleno barrio del Carmen y enlaza con el Palacio de Valeriola, donde conviven los restos del circo romano de Valentia con instalaciones inmersivas de luz.",
+        "image": "images/venues/vlc-palacio-valeriola.jpg",
+        "imageAlt": "Palacio de Valeriola, sede del Centro de Arte Hortensia Herrero en Valencia"
       }
     ],
     "faqs": [
@@ -1013,8 +1139,8 @@
     "targetKeyword": "planes en sevilla en pareja originales",
     "searchVolume": "2.200 búsquedas/mes",
     "keywordDifficulty": "Baja (16/100)",
-    "image": "images/patio-mudejar-planes-sevilla.jpg",
-    "imageAlt": "Patio de Banderas con naranjos y fuente en el Barrio de Santa Cruz de Sevilla",
+    "image": "images/venues/sev-marqueses-algaba.jpg",
+    "imageAlt": "Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en Sevilla",
     "excerpt": "Mientras todo el mundo hace cola en el Real Alcázar, hay casas-palacio mudéjares en Sevilla llenas de buganvillas y azulejos del siglo XVI donde puedes pasear casi a solas con tu pareja.",
     "priceRange": "0 € – 18 €",
     "neighborhoods": [
@@ -1038,35 +1164,45 @@
         "venue": "Palacio Marqueses de la Algaba (Centro del Mudéjar)",
         "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)",
         "price": "Entrada 100% gratuita",
-        "content": "Un impresionante palacio mudéjar de 1474 con patio de arcos y jardines frescos que la mayoría de visitantes desconoce por completo. Al salir, estás a 30 segundos de los puestos gastronómicos del Mercado de Feria."
+        "content": "Un impresionante palacio mudéjar de 1474 con patio de arcos y jardines frescos que la mayoría de visitantes desconoce por completo. Al salir, estás a 30 segundos de los puestos gastronómicos del Mercado de Feria.",
+        "image": "images/venues/sev-pabellon-mudejar.jpg",
+        "imageAlt": "Arquitectura mudéjar e histórica de Sevilla"
       },
       {
         "heading": "2. Atardecer sobre el Guadalquivir desde el Muelle de la Sal y Puente de Triana",
         "venue": "Paseo de Cristóbal Colón y Calle Betis (Triana)",
         "location": "Puente de Isabel II (Metro: Puerta de Jerez - L1)",
         "price": "Gratis (Caña o vino de naranja en taberna histórica: 2,50 €)",
-        "content": "Cruza el Puente de Triana justo cuando el sol cae tras el Aljarafe y entra a tomar un vino dulce de naranja con chicharrones recién cortados en las bodegas centenarias de la calle San Jacinto."
+        "content": "Cruza el Puente de Triana justo cuando el sol cae tras el Aljarafe y entra a tomar un vino dulce de naranja con chicharrones recién cortados en las bodegas centenarias de la calle San Jacinto.",
+        "image": "images/venues/sev-muelle-sal-triana.jpg",
+        "imageAlt": "Atardecer sobre la dársena del río Guadalquivir y el Puente de Triana"
       },
       {
         "heading": "3. Laberinto de la Plaza de Santa Marta y el Callejón del Agua al anochecer",
         "venue": "Plaza de Santa Marta (La plaza más pequeña y silenciosa de Sevilla)",
         "location": "Acceso por Plaza Virgen de los Reyes (Barrio de Santa Cruz)",
         "price": "Gratis",
-        "content": "Entrando por un estrecho pasadizo junto al Convento de la Encarnación aparece una diminuta plaza empedrada con cuatro naranjos y un crucero renacentista donde solo se oyen los vencejos y el olor a azahar."
+        "content": "Entrando por un estrecho pasadizo junto al Convento de la Encarnación aparece una diminuta plaza empedrada con cuatro naranjos y un crucero renacentista donde solo se oyen los vencejos y el olor a azahar.",
+        "image": "images/venues/sev-plaza-santa-marta.jpg",
+        "imageAlt": "Rincón empedrado de la Plaza de Santa Marta en el barrio de Santa Cruz"
       },
       {
         "heading": "4. Casa de Salinas: un patio renacentista y mudéjar del siglo XVI sin colas",
         "venue": "Casa de Salinas",
         "location": "Calle Mateos Gago, 39 (A 2 minutos a pie de la Giralda)",
         "price": "8,00 € visita guiada por sus patios y salones",
-        "content": "Una casa-palacio privada aún habitada que combina columnas de mármol italiano, yeserías mudéjares intactas y azulejos de Triana de 1580, ofreciendo una experiencia mucho más íntima en pareja que el Alcázar."
+        "content": "Una casa-palacio privada aún habitada que combina columnas de mármol italiano, yeserías mudéjares intactas y azulejos de Triana de 1580, ofreciendo una experiencia mucho más íntima en pareja que el Alcázar.",
+        "image": "images/venues/sev-casa-salinas.jpg",
+        "imageAlt": "Columnas de mármol y arcos con yeserías en un patio mudéjar sevillano del siglo XVI"
       },
       {
         "heading": "5. Paseo romántico por la Glorieta de Bécquer y el Pabellón Mudéjar en el Parque de María Luisa",
         "venue": "Glorieta de Bécquer y Estanque de los Lotos (Parque de María Luisa)",
         "location": "Avenida de Isabel la Católica (Tranvía T1 / Metro: Prado de San Sebastián)",
         "price": "Acceso al parque 100% gratuito (Museo de Artes y Costumbres gratis para ciudadanos UE)",
-        "content": "Bajo un gigantesco ciprés de los pantanos plantado en 1850 se encuentra la glorieta de mármol blanco dedicada al amor de Gustavo Adolfo Bécquer, a pocos pasos de los espejos de agua del Pabellón Mudéjar."
+        "content": "Bajo un gigantesco ciprés de los pantanos plantado en 1850 se encuentra la glorieta de mármol blanco dedicada al amor de Gustavo Adolfo Bécquer, a pocos pasos de los espejos de agua del Pabellón Mudéjar.",
+        "image": "images/venues/sev-glorieta-becquer.jpg",
+        "imageAlt": "Monumento romántico de la Glorieta de Bécquer bajo el ciprés de los pantanos en el Parque de María Luisa"
       }
     ],
     "faqs": [
@@ -1095,8 +1231,8 @@
     "targetKeyword": "planes en pareja madrid originales",
     "searchVolume": "3.600 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (24/100)",
-    "image": "images/taller-ceramica-planes-pareja-madrid.jpg",
-    "imageAlt": "Mesa de taller de cerámica y vino en Madrid con copas de vino tinto, velas y piezas de alfarería",
+    "image": "images/venues/madrid-parque-capricho.jpg",
+    "imageAlt": "Exedra y jardines históricos del Parque de El Capricho en la Alameda de Osuna de Madrid",
     "excerpt": "Si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical.",
     "priceRange": "15 € – 32 €",
     "neighborhoods": [
@@ -1120,35 +1256,45 @@
         "venue": "Estudios de Cerámica Creativa (Barrio de las Letras / Chamberí)",
         "location": "Calle de Fernando el Católico / Calle Huertas (Metro: Quevedo / Antón Martín)",
         "price": "24 € – 29 € por persona (incluye pieza de cerámica, pinturas, horneado y 2 copas de vino)",
-        "content": "Se ha convertido en la cita favorita en Madrid por una razón: quita toda la presión de una primera o segunda cita porque tenéis las manos ocupadas creando algo juntos mientras tomáis un buen Mencía o Rioja con música indie de fondo."
+        "content": "Se ha convertido en la cita favorita en Madrid por una razón: quita toda la presión de una primera o segunda cita porque tenéis las manos ocupadas creando algo juntos mientras tomáis un buen Mencía o Rioja con música indie de fondo.",
+        "image": "images/venues/madrid-ceramica-vino.jpg",
+        "imageAlt": "Piezas de cerámica tradicional pintadas a mano en alfarería"
       },
       {
         "heading": "2. Concierto íntimo a la luz de 1.500 velas en un palacio histórico",
         "venue": "Ateneo de Madrid / Círculo de Bellas Artes",
         "location": "Calle del Prado, 21 (Metro: Sevilla - L2)",
         "price": "Desde 19 € según zona",
-        "content": "Escuchar las bandas sonoras de Hans Zimmer, Queen o Ludovico Einaudi interpretadas por un cuarteto de cuerda en una cátedra histórica iluminada únicamente por velas es un acierto garantizado antes de ir a picar algo por el Barrio de las Letras."
+        "content": "Escuchar las bandas sonoras de Hans Zimmer, Queen o Ludovico Einaudi interpretadas por un cuarteto de cuerda en una cátedra histórica iluminada únicamente por velas es un acierto garantizado antes de ir a picar algo por el Barrio de las Letras.",
+        "image": "images/venues/madrid-circulo-bellas-artes.jpg",
+        "imageAlt": "Vistas de las cúpulas de Madrid desde el Círculo de Bellas Artes"
       },
       {
         "heading": "3. Paseo romántico de fin de semana por el Templete de Baco y el Laberinto de El Capricho",
         "venue": "Parque de El Capricho de la Alameda de Osuna",
         "location": "Paseo de la Alameda de Osuna, 25 (Metro: El Capricho - Línea 5)",
         "price": "Entrada 100% gratuita (Abierto sábados, domingos y festivos)",
-        "content": "Creado en 1784 por la Duquesa de Osuna, es el jardín histórico más romántico de Madrid: tiene un laberinto de laurel, un embarcadero neoclásico con cisnes negros, el Templete de Baco con columnas jónicas y hasta un búnker subterráneo."
+        "content": "Creado en 1784 por la Duquesa de Osuna, es el jardín histórico más romántico de Madrid: tiene un laberinto de laurel, un embarcadero neoclásico con cisnes negros, el Templete de Baco con columnas jónicas y hasta un búnker subterráneo.",
+        "image": "images/venues/madrid-palacio-cristal-retiro-2.jpg",
+        "imageAlt": "Jardines históricos y arquitectura de cristal en Madrid"
       },
       {
         "heading": "4. Cita secreta en el Jardín Cubierto de Salvador Bachiller o el Salón de Té del Santo Mauro",
         "venue": "Jardín Secreto de Salvador Bachiller / Barrio de Chamberí",
         "location": "Calle de la Montera, 37 (Metro: Gran Vía - L1, L5)",
         "price": "Té especial en tetera de hierro + tarta casera para compartir: 9,50 € – 14 €",
-        "content": "Subiendo por el interior de la tienda llegas a un invernadero cubierto de plantas colgantes y sillones de mimbre donde tomar un brunch o merienda en pareja completamente aislados del bullicio del centro."
+        "content": "Subiendo por el interior de la tienda llegas a un invernadero cubierto de plantas colgantes y sillones de mimbre donde tomar un brunch o merienda en pareja completamente aislados del bullicio del centro.",
+        "image": "images/venues/madrid-salon-te-jardin.jpg",
+        "imageAlt": "Palacete y jardines del Hotel Santo Mauro en el barrio de Chamberí"
       },
       {
         "heading": "5. Noche de jazz en vivo y cóctel clásico en una bóveda de ladrillo del siglo XIX",
         "venue": "Café Central / Sala Clamores (Huertas / Chamberí)",
         "location": "Plaza del Ángel, 10 (Metro: Sol / Antón Martín) o Calle de Alburquerque, 14 (Metro: Bilbao)",
         "price": "Entrada con concierto en directo desde 15 € – 18 €",
-        "content": "Sustituye el bar ruidoso de siempre por una mesa para dos con lámpara baja escuchando jazz, soul o bossa nova en directo en uno de los clubes con más historia de Europa."
+        "content": "Sustituye el bar ruidoso de siempre por una mesa para dos con lámpara baja escuchando jazz, soul o bossa nova en directo en uno de los clubes con más historia de Europa.",
+        "image": "images/venues/madrid-cafe-central-jazz.jpg",
+        "imageAlt": "Entorno de la Plaza del Ángel en el Barrio de las Letras junto al histórico Café Central"
       }
     ],
     "faqs": [
@@ -1172,8 +1318,8 @@
     "targetKeyword": "planes diferentes barcelona gratis",
     "searchVolume": "1.900 búsquedas/mes",
     "keywordDifficulty": "Baja (15/100)",
-    "image": "images/mirador-atardecer-planes-barcelona.jpg",
-    "imageAlt": "Vista panorámica real de Barcelona y el mar Mediterráneo al atardecer desde los Bunkers del Carmel",
+    "image": "images/venues/bcn-teatre-grec-laribal.jpg",
+    "imageAlt": "Anfiteatro de piedra y jardines del Teatre Grec en la montaña de Montjuïc en Barcelona",
     "excerpt": "Desde que cerraron el acceso nocturno a los Bunkers del Carmel, los barceloneses tienen nuevos rincones para ver caer el sol sobre el Mediterráneo sin agobios y sin gastar un euro.",
     "priceRange": "Gratis (0 €)",
     "neighborhoods": [
@@ -1197,42 +1343,54 @@
         "venue": "Jardins de Laribal & Teatre Grec",
         "location": "Passeig de Santa Madrona, 2 (Metro: Espanya / Funicular de Montjuïc)",
         "price": "Acceso 100% gratuito",
-        "content": "Diseñados en 1922 con inspiración hispanoárabe, estos jardines escalonados llenos de fuentes de cerámica, cipreses y pérgolas desembocan en la terraza del Teatre Grec, uno de los rincones más frescos y silenciosos de Barcelona."
+        "content": "Diseñados en 1922 con inspiración hispanoárabe, estos jardines escalonados llenos de fuentes de cerámica, cipreses y pérgolas desembocan en la terraza del Teatre Grec, uno de los rincones más frescos y silenciosos de Barcelona.",
+        "image": "images/venues/bcn-pabellon-mies.jpg",
+        "imageAlt": "Jardines y arquitectura de Montjuïc junto a los Jardins de Laribal"
       },
       {
         "heading": "2. Mirador de Horta (Km 6 de la Carretera de Horta a Cerdanyola)",
         "venue": "Mirador d'Horta / Parc de Collserola",
         "location": "Carretera d'Horta a Cerdanyola (Metro: Mundet - L3 + 12 min a pie)",
         "price": "Gratis",
-        "content": "Un balcón natural colgado sobre el barrio de Horta con una panorámica limpia de 180 grados desde el Tibidabo hasta el mar Mediterráneo y diez veces menos gente que los Bunkers del Carmel."
+        "content": "Un balcón natural colgado sobre el barrio de Horta con una panorámica limpia de 180 grados desde el Tibidabo hasta el mar Mediterráneo y diez veces menos gente que los Bunkers del Carmel.",
+        "image": "images/venues/bcn-mirador-horta-collserola.jpg",
+        "imageAlt": "Panorámica abierta de toda la ciudad de Barcelona con el mar Mediterráneo al fondo"
       },
       {
         "heading": "3. Parque del Laberinto de Horta y su mirador neoclásico del siglo XVIII",
         "venue": "Parc del Laberint d'Horta",
         "location": "Passeig dels Castanyers, 1 (Metro: Mundet - Línea 3)",
         "price": "Gratis miércoles y domingos (2,23 € resto de días)",
-        "content": "El jardín histórico más antiguo que se conserva en Barcelona (1791): tras cruzar su laberinto de cipreses llegas a dos templetes italianos con columnas y un estanque romántico rodeado de bosque mediterráneo."
+        "content": "El jardín histórico más antiguo que se conserva en Barcelona (1791): tras cruzar su laberinto de cipreses llegas a dos templetes italianos con columnas y un estanque romántico rodeado de bosque mediterráneo.",
+        "image": "images/venues/bcn-laberint-horta.jpg",
+        "imageAlt": "Cipreses recortados y terraza neoclásica del Parque del Laberinto de Horta"
       },
       {
         "heading": "4. Mirador del Alcalde y los Jardines de Miramar frente al puerto",
         "venue": "Mirador de l'Alcalde (Ladera marítima de Montjuïc)",
         "location": "Carretera de Montjuïc, 30 (Teleférico o Autobús 150 desde Plaça Espanya)",
         "price": "Acceso libre y gratuito",
-        "content": "Con pavimento artístico diseñado por Joan Josep Tharrats y cascadas escalonadas, ofrece la vista más directa sobre el puerto histórico de Barcelona, el monumento a Colón y toda la línea de costa."
+        "content": "Con pavimento artístico diseñado por Joan Josep Tharrats y cascadas escalonadas, ofrece la vista más directa sobre el puerto histórico de Barcelona, el monumento a Colón y toda la línea de costa.",
+        "image": "images/venues/bcn-mirador-alcalde.jpg",
+        "imageAlt": "Jardines y fuentes de Miramar junto al Mirador de l'Alcalde en Montjuïc"
       },
       {
         "heading": "5. El Turó del Putxet: el mirador secreto de los vecinos de Sarrià-Sant Gervasi",
         "venue": "Jardins del Turó del Putxet",
         "location": "Carrer de Manacor, 9 (FGC: El Putxet - L7 / Metro: Lesseps - L3)",
         "price": "100% Gratis",
-        "content": "En la cima de esta colina ajardinada con caminos de tierra y pinos centenarios hay una explanada con bancos desde donde se contempla toda Barcelona de mar a montaña en un ambiente totalmente residencial y tranquilo."
+        "content": "En la cima de esta colina ajardinada con caminos de tierra y pinos centenarios hay una explanada con bancos desde donde se contempla toda Barcelona de mar a montaña en un ambiente totalmente residencial y tranquilo.",
+        "image": "images/venues/bcn-turo-del-putxet.jpg",
+        "imageAlt": "Vistas panorámicas de Barcelona desde lo alto de los Jardins del Turó del Putxet"
       },
       {
         "heading": "6. Terraza panorámica de las Arenas y escalinatas del MNAC al atardecer",
         "venue": "Escalinata del Palau Nacional (MNAC) y Mirador de Plaça Espanya",
         "location": "Parc de Montjuïc, s/n (Metro: Espanya - L1, L3)",
         "price": "Terrazas exteriores gratuitas (Museo gratis sábados desde las 15:00 h)",
-        "content": "Subir por las escaleras mecánicas exteriores hasta la explanada del Palau Nacional cuando empieza a caer el sol sobre el Tibidabo, con músicos tocando en directo y la silueta de las Torres Venecianas abajo, es un clásico imbatible y gratuito."
+        "content": "Subir por las escaleras mecánicas exteriores hasta la explanada del Palau Nacional cuando empieza a caer el sol sobre el Tibidabo, con músicos tocando en directo y la silueta de las Torres Venecianas abajo, es un clásico imbatible y gratuito.",
+        "image": "images/venues/bcn-palau-nacional-mnac.jpg",
+        "imageAlt": "Fachada monumental y escalinatas del Palau Nacional (MNAC) en Montjuïc"
       }
     ],
     "faqs": [
@@ -1257,8 +1415,8 @@
     "targetKeyword": "planes en toledo en pareja diferentes",
     "searchVolume": "1.600 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (11/100)",
-    "image": "images/callejones-noche-planes-toledo.jpg",
-    "imageAlt": "Vista nocturna real del casco histórico de Toledo iluminado y el río Tajo al anochecer",
+    "image": "images/venues/tol-cerro-del-bu.jpg",
+    "imageAlt": "Vista panorámica del Alcázar y las murallas de Toledo sobre el cañón del río Tajo",
     "excerpt": "A las 19:00 horas ocurre un pequeño milagro en Toledo: los grupos de excursionistas vuelven a Madrid y el casco histórico medieval se queda en silencio bajo los faroles de forja.",
     "priceRange": "0 € – 28 €",
     "neighborhoods": [
@@ -1282,35 +1440,45 @@
         "venue": "Calle del Cobertizo de Santo Domingo el Real y San Pedro Mártir",
         "location": "Zona Norte del Casco Histórico (a 4 min de Zocodover)",
         "price": "Gratis",
-        "content": "Los cobertizos son pasadizos elevados que unían los palacios y conventos en el siglo XVI. Pasear por el Cobertizo de Santa Clara o Santo Domingo el Real a las 20:30 en silencio absoluto es como viajar a 1580."
+        "content": "Los cobertizos son pasadizos elevados que unían los palacios y conventos en el siglo XVI. Pasear por el Cobertizo de Santa Clara o Santo Domingo el Real a las 20:30 en silencio absoluto es como viajar a 1580.",
+        "image": "images/venues/tol-cobertizos.jpg",
+        "imageAlt": "Portada y callejón histórico en la zona conventual de Toledo"
       },
       {
         "heading": "2. Baños Árabes subterráneos bajo bóvedas del siglo XII",
         "venue": "Medina Mudéjar (Baños Árabes de Toledo)",
         "location": "Plaza de Santa Eulalia, 1 (Corazón de la Judería)",
         "price": "Desde 28 € por persona (Circuito termal + té moruno)",
-        "content": "Ubicados sobre restos originales islámicos y mudéjares, sus piscinas de agua caliente, templada y fría bajo arcos de ladrillo iluminados con velas son el plan en pareja más especial de Castilla-La Mancha."
+        "content": "Ubicados sobre restos originales islámicos y mudéjares, sus piscinas de agua caliente, templada y fría bajo arcos de ladrillo iluminados con velas son el plan en pareja más especial de Castilla-La Mancha.",
+        "image": "images/venues/tol-banos-arabes.jpg",
+        "imageAlt": "Arcos de herradura islámicos y mudéjares del siglo X en el casco histórico de Toledo"
       },
       {
         "heading": "3. El Mirador del Valle y la Senda Ecológica del Tajo al anochecer (Coste: 0 €)",
         "venue": "Senda Ecológica del Río Tajo y Mirador del Valle",
         "location": "Desde el Puente de Alcántara hasta el Puente de San Martín (Bus urbano L71 o a pie)",
         "price": "Acceso 100% gratuito",
-        "content": "Ver encenderse la iluminación artística del Alcázar, la Catedral Primada y el Monasterio de San Juan de los Reyes reflejados en el cañón del río Tajo mientras caminas por la pasarela de madera junto al agua es inolvidable."
+        "content": "Ver encenderse la iluminación artística del Alcázar, la Catedral Primada y el Monasterio de San Juan de los Reyes reflejados en el cañón del río Tajo mientras caminas por la pasarela de madera junto al agua es inolvidable.",
+        "image": "images/venues/tol-senda-ecologica-tajo.jpg",
+        "imageAlt": "Panorámica del río Tajo rodeando el peñón amurallado de Toledo"
       },
       {
         "heading": "4. El Puente de San Martín iluminado y tapeo de caza en la Judería Mayor",
         "venue": "Puente Medieval de San Martín y Barrio de la Judería",
         "location": "Bajada de San Martín / Calle de los Reyes Católicos",
         "price": "Paseo gratis / Carcamusas toledanas o croquetas de ciervo con copa de vino: 6,50 €",
-        "content": "Cruza al anochecer los torreones almenados del siglo XIV del Puente de San Martín y sube por la Judería para probar unas carcamusas calientes o tapas de venado en los patios toledanos tradicionales."
+        "content": "Cruza al anochecer los torreones almenados del siglo XIV del Puente de San Martín y sube por la Judería para probar unas carcamusas calientes o tapas de venado en los patios toledanos tradicionales.",
+        "image": "images/venues/tol-puente-san-martin.jpg",
+        "imageAlt": "El Puente medieval de San Martín reflejado sobre las aguas del río Tajo"
       },
       {
         "heading": "5. Ruta nocturna por las mazmorras, termas romanas y pozos subterráneos",
         "venue": "Cuevas de Hércules, Termas Romanas de Amador de los Ríos y Pozo del Salvador",
         "location": "Plaza de Amador de los Ríos y Callejón de San Ginés (Centro Histórico)",
         "price": "Visitas libres al patrimonio subterráneo del Consorcio o ruta guiada nocturna desde 12 €",
-        "content": "Debajo de las casas de Toledo existe una segunda ciudad excavada en la roca: aljibes islámicos, bóvedas romanas del siglo I y antiguos calabozos que por la tarde-noche cobran una atmósfera única."
+        "content": "Debajo de las casas de Toledo existe una segunda ciudad excavada en la roca: aljibes islámicos, bóvedas romanas del siglo I y antiguos calabozos que por la tarde-noche cobran una atmósfera única.",
+        "image": "images/venues/tol-cuevas-hercules-termas.jpg",
+        "imageAlt": "Bóvedas subterráneas de piedra de las Termas Romanas de Toledo"
       }
     ],
     "faqs": [

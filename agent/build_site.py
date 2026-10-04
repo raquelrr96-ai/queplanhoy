@@ -545,10 +545,21 @@ def build_article_page(art: dict, all_articles: list):
     venue_name = sec.get("venue", sec["heading"])
     maps_query = urllib.parse.quote(f"{venue_name}, {city_name}, España")
     maps_url = f"https://www.google.com/maps/search/?api=1&query={maps_query}"
+    sec_img = sec.get("image", "")
+    sec_alt = sec.get("imageAlt", venue_name)
+    sec_img_html = ""
+    if sec_img:
+      sec_img_html = f"""
+        <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
+          <img src="{root_prefix}{html.escape(sec_img)}" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
+            {html.escape(sec_alt)}
+          </figcaption>
+        </figure>"""
     sections_html.append(f"""
       <section class="reader-section" id="plan-{idx}" style="scroll-margin-top: 90px;">
         <h2>{html.escape(sec['heading'])}</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">{html.escape(sec['content'])}</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">{html.escape(sec['content'])}</p>{sec_img_html}
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> {html.escape(sec['location'])}</span>
           <span><strong>Precio:</strong> {html.escape(sec['price'])}</span>

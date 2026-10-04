@@ -19,7 +19,7 @@ TRAVELPAYOUTS_TRS = "581302"
 
 CITY_KNOWLEDGE_BASE = {
     "Madrid": {
-        "image": "images/terraza-secreta-planes-madrid.jpg",
+        "image": "images/venues/madrid-principe-anglona.jpg",
         "imageAlt": "Terraza jardín interior escondido en el centro de Madrid con vermut y aperitivo",
         "neighborhoods": [
             "Malasaña",
@@ -107,7 +107,7 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Barcelona": {
-        "image": "images/mirador-atardecer-planes-barcelona.jpg",
+        "image": "images/venues/bcn-teatre-grec-laribal.jpg",
         "imageAlt": "Vista panorámica al atardecer de Barcelona y el mar Mediterráneo desde los jardines de Montjuïc",
         "neighborhoods": [
             "El Born",
@@ -197,7 +197,7 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Valencia": {
-        "image": "images/barca-albufera-planes-valencia.jpg",
+        "image": "images/venues/vlc-albufera-gola-pujol.jpg",
         "imageAlt": "Barca tradicional de madera al atardecer en el embarcadero de la Albufera de Valencia",
         "neighborhoods": [
             "El Cabanyal",
@@ -284,7 +284,7 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Sevilla": {
-        "image": "images/patio-mudejar-planes-sevilla.jpg",
+        "image": "images/venues/sev-marqueses-algaba.jpg",
         "imageAlt": "Patio andaluz mudéjar con naranjos, azulejos y flores en el barrio de Santa Cruz de Sevilla",
         "neighborhoods": [
             "Triana",
@@ -364,7 +364,7 @@ CITY_KNOWLEDGE_BASE = {
         },
     },
     "Toledo": {
-        "image": "images/callejones-noche-planes-toledo.jpg",
+        "image": "images/venues/tol-cerro-del-bu.jpg",
         "imageAlt": "Callejón medieval empedrado de Toledo iluminado por faroles al anochecer con la torre de la Catedral al fondo",
         "neighborhoods": [
             "Judería Mayor",
@@ -680,13 +680,17 @@ def generate_seo_article(
 
   sections = []
   for idx, v in enumerate(raw_venues, start=1):
-    sections.append({
+    sec_obj = {
         "heading": f"{idx}. {v['name']}",
         "venue": v["name"],
         "location": v["location"],
         "price": v["price"],
         "content": v["desc"],
-    })
+    }
+    if v.get("image"):
+      sec_obj["image"] = v["image"]
+      sec_obj["imageAlt"] = v.get("imageAlt", v["name"])
+    sections.append(sec_obj)
 
   if not suggested_title:
     if is_weekend_cat:
