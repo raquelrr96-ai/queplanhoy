@@ -14,6 +14,9 @@ ARTICLES_FILE = os.path.join(BASE_DIR, "data", "articles.json")
 QUEUE_FILE = os.path.join(BASE_DIR, "data", "keyword_queue.json")
 SITEMAP_FILE = os.path.join(BASE_DIR, "public", "sitemap.xml")
 
+TRAVELPAYOUTS_MARKER = "785377"
+TRAVELPAYOUTS_TRS = "581302"
+
 CITY_KNOWLEDGE_BASE = {
     "Madrid": {
         "image": "images/terraza-secreta-planes-madrid.jpg",
