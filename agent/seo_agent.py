@@ -20,7 +20,7 @@ TRAVELPAYOUTS_TRS = "581302"
 CITY_KNOWLEDGE_BASE = {
     "Madrid": {
         "image": "images/venues/madrid-principe-anglona.jpg",
-        "imageAlt": "Terraza jardín interior escondido en el centro de Madrid con vermut y aperitivo",
+        "imageAlt": "Senderos de ladrillo y cenador del Jardín del Príncipe de Anglona en el centro de Madrid",
         "neighborhoods": [
             "Malasaña",
             "Chamberí",
@@ -34,6 +34,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Invernadero del Palacio de Cristal de Arganzuela",
                 "location": "Paseo de la Chopera, 10 (Metro: Legazpi - L3, L6)",
                 "price": "Acceso 100% gratuito",
+                "lat": 40.3934,
+                "lng": -3.6997,
+                "image": "images/venues/madrid-invernadero-arganzuela.jpg",
+                "imageAlt": "Interior tropical del Invernadero del Palacio de Cristal de Arganzuela junto a Madrid Río",
                 "desc": (
                     "Un gigantesco invernadero de hierro y cristal del siglo XX"
                     " con más de 9.000 especies de plantas tropicales,"
@@ -45,6 +49,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Jardín Cubierto de Salvador Bachiller en Montera",
                 "location": "Calle de la Montera, 37 (Metro: Gran Vía - L1, L5)",
                 "price": "Té especial o infusión con tarta casera: 6,50 € – 9,00 €",
+                "lat": 40.4193,
+                "lng": -3.7022,
+                "image": "images/venues/madrid-salon-te-jardin.jpg",
+                "imageAlt": "Jardín y salón de té tranquilo en el centro de Madrid",
                 "desc": (
                     "Subiendo por el interior de la tienda se encuentra una"
                     " azotea acristalada cubierta de plantas colgantes donde"
@@ -61,6 +69,10 @@ CITY_KNOWLEDGE_BASE = {
                     "3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y"
                     " domingos)"
                 ),
+                "lat": 40.4237,
+                "lng": -3.7146,
+                "image": "images/venues/madrid-museo-cerralbo.jpg",
+                "imageAlt": "Palacio del Marqués de Cerralbo junto a la Plaza de España de Madrid",
                 "desc": (
                     "A diferencia de los grandes museos masificados, este"
                     " palacio conserva intacta la decoración original de 1893"
@@ -71,6 +83,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Estación Fantasma de Chamberí (Andén 0) y aperitivo en Ponzano",
                 "location": "Plaza de Chamberí, s/n (Metro: Iglesia - L1 / Bilbao - L1, L4)",
                 "price": "Entrada gratuita al museo / Doble de cerveza y tapa: 3,80 €",
+                "lat": 40.4323,
+                "lng": -3.6978,
+                "image": "images/venues/madrid-anden-cero-chamberi.jpg",
+                "imageAlt": "Andén original con azulejos publicitarios de los años 20 en la Estación de Chamberí (Andén 0)",
                 "desc": (
                     "Una estación de Metro clausurada en 1966 que conserva"
                     " intactos los carteles publicitarios de cerámica de los"
@@ -81,6 +97,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Parque Histórico de El Capricho y Templete de Baco",
                 "location": "Paseo de la Alameda de Osuna, 25 (Metro: El Capricho - L5)",
                 "price": "Acceso 100% gratuito (Sábados, domingos y festivos)",
+                "lat": 40.4561,
+                "lng": -3.5986,
+                "image": "images/venues/madrid-parque-capricho.jpg",
+                "imageAlt": "Exedra y jardines históricos del Parque de El Capricho en la Alameda de Osuna",
                 "desc": (
                     "El jardín romántico del siglo XVIII de la Duquesa de Osuna"
                     " con laberinto de laurel, embarcadero, cisnes negros y"
@@ -89,26 +109,23 @@ CITY_KNOWLEDGE_BASE = {
             },
         ],
         "affiliate": {
-            "partner": "Civitatis",
-            "badge": "Top Experiencia en Madrid",
+            "partner": "Tiqets",
+            "badge": "Para completar el plan",
             "title": (
-                "Free Tour por el Madrid de los Austrias y el Siglo de Oro"
+                "Entrada al Palacio de Liria de Madrid con Audioguía"
             ),
             "description": (
-                "Descubre las historias, pasadizos y plazas secretas del Madrid"
-                " de los Austrias y el Barrio de las Letras con guía local."
+                "Visita la residencia histórica de la Casa de Alba en la calle"
+                " Princesa con salones palaciegos y obras de Goya y Velázquez."
             ),
-            "price": "Gratis (Propina libre)",
+            "price": "Desde 15 € con audioguía",
             "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2Fentradas-para-palacio-de-liria-entrada-audioguia-p1010845%2F",
-            "ctaText": "Reservar Free Tour por Madrid →",
-            "commissionNote": (
-                "Enlace directo a la actividad en Civitatis"
-            ),
+            "ctaText": "Ver entradas al Palacio de Liria →",
         },
     },
     "Barcelona": {
         "image": "images/venues/bcn-teatre-grec-laribal.jpg",
-        "imageAlt": "Vista panorámica al atardecer de Barcelona y el mar Mediterráneo desde los jardines de Montjuïc",
+        "imageAlt": "Anfiteatro de piedra y jardines del Teatre Grec en la montaña de Montjuïc en Barcelona",
         "neighborhoods": [
             "El Born",
             "Gràcia",
@@ -125,6 +142,10 @@ CITY_KNOWLEDGE_BASE = {
                     " Velòdrom)"
                 ),
                 "price": "2,23 € entrada general (Gratis miércoles y domingos)",
+                "lat": 41.4404,
+                "lng": 2.1463,
+                "image": "images/venues/bcn-laberint-horta.jpg",
+                "imageAlt": "Laberinto de cipreses y templete neoclásico del Parc del Laberint d'Horta en Barcelona",
                 "desc": (
                     "Un jardín neoclásico del siglo XVIII con un laberinto de"
                     " cipreses recortados, templos de columnas italianas,"
@@ -141,6 +162,10 @@ CITY_KNOWLEDGE_BASE = {
                     "Vermut casero + olivas rellenas y patatas bravas: 7,50 €"
                     " por persona"
                 ),
+                "lat": 41.4046,
+                "lng": 2.1569,
+                "image": "images/venues/bcn-placa-virreina-gracia.jpg",
+                "imageAlt": "Terrazas al sol frente a la iglesia de Sant Joan en la Plaça de la Virreina de Gràcia",
                 "desc": (
                     "Huye de las Ramblas y siéntate en las terrazas históricas"
                     " de la Plaça de la Virreina, seguido de una sesión"
@@ -151,6 +176,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Refugio Antiaéreo 307 de Poble-sec y jardines de Miramar",
                 "location": "Carrer Nou de la Rambla, 175 (Metro: Paral·lel - L2, L3)",
                 "price": "Gratis domingos desde las 15:00 h (3,50 € resto de días)",
+                "lat": 41.3665,
+                "lng": 2.1683,
+                "image": "images/venues/bcn-mirador-alcalde.jpg",
+                "imageAlt": "Jardines y terrazas de Miramar en la ladera de Montjuïc",
                 "desc": (
                     "Casi 400 metros de túneles excavados en la falda de"
                     " Montjuïc por los vecinos en 1937, conservados intactos."
@@ -160,6 +189,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Jardins de Laribal y el anfiteatro del Teatre Grec",
                 "location": "Passeig de Santa Madrona, 2 (Metro: Espanya - L1, L3)",
                 "price": "Acceso 100% gratuito",
+                "lat": 41.3696,
+                "lng": 2.1597,
+                "image": "images/venues/bcn-teatre-grec-laribal.jpg",
+                "imageAlt": "Anfiteatro al aire libre del Teatre Grec rodeado por los Jardins de Laribal en Montjuïc",
                 "desc": (
                     "Jardines escalonados de 1922 con fuentes de cerámica,"
                     " albercas y pérgolas que desembocan en el teatro al aire"
@@ -170,6 +203,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Recinto Modernista de Sant Pau y ruta de arquitectura en el Guinardó",
                 "location": "Carrer de Sant Antoni Maria Claret, 167 (Metro: Sant Pau | Dos de Maig - L5)",
                 "price": "Gratis primer domingo de mes y días de puertas abiertas (16 € general)",
+                "lat": 41.4119,
+                "lng": 2.1744,
+                "image": "images/venues/bcn-sant-pau-2.jpg",
+                "imageAlt": "Pabellones modernistas iluminados del Recinto de Sant Pau en Barcelona",
                 "desc": (
                     "El conjunto modernista más grande del mundo obra de Lluís"
                     " Domènech i Montaner, conectado por galerías subterráneas"
@@ -178,22 +215,18 @@ CITY_KNOWLEDGE_BASE = {
             },
         ],
         "affiliate": {
-            "partner": "Civitatis",
-            "badge": "Plan Estrella en Barcelona",
+            "partner": "Tiqets",
+            "badge": "Para completar el plan",
             "title": (
-                "Free Tour de los Misterios y Leyendas del Barrio Gótico y El"
-                " Born"
+                "Entrada sin Colas al Recinto Modernista de Sant Pau"
             ),
             "description": (
-                "Recorre al caer la tarde los callejones medievales del Barrio"
-                " Gótico y El Born descubriendo sus secretos mejor guardados."
+                "Accede directamente sin esperas a los pabellones modernistas,"
+                " jardines y galerías subterráneas de Sant Pau."
             ),
-            "price": "Gratis (Propina libre)",
+            "price": "Desde 16 € entrada oficial",
             "url": "https://tiqets.tpk.lu/oclT7jKV",
-            "ctaText": "Reservar Free Tour por el Barrio Gótico →",
-            "commissionNote": (
-                "Enlace directo a la actividad en Civitatis"
-            ),
+            "ctaText": "Ver entradas al Recinto Modernista de Sant Pau →",
         },
     },
     "Valencia": {
@@ -214,6 +247,10 @@ CITY_KNOWLEDGE_BASE = {
                     " L9)"
                 ),
                 "price": "Acceso 100% gratuito",
+                "lat": 39.4778,
+                "lng": -0.3652,
+                "image": "images/venues/vlc-jardines-monforte-2.jpg",
+                "imageAlt": "Setos recortados, fuentes y estatuas clásicas en el interior de los Jardines de Monforte",
                 "desc": (
                     "Un jardín histórico de 1859 con estatuas de mármol,"
                     " galería de buganvillas, fuentes y un pequeño laberinto de"
@@ -227,6 +264,10 @@ CITY_KNOWLEDGE_BASE = {
                     " Dr. Lluch)"
                 ),
                 "price": "Vermut + tapa marinera tradicional: 5,50 € – 8,00 €",
+                "lat": 39.4687,
+                "lng": -0.3292,
+                "image": "images/venues/vlc-cabanyal-casas.jpg",
+                "imageAlt": "Calles marineras junto a la playa de El Cabanyal en Valencia",
                 "desc": (
                     "Pasea entre las fachadas modernistas de azulejos de"
                     " colores de los antiguos pescadores del Cabanyal y haz"
@@ -238,6 +279,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Centro de Arte Hortensia Herrero en el Palacio de Valeriola",
                 "location": "Calle del Mar, 31 (Barrio de la Seu - Xerea)",
                 "price": "Gratis miércoles por la tarde con reserva previa (10 € general)",
+                "lat": 39.4743,
+                "lng": -0.3728,
+                "image": "images/venues/vlc-palacio-valeriola.jpg",
+                "imageAlt": "Palacio de Valeriola, sede del Centro de Arte Hortensia Herrero en Valencia",
                 "desc": (
                     "Un palacio del siglo XVII restaurado que combina restos"
                     " del circo romano subterráneo y un callejón judío medieval"
@@ -248,6 +293,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Atardecer en el Embarcadero de la Gola de Pujol en L'Albufera",
                 "location": "Parque Natural de la Albufera (Autobús EMT Línea 24 o 25 por 1,50 €)",
                 "price": "Mirador gratuito / Paseo en barca tradicional: 6,00 €",
+                "lat": 39.3514,
+                "lng": -0.3179,
+                "image": "images/venues/vlc-albufera-gola-pujol.jpg",
+                "imageAlt": "Embarcadero de madera de la Gola de Pujol al atardecer en el Parque Natural de L'Albufera",
                 "desc": (
                     "Llega en autobús urbano hasta el embarcadero de madera de"
                     " la Gola de Pujol para ver una de las puestas de sol más"
@@ -258,6 +307,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Ruta en bici por la Vía Xurra y horchata en alquería de la Huerta de Alboraya",
                 "location": "Inicio en Avenida de Aragón (Metro: Aragón - L5 / Palmaret - L3)",
                 "price": "Ruta gratis / Horchata artesana con fartons: 4,20 €",
+                "lat": 39.4961,
+                "lng": -0.3522,
+                "image": "images/venues/vlc-huerta-alboraya.jpg",
+                "imageAlt": "Campos de cultivo tradicionales de la Huerta de Alboraya al norte de Valencia",
                 "desc": (
                     "Recorre sin coches los caminos históricos de la huerta"
                     " valenciana entre acequias medievales y campos de chufa."
@@ -265,27 +318,25 @@ CITY_KNOWLEDGE_BASE = {
             },
         ],
         "affiliate": {
-            "partner": "Civitatis",
-            "badge": "Plan Favorito en Valencia",
+            "partner": "Tiqets",
+            "badge": "Para completar el plan",
             "title": (
-                "Excursión y Paseo en Barca Tradicional por la Albufera de"
-                " Valencia"
+                "Pase Arte y Ciencia de Valencia (Oceanogràfic, Museo de las"
+                " Ciencias e IVAM)"
             ),
             "description": (
-                "Vive la puesta de sol desde el agua navegando en barca"
-                " tradicional (albuferenc) por el Parque Natural de L'Albufera."
+                "Combina la visita a los espacios culturales del centro"
+                " histórico con el complejo de las Artes y las Ciencias sin"
+                " colas."
             ),
-            "price": "Desde 12 € por persona",
+            "price": "Entrada combinada oficial",
             "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c65847%2Fentradas-para-valencia-pase-arte-y-ciencia-p1124390%2F",
-            "ctaText": "Ver horarios del paseo en barca por L'Albufera →",
-            "commissionNote": (
-                "Enlace directo a la actividad en Civitatis"
-            ),
+            "ctaText": "Ver entradas del Pase Arte y Ciencia →",
         },
     },
     "Sevilla": {
         "image": "images/venues/sev-marqueses-algaba.jpg",
-        "imageAlt": "Patio andaluz mudéjar con naranjos, azulejos y flores en el barrio de Santa Cruz de Sevilla",
+        "imageAlt": "Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en Sevilla",
         "neighborhoods": [
             "Triana",
             "Calle Feria",
@@ -298,6 +349,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Casa de Salinas (Patio renacentista y mudéjar del siglo XVI)",
                 "location": "Calle Mateos Gago, 39 (A 2 min de la Giralda)",
                 "price": "8,00 € entrada guiada",
+                "lat": 37.3863,
+                "lng": -5.9904,
+                "image": "images/venues/sev-casa-salinas.jpg",
+                "imageAlt": "Columnas de mármol y arcos con yeserías en un patio mudéjar sevillano del siglo XVI",
                 "desc": (
                     "Una casa-palacio privada aún habitada que combina columnas"
                     " de mármol italiano, yeserías mudéjares y azulejos de"
@@ -308,6 +363,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Mercadillo Histórico de El Jueves y tapeo en la Calle Feria",
                 "location": "Calle Feria (Desde Montesión hasta Omnium Sanctorum)",
                 "price": "Paseo gratis / Caña y montadito de pringá: 3,80 €",
+                "lat": 37.3991,
+                "lng": -5.9937,
+                "image": "images/venues/sev-calle-feria.jpg",
+                "imageAlt": "Pasaje exterior y puestos tradicionales del histórico Mercado de la Calle Feria en Sevilla",
                 "desc": (
                     "El mercadillo al aire libre más antiguo de España (se"
                     " celebra desde el siglo XIII) lleno de antigüedades,"
@@ -316,19 +375,27 @@ CITY_KNOWLEDGE_BASE = {
                 ),
             },
             {
-                "name": "Jardines del Pabellón de la Navegación y ribera de Triana",
-                "location": "Camino de los Descubrimientos, 2 (Isla de la Cartuja)",
-                "price": "Gratis los martes por la tarde (4,90 € general)",
+                "name": "Centro Cerámica Triana y ribera del Guadalquivir",
+                "location": "Calle Callao, 16 (Junto al Puente de Triana)",
+                "price": "Paseo por talleres: Gratis (Museo: 2,10 €)",
+                "lat": 37.3859,
+                "lng": -6.0041,
+                "image": "images/venues/sev-ceramica-triana.jpg",
+                "imageAlt": "Antiguos hornos de ladrillo y azulejería histórica en el Centro Cerámica Triana",
                 "desc": (
-                    "Con una torre mirador sobre toda la dársena del río"
-                    " Guadalquivir y pasarelas peatonales ideales para enlazar"
-                    " con un paseo al atardecer por la calle Betis."
+                    "Con antiguos hornos de ladrillo del siglo XIX y pasarelas"
+                    " peatonales ideales para enlazar con un paseo al atardecer"
+                    " por la calle Betis."
                 ),
             },
             {
                 "name": "Palacio de los Marqueses de la Algaba y Centro del Arte Mudéjar",
                 "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de Feria)",
                 "price": "Entrada 100% gratuita",
+                "lat": 37.3996,
+                "lng": -5.9908,
+                "image": "images/venues/sev-marqueses-algaba.jpg",
+                "imageAlt": "Patio mudéjar y renacentista del Palacio de los Marqueses de la Algaba en Sevilla",
                 "desc": (
                     "Un palacio mudéjar de 1474 con patio de arcos y jardines"
                     " frescos en el corazón de la calle Feria."
@@ -338,6 +405,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Plaza de Santa Marta y Callejón del Agua al anochecer",
                 "location": "Acceso por Plaza Virgen de los Reyes (Barrio de Santa Cruz)",
                 "price": "Acceso libre y gratuito",
+                "lat": 37.3861,
+                "lng": -5.9917,
+                "image": "images/venues/sev-plaza-santa-marta.jpg",
+                "imageAlt": "Crucero renacentista y naranjos de la escondida Plaza de Santa Marta en el barrio de Santa Cruz",
                 "desc": (
                     "La plazuela empedrada más pequeña y silenciosa de Sevilla,"
                     " escondida tras un pasadizo con cuatro naranjos y un"
@@ -346,26 +417,24 @@ CITY_KNOWLEDGE_BASE = {
             },
         ],
         "affiliate": {
-            "partner": "Civitatis",
-            "badge": "Top Ventas en Sevilla",
+            "partner": "Tiqets",
+            "badge": "Para completar el plan",
             "title": (
-                "Free Tour por el Barrio de Triana al Atardecer"
+                "Entrada y Visita a la Casa de Salinas en Sevilla"
             ),
             "description": (
-                "Descubre los corrales de vecinos, talleres de alfarería y la"
-                " historia del flamenco en Triana con un guía local sevillano."
+                "Reserva tu pase para recorrer los patios renacentistas,"
+                " yeserías mudéjares y azulejos del siglo XVI de la Casa de"
+                " Salinas."
             ),
-            "price": "Gratis (Propina libre)",
+            "price": "Desde 8 € entrada oficial",
             "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c65870%2Fentradas-para-casa-de-salinas-tour-con-audioguia-p986387%2F",
-            "ctaText": "Reservar Free Tour por Triana →",
-            "commissionNote": (
-                "Enlace directo a la actividad en Civitatis"
-            ),
+            "ctaText": "Ver entradas a la Casa de Salinas →",
         },
     },
     "Toledo": {
         "image": "images/venues/tol-cerro-del-bu.jpg",
-        "imageAlt": "Callejón medieval empedrado de Toledo iluminado por faroles al anochecer con la torre de la Catedral al fondo",
+        "imageAlt": "Vista panorámica del Alcázar y las murallas de Toledo sobre el cañón del río Tajo",
         "neighborhoods": [
             "Judería Mayor",
             "Barrio de los Conventos",
@@ -380,6 +449,10 @@ CITY_KNOWLEDGE_BASE = {
                     " Martín"
                 ),
                 "price": "100% Gratis",
+                "lat": 39.8568,
+                "lng": -4.0405,
+                "image": "images/venues/tol-puente-san-martin-2.jpg",
+                "imageAlt": "Torreón medieval y arcos de piedra del Puente de San Martín sobre el río Tajo",
                 "desc": (
                     "Un camino peatonal junto al cañón de roca del río Tajo que"
                     " rodea toda la muralla medieval desde abajo junto a"
@@ -390,6 +463,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Torno de mazapán artesano del Convento de San Clemente",
                 "location": "Calle San Clemente, 1 (Junto a Santo Tomé)",
                 "price": "Cajita de mazapán recién horneado desde 4,50 €",
+                "lat": 39.8588,
+                "lng": -4.0279,
+                "image": "images/venues/tol-convento-san-clemente.jpg",
+                "imageAlt": "Portada renacentista del histórico edificio de San Clemente en Toledo",
                 "desc": (
                     "Entra al patio silencioso del convento donde se elaboró el"
                     " primer mazapán documentado en 1212 y compra a través del"
@@ -400,6 +477,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Mirador del Cerro del Bú frente al Alcázar",
                 "location": "Cruzando la pasarela peatonal del Tajo",
                 "price": "Acceso libre y gratuito",
+                "lat": 39.8541,
+                "lng": -4.0203,
+                "image": "images/venues/tol-cerro-del-bu.jpg",
+                "imageAlt": "Panorámica de las murallas y el Alcázar de Toledo desde la otra orilla del río Tajo",
                 "desc": (
                     "Un yacimiento arqueológico al aire libre desde el que se"
                     " obtiene la vista más cercana e imponente de las murallas"
@@ -410,6 +491,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Ruta de los Cobertizos iluminados de Santo Domingo el Real y Santa Clara",
                 "location": "Zona Norte del Casco Histórico (a 4 min de Plaza de Zocodover)",
                 "price": "Paseo 100% gratuito",
+                "lat": 39.8601,
+                "lng": -4.0261,
+                "image": "images/venues/tol-cobertizos.jpg",
+                "imageAlt": "Portada conventual y callejones históricos del barrio de los conventos de Toledo",
                 "desc": (
                     "Pasadizos volados del siglo XVI que comunicaban los"
                     " conventos y palacios toledanos y que al anochecer quedan"
@@ -420,6 +505,10 @@ CITY_KNOWLEDGE_BASE = {
                 "name": "Baños Árabes de Medina Mudéjar y Termas Romanas de Amador de los Ríos",
                 "location": "Plaza de Santa Eulalia, 1 / Plaza Amador de los Ríos (Judería y Centro)",
                 "price": "Termas romanas gratis / Baños árabes desde 28 € por persona",
+                "lat": 39.8579,
+                "lng": -4.0246,
+                "image": "images/venues/tol-cuevas-hercules-termas.jpg",
+                "imageAlt": "Restos arqueológicos subterráneos de las Termas Romanas de Amador de los Ríos en Toledo",
                 "desc": (
                     "Descubre el Toledo subterráneo combinando las bóvedas"
                     " romanas gratuitas del Consorcio con un baño termal bajo"
@@ -428,21 +517,19 @@ CITY_KNOWLEDGE_BASE = {
             },
         ],
         "affiliate": {
-            "partner": "Civitatis",
-            "badge": "Imprescindible en Toledo",
+            "partner": "Tiqets",
+            "badge": "Para completar el plan",
             "title": (
-                "Free Tour por Toledo y las 3 Culturas con Guía Oficial"
+                "Pulsera Turística Oficial de Toledo (Acceso a 7 Monumentos)"
             ),
             "description": (
-                "Descubre las historias de cristianos, judíos y musulmanes por"
-                " las callejuelas laberínticas de Toledo con guía oficial."
+                "Incluye la entrada a San Juan de los Reyes, la Sinagoga de"
+                " Santa María la Blanca, el Entierro del Señor de Orgaz y"
+                " cuatro monumentos más."
             ),
-            "price": "Gratis (Reserva online en 1 minuto)",
+            "price": "Desde 12 € (7 monumentos incluidos)",
             "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c170113%2Fentradas-para-pulsera-turistica-de-toledo-p1031186%2F",
-            "ctaText": "Reservar Free Tour por Toledo →",
-            "commissionNote": (
-                "Enlace directo a la actividad en Civitatis"
-            ),
+            "ctaText": "Ver la Pulsera Turística de Toledo →",
         },
     },
 }
