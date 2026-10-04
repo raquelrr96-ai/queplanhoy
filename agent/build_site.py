@@ -33,7 +33,7 @@ CITIES = {
         ),
         "metaDesc": (
             "¿Buscas qué plan hacer en Madrid este fin de semana o qué planes"
-            " hacer hoy? Guías a fondo de un único plan, Feria Barroca de"
+            " hacer hoy? Jardines secretos, Feria Barroca de"
             " Valdemoro, mercadillos e ideas gratis."
         ),
         "intro": (
@@ -58,8 +58,8 @@ CITIES = {
             " gratis y citas originales en pareja."
         ),
         "intro": (
-            "Una Barcelona lejos de las aglomeraciones: desde planes únicos"
-            " explicados a fondo hasta jardines neoclásicos gratuitos y"
+            "Una Barcelona lejos de las aglomeraciones: desde jardines"
+            " neoclásicos gratuitos y rutas por barrios con encanto hasta"
             " terrazas con vistas al Mediterráneo."
         ),
     },
@@ -99,7 +99,7 @@ CITIES = {
             " Calle Feria, Triana y Santa Cruz."
         ),
         "intro": (
-            "Palacios mudéjares gratuitos explicados a fondo, mercadillos"
+            "Palacios mudéjares gratuitos, mercadillos"
             " históricos, rutas al anochecer por la antigua judería y planes"
             " auténticos en Triana."
         ),
@@ -235,7 +235,7 @@ def render_footer(root_prefix: str) -> str:
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
       <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
-      <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
+      <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.15rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="{root_prefix}madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="{root_prefix}barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="{root_prefix}valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
@@ -245,10 +245,54 @@ def render_footer(root_prefix: str) -> str:
         <a href="{root_prefix}mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="{root_prefix}sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
+        <span>·</span>
+        <a href="{root_prefix}privacidad-y-cookies/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Privacidad y Cookies</a>
+        <span>·</span>
+        <button type="button" onclick="window.openCookieBanner && window.openCookieBanner()" style="background:none;border:none;padding:0;font:inherit;color:var(--ink-secondary);font-weight:600;cursor:pointer;text-decoration:underline;">Configurar cookies</button>
       </nav>
       <p style="font-size: 0.78rem; margin-top: 0.5rem;">© {date.today().year} Qué Plan Hoy</p>
     </div>
-  </footer>"""
+  </footer>
+
+  <div id="qph-cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies" style="display:none;position:fixed;bottom:1rem;left:1rem;right:1rem;max-width:680px;margin:0 auto;background:var(--bg-elevated, #fff);border:1px solid var(--border-subtle, #e5e0d5);border-radius:12px;box-shadow:0 12px 32px rgba(28,25,23,0.16);padding:1rem 1.25rem;z-index:9999;font-family:var(--font-sans, sans-serif);">
+    <div style="display:flex;flex-direction:column;gap:0.75rem;">
+      <p style="margin:0;font-size:0.84rem;line-height:1.5;color:var(--ink-secondary, #57534e);">
+        🍪 Utilizamos cookies técnicas propias y de terceros (como enlaces de reserva de colaboradores como Tiqets y Travelpayouts) para el funcionamiento de la web y medir las reservas realizadas desde nuestras guías. Puedes aceptar todas las cookies o mantener solo las estrictamente necesarias. Consulta nuestra <a href="{root_prefix}privacidad-y-cookies/" style="color:var(--terracotta, #c84b31);font-weight:600;text-decoration:underline;">Política de Privacidad y Cookies</a>.
+      </p>
+      <div style="display:flex;gap:0.6rem;justify-content:flex-end;flex-wrap:wrap;">
+        <button type="button" id="qph-cookie-reject" style="background:var(--bg-sand, #f5f2eb);color:var(--ink-primary, #1c1917);border:1px solid var(--border-subtle, #e5e0d5);padding:0.48rem 0.95rem;border-radius:8px;font-size:0.8rem;font-weight:600;cursor:pointer;">Solo necesarias</button>
+        <button type="button" id="qph-cookie-accept" style="background:var(--terracotta, #c84b31);color:#fff;border:1px solid var(--terracotta, #c84b31);padding:0.48rem 1.05rem;border-radius:8px;font-size:0.8rem;font-weight:700;cursor:pointer;">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {{
+      var KEY = 'qph_cookie_consent_v1';
+      var banner = document.getElementById('qph-cookie-banner');
+      if (!banner) return;
+      function hideBanner() {{ banner.style.display = 'none'; }}
+      function showBanner() {{ banner.style.display = 'block'; }}
+      window.openCookieBanner = showBanner;
+      try {{
+        var saved = localStorage.getItem(KEY);
+        if (!saved) {{ showBanner(); }}
+      }} catch (e) {{}}
+      var btnAccept = document.getElementById('qph-cookie-accept');
+      var btnReject = document.getElementById('qph-cookie-reject');
+      if (btnAccept) {{
+        btnAccept.addEventListener('click', function() {{
+          try {{ localStorage.setItem(KEY, 'accepted'); }} catch (e) {{}}
+          hideBanner();
+        }});
+      }}
+      if (btnReject) {{
+        btnReject.addEventListener('click', function() {{
+          try {{ localStorage.setItem(KEY, 'necessary'); }} catch (e) {{}}
+          hideBanner();
+        }});
+      }}
+    }})();
+  </script>"""
 
 
 def render_article_card(
@@ -261,14 +305,8 @@ def render_article_card(
   cat_label = art["category"]
   if art.get("weekendDates"):
     cat_label = f"{cat_label} · {art['weekendDates']}"
-  elif art.get("articleType") == "single_plan":
-    cat_label = f"{cat_label} · Plan Único a Fondo"
   lead_cls = " lead-card" if is_lead else ""
-  read_cta = (
-      "Leer plan paso a paso →"
-      if art.get("articleType") == "single_plan"
-      else "Leer guía →"
-  )
+  read_cta = "Leer guía →"
   return f"""
   <article class="article-card{lead_cls}" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
     <a href="{article_href}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
@@ -400,7 +438,7 @@ def build_listing_page(
         ¿Qué plan hacer en {html.escape(city_label)} este fin de semana?
       </h2>
       <p style="margin-bottom: 0.85rem;">
-        Si estás buscando <strong>qué plan hacer en {html.escape(city_label)} este fin de semana</strong> o ideas para salir hoy sin caer en los sitios turísticos de siempre, en nuestras guías combinamos planes únicos explicados paso a paso con selecciones de ferias históricas, jardines ocultos gratuitos y citas originales en pareja:
+        Si estás buscando <strong>qué plan hacer en {html.escape(city_label)} este fin de semana</strong> o ideas para salir hoy sin caer en los sitios turísticos de siempre, aquí tienes nuestras rutas paso a paso, ferias históricas, jardines ocultos gratuitos y citas originales en pareja:
       </p>
       <ul style="margin-left: 1.25rem; line-height: 1.7;">
         {''.join(guide_links)}
@@ -775,8 +813,6 @@ def build_article_page(art: dict, all_articles: list):
   cat_header = art["category"]
   if art.get("weekendDates"):
     cat_header = f"{cat_header} · {art['weekendDates']}"
-  elif is_single_plan:
-    cat_header = f"{cat_header} · Plan Único Explicado a Fondo"
 
   page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, itemlist_schema, faq_schema, breadcrumb_schema], full_img_url, include_leaflet=True)}
 <body>
@@ -1154,10 +1190,10 @@ def build_about_page():
     <section class="reader-section">
       <h2>Qué tipo de planes publicamos</h2>
       <p style="margin-top: 0.5rem;">
-        Seleccionamos propuestas en <strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong> combinando rutas de un único plan explicadas a fondo con agendas de fin de semana:
+        Seleccionamos propuestas en <strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong> combinando rutas paso a paso con agendas de fin de semana:
       </p>
       <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
-        <li><strong>Planes únicos explicados a fondo:</strong> Itinerarios completos paso a paso para dedicar una mañana o una tarde a un gran rincón histórico o natural sin prisas.</li>
+        <li><strong>Rutas paso a paso:</strong> Itinerarios completos para dedicar una mañana o una tarde a un rincón histórico, jardín secreto o entorno natural sin prisas.</li>
         <li><strong>Este fin de semana:</strong> Ferias históricas (como la Feria Barroca de Valdemoro), mercados puntuales y citas de agenda con sus fechas exactas.</li>
         <li><strong>Gratis y baratos:</strong> Jardines ocultos, museos desconocidos, miradores y rutas por menos de 10 €.</li>
         <li><strong>En pareja:</strong> Citas originales, talleres creativos y paseos al atardecer.</li>
@@ -1185,6 +1221,51 @@ def build_about_page():
     f.write(page_html)
 
 
+def build_privacy_cookies_page():
+  output_path = os.path.join(PUBLIC_DIR, "privacidad-y-cookies", "index.html")
+  root_prefix = "../"
+  canonical_url = f"{SITE_URL}/privacidad-y-cookies/"
+  page_html = f"""{render_head("Política de Privacidad y Cookies | Qué Plan Hoy", "Información sobre el uso de cookies técnicas y de afiliación y tratamiento de datos en Qué Plan Hoy (queplanhoy.es).", canonical_url, root_prefix, [])}
+<body>
+  {render_header(root_prefix, "none")}
+  <main class="main-container" style="max-width: 740px;">
+    <span class="hero-kicker">INFORMACIÓN LEGAL · RGPD Y LSSI-CE</span>
+    <h1 class="hero-title" style="margin-bottom: 1.25rem;">Política de Privacidad y Cookies</h1>
+    <p style="font-size: 1.02rem; color: var(--ink-secondary); margin-bottom: 1.5rem;">
+      En <strong>¿Qué Plan Hoy?</strong> (<code>queplanhoy.es</code>) respetamos tu privacidad. A continuación te explicamos de forma clara qué datos y cookies se utilizan al navegar por nuestra guía.
+    </p>
+    <section class="reader-section">
+      <h2>1. ¿Qué cookies utiliza esta web?</h2>
+      <p style="margin-top: 0.5rem;">
+        Al navegar por <strong>queplanhoy.es</strong> se pueden emplear dos tipos de almacenamiento o cookies:
+      </p>
+      <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
+        <li><strong>Cookies técnicas y de preferencias (Estrictamente necesarias):</strong> Guardan en tu navegador (`localStorage`) tu elección sobre el aviso de cookies (`qph_cookie_consent_v1`) y permiten el funcionamiento de los mapas interactivos de OpenStreetMap / Leaflet.</li>
+        <li><strong>Cookies de afiliación y reserva de entradas (Terceros):</strong> Algunas de nuestras guías incluyen enlaces de recomendación a plataformas oficiales de venta de entradas culturales y visitas guiadas (como <strong>Tiqets</strong>, <strong>Civitatis</strong> o la red <strong>Travelpayouts</strong>). Si haces clic en uno de esos enlaces o aceptas las cookies, estos proveedores pueden utilizar una cookie técnica de atribución para reconocer que la visita procede de <em>Qué Plan Hoy</em>, sin ningún coste adicional para ti.</li>
+      </ul>
+    </section>
+    <section class="reader-section">
+      <h2>2. Cómo cambiar o retirar tu consentimiento</h2>
+      <p style="margin-top: 0.5rem;">
+        Puedes modificar tu elección en cualquier momento haciendo clic en el botón <button type="button" onclick="window.openCookieBanner && window.openCookieBanner()" style="background:none;border:none;padding:0;font:inherit;color:var(--terracotta);font-weight:700;cursor:pointer;text-decoration:underline;">Configurar cookies</button> disponible también en el pie de página de toda la web, o borrando los datos de navegación desde los ajustes de tu navegador.
+      </p>
+    </section>
+    <section class="reader-section" style="border-bottom: none;">
+      <h2>3. Protección de datos personales</h2>
+      <p style="margin-top: 0.5rem;">
+        En <strong>queplanhoy.es</strong> no exigimos registro de usuarios, no tenemos formularios que recopilen datos personales identificables ni cedemos listados de correo a terceros.
+      </p>
+    </section>
+  </main>
+  {render_footer(root_prefix)}
+</body>
+</html>
+"""
+  os.makedirs(os.path.dirname(output_path), exist_ok=True)
+  with open(output_path, "w", encoding="utf-8") as f:
+    f.write(page_html)
+
+
 def regenerate_sitemap(articles: list):
   today = date.today().isoformat()
   urls = [
@@ -1197,6 +1278,9 @@ def regenerate_sitemap(articles: list):
       f"  <url>\n    <loc>{SITE_URL}/sobre-nosotros/</loc>\n   "
       f" <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n   "
       " <priority>0.6</priority>\n  </url>",
+      f"  <url>\n    <loc>{SITE_URL}/privacidad-y-cookies/</loc>\n   "
+      f" <lastmod>{today}</lastmod>\n    <changefreq>yearly</changefreq>\n   "
+      " <priority>0.4</priority>\n  </url>",
   ]
   for info in CITIES.values():
     c_slug = info["slug"]
@@ -1235,14 +1319,14 @@ def build_all():
           " Barcelona, Valencia, Sevilla y Toledo"
       ),
       description=(
-          "¿Qué planes hacer hoy o este fin de semana? Guía local de planes"
-          " únicos explicados a fondo, ferias, ideas gratis, citas en pareja y"
+          "¿Qué planes hacer hoy o este fin de semana? Guía local de rutas"
+          " paso a paso, ferias, ideas gratis, citas en pareja y"
           " mapa interactivo en Madrid, Barcelona, Valencia, Sevilla y Toledo."
       ),
       canonical_url=f"{SITE_URL}/",
       h1="Planes originales en tu ciudad: qué hacer fuera de lo típico",
       subtitle=(
-          "Rutas de un único plan explicadas a fondo, ferias de fin de semana,"
+          "Rutas explicadas paso a paso, ferias de fin de semana,"
           " jardines secretos y citas en pareja en Madrid, Barcelona,"
           " Valencia, Sevilla y Toledo."
       ),
@@ -1271,6 +1355,7 @@ def build_all():
 
   build_map_page(articles)
   build_about_page()
+  build_privacy_cookies_page()
   regenerate_sitemap(articles)
   with open(os.path.join(PUBLIC_DIR, "CNAME"), "w", encoding="utf-8") as f:
     f.write("queplanhoy.es\n")
@@ -1282,7 +1367,7 @@ def build_all():
     f.write("google-site-verification: googleb24ffbb97ddb75f6.html")
   print(
       "[OK] Sitio estático E-E-A-T generado: Portada + 5 ciudades +"
-      f" {len(articles)} guías + /mapa/ + /sobre-nosotros/ + CNAME + sitemap.xml."
+      f" {len(articles)} guías + /mapa/ + /sobre-nosotros/ + /privacidad-y-cookies/ + CNAME + sitemap.xml."
   )
 
 

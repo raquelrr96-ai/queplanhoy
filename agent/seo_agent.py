@@ -118,7 +118,7 @@ CITY_KNOWLEDGE_BASE = {
                 "Visita la residencia histórica de la Casa de Alba en la calle"
                 " Princesa con salones palaciegos y obras de Goya y Velázquez."
             ),
-            "price": "Desde 15 € con audioguía",
+            "price": "Desde 20 € con audioguía",
             "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2Fentradas-para-palacio-de-liria-entrada-audioguia-p1010845%2F",
             "ctaText": "Ver entradas al Palacio de Liria →",
         },
@@ -202,7 +202,7 @@ CITY_KNOWLEDGE_BASE = {
             {
                 "name": "Recinto Modernista de Sant Pau y ruta de arquitectura en el Guinardó",
                 "location": "Carrer de Sant Antoni Maria Claret, 167 (Metro: Sant Pau | Dos de Maig - L5)",
-                "price": "Gratis primer domingo de mes y días de puertas abiertas (16 € general)",
+                "price": "Gratis primer domingo de mes y días de puertas abiertas (17 € general)",
                 "lat": 41.4119,
                 "lng": 2.1744,
                 "image": "images/venues/bcn-sant-pau-2.jpg",
@@ -224,7 +224,7 @@ CITY_KNOWLEDGE_BASE = {
                 "Accede directamente sin esperas a los pabellones modernistas,"
                 " jardines y galerías subterráneas de Sant Pau."
             ),
-            "price": "Desde 16 € entrada oficial",
+            "price": "Desde 17 € entrada sin colas",
             "url": "https://tiqets.tpk.lu/oclT7jKV",
             "ctaText": "Ver entradas al Recinto Modernista de Sant Pau →",
         },
@@ -329,7 +329,7 @@ CITY_KNOWLEDGE_BASE = {
                 " histórico con el complejo de las Artes y las Ciencias sin"
                 " colas."
             ),
-            "price": "Entrada combinada oficial",
+            "price": "Desde 70,50 € pase combinado",
             "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c65847%2Fentradas-para-valencia-pase-arte-y-ciencia-p1124390%2F",
             "ctaText": "Ver entradas del Pase Arte y Ciencia →",
         },
@@ -348,7 +348,7 @@ CITY_KNOWLEDGE_BASE = {
             {
                 "name": "Casa de Salinas (Patio renacentista y mudéjar del siglo XVI)",
                 "location": "Calle Mateos Gago, 39 (A 2 min de la Giralda)",
-                "price": "8,00 € entrada guiada",
+                "price": "12,00 € visita con audioguía",
                 "lat": 37.3863,
                 "lng": -5.9904,
                 "image": "images/venues/sev-casa-salinas.jpg",
@@ -427,7 +427,7 @@ CITY_KNOWLEDGE_BASE = {
                 " yeserías mudéjares y azulejos del siglo XVI de la Casa de"
                 " Salinas."
             ),
-            "price": "Desde 8 € entrada oficial",
+            "price": "Desde 12 € con audioguía",
             "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c65870%2Fentradas-para-casa-de-salinas-tour-con-audioguia-p986387%2F",
             "ctaText": "Ver entradas a la Casa de Salinas →",
         },
@@ -527,7 +527,7 @@ CITY_KNOWLEDGE_BASE = {
                 " Santa María la Blanca, el Entierro del Señor de Orgaz y"
                 " cuatro monumentos más."
             ),
-            "price": "Desde 12 € (7 monumentos incluidos)",
+            "price": "Desde 14 € (7 monumentos incluidos)",
             "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c170113%2Fentradas-para-pulsera-turistica-de-toledo-p1031186%2F",
             "ctaText": "Ver la Pulsera Turística de Toledo →",
         },
@@ -794,7 +794,7 @@ def generate_seo_article(
             "imageAlt": lead_v.get("imageAlt", lead_v["name"]),
             "content": (
                 f"{lead_v['desc']}\n\n"
-                f"En lugar de intentar abarcar cinco o seis sitios distintos con prisas, dedicar una mañana o una tarde completa a este único plan en {city} permite disfrutar del ambiente a otro ritmo, fijarse en su arquitectura histórica y recorrer sus rincones menos transitados sin aglomeraciones.\n\n"
+                f"Dedicar una mañana o una tarde tranquila a este recorrido en {city} permite disfrutar del ambiente a otro ritmo, fijarse en su arquitectura histórica y pasear por sus rincones menos transitados sin aglomeraciones.\n\n"
                 f"La mejor franja horaria para empezar el recorrido es a primera hora de apertura o bien una hora y media antes del atardecer, cuando la luz resalta los detalles del entorno y apenas coincidirás con grupos organizados."
             ),
         },
@@ -808,7 +808,7 @@ def generate_seo_article(
             "image": second_img,
             "imageAlt": second_v.get("imageAlt", f"Recorrido paso a paso en {city}"),
             "content": (
-                f"Una vez dentro del entorno de {lead_v['name']}, te recomendamos seguir un itinerario circular sin quedarte únicamente en la entrada principal. Empieza recorriendo el eje central y detente en los patios, galerías o senderos laterales donde se conserva el trazado histórico original.\n\n"
+                f"Una vez dentro del entorno de {lead_v['name']}, te recomendamos seguir un itinerario circular sin quedarte solo en la entrada principal. Empieza recorriendo el eje central y detente en los patios, galerías o senderos laterales donde se conserva el trazado histórico original.\n\n"
                 f"Dedica al menos cuarenta y cinco minutos a caminar sin prisa por la zona principal antes de enlazar a pie con {second_v['name']} ({second_v['location']}), que complementa la visita a la perfección: {second_v['desc']}"
             ),
         },
@@ -830,7 +830,7 @@ def generate_seo_article(
 
     if not suggested_title or re.match(r"^\d+\b", suggested_title.strip()):
       suggested_title = (
-          f"{lead_v['name']}: Guía Completa de un Plan Único en {city} (Paso a Paso)"
+          f"{lead_v['name']}: Guía Completa y Ruta Paso a Paso en {city}"
       )
     read_time = "8 min"
   else:
@@ -982,7 +982,7 @@ def run_next_from_queue() -> dict:
         category="Gratis y Baratos",
         keyword="visitar jardines de monforte valencia guia gratis",
         suggested_title=(
-            "Los Jardines de Monforte en Valencia a Fondo: Un Plan Gratis"
+            "Los Jardines de Monforte en Valencia: Ruta Gratis"
             " entre Estatuas de Mármol y Buganvillas"
         ),
         article_type="single_plan",
