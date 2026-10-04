@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -165,7 +167,7 @@
         <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
-        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn active" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a>
+        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn active" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a><a href="../../mapa/" class="city-filter-btn" id="nav-mapa">🗺️ Mapa de Planes</a>
       </nav>
     </div>
   </header>
@@ -202,10 +204,10 @@
       </figure>
 
       
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">En este artículo</span>
-        <a href="https://api.whatsapp.com/send?text=Mira%20estos%20planes%20en%20Valencia%3A%206%20Planes%20Diferentes%20en%20Valencia%20para%20Salir%20de%20la%20Rutina%20%28Atardeceres%20en%20Barca%2C%20Refugios%20y%20Huerta%29%20https%3A//queplanhoy.es/valencia/planes-diferentes-valencia-en-pareja-baratos/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+        <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Valencia%3A%206%20Planes%20Diferentes%20en%20Valencia%20para%20Salir%20de%20la%20Rutina%20%28Atardeceres%20en%20Barca%2C%20Refugios%20y%20Huerta%29%20https%3A//queplanhoy.es/valencia/planes-diferentes-valencia-en-pareja-baratos/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
       </div>
@@ -215,11 +217,56 @@
     </nav>
 
       
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Valencia (Pulsa un pin para ir a Google Maps)</span>
+        <a href="../../mapa/?ciudad=Valencia" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de Valencia en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var pins = [{"idx": 1, "name": "Mirador de la Gola de Pujol & Embarcadero de El Palmar", "location": "Parque Natural de la Albufera (Autobús EMT Línea 24 o 25 desde el centro por 1,50 €)", "price": "Mirador gratis / Paseo en barca tradicional: 6,00 €", "lat": 39.3514, "lng": -0.3179, "image": "../../images/venues/vlc-jardin-del-turia.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Gola%20de%20Pujol%20%26%20Embarcadero%20de%20El%20Palmar%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Vía Xurra y Alquerías de la Huerta de Alboraya", "location": "Inicio en Avenida de Aragón (Metro: Aragón - L5 / Palmaret - L3)", "price": "Ruta gratis / Horchata artesana con fartons caseros: 4,20 €", "lat": 39.4961, "lng": -0.3522, "image": "../../images/venues/vlc-huerta-alboraya.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=V%C3%ADa%20Xurra%20y%20Alquer%C3%ADas%20de%20la%20Huerta%20de%20Alboraya%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Centro Cultural La Beneficència (Patio Bizantino)", "location": "Calle Corona, 36 (Barrio de El Carmen)", "price": "Acceso 100% gratuito los fines de semana", "lat": 39.4781, "lng": -0.3829, "image": "../../images/venues/vlc-la-beneficencia.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20Cultural%20La%20Benefic%C3%A8ncia%20%28Patio%20Bizantino%29%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Jardines de Monforte", "location": "Plaza de la Legión Española, s/n (Metro: Facultats - L3, L9)", "price": "Entrada 100% gratuita", "lat": 39.4778, "lng": -0.3652, "image": "../../images/venues/vlc-jardines-monforte.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Monforte%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Barrio de El Cabanyal y Bodega Casa Montaña", "location": "Calle de la Barraca y Calle de la Reina (Tranvía: Líneas 4 y 6 - Dr. Lluch)", "price": "Paseo gratis / Vermut de barrica y tapa de michirones o anchoas: 6,50 €", "lat": 39.4664, "lng": -0.3301, "image": "../../images/venues/vlc-cabanyal-casas.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barrio%20de%20El%20Cabanyal%20y%20Bodega%20Casa%20Monta%C3%B1a%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-5"}, {"idx": 6, "name": "Refugio de Serranos y Centro de Arte Hortensia Herrero", "location": "Calle Serranos, 25 / Calle del Mar, 31 (Centro Histórico)", "price": "Refugio gratis / Palacio gratis miércoles tarde con reserva previa (10 € general)", "lat": 39.4785, "lng": -0.3755, "image": "../../images/venues/vlc-palacio-valeriola.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Refugio%20de%20Serranos%20y%20Centro%20de%20Arte%20Hortensia%20Herrero%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-6"}];
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          });
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
+        });
+        if (bounds.length === 1) {
+          map.setView(bounds[0], 15);
+        } else {
+          map.fitBounds(bounds, { padding: [38, 38], maxZoom: 15 });
+        }
+      });
+    </script>
+
+      
       <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. Atardecer en el Embarcadero de la Gola de Pujol y barca tradicional (Coste: 0 € - 6 €)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">No necesitas coche para vivir el mejor atardecer de España: la línea 25 de la EMT te deja frente al embarcadero de madera de la Gola de Pujol. Llega 40 minutos antes de la puesta de sol para ver cómo el cielo tiñe de naranja toda la laguna.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">No necesitas coche para vivir el mejor atardecer de España: la línea 25 de la EMT te deja frente al embarcadero de madera de la Gola de Pujol. Llega 40 minutos antes de la puesta de sol para ver cómo el cielo tiñe de naranja toda la laguna.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/vlc-jardin-del-turia.jpg" alt="Jardines y puentes históricos junto al camino hacia el Parque Natural de L&#x27;Albufera" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/vlc-jardin-del-turia.jpg" alt="Jardines y puentes históricos junto al camino hacia el Parque Natural de L&#x27;Albufera" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Jardines y puentes históricos junto al camino hacia el Parque Natural de L&#x27;Albufera
           </figcaption>
@@ -227,14 +274,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Parque Natural de la Albufera (Autobús EMT Línea 24 o 25 desde el centro por 1,50 €)</span>
           <span><strong>Precio:</strong> Mirador gratis / Paseo en barca tradicional: 6,00 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Gola%20de%20Pujol%20%26%20Embarcadero%20de%20El%20Palmar%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Gola%20de%20Pujol%20%26%20Embarcadero%20de%20El%20Palmar%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. Ruta por la Huerta de Alboraya en bici y horchata en alquería histórica</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">A solo 15 minutos pedaleando desde el centro de Valencia entras en un paisaje protegido de acequias árabes del siglo X y campos de chufa donde puedes sentarte al sol en una alquería centenaria.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">A solo 15 minutos pedaleando desde el centro de Valencia entras en un paisaje protegido de acequias árabes del siglo X y campos de chufa donde puedes sentarte al sol en una alquería centenaria.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/vlc-huerta-alboraya.jpg" alt="Caminos rurales entre campos de chufa en la Huerta de Alboraya" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/vlc-huerta-alboraya.jpg" alt="Caminos rurales entre campos de chufa en la Huerta de Alboraya" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Caminos rurales entre campos de chufa en la Huerta de Alboraya
           </figcaption>
@@ -242,14 +289,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Inicio en Avenida de Aragón (Metro: Aragón - L5 / Palmaret - L3)</span>
           <span><strong>Precio:</strong> Ruta gratis / Horchata artesana con fartons caseros: 4,20 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=V%C3%ADa%20Xurra%20y%20Alquer%C3%ADas%20de%20la%20Huerta%20de%20Alboraya%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=V%C3%ADa%20Xurra%20y%20Alquer%C3%ADas%20de%20la%20Huerta%20de%20Alboraya%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
         <h2>3. Concierto gratuito los domingos en el patio de La Beneficència</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">En el corazón de El Carmen, esta antigua casa de beneficencia del siglo XIX organiza actuaciones acústicas, exposiciones de diseño valenciano y cine al aire libre en sus patios interiores sin pagar un euro.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">En el corazón de El Carmen, esta antigua casa de beneficencia del siglo XIX organiza actuaciones acústicas, exposiciones de diseño valenciano y cine al aire libre en sus patios interiores sin pagar un euro.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/vlc-la-beneficencia.jpg" alt="Fachada y patios del Centro Cultural La Beneficència en el barrio del Carmen" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/vlc-la-beneficencia.jpg" alt="Fachada y patios del Centro Cultural La Beneficència en el barrio del Carmen" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Fachada y patios del Centro Cultural La Beneficència en el barrio del Carmen
           </figcaption>
@@ -257,14 +304,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Corona, 36 (Barrio de El Carmen)</span>
           <span><strong>Precio:</strong> Acceso 100% gratuito los fines de semana</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Centro%20Cultural%20La%20Benefic%C3%A8ncia%20%28Patio%20Bizantino%29%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Centro%20Cultural%20La%20Benefic%C3%A8ncia%20%28Patio%20Bizantino%29%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
         <h2>4. Los Jardines de Monforte: el laberinto neoclásico secreto de Valencia</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Un jardín romántico de 1859 escondido tras un muro junto a los Jardines del Real: tiene más de 30 estatuas de mármol italiano, un túnel de buganvillas, estanques con nenúfares y un tranquilo palacete donde casi nunca hay turistas.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Un jardín romántico de 1859 escondido tras un muro junto a los Jardines del Real: tiene más de 30 estatuas de mármol italiano, un túnel de buganvillas, estanques con nenúfares y un tranquilo palacete donde casi nunca hay turistas.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/vlc-jardines-monforte.jpg" alt="Galería de cipreses y estatuas de mármol en los Jardines de Monforte de Valencia" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/vlc-jardines-monforte.jpg" alt="Galería de cipreses y estatuas de mármol en los Jardines de Monforte de Valencia" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Galería de cipreses y estatuas de mármol en los Jardines de Monforte de Valencia
           </figcaption>
@@ -272,14 +319,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de la Legión Española, s/n (Metro: Facultats - L3, L9)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Monforte%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Monforte%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
         <h2>5. Ruta de vermut marinero y clóchinas por las barracas modernistas de El Cabanyal</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Recorre las calles de antiguas casas de pescadores revestidas de azulejos cerámicos modernistas del siglo XIX y haz parada en las bodegas centenarias del barrio para probar el vermut valenciano con conservas artesanas.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Recorre las calles de antiguas casas de pescadores revestidas de azulejos cerámicos modernistas del siglo XIX y haz parada en las bodegas centenarias del barrio para probar el vermut valenciano con conservas artesanas.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/vlc-cabanyal-casas.jpg" alt="Calles marineras junto a la playa de El Cabanyal en Valencia" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/vlc-cabanyal-casas.jpg" alt="Calles marineras junto a la playa de El Cabanyal en Valencia" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Calles marineras junto a la playa de El Cabanyal en Valencia
           </figcaption>
@@ -287,14 +334,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de la Barraca y Calle de la Reina (Tranvía: Líneas 4 y 6 - Dr. Lluch)</span>
           <span><strong>Precio:</strong> Paseo gratis / Vermut de barrica y tapa de michirones o anchoas: 6,50 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Barrio%20de%20El%20Cabanyal%20y%20Bodega%20Casa%20Monta%C3%B1a%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Barrio%20de%20El%20Cabanyal%20y%20Bodega%20Casa%20Monta%C3%B1a%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-6" style="scroll-margin-top: 90px;">
         <h2>6. El Refugio Antiaéreo de la Calle Serranos y el Palacio de Valeriola</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Descubre la Valencia subterránea bajando a uno de los refugios mejor conservados de 1937 en pleno barrio del Carmen y enlaza con el Palacio de Valeriola, donde conviven los restos del circo romano de Valentia con instalaciones inmersivas de luz.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Descubre la Valencia subterránea bajando a uno de los refugios mejor conservados de 1937 en pleno barrio del Carmen y enlaza con el Palacio de Valeriola, donde conviven los restos del circo romano de Valentia con instalaciones inmersivas de luz.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/vlc-palacio-valeriola.jpg" alt="Palacio de Valeriola, sede del Centro de Arte Hortensia Herrero en Valencia" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/vlc-palacio-valeriola.jpg" alt="Palacio de Valeriola, sede del Centro de Arte Hortensia Herrero en Valencia" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Palacio de Valeriola, sede del Centro de Arte Hortensia Herrero en Valencia
           </figcaption>
@@ -302,7 +349,7 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Serranos, 25 / Calle del Mar, 31 (Centro Histórico)</span>
           <span><strong>Precio:</strong> Refugio gratis / Palacio gratis miércoles tarde con reserva previa (10 € general)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Refugio%20de%20Serranos%20y%20Centro%20de%20Arte%20Hortensia%20Herrero%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Refugio%20de%20Serranos%20y%20Centro%20de%20Arte%20Hortensia%20Herrero%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
@@ -368,6 +415,27 @@
     </a>
   </article>
 
+  <article class="article-card" data-category="Gratis y Baratos" data-search="tarde en l&#x27;albufera y el palmar en autobús urbano: el mejor plan de valencia explicado paso a paso muchos viajeros y vecinos creen que hace falta coche para pasar el día en l&#x27;albufera. te explicamos paso a paso cómo hacer el plan más especial de valencia utilizando el autobús urbano de la emt: pinada, dunas, barracas y puesta de sol sobre el agua. devesa del saler gola de pujol el palmar (l&#x27;albufera)">
+    <a href="../../valencia/como-ir-a-la-albufera-valencia-autobus-el-palmar-atardecer/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/vlc-albufera-gola-pujol.jpg" alt="Barca tradicional de madera en el embarcadero de la Gola de Pujol al atardecer en L&#x27;Albufera de Valencia" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Valencia</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos · Plan Único a Fondo</span>
+          <span style="color: var(--ink-muted);">1,50 € bus (Paseo en barca opcional: 6 €)</span>
+        </div>
+        <h2 class="card-title">Tarde en L&#x27;Albufera y El Palmar en Autobús Urbano: El Mejor Plan de Valencia Explicado Paso a Paso</h2>
+        <p class="card-excerpt">Muchos viajeros y vecinos creen que hace falta coche para pasar el día en L&#x27;Albufera. Te explicamos paso a paso cómo hacer el plan más especial de Valencia utilizando el autobús urbano de la EMT: pinada, dunas, barracas y puesta de sol sobre el agua.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Devesa del Saler · Gola de Pujol · El Palmar (L&#x27;Albufera)</span>
+          <span class="card-read-link">Leer plan paso a paso →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="Gratis y Baratos" data-search="5 planes gratis en valencia: jardines de monforte, claustros góticos y huerta cinco planes 100% gratuitos en valencia lejos de las rutas masificadas: jardines neoclásicos con estatuas de mármol, claustros medievales con arte contemporáneo y paseos por la huerta histórica. exposición / monforte el carmen el cabanyal huerta de alboraya">
     <a href="../../valencia/planes-gratis-en-valencia-jardines-monforte-cultura/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -388,27 +456,6 @@
       </div>
     </a>
   </article>
-
-  <article class="article-card" data-category="Este Fin de Semana" data-search="5 planes este fin de semana en madrid (2 al 4 de octubre de 2026): feria barroca de valdemoro, mercadillos y rutas gratis si buscas qué plan hacer en madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al siglo de oro en la feria barroca de valdemoro, música al sol entre trenes antiguos y rutas de aperitivo. valdemoro (cercanías c-3) delicias la latina centro">
-    <a href="../../madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/planes-este-fin-de-semana-madrid-feria-barroca.jpg" alt="Recreación histórica y pasacalles del siglo XVII en la Feria Barroca de Valdemoro" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Madrid</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 2 al 4 de octubre de 2026</span>
-          <span style="color: var(--ink-muted);">Gratis (0 € – 8 €)</span>
-        </div>
-        <h2 class="card-title">5 Planes este Fin de Semana en Madrid (2 al 4 de octubre de 2026): Feria Barroca de Valdemoro, Mercadillos y Rutas Gratis</h2>
-        <p class="card-excerpt">Si buscas qué plan hacer en Madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Valdemoro (Cercanías C-3) · Delicias · La Latina · Centro</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
       </div>
     </section>
   </main>
@@ -419,13 +466,15 @@
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="../../madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="../../barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="../../valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="../../sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="../../toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="../../mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="../../sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>

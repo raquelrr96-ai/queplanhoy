@@ -657,6 +657,7 @@ def generate_seo_article(
     suggested_title: str = "",
     search_volume: str = "2.100 búsquedas/mes",
     difficulty: str = "Baja (15/100)",
+    article_type: str = "auto",
 ) -> dict:
   city = city if city in CITY_KNOWLEDGE_BASE else "Madrid"
   kb = CITY_KNOWLEDGE_BASE[city]
@@ -669,46 +670,125 @@ def generate_seo_article(
   is_weekend_cat = category == "Este Fin de Semana"
   weekend_dates = get_current_weekend_dates_es() if is_weekend_cat else ""
 
-  if (
-      is_weekend_cat
-      or "fin de semana" in keyword.lower()
-      or "que hacer hoy" in keyword.lower()
-  ):
-    live_events = fetch_live_weekend_events(city, max_items=2)
-    if live_events:
-      raw_venues = (live_events + raw_venues)[:5]
-
-  sections = []
-  for idx, v in enumerate(raw_venues, start=1):
-    sec_obj = {
-        "heading": f"{idx}. {v['name']}",
-        "venue": v["name"],
-        "location": v["location"],
-        "price": v["price"],
-        "content": v["desc"],
-    }
-    if v.get("image"):
-      sec_obj["image"] = v["image"]
-      sec_obj["imageAlt"] = v.get("imageAlt", v["name"])
-    sections.append(sec_obj)
-
-  if not suggested_title:
-    if is_weekend_cat:
-      suggested_title = (
-          f"{len(sections)} Planes este Fin de Semana en {city}"
-          f" ({weekend_dates}): {keyword.capitalize()}"
-      )
+  # Determinar automáticamente si toca un artículo de Un Único Plan a Fondo ("single_plan")
+  # o una selección de varios planes ("multi_plan") para no publicar siempre listas de 5, 6 o 7 planes.
+  if article_type == "auto":
+    if is_weekend_cat or re.match(r"^\d+\b", suggested_title.strip()):
+      article_type = "multi_plan"
+    elif existing_articles and existing_articles[0].get("articleType") != "single_plan":
+      article_type = "single_plan"
     else:
+      article_type = "multi_plan"
+
+  default_coords = {
+      "Madrid": (40.4168, -3.7038),
+      "Barcelona": (41.3985, 2.1615),
+      "Valencia": (39.4699, -0.3763),
+      "Sevilla": (37.3891, -5.9845),
+      "Toledo": (39.8581, -4.0226),
+  }.get(city, (40.4168, -3.7038))
+
+  if article_type == "single_plan":
+    lead_v = raw_venues[0]
+    second_v = raw_venues[1] if len(raw_venues) > 1 else lead_v
+    base_lat, base_lng = lead_v.get("lat", default_coords[0]), lead_v.get("lng", default_coords[1])
+    lead_img = lead_v.get("image", kb["image"])
+    second_img = second_v.get("image", kb["image"])
+
+    sections = [
+        {
+            "heading": f"Por qué merece la pena dedicarle el día a {lead_v['name']}",
+            "venue": lead_v["name"],
+            "location": lead_v["location"],
+            "price": lead_v["price"],
+            "lat": base_lat,
+            "lng": base_lng,
+            "image": lead_img,
+            "imageAlt": lead_v.get("imageAlt", lead_v["name"]),
+            "content": (
+                f"{lead_v['desc']}\n\n"
+                f"En lugar de intentar abarcar cinco o seis sitios distintos con prisas, dedicar una mañana o una tarde completa a este único plan en {city} permite disfrutar del ambiente a otro ritmo, fijarse en su arquitectura histórica y recorrer sus rincones menos transitados sin aglomeraciones.\n\n"
+                f"La mejor franja horaria para empezar el recorrido es a primera hora de apertura o bien una hora y media antes del atardecer, cuando la luz resalta los detalles del entorno y apenas coincidirás con grupos organizados."
+            ),
+        },
+        {
+            "heading": "El recorrido paso a paso: qué ver y en qué detalles fijarse",
+            "venue": f"Recorrido interior por {lead_v['name']}",
+            "location": lead_v["location"],
+            "price": lead_v["price"],
+            "lat": round(base_lat + 0.0012, 4),
+            "lng": round(base_lng + 0.0012, 4),
+            "image": second_img,
+            "imageAlt": second_v.get("imageAlt", f"Recorrido paso a paso en {city}"),
+            "content": (
+                f"Una vez dentro del entorno de {lead_v['name']}, te recomendamos seguir un itinerario circular sin quedarte únicamente en la entrada principal. Empieza recorriendo el eje central y detente en los patios, galerías o senderos laterales donde se conserva el trazado histórico original.\n\n"
+                f"Dedica al menos cuarenta y cinco minutos a caminar sin prisa por la zona principal antes de enlazar a pie con {second_v['name']} ({second_v['location']}), que complementa la visita a la perfección: {second_v['desc']}"
+            ),
+        },
+        {
+            "heading": f"Dónde tomar el aperitivo o algo tranquilo al terminar en {kb['neighborhoods'][0]}",
+            "venue": f"Entorno gastronómico de {kb['neighborhoods'][0]} y {kb['neighborhoods'][1]}",
+            "location": f"Barrio de {kb['neighborhoods'][0]} ({city})",
+            "price": "Vermut de grifo, café especial o tapa local: 4,50 € – 8,50 €",
+            "lat": round(base_lat - 0.0015, 4),
+            "lng": round(base_lng + 0.0018, 4),
+            "image": lead_img,
+            "imageAlt": f"Ambiente local en {kb['neighborhoods'][0]} ({city})",
+            "content": (
+                f"Ningún plan en {city} está completo sin saber dónde sentarse al salir sin caer en trampas para turistas. A menos de diez minutos caminando desde {lead_v['name']}, adentrarse por las calles secundarias de {kb['neighborhoods'][0]} y {kb['neighborhoods'][1]} es la mejor opción.\n\n"
+                f"Allí encontrarás bodegas tradicionales, cafeterías tranquilas y barras de barrio donde pedir un vermut casero, una caña bien tirada o una merienda artesana comentando el recorrido."
+            ),
+        },
+    ]
+
+    if not suggested_title or re.match(r"^\d+\b", suggested_title.strip()):
       suggested_title = (
-          f"{len(sections)} Planes en {city}: {keyword.capitalize()} (2026)"
+          f"{lead_v['name']}: Guía Completa de un Plan Único en {city} (Paso a Paso)"
       )
+    read_time = "8 min"
   else:
-    # Garantizar siempre que si el título empieza por un número (ej. "7 Planes..."), coincida exactamente con len(sections)
-    suggested_title = re.sub(
-        r"^\d+\b", str(len(sections)), suggested_title.strip()
-    )
-    if is_weekend_cat and weekend_dates not in suggested_title:
-      suggested_title = f"{suggested_title} ({weekend_dates})"
+    if (
+        is_weekend_cat
+        or "fin de semana" in keyword.lower()
+        or "que hacer hoy" in keyword.lower()
+    ):
+      live_events = fetch_live_weekend_events(city, max_items=2)
+      if live_events:
+        raw_venues = (live_events + raw_venues)[:5]
+
+    sections = []
+    for idx, v in enumerate(raw_venues, start=1):
+      sec_obj = {
+          "heading": f"{idx}. {v['name']}",
+          "venue": v["name"],
+          "location": v["location"],
+          "price": v["price"],
+          "content": v["desc"],
+          "lat": v.get("lat", round(default_coords[0] + idx * 0.002, 4)),
+          "lng": v.get("lng", round(default_coords[1] + idx * 0.002, 4)),
+          "image": v.get("image", kb["image"]),
+          "imageAlt": v.get("imageAlt", v["name"]),
+      }
+      sections.append(sec_obj)
+
+    if not suggested_title:
+      if is_weekend_cat:
+        suggested_title = (
+            f"{len(sections)} Planes este Fin de Semana en {city}"
+            f" ({weekend_dates}): {keyword.capitalize()}"
+        )
+      else:
+        suggested_title = (
+            f"{len(sections)} Planes en {city}: {keyword.capitalize()} (2026)"
+        )
+    else:
+      # Garantizar siempre que si el título empieza por un número (ej. "7 Planes..."), coincida exactamente con len(sections)
+      suggested_title = re.sub(
+          r"^\d+\b", str(len(sections)), suggested_title.strip()
+      )
+      if is_weekend_cat and weekend_dates not in suggested_title:
+        suggested_title = f"{suggested_title} ({weekend_dates})"
+    read_time = "6 min"
 
   slug = slugify(keyword if len(keyword) > 12 else suggested_title)
   today_str = date.today().isoformat()
@@ -716,7 +796,7 @@ def generate_seo_article(
   if related_in_city:
     first_rel = related_in_city[0]
     sections[-1]["content"] += (
-        f" 💡 Consejo extra: Si buscas más ideas en {city}, "
+        f"\n\n💡 Consejo extra: Si buscas más ideas en {city}, "
         f'no te pierdas también nuestra guía: «{first_rel["title"]}».'
     )
 
@@ -737,19 +817,20 @@ def generate_seo_article(
   new_article = {
       "id": f"{city.lower()}-{slug[:32]}",
       "slug": slug,
+      "articleType": article_type,
       "title": suggested_title,
       "metaTitle": f"{suggested_title[:58]} | Qué Plan Hoy",
       "metaDescription": (
-          f"Descubre los mejores {keyword.lower()} en {city}"
+          f"Descubre {keyword.lower()} en {city}"
           + (f" ({weekend_dates})" if weekend_dates else "")
-          + ": direcciones exactas, paradas de transporte público, precios"
-          " reales y planes originales."
+          + ": guía paso a paso con direcciones exactas, mapa interactivo,"
+          " paradas de transporte público y precios reales."
       ),
       "city": city,
       "category": category,
       "categoryIcon": cat_icon,
       **({"weekendDates": weekend_dates} if weekend_dates else {}),
-      "readTime": "6 min",
+      "readTime": read_time,
       "publishedAt": today_str,
       "targetKeyword": keyword.lower(),
       "searchVolume": search_volume,
@@ -758,9 +839,9 @@ def generate_seo_article(
       "imageAlt": real_alt,
       "imageCredit": real_credit,
       "excerpt": (
-          f"Seleccionamos los mejores rincones para quienes buscan"
-          f" «{keyword.lower()}» en {city} saliendo de lo típico: direcciones"
-          f" reales, precios exactos y cómo llegar."
+          f"Guía detallada para quienes buscan «{keyword.lower()}» en {city}"
+          " saliendo de lo típico: recorrido paso a paso, direcciones reales,"
+          " mapa y precios exactos."
       ),
       "priceRange": price_range,
       "neighborhoods": kb["neighborhoods"][:4],
@@ -770,24 +851,24 @@ def generate_seo_article(
       "faqs": [
           {
               "question": (
-                  f"¿Cuál es el mejor momento para hacer estos planes en"
+                  f"¿Cuál es el mejor momento para hacer este plan en"
                   f" {city}?"
               ),
               "answer": (
-                  f"Para disfrutar de estos rincones de {city} sin colas ni"
+                  f"Para disfrutar de este recorrido en {city} sin colas ni"
                   " aglomeraciones, te recomendamos ir los viernes por la"
-                  " tarde o los sábados antes de las 12:30 h."
+                  " tarde o los sábados y domingos antes de las 11:30 h."
               ),
           },
           {
               "question": (
-                  f"¿Se necesita reservar con antelación para estos planes en"
+                  f"¿Se necesita reservar con antelación en"
                   f" {city}?"
               ),
               "answer": (
                   "Los espacios gratuitos al aire libre no requieren reserva,"
-                  " pero para talleres creativos, espectáculos o tours"
-                  " nocturnos conviene reservar online entre 48 y 72 horas"
+                  " pero para talleres creativos, espectáculos o entradas"
+                  " monumentales conviene reservar online entre 48 y 72 horas"
                   " antes."
               ),
           },
@@ -812,11 +893,12 @@ def run_next_from_queue() -> dict:
     return generate_seo_article(
         city="Valencia",
         category="Gratis y Baratos",
-        keyword="planes gratis en valencia este fin de semana",
+        keyword="visitar jardines de monforte valencia guia gratis",
         suggested_title=(
-            "5 Planes Gratis en Valencia para este Fin de Semana (Huerta,"
-            " Jardines y Cultura)"
+            "Los Jardines de Monforte en Valencia a Fondo: Un Plan Gratis"
+            " entre Estatuas de Mármol y Buganvillas"
         ),
+        article_type="single_plan",
     )
 
   article = generate_seo_article(
@@ -826,6 +908,7 @@ def run_next_from_queue() -> dict:
       suggested_title=target_item.get("suggestedTitle", ""),
       search_volume=target_item.get("searchVolume", "2.400 búsquedas/mes"),
       difficulty=target_item.get("keywordDifficulty", "Muy Baja (12/100)"),
+      article_type=target_item.get("articleType", "auto"),
   )
   target_item["status"] = "published"
   target_item["publishedArticleId"] = article["id"]

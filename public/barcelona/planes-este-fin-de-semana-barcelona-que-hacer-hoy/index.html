@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -158,7 +160,7 @@
         <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
-        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn active" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a>
+        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn active" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a><a href="../../mapa/" class="city-filter-btn" id="nav-mapa">🗺️ Mapa de Planes</a>
       </nav>
     </div>
   </header>
@@ -195,10 +197,10 @@
       </figure>
 
       
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">En este artículo</span>
-        <a href="https://api.whatsapp.com/send?text=Mira%20estos%20planes%20en%20Barcelona%3A%205%20Planes%20este%20Fin%20de%20Semana%20en%20Barcelona%20%282%20al%204%20de%20octubre%20de%202026%29%3A%20Mercados%20de%20Oto%C3%B1o%2C%20Fiesta%20Mayor%20de%20Les%20Corts%20y%20Rutas%20Gratis%20https%3A//queplanhoy.es/barcelona/planes-este-fin-de-semana-barcelona-que-hacer-hoy/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+        <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Barcelona%3A%205%20Planes%20este%20Fin%20de%20Semana%20en%20Barcelona%20%282%20al%204%20de%20octubre%20de%202026%29%3A%20Mercados%20de%20Oto%C3%B1o%2C%20Fiesta%20Mayor%20de%20Les%20Corts%20y%20Rutas%20Gratis%20https%3A//queplanhoy.es/barcelona/planes-este-fin-de-semana-barcelona-que-hacer-hoy/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
       </div>
@@ -208,11 +210,56 @@
     </nav>
 
       
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Barcelona (Pulsa un pin para ir a Google Maps)</span>
+        <a href="../../mapa/?ciudad=Barcelona" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de Barcelona en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var pins = [{"idx": 1, "name": "Plaça de Comas y jardines de Can Bruixa (Les Corts)", "location": "Plaça de Comas, s/n (Metro: Les Corts - L3)", "price": "Actividades y conciertos al aire libre 100% gratuitos", "lat": 41.3854, "lng": 2.1306, "image": "../../images/venues/bcn-les-corts-comas.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a%20de%20Comas%20y%20jardines%20de%20Can%20Bruixa%20%28Les%20Corts%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Passeig del Born y entorno del Mercat del Born", "location": "Plaça Comercial, 12 (Metro: Jaume I - L4 / Arc de Triomf - L1)", "price": "Acceso libre / Vermut artesano y tapa: 5,50 €", "lat": 41.3853, "lng": 2.1839, "image": "../../images/venues/bcn-born-passeig.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Passeig%20del%20Born%20y%20entorno%20del%20Mercat%20del%20Born%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Pabellón Mies van der Rohe y Museu Nacional (MNAC) en Montjuïc", "location": "Avinguda Francesc Ferrer i Guàrdia, 7 (Metro: Espanya - L1, L3)", "price": "Entrada 100% gratuita el domingo 4 de octubre", "lat": 41.3706, "lng": 2.1501, "image": "../../images/venues/bcn-pabellon-mies.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pabell%C3%B3n%20Mies%20van%20der%20Rohe%20y%20Museu%20Nacional%20%28MNAC%29%20en%20Montju%C3%AFc%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Jardins de Laribal y Teatre Grec (Montjuïc)", "location": "Passeig de Santa Madrona, 2 (Metro: Espanya / Funicular de Montjuïc)", "price": "Acceso libre y gratuito", "lat": 41.3696, "lng": 2.1597, "image": "../../images/venues/bcn-teatre-grec-laribal.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardins%20de%20Laribal%20y%20Teatre%20Grec%20%28Montju%C3%AFc%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Plaça de la Virreina y Carrer de Verdi (Vila de Gràcia)", "location": "Plaça de la Virreina (Metro: Fontana - L3)", "price": "Paseo gratis / Caña y bravas caseras: 6,00 €", "lat": 41.4046, "lng": 2.1569, "image": "../../images/venues/bcn-placa-virreina-gracia.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a%20de%20la%20Virreina%20y%20Carrer%20de%20Verdi%20%28Vila%20de%20Gr%C3%A0cia%29%2C%20Barcelona%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          });
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
+        });
+        if (bounds.length === 1) {
+          map.setView(bounds[0], 15);
+        } else {
+          map.fitBounds(bounds, { padding: [38, 38], maxZoom: 15 });
+        }
+      });
+    </script>
+
+      
       <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. Fiesta Mayor de Les Corts (del 2 al 4 de octubre): correfocs, castellers y ruta de tapas en la Plaça de Comas</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">El primer fin de semana de octubre arranca la Fiesta Mayor de Les Corts, que recupera el ambiente de antiguo pueblo independiente con exhibiciones castelleras el domingo a mediodía, pasacalles de gigantes, talleres gastronómicos y conciertos acústicos al aire libre lejos del turismo masivo del centro.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">El primer fin de semana de octubre arranca la Fiesta Mayor de Les Corts, que recupera el ambiente de antiguo pueblo independiente con exhibiciones castelleras el domingo a mediodía, pasacalles de gigantes, talleres gastronómicos y conciertos acústicos al aire libre lejos del turismo masivo del centro.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/bcn-les-corts-comas.jpg" alt="Sede histórica del distrito de Les Corts en la Plaça de Comas de Barcelona" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/bcn-les-corts-comas.jpg" alt="Sede histórica del distrito de Les Corts en la Plaça de Comas de Barcelona" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Sede histórica del distrito de Les Corts en la Plaça de Comas de Barcelona
           </figcaption>
@@ -220,14 +267,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaça de Comas, s/n (Metro: Les Corts - L3)</span>
           <span><strong>Precio:</strong> Actividades y conciertos al aire libre 100% gratuitos</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a%20de%20Comas%20y%20jardines%20de%20Can%20Bruixa%20%28Les%20Corts%29%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a%20de%20Comas%20y%20jardines%20de%20Can%20Bruixa%20%28Les%20Corts%29%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. Mercado de diseño, artesanos y vermut al sol entre el Passeig del Born y la Ciutadella</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Aprovecha la luz suave de principios de octubre para recorrer los puestos de cerámica, ilustración local y gastronomía de proximidad bajo los plátanos del Born, visitando gratis el yacimiento arqueológico de la Barcelona de 1700 dentro del antiguo mercado de hierro.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Aprovecha la luz suave de principios de octubre para recorrer los puestos de cerámica, ilustración local y gastronomía de proximidad bajo los plátanos del Born, visitando gratis el yacimiento arqueológico de la Barcelona de 1700 dentro del antiguo mercado de hierro.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/bcn-born-passeig.jpg" alt="Paseo arbolado del Passeig del Born junto a Santa Maria del Mar en Barcelona" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/bcn-born-passeig.jpg" alt="Paseo arbolado del Passeig del Born junto a Santa Maria del Mar en Barcelona" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Paseo arbolado del Passeig del Born junto a Santa Maria del Mar en Barcelona
           </figcaption>
@@ -235,14 +282,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaça Comercial, 12 (Metro: Jaume I - L4 / Arc de Triomf - L1)</span>
           <span><strong>Precio:</strong> Acceso libre / Vermut artesano y tapa: 5,50 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Passeig%20del%20Born%20y%20entorno%20del%20Mercat%20del%20Born%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Passeig%20del%20Born%20y%20entorno%20del%20Mercat%20del%20Born%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
         <h2>3. Primer domingo de mes con entrada gratuita a los grandes museos y al Pabellón Mies van der Rohe</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Al coincidir este domingo 4 de octubre con el primer domingo del mes, numerosos museos y joyas arquitectónicas de Barcelona abren sus puertas gratis, incluyendo el icónico Pabellón de Barcelona de Mies van der Rohe, el MUHBA en la Plaça del Rei y el MNAC.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Al coincidir este domingo 4 de octubre con el primer domingo del mes, numerosos museos y joyas arquitectónicas de Barcelona abren sus puertas gratis, incluyendo el icónico Pabellón de Barcelona de Mies van der Rohe, el MUHBA en la Plaça del Rei y el MNAC.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/bcn-pabellon-mies.jpg" alt="Estanque y arquitectura de mármol y cristal del Pabellón Mies van der Rohe en Montjuïc" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/bcn-pabellon-mies.jpg" alt="Estanque y arquitectura de mármol y cristal del Pabellón Mies van der Rohe en Montjuïc" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Estanque y arquitectura de mármol y cristal del Pabellón Mies van der Rohe en Montjuïc
           </figcaption>
@@ -250,14 +297,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Avinguda Francesc Ferrer i Guàrdia, 7 (Metro: Espanya - L1, L3)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita el domingo 4 de octubre</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Pabell%C3%B3n%20Mies%20van%20der%20Rohe%20y%20Museu%20Nacional%20%28MNAC%29%20en%20Montju%C3%AFc%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pabell%C3%B3n%20Mies%20van%20der%20Rohe%20y%20Museu%20Nacional%20%28MNAC%29%20en%20Montju%C3%AFc%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
         <h2>4. Paseo de otoño por los Jardins de Laribal y el anfiteatro oculto del Teatre Grec</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Después de visitar el pabellón, sube por las escalinatas de cerámica y fuentes árabes que diseñó Forestier en 1922 hasta la terraza del Teatre Grec, uno de los rincones más silenciosos de Barcelona para leer o tomar un café a media mañana.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Después de visitar el pabellón, sube por las escalinatas de cerámica y fuentes árabes que diseñó Forestier en 1922 hasta la terraza del Teatre Grec, uno de los rincones más silenciosos de Barcelona para leer o tomar un café a media mañana.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/bcn-teatre-grec-laribal.jpg" alt="Gradas de piedra y jardines del Teatre Grec en la montaña de Montjuïc" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/bcn-teatre-grec-laribal.jpg" alt="Gradas de piedra y jardines del Teatre Grec en la montaña de Montjuïc" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Gradas de piedra y jardines del Teatre Grec en la montaña de Montjuïc
           </figcaption>
@@ -265,14 +312,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Passeig de Santa Madrona, 2 (Metro: Espanya / Funicular de Montjuïc)</span>
           <span><strong>Precio:</strong> Acceso libre y gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jardins%20de%20Laribal%20y%20Teatre%20Grec%20%28Montju%C3%AFc%29%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jardins%20de%20Laribal%20y%20Teatre%20Grec%20%28Montju%C3%AFc%29%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
         <h2>5. Tarde de librerías de barrio y aperitivo en la Plaça de la Virreina en Gràcia</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Cierra el domingo paseando por las calles peatonales de la parte alta de Gràcia, curioseando en sus librerías independientes antes de sentarte en los escalones o terrazas frente a la iglesia de Sant Joan o de pasar a una sesión en versión original en los Cines Verdi.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Cierra el domingo paseando por las calles peatonales de la parte alta de Gràcia, curioseando en sus librerías independientes antes de sentarte en los escalones o terrazas frente a la iglesia de Sant Joan o de pasar a una sesión en versión original en los Cines Verdi.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/bcn-placa-virreina-gracia.jpg" alt="Terrazas al aire libre frente a la iglesia de Sant Joan en la Plaça de la Virreina de Gràcia" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/bcn-placa-virreina-gracia.jpg" alt="Terrazas al aire libre frente a la iglesia de Sant Joan en la Plaça de la Virreina de Gràcia" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Terrazas al aire libre frente a la iglesia de Sant Joan en la Plaça de la Virreina de Gràcia
           </figcaption>
@@ -280,7 +327,7 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaça de la Virreina (Metro: Fontana - L3)</span>
           <span><strong>Precio:</strong> Paseo gratis / Caña y bravas caseras: 6,00 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a%20de%20la%20Virreina%20y%20Carrer%20de%20Verdi%20%28Vila%20de%20Gr%C3%A0cia%29%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a%20de%20la%20Virreina%20y%20Carrer%20de%20Verdi%20%28Vila%20de%20Gr%C3%A0cia%29%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
@@ -325,6 +372,27 @@
       </h2>
       <div class="articles-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem;">
         
+  <article class="article-card" data-category="Gratis y Baratos" data-search="el laberinto de horta a fondo: un plan gratis de mañana en el jardín más antiguo de barcelona olvida las prisas y dedica una mañana completa a descubrir el jardín histórico más antiguo que se conserva en barcelona (1791): un laberinto de cipreses, templetes italianos, grutas mitológicas y un almuerzo de barrio en la plaça d&#x27;eivissa. horta mundet / collserola">
+    <a href="../../barcelona/visitar-laberinto-de-horta-barcelona-guia-completa-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/bcn-laberint-horta.jpg" alt="Vista aérea del laberinto de cipreses y los templetes neoclásicos del Parc del Laberint d&#x27;Horta en Barcelona" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Barcelona</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos · Plan Único a Fondo</span>
+          <span style="color: var(--ink-muted);">Gratis miércoles y domingos (2,23 € resto)</span>
+        </div>
+        <h2 class="card-title">El Laberinto de Horta a Fondo: Un Plan Gratis de Mañana en el Jardín más Antiguo de Barcelona</h2>
+        <p class="card-excerpt">Olvida las prisas y dedica una mañana completa a descubrir el jardín histórico más antiguo que se conserva en Barcelona (1791): un laberinto de cipreses, templetes italianos, grutas mitológicas y un almuerzo de barrio en la Plaça d&#x27;Eivissa.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Horta · Mundet / Collserola</span>
+          <span class="card-read-link">Leer plan paso a paso →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="En Pareja" data-search="5 citas originales en barcelona en pareja: recinto de sant pau, jardines ocultos y jazz cinco planes en pareja en barcelona para salir de la cena de siempre: desde recorrer jardines modernistas y laberintos del siglo xviii hasta escuchar jazz en directo bajo bóvedas medievales. el guinardó / sant pau horta montjuïc el born">
     <a href="../../barcelona/citas-originales-barcelona-en-pareja-jardines-jazz/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -366,27 +434,6 @@
       </div>
     </a>
   </article>
-
-  <article class="article-card" data-category="Este Fin de Semana" data-search="5 planes este fin de semana en madrid (2 al 4 de octubre de 2026): feria barroca de valdemoro, mercadillos y rutas gratis si buscas qué plan hacer en madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al siglo de oro en la feria barroca de valdemoro, música al sol entre trenes antiguos y rutas de aperitivo. valdemoro (cercanías c-3) delicias la latina centro">
-    <a href="../../madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/planes-este-fin-de-semana-madrid-feria-barroca.jpg" alt="Recreación histórica y pasacalles del siglo XVII en la Feria Barroca de Valdemoro" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Madrid</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 2 al 4 de octubre de 2026</span>
-          <span style="color: var(--ink-muted);">Gratis (0 € – 8 €)</span>
-        </div>
-        <h2 class="card-title">5 Planes este Fin de Semana en Madrid (2 al 4 de octubre de 2026): Feria Barroca de Valdemoro, Mercadillos y Rutas Gratis</h2>
-        <p class="card-excerpt">Si buscas qué plan hacer en Madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Valdemoro (Cercanías C-3) · Delicias · La Latina · Centro</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
       </div>
     </section>
   </main>
@@ -397,13 +444,15 @@
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="../../madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="../../barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="../../valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="../../sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="../../toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="../../mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="../../sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>

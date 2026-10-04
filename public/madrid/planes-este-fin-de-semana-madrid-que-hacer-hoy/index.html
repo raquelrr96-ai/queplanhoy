@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -158,7 +160,7 @@
         <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
-        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn active" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a>
+        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn active" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a><a href="../../mapa/" class="city-filter-btn" id="nav-mapa">🗺️ Mapa de Planes</a>
       </nav>
     </div>
   </header>
@@ -195,10 +197,10 @@
       </figure>
 
       
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">En este artículo</span>
-        <a href="https://api.whatsapp.com/send?text=Mira%20estos%20planes%20en%20Madrid%3A%205%20Planes%20este%20Fin%20de%20Semana%20en%20Madrid%20%282%20al%204%20de%20octubre%20de%202026%29%3A%20Feria%20Barroca%20de%20Valdemoro%2C%20Mercadillos%20y%20Rutas%20Gratis%20https%3A//queplanhoy.es/madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+        <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Madrid%3A%205%20Planes%20este%20Fin%20de%20Semana%20en%20Madrid%20%282%20al%204%20de%20octubre%20de%202026%29%3A%20Feria%20Barroca%20de%20Valdemoro%2C%20Mercadillos%20y%20Rutas%20Gratis%20https%3A//queplanhoy.es/madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
       </div>
@@ -208,11 +210,56 @@
     </nav>
 
       
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Madrid (Pulsa un pin para ir a Google Maps)</span>
+        <a href="../../mapa/?ciudad=Madrid" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de Madrid en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var pins = [{"idx": 1, "name": "Feria Barroca de Valdemoro (Plaza de la Constitución y Casco Histórico)", "location": "Plaza de la Constitución, Valdemoro (Cercanías C-3 desde Sol o Atocha en 27 min)", "price": "Acceso y espectáculos de calle 100% gratuitos", "lat": 40.1908, "lng": -3.6778, "image": "../../images/venues/madrid-valdemoro-plaza.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Feria%20Barroca%20de%20Valdemoro%20%28Plaza%20de%20la%20Constituci%C3%B3n%20y%20Casco%20Hist%C3%B3rico%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Museo del Ferrocarril de Madrid (Delicias)", "location": "Paseo de las Delicias, 61 (Metro: Delicias - L3 / Cercanías Delicias)", "price": "Entrada gratuita al mercado (reservar pase horario online)", "lat": 40.3999, "lng": -3.6932, "image": "../../images/venues/madrid-museo-ferrocarril.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20del%20Ferrocarril%20de%20Madrid%20%28Delicias%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Nuevas Galerías del Rastro y Plaza del General Vara de Rey", "location": "Calle Ribera de Curtidores, 12 (Metro: La Latina - L5 / Puerta de Toledo)", "price": "Paseo gratis / Vermut de grifo y tosta: 4,50 €", "lat": 40.4084, "lng": -3.7075, "image": "../../images/venues/madrid-rastro-curtidores.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nuevas%20Galer%C3%ADas%20del%20Rastro%20y%20Plaza%20del%20General%20Vara%20de%20Rey%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Invernadero del Palacio de Cristal de Arganzuela", "location": "Paseo de la Chopera, 10 (Metro: Legazpi - L3, L6)", "price": "Acceso 100% gratuito", "lat": 40.3934, "lng": -3.6997, "image": "../../images/venues/madrid-invernadero-arganzuela.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Invernadero%20del%20Palacio%20de%20Cristal%20de%20Arganzuela%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Jardines del Templo de Debod y Mirador de la Montaña del Príncipe Pío", "location": "Calle de Ferraz, 1 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)", "price": "Acceso libre y gratuito", "lat": 40.424, "lng": -3.7178, "image": "../../images/venues/madrid-templo-debod.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardines%20del%20Templo%20de%20Debod%20y%20Mirador%20de%20la%20Monta%C3%B1a%20del%20Pr%C3%ADncipe%20P%C3%ADo%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          });
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
+        });
+        if (bounds.length === 1) {
+          map.setView(bounds[0], 15);
+        } else {
+          map.fitBounds(bounds, { padding: [38, 38], maxZoom: 15 });
+        }
+      });
+    </script>
+
+      
       <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. Feria Barroca de Valdemoro (del 2 al 4 de octubre de 2026): mercado del Siglo de Oro y teatro (Gratis)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Uno de los planes más diferentes para hacer este fin de semana del viernes 2 al domingo 4 de octubre de 2026 en Madrid es acercarse a la Feria Barroca de Valdemoro, que conmemora el privilegio de Feria concedido en 1603 por Felipe III. Todo el casco histórico se transforma en una villa del siglo XVII con más de cien puestos de artesanía, gastronomía tradicional, exhibiciones de cetrería, malabares, música barroca en vivo y espectáculos nocturnos de fuego.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Uno de los planes más diferentes para hacer este fin de semana del viernes 2 al domingo 4 de octubre de 2026 en Madrid es acercarse a la Feria Barroca de Valdemoro, que conmemora el privilegio de Feria concedido en 1603 por Felipe III. Todo el casco histórico se transforma en una villa del siglo XVII con más de cien puestos de artesanía, gastronomía tradicional, exhibiciones de cetrería, malabares, música barroca en vivo y espectáculos nocturnos de fuego.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-valdemoro-plaza.jpg" alt="Plaza de la Constitución de Valdemoro con sus soportales históricos donde se celebra la Feria Barroca" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-valdemoro-plaza.jpg" alt="Plaza de la Constitución de Valdemoro con sus soportales históricos donde se celebra la Feria Barroca" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Plaza de la Constitución de Valdemoro con sus soportales históricos donde se celebra la Feria Barroca
           </figcaption>
@@ -220,14 +267,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de la Constitución, Valdemoro (Cercanías C-3 desde Sol o Atocha en 27 min)</span>
           <span><strong>Precio:</strong> Acceso y espectáculos de calle 100% gratuitos</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Feria%20Barroca%20de%20Valdemoro%20%28Plaza%20de%20la%20Constituci%C3%B3n%20y%20Casco%20Hist%C3%B3rico%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Feria%20Barroca%20de%20Valdemoro%20%28Plaza%20de%20la%20Constituci%C3%B3n%20y%20Casco%20Hist%C3%B3rico%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. Mercadillo de diseño, foodtrucks y música en directo entre locomotoras del siglo XIX</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Si buscas qué hacer hoy sábado o domingo a mediodía sin salir de la capital, pasear entre vagones históricos de madera mientras escuchas bandas en directo en la terraza exterior y pruebas puestos de artesanos locales es un plan redondo tanto en pareja como con amigos.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Si buscas qué hacer hoy sábado o domingo a mediodía sin salir de la capital, pasear entre vagones históricos de madera mientras escuchas bandas en directo en la terraza exterior y pruebas puestos de artesanos locales es un plan redondo tanto en pareja como con amigos.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-museo-ferrocarril.jpg" alt="Locomotoras históricas bajo la gran nave de hierro del siglo XIX del Museo del Ferrocarril de Madrid en Delicias" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-museo-ferrocarril.jpg" alt="Locomotoras históricas bajo la gran nave de hierro del siglo XIX del Museo del Ferrocarril de Madrid en Delicias" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Locomotoras históricas bajo la gran nave de hierro del siglo XIX del Museo del Ferrocarril de Madrid en Delicias
           </figcaption>
@@ -235,14 +282,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Paseo de las Delicias, 61 (Metro: Delicias - L3 / Cercanías Delicias)</span>
           <span><strong>Precio:</strong> Entrada gratuita al mercado (reservar pase horario online)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20del%20Ferrocarril%20de%20Madrid%20%28Delicias%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20del%20Ferrocarril%20de%20Madrid%20%28Delicias%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
         <h2>3. Ruta de mañana por las galerías de anticuarios de Ribera de Curtidores y vermut</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">En lugar de quedarte solo en la cuesta principal del Rastro el domingo, entra a los patios interiores de las Galerías Piquer y las Nuevas Galerías, donde se esconden los verdaderos talleres de restauración, almonedas del siglo XX y tiendas vintage de Madrid.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">En lugar de quedarte solo en la cuesta principal del Rastro el domingo, entra a los patios interiores de las Galerías Piquer y las Nuevas Galerías, donde se esconden los verdaderos talleres de restauración, almonedas del siglo XX y tiendas vintage de Madrid.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-rastro-curtidores.jpg" alt="Ambiente de domingo por la mañana en la calle Ribera de Curtidores y las galerías de anticuarios de El Rastro" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-rastro-curtidores.jpg" alt="Ambiente de domingo por la mañana en la calle Ribera de Curtidores y las galerías de anticuarios de El Rastro" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Ambiente de domingo por la mañana en la calle Ribera de Curtidores y las galerías de anticuarios de El Rastro
           </figcaption>
@@ -250,14 +297,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Ribera de Curtidores, 12 (Metro: La Latina - L5 / Puerta de Toledo)</span>
           <span><strong>Precio:</strong> Paseo gratis / Vermut de grifo y tosta: 4,50 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Nuevas%20Galer%C3%ADas%20del%20Rastro%20y%20Plaza%20del%20General%20Vara%20de%20Rey%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Nuevas%20Galer%C3%ADas%20del%20Rastro%20y%20Plaza%20del%20General%20Vara%20de%20Rey%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
         <h2>4. Invernadero del Palacio de Cristal de Arganzuela y paseo por Madrid Río</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Este antiguo mercado de hierro y cristal de principios del siglo XX alberga cuatro microclimas con más de 9.000 especies de plantas tropicales, desérticas y estanques con carpas y tortugas. Es perfecto para la mañana del sábado o domingo antes de cruzar a tomar el aperitivo en Matadero.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Este antiguo mercado de hierro y cristal de principios del siglo XX alberga cuatro microclimas con más de 9.000 especies de plantas tropicales, desérticas y estanques con carpas y tortugas. Es perfecto para la mañana del sábado o domingo antes de cruzar a tomar el aperitivo en Matadero.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-invernadero-arganzuela.jpg" alt="Interior tropical del Invernadero del Palacio de Cristal de Arganzuela junto a Madrid Río" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-invernadero-arganzuela.jpg" alt="Interior tropical del Invernadero del Palacio de Cristal de Arganzuela junto a Madrid Río" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Interior tropical del Invernadero del Palacio de Cristal de Arganzuela junto a Madrid Río
           </figcaption>
@@ -265,14 +312,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Paseo de la Chopera, 10 (Metro: Legazpi - L3, L6)</span>
           <span><strong>Precio:</strong> Acceso 100% gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Invernadero%20del%20Palacio%20de%20Cristal%20de%20Arganzuela%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Invernadero%20del%20Palacio%20de%20Cristal%20de%20Arganzuela%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
         <h2>5. Atardecer acústico en el Templo de Debod y mirador del Parque del Oeste</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Termina el fin de semana viendo caer el sol detrás de la Casa de Campo y la Sierra de Guadarrama desde la balaustrada del Parque del Oeste, donde suelen tocar músicos de jazz y guitarra acústica al anochecer con vistas al Palacio Real.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Termina el fin de semana viendo caer el sol detrás de la Casa de Campo y la Sierra de Guadarrama desde la balaustrada del Parque del Oeste, donde suelen tocar músicos de jazz y guitarra acústica al anochecer con vistas al Palacio Real.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-templo-debod.jpg" alt="El Templo de Debod iluminado al atardecer reflejado en los estanques del Parque del Oeste" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-templo-debod.jpg" alt="El Templo de Debod iluminado al atardecer reflejado en los estanques del Parque del Oeste" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             El Templo de Debod iluminado al atardecer reflejado en los estanques del Parque del Oeste
           </figcaption>
@@ -280,7 +327,7 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Ferraz, 1 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)</span>
           <span><strong>Precio:</strong> Acceso libre y gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jardines%20del%20Templo%20de%20Debod%20y%20Mirador%20de%20la%20Monta%C3%B1a%20del%20Pr%C3%ADncipe%20P%C3%ADo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jardines%20del%20Templo%20de%20Debod%20y%20Mirador%20de%20la%20Monta%C3%B1a%20del%20Pr%C3%ADncipe%20P%C3%ADo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
@@ -325,6 +372,27 @@
       </h2>
       <div class="articles-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem;">
         
+  <article class="article-card" data-category="Gratis y Baratos" data-search="el parque de el capricho en madrid: guía a fondo del jardín secreto de la duquesa de osuna (gratis) en lugar de correr de un sitio a otro, te proponemos dedicar una mañana entera a un único plan redondo y 100 % gratuito en madrid: recorrer sin prisas el jardín histórico de 1784 de la duquesa de osuna en la alameda de osuna. alameda de osuna barajas">
+    <a href="../../madrid/visitar-parque-el-capricho-madrid-guia-completa-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/madrid-parque-capricho.jpg" alt="Exedra de los Emperadores y jardines históricos del Parque de El Capricho en la Alameda de Osuna" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Madrid</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos · Plan Único a Fondo</span>
+          <span style="color: var(--ink-muted);">100% Gratis (0 €)</span>
+        </div>
+        <h2 class="card-title">El Parque de El Capricho en Madrid: Guía a Fondo del Jardín Secreto de la Duquesa de Osuna (Gratis)</h2>
+        <p class="card-excerpt">En lugar de correr de un sitio a otro, te proponemos dedicar una mañana entera a un único plan redondo y 100 % gratuito en Madrid: recorrer sin prisas el jardín histórico de 1784 de la Duquesa de Osuna en la Alameda de Osuna.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Alameda de Osuna · Barajas</span>
+          <span class="card-read-link">Leer plan paso a paso →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="Planes Diferentes" data-search="5 planes en madrid cuando llueve: invernaderos cubiertos, palacios y cafés escondidos cinco refugios cubiertos con encanto para disfrutar de madrid en un día de lluvia o frío sin acabar en un centro comercial: invernaderos de cristal, palacios del siglo xix y salones de té. retiro arganzuela argüelles / plaza de españa chueca / malasaña">
     <a href="../../madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -366,27 +434,6 @@
       </div>
     </a>
   </article>
-
-  <article class="article-card" data-category="En Pareja" data-search="5 citas originales en madrid para salir de la típica cena (cerámica, vino y velas) si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical. malasaña chamberí atocha retiro">
-    <a href="../../madrid/citas-originales-madrid-pareja-ceramica-vino/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/venues/madrid-parque-capricho.jpg" alt="Exedra y jardines históricos del Parque de El Capricho en la Alameda de Osuna de Madrid" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Madrid</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">En Pareja</span>
-          <span style="color: var(--ink-muted);">15 € – 32 €</span>
-        </div>
-        <h2 class="card-title">5 Citas Originales en Madrid para salir de la típica cena (Cerámica, Vino y Velas)</h2>
-        <p class="card-excerpt">Si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Malasaña · Chamberí · Atocha · Retiro</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
       </div>
     </section>
   </main>
@@ -397,13 +444,15 @@
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="../../madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="../../barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="../../valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="../../sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="../../toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="../../mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="../../sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>

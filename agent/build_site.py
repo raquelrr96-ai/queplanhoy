@@ -4,7 +4,8 @@
 Diseño editorial limpio inspirado en revistas urbanas (Time Out, Madrid Secreto, Traveler):
   - /index.html (Portada general)
   - /madrid/, /barcelona/, /valencia/, /sevilla/, /toledo/ (Páginas de ciudad)
-  - /<ciudad>/<slug>/ (Páginas de cada guía con índice rápido, datos prácticos y Schema.org)
+  - /<ciudad>/<slug>/ (Páginas de cada guía con índice rápido, mapa interactivo, datos prácticos y Schema.org)
+  - /mapa/ (Mapa interactivo general con todos los planes geolocalizados y enlace directo al pin en Google Maps)
   - /sobre-nosotros/ (Página de criterio editorial)
 """
 
@@ -22,6 +23,9 @@ SITE_URL = "https://queplanhoy.es"
 CITIES = {
     "Madrid": {
         "slug": "madrid",
+        "lat": 40.4168,
+        "lng": -3.7038,
+        "zoom": 12,
         "h1": "Planes en Madrid: qué hacer fuera de lo típico",
         "metaTitle": (
             "Qué Plan Hacer en Madrid este Fin de Semana y Hoy (2026) | Qué"
@@ -29,51 +33,61 @@ CITIES = {
         ),
         "metaDesc": (
             "¿Buscas qué plan hacer en Madrid este fin de semana o qué planes"
-            " hacer hoy? Feria Barroca de Valdemoro, mercadillos, ideas gratis"
-            " por menos de 10 € y citas en pareja."
+            " hacer hoy? Guías a fondo de un único plan, Feria Barroca de"
+            " Valdemoro, mercadillos e ideas gratis."
         ),
         "intro": (
-            "Ferias históricas, mercados al aire libre, jardines secretos y"
-            " citas originales en Madrid con direcciones exactas y precios"
-            " reales."
+            "Rutas explicadas paso a paso, ferias históricas, jardines secretos"
+            " y citas originales en Madrid con direcciones exactas, mapa y"
+            " precios reales."
         ),
     },
     "Barcelona": {
         "slug": "barcelona",
+        "lat": 41.3985,
+        "lng": 2.1615,
+        "zoom": 12,
         "h1": "Planes en Barcelona: miradores, citas y rincones sin colas",
         "metaTitle": (
             "Qué Plan Hacer en Barcelona este Fin de Semana y Hoy (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué plan hacer en Barcelona este fin de semana o hoy? Guía de"
-            " miradores sin colas, jardines gratis y citas originales en"
-            " pareja."
+            "¿Qué plan hacer en Barcelona este fin de semana o hoy? Guías paso"
+            " a paso por el Laberinto de Horta, miradores sin colas, jardines"
+            " gratis y citas originales en pareja."
         ),
         "intro": (
-            "Una Barcelona lejos de las aglomeraciones: desde jardines"
-            " neoclásicos gratuitos hasta terrazas con vistas al Mediterráneo."
+            "Una Barcelona lejos de las aglomeraciones: desde planes únicos"
+            " explicados a fondo hasta jardines neoclásicos gratuitos y"
+            " terrazas con vistas al Mediterráneo."
         ),
     },
     "Valencia": {
         "slug": "valencia",
+        "lat": 39.4699,
+        "lng": -0.3763,
+        "zoom": 12,
         "h1": "Planes en Valencia: atardeceres, huerta y cultura local",
         "metaTitle": (
             "Qué Plan Hacer en Valencia este Fin de Semana y Hoy (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué plan hacer en Valencia este fin de semana? Ideas baratas y"
-            " en pareja: atardecer en barca en L'Albufera, rutas por la huerta"
-            " y El Cabanyal."
+            "¿Qué plan hacer en Valencia este fin de semana? Cómo ir a"
+            " L'Albufera y El Palmar en autobús urbano, Jardines de Monforte,"
+            " rutas por la huerta y El Cabanyal."
         ),
         "intro": (
-            "Escapadas en autobús urbano a L'Albufera, jardines escondidos y"
-            " tapeo en las bodegas históricas de El Cabanyal."
+            "Escapadas paso a paso en autobús urbano a L'Albufera, jardines"
+            " escondidos y tapeo en las bodegas históricas de El Cabanyal."
         ),
     },
     "Sevilla": {
         "slug": "sevilla",
+        "lat": 37.3891,
+        "lng": -5.9845,
+        "zoom": 13,
         "h1": "Planes en Sevilla: casas-palacio, patios y rutas al atardecer",
         "metaTitle": (
             "Qué Plan Hacer en Sevilla este Fin de Semana y Hoy (2026) | Qué"
@@ -81,30 +95,34 @@ CITIES = {
         ),
         "metaDesc": (
             "¿Qué plan hacer en Sevilla este fin de semana? Descubre planes"
-            " gratis y en pareja: casas-palacio mudéjares sin colas, Triana y"
-            " Santa Cruz."
+            " gratis y en pareja: el Palacio de los Marqueses de la Algaba,"
+            " Calle Feria, Triana y Santa Cruz."
         ),
         "intro": (
-            "Palacios gratuitos, mercadillos históricos, rutas al anochecer por"
-            " la antigua judería y planes auténticos en Triana."
+            "Palacios mudéjares gratuitos explicados a fondo, mercadillos"
+            " históricos, rutas al anochecer por la antigua judería y planes"
+            " auténticos en Triana."
         ),
     },
     "Toledo": {
         "slug": "toledo",
-        "h1": "Planes en Toledo: escapadas, rutas nocturnas y rincones ocultos",
+        "lat": 39.8581,
+        "lng": -4.0226,
+        "zoom": 14,
+        "h1": "Planes en Toledo: escapadas, rutas a pie y rincones ocultos",
         "metaTitle": (
             "Qué Plan Hacer en Toledo este Fin de Semana y Hoy (2026) | Qué"
             " Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué plan hacer en Toledo este fin de semana? Ruta de cobertizos"
-            " iluminados, baños árabes en pareja, senda del Tajo y subterráneos"
-            " a 33 min de Madrid."
+            "¿Qué plan hacer en Toledo este fin de semana? Guía completa de la"
+            " Senda Ecológica del Tajo, ruta de cobertizos iluminados, baños"
+            " árabes y subterráneos."
         ),
         "intro": (
-            "A 33 minutos en tren desde Madrid: qué hacer en Toledo cuando se"
-            " marchan los autobuses turísticos, desde pasadizos iluminados"
-            " hasta baños árabes."
+            "A 33 minutos en tren desde Madrid: rutas a pie por el cañón del"
+            " Tajo, pasadizos iluminados y qué hacer en Toledo fuera de lo"
+            " turístico."
         ),
     },
 }
@@ -117,6 +135,7 @@ def render_head(
     root_prefix: str,
     json_ld_list: list,
     og_image: str = "",
+    include_leaflet: bool = False,
 ) -> str:
   ld_scripts = "\n".join(
       '<script type="application/ld+json">\n'
@@ -129,6 +148,11 @@ def render_head(
       if og_image
       else ""
   )
+  leaflet_tags = ""
+  if include_leaflet:
+    leaflet_tags = """
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>"""
   return f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -150,7 +174,7 @@ def render_head(
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{root_prefix}index.css" />
+  <link rel="stylesheet" href="{root_prefix}index.css" />{leaflet_tags}
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {{
         var script = document.createElement("script");
@@ -176,6 +200,7 @@ def render_header(root_prefix: str, active_city: str = "all") -> str:
       ("Valencia", "Valencia", f"{root_prefix}valencia/"),
       ("Sevilla", "Sevilla", f"{root_prefix}sevilla/"),
       ("Toledo", "Toledo", f"{root_prefix}toledo/"),
+      ("mapa", "🗺️ Mapa de Planes", f"{root_prefix}mapa/"),
   ]
   links_html = []
   for key, label, href in nav_items:
@@ -206,13 +231,15 @@ def render_footer(root_prefix: str) -> str:
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="{root_prefix}madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="{root_prefix}barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="{root_prefix}valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="{root_prefix}sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="{root_prefix}toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="{root_prefix}mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="{root_prefix}sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>
@@ -231,7 +258,14 @@ def render_article_card(
   cat_label = art["category"]
   if art.get("weekendDates"):
     cat_label = f"{cat_label} · {art['weekendDates']}"
+  elif art.get("articleType") == "single_plan":
+    cat_label = f"{cat_label} · Plan Único a Fondo"
   lead_cls = " lead-card" if is_lead else ""
+  read_cta = (
+      "Leer plan paso a paso →"
+      if art.get("articleType") == "single_plan"
+      else "Leer guía →"
+  )
   return f"""
   <article class="article-card{lead_cls}" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
     <a href="{article_href}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
@@ -248,7 +282,7 @@ def render_article_card(
         <p class="card-excerpt">{html.escape(art['excerpt'])}</p>
         <div class="card-footer">
           <span class="card-neighborhoods">{html.escape(' · '.join(art['neighborhoods']))}</span>
-          <span class="card-read-link">Leer guía →</span>
+          <span class="card-read-link">{read_cta}</span>
         </div>
       </div>
     </a>
@@ -339,13 +373,31 @@ def build_listing_page(
         f"{html.escape(a['title'])}</a> — {html.escape(a['priceRange'])}</li>"
     )
 
+  map_href = (
+      f"{root_prefix}mapa/?ciudad={urllib.parse.quote(active_city)}"
+      if active_city != "all"
+      else f"{root_prefix}mapa/"
+  )
+  map_banner = f"""
+    <div style="margin: 0 0 2rem 0; padding: 1.1rem 1.4rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+      <div>
+        <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta);">🗺️ Nuevo · Mapa Interactivo</span>
+        <div style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
+          Explora todos los planes de {html.escape(city_label)} en el mapa con enlace directo a Google Maps
+        </div>
+      </div>
+      <a href="{map_href}" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
+        Abrir Mapa de Planes →
+      </a>
+    </div>"""
+
   seo_bottom_section = f"""
     <section style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-hairline); max-width: 780px; color: var(--ink-secondary); font-size: 0.94rem;">
       <h2 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--ink-primary); margin-bottom: 0.65rem;">
         ¿Qué plan hacer en {html.escape(city_label)} este fin de semana?
       </h2>
       <p style="margin-bottom: 0.85rem;">
-        Si estás buscando <strong>qué plan hacer en {html.escape(city_label)} este fin de semana</strong> o ideas para salir hoy sin caer en los sitios turísticos de siempre, en nuestras guías seleccionamos cada semana ferias históricas, mercadillos de fin de semana, jardines ocultos gratuitos y citas originales en pareja con direcciones exactas y precios reales:
+        Si estás buscando <strong>qué plan hacer en {html.escape(city_label)} este fin de semana</strong> o ideas para salir hoy sin caer en los sitios turísticos de siempre, en nuestras guías combinamos planes únicos explicados paso a paso con selecciones de ferias históricas, jardines ocultos gratuitos y citas originales en pareja:
       </p>
       <ul style="margin-left: 1.25rem; line-height: 1.7;">
         {''.join(guide_links)}
@@ -408,6 +460,8 @@ def build_listing_page(
       </div>
     </section>
 
+    {map_banner}
+
     <section aria-label="Guías de planes">
       <div class="articles-grid" id="articles-grid-container">
         {cards_html}
@@ -430,7 +484,13 @@ def build_listing_page(
 def build_article_page(art: dict, all_articles: list):
   city_name = art["city"]
   city_info = CITIES.get(
-      city_name, {"slug": city_name.lower(), "h1": f"Planes en {city_name}"}
+      city_name,
+      {
+          "slug": city_name.lower(),
+          "lat": 40.4168,
+          "lng": -3.7038,
+          "h1": f"Planes en {city_name}",
+      },
   )
   city_slug = city_info["slug"]
   root_prefix = "../../"
@@ -441,6 +501,7 @@ def build_article_page(art: dict, all_articles: list):
   img_src = f"{root_prefix}{art['image'].lstrip('/')}"
   img_alt = art.get("imageAlt", art["title"])
   full_img_url = f"{SITE_URL}/{art['image'].lstrip('/')}"
+  is_single_plan = art.get("articleType") == "single_plan"
 
   article_schema = {
       "@context": "https://schema.org",
@@ -472,7 +533,7 @@ def build_article_page(art: dict, all_articles: list):
               "@type": "ListItem",
               "position": idx,
               "name": sec.get("venue", sec["heading"]),
-              "description": sec["content"],
+              "description": sec["content"].replace("\n\n", " "),
               "url": f"{canonical_url}#plan-{idx}",
           }
           for idx, sec in enumerate(art.get("sections", []), start=1)
@@ -516,21 +577,45 @@ def build_article_page(art: dict, all_articles: list):
   }
 
   toc_items = []
+  article_pins = []
   for idx, sec in enumerate(art.get("sections", []), start=1):
     venue_label = sec.get("venue", sec["heading"])
+    toc_prefix = f"Paso {idx}: " if is_single_plan else f"{idx}. "
     toc_items.append(
-        f'<li><a href="#plan-{idx}">{idx}. {html.escape(venue_label)}</a></li>'
+        f'<li><a href="#plan-{idx}">{toc_prefix}{html.escape(venue_label)}</a></li>'
     )
+    maps_query = urllib.parse.quote(f"{venue_label}, {city_name}, España")
+    maps_url = f"https://www.google.com/maps/search/?api=1&query={maps_query}"
+    article_pins.append({
+        "idx": idx,
+        "name": venue_label,
+        "location": sec.get("location", ""),
+        "price": sec.get("price", ""),
+        "lat": sec.get("lat", city_info.get("lat", 40.4168)),
+        "lng": sec.get("lng", city_info.get("lng", -3.7038)),
+        "image": (
+            f"{root_prefix}{sec['image'].lstrip('/')}"
+            if sec.get("image")
+            else img_src
+        ),
+        "mapsUrl": maps_url,
+        "anchor": f"#plan-{idx}",
+    })
 
   wa_text = urllib.parse.quote(
-      f"Mira estos planes en {city_name}: {art['title']} {canonical_url}"
+      f"Mira este plan en {city_name}: {art['title']} {canonical_url}"
   )
   wa_share_url = f"https://api.whatsapp.com/send?text={wa_text}"
 
+  toc_heading = (
+      "Guía paso a paso de este plan"
+      if is_single_plan
+      else "En este artículo"
+  )
   toc_html = f"""
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
-        <span class="article-toc-title">En este artículo</span>
+        <span class="article-toc-title">{toc_heading}</span>
         <a href="{wa_share_url}" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
@@ -539,6 +624,57 @@ def build_article_page(art: dict, all_articles: list):
         {''.join(toc_items)}
       </ol>
     </nav>"""
+
+  map_title = (
+      "🗺️ Mapa interactivo del recorrido (Pulsa en cada pin para abrir en Google Maps)"
+      if is_single_plan
+      else f"🗺️ Mapa con las ubicaciones en {html.escape(city_name)} (Pulsa un pin para ir a Google Maps)"
+  )
+  pins_json = json.dumps(article_pins, ensure_ascii=False)
+  article_map_html = f"""
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">{map_title}</span>
+        <a href="{root_prefix}mapa/?ciudad={urllib.parse.quote(city_name)}" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de {html.escape(city_name)} en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {{
+        var pins = {pins_json};
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', {{ scrollWheelZoom: false }});
+        L.tileLayer('https://{{s}}.basemaps.cartocdn.com/rastertiles/voyager/{{z}}/{{x}}/{{y}}{{r}}.png', {{
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }}).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {{
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({{
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          }});
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], {{ icon: icon }}).addTo(map).bindPopup(popupHtml);
+        }});
+        if (bounds.length === 1) {{
+          map.setView(bounds[0], 15);
+        }} else {{
+          map.fitBounds(bounds, {{ padding: [38, 38], maxZoom: 15 }});
+        }}
+      }});
+    </script>"""
 
   sections_html = []
   for idx, sec in enumerate(art.get("sections", []), start=1):
@@ -551,19 +687,28 @@ def build_article_page(art: dict, all_articles: list):
     if sec_img:
       sec_img_html = f"""
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="{root_prefix}{html.escape(sec_img)}" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="{root_prefix}{html.escape(sec_img)}" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             {html.escape(sec_alt)}
           </figcaption>
         </figure>"""
+
+    paragraphs = [
+        p.strip() for p in sec.get("content", "").split("\n\n") if p.strip()
+    ]
+    paragraphs_html = "\n        ".join(
+        f'<p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">{html.escape(p)}</p>'
+        for p in paragraphs
+    )
+
     sections_html.append(f"""
       <section class="reader-section" id="plan-{idx}" style="scroll-margin-top: 90px;">
         <h2>{html.escape(sec['heading'])}</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">{html.escape(sec['content'])}</p>{sec_img_html}
+        {paragraphs_html}{sec_img_html}
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> {html.escape(sec['location'])}</span>
           <span><strong>Precio:</strong> {html.escape(sec['price'])}</span>
-          <a href="{maps_url}" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="{maps_url}" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>""")
 
@@ -584,7 +729,7 @@ def build_article_page(art: dict, all_articles: list):
     affiliate_html = f"""
       <aside class="affiliate-callout" aria-label="Actividad recomendada">
         <div style="flex: 1; min-width: 240px;">
-          <span class="affiliate-badge">Para completar el plan</span>
+          <span class="affiliate-badge">{html.escape(aff.get('badge', 'Para completar el plan'))}</span>
           <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.3rem;">
             {html.escape(aff.get('title', ''))}
           </h3>
@@ -627,8 +772,10 @@ def build_article_page(art: dict, all_articles: list):
   cat_header = art["category"]
   if art.get("weekendDates"):
     cat_header = f"{cat_header} · {art['weekendDates']}"
+  elif is_single_plan:
+    cat_header = f"{cat_header} · Plan Único Explicado a Fondo"
 
-  page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, itemlist_schema, faq_schema, breadcrumb_schema], full_img_url)}
+  page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, itemlist_schema, faq_schema, breadcrumb_schema], full_img_url, include_leaflet=True)}
 <body>
   {render_header(root_prefix, city_name)}
 
@@ -665,6 +812,8 @@ def build_article_page(art: dict, all_articles: list):
 
       {toc_html}
 
+      {article_map_html}
+
       {''.join(sections_html)}
 
       {affiliate_html}
@@ -688,6 +837,242 @@ def build_article_page(art: dict, all_articles: list):
   </main>
 
   {render_footer(root_prefix)}
+</body>
+</html>
+"""
+  os.makedirs(os.path.dirname(output_path), exist_ok=True)
+  with open(output_path, "w", encoding="utf-8") as f:
+    f.write(page_html)
+
+
+def build_map_page(articles: list):
+  """Genera /mapa/index.html con todos los planes geolocalizados y redirección directa a Google Maps."""
+  root_prefix = "../"
+  output_path = os.path.join(PUBLIC_DIR, "mapa", "index.html")
+  canonical_url = f"{SITE_URL}/mapa/"
+
+  # Recopilar todos los pines únicos por (ciudad, nombre de lugar) para evitar duplicados exactos en la misma coordenada
+  all_pins = []
+  seen_coords = {}
+  for art in articles:
+    city = art["city"]
+    city_slug = CITIES.get(city, {"slug": city.lower()})["slug"]
+    art_url = f"../{city_slug}/{art['slug']}/"
+    for idx, sec in enumerate(art.get("sections", []), start=1):
+      venue_name = sec.get("venue", sec["heading"])
+      lat = float(sec.get("lat", CITIES.get(city, {}).get("lat", 40.4168)))
+      lng = float(sec.get("lng", CITIES.get(city, {}).get("lng", -3.7038)))
+      # Pequeño offset si dos planes comparten exactamente la misma coordenada para que ambos pines se puedan pulsar
+      coord_key = (round(lat, 4), round(lng, 4))
+      occ = seen_coords.get(coord_key, 0)
+      seen_coords[coord_key] = occ + 1
+      if occ > 0:
+        lat += 0.00045 * ((occ + 1) // 2) * (1 if occ % 2 == 1 else -1)
+        lng += 0.00045 * ((occ + 1) // 2) * (1 if occ % 2 == 0 else -1)
+
+      maps_query = urllib.parse.quote(f"{venue_name}, {city}, España")
+      maps_url = f"https://www.google.com/maps/search/?api=1&query={maps_query}"
+      img_rel = sec.get("image") or art.get("image", "")
+      all_pins.append({
+          "id": f"{art['id']}-{idx}",
+          "name": venue_name,
+          "heading": sec["heading"],
+          "city": city,
+          "category": art["category"],
+          "location": sec.get("location", ""),
+          "price": sec.get("price", ""),
+          "lat": round(lat, 5),
+          "lng": round(lng, 5),
+          "image": f"../{img_rel.lstrip('/')}",
+          "mapsUrl": maps_url,
+          "articleUrl": f"{art_url}#plan-{idx}",
+          "articleTitle": art["title"],
+      })
+
+  pins_json = json.dumps(all_pins, ensure_ascii=False)
+  cities_coords_json = json.dumps(
+      {
+          k: {"lat": v["lat"], "lng": v["lng"], "zoom": v["zoom"]}
+          for k, v in CITIES.items()
+      },
+      ensure_ascii=False,
+  )
+
+  map_schema = {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": (
+          "Mapa de Planes en Madrid, Barcelona, Valencia, Sevilla y Toledo |"
+          " Qué Plan Hoy"
+      ),
+      "description": (
+          "Mapa interactivo con todos los planes originales, gratuitos y en"
+          " pareja de Qué Plan Hoy con enlace directo al pin en Google Maps."
+      ),
+      "url": canonical_url,
+  }
+
+  page_html = f"""{render_head("Mapa de Planes en Madrid, Barcelona, Valencia, Sevilla y Toledo | Qué Plan Hoy", "Explora en nuestro mapa interactivo más de 100 planes originales, jardines secretos y rutas gratis en Madrid, Barcelona, Valencia, Sevilla y Toledo con enlace directo a Google Maps.", canonical_url, root_prefix, [map_schema], include_leaflet=True)}
+<body>
+  {render_header(root_prefix, "mapa")}
+
+  <main class="main-container">
+    <section class="page-header-section" style="margin-bottom: 1.5rem;">
+      <span class="hero-kicker">MAPA INTERACTIVO CON REDIRECCIÓN A GOOGLE MAPS</span>
+      <h1 class="hero-title">Mapa de Planes: todos nuestros rincones geolocalizados</h1>
+      <p class="hero-subtitle">
+        Filtra por ciudad o tipo de plan, pulsa en cualquier chincheta para ver su fotografía real y abre directamente el pin exacto en <strong>Google Maps</strong> para calcular cómo llegar.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1.1rem; align-items: center;">
+        <span style="font-size: 0.82rem; font-weight: 700; color: var(--ink-secondary); margin-right: 0.25rem;">Ciudad:</span>
+        <button type="button" class="style-pill-btn city-map-btn active" data-city="all">Todas ({len(all_pins)})</button>
+        <button type="button" class="style-pill-btn city-map-btn" data-city="Madrid">Madrid</button>
+        <button type="button" class="style-pill-btn city-map-btn" data-city="Barcelona">Barcelona</button>
+        <button type="button" class="style-pill-btn city-map-btn" data-city="Valencia">Valencia</button>
+        <button type="button" class="style-pill-btn city-map-btn" data-city="Sevilla">Sevilla</button>
+        <button type="button" class="style-pill-btn city-map-btn" data-city="Toledo">Toledo</button>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.75rem; align-items: center;">
+        <span style="font-size: 0.82rem; font-weight: 700; color: var(--ink-secondary); margin-right: 0.25rem;">Categoría:</span>
+        <button type="button" class="style-pill-btn cat-map-btn active" data-cat="all">Todos los planes</button>
+        <button type="button" class="style-pill-btn cat-map-btn" data-cat="Gratis y Baratos">💸 Gratis y baratos</button>
+        <button type="button" class="style-pill-btn cat-map-btn" data-cat="Este Fin de Semana">📅 Este fin de semana</button>
+        <button type="button" class="style-pill-btn cat-map-btn" data-cat="Planes Diferentes">✨ Planes diferentes</button>
+        <button type="button" class="style-pill-btn cat-map-btn" data-cat="En Pareja">❤️ En pareja</button>
+      </div>
+    </section>
+
+    <section style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: 0 8px 28px rgba(28, 25, 23, 0.07); margin-bottom: 2.25rem;">
+      <div id="global-plans-map" style="width: 100%; height: 540px; z-index: 1;"></div>
+    </section>
+
+    <section aria-labelledby="pins-list-heading">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+        <h2 id="pins-list-heading" style="font-family: var(--font-serif); font-size: 1.45rem;">
+          Planes mostrados en el mapa (<span id="visible-pins-count">{len(all_pins)}</span>)
+        </h2>
+      </div>
+      <div id="pins-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.1rem;"></div>
+    </section>
+  </main>
+
+  {render_footer(root_prefix)}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {{
+      var allPins = {pins_json};
+      var cityCoords = {cities_coords_json};
+      var selectedCity = 'all';
+      var selectedCat = 'all';
+
+      // Comprobar si viene ?ciudad=Madrid en la URL
+      var params = new URLSearchParams(window.location.search);
+      var urlCity = params.get('ciudad');
+      if (urlCity && cityCoords[urlCity]) {{
+        selectedCity = urlCity;
+        document.querySelectorAll('.city-map-btn').forEach(function(b) {{
+          b.classList.toggle('active', b.getAttribute('data-city') === selectedCity);
+        }});
+      }}
+
+      var map = L.map('global-plans-map').setView([40.2, -3.5], 6);
+      L.tileLayer('https://{{s}}.basemaps.cartocdn.com/rastertiles/voyager/{{z}}/{{x}}/{{y}}{{r}}.png', {{
+        attribution: '&copy; OpenStreetMap &copy; CARTO',
+        maxZoom: 19
+      }}).addTo(map);
+
+      var markersLayer = L.layerGroup().addTo(map);
+      var markerRefs = {{}};
+
+      function renderPins(shouldRebound) {{
+        markersLayer.clearLayers();
+        markerRefs = {{}};
+        var grid = document.getElementById('pins-cards-grid');
+        grid.innerHTML = '';
+        var filtered = allPins.filter(function(p) {{
+          var okCity = (selectedCity === 'all' || p.city === selectedCity);
+          var okCat = (selectedCat === 'all' || p.category === selectedCat);
+          return okCity && okCat;
+        }});
+
+        document.getElementById('visible-pins-count').textContent = filtered.length;
+        var bounds = [];
+
+        filtered.forEach(function(p) {{
+          bounds.push([p.lat, p.lng]);
+          var pinColor = p.category === 'Gratis y Baratos' ? '#2e6f40' : (p.category === 'En Pareja' ? '#b83253' : '#c84b31');
+          var icon = L.divIcon({{
+            className: 'global-custom-pin',
+            html: '<div style="background:' + pinColor + ';color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">📍</div>',
+            iconSize: [28, 28],
+            iconAnchor: [14, 14],
+            popupAnchor: [0, -14]
+          }});
+
+          var popupHtml = '<div style="width:235px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:115px;object-fit:cover;border-radius:6px;margin-bottom:7px;display:block;" />' +
+            '<div style="font-size:10.5px;font-weight:700;text-transform:uppercase;color:#c84b31;margin-bottom:2px;">' + p.city + ' · ' + p.category + '</div>' +
+            '<div style="font-weight:700;font-size:13.5px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:4px;">' + p.location + '</div>' +
+            '<div style="font-size:11.5px;font-weight:600;color:#2e6f40;margin-bottom:8px;">' + p.price + '</div>' +
+            '<div style="display:flex;flex-direction:column;gap:5px;">' +
+              '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+              '<a href="' + p.articleUrl + '" style="display:block;text-align:center;background:#f5f2eb;color:#1c1917;text-decoration:none;font-weight:600;font-size:11.5px;padding:5px 10px;border-radius:6px;border:1px solid #e5e0d5;">📖 Leer el plan completo →</a>' +
+            '</div>' +
+          '</div>';
+
+          var m = L.marker([p.lat, p.lng], {{ icon: icon }}).addTo(markersLayer).bindPopup(popupHtml);
+          markerRefs[p.id] = m;
+
+          var card = document.createElement('div');
+          card.style.cssText = 'background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:column;';
+          card.innerHTML =
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" loading="lazy" style="width:100%;height:150px;object-fit:cover;display:block;" />' +
+            '<div style="padding:0.95rem 1.05rem;display:flex;flex-direction:column;flex:1;">' +
+              '<div style="font-size:0.73rem;font-weight:700;text-transform:uppercase;color:var(--terracotta);margin-bottom:0.25rem;">' + p.city + ' · ' + p.category + '</div>' +
+              '<h3 style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.28;margin-bottom:0.35rem;">' + p.name + '</h3>' +
+              '<p style="font-size:0.83rem;color:var(--ink-secondary);margin-bottom:0.35rem;">' + p.location + '</p>' +
+              '<p style="font-size:0.82rem;font-weight:600;color:var(--olive);margin-bottom:0.85rem;">' + p.price + '</p>' +
+              '<div style="margin-top:auto;display:flex;gap:0.5rem;flex-wrap:wrap;">' +
+                '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="flex:1;text-align:center;background:var(--terracotta);color:#fff;text-decoration:none;font-weight:600;font-size:0.8rem;padding:0.5rem 0.65rem;border-radius:var(--radius-sm);">📍 Google Maps ↗</a>' +
+                '<a href="' + p.articleUrl + '" style="flex:1;text-align:center;background:var(--bg-sand);color:var(--ink-primary);text-decoration:none;font-weight:600;font-size:0.8rem;padding:0.5rem 0.65rem;border-radius:var(--radius-sm);border:1px solid var(--border-subtle);">Ver guía →</a>' +
+              '</div>' +
+            '</div>';
+          grid.appendChild(card);
+        }});
+
+        if (shouldRebound && bounds.length > 0) {{
+          if (selectedCity !== 'all' && cityCoords[selectedCity]) {{
+            map.fitBounds(bounds, {{ padding: [40, 40], maxZoom: 14 }});
+          }} else {{
+            map.fitBounds(bounds, {{ padding: [35, 35], maxZoom: 12 }});
+          }}
+        }}
+      }}
+
+      document.querySelectorAll('.city-map-btn').forEach(function(btn) {{
+        btn.addEventListener('click', function() {{
+          document.querySelectorAll('.city-map-btn').forEach(function(b) {{ b.classList.remove('active'); }});
+          btn.classList.add('active');
+          selectedCity = btn.getAttribute('data-city');
+          renderPins(true);
+        }});
+      }});
+
+      document.querySelectorAll('.cat-map-btn').forEach(function(btn) {{
+        btn.addEventListener('click', function() {{
+          document.querySelectorAll('.cat-map-btn').forEach(function(b) {{ b.classList.remove('active'); }});
+          btn.classList.add('active');
+          selectedCat = btn.getAttribute('data-cat');
+          renderPins(true);
+        }});
+      }});
+
+      renderPins(true);
+    }});
+  </script>
 </body>
 </html>
 """
@@ -727,19 +1112,19 @@ def build_about_page():
     <section class="reader-section">
       <h2>Qué tipo de planes publicamos</h2>
       <p style="margin-top: 0.5rem;">
-        Seleccionamos propuestas en <strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong> pensadas tanto para quien vive en la ciudad como para quien hace una escapada de fin de semana:
+        Seleccionamos propuestas en <strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong> combinando rutas de un único plan explicadas a fondo con agendas de fin de semana:
       </p>
       <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
+        <li><strong>Planes únicos explicados a fondo:</strong> Itinerarios completos paso a paso para dedicar una mañana o una tarde a un gran rincón histórico o natural sin prisas.</li>
         <li><strong>Este fin de semana:</strong> Ferias históricas (como la Feria Barroca de Valdemoro), mercados puntuales y citas de agenda con sus fechas exactas.</li>
         <li><strong>Gratis y baratos:</strong> Jardines ocultos, museos desconocidos, miradores y rutas por menos de 10 €.</li>
-        <li><strong>Planes diferentes:</strong> Alternativas fuera del circuito turístico habitual para salir de la rutina.</li>
         <li><strong>En pareja:</strong> Citas originales, talleres creativos y paseos al atardecer.</li>
       </ul>
     </section>
     <section class="reader-section">
-      <h2>Datos prácticos en cada ruta</h2>
+      <h2>Datos prácticos y Mapa de Planes</h2>
       <p style="margin-top: 0.5rem;">
-        En cada propuesta incluimos la dirección exacta, cómo llegar en transporte público (Metro, Cercanías, autobús o tren), el enlace directo a Google Maps y el precio real en euros.
+        En cada propuesta incluimos fotografías reales del lugar, la dirección exacta, cómo llegar en transporte público (Metro, Cercanías, autobús o tren), el precio real en euros y un <strong>mapa interactivo</strong> con enlace directo al pin en Google Maps.
       </p>
     </section>
     <section class="reader-section" style="border-bottom: none;">
@@ -764,6 +1149,9 @@ def regenerate_sitemap(articles: list):
       f"  <url>\n    <loc>{SITE_URL}/</loc>\n    <lastmod>{today}</lastmod>\n"
       "    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n "
       " </url>",
+      f"  <url>\n    <loc>{SITE_URL}/mapa/</loc>\n   "
+      f" <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n   "
+      " <priority>0.9</priority>\n  </url>",
       f"  <url>\n    <loc>{SITE_URL}/sobre-nosotros/</loc>\n   "
       f" <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n   "
       " <priority>0.6</priority>\n  </url>",
@@ -806,14 +1194,15 @@ def build_all():
       ),
       description=(
           "¿Qué planes hacer hoy o este fin de semana? Guía local de planes"
-          " originales, ferias, ideas gratis y citas en pareja en Madrid,"
-          " Barcelona, Valencia, Sevilla y Toledo."
+          " únicos explicados a fondo, ferias, ideas gratis, citas en pareja y"
+          " mapa interactivo en Madrid, Barcelona, Valencia, Sevilla y Toledo."
       ),
       canonical_url=f"{SITE_URL}/",
       h1="Planes originales en tu ciudad: qué hacer fuera de lo típico",
       subtitle=(
-          "Ferias de fin de semana, jardines secretos, ideas por menos de 10 €"
-          " y citas en pareja en Madrid, Barcelona, Valencia, Sevilla y Toledo."
+          "Rutas de un único plan explicadas a fondo, ferias de fin de semana,"
+          " jardines secretos y citas en pareja en Madrid, Barcelona,"
+          " Valencia, Sevilla y Toledo."
       ),
       kicker="GUÍA EDITORIAL DE PLANES",
       root_prefix="",
@@ -838,6 +1227,7 @@ def build_all():
   for art in articles:
     build_article_page(art, articles)
 
+  build_map_page(articles)
   build_about_page()
   regenerate_sitemap(articles)
   with open(os.path.join(PUBLIC_DIR, "CNAME"), "w", encoding="utf-8") as f:
@@ -850,7 +1240,7 @@ def build_all():
     f.write("google-site-verification: googleb24ffbb97ddb75f6.html")
   print(
       "[OK] Sitio estático E-E-A-T generado: Portada + 5 ciudades +"
-      f" {len(articles)} guías + /sobre-nosotros/ + CNAME + sitemap.xml."
+      f" {len(articles)} guías + /mapa/ + /sobre-nosotros/ + CNAME + sitemap.xml."
   )
 
 

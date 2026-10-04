@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -158,7 +160,7 @@
         <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
-        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn active" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a>
+        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn active" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a><a href="../../mapa/" class="city-filter-btn" id="nav-mapa">🗺️ Mapa de Planes</a>
       </nav>
     </div>
   </header>
@@ -195,10 +197,10 @@
       </figure>
 
       
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">En este artículo</span>
-        <a href="https://api.whatsapp.com/send?text=Mira%20estos%20planes%20en%20Madrid%3A%205%20Planes%20en%20Madrid%20cuando%20Llueve%3A%20Invernaderos%20Cubiertos%2C%20Palacios%20y%20Caf%C3%A9s%20Escondidos%20https%3A//queplanhoy.es/madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+        <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Madrid%3A%205%20Planes%20en%20Madrid%20cuando%20Llueve%3A%20Invernaderos%20Cubiertos%2C%20Palacios%20y%20Caf%C3%A9s%20Escondidos%20https%3A//queplanhoy.es/madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
       </div>
@@ -208,11 +210,56 @@
     </nav>
 
       
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Madrid (Pulsa un pin para ir a Google Maps)</span>
+        <a href="../../mapa/?ciudad=Madrid" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de Madrid en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var pins = [{"idx": 1, "name": "Invernadero del Palacio de Cristal de Arganzuela", "location": "Paseo de la Chopera, 10 (Metro: Legazpi - L3 y L6)", "price": "Entrada 100% gratuita", "lat": 40.3934, "lng": -3.6997, "image": "../../images/venues/madrid-invernadero-arganzuela.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Invernadero%20del%20Palacio%20de%20Cristal%20de%20Arganzuela%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Museo Cerralbo", "location": "Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)", "price": "3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)", "lat": 40.4237, "lng": -3.7146, "image": "../../images/venues/madrid-museo-cerralbo.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Cerralbo%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Café del Jardín del Museo del Romanticismo", "location": "Calle de San Mateo, 13 (Metro: Tribunal - L1, L10 / Alonso Martínez - L4, L5, L10)", "price": "Acceso libre al café sin entrada al museo / Café y repostería: 4,50 € – 7,50 €", "lat": 40.4259, "lng": -3.6987, "image": "../../images/venues/madrid-museo-romanticismo.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20del%20Jard%C3%ADn%20del%20Museo%20del%20Romanticismo%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "CentroCentro - Palacio de Cibeles", "location": "Plaza de Cibeles, 1 (Metro: Banco de España - L2)", "price": "Acceso a la Galería de Cristal y exposiciones: Gratis (Mirador: 3,00 €)", "lat": 40.4189, "lng": -3.6921, "image": "../../images/venues/madrid-palacio-cibeles-galeria.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CentroCentro%20-%20Palacio%20de%20Cibeles%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Cine Doré - Filmoteca Española", "location": "Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)", "price": "3,00 € por entrada (2,00 € con carné joven o estudiante)", "lat": 40.4116, "lng": -3.6992, "image": "../../images/venues/madrid-cine-dore.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cine%20Dor%C3%A9%20-%20Filmoteca%20Espa%C3%B1ola%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          });
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
+        });
+        if (bounds.length === 1) {
+          map.setView(bounds[0], 15);
+        } else {
+          map.fitBounds(bounds, { padding: [38, 38], maxZoom: 15 });
+        }
+      });
+    </script>
+
+      
       <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. Invernadero del Palacio de Cristal de Arganzuela y paseo junto al Retiro</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Mientras el Palacio de Cristal del Retiro ofrece una de las estampas más fotogénicas de Madrid bajo la lluvia desde el estanque, el gran Invernadero de Cristal de Arganzuela (en la antigua nave de patatas de Matadero) permite pasear a cubierto entre 9.000 plantas tropicales, estanques con carpas y cuatro microclimas cálidos de martes a domingo.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Mientras el Palacio de Cristal del Retiro ofrece una de las estampas más fotogénicas de Madrid bajo la lluvia desde el estanque, el gran Invernadero de Cristal de Arganzuela (en la antigua nave de patatas de Matadero) permite pasear a cubierto entre 9.000 plantas tropicales, estanques con carpas y cuatro microclimas cálidos de martes a domingo.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-invernadero-arganzuela.jpg" alt="Interior cubierto con vegetación tropical del Invernadero del Palacio de Cristal de Arganzuela" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-invernadero-arganzuela.jpg" alt="Interior cubierto con vegetación tropical del Invernadero del Palacio de Cristal de Arganzuela" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Interior cubierto con vegetación tropical del Invernadero del Palacio de Cristal de Arganzuela
           </figcaption>
@@ -220,14 +267,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Paseo de la Chopera, 10 (Metro: Legazpi - L3 y L6)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Invernadero%20del%20Palacio%20de%20Cristal%20de%20Arganzuela%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Invernadero%20del%20Palacio%20de%20Cristal%20de%20Arganzuela%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. El Salón de Baile del Museo Cerralbo</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Uno de los palacios cubiertos más espectaculares de Madrid y sin las colas del eje del Prado. Conserva intacta la decoración original de 1893 del Marqués de Cerralbo, con galerías de espejos venecianos, lámparas de cristal de murano y su famoso Salón de Baile dorado.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Uno de los palacios cubiertos más espectaculares de Madrid y sin las colas del eje del Prado. Conserva intacta la decoración original de 1893 del Marqués de Cerralbo, con galerías de espejos venecianos, lámparas de cristal de murano y su famoso Salón de Baile dorado.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-museo-cerralbo.jpg" alt="Palacio del Marqués de Cerralbo en el barrio de Argüelles de Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-museo-cerralbo.jpg" alt="Palacio del Marqués de Cerralbo en el barrio de Argüelles de Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Palacio del Marqués de Cerralbo en el barrio de Argüelles de Madrid
           </figcaption>
@@ -235,14 +282,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)</span>
           <span><strong>Precio:</strong> 3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20Cerralbo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20Cerralbo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
         <h2>3. Jardín Secreto Acristalado y Salón de Té del Museo del Romanticismo</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Escondido en el interior de un palacete de 1776 entre Malasaña y Chueca, su salón interior junto al patio de magnolios permite merendar tarta casera o té caliente escuchando caer la lluvia en pleno silencio.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Escondido en el interior de un palacete de 1776 entre Malasaña y Chueca, su salón interior junto al patio de magnolios permite merendar tarta casera o té caliente escuchando caer la lluvia en pleno silencio.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-museo-romanticismo.jpg" alt="Salones decimonónicos del Museo del Romanticismo en la calle San Mateo de Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-museo-romanticismo.jpg" alt="Salones decimonónicos del Museo del Romanticismo en la calle San Mateo de Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Salones decimonónicos del Museo del Romanticismo en la calle San Mateo de Madrid
           </figcaption>
@@ -250,14 +297,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de San Mateo, 13 (Metro: Tribunal - L1, L10 / Alonso Martínez - L4, L5, L10)</span>
           <span><strong>Precio:</strong> Acceso libre al café sin entrada al museo / Café y repostería: 4,50 € – 7,50 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20del%20Jard%C3%ADn%20del%20Museo%20del%20Romanticismo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20del%20Jard%C3%ADn%20del%20Museo%20del%20Romanticismo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
         <h2>4. Galería de Cristal del Palacio de Cibeles y mirador cubierto</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">La gran bóveda acristalada del antiguo Palacio de Comunicaciones funciona como una plaza pública cubierta e iluminada con luz natural aunque diluvie fuera, con salas de exposiciones gratuitas en las plantas superiores.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">La gran bóveda acristalada del antiguo Palacio de Comunicaciones funciona como una plaza pública cubierta e iluminada con luz natural aunque diluvie fuera, con salas de exposiciones gratuitas en las plantas superiores.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-palacio-cibeles-galeria.jpg" alt="Bóveda acristalada de la Galería de Cristal del Palacio de Cibeles en Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-palacio-cibeles-galeria.jpg" alt="Bóveda acristalada de la Galería de Cristal del Palacio de Cibeles en Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Bóveda acristalada de la Galería de Cristal del Palacio de Cibeles en Madrid
           </figcaption>
@@ -265,14 +312,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de Cibeles, 1 (Metro: Banco de España - L2)</span>
           <span><strong>Precio:</strong> Acceso a la Galería de Cristal y exposiciones: Gratis (Mirador: 3,00 €)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=CentroCentro%20-%20Palacio%20de%20Cibeles%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=CentroCentro%20-%20Palacio%20de%20Cibeles%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
         <h2>5. Sesión en versión original en el Cine Doré (Filmoteca Española)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Un cine modernista de 1912 en el corazón de Lavapiés y Antón Martín con sala de butacas clásicas y cafetería interior. Por solo 3 € proyecta ciclos de cine clásico e independiente en versión original subtitulada.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Un cine modernista de 1912 en el corazón de Lavapiés y Antón Martín con sala de butacas clásicas y cafetería interior. Por solo 3 € proyecta ciclos de cine clásico e independiente en versión original subtitulada.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-cine-dore.jpg" alt="Sala histórica de proyecciones del Cine Doré (Filmoteca Española) en la calle Santa Isabel" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-cine-dore.jpg" alt="Sala histórica de proyecciones del Cine Doré (Filmoteca Española) en la calle Santa Isabel" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Sala histórica de proyecciones del Cine Doré (Filmoteca Española) en la calle Santa Isabel
           </figcaption>
@@ -280,7 +327,7 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)</span>
           <span><strong>Precio:</strong> 3,00 € por entrada (2,00 € con carné joven o estudiante)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Cine%20Dor%C3%A9%20-%20Filmoteca%20Espa%C3%B1ola%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Cine%20Dor%C3%A9%20-%20Filmoteca%20Espa%C3%B1ola%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
@@ -346,6 +393,27 @@
     </a>
   </article>
 
+  <article class="article-card" data-category="Gratis y Baratos" data-search="el parque de el capricho en madrid: guía a fondo del jardín secreto de la duquesa de osuna (gratis) en lugar de correr de un sitio a otro, te proponemos dedicar una mañana entera a un único plan redondo y 100 % gratuito en madrid: recorrer sin prisas el jardín histórico de 1784 de la duquesa de osuna en la alameda de osuna. alameda de osuna barajas">
+    <a href="../../madrid/visitar-parque-el-capricho-madrid-guia-completa-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/madrid-parque-capricho.jpg" alt="Exedra de los Emperadores y jardines históricos del Parque de El Capricho en la Alameda de Osuna" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Madrid</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos · Plan Único a Fondo</span>
+          <span style="color: var(--ink-muted);">100% Gratis (0 €)</span>
+        </div>
+        <h2 class="card-title">El Parque de El Capricho en Madrid: Guía a Fondo del Jardín Secreto de la Duquesa de Osuna (Gratis)</h2>
+        <p class="card-excerpt">En lugar de correr de un sitio a otro, te proponemos dedicar una mañana entera a un único plan redondo y 100 % gratuito en Madrid: recorrer sin prisas el jardín histórico de 1784 de la Duquesa de Osuna en la Alameda de Osuna.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Alameda de Osuna · Barajas</span>
+          <span class="card-read-link">Leer plan paso a paso →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="Gratis y Baratos" data-search="7 planes en madrid por menos de 10 € (que parecen de lujo este fin de semana) no hace falta dejarse medio sueldo para vivir un sábado inolvidable en madrid. desde un jardín renacentista en la latina hasta una sesión de cine en un palacio de 1922 por solo 3 €. la latina lavapiés chueca antón martín">
     <a href="../../madrid/planes-madrid-menos-de-10-euros-parecen-de-lujo/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -366,27 +434,6 @@
       </div>
     </a>
   </article>
-
-  <article class="article-card" data-category="En Pareja" data-search="5 citas originales en madrid para salir de la típica cena (cerámica, vino y velas) si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical. malasaña chamberí atocha retiro">
-    <a href="../../madrid/citas-originales-madrid-pareja-ceramica-vino/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/venues/madrid-parque-capricho.jpg" alt="Exedra y jardines históricos del Parque de El Capricho en la Alameda de Osuna de Madrid" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Madrid</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">En Pareja</span>
-          <span style="color: var(--ink-muted);">15 € – 32 €</span>
-        </div>
-        <h2 class="card-title">5 Citas Originales en Madrid para salir de la típica cena (Cerámica, Vino y Velas)</h2>
-        <p class="card-excerpt">Si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Malasaña · Chamberí · Atocha · Retiro</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
       </div>
     </section>
   </main>
@@ -397,13 +444,15 @@
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="../../madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="../../barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="../../valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="../../sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="../../toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="../../mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="../../sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>

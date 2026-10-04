@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -158,7 +160,7 @@
         <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
-        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn active" id="nav-toledo">Toledo</a>
+        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn active" id="nav-toledo">Toledo</a><a href="../../mapa/" class="city-filter-btn" id="nav-mapa">🗺️ Mapa de Planes</a>
       </nav>
     </div>
   </header>
@@ -195,10 +197,10 @@
       </figure>
 
       
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">En este artículo</span>
-        <a href="https://api.whatsapp.com/send?text=Mira%20estos%20planes%20en%20Toledo%3A%205%20Planes%20Gratis%20en%20Toledo%20Fuera%20de%20lo%20Tur%C3%ADstico%3A%20Senda%20del%20Tajo%2C%20Puente%20de%20San%20Mart%C3%ADn%20y%20Cobertizos%20https%3A//queplanhoy.es/toledo/planes-gratis-en-toledo-fuera-de-lo-turistico/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+        <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Toledo%3A%205%20Planes%20Gratis%20en%20Toledo%20Fuera%20de%20lo%20Tur%C3%ADstico%3A%20Senda%20del%20Tajo%2C%20Puente%20de%20San%20Mart%C3%ADn%20y%20Cobertizos%20https%3A//queplanhoy.es/toledo/planes-gratis-en-toledo-fuera-de-lo-turistico/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
       </div>
@@ -208,11 +210,56 @@
     </nav>
 
       
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Toledo (Pulsa un pin para ir a Google Maps)</span>
+        <a href="../../mapa/?ciudad=Toledo" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de Toledo en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var pins = [{"idx": 1, "name": "Puente de San Martín y Senda Ecológica del Tajo", "location": "Bajada desde el Monasterio de San Juan de los Reyes (Oeste del Casco Histórico)", "price": "Acceso 100% gratuito", "lat": 39.8568, "lng": -4.0405, "image": "../../images/venues/tol-puente-san-martin-2.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Puente%20de%20San%20Mart%C3%ADn%20y%20Senda%20Ecol%C3%B3gica%20del%20Tajo%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Rutas de Patrimonio Desconocido del Consorcio de Toledo", "location": "Plaza Amador de los Ríos y Callejón de San Ginés (Centro Histórico)", "price": "Entrada 100% gratuita (Martes a sábado de 10:00 a 14:00 y de 17:00 a 19:00 h)", "lat": 39.8579, "lng": -4.0246, "image": "../../images/venues/tol-cuevas-hercules-termas.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rutas%20de%20Patrimonio%20Desconocido%20del%20Consorcio%20de%20Toledo%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Yacimiento y Mirador del Cerro del Bú", "location": "Cruzando la pasarela peatonal junto al Puente de Alcántara", "price": "Acceso libre y gratuito las 24 horas", "lat": 39.8541, "lng": -4.0203, "image": "../../images/venues/tol-cerro-del-bu.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yacimiento%20y%20Mirador%20del%20Cerro%20del%20B%C3%BA%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Cobertizos de Santo Domingo el Real, Santa Clara y San Pedro Mártir", "location": "Zona norte del Casco Histórico (a 5 minutos a pie de la Plaza de Zocodover)", "price": "Paseo 100% gratuito", "lat": 39.8601, "lng": -4.0261, "image": "../../images/venues/tol-cobertizos.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cobertizos%20de%20Santo%20Domingo%20el%20Real%2C%20Santa%20Clara%20y%20San%20Pedro%20M%C3%A1rtir%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Museo de Santa Cruz", "location": "Calle Miguel de Cervantes, 3 (Junto al arco de la Sangre en Zocodover)", "price": "Gratis miércoles toda la tarde y domingos (4,00 € resto de horario / Claustro y patio de libre acceso)", "lat": 39.8596, "lng": -4.0203, "image": "../../images/venues/tol-museo-santa-cruz.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20de%20Santa%20Cruz%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          });
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
+        });
+        if (bounds.length === 1) {
+          map.setView(bounds[0], 15);
+        } else {
+          map.fitBounds(bounds, { padding: [38, 38], maxZoom: 15 });
+        }
+      });
+    </script>
+
+      
       <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. El Puente medieval de San Martín y la Senda Ecológica del Río Tajo</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Construido en el siglo XIV con dos imponentes torreones defensivos sobre el río Tajo, el Puente de San Martín marca el inicio del tramo más bonito de la Senda Ecológica: un sendero peatonal junto al agua entre rocas graníticas, aves acuáticas y antiguos molinos medievales.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Construido en el siglo XIV con dos imponentes torreones defensivos sobre el río Tajo, el Puente de San Martín marca el inicio del tramo más bonito de la Senda Ecológica: un sendero peatonal junto al agua entre rocas graníticas, aves acuáticas y antiguos molinos medievales.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/tol-puente-san-martin-2.jpg" alt="Torreón medieval y arcos de piedra del Puente de San Martín sobre el río Tajo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/tol-puente-san-martin-2.jpg" alt="Torreón medieval y arcos de piedra del Puente de San Martín sobre el río Tajo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Torreón medieval y arcos de piedra del Puente de San Martín sobre el río Tajo
           </figcaption>
@@ -220,14 +267,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Bajada desde el Monasterio de San Juan de los Reyes (Oeste del Casco Histórico)</span>
           <span><strong>Precio:</strong> Acceso 100% gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Puente%20de%20San%20Mart%C3%ADn%20y%20Senda%20Ecol%C3%B3gica%20del%20Tajo%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Puente%20de%20San%20Mart%C3%ADn%20y%20Senda%20Ecol%C3%B3gica%20del%20Tajo%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. Las Termas Romanas de Amador de los Ríos y las Cuevas de Hércules</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">El Consorcio de Toledo abre gratuitamente al público varios espacios subterráneos de más de dos mil años de antigüedad bajo las casas del casco histórico, incluyendo las monumentales cisternas romanas de las Cuevas de Hércules.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">El Consorcio de Toledo abre gratuitamente al público varios espacios subterráneos de más de dos mil años de antigüedad bajo las casas del casco histórico, incluyendo las monumentales cisternas romanas de las Cuevas de Hércules.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/tol-cuevas-hercules-termas.jpg" alt="Restos arqueológicos subterráneos de las Termas Romanas de Amador de los Ríos en Toledo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/tol-cuevas-hercules-termas.jpg" alt="Restos arqueológicos subterráneos de las Termas Romanas de Amador de los Ríos en Toledo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Restos arqueológicos subterráneos de las Termas Romanas de Amador de los Ríos en Toledo
           </figcaption>
@@ -235,14 +282,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza Amador de los Ríos y Callejón de San Ginés (Centro Histórico)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita (Martes a sábado de 10:00 a 14:00 y de 17:00 a 19:00 h)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Rutas%20de%20Patrimonio%20Desconocido%20del%20Consorcio%20de%20Toledo%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rutas%20de%20Patrimonio%20Desconocido%20del%20Consorcio%20de%20Toledo%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
         <h2>3. Mirador del Cerro del Bú al otro lado del Tajo</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Mientras los autobuses turísticos se concentran en la carretera del Valle, este promontorio de la Edad del Bronce permite contemplar el Alcázar y las murallas de Toledo mucho más cerca y en completo silencio.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Mientras los autobuses turísticos se concentran en la carretera del Valle, este promontorio de la Edad del Bronce permite contemplar el Alcázar y las murallas de Toledo mucho más cerca y en completo silencio.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/tol-cerro-del-bu.jpg" alt="Panorámica de las murallas y el Alcázar de Toledo desde la otra orilla del río Tajo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/tol-cerro-del-bu.jpg" alt="Panorámica de las murallas y el Alcázar de Toledo desde la otra orilla del río Tajo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Panorámica de las murallas y el Alcázar de Toledo desde la otra orilla del río Tajo
           </figcaption>
@@ -250,14 +297,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Cruzando la pasarela peatonal junto al Puente de Alcántara</span>
           <span><strong>Precio:</strong> Acceso libre y gratuito las 24 horas</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Yacimiento%20y%20Mirador%20del%20Cerro%20del%20B%C3%BA%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Yacimiento%20y%20Mirador%20del%20Cerro%20del%20B%C3%BA%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
         <h2>4. Ruta de los Cobertizos del Barrio de los Conventos al caer la tarde</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Un laberinto de callejones empedrados atravesados por pasadizos elevados de madera y ladrillo del siglo XVI que comunicaban los conventos de clausura sin pisar la calle.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Un laberinto de callejones empedrados atravesados por pasadizos elevados de madera y ladrillo del siglo XVI que comunicaban los conventos de clausura sin pisar la calle.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/tol-cobertizos.jpg" alt="Portada conventual y callejones históricos del barrio de los conventos de Toledo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/tol-cobertizos.jpg" alt="Portada conventual y callejones históricos del barrio de los conventos de Toledo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Portada conventual y callejones históricos del barrio de los conventos de Toledo
           </figcaption>
@@ -265,14 +312,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Zona norte del Casco Histórico (a 5 minutos a pie de la Plaza de Zocodover)</span>
           <span><strong>Precio:</strong> Paseo 100% gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Cobertizos%20de%20Santo%20Domingo%20el%20Real%2C%20Santa%20Clara%20y%20San%20Pedro%20M%C3%A1rtir%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Cobertizos%20de%20Santo%20Domingo%20el%20Real%2C%20Santa%20Clara%20y%20San%20Pedro%20M%C3%A1rtir%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
         <h2>5. El Museo de Santa Cruz y su claustro plateresco</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Justo debajo de la Plaza de Zocodover, este antiguo hospital renacentista fundado por el Cardenal Mendoza cuenta con una espectacular escalera plateresca de Covarrubias, un claustro ajardinado de dos pisos y una colección de lienzos originales de El Greco.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Justo debajo de la Plaza de Zocodover, este antiguo hospital renacentista fundado por el Cardenal Mendoza cuenta con una espectacular escalera plateresca de Covarrubias, un claustro ajardinado de dos pisos y una colección de lienzos originales de El Greco.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/tol-museo-santa-cruz.jpg" alt="Galería y claustro renacentista del Museo de Santa Cruz junto a Zocodover" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/tol-museo-santa-cruz.jpg" alt="Galería y claustro renacentista del Museo de Santa Cruz junto a Zocodover" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Galería y claustro renacentista del Museo de Santa Cruz junto a Zocodover
           </figcaption>
@@ -280,7 +327,7 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Miguel de Cervantes, 3 (Junto al arco de la Sangre en Zocodover)</span>
           <span><strong>Precio:</strong> Gratis miércoles toda la tarde y domingos (4,00 € resto de horario / Claustro y patio de libre acceso)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20de%20Santa%20Cruz%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20de%20Santa%20Cruz%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
@@ -346,6 +393,27 @@
     </a>
   </article>
 
+  <article class="article-card" data-category="Gratis y Baratos" data-search="la senda ecológica del tajo en toledo: guía completa de la ruta a pie gratis bajo las murallas la mayoría de quienes visitan toledo suben directamente a zocodover y nunca bajan al cañón del río que abraza la ciudad. te proponemos dedicar dos horas a un único plan inolvidable y gratuito: caminar junto al agua desde el puente de alcántara hasta el puente de san martín. puente de alcántara cañón del tajo / cerro del bú puente de san martín / judería">
+    <a href="../../toledo/senda-ecologica-del-tajo-toledo-ruta-a-pie-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/tol-puente-alcantara.jpg" alt="Arcos de piedra del Puente de Alcántara sobre el río Tajo al inicio de la Senda Ecológica de Toledo" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Toledo</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos · Plan Único a Fondo</span>
+          <span style="color: var(--ink-muted);">100% Gratis (0 €)</span>
+        </div>
+        <h2 class="card-title">La Senda Ecológica del Tajo en Toledo: Guía Completa de la Ruta a Pie Gratis bajo las Murallas</h2>
+        <p class="card-excerpt">La mayoría de quienes visitan Toledo suben directamente a Zocodover y nunca bajan al cañón del río que abraza la ciudad. Te proponemos dedicar dos horas a un único plan inolvidable y gratuito: caminar junto al agua desde el Puente de Alcántara hasta el Puente de San Martín.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Puente de Alcántara · Cañón del Tajo / Cerro del Bú · Puente de San Martín / Judería</span>
+          <span class="card-read-link">Leer plan paso a paso →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="En Pareja" data-search="5 planes en toledo de noche y en pareja: callejones medievales, baños árabes y leyendas (a 33 min de madrid) a las 19:00 horas ocurre un pequeño milagro en toledo: los grupos de excursionistas vuelven a madrid y el casco histórico medieval se queda en silencio bajo los faroles de forja. barrio de los conventos judería mayor cobertizos valle de toledo">
     <a href="../../toledo/que-hacer-en-toledo-de-noche-en-pareja/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -366,27 +434,6 @@
       </div>
     </a>
   </article>
-
-  <article class="article-card" data-category="Este Fin de Semana" data-search="5 planes este fin de semana en madrid (2 al 4 de octubre de 2026): feria barroca de valdemoro, mercadillos y rutas gratis si buscas qué plan hacer en madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al siglo de oro en la feria barroca de valdemoro, música al sol entre trenes antiguos y rutas de aperitivo. valdemoro (cercanías c-3) delicias la latina centro">
-    <a href="../../madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/planes-este-fin-de-semana-madrid-feria-barroca.jpg" alt="Recreación histórica y pasacalles del siglo XVII en la Feria Barroca de Valdemoro" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Madrid</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 2 al 4 de octubre de 2026</span>
-          <span style="color: var(--ink-muted);">Gratis (0 € – 8 €)</span>
-        </div>
-        <h2 class="card-title">5 Planes este Fin de Semana en Madrid (2 al 4 de octubre de 2026): Feria Barroca de Valdemoro, Mercadillos y Rutas Gratis</h2>
-        <p class="card-excerpt">Si buscas qué plan hacer en Madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Valdemoro (Cercanías C-3) · Delicias · La Latina · Centro</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
       </div>
     </section>
   </main>
@@ -397,13 +444,15 @@
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="../../madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="../../barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="../../valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="../../sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="../../toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="../../mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="../../sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>

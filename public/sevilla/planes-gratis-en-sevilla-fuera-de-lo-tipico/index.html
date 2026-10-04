@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -158,7 +160,7 @@
         <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
-        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn active" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a>
+        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn active" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a><a href="../../mapa/" class="city-filter-btn" id="nav-mapa">🗺️ Mapa de Planes</a>
       </nav>
     </div>
   </header>
@@ -195,10 +197,10 @@
       </figure>
 
       
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">En este artículo</span>
-        <a href="https://api.whatsapp.com/send?text=Mira%20estos%20planes%20en%20Sevilla%3A%205%20Planes%20Gratis%20en%20Sevilla%20Fuera%20de%20lo%20T%C3%ADpico%3A%20Pabell%C3%B3n%20Mud%C3%A9jar%2C%20Palacios%20y%20Mercadillos%20https%3A//queplanhoy.es/sevilla/planes-gratis-en-sevilla-fuera-de-lo-tipico/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+        <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Sevilla%3A%205%20Planes%20Gratis%20en%20Sevilla%20Fuera%20de%20lo%20T%C3%ADpico%3A%20Pabell%C3%B3n%20Mud%C3%A9jar%2C%20Palacios%20y%20Mercadillos%20https%3A//queplanhoy.es/sevilla/planes-gratis-en-sevilla-fuera-de-lo-tipico/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
       </div>
@@ -208,11 +210,56 @@
     </nav>
 
       
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Sevilla (Pulsa un pin para ir a Google Maps)</span>
+        <a href="../../mapa/?ciudad=Sevilla" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de Sevilla en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var pins = [{"idx": 1, "name": "Plaza de América y Museo de Artes y Costumbres Populares (Pabellón Mudéjar)", "location": "Plaza de América, s/n, extremo sur del Parque de María Luisa (Metro: Prado de San Sebastián - L1)", "price": "Plaza 100% gratuita / Museo gratis para ciudadanos de la UE (1,50 € resto)", "lat": 37.3718, "lng": -5.9873, "image": "../../images/venues/sev-pabellon-mudejar-2.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Am%C3%A9rica%20y%20Museo%20de%20Artes%20y%20Costumbres%20Populares%20%28Pabell%C3%B3n%20Mud%C3%A9jar%29%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Palacio de los Marqueses de la Algaba (Centro del Arte Mudéjar)", "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)", "price": "Entrada 100% gratuita de lunes a sábado", "lat": 37.3996, "lng": -5.9908, "image": "../../images/venues/sev-marqueses-algaba.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20%28Centro%20del%20Arte%20Mud%C3%A9jar%29%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Centro Cerámica Triana y Corrales de la Calle Alfarería", "location": "Calle Callao, 16 (Junto al Puente de Triana y Plaza del Altozano)", "price": "Paseo por talleres y corrales: Gratis (Museo: 2,10 €)", "lat": 37.3859, "lng": -6.0041, "image": "../../images/venues/sev-ceramica-triana.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20Cer%C3%A1mica%20Triana%20y%20Corrales%20de%20la%20Calle%20Alfarer%C3%ADa%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Archivo General de Indias", "location": "Avenida de la Constitución, s/n (Junto a la Catedral)", "price": "Entrada 100% gratuita todos los días (Martes a domingo)", "lat": 37.3847, "lng": -5.9931, "image": "../../images/venues/sev-archivo-indias.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Archivo%20General%20de%20Indias%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Plaza de Santa Marta", "location": "Acceso por el estrecho pasadizo junto al Convento de la Encarnación (Plaza Virgen de los Reyes)", "price": "Acceso libre y gratuito", "lat": 37.3861, "lng": -5.9917, "image": "../../images/venues/sev-plaza-santa-marta.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Santa%20Marta%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          });
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
+        });
+        if (bounds.length === 1) {
+          map.setView(bounds[0], 15);
+        } else {
+          map.fitBounds(bounds, { padding: [38, 38], maxZoom: 15 });
+        }
+      });
+    </script>
+
+      
       <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. La Plaza de América y el Pabellón Mudéjar en el Parque de María Luisa</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Mucho más tranquila que la vecina Plaza de España, la Plaza de América proyectada por Aníbal González reúne tres edificios históricos rodeados de estanques, rosales y palomas blancas, presididos por la espectacular fachada de ladrillo y azulejos del Pabellón Mudéjar de 1914.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Mucho más tranquila que la vecina Plaza de España, la Plaza de América proyectada por Aníbal González reúne tres edificios históricos rodeados de estanques, rosales y palomas blancas, presididos por la espectacular fachada de ladrillo y azulejos del Pabellón Mudéjar de 1914.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/sev-pabellon-mudejar-2.jpg" alt="Arquitectura regionalista del Pabellón Mudéjar en la Plaza de América del Parque de María Luisa" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/sev-pabellon-mudejar-2.jpg" alt="Arquitectura regionalista del Pabellón Mudéjar en la Plaza de América del Parque de María Luisa" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Arquitectura regionalista del Pabellón Mudéjar en la Plaza de América del Parque de María Luisa
           </figcaption>
@@ -220,14 +267,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de América, s/n, extremo sur del Parque de María Luisa (Metro: Prado de San Sebastián - L1)</span>
           <span><strong>Precio:</strong> Plaza 100% gratuita / Museo gratis para ciudadanos de la UE (1,50 € resto)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Am%C3%A9rica%20y%20Museo%20de%20Artes%20y%20Costumbres%20Populares%20%28Pabell%C3%B3n%20Mud%C3%A9jar%29%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Am%C3%A9rica%20y%20Museo%20de%20Artes%20y%20Costumbres%20Populares%20%28Pabell%C3%B3n%20Mud%C3%A9jar%29%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. El Palacio de los Marqueses de la Algaba y su jardín mudéjar</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Un palacio señorial de 1474 con patio porticado de columnas genovesas, artesonados históricos y jardines frescos al que se entra gratis sin colas en pleno barrio de Feria.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Un palacio señorial de 1474 con patio porticado de columnas genovesas, artesonados históricos y jardines frescos al que se entra gratis sin colas en pleno barrio de Feria.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/sev-marqueses-algaba.jpg" alt="Patio mudéjar y renacentista del Palacio de los Marqueses de la Algaba en Sevilla" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/sev-marqueses-algaba.jpg" alt="Patio mudéjar y renacentista del Palacio de los Marqueses de la Algaba en Sevilla" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Patio mudéjar y renacentista del Palacio de los Marqueses de la Algaba en Sevilla
           </figcaption>
@@ -235,14 +282,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita de lunes a sábado</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20%28Centro%20del%20Arte%20Mud%C3%A9jar%29%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20%28Centro%20del%20Arte%20Mud%C3%A9jar%29%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
         <h2>3. El Centro Cerámica Triana y los antiguos hornos de alfarería</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Adéntrate en las calles Callao, Antillano Campos y Alfarería para ver en activo los obradores tradicionales de cerámica sevillana y los antiguos hornos de ladrillo del siglo XIX.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Adéntrate en las calles Callao, Antillano Campos y Alfarería para ver en activo los obradores tradicionales de cerámica sevillana y los antiguos hornos de ladrillo del siglo XIX.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/sev-ceramica-triana.jpg" alt="Antiguos hornos de ladrillo y azulejería histórica en el Centro Cerámica Triana" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/sev-ceramica-triana.jpg" alt="Antiguos hornos de ladrillo y azulejería histórica en el Centro Cerámica Triana" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Antiguos hornos de ladrillo y azulejería histórica en el Centro Cerámica Triana
           </figcaption>
@@ -250,14 +297,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Callao, 16 (Junto al Puente de Triana y Plaza del Altozano)</span>
           <span><strong>Precio:</strong> Paseo por talleres y corrales: Gratis (Museo: 2,10 €)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Centro%20Cer%C3%A1mica%20Triana%20y%20Corrales%20de%20la%20Calle%20Alfarer%C3%ADa%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Centro%20Cer%C3%A1mica%20Triana%20y%20Corrales%20de%20la%20Calle%20Alfarer%C3%ADa%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
         <h2>4. El Archivo General de Indias y sus galerías renacentistas</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">A diferencia de la Catedral y el Alcázar, esta joya renacentista de Juan de Herrera (Patrimonio de la Humanidad) tiene entrada completamente gratuita y permite recorrer su gran escalera monumental de mármol y las exposiciones de mapas históricos de América.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">A diferencia de la Catedral y el Alcázar, esta joya renacentista de Juan de Herrera (Patrimonio de la Humanidad) tiene entrada completamente gratuita y permite recorrer su gran escalera monumental de mármol y las exposiciones de mapas históricos de América.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/sev-archivo-indias.jpg" alt="Galería abovedada del Archivo General de Indias en Sevilla" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/sev-archivo-indias.jpg" alt="Galería abovedada del Archivo General de Indias en Sevilla" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Galería abovedada del Archivo General de Indias en Sevilla
           </figcaption>
@@ -265,14 +312,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Avenida de la Constitución, s/n (Junto a la Catedral)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita todos los días (Martes a domingo)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Archivo%20General%20de%20Indias%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Archivo%20General%20de%20Indias%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
         <h2>5. La escondida Plaza de Santa Marta y el Callejón del Agua al atardecer</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">A solo treinta metros de la Giralda pero oculta tras un estrecho callejón, esta diminuta plazuela con cuatro naranjos y un crucero de piedra del siglo XVI es uno de los lugares más silenciosos de Sevilla.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">A solo treinta metros de la Giralda pero oculta tras un estrecho callejón, esta diminuta plazuela con cuatro naranjos y un crucero de piedra del siglo XVI es uno de los lugares más silenciosos de Sevilla.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/sev-plaza-santa-marta.jpg" alt="Crucero renacentista y naranjos de la escondida Plaza de Santa Marta en el barrio de Santa Cruz" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/sev-plaza-santa-marta.jpg" alt="Crucero renacentista y naranjos de la escondida Plaza de Santa Marta en el barrio de Santa Cruz" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Crucero renacentista y naranjos de la escondida Plaza de Santa Marta en el barrio de Santa Cruz
           </figcaption>
@@ -280,7 +327,7 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Acceso por el estrecho pasadizo junto al Convento de la Encarnación (Plaza Virgen de los Reyes)</span>
           <span><strong>Precio:</strong> Acceso libre y gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Santa%20Marta%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Santa%20Marta%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
@@ -346,6 +393,27 @@
     </a>
   </article>
 
+  <article class="article-card" data-category="Gratis y Baratos" data-search="el palacio de los marqueses de la algaba y la calle feria: un plan gratis por la sevilla mudéjar a diez minutos a pie de las setas pero lejos del turismo masivo del barrio de santa cruz, te proponemos un único plan de mañana completo en sevilla: entrar gratis a un palacio mudéjar de 1474, explorar el mercadillo más antiguo de europa y tapear en el mercado de feria. calle feria alameda de hércules macarena">
+    <a href="../../sevilla/palacio-marqueses-de-la-algaba-calle-feria-sevilla-plan-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/sev-marqueses-algaba.jpg" alt="Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en el barrio de Feria de Sevilla" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Sevilla</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos · Plan Único a Fondo</span>
+          <span style="color: var(--ink-muted);">Entrada 100% Gratis (Tapas desde 3,20 €)</span>
+        </div>
+        <h2 class="card-title">El Palacio de los Marqueses de la Algaba y la Calle Feria: Un Plan Gratis por la Sevilla Mudéjar</h2>
+        <p class="card-excerpt">A diez minutos a pie de las Setas pero lejos del turismo masivo del barrio de Santa Cruz, te proponemos un único plan de mañana completo en Sevilla: entrar gratis a un palacio mudéjar de 1474, explorar el mercadillo más antiguo de Europa y tapear en el Mercado de Feria.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Calle Feria · Alameda de Hércules · Macarena</span>
+          <span class="card-read-link">Leer plan paso a paso →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="En Pareja" data-search="5 planes en sevilla en pareja y gratis (patios ocultos, azoteas y flamenco íntimo) mientras todo el mundo hace cola en el real alcázar, hay casas-palacio mudéjares en sevilla llenas de buganvillas y azulejos del siglo xvi donde puedes pasear casi a solas con tu pareja. santa cruz triana feria / alameda san bartolomé">
     <a href="../../sevilla/planes-en-sevilla-en-pareja-diferentes-baratos/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -366,27 +434,6 @@
       </div>
     </a>
   </article>
-
-  <article class="article-card" data-category="Este Fin de Semana" data-search="5 planes este fin de semana en madrid (2 al 4 de octubre de 2026): feria barroca de valdemoro, mercadillos y rutas gratis si buscas qué plan hacer en madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al siglo de oro en la feria barroca de valdemoro, música al sol entre trenes antiguos y rutas de aperitivo. valdemoro (cercanías c-3) delicias la latina centro">
-    <a href="../../madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/planes-este-fin-de-semana-madrid-feria-barroca.jpg" alt="Recreación histórica y pasacalles del siglo XVII en la Feria Barroca de Valdemoro" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Madrid</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 2 al 4 de octubre de 2026</span>
-          <span style="color: var(--ink-muted);">Gratis (0 € – 8 €)</span>
-        </div>
-        <h2 class="card-title">5 Planes este Fin de Semana en Madrid (2 al 4 de octubre de 2026): Feria Barroca de Valdemoro, Mercadillos y Rutas Gratis</h2>
-        <p class="card-excerpt">Si buscas qué plan hacer en Madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Valdemoro (Cercanías C-3) · Delicias · La Latina · Centro</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
       </div>
     </section>
   </main>
@@ -397,13 +444,15 @@
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="../../madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="../../barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="../../valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="../../sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="../../toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="../../mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="../../sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>

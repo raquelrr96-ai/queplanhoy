@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -150,7 +152,7 @@
         <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
-        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn active" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a>
+        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn active" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a><a href="../../mapa/" class="city-filter-btn" id="nav-mapa">🗺️ Mapa de Planes</a>
       </nav>
     </div>
   </header>
@@ -187,10 +189,10 @@
       </figure>
 
       
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">En este artículo</span>
-        <a href="https://api.whatsapp.com/send?text=Mira%20estos%20planes%20en%20Madrid%3A%205%20Citas%20Originales%20en%20Madrid%20para%20salir%20de%20la%20t%C3%ADpica%20cena%20%28Cer%C3%A1mica%2C%20Vino%20y%20Velas%29%20https%3A//queplanhoy.es/madrid/citas-originales-madrid-pareja-ceramica-vino/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+        <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Madrid%3A%205%20Citas%20Originales%20en%20Madrid%20para%20salir%20de%20la%20t%C3%ADpica%20cena%20%28Cer%C3%A1mica%2C%20Vino%20y%20Velas%29%20https%3A//queplanhoy.es/madrid/citas-originales-madrid-pareja-ceramica-vino/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
       </div>
@@ -200,11 +202,56 @@
     </nav>
 
       
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Madrid (Pulsa un pin para ir a Google Maps)</span>
+        <a href="../../mapa/?ciudad=Madrid" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de Madrid en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var pins = [{"idx": 1, "name": "Estudios de Cerámica Creativa (Barrio de las Letras / Chamberí)", "location": "Calle de Fernando el Católico / Calle Huertas (Metro: Quevedo / Antón Martín)", "price": "24 € – 29 € por persona (incluye pieza de cerámica, pinturas, horneado y 2 copas de vino)", "lat": 40.4316, "lng": -3.7062, "image": "../../images/venues/madrid-ceramica-vino.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Estudios%20de%20Cer%C3%A1mica%20Creativa%20%28Barrio%20de%20las%20Letras%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Ateneo de Madrid / Círculo de Bellas Artes", "location": "Calle del Prado, 21 (Metro: Sevilla - L2)", "price": "Desde 19 € según zona", "lat": 40.4182, "lng": -3.6966, "image": "../../images/venues/madrid-circulo-bellas-artes.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ateneo%20de%20Madrid%20/%20C%C3%ADrculo%20de%20Bellas%20Artes%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Parque de El Capricho de la Alameda de Osuna", "location": "Paseo de la Alameda de Osuna, 25 (Metro: El Capricho - Línea 5)", "price": "Entrada 100% gratuita (Abierto sábados, domingos y festivos)", "lat": 40.4561, "lng": -3.5986, "image": "../../images/venues/madrid-palacio-cristal-retiro-2.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20de%20El%20Capricho%20de%20la%20Alameda%20de%20Osuna%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Jardín Secreto de Salvador Bachiller / Barrio de Chamberí", "location": "Calle de la Montera, 37 (Metro: Gran Vía - L1, L5)", "price": "Té especial en tetera de hierro + tarta casera para compartir: 9,50 € – 14 €", "lat": 40.4193, "lng": -3.7022, "image": "../../images/venues/madrid-salon-te-jardin.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20Secreto%20de%20Salvador%20Bachiller%20/%20Barrio%20de%20Chamber%C3%AD%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Café Central / Sala Clamores (Huertas / Chamberí)", "location": "Plaza del Ángel, 10 (Metro: Sol / Antón Martín) o Calle de Alburquerque, 14 (Metro: Bilbao)", "price": "Entrada con concierto en directo desde 15 € – 18 €", "lat": 40.4143, "lng": -3.7016, "image": "../../images/venues/madrid-cafe-central-jazz.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Central%20/%20Sala%20Clamores%20%28Huertas%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-5"}];
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          });
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
+        });
+        if (bounds.length === 1) {
+          map.setView(bounds[0], 15);
+        } else {
+          map.fitBounds(bounds, { padding: [38, 38], maxZoom: 15 });
+        }
+      });
+    </script>
+
+      
       <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. Taller de &#x27;Cerámica y Vino&#x27; a media luz en Chamberí o Malasaña</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Se ha convertido en la cita favorita en Madrid por una razón: quita toda la presión de una primera o segunda cita porque tenéis las manos ocupadas creando algo juntos mientras tomáis un buen Mencía o Rioja con música indie de fondo.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Se ha convertido en la cita favorita en Madrid por una razón: quita toda la presión de una primera o segunda cita porque tenéis las manos ocupadas creando algo juntos mientras tomáis un buen Mencía o Rioja con música indie de fondo.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-ceramica-vino.jpg" alt="Piezas de cerámica tradicional pintadas a mano en alfarería" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-ceramica-vino.jpg" alt="Piezas de cerámica tradicional pintadas a mano en alfarería" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Piezas de cerámica tradicional pintadas a mano en alfarería
           </figcaption>
@@ -212,14 +259,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Fernando el Católico / Calle Huertas (Metro: Quevedo / Antón Martín)</span>
           <span><strong>Precio:</strong> 24 € – 29 € por persona (incluye pieza de cerámica, pinturas, horneado y 2 copas de vino)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Estudios%20de%20Cer%C3%A1mica%20Creativa%20%28Barrio%20de%20las%20Letras%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Estudios%20de%20Cer%C3%A1mica%20Creativa%20%28Barrio%20de%20las%20Letras%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. Concierto íntimo a la luz de 1.500 velas en un palacio histórico</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Escuchar las bandas sonoras de Hans Zimmer, Queen o Ludovico Einaudi interpretadas por un cuarteto de cuerda en una cátedra histórica iluminada únicamente por velas es un acierto garantizado antes de ir a picar algo por el Barrio de las Letras.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Escuchar las bandas sonoras de Hans Zimmer, Queen o Ludovico Einaudi interpretadas por un cuarteto de cuerda en una cátedra histórica iluminada únicamente por velas es un acierto garantizado antes de ir a picar algo por el Barrio de las Letras.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-circulo-bellas-artes.jpg" alt="Vistas de las cúpulas de Madrid desde el Círculo de Bellas Artes" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-circulo-bellas-artes.jpg" alt="Vistas de las cúpulas de Madrid desde el Círculo de Bellas Artes" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Vistas de las cúpulas de Madrid desde el Círculo de Bellas Artes
           </figcaption>
@@ -227,14 +274,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle del Prado, 21 (Metro: Sevilla - L2)</span>
           <span><strong>Precio:</strong> Desde 19 € según zona</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Ateneo%20de%20Madrid%20/%20C%C3%ADrculo%20de%20Bellas%20Artes%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ateneo%20de%20Madrid%20/%20C%C3%ADrculo%20de%20Bellas%20Artes%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
         <h2>3. Paseo romántico de fin de semana por el Templete de Baco y el Laberinto de El Capricho</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Creado en 1784 por la Duquesa de Osuna, es el jardín histórico más romántico de Madrid: tiene un laberinto de laurel, un embarcadero neoclásico con cisnes negros, el Templete de Baco con columnas jónicas y hasta un búnker subterráneo.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Creado en 1784 por la Duquesa de Osuna, es el jardín histórico más romántico de Madrid: tiene un laberinto de laurel, un embarcadero neoclásico con cisnes negros, el Templete de Baco con columnas jónicas y hasta un búnker subterráneo.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-palacio-cristal-retiro-2.jpg" alt="Jardines históricos y arquitectura de cristal en Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-palacio-cristal-retiro-2.jpg" alt="Jardines históricos y arquitectura de cristal en Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Jardines históricos y arquitectura de cristal en Madrid
           </figcaption>
@@ -242,14 +289,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Paseo de la Alameda de Osuna, 25 (Metro: El Capricho - Línea 5)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita (Abierto sábados, domingos y festivos)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Parque%20de%20El%20Capricho%20de%20la%20Alameda%20de%20Osuna%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Parque%20de%20El%20Capricho%20de%20la%20Alameda%20de%20Osuna%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
         <h2>4. Cita secreta en el Jardín Cubierto de Salvador Bachiller o el Salón de Té del Santo Mauro</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Subiendo por el interior de la tienda llegas a un invernadero cubierto de plantas colgantes y sillones de mimbre donde tomar un brunch o merienda en pareja completamente aislados del bullicio del centro.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Subiendo por el interior de la tienda llegas a un invernadero cubierto de plantas colgantes y sillones de mimbre donde tomar un brunch o merienda en pareja completamente aislados del bullicio del centro.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-salon-te-jardin.jpg" alt="Palacete y jardines del Hotel Santo Mauro en el barrio de Chamberí" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-salon-te-jardin.jpg" alt="Palacete y jardines del Hotel Santo Mauro en el barrio de Chamberí" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Palacete y jardines del Hotel Santo Mauro en el barrio de Chamberí
           </figcaption>
@@ -257,14 +304,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de la Montera, 37 (Metro: Gran Vía - L1, L5)</span>
           <span><strong>Precio:</strong> Té especial en tetera de hierro + tarta casera para compartir: 9,50 € – 14 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20Secreto%20de%20Salvador%20Bachiller%20/%20Barrio%20de%20Chamber%C3%AD%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20Secreto%20de%20Salvador%20Bachiller%20/%20Barrio%20de%20Chamber%C3%AD%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
         <h2>5. Noche de jazz en vivo y cóctel clásico en una bóveda de ladrillo del siglo XIX</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Sustituye el bar ruidoso de siempre por una mesa para dos con lámpara baja escuchando jazz, soul o bossa nova en directo en uno de los clubes con más historia de Europa.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Sustituye el bar ruidoso de siempre por una mesa para dos con lámpara baja escuchando jazz, soul o bossa nova en directo en uno de los clubes con más historia de Europa.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-cafe-central-jazz.jpg" alt="Entorno de la Plaza del Ángel en el Barrio de las Letras junto al histórico Café Central" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-cafe-central-jazz.jpg" alt="Entorno de la Plaza del Ángel en el Barrio de las Letras junto al histórico Café Central" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Entorno de la Plaza del Ángel en el Barrio de las Letras junto al histórico Café Central
           </figcaption>
@@ -272,7 +319,7 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza del Ángel, 10 (Metro: Sol / Antón Martín) o Calle de Alburquerque, 14 (Metro: Bilbao)</span>
           <span><strong>Precio:</strong> Entrada con concierto en directo desde 15 € – 18 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Central%20/%20Sala%20Clamores%20%28Huertas%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Central%20/%20Sala%20Clamores%20%28Huertas%20/%20Chamber%C3%AD%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
@@ -334,6 +381,27 @@
     </a>
   </article>
 
+  <article class="article-card" data-category="Gratis y Baratos" data-search="el parque de el capricho en madrid: guía a fondo del jardín secreto de la duquesa de osuna (gratis) en lugar de correr de un sitio a otro, te proponemos dedicar una mañana entera a un único plan redondo y 100 % gratuito en madrid: recorrer sin prisas el jardín histórico de 1784 de la duquesa de osuna en la alameda de osuna. alameda de osuna barajas">
+    <a href="../../madrid/visitar-parque-el-capricho-madrid-guia-completa-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/madrid-parque-capricho.jpg" alt="Exedra de los Emperadores y jardines históricos del Parque de El Capricho en la Alameda de Osuna" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Madrid</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos · Plan Único a Fondo</span>
+          <span style="color: var(--ink-muted);">100% Gratis (0 €)</span>
+        </div>
+        <h2 class="card-title">El Parque de El Capricho en Madrid: Guía a Fondo del Jardín Secreto de la Duquesa de Osuna (Gratis)</h2>
+        <p class="card-excerpt">En lugar de correr de un sitio a otro, te proponemos dedicar una mañana entera a un único plan redondo y 100 % gratuito en Madrid: recorrer sin prisas el jardín histórico de 1784 de la Duquesa de Osuna en la Alameda de Osuna.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Alameda de Osuna · Barajas</span>
+          <span class="card-read-link">Leer plan paso a paso →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="Planes Diferentes" data-search="5 planes en madrid cuando llueve: invernaderos cubiertos, palacios y cafés escondidos cinco refugios cubiertos con encanto para disfrutar de madrid en un día de lluvia o frío sin acabar en un centro comercial: invernaderos de cristal, palacios del siglo xix y salones de té. retiro arganzuela argüelles / plaza de españa chueca / malasaña">
     <a href="../../madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -354,27 +422,6 @@
       </div>
     </a>
   </article>
-
-  <article class="article-card" data-category="Gratis y Baratos" data-search="7 planes en madrid por menos de 10 € (que parecen de lujo este fin de semana) no hace falta dejarse medio sueldo para vivir un sábado inolvidable en madrid. desde un jardín renacentista en la latina hasta una sesión de cine en un palacio de 1922 por solo 3 €. la latina lavapiés chueca antón martín">
-    <a href="../../madrid/planes-madrid-menos-de-10-euros-parecen-de-lujo/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/venues/madrid-principe-anglona.jpg" alt="Senderos de ladrillo y cenador del Jardín del Príncipe de Anglona en el barrio de La Latina de Madrid" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Madrid</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">Gratis y Baratos</span>
-          <span style="color: var(--ink-muted);">0 € – 9,50 €</span>
-        </div>
-        <h2 class="card-title">7 Planes en Madrid por menos de 10 € (que parecen de lujo este fin de semana)</h2>
-        <p class="card-excerpt">No hace falta dejarse medio sueldo para vivir un sábado inolvidable en Madrid. Desde un jardín renacentista en La Latina hasta una sesión de cine en un palacio de 1922 por solo 3 €.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">La Latina · Lavapiés · Chueca · Antón Martín</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
       </div>
     </section>
   </main>
@@ -385,13 +432,15 @@
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="../../madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="../../barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="../../valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="../../sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="../../toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="../../mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="../../sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>

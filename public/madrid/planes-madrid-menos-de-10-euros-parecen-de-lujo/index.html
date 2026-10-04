@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
         var script = document.createElement("script");
@@ -172,7 +174,7 @@
         <span class="brand-tagline">Guía de planes originales</span>
       </a>
       <nav class="city-nav" aria-label="Navegación por ciudades">
-        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn active" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a>
+        <a href="../../index.html" class="city-filter-btn" id="nav-all">Inicio</a><a href="../../madrid/" class="city-filter-btn active" id="nav-madrid">Madrid</a><a href="../../barcelona/" class="city-filter-btn" id="nav-barcelona">Barcelona</a><a href="../../valencia/" class="city-filter-btn" id="nav-valencia">Valencia</a><a href="../../sevilla/" class="city-filter-btn" id="nav-sevilla">Sevilla</a><a href="../../toledo/" class="city-filter-btn" id="nav-toledo">Toledo</a><a href="../../mapa/" class="city-filter-btn" id="nav-mapa">🗺️ Mapa de Planes</a>
       </nav>
     </div>
   </header>
@@ -209,10 +211,10 @@
       </figure>
 
       
-    <nav class="article-toc" aria-label="Índice de planes">
+    <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">En este artículo</span>
-        <a href="https://api.whatsapp.com/send?text=Mira%20estos%20planes%20en%20Madrid%3A%207%20Planes%20en%20Madrid%20por%20menos%20de%2010%20%E2%82%AC%20%28que%20parecen%20de%20lujo%20este%20fin%20de%20semana%29%20https%3A//queplanhoy.es/madrid/planes-madrid-menos-de-10-euros-parecen-de-lujo/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
+        <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Madrid%3A%207%20Planes%20en%20Madrid%20por%20menos%20de%2010%20%E2%82%AC%20%28que%20parecen%20de%20lujo%20este%20fin%20de%20semana%29%20https%3A//queplanhoy.es/madrid/planes-madrid-menos-de-10-euros-parecen-de-lujo/" target="_blank" rel="noopener" style="font-size: 0.78rem; font-weight: 600; color: var(--olive); text-decoration: none;">
           Enviar por WhatsApp ↗
         </a>
       </div>
@@ -222,11 +224,56 @@
     </nav>
 
       
+    <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
+      <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Madrid (Pulsa un pin para ir a Google Maps)</span>
+        <a href="../../mapa/?ciudad=Madrid" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
+          Ver todos los planes de Madrid en el gran mapa →
+        </a>
+      </div>
+      <div id="article-leaflet-map" style="width: 100%; height: 340px; z-index: 1;"></div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var pins = [{"idx": 1, "name": "Jardín del Príncipe de Anglona + Bodegas Alfaro", "location": "Plaza de la Paja, 6 (Metro: La Latina - L5)", "price": "Entrada gratis / Vermut de grifo + gildas: 4,50 €", "lat": 40.4126, "lng": -3.7115, "image": "../../images/venues/madrid-rastro-curtidores.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20del%20Pr%C3%ADncipe%20de%20Anglona%20%2B%20Bodegas%20Alfaro%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Cine Doré (Filmoteca Española)", "location": "Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)", "price": "3,00 € entrada general (2,00 € con carné joven/estudiante)", "lat": 40.4116, "lng": -3.6992, "image": "../../images/venues/madrid-cine-dore.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cine%20Dor%C3%A9%20%28Filmoteca%20Espa%C3%B1ola%29%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Museo Nacional del Romanticismo + Café del Jardín", "location": "Calle de San Mateo, 13 (Metro: Tribunal - L1, L10)", "price": "Museo gratis sábados desde las 14:00 / Café y bizcocho casero: 4,80 €", "lat": 40.4259, "lng": -3.6987, "image": "../../images/venues/madrid-museo-romanticismo.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20del%20Romanticismo%20%2B%20Caf%C3%A9%20del%20Jard%C3%ADn%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Museo Cerralbo", "location": "Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10)", "price": "3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)", "lat": 40.4237, "lng": -3.7146, "image": "../../images/venues/madrid-museo-cerralbo.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Cerralbo%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-4"}, {"idx": 5, "name": "Museo Andén 0 (Estación de Chamberí) + El Doble", "location": "Plaza de Chamberí, s/n (Metro: Iglesia - L1 / Bilbao - L1, L4)", "price": "Entrada gratuita (con reserva online) / Doble de cerveza y aperitivo: 3,50 €", "lat": 40.4323, "lng": -3.6978, "image": "../../images/venues/madrid-anden-cero-chamberi.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20And%C3%A9n%200%20%28Estaci%C3%B3n%20de%20Chamber%C3%AD%29%20%2B%20El%20Doble%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-5"}, {"idx": 6, "name": "Mirador de la Cornisa y Jardines del Campo del Moro", "location": "Plaza de la Armería / Paseo de la Virgen del Puerto (Metro: Ópera - L2, L5)", "price": "Acceso 100% gratuito", "lat": 40.4167, "lng": -3.7163, "image": "../../images/venues/madrid-campo-del-moro.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Cornisa%20y%20Jardines%20del%20Campo%20del%20Moro%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-6"}, {"idx": 7, "name": "Real Academia de Bellas Artes de San Fernando", "location": "Calle de Alcalá, 13 (Metro: Sol - L1, L2, L3 / Sevilla - L2)", "price": "Gratis miércoles no festivos (8,00 € general, 4,00 € reducida)", "lat": 40.4177, "lng": -3.7007, "image": "../../images/venues/madrid-san-fernando.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Real%20Academia%20de%20Bellas%20Artes%20de%20San%20Fernando%2C%20Madrid%2C%20Espa%C3%B1a", "anchor": "#plan-7"}];
+        if (!pins.length || typeof L === 'undefined') return;
+        var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          maxZoom: 19
+        }).addTo(map);
+        var bounds = [];
+        pins.forEach(function(p) {
+          bounds.push([p.lat, p.lng]);
+          var icon = L.divIcon({
+            className: 'custom-num-pin',
+            html: '<div style="background:#c84b31;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + p.idx + '</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -14]
+          });
+          var popupHtml = '<div style="width:220px;font-family:Plus Jakarta Sans,sans-serif;">' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
+            '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
+            '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+          '</div>';
+          L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
+        });
+        if (bounds.length === 1) {
+          map.setView(bounds[0], 15);
+        } else {
+          map.fitBounds(bounds, { padding: [38, 38], maxZoom: 15 });
+        }
+      });
+    </script>
+
+      
       <section class="reader-section" id="plan-1" style="scroll-margin-top: 90px;">
         <h2>1. El Jardín del Príncipe de Anglona y vermut en La Latina (Coste: 4,50 €)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Poca gente que camina por la Plaza de la Paja sabe que detrás de un muro de ladrillo se esconde uno de los pocos jardines nobles del siglo XVIII que sobreviven en Madrid. Entra gratis, escucha el sonido de su fuente central de piedra y, al salir, cruza a tomar un vermut de grifo con una gilda doble en las tabernas clásicas de la Cava Baja antes de que se llenen a las 13:30.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Poca gente que camina por la Plaza de la Paja sabe que detrás de un muro de ladrillo se esconde uno de los pocos jardines nobles del siglo XVIII que sobreviven en Madrid. Entra gratis, escucha el sonido de su fuente central de piedra y, al salir, cruza a tomar un vermut de grifo con una gilda doble en las tabernas clásicas de la Cava Baja antes de que se llenen a las 13:30.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-rastro-curtidores.jpg" alt="Calles históricas del barrio de La Latina junto al Jardín del Príncipe de Anglona" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-rastro-curtidores.jpg" alt="Calles históricas del barrio de La Latina junto al Jardín del Príncipe de Anglona" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Calles históricas del barrio de La Latina junto al Jardín del Príncipe de Anglona
           </figcaption>
@@ -234,14 +281,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de la Paja, 6 (Metro: La Latina - L5)</span>
           <span><strong>Precio:</strong> Entrada gratis / Vermut de grifo + gildas: 4,50 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20del%20Pr%C3%ADncipe%20de%20Anglona%20%2B%20Bodegas%20Alfaro%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20del%20Pr%C3%ADncipe%20de%20Anglona%20%2B%20Bodegas%20Alfaro%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
         <h2>2. Sesión de tarde en el Cine Doré, la Filmoteca Española (Coste: 3,00 €)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Su fachada modernista de 1923 parece sacada de una película de Wes Anderson. Por solo 3 € puedes ver cine clásico restaurado o estrenos de autor en versión original dentro de una sala histórica con molduras doradas y cafetería propia.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Su fachada modernista de 1923 parece sacada de una película de Wes Anderson. Por solo 3 € puedes ver cine clásico restaurado o estrenos de autor en versión original dentro de una sala histórica con molduras doradas y cafetería propia.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-cine-dore.jpg" alt="Sala histórica del Cine Doré, sede de la Filmoteca Española en Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-cine-dore.jpg" alt="Sala histórica del Cine Doré, sede de la Filmoteca Española en Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Sala histórica del Cine Doré, sede de la Filmoteca Española en Madrid
           </figcaption>
@@ -249,14 +296,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)</span>
           <span><strong>Precio:</strong> 3,00 € entrada general (2,00 € con carné joven/estudiante)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Cine%20Dor%C3%A9%20%28Filmoteca%20Espa%C3%B1ola%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Cine%20Dor%C3%A9%20%28Filmoteca%20Espa%C3%B1ola%29%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
         <h2>3. Sábado tarde en el Museo del Romanticismo y su Salón de Té (Coste: 0 € - 4,80 €)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Los sábados a partir de las 14:00 la entrada a este palacete del siglo XIX es completamente gratuita. Lo mejor es que puedes acceder a su patio interior ajardinado (el Café del Jardín) incluso sin pagar entrada al museo para tomar un té entre magnolios.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Los sábados a partir de las 14:00 la entrada a este palacete del siglo XIX es completamente gratuita. Lo mejor es que puedes acceder a su patio interior ajardinado (el Café del Jardín) incluso sin pagar entrada al museo para tomar un té entre magnolios.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-museo-romanticismo.jpg" alt="Interior palaciego del siglo XIX en el Museo del Romanticismo de Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-museo-romanticismo.jpg" alt="Interior palaciego del siglo XIX en el Museo del Romanticismo de Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Interior palaciego del siglo XIX en el Museo del Romanticismo de Madrid
           </figcaption>
@@ -264,14 +311,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de San Mateo, 13 (Metro: Tribunal - L1, L10)</span>
           <span><strong>Precio:</strong> Museo gratis sábados desde las 14:00 / Café y bizcocho casero: 4,80 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20del%20Romanticismo%20%2B%20Caf%C3%A9%20del%20Jard%C3%ADn%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20del%20Romanticismo%20%2B%20Caf%C3%A9%20del%20Jard%C3%ADn%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
         <h2>4. El Salón de Baile del Museo Cerralbo con espejos venecianos (Coste: 0 € - 3,00 €)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">A diferencia de los grandes museos masificados, este palacio conserva intacta la decoración original del Marqués de Cerralbo de 1893: escaleras de honor de mármol, galerías de armaduras y un salón de baile dorado digno de Versalles por solo 3 €.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">A diferencia de los grandes museos masificados, este palacio conserva intacta la decoración original del Marqués de Cerralbo de 1893: escaleras de honor de mármol, galerías de armaduras y un salón de baile dorado digno de Versalles por solo 3 €.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-museo-cerralbo.jpg" alt="Palacio del Marqués de Cerralbo junto a la Plaza de España de Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-museo-cerralbo.jpg" alt="Palacio del Marqués de Cerralbo junto a la Plaza de España de Madrid" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Palacio del Marqués de Cerralbo junto a la Plaza de España de Madrid
           </figcaption>
@@ -279,14 +326,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10)</span>
           <span><strong>Precio:</strong> 3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20Cerralbo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20Cerralbo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
         <h2>5. Estación fantasma de Chamberí (Andén 0) y caña bien tirada en Ponzano (Coste: 3,50 €)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Baja a una estación de Metro clausurada en 1966 que conserva intactos los anuncios publicitarios de azulejos cerámicos de los años 20 y las taquillas originales. Al salir, camina 4 minutos hasta la calle Ponzano para tomar un doble bien tirado con patatas chips caseras.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Baja a una estación de Metro clausurada en 1966 que conserva intactos los anuncios publicitarios de azulejos cerámicos de los años 20 y las taquillas originales. Al salir, camina 4 minutos hasta la calle Ponzano para tomar un doble bien tirado con patatas chips caseras.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-anden-cero-chamberi.jpg" alt="Andén original con azulejos publicitarios de los años 20 en la Estación de Chamberí (Andén 0)" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-anden-cero-chamberi.jpg" alt="Andén original con azulejos publicitarios de los años 20 en la Estación de Chamberí (Andén 0)" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Andén original con azulejos publicitarios de los años 20 en la Estación de Chamberí (Andén 0)
           </figcaption>
@@ -294,14 +341,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de Chamberí, s/n (Metro: Iglesia - L1 / Bilbao - L1, L4)</span>
           <span><strong>Precio:</strong> Entrada gratuita (con reserva online) / Doble de cerveza y aperitivo: 3,50 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20And%C3%A9n%200%20%28Estaci%C3%B3n%20de%20Chamber%C3%AD%29%20%2B%20El%20Doble%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20And%C3%A9n%200%20%28Estaci%C3%B3n%20de%20Chamber%C3%AD%29%20%2B%20El%20Doble%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-6" style="scroll-margin-top: 90px;">
         <h2>6. Mirador de la Cornisa del Palacio Real y Jardines del Campo del Moro (Coste: 0 €)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">Combina las vistas abiertas del nuevo Mirador de la Cornisa junto a la Catedral de la Almudena con la bajada a los jardines históricos del Campo del Moro, donde pasean pavos reales en libertad con la fachada monumental del Palacio Real de fondo.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Combina las vistas abiertas del nuevo Mirador de la Cornisa junto a la Catedral de la Almudena con la bajada a los jardines históricos del Campo del Moro, donde pasean pavos reales en libertad con la fachada monumental del Palacio Real de fondo.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-campo-del-moro.jpg" alt="Paseo central de los Jardines del Campo del Moro con el Palacio Real de Madrid al fondo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-campo-del-moro.jpg" alt="Paseo central de los Jardines del Campo del Moro con el Palacio Real de Madrid al fondo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Paseo central de los Jardines del Campo del Moro con el Palacio Real de Madrid al fondo
           </figcaption>
@@ -309,14 +356,14 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de la Armería / Paseo de la Virgen del Puerto (Metro: Ópera - L2, L5)</span>
           <span><strong>Precio:</strong> Acceso 100% gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Cornisa%20y%20Jardines%20del%20Campo%20del%20Moro%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Cornisa%20y%20Jardines%20del%20Campo%20del%20Moro%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-7" style="scroll-margin-top: 90px;">
         <h2>7. Concierto matinal o exposición en la Real Academia de Bellas Artes de San Fernando (Coste: 0 € - 8,00 €)</h2>
-        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.75;">A pocos pasos de la Puerta del Sol se guarda una colección extraordinaria de Goya, Zurbarán y Sorolla sin apenas colas, además de su calcografía nacional donde se conservan las planchas originales de los Caprichos de Goya.</p>
+        <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">A pocos pasos de la Puerta del Sol se guarda una colección extraordinaria de Goya, Zurbarán y Sorolla sin apenas colas, además de su calcografía nacional donde se conservan las planchas originales de los Caprichos de Goya.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/madrid-san-fernando.jpg" alt="Fachada neoclásica del Palacio de Goyeneche, sede de la Real Academia de Bellas Artes de San Fernando" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/madrid-san-fernando.jpg" alt="Fachada neoclásica del Palacio de Goyeneche, sede de la Real Academia de Bellas Artes de San Fernando" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Fachada neoclásica del Palacio de Goyeneche, sede de la Real Academia de Bellas Artes de San Fernando
           </figcaption>
@@ -324,7 +371,7 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Alcalá, 13 (Metro: Sol - L1, L2, L3 / Sevilla - L2)</span>
           <span><strong>Precio:</strong> Gratis miércoles no festivos (8,00 € general, 4,00 € reducida)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Real%20Academia%20de%20Bellas%20Artes%20de%20San%20Fernando%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600; text-decoration: none; margin-left: auto;">Cómo llegar (Google Maps) ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Real%20Academia%20de%20Bellas%20Artes%20de%20San%20Fernando%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
@@ -390,6 +437,27 @@
     </a>
   </article>
 
+  <article class="article-card" data-category="Gratis y Baratos" data-search="el parque de el capricho en madrid: guía a fondo del jardín secreto de la duquesa de osuna (gratis) en lugar de correr de un sitio a otro, te proponemos dedicar una mañana entera a un único plan redondo y 100 % gratuito en madrid: recorrer sin prisas el jardín histórico de 1784 de la duquesa de osuna en la alameda de osuna. alameda de osuna barajas">
+    <a href="../../madrid/visitar-parque-el-capricho-madrid-guia-completa-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/madrid-parque-capricho.jpg" alt="Exedra de los Emperadores y jardines históricos del Parque de El Capricho en la Alameda de Osuna" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Madrid</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos · Plan Único a Fondo</span>
+          <span style="color: var(--ink-muted);">100% Gratis (0 €)</span>
+        </div>
+        <h2 class="card-title">El Parque de El Capricho en Madrid: Guía a Fondo del Jardín Secreto de la Duquesa de Osuna (Gratis)</h2>
+        <p class="card-excerpt">En lugar de correr de un sitio a otro, te proponemos dedicar una mañana entera a un único plan redondo y 100 % gratuito en Madrid: recorrer sin prisas el jardín histórico de 1784 de la Duquesa de Osuna en la Alameda de Osuna.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Alameda de Osuna · Barajas</span>
+          <span class="card-read-link">Leer plan paso a paso →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
   <article class="article-card" data-category="Planes Diferentes" data-search="5 planes en madrid cuando llueve: invernaderos cubiertos, palacios y cafés escondidos cinco refugios cubiertos con encanto para disfrutar de madrid en un día de lluvia o frío sin acabar en un centro comercial: invernaderos de cristal, palacios del siglo xix y salones de té. retiro arganzuela argüelles / plaza de españa chueca / malasaña">
     <a href="../../madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -410,27 +478,6 @@
       </div>
     </a>
   </article>
-
-  <article class="article-card" data-category="En Pareja" data-search="5 citas originales en madrid para salir de la típica cena (cerámica, vino y velas) si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical. malasaña chamberí atocha retiro">
-    <a href="../../madrid/citas-originales-madrid-pareja-ceramica-vino/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/venues/madrid-parque-capricho.jpg" alt="Exedra y jardines históricos del Parque de El Capricho en la Alameda de Osuna de Madrid" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Madrid</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">En Pareja</span>
-          <span style="color: var(--ink-muted);">15 € – 32 €</span>
-        </div>
-        <h2 class="card-title">5 Citas Originales en Madrid para salir de la típica cena (Cerámica, Vino y Velas)</h2>
-        <p class="card-excerpt">Si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Malasaña · Chamberí · Atocha · Retiro</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
       </div>
     </section>
   </main>
@@ -441,13 +488,15 @@
       <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink-primary); font-weight: 700;">
         ¿Qué<span style="color: var(--terracotta); font-style: italic;">Plan</span>Hoy?
       </div>
-      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones y precios reales.</p>
+      <p>Guía independiente de planes diferentes, gratuitos y citas en pareja con direcciones, mapa interactivo y precios reales.</p>
       <nav aria-label="Enlaces de ciudades y criterio editorial" style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 0.25rem;">
         <a href="../../madrid/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Madrid</a>
         <a href="../../barcelona/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Barcelona</a>
         <a href="../../valencia/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Valencia</a>
         <a href="../../sevilla/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sevilla</a>
         <a href="../../toledo/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Toledo</a>
+        <span>·</span>
+        <a href="../../mapa/" style="color: var(--terracotta); text-decoration: none; font-weight: 700;">🗺️ Mapa de Planes</a>
         <span>·</span>
         <a href="../../sobre-nosotros/" style="color: var(--ink-secondary); text-decoration: none; font-weight: 600;">Sobre nosotros</a>
       </nav>
