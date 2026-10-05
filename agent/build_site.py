@@ -26,104 +26,311 @@ CITIES = {
         "lat": 40.4168,
         "lng": -3.7038,
         "zoom": 12,
-        "h1": "Planes en Madrid: qué hacer fuera de lo típico",
+        "ogImage": "images/venues/madrid-parque-capricho.jpg",
+        "h1": "Planes en Madrid: qué hacer hoy y este fin de semana fuera de lo típico",
         "metaTitle": (
-            "Qué Plan Hacer en Madrid este Fin de Semana y Hoy (2026) | Qué"
-            " Plan Hoy"
+            "Planes en Madrid Hoy y Este Fin de Semana (2026): Gratis, Pareja y"
+            " Originales | Qué Plan Hoy"
         ),
         "metaDesc": (
-            "¿Buscas qué plan hacer en Madrid este fin de semana o qué planes"
-            " hacer hoy? Jardines secretos, Feria Barroca de"
-            " Valdemoro, mercadillos e ideas gratis."
+            "¿Buscas qué plan hacer en Madrid hoy o este fin de semana? Guía"
+            " actualizada con jardines secretos gratis, planes si llueve, citas"
+            " en pareja y rutas por menos de 10 € con mapa."
         ),
         "intro": (
             "Rutas explicadas paso a paso, ferias históricas, jardines secretos"
-            " y citas originales en Madrid con direcciones exactas, mapa y"
-            " precios reales."
+            " y citas originales en Madrid con direcciones exactas, paradas de"
+            " Metro, mapa interactivo y precios reales."
         ),
+        "neighborhoods": [
+            "Madrid de los Austrias y La Latina",
+            "Alameda de Osuna",
+            "Malasaña y Chueca",
+            "Barrio de las Letras y Lavapiés",
+            "Retiro y Paseo del Arte",
+        ],
+        "seoText": (
+            "Encontrar planes en Madrid que salgan de las terrazas masificadas"
+            " de Gran Vía o Sol es mucho más fácil cuando combinas patrimonio"
+            " histórico poco conocido con barrios con vida propia. En esta guía"
+            " reunimos desde recorridos completos por jardines históricos como"
+            " el Parque de El Capricho o el Jardín del Príncipe de Anglona"
+            " hasta alternativas a cubierto para días de lluvia (como el Salón"
+            " de Baile del Museo Cerralbo, el Invernadero de Atocha o el Cine"
+            " Doré por 3 €) y citas en pareja diferentes con talleres de"
+            " cerámica y vino o jazz en directo."
+        ),
+        "faqs": [
+            {
+                "question": "¿Qué planes gratis se pueden hacer en Madrid este fin de semana?",
+                "answer": (
+                    "Entre los mejores planes gratuitos en Madrid destacan la"
+                    " ruta completa por el Parque de El Capricho en Alameda de"
+                    " Osuna (abierto sábados, domingos y festivos con entrada"
+                    " libre), el Jardín del Príncipe de Anglona en La Latina,"
+                    " el Invernadero de Cristal de Arganzuela y la visita al"
+                    " Museo Cerralbo en su horario gratuito de jueves por la"
+                    " tarde y domingos."
+                ),
+            },
+            {
+                "question": "¿Qué hacer en Madrid hoy si llueve y quieres un plan a cubierto?",
+                "answer": (
+                    "Si llueve en Madrid puedes refugiarte bajo la bóveda"
+                    " acristalada de la Galería de Cristal del Palacio de"
+                    " Cibeles, recorrer el Salón de Baile del Museo Cerralbo"
+                    " (3 €) o el Palacio de Liria, merendar en el Café del"
+                    " Jardín del Museo del Romanticismo o ver cine clásico en"
+                    " versión original en el Cine Doré (Filmoteca Española) por"
+                    " 3 €."
+                ),
+            },
+            {
+                "question": "¿Qué planes originales en pareja hay en Madrid para salir de la típica cena?",
+                "answer": (
+                    "Para una cita diferente en Madrid recomendamos un taller"
+                    " de cerámica y vino de dos horas en Malasaña o Lavapiés,"
+                    " un concierto íntimo de cuerda o jazz en directo a"
+                    " medianoche en el histórico Café Central (Plaza del Ángel)"
+                    " o un paseo al atardecer entre los templetes y el"
+                    " laberinto del Parque de El Capricho."
+                ),
+            },
+        ],
     },
     "Barcelona": {
         "slug": "barcelona",
         "lat": 41.3985,
         "lng": 2.1615,
         "zoom": 12,
-        "h1": "Planes en Barcelona: miradores, citas y rincones sin colas",
+        "ogImage": "images/venues/bcn-laberint-horta.jpg",
+        "h1": "Planes en Barcelona: miradores, jardines secretos y citas sin colas",
         "metaTitle": (
-            "Qué Plan Hacer en Barcelona este Fin de Semana y Hoy (2026) | Qué"
-            " Plan Hoy"
+            "Planes en Barcelona Hoy y Este Fin de Semana (2026): Gratis,"
+            " Miradores y Pareja | Qué Plan Hoy"
         ),
         "metaDesc": (
             "¿Qué plan hacer en Barcelona este fin de semana o hoy? Guías paso"
-            " a paso por el Laberinto de Horta, miradores sin colas, jardines"
-            " gratis y citas originales en pareja."
+            " a paso por el Laberinto de Horta, miradores sin colas en"
+            " Montjuïc, jardines gratis y citas originales en pareja."
         ),
         "intro": (
             "Una Barcelona lejos de las aglomeraciones: desde jardines"
-            " neoclásicos gratuitos y rutas por barrios con encanto hasta"
-            " terrazas con vistas al Mediterráneo."
+            " neoclásicos gratuitos y rutas por el Born y Montjuïc hasta"
+            " miradores tranquilos con vistas al Mediterráneo."
         ),
+        "neighborhoods": [
+            "Horta-Guinardó",
+            "Montjuïc y Poble-sec",
+            "El Born y Ciutat Vella",
+            "Eixample y Sant Antoni",
+            "Sarrià-Sant Gervasi",
+        ],
+        "seoText": (
+            "Más allá de las Ramblas y la Sagrada Familia, Barcelona esconde"
+            " palacetes, jardines históricos y miradores donde todavía se"
+            " respira calma local. En nuestras guías de Barcelona encontrarás"
+            " itinerarios detallados con paradas de Metro, horarios gratuitos"
+            " verificados (como los domingos tarde en el Laberinto de Horta o"
+            " los Jardines de Laribal en Montjuïc) y planes románticos por el"
+            " Recinto Modernista de Sant Pau."
+        ),
+        "faqs": [
+            {
+                "question": "¿Qué planes gratis hacer en Barcelona este fin de semana sin masificaciones?",
+                "answer": (
+                    "Puedes recorrer gratis los Jardines de Laribal y el Teatre"
+                    " Grec en Montjuïc, visitar el Parque del Laberinto de"
+                    " Horta (gratuito miércoles y domingos por la tarde), o"
+                    " explorar el yacimiento del Mercat del Born y las"
+                    " callejuelas medievales de Sant Pere."
+                ),
+            },
+            {
+                "question": "¿Cuáles son los mejores miradores alternativos de Barcelona?",
+                "answer": (
+                    "Para evitar las aglomeraciones de los Búnkers del Carmel,"
+                    " te recomendamos las terrazas ajardinadas de Montjuïc"
+                    " junto a la Fundació Miró, los jardines del Mirador del"
+                    " Alcalde y el entorno alto del Parque del Laberinto de"
+                    " Horta al pie de Collserola."
+                ),
+            },
+        ],
     },
     "Valencia": {
         "slug": "valencia",
         "lat": 39.4699,
         "lng": -0.3763,
         "zoom": 12,
-        "h1": "Planes en Valencia: atardeceres, huerta y cultura local",
+        "ogImage": "images/venues/vlc-albufera-atardecer-dorado.jpg",
+        "h1": "Planes en Valencia: L'Albufera, jardines secretos y cultura local",
         "metaTitle": (
-            "Qué Plan Hacer en Valencia este Fin de Semana y Hoy (2026) | Qué"
-            " Plan Hoy"
+            "Planes en Valencia Hoy y Este Fin de Semana (2026): Gratis,"
+            " Albufera y Pareja | Qué Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué plan hacer en Valencia este fin de semana? Cómo ir a"
-            " L'Albufera y El Palmar en autobús urbano, Jardines de Monforte,"
-            " rutas por la huerta y El Cabanyal."
+            "¿Qué plan hacer en Valencia hoy o este fin de semana? Cómo ir a"
+            " L'Albufera y El Palmar en autobús por 2 €, Jardines de Monforte,"
+            " rutas gratis y bodegas de El Cabanyal."
         ),
         "intro": (
             "Escapadas paso a paso en autobús urbano a L'Albufera, jardines"
-            " escondidos y tapeo en las bodegas históricas de El Cabanyal."
+            " neoclásicos escondidos y tapeo en las bodegas históricas de El"
+            " Cabanyal."
         ),
+        "neighborhoods": [
+            "Parque Natural de L'Albufera y El Palmar",
+            "Ciutat Vella y El Carmen",
+            "Jardines de Monforte y Alameda",
+            "El Cabanyal y Canyamelar",
+            "Ruzafa",
+        ],
+        "seoText": (
+            "Valencia permite pasar en menos de media hora de un jardín"
+            " romántico del siglo XIX en pleno centro a los arrozales y"
+            " embarcaderos de L'Albufera en autobús público. Todas nuestras"
+            " rutas incluyen líneas exactas de EMT, precios reales y enlaces"
+            " directos al pin en Google Maps."
+        ),
+        "faqs": [
+            {
+                "question": "¿Cómo ir del centro de Valencia a L'Albufera y El Palmar en transporte público?",
+                "answer": (
+                    "La línea 24 de los autobuses rojos de la EMT conecta el"
+                    " centro de Valencia (Puerta de la Mar / Navarro Reverter)"
+                    " con el embarcadero de la Gola de Pujol y el pueblo de El"
+                    " Palmar por el precio de un billete urbano (2 € o bono"
+                    " SUMA)."
+                ),
+            },
+            {
+                "question": "¿Qué planes gratis y tranquilos hacer en Valencia?",
+                "answer": (
+                    "Destacan los Jardines de Monforte (un jardín neoclásico"
+                    " gratuito con estatuas de mármol y estanques), el Centro"
+                    " Cultural Bancaja, el claustro gótico del Centre del"
+                    " Carme (CCCC) y un paseo al atardecer por las casas"
+                    " modernistas de El Cabanyal."
+                ),
+            },
+        ],
     },
     "Sevilla": {
         "slug": "sevilla",
         "lat": 37.3891,
         "lng": -5.9845,
         "zoom": 13,
-        "h1": "Planes en Sevilla: casas-palacio, patios y rutas al atardecer",
+        "ogImage": "images/venues/sev-patio-santa-cruz.jpg",
+        "h1": "Planes en Sevilla: casas-palacio, patios ocultos y rutas al atardecer",
         "metaTitle": (
-            "Qué Plan Hacer en Sevilla este Fin de Semana y Hoy (2026) | Qué"
-            " Plan Hoy"
+            "Planes en Sevilla Hoy y Este Fin de Semana (2026): Gratis, Patios"
+            " y Pareja | Qué Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué plan hacer en Sevilla este fin de semana? Descubre planes"
-            " gratis y en pareja: el Palacio de los Marqueses de la Algaba,"
-            " Calle Feria, Triana y Santa Cruz."
+            "¿Qué plan hacer en Sevilla hoy o este fin de semana? Descubre"
+            " planes gratis y en pareja: Palacio de los Marqueses de la Algaba,"
+            " Calle Feria, patios ocultos, Triana y Santa Cruz."
         ),
         "intro": (
-            "Palacios mudéjares gratuitos, mercadillos"
-            " históricos, rutas al anochecer por la antigua judería y planes"
-            " auténticos en Triana."
+            "Palacios mudéjares gratuitos, mercadillos históricos, patios"
+            " silenciosos y rutas al anochecer por la antigua judería y Triana."
         ),
+        "neighborhoods": [
+            "Calle Feria y Macarena",
+            "Barrio de Santa Cruz y Judería",
+            "Triana",
+            "Parque de María Luisa",
+            "Arenal y Museo",
+        ],
+        "seoText": (
+            "Para disfrutar de Sevilla sin colas ni precios inflados, nuestras"
+            " guías se centran en casas-palacio mudéjares y renacentistas de"
+            " acceso gratuito o muy económico (como el Palacio de los Marqueses"
+            " de la Algaba o la Casa de Salinas), combinadas con el tapeo"
+            " tradicional del Mercado de la Calle Feria y paseos al caer el sol."
+        ),
+        "faqs": [
+            {
+                "question": "¿Qué palacios y patios se pueden visitar gratis en Sevilla?",
+                "answer": (
+                    "El Palacio de los Marqueses de la Algaba (junto al Mercado"
+                    " de la Calle Feria) ofrece entrada completamente gratuita"
+                    " a su patio mudéjar y su centro de arte mudéjar. También"
+                    " es gratuito pasear por el entorno del Pabellón Mudéjar en"
+                    " la Plaza de América y las plazuelas escondidas de Santa"
+                    " Cruz."
+                ),
+            },
+            {
+                "question": "¿Qué hacer en Sevilla en pareja para una cita tranquila?",
+                "answer": (
+                    "Un recorrido de mañana o media tarde por los patios de"
+                    " Santa Cruz y la Casa de Salinas, seguido de un paseo al"
+                    " atardecer por la orilla de Triana (Calle Betis) o el"
+                    " Jardín de los Leones del Parque de María Luisa."
+                ),
+            },
+        ],
     },
     "Toledo": {
         "slug": "toledo",
         "lat": 39.8581,
         "lng": -4.0226,
         "zoom": 14,
-        "h1": "Planes en Toledo: escapadas, rutas a pie y rincones ocultos",
+        "ogImage": "images/venues/tol-panoramica-noche.jpg",
+        "h1": "Planes en Toledo: rutas por el Tajo, cobertizos y escapadas de noche",
         "metaTitle": (
-            "Qué Plan Hacer en Toledo este Fin de Semana y Hoy (2026) | Qué"
-            " Plan Hoy"
+            "Planes en Toledo Hoy y Este Fin de Semana (2026): Gratis, Pareja y"
+            " Noche | Qué Plan Hoy"
         ),
         "metaDesc": (
-            "¿Qué plan hacer en Toledo este fin de semana? Guía completa de la"
-            " Senda Ecológica del Tajo, ruta de cobertizos iluminados, baños"
-            " árabes y subterráneos."
+            "¿Qué plan hacer en Toledo hoy o este fin de semana? Guía completa"
+            " de la Senda Ecológica del Tajo, ruta de cobertizos de noche,"
+            " miradores gratis y planes en pareja a 33 min de Madrid."
         ),
         "intro": (
             "A 33 minutos en tren desde Madrid: rutas a pie por el cañón del"
-            " Tajo, pasadizos iluminados y qué hacer en Toledo fuera de lo"
+            " Tajo, pasadizos iluminados de noche y rincones fuera de lo"
             " turístico."
         ),
+        "neighborhoods": [
+            "Senda Ecológica del Río Tajo",
+            "Zona Conventual y Cobertizos",
+            "Judería Mayor y San Martín",
+            "Cerro del Bú y Valle de Toledo",
+            "Alcántara y Casco Histórico",
+        ],
+        "seoText": (
+            "Toledo cambia por completo cuando te sales del eje comercial de"
+            " Zocodover o cuando cae la tarde y se marchan las excursiones de"
+            " día. Aquí tienes desde la ruta completa a pie por la Senda"
+            " Ecológica del Tajo entre los puentes medievales de Alcántara y"
+            " San Martín hasta planes nocturnos en pareja por los cobertizos"
+            " conventuales iluminados."
+        ),
+        "faqs": [
+            {
+                "question": "¿Cuál es la mejor ruta gratis para hacer a pie en Toledo?",
+                "answer": (
+                    "La Senda Ecológica del Tajo es un recorrido gratuito y"
+                    " llano de unos 5 kilómetros que bordea el cañón del río"
+                    " desde el Puente de Alcántara hasta el Puente de San"
+                    " Martín, ofreciendo las mejores vistas de la roca de"
+                    " Toledo sin multitudes."
+                ),
+            },
+            {
+                "question": "¿Qué hacer en Toledo de noche y en pareja?",
+                "answer": (
+                    "Al anochecer recomendamos ver la puesta de sol sobre la"
+                    " ciudad desde el Cerro del Bú o el Valle, recorrer en"
+                    " silencio los cobertizos medievales (Santo Domingo el"
+                    " Real, Santa Clara) bajo los faroles de forja y cruzar el"
+                    " Puente de San Martín iluminado."
+                ),
+            },
+        ],
     },
 }
 
@@ -136,6 +343,7 @@ def render_head(
     json_ld_list: list,
     og_image: str = "",
     include_leaflet: bool = False,
+    og_type: str = "website",
 ) -> str:
   ld_scripts = "\n".join(
       '<script type="application/ld+json">\n'
@@ -143,10 +351,17 @@ def render_head(
       + "\n</script>"
       for ld in json_ld_list
   )
-  og_img_tag = (
-      f'<meta property="og:image" content="{html.escape(og_image)}" />'
+  resolved_og_image = (
+      og_image
       if og_image
-      else ""
+      else f"{SITE_URL}/images/planes-este-fin-de-semana-madrid-feria-barroca.jpg"
+  )
+  og_img_tag = (
+      f'<meta property="og:image" content="{html.escape(resolved_og_image)}" />\n'
+      f'  <meta name="twitter:card" content="summary_large_image" />\n'
+      f'  <meta name="twitter:title" content="{html.escape(title)}" />\n'
+      f'  <meta name="twitter:description" content="{html.escape(description)}" />\n'
+      f'  <meta name="twitter:image" content="{html.escape(resolved_og_image)}" />'
   )
   leaflet_tags = ""
   if include_leaflet:
@@ -166,11 +381,13 @@ def render_head(
   <meta name="description" content="{html.escape(description)}" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="{canonical_url}" />
+  <link rel="alternate" hreflang="es-ES" href="{canonical_url}" />
+  <link rel="alternate" hreflang="es" href="{canonical_url}" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Qué Plan Hoy" />
   <meta property="og:title" content="{html.escape(title)}" />
   <meta property="og:description" content="{html.escape(description)}" />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="{og_type}" />
   <meta property="og:url" content="{canonical_url}" />
   {og_img_tag}
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{root_prefix}sitemap.xml" />
@@ -196,7 +413,7 @@ def render_header(root_prefix: str, active_city: str = "all") -> str:
       (
           "all",
           "Inicio",
-          f"{root_prefix}index.html" if root_prefix else "./",
+          f"{root_prefix}" if root_prefix else "./",
       ),
       ("Madrid", "Madrid", f"{root_prefix}madrid/"),
       ("Barcelona", "Barcelona", f"{root_prefix}barcelona/"),
@@ -432,18 +649,65 @@ def build_listing_page(
       </a>
     </div>"""
 
+  city_info = CITIES.get(active_city, {})
+  city_seo_text = city_info.get(
+      "seoText",
+      "Seleccionamos planes originales, rutas explicadas paso a paso con"
+      " horarios y paradas de transporte público, jardines secretos gratuitos"
+      " y citas en pareja en Madrid, Barcelona, Valencia, Sevilla y Toledo.",
+  )
+  city_neighborhoods = city_info.get(
+      "neighborhoods",
+      ["Madrid", "Barcelona", "Valencia", "Sevilla", "Toledo"],
+  )
+  neighborhood_pills = "".join(
+      f'<span style="background:var(--bg-sand);border:1px solid var(--border-subtle);padding:0.3rem 0.7rem;border-radius:var(--radius-pill);font-size:0.8rem;font-weight:600;color:var(--ink-secondary);">{html.escape(nb)}</span>'
+      for nb in city_neighborhoods
+  )
+
+  city_faqs = city_info.get("faqs", [])
+  city_faqs_html = ""
+  if city_faqs:
+    faq_cards = "".join(
+        f"""
+        <div style="background: var(--bg-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-sm); padding: 1.05rem 1.25rem; margin-bottom: 0.75rem;">
+          <h3 style="font-size: 0.98rem; font-weight: 700; color: var(--ink-primary); margin-bottom: 0.35rem;">{html.escape(f['question'])}</h3>
+          <p style="font-size: 0.92rem; color: var(--ink-secondary); line-height: 1.65; margin: 0;">{html.escape(f['answer'])}</p>
+        </div>"""
+        for f in city_faqs
+    )
+    city_faqs_html = f"""
+      <div style="margin-top: 2rem;">
+        <h2 style="font-family: var(--font-serif); font-size: 1.3rem; color: var(--ink-primary); margin-bottom: 0.85rem;">
+          Preguntas frecuentes sobre planes en {html.escape(city_label)}
+        </h2>
+        {faq_cards}
+      </div>"""
+
   seo_bottom_section = f"""
-    <section style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-hairline); max-width: 780px; color: var(--ink-secondary); font-size: 0.94rem;">
-      <h2 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--ink-primary); margin-bottom: 0.65rem;">
-        ¿Qué plan hacer en {html.escape(city_label)} este fin de semana?
+    <section style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-hairline); max-width: 820px; color: var(--ink-secondary); font-size: 0.95rem;">
+      <h2 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--ink-primary); margin-bottom: 0.65rem;">
+        ¿Qué plan hacer en {html.escape(city_label)} hoy y este fin de semana?
       </h2>
-      <p style="margin-bottom: 0.85rem;">
-        Si estás buscando <strong>qué plan hacer en {html.escape(city_label)} este fin de semana</strong> o ideas para salir hoy sin caer en los sitios turísticos de siempre, aquí tienes nuestras rutas paso a paso, ferias históricas, jardines ocultos gratuitos y citas originales en pareja:
+      <p style="margin-bottom: 0.85rem; line-height: 1.72;">
+        {html.escape(city_seo_text)}
       </p>
-      <ul style="margin-left: 1.25rem; line-height: 1.7;">
+      <div style="display:flex;flex-wrap:wrap;gap:0.45rem;margin-bottom:1.15rem;">
+        {neighborhood_pills}
+      </div>
+      <p style="margin-bottom: 0.65rem; font-weight: 600; color: var(--ink-primary);">
+        Índice completo de guías verificadas en {html.escape(city_label)}:
+      </p>
+      <ul style="margin-left: 1.25rem; line-height: 1.75;">
         {''.join(guide_links)}
       </ul>
+      {city_faqs_html}
     </section>"""
+
+  og_img_rel = city_info.get(
+      "ogImage", "images/planes-este-fin-de-semana-madrid-feria-barroca.jpg"
+  )
+  full_og_img = f"{SITE_URL}/{og_img_rel.lstrip('/')}"
 
   schema_ld = [
       {
@@ -452,11 +716,14 @@ def build_listing_page(
           "name": title,
           "description": description,
           "url": canonical_url,
+          "inLanguage": "es-ES",
+          "image": full_og_img,
       },
       {
           "@context": "https://schema.org",
           "@type": "ItemList",
           "name": h1,
+          "numberOfItems": len(articles),
           "itemListElement": [
               {
                   "@type": "ListItem",
@@ -471,7 +738,54 @@ def build_listing_page(
       },
   ]
 
-  page_html = f"""{render_head(title, description, canonical_url, root_prefix, schema_ld)}
+  if active_city == "all":
+    schema_ld.append({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Qué Plan Hoy",
+        "alternateName": "¿Qué Plan Hoy?",
+        "url": f"{SITE_URL}/",
+        "inLanguage": "es-ES",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Qué Plan Hoy",
+            "url": f"{SITE_URL}/sobre-nosotros/",
+        },
+    })
+  else:
+    schema_ld.append({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": f"{SITE_URL}/",
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": f"Planes en {active_city}",
+                "item": canonical_url,
+            },
+        ],
+    })
+    if city_faqs:
+      schema_ld.append({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+              {
+                  "@type": "Question",
+                  "name": f["question"],
+                  "acceptedAnswer": {"@type": "Answer", "text": f["answer"]},
+              }
+              for f in city_faqs
+          ],
+      })
+
+  page_html = f"""{render_head(title, description, canonical_url, root_prefix, schema_ld, og_image=full_og_img)}
 <body>
   {render_header(root_prefix, active_city)}
 
@@ -543,15 +857,29 @@ def build_article_page(art: dict, all_articles: list):
   img_alt = art.get("imageAlt", art["title"])
   full_img_url = f"{SITE_URL}/{art['image'].lstrip('/')}"
   is_single_plan = art.get("articleType") == "single_plan"
+  today_iso = date.today().isoformat()
 
   article_schema = {
       "@context": "https://schema.org",
       "@type": "Article",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": canonical_url,
+      },
       "headline": art["title"],
       "description": art["metaDescription"],
       "image": [full_img_url],
+      "inLanguage": "es-ES",
       "datePublished": art["publishedAt"],
-      "dateModified": art["publishedAt"],
+      "dateModified": today_iso,
+      "about": {
+          "@type": "City",
+          "name": city_name,
+      },
+      "keywords": ", ".join(
+          [f"planes en {city_name}", art["category"]]
+          + art.get("neighborhoods", [])
+      ),
       "author": {
           "@type": "Organization",
           "name": "Qué Plan Hoy",
@@ -814,7 +1142,7 @@ def build_article_page(art: dict, all_articles: list):
   if art.get("weekendDates"):
     cat_header = f"{cat_header} · {art['weekendDates']}"
 
-  page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, itemlist_schema, faq_schema, breadcrumb_schema], full_img_url, include_leaflet=True)}
+  page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, itemlist_schema, faq_schema, breadcrumb_schema], full_img_url, include_leaflet=True, og_type="article")}
 <body>
   {render_header(root_prefix, city_name)}
 
@@ -822,14 +1150,14 @@ def build_article_page(art: dict, all_articles: list):
     <nav aria-label="Migas de pan" style="font-size: 0.84rem; color: var(--ink-muted); margin-bottom: 1.25rem;">
       <a href="{root_prefix}" style="color: var(--ink-secondary); text-decoration: none;">Inicio</a>
       <span> / </span>
-      <a href="{root_prefix}{city_slug}/" style="color: var(--ink-secondary); text-decoration: none;">{html.escape(city_name)}</a>
+      <a href="{root_prefix}{city_slug}/" style="color: var(--ink-secondary); text-decoration: none;">Planes en {html.escape(city_name)}</a>
       <span> / </span>
       <span style="color: var(--ink-primary);">{html.escape(art['category'])}</span>
     </nav>
 
     <article>
       <div style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--terracotta); margin-bottom: 0.6rem; flex-wrap: wrap;">
-        <span>{html.escape(city_name)}</span>
+        <a href="{root_prefix}{city_slug}/" style="color: var(--terracotta); text-decoration: none;">{html.escape(city_name)}</a>
         <span>·</span>
         <span>{html.escape(cat_header)}</span>
         <span>·</span>
@@ -866,9 +1194,14 @@ def build_article_page(art: dict, all_articles: list):
     </article>
 
     <section style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-hairline);">
-      <h2 style="font-family: var(--font-serif); font-size: 1.45rem; margin-bottom: 1.25rem;">
-        Más planes que te pueden gustar
-      </h2>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.75rem;margin-bottom:1.25rem;">
+        <h2 style="font-family: var(--font-serif); font-size: 1.45rem; margin: 0;">
+          Más planes en {html.escape(city_name)} que te pueden gustar
+        </h2>
+        <a href="{root_prefix}{city_slug}/" style="color:var(--terracotta);font-weight:700;font-size:0.9rem;text-decoration:none;">
+          Ver todas las guías de {html.escape(city_name)} →
+        </a>
+      </div>
       <div class="articles-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem;">
         {related_cards}
       </div>
@@ -882,6 +1215,27 @@ def build_article_page(art: dict, all_articles: list):
   os.makedirs(os.path.dirname(output_path), exist_ok=True)
   with open(output_path, "w", encoding="utf-8") as f:
     f.write(page_html)
+
+  # Crear redirección limpia en la raíz /<slug>/index.html hacia /<ciudad>/<slug>/ para evitar 404 si se omite la carpeta de ciudad
+  redirect_dir = os.path.join(PUBLIC_DIR, art["slug"])
+  os.makedirs(redirect_dir, exist_ok=True)
+  redirect_html = f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>{html.escape(art['metaTitle'])}</title>
+  <link rel="canonical" href="{canonical_url}" />
+  <meta name="robots" content="noindex, follow" />
+  <meta http-equiv="refresh" content="0; url={canonical_url}" />
+  <script>window.location.replace({json.dumps(canonical_url)});</script>
+</head>
+<body>
+  <p>Redirigiendo a <a href="{canonical_url}">{html.escape(art['title'])}</a>...</p>
+</body>
+</html>
+"""
+  with open(os.path.join(redirect_dir, "index.html"), "w", encoding="utf-8") as f:
+    f.write(redirect_html)
 
 
 def build_map_page(articles: list):
@@ -1291,10 +1645,9 @@ def regenerate_sitemap(articles: list):
     )
   for art in articles:
     c_slug = CITIES.get(art["city"], {"slug": art["city"].lower()})["slug"]
-    pub = art.get("publishedAt", today)
     urls.append(
         f"  <url>\n    <loc>{SITE_URL}/{c_slug}/{art['slug']}/</loc>\n   "
-        f" <lastmod>{pub}</lastmod>\n    <changefreq>monthly</changefreq>\n   "
+        f" <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n   "
         " <priority>0.8</priority>\n  </url>"
     )
   sitemap_path = os.path.join(PUBLIC_DIR, "sitemap.xml")
