@@ -703,7 +703,7 @@
     "targetKeyword": "como ir a la albufera de valencia en autobus plan",
     "searchVolume": "6.900 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (10/100)",
-    "image": "images/venues/vlc-albufera-gola-pujol.jpg",
+    "image": "images/venues/vlc-albufera-atardecer-dorado.jpg",
     "imageAlt": "Barca tradicional de madera en el embarcadero de la Gola de Pujol al atardecer en L'Albufera de Valencia",
     "excerpt": "Muchos viajeros y vecinos creen que hace falta coche para pasar el día en L'Albufera. Te explicamos paso a paso cómo hacer el plan más especial de Valencia utilizando el autobús urbano de la EMT: pinada, dunas, barracas y puesta de sol sobre el agua.",
     "priceRange": "1,50 € bus (Paseo en barca opcional: 6 €)",
@@ -792,7 +792,7 @@
     "targetKeyword": "planes en madrid cuando llueve",
     "searchVolume": "5.400 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (11/100)",
-    "image": "images/planes-madrid-cuando-llueve-palacio-cristal.jpg",
+    "image": "images/venues/madrid-lluvia-gran-via.jpg",
     "imageAlt": "Palacio de Cristal en el Parque del Retiro de Madrid reflejado en el estanque rodeado de cipreses de los pantanos",
     "excerpt": "Cinco refugios cubiertos con encanto para disfrutar de Madrid en un día de lluvia o frío sin acabar en un centro comercial: invernaderos de cristal, palacios del siglo XIX y salones de té.",
     "priceRange": "0 € – 9,00 €",
@@ -829,7 +829,7 @@
         "location": "Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)",
         "price": "3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)",
         "content": "Uno de los palacios cubiertos más espectaculares de Madrid y sin las colas del eje del Prado. Conserva intacta la decoración original de 1893 del Marqués de Cerralbo, con galerías de espejos venecianos, lámparas de cristal de murano y su famoso Salón de Baile dorado.",
-        "image": "images/venues/madrid-museo-cerralbo.jpg",
+        "image": "images/venues/madrid-cerralbo-salon-baile.jpg",
         "imageAlt": "Palacio del Marqués de Cerralbo en el barrio de Argüelles de Madrid",
         "lat": 40.4237,
         "lng": -3.7146
@@ -862,7 +862,7 @@
         "location": "Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)",
         "price": "3,00 € por entrada (2,00 € con carné joven o estudiante)",
         "content": "Un cine modernista de 1912 en el corazón de Lavapiés y Antón Martín con sala de butacas clásicas y cafetería interior. Por solo 3 € proyecta ciclos de cine clásico e independiente en versión original subtitulada.",
-        "image": "images/venues/madrid-cine-dore.jpg",
+        "image": "images/venues/madrid-cine-dore-2008.jpg",
         "imageAlt": "Sala histórica de proyecciones del Cine Doré (Filmoteca Española) en la calle Santa Isabel",
         "lat": 40.4116,
         "lng": -3.6992
@@ -1123,7 +1123,7 @@
         "lat": 37.3996,
         "lng": -5.9908,
         "content": "Quien visita Sevilla por primera vez suele concentrar toda su estancia en el triángulo formado por la Catedral, el Real Alcázar y la Plaza de España. Sin embargo, caminando apenas diez minutos hacia el norte desde las Setas de la Encarnación por la calle Feria aparece uno de los edificios civiles más bellos del Renacimiento y el arte mudéjar andaluz: el Palacio de los Marqueses de la Algaba.\n\nLevantado en 1474 por don Juan de Guzmán, primer señor de la Algaba, este palacio vivió su máximo esplendor en el siglo XVI como escenario de tertulias humanistas y representaciones teatrales de Lope de Rueda, antes de pasar en el siglo XIX a albergar incluso el antiguo Teatro Hércules y un cine de verano de barrio. Hoy, completamente restaurado por el Ayuntamiento de Sevilla, tiene entrada 100 % libre y gratuita.\n\nLo primero que te sorprenderá al llegar a la tranquila Plaza Calderón de la Barca es su grandiosa portada principal de dos cuerpos, en la que el ladrillo tallado y los paños de azulejos geométricos sevillanos se funden con escudos nobiliarios renacentistas.",
-        "image": "images/venues/sev-marqueses-algaba.jpg",
+        "image": "images/venues/sev-marqueses-algaba-fachada.jpg",
         "imageAlt": "Portada mudéjar y patio interior del Palacio de los Marqueses de la Algaba en Sevilla"
       },
       {
@@ -1424,7 +1424,7 @@
         "location": "Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)",
         "price": "3,00 € entrada general (2,00 € con carné joven/estudiante)",
         "content": "Su fachada modernista de 1923 parece sacada de una película de Wes Anderson. Por solo 3 € puedes ver cine clásico restaurado o estrenos de autor en versión original dentro de una sala histórica con molduras doradas y cafetería propia.",
-        "image": "images/venues/madrid-cine-dore.jpg",
+        "image": "images/venues/madrid-cine-dore-fachada.jpg",
         "imageAlt": "Sala histórica del Cine Doré, sede de la Filmoteca Española en Madrid",
         "lat": 40.4116,
         "lng": -3.6992
@@ -1446,7 +1446,7 @@
         "location": "Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10)",
         "price": "3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)",
         "content": "A diferencia de los grandes museos masificados, este palacio conserva intacta la decoración original del Marqués de Cerralbo de 1893: escaleras de honor de mármol, galerías de armaduras y un salón de baile dorado digno de Versalles por solo 3 €.",
-        "image": "images/venues/madrid-museo-cerralbo.jpg",
+        "image": "images/venues/madrid-cerralbo-salon-baile.jpg",
         "imageAlt": "Palacio del Marqués de Cerralbo junto a la Plaza de España de Madrid",
         "lat": 40.4237,
         "lng": -3.7146
@@ -1538,7 +1538,7 @@
         "lat": 39.8604,
         "lng": -4.0177,
         "content": "Lo que hace que la Senda Ecológica del Tajo sea un plan redondo —especialmente si llegas a Toledo en el tren Avant de 33 minutos desde Madrid o si aparcas gratis en la zona baja de Safont— es que su punto de inicio está literalmente a ocho minutos caminando en llano desde la estación neomudéjar de ferrocarril.\n\nAntes de subir al casco histórico, acércate hasta el imponente Puente de Alcántara, la entrada monumental de origen romano (reconstruida en época islámica y medieval) por la que entraban los viajeros e hidalgos a la Ciudad Imperial. Desde su arco barroco y su torreón almenado del siglo XIII verás cómo el río Tajo se encajona de golpe entre enormes paredes de roca granítica formando el torno natural que protegió Toledo durante dos milenios.\n\nJusto en la orilla izquierda del puente arranca el sendero peatonal señalizado de la Senda Ecológica: son aproximadamente 4,5 kilómetros llanos y muy fáciles de caminar que rodean todo el frente sur de la ciudad amurallada en completo silencio.",
-        "image": "images/venues/tol-puente-alcantara.jpg",
+        "image": "images/venues/tol-puente-alcantara-amanecer.jpg",
         "imageAlt": "El Puente histórico de Alcántara y las murallas de Toledo desde el inicio del sendero del Tajo"
       },
       {
@@ -1713,7 +1713,7 @@
     "targetKeyword": "planes en sevilla en pareja originales",
     "searchVolume": "2.200 búsquedas/mes",
     "keywordDifficulty": "Baja (16/100)",
-    "image": "images/venues/sev-marqueses-algaba.jpg",
+    "image": "images/venues/sev-patio-santa-cruz.jpg",
     "imageAlt": "Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en Sevilla",
     "excerpt": "Mientras todo el mundo hace cola en el Real Alcázar, hay casas-palacio mudéjares en Sevilla llenas de buganvillas y azulejos del siglo XVI donde puedes pasear casi a solas con tu pareja.",
     "priceRange": "0 € – 18 €",
@@ -1739,7 +1739,7 @@
         "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)",
         "price": "Entrada 100% gratuita",
         "content": "Un impresionante palacio mudéjar de 1474 con patio de arcos y jardines frescos que la mayoría de visitantes desconoce por completo. Al salir, estás a 30 segundos de los puestos gastronómicos del Mercado de Feria.",
-        "image": "images/venues/sev-pabellon-mudejar.jpg",
+        "image": "images/venues/sev-marqueses-algaba-escalera.jpg",
         "imageAlt": "Arquitectura mudéjar e histórica de Sevilla",
         "lat": 37.3996,
         "lng": -5.9908
@@ -1815,7 +1815,7 @@
     "targetKeyword": "planes en pareja madrid originales",
     "searchVolume": "3.600 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (24/100)",
-    "image": "images/venues/madrid-parque-capricho.jpg",
+    "image": "images/venues/madrid-salon-concierto-palacio.jpg",
     "imageAlt": "Exedra y jardines históricos del Parque de El Capricho en la Alameda de Osuna de Madrid",
     "excerpt": "Si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical.",
     "priceRange": "15 € – 32 €",
@@ -1841,7 +1841,7 @@
         "location": "Calle de Fernando el Católico / Calle Huertas (Metro: Quevedo / Antón Martín)",
         "price": "24 € – 29 € por persona (incluye pieza de cerámica, pinturas, horneado y 2 copas de vino)",
         "content": "Se ha convertido en la cita favorita en Madrid por una razón: quita toda la presión de una primera o segunda cita porque tenéis las manos ocupadas creando algo juntos mientras tomáis un buen Mencía o Rioja con música indie de fondo.",
-        "image": "images/venues/madrid-ceramica-vino.jpg",
+        "image": "images/venues/madrid-taller-ceramica.jpg",
         "imageAlt": "Piezas de cerámica tradicional pintadas a mano en alfarería",
         "lat": 40.4316,
         "lng": -3.7062
@@ -1852,7 +1852,7 @@
         "location": "Calle del Prado, 21 (Metro: Sevilla - L2)",
         "price": "Desde 19 € según zona",
         "content": "Escuchar las bandas sonoras de Hans Zimmer, Queen o Ludovico Einaudi interpretadas por un cuarteto de cuerda en una cátedra histórica iluminada únicamente por velas es un acierto garantizado antes de ir a picar algo por el Barrio de las Letras.",
-        "image": "images/venues/madrid-circulo-bellas-artes.jpg",
+        "image": "images/venues/madrid-romanticismo-salon-baile.jpg",
         "imageAlt": "Vistas de las cúpulas de Madrid desde el Círculo de Bellas Artes",
         "lat": 40.4182,
         "lng": -3.6966
@@ -1863,7 +1863,7 @@
         "location": "Paseo de la Alameda de Osuna, 25 (Metro: El Capricho - Línea 5)",
         "price": "Entrada 100% gratuita (Abierto sábados, domingos y festivos)",
         "content": "Creado en 1784 por la Duquesa de Osuna, es el jardín histórico más romántico de Madrid: tiene un laberinto de laurel, un embarcadero neoclásico con cisnes negros, el Templete de Baco con columnas jónicas y hasta un búnker subterráneo.",
-        "image": "images/venues/madrid-palacio-cristal-retiro-2.jpg",
+        "image": "images/venues/madrid-capricho-templete-baco.jpg",
         "imageAlt": "Jardines históricos y arquitectura de cristal en Madrid",
         "lat": 40.4561,
         "lng": -3.5986
@@ -1885,7 +1885,7 @@
         "location": "Plaza del Ángel, 10 (Metro: Sol / Antón Martín) o Calle de Alburquerque, 14 (Metro: Bilbao)",
         "price": "Entrada con concierto en directo desde 15 € – 18 €",
         "content": "Sustituye el bar ruidoso de siempre por una mesa para dos con lámpara baja escuchando jazz, soul o bossa nova en directo en uno de los clubes con más historia de Europa.",
-        "image": "images/venues/madrid-cafe-central-jazz.jpg",
+        "image": "images/venues/madrid-cafe-central-interior.jpg",
         "imageAlt": "Entorno de la Plaza del Ángel en el Barrio de las Letras junto al histórico Café Central",
         "lat": 40.4143,
         "lng": -3.7016
@@ -2021,7 +2021,7 @@
     "targetKeyword": "planes en toledo en pareja diferentes",
     "searchVolume": "1.600 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (11/100)",
-    "image": "images/venues/tol-cerro-del-bu.jpg",
+    "image": "images/venues/tol-panoramica-noche.jpg",
     "imageAlt": "Vista panorámica del Alcázar y las murallas de Toledo sobre el cañón del río Tajo",
     "excerpt": "A las 19:00 horas ocurre un pequeño milagro en Toledo: los grupos de excursionistas vuelven a Madrid y el casco histórico medieval se queda en silencio bajo los faroles de forja.",
     "priceRange": "0 € – 28 €",
@@ -2080,7 +2080,7 @@
         "location": "Bajada de San Martín / Calle de los Reyes Católicos",
         "price": "Paseo gratis / Carcamusas toledanas o croquetas de ciervo con copa de vino: 6,50 €",
         "content": "Cruza al anochecer los torreones almenados del siglo XIV del Puente de San Martín y sube por la Judería para probar unas carcamusas calientes o tapas de venado en los patios toledanos tradicionales.",
-        "image": "images/venues/tol-puente-san-martin.jpg",
+        "image": "images/venues/tol-puente-san-martin-noche.jpg",
         "imageAlt": "El Puente medieval de San Martín reflejado sobre las aguas del río Tajo",
         "lat": 39.8568,
         "lng": -4.0405

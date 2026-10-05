@@ -71,7 +71,7 @@ CITY_KNOWLEDGE_BASE = {
                 ),
                 "lat": 40.4237,
                 "lng": -3.7146,
-                "image": "images/venues/madrid-museo-cerralbo.jpg",
+                "image": "images/venues/madrid-cerralbo-salon-baile.jpg",
                 "imageAlt": "Palacio del Marqués de Cerralbo junto a la Plaza de España de Madrid",
                 "desc": (
                     "A diferencia de los grandes museos masificados, este"
