@@ -1,5 +1,199 @@
 [
   {
+    "id": "toledo-puente-todos-los-santos-halloween-leyendas",
+    "slug": "planes-puente-todos-los-santos-halloween-toledo-leyendas-noche",
+    "city": "Toledo",
+    "category": "Planes Diferentes",
+    "weekendDates": "30 Oct – 1 Nov",
+    "title": "5 Planes para el Puente de Todos los Santos y Halloween en Toledo: Subterráneos, Leyendas de Bécquer y Dulces de Convento",
+    "metaTitle": "Planes Puente Todos los Santos y Halloween en Toledo (2026): Noche y Leyendas | Qué Plan Hoy",
+    "metaDescription": "¿Qué hacer en el Puente de Todos los Santos (1 de noviembre) o Halloween en Toledo? Cuevas de Hércules gratis, ruta nocturna por las leyendas de Bécquer, criptas, mazapán y huesos de santo.",
+    "excerpt": "A solo 33 minutos en tren desde Madrid, Toledo es la ciudad con más misterio de España para el puente del 1 de noviembre: cisternas romanas subterráneas, los callejones donde Bécquer escribió sus leyendas, criptas mudéjares y huesos de santo recién hechos en los tornos conventuales.",
+    "publishedAt": "2026-10-06",
+    "priceRange": "Gratis – 14 €",
+    "neighborhoods": [
+      "Callejón de San Ginés",
+      "Pozo Amargo y Catedral",
+      "Barrio de San Andrés",
+      "Conventos de Clausura",
+      "Puente de San Martín y Valle"
+    ],
+    "image": "images/venues/tol-puente-san-martin-niebla.jpg",
+    "imageAlt": "El Puente de San Martín y el Monasterio de San Juan de los Reyes en Toledo iluminados de noche entre la niebla de otoño",
+    "sections": [
+      {
+        "heading": "1. Bajar a las Cuevas de Hércules en el Callejón de San Ginés",
+        "venue": "Cuevas de Hércules",
+        "location": "Callejón de San Ginés, 3 · A 3 minutos de la Catedral de Toledo",
+        "price": "Entrada libre y gratuita (reservando pase en el Consorcio de Toledo)",
+        "lat": 39.8582,
+        "lng": -4.0235,
+        "image": "images/venues/tol-cuevas-hercules.jpg",
+        "imageAlt": "Arcos monumentales de sillería romana subterránea en el interior de las Cuevas de Hércules en Toledo",
+        "content": "No hay mejor forma de empezar el Puente de Todos los Santos o la noche de Halloween en Toledo que descendiendo al subsuelo de la ciudad. Bajo el número 3 del estrecho Callejón de San Ginés se abren las llamadas Cuevas de Hércules, un imponente depósito hidráulico romano del siglo I d.C. cubierto por grandes arcos de granito que durante siglos alimentó la leyenda de un palacio encantado cerrado con candados por los reyes visigodos.\n\nGestionadas por el Consorcio de la Ciudad de Toledo, su acceso es gratuito y permite caminar por las galerías subterráneas donde todavía se aprecia el nivel del agua sobre la roca madre."
+      },
+      {
+        "heading": "2. Ruta libre al anochecer tras los pasos de Bécquer: Pozo Amargo y Callejón del Infierno",
+        "venue": "Plaza del Pozo Amargo y Callejón del Infierno",
+        "location": "Calle del Pozo Amargo · Al sur de la Catedral Primada",
+        "price": "Paseo libre gratuito",
+        "lat": 39.8559,
+        "lng": -4.0232,
+        "image": "images/venues/tol-pozo-amargo.jpg",
+        "imageAlt": "Placa histórica de piedra de la Calle del Pozo Amargo en Toledo con la cúpula de la Catedral al fondo",
+        "content": "Cuando cae la noche de finales de octubre y se encienden los faroles de forja, el laberinto de callejuelas que baja desde detrás de la Catedral hacia el barrio de San Andrés parece detenido en el siglo XIX. Aquí se inspiró Gustavo Adolfo Bécquer durante sus estancias en Toledo para escribir leyendas como El beso, La ajorca de oro o El Cristo de la Calavera.\n\nTe proponemos un recorrido a pie sin prisas empezando en el Callejón del Infierno y la Cuesta del Barco hasta desembocar en la silenciosa plazuela del Pozo Amargo, donde una placa recuerda la leyenda de las lágrimas de Raquel y don Fernando."
+      },
+      {
+        "heading": "3. La Iglesia mudéjar de San Andrés y su cripta histórica",
+        "venue": "Iglesia de San Andrés",
+        "location": "Plaza de San Andrés, s/n · Barrio de San Andrés, Toledo",
+        "price": "3,50 € entrada individual",
+        "lat": 39.8543,
+        "lng": -4.0229,
+        "image": "images/venues/tol-iglesia-san-andres.jpg",
+        "imageAlt": "Interior de arcos mudéjares y retablo mayor iluminado en la Iglesia de San Andrés de Toledo",
+        "content": "Continuando dos minutos hacia el sur desde el Pozo Amargo llegarás a la Plaza de San Andrés, una de las más tranquilas y auténticas del casco histórico. Su iglesia combina naves mudéjares del siglo XII con una cabecera gótica renacentista espectacular.\n\nDurante siglos fue célebre entre los viajeros románticos por las momias conservadas en su cripta gracias a la sequedad del subsuelo toledano, lo que la convierte en una parada imprescindible e inesperada durante el puente de Todos los Santos."
+      },
+      {
+        "heading": "4. Huesos de Santo y mazapán artesano recién hecho en los tornos conventuales",
+        "venue": "Convento de Santo Domingo el Antiguo y obradores tradicionales",
+        "location": "Plaza de Santo Domingo el Antiguo · Casco Histórico de Toledo",
+        "price": "Cajas de huesos de santo y mazapán artesano desde 6 € – 12 €",
+        "lat": 39.8598,
+        "lng": -4.0268,
+        "image": "images/venues/tol-mazapan-artesano.jpg",
+        "imageAlt": "Bandejas de mazapán artesano de Toledo, marquesas y dulces tradicionales de almendra y yema",
+        "content": "En Toledo el Puente de Todos los Santos huele a almendra tostada, miel y yema confitada. En los días previos al 1 de noviembre, tanto los conventos de clausura (como Santo Domingo el Antiguo o San Clemente) como los obradores históricos del casco antiguo elaboran a mano los tradicionales Huesos de Santo rellenos de dulce de yema, además de anguilas de mazapán y marquesas.\n\nComprar una caja directamente en el torno de madera de un convento del siglo XVI es una experiencia que solo se vive así en estas fechas."
+      },
+      {
+        "heading": "5. Toledo entre las brumas de otoño desde el Mirador del Valle y el Puente de San Martín",
+        "venue": "Mirador del Valle y Puente de San Martín",
+        "location": "Ronda del Valle y bajada de San Martín · Toledo",
+        "price": "Gratis",
+        "lat": 39.8504,
+        "lng": -4.0218,
+        "image": "images/venues/tol-nieblas-toledo.jpg",
+        "imageAlt": "Panorámica del casco histórico de Toledo y el Alcázar emergiendo sobre un mar de niebla otoñal en el cañón del Tajo",
+        "content": "Entre finales de octubre y principios de noviembre, el contraste térmico entre el agua del río Tajo y el aire frío de la mañana o del anochecer envuelve el peñón de Toledo en una capa de bruma baja. Subir a primera hora o al caer la tarde a la Ronda del Valle —o cruzar a pie el Puente medieval de San Martín bajo los faroles— regala una de las estampas más cinematográficas de toda la península."
+      }
+    ],
+    "affiliate": {
+      "badge": "Ideal para el Puente de Noviembre",
+      "title": "Pulsera Turística de Toledo: acceso a 7 monumentos",
+      "description": "Con una sola entrada accedes a 7 joyas del casco histórico (San Juan de los Reyes, Sinagoga de Santa María la Blanca, Entierro del Señor de Orgaz en Santo Tomé, Mezquita del Cristo de la Luz y más).",
+      "price": "Desde 14 €",
+      "ctaText": "Reservar Pulsera Turística →",
+      "url": "https://tiqets.tpk.lu/fe9ce90f"
+    },
+    "faqs": [
+      {
+        "question": "¿Cómo reservar la visita gratuita a las Cuevas de Hércules en Toledo?",
+        "answer": "Las Cuevas de Hércules (Callejón de San Ginés, 3) son de entrada gratuita gestionada por el Consorcio de Toledo; se puede reservar turno online en la web de Toledo Monumental o consultar disponibilidad directamente en el centro de martes a sábado."
+      },
+      {
+        "question": "¿Dónde comprar los mejores Huesos de Santo y mazapanes en Toledo el 1 de noviembre?",
+        "answer": "Además de los tornos conventuales de Santo Domingo el Antiguo y San Clemente (Cuna del Mazapán), destacan obradores centenarios del casco histórico como Santo Tomé (Plaza de Zocodover) o San Telesforo."
+      }
+    ]
+  },
+  {
+    "id": "madrid-puente-octubre-12-octubre-hispanidad",
+    "slug": "planes-puente-octubre-madrid-12-octubre-gratis",
+    "city": "Madrid",
+    "category": "Este Fin de Semana",
+    "weekendDates": "10 – 12 Oct",
+    "title": "5 Planes para el Puente de Octubre en Madrid (10 al 12 de octubre): Museos Gratis, Jardines de Otoño y Mercado de Motores",
+    "metaTitle": "Planes Puente de Octubre en Madrid 2026 (10 al 12 Oct): Gratis y Originales | Qué Plan Hoy",
+    "metaDescription": "¿Qué hacer en Madrid en el Puente de Octubre y el 12 de octubre (Fiesta Nacional)? Museos estatales y Palacio Real gratis, Mercado de Motores, Jardín Botánico en otoño y ruta de vermut.",
+    "excerpt": "Aprovecha el festivo del 12 de octubre y el puente de otoño en Madrid sin caer en los atascos: jornadas de puertas abiertas en grandes museos y palacios, paseo entre hojas caídas en el Botánico, trenes históricos en Delicias y tabernas centenarias.",
+    "publishedAt": "2026-10-06",
+    "priceRange": "Gratis – 14 €",
+    "neighborhoods": [
+      "Palacio y Ópera",
+      "Salamanca y Retiro",
+      "Paseo del Arte",
+      "Delicias",
+      "Barrio de las Letras"
+    ],
+    "image": "images/venues/madrid-campo-del-moro-portada.jpg",
+    "imageAlt": "Vista del Palacio Real de Madrid desde los jardines históricos del Campo del Moro en otoño",
+    "sections": [
+      {
+        "heading": "1. Jornada de puertas abiertas el 12 de octubre en el Museo Arqueológico Nacional (MAN)",
+        "venue": "Museo Arqueológico Nacional (MAN)",
+        "location": "Calle de Serrano, 13 · Metro Serrano (L4) o Retiro (L2)",
+        "price": "Gratis el 12 de octubre (y sábados desde las 14:00 h y domingos por la mañana)",
+        "lat": 40.4235,
+        "lng": -3.6889,
+        "image": "images/venues/madrid-museo-arqueologico-interior.jpg",
+        "imageAlt": "Esculturas clásicas en el patio interior renovado del Museo Arqueológico Nacional de Madrid",
+        "content": "Con motivo del Día de la Fiesta Nacional (12 de octubre), todos los museos estatales de Madrid abren sus puertas de forma completamente gratuita durante toda la jornada. Mientras las colas se concentran en la puerta del Museo del Prado, el Museo Arqueológico Nacional (en la calle Serrano) permite recorrer sin agobios uno de los edificios museísticos mejor rehabilitados de Europa.\n\nEn dos horas puedes contemplar la Dama de Elche, el Tesoro de Guarrazar, los mosaicos romanos de gran formato y las bóvedas mudéjares artesonadas. Al salir, estás a solo cinco minutos a pie de la Puerta de Alcalá y los paseos arbolados del Retiro."
+      },
+      {
+        "heading": "2. Paseo de otoño por los Jardines del Campo del Moro y el entorno del Palacio Real",
+        "venue": "Jardines del Campo del Moro",
+        "location": "Paseo de la Virgen del Puerto, s/n · Metro Príncipe Pío (L6, L10, Ramal)",
+        "price": "Entrada libre y gratuita todos los días (10:00 h a 19:00 h)",
+        "lat": 40.4179,
+        "lng": -3.7176,
+        "image": "images/venues/madrid-campo-del-moro-jardines.jpg",
+        "imageAlt": "Senderos arbolados de los Jardines del Campo del Moro en Madrid a principios de otoño",
+        "content": "Octubre es el mejor mes del año para bajar a los Jardines del Campo del Moro, el bosque romántico de 20 hectáreas trazado en el siglo XIX a los pies de la fachada occidental del Palacio Real. Al tener una única entrada principal abajo, junto al río Manzanares y Príncipe Pío, muchos visitantes pasan de largo por la Plaza de Oriente sin saber que este jardín existe.\n\nDurante el puente de octubre los castaños de Indias y los plátanos centenarios empiezan a teñirse de tonos ocres, los pavos reales pasean sueltos junto a la Fuente de los Tritones y obtienes la perspectiva más monumental del Palacio Real y de la nueva Galería de las Colecciones Reales sin ruido de tráfico."
+      },
+      {
+        "heading": "3. Colores de octubre en el Real Jardín Botánico (CSIC)",
+        "venue": "Real Jardín Botánico de Madrid",
+        "location": "Plaza de Murillo, 2 · Metro Estación del Arte (L1)",
+        "price": "4 € entrada general (6 € con exposiciones en el Pabellón Villanueva)",
+        "lat": 40.4111,
+        "lng": -3.6911,
+        "image": "images/venues/madrid-jardin-botanico-otono.jpg",
+        "imageAlt": "Parterres neoclásicos y hojas de otoño en el Real Jardín Botánico de Madrid",
+        "content": "Frente a la fachada sur del Museo del Prado, el Real Jardín Botánico fundado por Carlos III en 1781 vive su transformación más bonita a mediados de octubre. Sus tres terrazas escalonadas (la Terraza de los Cuadros, la de las Escuelas Botánicas y el Plano de la Flor) se llenan de hojas secas de olmos, ginkgos y robles.\n\nMerece la pena entrar a media tarde, recorrer el Invernadero de las Palmas y el de Graells si refresca, y terminar en el Pabellón Villanueva antes de subir caminando hacia las librerías de la Cuesta de Moyano."
+      },
+      {
+        "heading": "4. Mercado de Motores entre locomotoras históricas en el Museo del Ferrocarril",
+        "venue": "Museo del Ferrocarril de Madrid (Estación de Delicias)",
+        "location": "Paseo de las Delicias, 61 · Metro Delicias (L3) y Cercanías Delicias",
+        "price": "Entrada gratuita al Mercado de Motores (reservando pase horario en su web)",
+        "lat": 40.4002,
+        "lng": -3.6931,
+        "image": "images/venues/madrid-museo-ferrocarril-delicias.jpg",
+        "imageAlt": "Locomotoras de vapor y vagones clásicos de madera en el interior del Museo del Ferrocarril de Madrid",
+        "content": "El segundo fin de semana de octubre coincide con una de las citas más singulares de Madrid: el Mercado de Motores dentro de la antigua Estación de Delicias de 1880, hoy sede del Museo del Ferrocarril. Más de un centenar de artesanos, diseñadores independientes, libreros y puestos de objetos vintage montan sus paradas directamente en los andenes, flanqueados por locomotoras de vapor del siglo XIX y vagones restaurante del Orient Express.\n\nEn los jardines exteriores se instalan food trucks, barras al aire libre y conciertos acústicos en directo durante todo el sábado y el domingo."
+      },
+      {
+        "heading": "5. Vermut de grifo y tabernas centenarias en el Barrio de las Letras (Casa Alberto)",
+        "venue": "Taberna Casa Alberto (Barrio de las Letras)",
+        "location": "Calle de las Huertas, 18 · Metro Antón Martín (L1) o Sol (L1, L2, L3)",
+        "price": "Vermut de grifo y raciones tradicionales entre 8 € y 18 € por persona",
+        "lat": 40.4141,
+        "lng": -3.6997,
+        "image": "images/venues/madrid-casa-alberto-huertas.jpg",
+        "imageAlt": "Fachada histórica de madera roja de la taberna centenaria Casa Alberto en la calle de las Huertas de Madrid",
+        "content": "Para rematar el mediodía o la tarde del puente sin caer en franquicias, nada como una ruta a pie por las calles peatonales del Barrio de las Letras deteniéndose en Casa Alberto (Calle de las Huertas, 18). Abierta en 1827 en el mismo edificio donde vivió Miguel de Cervantes cuando escribió la segunda parte del Quijote, conserva su fachada de madera roja, su mostrador de ónice y su famoso vermut de grifo servido con bacalao, callos o rabo de toro."
+      }
+    ],
+    "affiliate": {
+      "badge": "Sin colas en el Puente de Octubre",
+      "title": "Entrada rápida al Palacio Real de Madrid",
+      "description": "Si quieres visitar por dentro los salones oficiales, la Real Armería y la Real Botica durante el puente sin esperar la cola de taquilla en la calle Bailén, puedes reservar tu entrada con hora asignada.",
+      "price": "Desde 18 €",
+      "ctaText": "Ver disponibilidad y entradas →",
+      "url": "https://tiqets.tpk.lu/5bf3c7b4"
+    },
+    "faqs": [
+      {
+        "question": "¿Qué museos son gratis en Madrid el 12 de octubre (Día de la Hispanidad)?",
+        "answer": "El 12 de octubre tienen entrada gratuita durante su horario de apertura el Museo del Prado, el Museo Reina Sofía, el Museo Arqueológico Nacional (MAN), el Museo del Romanticismo, el Museo Cerralbo, el Museo Sorolla y el Museo Nacional de Artes Decorativas, entre otros museos estatales."
+      },
+      {
+        "question": "¿Hace falta reservar entrada para el Mercado de Motores en el Puente de Octubre?",
+        "answer": "La entrada al Mercado de Motores en el Museo del Ferrocarril es gratuita, pero es recomendable descargar previamente la invitación gratuita con franja horaria desde su web oficial para entrar sin esperas."
+      }
+    ]
+  },
+  {
     "id": "madrid-planes-este-fin-de-semana-feria-barroca",
     "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
     "title": "5 Planes este Fin de Semana en Madrid (2 al 4 de octubre de 2026): Feria Barroca de Valdemoro, Mercadillos y Rutas Gratis",
