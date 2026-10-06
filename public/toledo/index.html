@@ -158,9 +158,10 @@
 
   <main class="main-container">
     <section class="page-header-section" aria-labelledby="main-hero-heading">
-      <span class="hero-kicker">GUÍA DE TOLEDO</span>
+      
+      <span class="hero-kicker" id="main-hero-kicker">GUÍA DE TOLEDO</span>
       <h1 class="hero-title" id="main-hero-heading">Planes en Toledo: rutas por el Tajo, cobertizos y escapadas de noche</h1>
-      <p class="hero-subtitle">A 33 minutos en tren desde Madrid: rutas a pie por el cañón del Tajo, pasadizos iluminados de noche y rincones fuera de lo turístico.</p>
+      <p class="hero-subtitle" id="main-hero-subtitle">A 33 minutos en tren desde Madrid: rutas a pie por el cañón del Tajo, pasadizos iluminados de noche y rincones fuera de lo turístico.</p>
 
       <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
         <div class="style-pills">
@@ -186,11 +187,11 @@
     <div style="margin: 0 0 2rem 0; padding: 1.1rem 1.4rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
       <div>
         <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta);">🗺️ Nuevo · Mapa Interactivo</span>
-        <div style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
+        <div id="map-banner-title" style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
           Explora todos los planes de Toledo en el mapa con enlace directo a Google Maps
         </div>
       </div>
-      <a href="../mapa/?ciudad=Toledo" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
+      <a id="map-banner-link" href="../mapa/?ciudad=Toledo" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
         Abrir Mapa de Planes →
       </a>
     </div>
@@ -198,7 +199,7 @@
     <section aria-label="Guías de planes">
       <div class="articles-grid" id="articles-grid-container">
         
-  <article class="article-card lead-card" data-category="Planes Diferentes" data-search="qué hacer en toledo en el puente de todos los santos y halloween guía con las actividades especiales de todos los santos (1 de noviembre) y la noche de halloween en toledo: programación escénica en el teatro de rojas, rutas nocturnas por subterráneos, cripta de san andrés, espectáculos del ayuntamiento y dulces de convento. callejón de san ginés pozo amargo y catedral barrio de san andrés conventos de clausura puente de san martín y valle">
+  <article class="article-card lead-card" data-city="Toledo" data-category="Planes Diferentes" data-search="qué hacer en toledo en el puente de todos los santos y halloween guía con las actividades especiales de todos los santos (1 de noviembre) y la noche de halloween en toledo: programación escénica en el teatro de rojas, rutas nocturnas por subterráneos, cripta de san andrés, espectáculos del ayuntamiento y dulces de convento. callejón de san ginés pozo amargo y catedral barrio de san andrés conventos de clausura puente de san martín y valle">
     <a href="../toledo/planes-puente-todos-los-santos-halloween-toledo-leyendas-noche/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/tol-puente-san-martin-niebla.jpg" alt="El Puente de San Martín y el Monasterio de San Juan de los Reyes en Toledo iluminados de noche entre la niebla de otoño" class="card-image" loading="lazy" width="640" height="360" />
@@ -219,7 +220,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en toledo (agenda del 2 al 4 de octubre) si te preguntas qué plan hacer en toledo este fin de semana (del 2 al 4 de octubre de 2026): ruta por el patrimonio subterráneo gratuito, mercado de artesanía en la judería, senda del tajo con colores de otoño y los cobertizos al anochecer. judería / san juan de los reyes cobertizos senda del tajo zocodover">
+  <article class="article-card" data-city="Toledo" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en toledo (agenda del 2 al 4 de octubre) si te preguntas qué plan hacer en toledo este fin de semana (del 2 al 4 de octubre de 2026): ruta por el patrimonio subterráneo gratuito, mercado de artesanía en la judería, senda del tajo con colores de otoño y los cobertizos al anochecer. judería / san juan de los reyes cobertizos senda del tajo zocodover">
     <a href="../toledo/planes-este-fin-de-semana-toledo-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/tol-san-juan-reyes.jpg" alt="Monasterio gótico de San Juan de los Reyes en la Judería de Toledo" class="card-image" loading="lazy" width="640" height="360" />
@@ -240,7 +241,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="5 planes gratis en toledo más allá de lo turístico cinco planes gratuitos en toledo para descubrir la ciudad sin pagar entradas ni hacer colas: desde cruzar el puente medieval de san martín sobre el tajo hasta bajar a las bóvedas romanas del consorcio. puente de san martín / judería senda ecológica del tajo centro histórico (subterráneos) barrio de los conventos">
+  <article class="article-card" data-city="Toledo" data-category="Gratis y Baratos" data-search="5 planes gratis en toledo más allá de lo turístico cinco planes gratuitos en toledo para descubrir la ciudad sin pagar entradas ni hacer colas: desde cruzar el puente medieval de san martín sobre el tajo hasta bajar a las bóvedas romanas del consorcio. puente de san martín / judería senda ecológica del tajo centro histórico (subterráneos) barrio de los conventos">
     <a href="../toledo/planes-gratis-en-toledo-fuera-de-lo-turistico/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/planes-gratis-toledo-puente-san-martin.jpg" alt="Puente medieval de San Martín reflejado sobre el río Tajo en Toledo" class="card-image" loading="lazy" width="640" height="360" />
@@ -261,7 +262,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="la senda ecológica del tajo: ruta a pie gratis en toledo la mayoría de quienes visitan toledo suben directamente a zocodover y nunca bajan al cañón del río que abraza la ciudad. te proponemos recorrer a pie y gratis el camino junto al agua desde el puente de alcántara hasta el puente de san martín. puente de alcántara cañón del tajo / cerro del bú puente de san martín / judería">
+  <article class="article-card" data-city="Toledo" data-category="Gratis y Baratos" data-search="la senda ecológica del tajo: ruta a pie gratis en toledo la mayoría de quienes visitan toledo suben directamente a zocodover y nunca bajan al cañón del río que abraza la ciudad. te proponemos recorrer a pie y gratis el camino junto al agua desde el puente de alcántara hasta el puente de san martín. puente de alcántara cañón del tajo / cerro del bú puente de san martín / judería">
     <a href="../toledo/senda-ecologica-del-tajo-toledo-ruta-a-pie-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/tol-puente-alcantara.jpg" alt="Arcos de piedra del Puente de Alcántara sobre el río Tajo al inicio de la Senda Ecológica de Toledo" class="card-image" loading="lazy" width="640" height="360" />
@@ -282,7 +283,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="En Pareja" data-search="qué hacer en toledo de noche en pareja a las 19:00 horas ocurre un pequeño milagro en toledo: los grupos de excursionistas vuelven a madrid y el casco histórico medieval se queda en silencio bajo los faroles de forja. barrio de los conventos judería mayor cobertizos valle de toledo">
+  <article class="article-card" data-city="Toledo" data-category="En Pareja" data-search="qué hacer en toledo de noche en pareja a las 19:00 horas ocurre un pequeño milagro en toledo: los grupos de excursionistas vuelven a madrid y el casco histórico medieval se queda en silencio bajo los faroles de forja. barrio de los conventos judería mayor cobertizos valle de toledo">
     <a href="../toledo/que-hacer-en-toledo-de-noche-en-pareja/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/tol-panoramica-noche.jpg" alt="Vista panorámica del Alcázar y las murallas de Toledo sobre el cañón del río Tajo" class="card-image" loading="lazy" width="640" height="360" />
@@ -320,7 +321,7 @@
         Índice completo de guías verificadas en Toledo:
       </p>
       <ul style="margin-left: 1.25rem; line-height: 1.75;">
-        <li style="margin-bottom:0.35rem;"><a href="../toledo/planes-puente-todos-los-santos-halloween-toledo-leyendas-noche/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Qué hacer en Toledo en el Puente de Todos los Santos y Halloween</a> — Gratis – 14 €</li><li style="margin-bottom:0.35rem;"><a href="../toledo/planes-este-fin-de-semana-toledo-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Qué hacer este fin de semana en Toledo (agenda del 2 al 4 de octubre)</a> — Gratis (0 € – 10 €)</li><li style="margin-bottom:0.35rem;"><a href="../toledo/planes-gratis-en-toledo-fuera-de-lo-turistico/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">5 planes gratis en Toledo más allá de lo turístico</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../toledo/senda-ecologica-del-tajo-toledo-ruta-a-pie-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">La Senda Ecológica del Tajo: ruta a pie gratis en Toledo</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../toledo/que-hacer-en-toledo-de-noche-en-pareja/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Qué hacer en Toledo de noche en pareja</a> — 0 € – 28 €</li>
+        <li style="margin-bottom:0.35rem;"><a href="../toledo/planes-puente-todos-los-santos-halloween-toledo-leyendas-noche/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Toledo:</strong> Qué hacer en Toledo en el Puente de Todos los Santos y Halloween</a> — Gratis – 14 €</li><li style="margin-bottom:0.35rem;"><a href="../toledo/planes-este-fin-de-semana-toledo-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Toledo:</strong> Qué hacer este fin de semana en Toledo (agenda del 2 al 4 de octubre)</a> — Gratis (0 € – 10 €)</li><li style="margin-bottom:0.35rem;"><a href="../toledo/planes-gratis-en-toledo-fuera-de-lo-turistico/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Toledo:</strong> 5 planes gratis en Toledo más allá de lo turístico</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../toledo/senda-ecologica-del-tajo-toledo-ruta-a-pie-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Toledo:</strong> La Senda Ecológica del Tajo: ruta a pie gratis en Toledo</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../toledo/que-hacer-en-toledo-de-noche-en-pareja/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Toledo:</strong> Qué hacer en Toledo de noche en pareja</a> — 0 € – 28 €</li>
       </ul>
       
       <div style="margin-top: 2rem;">
@@ -420,22 +421,74 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const pageCityMode = "Toledo";
+      const CITY_STORAGE_KEY = 'qph_preferred_city';
       const pills = document.querySelectorAll('.style-pill-btn');
+      const cityPickCards = document.querySelectorAll('.city-pick-card');
       const searchInput = document.getElementById('article-search-input');
       const cards = document.querySelectorAll('.article-card');
+      const heroKicker = document.getElementById('main-hero-kicker');
+      const heroHeading = document.getElementById('main-hero-heading');
+      const heroSubtitle = document.getElementById('main-hero-subtitle');
+      const hubDirectLink = document.getElementById('city-hub-direct-link');
+      const mapBannerTitle = document.getElementById('map-banner-title');
+      const mapBannerLink = document.getElementById('map-banner-link');
+
       let currentCat = 'all';
       let currentQuery = '';
+      let currentCity = pageCityMode === 'all' ? 'Madrid' : pageCityMode;
+
+      if (pageCityMode !== 'all') {
+        try { localStorage.setItem(CITY_STORAGE_KEY, pageCityMode); } catch (e) {}
+      } else {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const urlCity = params.get('ciudad');
+          const savedCity = localStorage.getItem(CITY_STORAGE_KEY);
+          if (urlCity && document.querySelector(`.city-pick-card[data-city="${urlCity}"]`)) {
+            currentCity = urlCity;
+          } else if (savedCity && document.querySelector(`.city-pick-card[data-city="${savedCity}"]`)) {
+            currentCity = savedCity;
+          }
+        } catch (e) {}
+      }
+
+      function updateCityContext(cityBtn) {
+        if (!cityBtn) return;
+        const cName = cityBtn.getAttribute('data-city');
+        const cSlug = cityBtn.getAttribute('data-slug');
+        const cH1 = cityBtn.getAttribute('data-h1');
+        const cIntro = cityBtn.getAttribute('data-intro');
+        const cKicker = cityBtn.getAttribute('data-kicker');
+
+        cityPickCards.forEach(b => b.classList.toggle('active', b === cityBtn));
+        if (heroKicker && cKicker) heroKicker.textContent = cKicker;
+        if (heroHeading && cH1) heroHeading.textContent = cH1;
+        if (heroSubtitle && cIntro) heroSubtitle.textContent = cIntro;
+        if (hubDirectLink && cSlug) {
+          hubDirectLink.href = cSlug + '/';
+          hubDirectLink.textContent = 'Ir a la página completa de ' + cName + ' →';
+        }
+        if (mapBannerTitle) {
+          mapBannerTitle.textContent = 'Explora todos los planes de ' + cName + ' en el mapa con enlace directo a Google Maps';
+        }
+        if (mapBannerLink) {
+          mapBannerLink.href = 'mapa/?ciudad=' + encodeURIComponent(cName);
+        }
+      }
 
       function applyFilters() {
         let firstVisible = true;
         cards.forEach(card => {
+          const cardCity = card.getAttribute('data-city');
           const cat = card.getAttribute('data-category');
           const text = card.getAttribute('data-search') || '';
+          const matchCity = pageCityMode !== 'all' || cardCity === currentCity;
           const matchCat = currentCat === 'all' || cat === currentCat;
           const matchQuery = !currentQuery || text.includes(currentQuery);
-          if (matchCat && matchQuery) {
+          if (matchCity && matchCat && matchQuery) {
             card.style.display = 'flex';
-            if (firstVisible && cards.length > 1 && currentCat === 'all' && !currentQuery) {
+            if (firstVisible && currentCat === 'all' && !currentQuery) {
               card.classList.add('lead-card');
             } else {
               card.classList.remove('lead-card');
@@ -443,7 +496,25 @@
             firstVisible = false;
           } else {
             card.style.display = 'none';
+            card.classList.remove('lead-card');
           }
+        });
+      }
+
+      if (pageCityMode === 'all' && cityPickCards.length > 0) {
+        const initialBtn = document.querySelector(`.city-pick-card[data-city="${currentCity}"]`) || cityPickCards[0];
+        if (initialBtn) {
+          currentCity = initialBtn.getAttribute('data-city');
+          updateCityContext(initialBtn);
+          applyFilters();
+        }
+        cityPickCards.forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentCity = btn.getAttribute('data-city');
+            try { localStorage.setItem(CITY_STORAGE_KEY, currentCity); } catch (e) {}
+            updateCityContext(btn);
+            applyFilters();
+          });
         });
       }
 

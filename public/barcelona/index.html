@@ -152,9 +152,10 @@
 
   <main class="main-container">
     <section class="page-header-section" aria-labelledby="main-hero-heading">
-      <span class="hero-kicker">GUÍA DE BARCELONA</span>
+      
+      <span class="hero-kicker" id="main-hero-kicker">GUÍA DE BARCELONA</span>
       <h1 class="hero-title" id="main-hero-heading">Planes en Barcelona: miradores, jardines secretos y citas sin colas</h1>
-      <p class="hero-subtitle">Una Barcelona lejos de las aglomeraciones: desde jardines neoclásicos gratuitos y rutas por el Born y Montjuïc hasta miradores tranquilos con vistas al Mediterráneo.</p>
+      <p class="hero-subtitle" id="main-hero-subtitle">Una Barcelona lejos de las aglomeraciones: desde jardines neoclásicos gratuitos y rutas por el Born y Montjuïc hasta miradores tranquilos con vistas al Mediterráneo.</p>
 
       <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
         <div class="style-pills">
@@ -180,11 +181,11 @@
     <div style="margin: 0 0 2rem 0; padding: 1.1rem 1.4rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
       <div>
         <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta);">🗺️ Nuevo · Mapa Interactivo</span>
-        <div style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
+        <div id="map-banner-title" style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
           Explora todos los planes de Barcelona en el mapa con enlace directo a Google Maps
         </div>
       </div>
-      <a href="../mapa/?ciudad=Barcelona" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
+      <a id="map-banner-link" href="../mapa/?ciudad=Barcelona" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
         Abrir Mapa de Planes →
       </a>
     </div>
@@ -192,7 +193,7 @@
     <section aria-label="Guías de planes">
       <div class="articles-grid" id="articles-grid-container">
         
-  <article class="article-card lead-card" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en barcelona (agenda del 2 al 4 de octubre) si buscas qué plan hacer en barcelona este fin de semana (del 2 al 4 de octubre de 2026): arranque de la fiesta mayor de les corts, mercados al aire libre en el born, primer domingo de museos gratis y vermut en gràcia. el born les corts montjuïc gràcia">
+  <article class="article-card lead-card" data-city="Barcelona" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en barcelona (agenda del 2 al 4 de octubre) si buscas qué plan hacer en barcelona este fin de semana (del 2 al 4 de octubre de 2026): arranque de la fiesta mayor de les corts, mercados al aire libre en el born, primer domingo de museos gratis y vermut en gràcia. el born les corts montjuïc gràcia">
     <a href="../barcelona/planes-este-fin-de-semana-barcelona-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/bcn-mercat-del-born.jpg" alt="Estructura histórica de hierro y cristal del antiguo Mercat del Born en Barcelona" class="card-image" loading="lazy" width="640" height="360" />
@@ -213,7 +214,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="ruta por el laberinto de horta: el jardín más antiguo de barcelona olvida las prisas y dedica una mañana completa a descubrir el jardín histórico más antiguo que se conserva en barcelona (1791): un laberinto de cipreses, templetes italianos, grutas mitológicas y un almuerzo de barrio en la plaça d&#x27;eivissa. horta mundet / collserola">
+  <article class="article-card" data-city="Barcelona" data-category="Gratis y Baratos" data-search="ruta por el laberinto de horta: el jardín más antiguo de barcelona olvida las prisas y dedica una mañana completa a descubrir el jardín histórico más antiguo que se conserva en barcelona (1791): un laberinto de cipreses, templetes italianos, grutas mitológicas y un almuerzo de barrio en la plaça d&#x27;eivissa. horta mundet / collserola">
     <a href="../barcelona/visitar-laberinto-de-horta-barcelona-guia-completa-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/bcn-laberint-horta.jpg" alt="Vista aérea del laberinto de cipreses y los templetes neoclásicos del Parc del Laberint d&#x27;Horta en Barcelona" class="card-image" loading="lazy" width="640" height="360" />
@@ -234,7 +235,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="En Pareja" data-search="5 citas originales en barcelona para sorprender en pareja cinco planes en pareja en barcelona para salir de la cena de siempre: desde recorrer jardines modernistas y laberintos del siglo xviii hasta escuchar jazz en directo bajo bóvedas medievales. el guinardó / sant pau horta montjuïc el born">
+  <article class="article-card" data-city="Barcelona" data-category="En Pareja" data-search="5 citas originales en barcelona para sorprender en pareja cinco planes en pareja en barcelona para salir de la cena de siempre: desde recorrer jardines modernistas y laberintos del siglo xviii hasta escuchar jazz en directo bajo bóvedas medievales. el guinardó / sant pau horta montjuïc el born">
     <a href="../barcelona/citas-originales-barcelona-en-pareja-jardines-jazz/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/citas-originales-barcelona-sant-pau.jpg" alt="Fachada principal iluminada del Recinto Modernista de Sant Pau en Barcelona" class="card-image" loading="lazy" width="640" height="360" />
@@ -255,7 +256,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="6 miradores alternativos y gratuitos en barcelona desde que cerraron el acceso nocturno a los bunkers del carmel, los barceloneses tienen nuevos rincones para ver caer el sol sobre el mediterráneo sin agobios y sin gastar un euro. montjuïc el born horta-guinardó sarrià">
+  <article class="article-card" data-city="Barcelona" data-category="Gratis y Baratos" data-search="6 miradores alternativos y gratuitos en barcelona desde que cerraron el acceso nocturno a los bunkers del carmel, los barceloneses tienen nuevos rincones para ver caer el sol sobre el mediterráneo sin agobios y sin gastar un euro. montjuïc el born horta-guinardó sarrià">
     <a href="../barcelona/miradores-alternativos-barcelona-planes-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/bcn-teatre-grec-laribal.jpg" alt="Anfiteatro de piedra y jardines del Teatre Grec en la montaña de Montjuïc en Barcelona" class="card-image" loading="lazy" width="640" height="360" />
@@ -293,7 +294,7 @@
         Índice completo de guías verificadas en Barcelona:
       </p>
       <ul style="margin-left: 1.25rem; line-height: 1.75;">
-        <li style="margin-bottom:0.35rem;"><a href="../barcelona/planes-este-fin-de-semana-barcelona-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Qué hacer este fin de semana en Barcelona (agenda del 2 al 4 de octubre)</a> — Gratis (0 € – 10 €)</li><li style="margin-bottom:0.35rem;"><a href="../barcelona/visitar-laberinto-de-horta-barcelona-guia-completa-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Ruta por el Laberinto de Horta: el jardín más antiguo de Barcelona</a> — Gratis miércoles y domingos (2,23 € resto)</li><li style="margin-bottom:0.35rem;"><a href="../barcelona/citas-originales-barcelona-en-pareja-jardines-jazz/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">5 citas originales en Barcelona para sorprender en pareja</a> — 0 € – 16 €</li><li style="margin-bottom:0.35rem;"><a href="../barcelona/miradores-alternativos-barcelona-planes-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">6 miradores alternativos y gratuitos en Barcelona</a> — Gratis (0 €)</li>
+        <li style="margin-bottom:0.35rem;"><a href="../barcelona/planes-este-fin-de-semana-barcelona-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Barcelona:</strong> Qué hacer este fin de semana en Barcelona (agenda del 2 al 4 de octubre)</a> — Gratis (0 € – 10 €)</li><li style="margin-bottom:0.35rem;"><a href="../barcelona/visitar-laberinto-de-horta-barcelona-guia-completa-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Barcelona:</strong> Ruta por el Laberinto de Horta: el jardín más antiguo de Barcelona</a> — Gratis miércoles y domingos (2,23 € resto)</li><li style="margin-bottom:0.35rem;"><a href="../barcelona/citas-originales-barcelona-en-pareja-jardines-jazz/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Barcelona:</strong> 5 citas originales en Barcelona para sorprender en pareja</a> — 0 € – 16 €</li><li style="margin-bottom:0.35rem;"><a href="../barcelona/miradores-alternativos-barcelona-planes-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Barcelona:</strong> 6 miradores alternativos y gratuitos en Barcelona</a> — Gratis (0 €)</li>
       </ul>
       
       <div style="margin-top: 2rem;">
@@ -393,22 +394,74 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const pageCityMode = "Barcelona";
+      const CITY_STORAGE_KEY = 'qph_preferred_city';
       const pills = document.querySelectorAll('.style-pill-btn');
+      const cityPickCards = document.querySelectorAll('.city-pick-card');
       const searchInput = document.getElementById('article-search-input');
       const cards = document.querySelectorAll('.article-card');
+      const heroKicker = document.getElementById('main-hero-kicker');
+      const heroHeading = document.getElementById('main-hero-heading');
+      const heroSubtitle = document.getElementById('main-hero-subtitle');
+      const hubDirectLink = document.getElementById('city-hub-direct-link');
+      const mapBannerTitle = document.getElementById('map-banner-title');
+      const mapBannerLink = document.getElementById('map-banner-link');
+
       let currentCat = 'all';
       let currentQuery = '';
+      let currentCity = pageCityMode === 'all' ? 'Madrid' : pageCityMode;
+
+      if (pageCityMode !== 'all') {
+        try { localStorage.setItem(CITY_STORAGE_KEY, pageCityMode); } catch (e) {}
+      } else {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const urlCity = params.get('ciudad');
+          const savedCity = localStorage.getItem(CITY_STORAGE_KEY);
+          if (urlCity && document.querySelector(`.city-pick-card[data-city="${urlCity}"]`)) {
+            currentCity = urlCity;
+          } else if (savedCity && document.querySelector(`.city-pick-card[data-city="${savedCity}"]`)) {
+            currentCity = savedCity;
+          }
+        } catch (e) {}
+      }
+
+      function updateCityContext(cityBtn) {
+        if (!cityBtn) return;
+        const cName = cityBtn.getAttribute('data-city');
+        const cSlug = cityBtn.getAttribute('data-slug');
+        const cH1 = cityBtn.getAttribute('data-h1');
+        const cIntro = cityBtn.getAttribute('data-intro');
+        const cKicker = cityBtn.getAttribute('data-kicker');
+
+        cityPickCards.forEach(b => b.classList.toggle('active', b === cityBtn));
+        if (heroKicker && cKicker) heroKicker.textContent = cKicker;
+        if (heroHeading && cH1) heroHeading.textContent = cH1;
+        if (heroSubtitle && cIntro) heroSubtitle.textContent = cIntro;
+        if (hubDirectLink && cSlug) {
+          hubDirectLink.href = cSlug + '/';
+          hubDirectLink.textContent = 'Ir a la página completa de ' + cName + ' →';
+        }
+        if (mapBannerTitle) {
+          mapBannerTitle.textContent = 'Explora todos los planes de ' + cName + ' en el mapa con enlace directo a Google Maps';
+        }
+        if (mapBannerLink) {
+          mapBannerLink.href = 'mapa/?ciudad=' + encodeURIComponent(cName);
+        }
+      }
 
       function applyFilters() {
         let firstVisible = true;
         cards.forEach(card => {
+          const cardCity = card.getAttribute('data-city');
           const cat = card.getAttribute('data-category');
           const text = card.getAttribute('data-search') || '';
+          const matchCity = pageCityMode !== 'all' || cardCity === currentCity;
           const matchCat = currentCat === 'all' || cat === currentCat;
           const matchQuery = !currentQuery || text.includes(currentQuery);
-          if (matchCat && matchQuery) {
+          if (matchCity && matchCat && matchQuery) {
             card.style.display = 'flex';
-            if (firstVisible && cards.length > 1 && currentCat === 'all' && !currentQuery) {
+            if (firstVisible && currentCat === 'all' && !currentQuery) {
               card.classList.add('lead-card');
             } else {
               card.classList.remove('lead-card');
@@ -416,7 +469,25 @@
             firstVisible = false;
           } else {
             card.style.display = 'none';
+            card.classList.remove('lead-card');
           }
+        });
+      }
+
+      if (pageCityMode === 'all' && cityPickCards.length > 0) {
+        const initialBtn = document.querySelector(`.city-pick-card[data-city="${currentCity}"]`) || cityPickCards[0];
+        if (initialBtn) {
+          currentCity = initialBtn.getAttribute('data-city');
+          updateCityContext(initialBtn);
+          applyFilters();
+        }
+        cityPickCards.forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentCity = btn.getAttribute('data-city');
+            try { localStorage.setItem(CITY_STORAGE_KEY, currentCity); } catch (e) {}
+            updateCityContext(btn);
+            applyFilters();
+          });
         });
       }
 

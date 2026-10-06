@@ -152,9 +152,10 @@
 
   <main class="main-container">
     <section class="page-header-section" aria-labelledby="main-hero-heading">
-      <span class="hero-kicker">GUÍA DE SEVILLA</span>
+      
+      <span class="hero-kicker" id="main-hero-kicker">GUÍA DE SEVILLA</span>
       <h1 class="hero-title" id="main-hero-heading">Planes en Sevilla: casas-palacio, patios ocultos y rutas al atardecer</h1>
-      <p class="hero-subtitle">Palacios mudéjares gratuitos, mercadillos históricos, patios silenciosos y rutas al anochecer por la antigua judería y Triana.</p>
+      <p class="hero-subtitle" id="main-hero-subtitle">Palacios mudéjares gratuitos, mercadillos históricos, patios silenciosos y rutas al anochecer por la antigua judería y Triana.</p>
 
       <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
         <div class="style-pills">
@@ -180,11 +181,11 @@
     <div style="margin: 0 0 2rem 0; padding: 1.1rem 1.4rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
       <div>
         <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta);">🗺️ Nuevo · Mapa Interactivo</span>
-        <div style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
+        <div id="map-banner-title" style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
           Explora todos los planes de Sevilla en el mapa con enlace directo a Google Maps
         </div>
       </div>
-      <a href="../mapa/?ciudad=Sevilla" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
+      <a id="map-banner-link" href="../mapa/?ciudad=Sevilla" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
         Abrir Mapa de Planes →
       </a>
     </div>
@@ -192,7 +193,7 @@
     <section aria-label="Guías de planes">
       <div class="articles-grid" id="articles-grid-container">
         
-  <article class="article-card lead-card" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en sevilla (agenda del 2 al 4 de octubre) qué plan hacer en sevilla este fin de semana (del 2 al 4 de octubre de 2026) aprovechando que bajan las temperaturas: el mercadillo de arte en la plaza del museo, casas-palacio gratuitas y ruta de tapeo por triana. museo / arenal santa cruz triana alameda">
+  <article class="article-card lead-card" data-city="Sevilla" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en sevilla (agenda del 2 al 4 de octubre) qué plan hacer en sevilla este fin de semana (del 2 al 4 de octubre de 2026) aprovechando que bajan las temperaturas: el mercadillo de arte en la plaza del museo, casas-palacio gratuitas y ruta de tapeo por triana. museo / arenal santa cruz triana alameda">
     <a href="../sevilla/planes-este-fin-de-semana-sevilla-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/sev-plaza-del-museo.jpg" alt="Plaza del Museo y fachada del Museo de Bellas Artes de Sevilla rodeada de arbolado" class="card-image" loading="lazy" width="640" height="360" />
@@ -213,7 +214,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="ruta por el palacio de los marqueses de la algaba y la calle feria a diez minutos a pie de las setas pero lejos del turismo masivo del barrio de santa cruz, te proponemos una ruta de mañana por sevilla: entrar gratis a un palacio mudéjar de 1474, explorar el mercadillo más antiguo de europa y tapear en el mercado de feria. calle feria alameda de hércules macarena">
+  <article class="article-card" data-city="Sevilla" data-category="Gratis y Baratos" data-search="ruta por el palacio de los marqueses de la algaba y la calle feria a diez minutos a pie de las setas pero lejos del turismo masivo del barrio de santa cruz, te proponemos una ruta de mañana por sevilla: entrar gratis a un palacio mudéjar de 1474, explorar el mercadillo más antiguo de europa y tapear en el mercado de feria. calle feria alameda de hércules macarena">
     <a href="../sevilla/palacio-marqueses-de-la-algaba-calle-feria-sevilla-plan-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/sev-marqueses-algaba.jpg" alt="Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en el barrio de Feria de Sevilla" class="card-image" loading="lazy" width="640" height="360" />
@@ -234,7 +235,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="5 planes gratis en sevilla fuera de lo típico cinco rincones y planes gratuitos en sevilla para huir de las colas del centro: desde la arquitectura regionalista de la plaza de américa hasta palacios mudéjares del siglo xv de entrada libre. parque de maría luisa calle feria triana santa cruz">
+  <article class="article-card" data-city="Sevilla" data-category="Gratis y Baratos" data-search="5 planes gratis en sevilla fuera de lo típico cinco rincones y planes gratuitos en sevilla para huir de las colas del centro: desde la arquitectura regionalista de la plaza de américa hasta palacios mudéjares del siglo xv de entrada libre. parque de maría luisa calle feria triana santa cruz">
     <a href="../sevilla/planes-gratis-en-sevilla-fuera-de-lo-tipico/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/planes-gratis-sevilla-pabellon-mudejar.jpg" alt="Fachada de ladrillo tallado y cerámica vidriada del Pabellón Mudéjar en la Plaza de América del Parque de María Luisa en Sevilla" class="card-image" loading="lazy" width="640" height="360" />
@@ -255,7 +256,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="En Pareja" data-search="5 planes en pareja en sevilla diferentes y baratos mientras todo el mundo hace cola en el real alcázar, hay casas-palacio mudéjares en sevilla llenas de buganvillas y azulejos del siglo xvi donde puedes pasear casi a solas con tu pareja. santa cruz triana feria / alameda san bartolomé">
+  <article class="article-card" data-city="Sevilla" data-category="En Pareja" data-search="5 planes en pareja en sevilla diferentes y baratos mientras todo el mundo hace cola en el real alcázar, hay casas-palacio mudéjares en sevilla llenas de buganvillas y azulejos del siglo xvi donde puedes pasear casi a solas con tu pareja. santa cruz triana feria / alameda san bartolomé">
     <a href="../sevilla/planes-en-sevilla-en-pareja-diferentes-baratos/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/sev-patio-santa-cruz.jpg" alt="Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en Sevilla" class="card-image" loading="lazy" width="640" height="360" />
@@ -293,7 +294,7 @@
         Índice completo de guías verificadas en Sevilla:
       </p>
       <ul style="margin-left: 1.25rem; line-height: 1.75;">
-        <li style="margin-bottom:0.35rem;"><a href="../sevilla/planes-este-fin-de-semana-sevilla-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Qué hacer este fin de semana en Sevilla (agenda del 2 al 4 de octubre)</a> — Gratis (0 € – 8 €)</li><li style="margin-bottom:0.35rem;"><a href="../sevilla/palacio-marqueses-de-la-algaba-calle-feria-sevilla-plan-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Ruta por el Palacio de los Marqueses de la Algaba y la Calle Feria</a> — Entrada 100% Gratis (Tapas desde 3,20 €)</li><li style="margin-bottom:0.35rem;"><a href="../sevilla/planes-gratis-en-sevilla-fuera-de-lo-tipico/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">5 planes gratis en Sevilla fuera de lo típico</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../sevilla/planes-en-sevilla-en-pareja-diferentes-baratos/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">5 planes en pareja en Sevilla diferentes y baratos</a> — 0 € – 18 €</li>
+        <li style="margin-bottom:0.35rem;"><a href="../sevilla/planes-este-fin-de-semana-sevilla-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Sevilla:</strong> Qué hacer este fin de semana en Sevilla (agenda del 2 al 4 de octubre)</a> — Gratis (0 € – 8 €)</li><li style="margin-bottom:0.35rem;"><a href="../sevilla/palacio-marqueses-de-la-algaba-calle-feria-sevilla-plan-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Sevilla:</strong> Ruta por el Palacio de los Marqueses de la Algaba y la Calle Feria</a> — Entrada 100% Gratis (Tapas desde 3,20 €)</li><li style="margin-bottom:0.35rem;"><a href="../sevilla/planes-gratis-en-sevilla-fuera-de-lo-tipico/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Sevilla:</strong> 5 planes gratis en Sevilla fuera de lo típico</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../sevilla/planes-en-sevilla-en-pareja-diferentes-baratos/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Sevilla:</strong> 5 planes en pareja en Sevilla diferentes y baratos</a> — 0 € – 18 €</li>
       </ul>
       
       <div style="margin-top: 2rem;">
@@ -393,22 +394,74 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const pageCityMode = "Sevilla";
+      const CITY_STORAGE_KEY = 'qph_preferred_city';
       const pills = document.querySelectorAll('.style-pill-btn');
+      const cityPickCards = document.querySelectorAll('.city-pick-card');
       const searchInput = document.getElementById('article-search-input');
       const cards = document.querySelectorAll('.article-card');
+      const heroKicker = document.getElementById('main-hero-kicker');
+      const heroHeading = document.getElementById('main-hero-heading');
+      const heroSubtitle = document.getElementById('main-hero-subtitle');
+      const hubDirectLink = document.getElementById('city-hub-direct-link');
+      const mapBannerTitle = document.getElementById('map-banner-title');
+      const mapBannerLink = document.getElementById('map-banner-link');
+
       let currentCat = 'all';
       let currentQuery = '';
+      let currentCity = pageCityMode === 'all' ? 'Madrid' : pageCityMode;
+
+      if (pageCityMode !== 'all') {
+        try { localStorage.setItem(CITY_STORAGE_KEY, pageCityMode); } catch (e) {}
+      } else {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const urlCity = params.get('ciudad');
+          const savedCity = localStorage.getItem(CITY_STORAGE_KEY);
+          if (urlCity && document.querySelector(`.city-pick-card[data-city="${urlCity}"]`)) {
+            currentCity = urlCity;
+          } else if (savedCity && document.querySelector(`.city-pick-card[data-city="${savedCity}"]`)) {
+            currentCity = savedCity;
+          }
+        } catch (e) {}
+      }
+
+      function updateCityContext(cityBtn) {
+        if (!cityBtn) return;
+        const cName = cityBtn.getAttribute('data-city');
+        const cSlug = cityBtn.getAttribute('data-slug');
+        const cH1 = cityBtn.getAttribute('data-h1');
+        const cIntro = cityBtn.getAttribute('data-intro');
+        const cKicker = cityBtn.getAttribute('data-kicker');
+
+        cityPickCards.forEach(b => b.classList.toggle('active', b === cityBtn));
+        if (heroKicker && cKicker) heroKicker.textContent = cKicker;
+        if (heroHeading && cH1) heroHeading.textContent = cH1;
+        if (heroSubtitle && cIntro) heroSubtitle.textContent = cIntro;
+        if (hubDirectLink && cSlug) {
+          hubDirectLink.href = cSlug + '/';
+          hubDirectLink.textContent = 'Ir a la página completa de ' + cName + ' →';
+        }
+        if (mapBannerTitle) {
+          mapBannerTitle.textContent = 'Explora todos los planes de ' + cName + ' en el mapa con enlace directo a Google Maps';
+        }
+        if (mapBannerLink) {
+          mapBannerLink.href = 'mapa/?ciudad=' + encodeURIComponent(cName);
+        }
+      }
 
       function applyFilters() {
         let firstVisible = true;
         cards.forEach(card => {
+          const cardCity = card.getAttribute('data-city');
           const cat = card.getAttribute('data-category');
           const text = card.getAttribute('data-search') || '';
+          const matchCity = pageCityMode !== 'all' || cardCity === currentCity;
           const matchCat = currentCat === 'all' || cat === currentCat;
           const matchQuery = !currentQuery || text.includes(currentQuery);
-          if (matchCat && matchQuery) {
+          if (matchCity && matchCat && matchQuery) {
             card.style.display = 'flex';
-            if (firstVisible && cards.length > 1 && currentCat === 'all' && !currentQuery) {
+            if (firstVisible && currentCat === 'all' && !currentQuery) {
               card.classList.add('lead-card');
             } else {
               card.classList.remove('lead-card');
@@ -416,7 +469,25 @@
             firstVisible = false;
           } else {
             card.style.display = 'none';
+            card.classList.remove('lead-card');
           }
+        });
+      }
+
+      if (pageCityMode === 'all' && cityPickCards.length > 0) {
+        const initialBtn = document.querySelector(`.city-pick-card[data-city="${currentCity}"]`) || cityPickCards[0];
+        if (initialBtn) {
+          currentCity = initialBtn.getAttribute('data-city');
+          updateCityContext(initialBtn);
+          applyFilters();
+        }
+        cityPickCards.forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentCity = btn.getAttribute('data-city');
+            try { localStorage.setItem(CITY_STORAGE_KEY, currentCity); } catch (e) {}
+            updateCityContext(btn);
+            applyFilters();
+          });
         });
       }
 

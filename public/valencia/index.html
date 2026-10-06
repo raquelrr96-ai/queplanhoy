@@ -152,9 +152,10 @@
 
   <main class="main-container">
     <section class="page-header-section" aria-labelledby="main-hero-heading">
-      <span class="hero-kicker">GUÍA DE VALENCIA</span>
+      
+      <span class="hero-kicker" id="main-hero-kicker">GUÍA DE VALENCIA</span>
       <h1 class="hero-title" id="main-hero-heading">Planes en Valencia: L&#x27;Albufera, jardines secretos y cultura local</h1>
-      <p class="hero-subtitle">Escapadas paso a paso en autobús urbano a L&#x27;Albufera, jardines neoclásicos escondidos y tapeo en las bodegas históricas de El Cabanyal.</p>
+      <p class="hero-subtitle" id="main-hero-subtitle">Escapadas paso a paso en autobús urbano a L&#x27;Albufera, jardines neoclásicos escondidos y tapeo en las bodegas históricas de El Cabanyal.</p>
 
       <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
         <div class="style-pills">
@@ -180,11 +181,11 @@
     <div style="margin: 0 0 2rem 0; padding: 1.1rem 1.4rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
       <div>
         <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta);">🗺️ Nuevo · Mapa Interactivo</span>
-        <div style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
+        <div id="map-banner-title" style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
           Explora todos los planes de Valencia en el mapa con enlace directo a Google Maps
         </div>
       </div>
-      <a href="../mapa/?ciudad=Valencia" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
+      <a id="map-banner-link" href="../mapa/?ciudad=Valencia" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
         Abrir Mapa de Planes →
       </a>
     </div>
@@ -192,7 +193,7 @@
     <section aria-label="Guías de planes">
       <div class="articles-grid" id="articles-grid-container">
         
-  <article class="article-card lead-card" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en valencia (especial 9 d&#x27;octubre) qué plan hacer en valencia este fin de semana (del 2 al 4 de octubre de 2026): ambiente previo al 9 d&#x27;octubre en el cauce del turia, puertas abiertas en el palau de la generalitat, ruta por el cabanyal y puesta de sol en la albufera. jardín del turia el carmen el cabanyal l&#x27;albufera">
+  <article class="article-card lead-card" data-city="Valencia" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en valencia (especial 9 d&#x27;octubre) qué plan hacer en valencia este fin de semana (del 2 al 4 de octubre de 2026): ambiente previo al 9 d&#x27;octubre en el cauce del turia, puertas abiertas en el palau de la generalitat, ruta por el cabanyal y puesta de sol en la albufera. jardín del turia el carmen el cabanyal l&#x27;albufera">
     <a href="../valencia/planes-este-fin-de-semana-valencia-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/vlc-palau-generalitat.jpg" alt="Fachada gótica y torre del Palau de la Generalitat Valenciana en el barrio del Carmen" class="card-image" loading="lazy" width="640" height="360" />
@@ -213,7 +214,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="cómo ir a la albufera y el palmar en autobús desde valencia muchos viajeros y vecinos creen que hace falta coche para pasar el día en l&#x27;albufera. te explicamos paso a paso cómo hacer el plan más especial de valencia utilizando el autobús urbano de la emt: pinada, dunas, barracas y puesta de sol sobre el agua. devesa del saler gola de pujol el palmar (l&#x27;albufera)">
+  <article class="article-card" data-city="Valencia" data-category="Gratis y Baratos" data-search="cómo ir a la albufera y el palmar en autobús desde valencia muchos viajeros y vecinos creen que hace falta coche para pasar el día en l&#x27;albufera. te explicamos paso a paso cómo hacer el plan más especial de valencia utilizando el autobús urbano de la emt: pinada, dunas, barracas y puesta de sol sobre el agua. devesa del saler gola de pujol el palmar (l&#x27;albufera)">
     <a href="../valencia/como-ir-a-la-albufera-valencia-autobus-el-palmar-atardecer/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/vlc-albufera-atardecer-dorado.jpg" alt="Barca tradicional de madera en el embarcadero de la Gola de Pujol al atardecer en L&#x27;Albufera de Valencia" class="card-image" loading="lazy" width="640" height="360" />
@@ -234,7 +235,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="5 planes gratis en valencia que casi nadie conoce cinco planes 100% gratuitos en valencia lejos de las rutas masificadas: jardines neoclásicos con estatuas de mármol, claustros medievales con arte contemporáneo y paseos por la huerta histórica. exposición / monforte el carmen el cabanyal huerta de alboraya">
+  <article class="article-card" data-city="Valencia" data-category="Gratis y Baratos" data-search="5 planes gratis en valencia que casi nadie conoce cinco planes 100% gratuitos en valencia lejos de las rutas masificadas: jardines neoclásicos con estatuas de mármol, claustros medievales con arte contemporáneo y paseos por la huerta histórica. exposición / monforte el carmen el cabanyal huerta de alboraya">
     <a href="../valencia/planes-gratis-en-valencia-jardines-monforte-cultura/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/planes-gratis-valencia-jardines-monforte.jpg" alt="Paseo de cipreses y estatuas de mármol en los Jardines de Monforte de Valencia" class="card-image" loading="lazy" width="640" height="360" />
@@ -255,7 +256,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Planes Diferentes" data-search="6 planes diferentes en valencia para salir de la rutina más allá de la ciudad de las artes y la malvarrosa: te llevamos en autobús urbano hasta el embarcadero más tranquilo de l&#x27;albufera al caer el sol, a un búnker de 1938 y a tomar horchata recién molida entre campos de chufa. el palmar / albufera ruzafa el carmen alboraya">
+  <article class="article-card" data-city="Valencia" data-category="Planes Diferentes" data-search="6 planes diferentes en valencia para salir de la rutina más allá de la ciudad de las artes y la malvarrosa: te llevamos en autobús urbano hasta el embarcadero más tranquilo de l&#x27;albufera al caer el sol, a un búnker de 1938 y a tomar horchata recién molida entre campos de chufa. el palmar / albufera ruzafa el carmen alboraya">
     <a href="../valencia/planes-diferentes-valencia-en-pareja-baratos/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/vlc-albufera-gola-pujol.jpg" alt="Atardecer sobre las aguas tranquilas del Parque Natural de la Albufera de Valencia" class="card-image" loading="lazy" width="640" height="360" />
@@ -293,7 +294,7 @@
         Índice completo de guías verificadas en Valencia:
       </p>
       <ul style="margin-left: 1.25rem; line-height: 1.75;">
-        <li style="margin-bottom:0.35rem;"><a href="../valencia/planes-este-fin-de-semana-valencia-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Qué hacer este fin de semana en Valencia (especial 9 d&#x27;Octubre)</a> — Gratis (0 € – 9 €)</li><li style="margin-bottom:0.35rem;"><a href="../valencia/como-ir-a-la-albufera-valencia-autobus-el-palmar-atardecer/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Cómo ir a la Albufera y El Palmar en autobús desde Valencia</a> — 1,50 € bus (Paseo en barca opcional: 6 €)</li><li style="margin-bottom:0.35rem;"><a href="../valencia/planes-gratis-en-valencia-jardines-monforte-cultura/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">5 planes gratis en Valencia que casi nadie conoce</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../valencia/planes-diferentes-valencia-en-pareja-baratos/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">6 planes diferentes en Valencia para salir de la rutina</a> — 0 € – 12 €</li>
+        <li style="margin-bottom:0.35rem;"><a href="../valencia/planes-este-fin-de-semana-valencia-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Valencia:</strong> Qué hacer este fin de semana en Valencia (especial 9 d&#x27;Octubre)</a> — Gratis (0 € – 9 €)</li><li style="margin-bottom:0.35rem;"><a href="../valencia/como-ir-a-la-albufera-valencia-autobus-el-palmar-atardecer/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Valencia:</strong> Cómo ir a la Albufera y El Palmar en autobús desde Valencia</a> — 1,50 € bus (Paseo en barca opcional: 6 €)</li><li style="margin-bottom:0.35rem;"><a href="../valencia/planes-gratis-en-valencia-jardines-monforte-cultura/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Valencia:</strong> 5 planes gratis en Valencia que casi nadie conoce</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../valencia/planes-diferentes-valencia-en-pareja-baratos/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Valencia:</strong> 6 planes diferentes en Valencia para salir de la rutina</a> — 0 € – 12 €</li>
       </ul>
       
       <div style="margin-top: 2rem;">
@@ -393,22 +394,74 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const pageCityMode = "Valencia";
+      const CITY_STORAGE_KEY = 'qph_preferred_city';
       const pills = document.querySelectorAll('.style-pill-btn');
+      const cityPickCards = document.querySelectorAll('.city-pick-card');
       const searchInput = document.getElementById('article-search-input');
       const cards = document.querySelectorAll('.article-card');
+      const heroKicker = document.getElementById('main-hero-kicker');
+      const heroHeading = document.getElementById('main-hero-heading');
+      const heroSubtitle = document.getElementById('main-hero-subtitle');
+      const hubDirectLink = document.getElementById('city-hub-direct-link');
+      const mapBannerTitle = document.getElementById('map-banner-title');
+      const mapBannerLink = document.getElementById('map-banner-link');
+
       let currentCat = 'all';
       let currentQuery = '';
+      let currentCity = pageCityMode === 'all' ? 'Madrid' : pageCityMode;
+
+      if (pageCityMode !== 'all') {
+        try { localStorage.setItem(CITY_STORAGE_KEY, pageCityMode); } catch (e) {}
+      } else {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const urlCity = params.get('ciudad');
+          const savedCity = localStorage.getItem(CITY_STORAGE_KEY);
+          if (urlCity && document.querySelector(`.city-pick-card[data-city="${urlCity}"]`)) {
+            currentCity = urlCity;
+          } else if (savedCity && document.querySelector(`.city-pick-card[data-city="${savedCity}"]`)) {
+            currentCity = savedCity;
+          }
+        } catch (e) {}
+      }
+
+      function updateCityContext(cityBtn) {
+        if (!cityBtn) return;
+        const cName = cityBtn.getAttribute('data-city');
+        const cSlug = cityBtn.getAttribute('data-slug');
+        const cH1 = cityBtn.getAttribute('data-h1');
+        const cIntro = cityBtn.getAttribute('data-intro');
+        const cKicker = cityBtn.getAttribute('data-kicker');
+
+        cityPickCards.forEach(b => b.classList.toggle('active', b === cityBtn));
+        if (heroKicker && cKicker) heroKicker.textContent = cKicker;
+        if (heroHeading && cH1) heroHeading.textContent = cH1;
+        if (heroSubtitle && cIntro) heroSubtitle.textContent = cIntro;
+        if (hubDirectLink && cSlug) {
+          hubDirectLink.href = cSlug + '/';
+          hubDirectLink.textContent = 'Ir a la página completa de ' + cName + ' →';
+        }
+        if (mapBannerTitle) {
+          mapBannerTitle.textContent = 'Explora todos los planes de ' + cName + ' en el mapa con enlace directo a Google Maps';
+        }
+        if (mapBannerLink) {
+          mapBannerLink.href = 'mapa/?ciudad=' + encodeURIComponent(cName);
+        }
+      }
 
       function applyFilters() {
         let firstVisible = true;
         cards.forEach(card => {
+          const cardCity = card.getAttribute('data-city');
           const cat = card.getAttribute('data-category');
           const text = card.getAttribute('data-search') || '';
+          const matchCity = pageCityMode !== 'all' || cardCity === currentCity;
           const matchCat = currentCat === 'all' || cat === currentCat;
           const matchQuery = !currentQuery || text.includes(currentQuery);
-          if (matchCat && matchQuery) {
+          if (matchCity && matchCat && matchQuery) {
             card.style.display = 'flex';
-            if (firstVisible && cards.length > 1 && currentCat === 'all' && !currentQuery) {
+            if (firstVisible && currentCat === 'all' && !currentQuery) {
               card.classList.add('lead-card');
             } else {
               card.classList.remove('lead-card');
@@ -416,7 +469,25 @@
             firstVisible = false;
           } else {
             card.style.display = 'none';
+            card.classList.remove('lead-card');
           }
+        });
+      }
+
+      if (pageCityMode === 'all' && cityPickCards.length > 0) {
+        const initialBtn = document.querySelector(`.city-pick-card[data-city="${currentCity}"]`) || cityPickCards[0];
+        if (initialBtn) {
+          currentCity = initialBtn.getAttribute('data-city');
+          updateCityContext(initialBtn);
+          applyFilters();
+        }
+        cityPickCards.forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentCity = btn.getAttribute('data-city');
+            try { localStorage.setItem(CITY_STORAGE_KEY, currentCity); } catch (e) {}
+            updateCityContext(btn);
+            applyFilters();
+          });
         });
       }
 

@@ -537,7 +537,10 @@ def render_footer(root_prefix: str) -> str:
 
 
 def render_article_card(
-    art: dict, root_prefix: str, is_lead: bool = False
+    art: dict,
+    root_prefix: str,
+    is_lead: bool = False,
+    initial_hidden: bool = False,
 ) -> str:
   city_slug = CITIES.get(art["city"], {"slug": art["city"].lower()})["slug"]
   article_href = f"{root_prefix}{city_slug}/{art['slug']}/"
@@ -547,9 +550,10 @@ def render_article_card(
   if art.get("weekendDates"):
     cat_label = f"{cat_label} · {art['weekendDates']}"
   lead_cls = " lead-card" if is_lead else ""
+  style_attr = ' style="display: none;"' if initial_hidden else ""
   read_cta = "Leer guía →"
   return f"""
-  <article class="article-card{lead_cls}" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
+  <article class="article-card{lead_cls}"{style_attr} data-city="{html.escape(art['city'])}" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
     <a href="{article_href}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="{img_src}" alt="{html.escape(img_alt)}" class="card-image" loading="lazy" width="640" height="360" />
@@ -571,53 +575,123 @@ def render_article_card(
   </article>"""
 
 
-def render_filter_script() -> str:
-  return """
+def render_filter_script(active_city: str = "all") -> str:
+  return f"""
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {{
+      const pageCityMode = {json.dumps(active_city)};
+      const CITY_STORAGE_KEY = 'qph_preferred_city';
       const pills = document.querySelectorAll('.style-pill-btn');
+      const cityPickCards = document.querySelectorAll('.city-pick-card');
       const searchInput = document.getElementById('article-search-input');
       const cards = document.querySelectorAll('.article-card');
+      const heroKicker = document.getElementById('main-hero-kicker');
+      const heroHeading = document.getElementById('main-hero-heading');
+      const heroSubtitle = document.getElementById('main-hero-subtitle');
+      const hubDirectLink = document.getElementById('city-hub-direct-link');
+      const mapBannerTitle = document.getElementById('map-banner-title');
+      const mapBannerLink = document.getElementById('map-banner-link');
+
       let currentCat = 'all';
       let currentQuery = '';
+      let currentCity = pageCityMode === 'all' ? 'Madrid' : pageCityMode;
 
-      function applyFilters() {
+      if (pageCityMode !== 'all') {{
+        try {{ localStorage.setItem(CITY_STORAGE_KEY, pageCityMode); }} catch (e) {{}}
+      }} else {{
+        try {{
+          const params = new URLSearchParams(window.location.search);
+          const urlCity = params.get('ciudad');
+          const savedCity = localStorage.getItem(CITY_STORAGE_KEY);
+          if (urlCity && document.querySelector(`.city-pick-card[data-city="${{urlCity}}"]`)) {{
+            currentCity = urlCity;
+          }} else if (savedCity && document.querySelector(`.city-pick-card[data-city="${{savedCity}}"]`)) {{
+            currentCity = savedCity;
+          }}
+        }} catch (e) {{}}
+      }}
+
+      function updateCityContext(cityBtn) {{
+        if (!cityBtn) return;
+        const cName = cityBtn.getAttribute('data-city');
+        const cSlug = cityBtn.getAttribute('data-slug');
+        const cH1 = cityBtn.getAttribute('data-h1');
+        const cIntro = cityBtn.getAttribute('data-intro');
+        const cKicker = cityBtn.getAttribute('data-kicker');
+
+        cityPickCards.forEach(b => b.classList.toggle('active', b === cityBtn));
+        if (heroKicker && cKicker) heroKicker.textContent = cKicker;
+        if (heroHeading && cH1) heroHeading.textContent = cH1;
+        if (heroSubtitle && cIntro) heroSubtitle.textContent = cIntro;
+        if (hubDirectLink && cSlug) {{
+          hubDirectLink.href = cSlug + '/';
+          hubDirectLink.textContent = 'Ir a la página completa de ' + cName + ' →';
+        }}
+        if (mapBannerTitle) {{
+          mapBannerTitle.textContent = 'Explora todos los planes de ' + cName + ' en el mapa con enlace directo a Google Maps';
+        }}
+        if (mapBannerLink) {{
+          mapBannerLink.href = 'mapa/?ciudad=' + encodeURIComponent(cName);
+        }}
+      }}
+
+      function applyFilters() {{
         let firstVisible = true;
-        cards.forEach(card => {
+        cards.forEach(card => {{
+          const cardCity = card.getAttribute('data-city');
           const cat = card.getAttribute('data-category');
           const text = card.getAttribute('data-search') || '';
+          const matchCity = pageCityMode !== 'all' || cardCity === currentCity;
           const matchCat = currentCat === 'all' || cat === currentCat;
           const matchQuery = !currentQuery || text.includes(currentQuery);
-          if (matchCat && matchQuery) {
+          if (matchCity && matchCat && matchQuery) {{
             card.style.display = 'flex';
-            if (firstVisible && cards.length > 1 && currentCat === 'all' && !currentQuery) {
+            if (firstVisible && currentCat === 'all' && !currentQuery) {{
               card.classList.add('lead-card');
-            } else {
+            }} else {{
               card.classList.remove('lead-card');
-            }
+            }}
             firstVisible = false;
-          } else {
+          }} else {{
             card.style.display = 'none';
-          }
-        });
-      }
+            card.classList.remove('lead-card');
+          }}
+        }});
+      }}
 
-      pills.forEach(btn => {
-        btn.addEventListener('click', () => {
+      if (pageCityMode === 'all' && cityPickCards.length > 0) {{
+        const initialBtn = document.querySelector(`.city-pick-card[data-city="${{currentCity}}"]`) || cityPickCards[0];
+        if (initialBtn) {{
+          currentCity = initialBtn.getAttribute('data-city');
+          updateCityContext(initialBtn);
+          applyFilters();
+        }}
+        cityPickCards.forEach(btn => {{
+          btn.addEventListener('click', () => {{
+            currentCity = btn.getAttribute('data-city');
+            try {{ localStorage.setItem(CITY_STORAGE_KEY, currentCity); }} catch (e) {{}}
+            updateCityContext(btn);
+            applyFilters();
+          }});
+        }});
+      }}
+
+      pills.forEach(btn => {{
+        btn.addEventListener('click', () => {{
           pills.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           currentCat = btn.getAttribute('data-category');
           applyFilters();
-        });
-      });
+        }});
+      }});
 
-      if (searchInput) {
-        searchInput.addEventListener('input', e => {
+      if (searchInput) {{
+        searchInput.addEventListener('input', e => {{
           currentQuery = e.target.value.trim().toLowerCase();
           applyFilters();
-        });
-      }
-    });
+        }});
+      }}
+    }});
   </script>"""
 
 
@@ -633,14 +707,35 @@ def build_listing_page(
     root_prefix: str,
     active_city: str,
 ):
-  cards_html = "\n".join(
-      render_article_card(
-          a, root_prefix, is_lead=(idx == 0 and len(articles) > 1)
+  cards_html_list = []
+  seen_lead = False
+  for a in articles:
+    if active_city == "all":
+      is_visible_default = a["city"] == "Madrid"
+      is_lead = is_visible_default and not seen_lead
+      if is_lead:
+        seen_lead = True
+      cards_html_list.append(
+          render_article_card(
+              a,
+              root_prefix,
+              is_lead=is_lead,
+              initial_hidden=not is_visible_default,
+          )
       )
-      for idx, a in enumerate(articles)
-  )
+    else:
+      is_lead = not seen_lead and len(articles) > 1
+      if is_lead:
+        seen_lead = True
+      cards_html_list.append(
+          render_article_card(
+              a, root_prefix, is_lead=is_lead, initial_hidden=False
+          )
+      )
+  cards_html = "\n".join(cards_html_list)
 
-  city_label = (
+  city_label = active_city if active_city != "all" else "Madrid"
+  seo_city_label = (
       active_city
       if active_city != "all"
       else "Madrid, Barcelona, Valencia, Sevilla y Toledo"
@@ -652,23 +747,57 @@ def build_listing_page(
     guide_links.append(
         f'<li style="margin-bottom:0.35rem;"><a href="{href}"'
         ' style="color:var(--terracotta);font-weight:600;text-decoration:none;">'
-        f"{html.escape(a['title'])}</a> — {html.escape(a['priceRange'])}</li>"
+        f"<strong>{html.escape(a['city'])}:</strong> {html.escape(a['title'])}</a> — {html.escape(a['priceRange'])}</li>"
     )
 
+  city_selector_html = ""
+  if active_city == "all":
+    city_order = ["Madrid", "Toledo", "Barcelona", "Valencia", "Sevilla"]
+    city_buttons = []
+    for c_name in city_order:
+      c_info = CITIES[c_name]
+      c_count = sum(1 for a in articles if a["city"] == c_name)
+      active_cls = " active" if c_name == "Madrid" else ""
+      thumb_src = f"{root_prefix}{c_info['ogImage'].lstrip('/')}"
+      city_buttons.append(f"""
+          <button
+            type="button"
+            class="city-pick-card{active_cls}"
+            data-city="{html.escape(c_name)}"
+            data-slug="{html.escape(c_info['slug'])}"
+            data-h1="{html.escape(c_info['h1'])}"
+            data-intro="{html.escape(c_info['intro'])}"
+            data-kicker="GUÍA DE {html.escape(c_name.upper())} · CIUDAD ACTIVA"
+          >
+            <img src="{thumb_src}" alt="Planes en {html.escape(c_name)}" class="city-pick-thumb" loading="eager" width="42" height="42" />
+            <span class="city-pick-info">
+              <span class="city-pick-name">{html.escape(c_name)}</span>
+              <span class="city-pick-count">{c_count} guías locales</span>
+            </span>
+          </button>""")
+    city_selector_html = f"""
+      <div class="city-selector-showcase" aria-label="Selector de ciudad">
+        <div class="city-selector-header">
+          <span class="city-selector-title">📍 ¿En qué ciudad buscas plan hoy? <span style="font-weight:500;color:var(--ink-muted);font-size:0.78rem;">(Toca tu ciudad para ver solo sus planes)</span></span>
+          <a href="madrid/" id="city-hub-direct-link" class="city-selector-hub-link">Ir a la página completa de Madrid →</a>
+        </div>
+        <div class="city-selector-grid">
+          {''.join(city_buttons)}
+        </div>
+      </div>"""
+
   map_href = (
-      f"{root_prefix}mapa/?ciudad={urllib.parse.quote(active_city)}"
-      if active_city != "all"
-      else f"{root_prefix}mapa/"
+      f"{root_prefix}mapa/?ciudad={urllib.parse.quote(city_label)}"
   )
   map_banner = f"""
     <div style="margin: 0 0 2rem 0; padding: 1.1rem 1.4rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
       <div>
         <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta);">🗺️ Nuevo · Mapa Interactivo</span>
-        <div style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
+        <div id="map-banner-title" style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
           Explora todos los planes de {html.escape(city_label)} en el mapa con enlace directo a Google Maps
         </div>
       </div>
-      <a href="{map_href}" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
+      <a id="map-banner-link" href="{map_href}" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
         Abrir Mapa de Planes →
       </a>
     </div>"""
@@ -677,12 +806,13 @@ def build_listing_page(
   city_seo_text = city_info.get(
       "seoText",
       "Seleccionamos planes originales, rutas explicadas paso a paso con"
-      " horarios y paradas de transporte público, jardines secretos gratuitos"
-      " y citas en pareja en Madrid, Barcelona, Valencia, Sevilla y Toledo.",
+      " horarios y paradas de transporte público, programas oficiales de"
+      " fiestas y puentes, jardines secretos gratuitos y citas en pareja en"
+      " Madrid, Barcelona, Valencia, Sevilla y Toledo.",
   )
   city_neighborhoods = city_info.get(
       "neighborhoods",
-      ["Madrid", "Barcelona", "Valencia", "Sevilla", "Toledo"],
+      ["Madrid", "Toledo", "Barcelona", "Valencia", "Sevilla"],
   )
   neighborhood_pills = "".join(
       f'<span style="background:var(--bg-sand);border:1px solid var(--border-subtle);padding:0.3rem 0.7rem;border-radius:var(--radius-pill);font-size:0.8rem;font-weight:600;color:var(--ink-secondary);">{html.escape(nb)}</span>'
@@ -703,7 +833,7 @@ def build_listing_page(
     city_faqs_html = f"""
       <div style="margin-top: 2rem;">
         <h2 style="font-family: var(--font-serif); font-size: 1.3rem; color: var(--ink-primary); margin-bottom: 0.85rem;">
-          Preguntas frecuentes sobre planes en {html.escape(city_label)}
+          Preguntas frecuentes sobre planes en {html.escape(seo_city_label)}
         </h2>
         {faq_cards}
       </div>"""
@@ -711,7 +841,7 @@ def build_listing_page(
   seo_bottom_section = f"""
     <section style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-hairline); max-width: 820px; color: var(--ink-secondary); font-size: 0.95rem;">
       <h2 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--ink-primary); margin-bottom: 0.65rem;">
-        ¿Qué plan hacer en {html.escape(city_label)} hoy y este fin de semana?
+        ¿Qué plan hacer en {html.escape(seo_city_label)} hoy y este fin de semana?
       </h2>
       <p style="margin-bottom: 0.85rem; line-height: 1.72;">
         {html.escape(city_seo_text)}
@@ -720,7 +850,7 @@ def build_listing_page(
         {neighborhood_pills}
       </div>
       <p style="margin-bottom: 0.65rem; font-weight: 600; color: var(--ink-primary);">
-        Índice completo de guías verificadas en {html.escape(city_label)}:
+        Índice completo de guías verificadas en {html.escape(seo_city_label)}:
       </p>
       <ul style="margin-left: 1.25rem; line-height: 1.75;">
         {''.join(guide_links)}
@@ -823,15 +953,24 @@ def build_listing_page(
           ],
       })
 
+  initial_kicker = (
+      "GUÍA DE MADRID · CIUDAD ACTIVA" if active_city == "all" else kicker
+  )
+  initial_h1 = CITIES["Madrid"]["h1"] if active_city == "all" else h1
+  initial_subtitle = (
+      CITIES["Madrid"]["intro"] if active_city == "all" else subtitle
+  )
+
   page_html = f"""{render_head(title, description, canonical_url, root_prefix, schema_ld, og_image=full_og_img)}
 <body>
   {render_header(root_prefix, active_city)}
 
   <main class="main-container">
     <section class="page-header-section" aria-labelledby="main-hero-heading">
-      <span class="hero-kicker">{html.escape(kicker)}</span>
-      <h1 class="hero-title" id="main-hero-heading">{html.escape(h1)}</h1>
-      <p class="hero-subtitle">{html.escape(subtitle)}</p>
+      {city_selector_html}
+      <span class="hero-kicker" id="main-hero-kicker">{html.escape(initial_kicker)}</span>
+      <h1 class="hero-title" id="main-hero-heading">{html.escape(initial_h1)}</h1>
+      <p class="hero-subtitle" id="main-hero-subtitle">{html.escape(initial_subtitle)}</p>
 
       <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
         <div class="style-pills">
@@ -865,7 +1004,7 @@ def build_listing_page(
   </main>
 
   {render_footer(root_prefix)}
-  {render_filter_script()}
+  {render_filter_script(active_city)}
 </body>
 </html>
 """
@@ -1564,50 +1703,63 @@ def build_about_page():
   org_schema = {
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      "name": "Sobre Qué Plan Hoy y Criterio Editorial",
+      "name": "Sobre Qué Plan Hoy: Por Qué Nace Esta Guía y Criterio Editorial",
       "url": canonical_url,
       "mainEntity": {
           "@type": "Organization",
           "name": "Qué Plan Hoy",
           "url": SITE_URL,
+          "logo": f"{SITE_URL}/favicon-512x512.png",
           "description": (
-              "Guía independiente de planes originales, baratos y en pareja en"
-              " Madrid, Barcelona, Valencia, Sevilla y Toledo."
+              "Guía local e independiente de planes originales, agendas"
+              " municipales de festivos, rutas paso a paso, planes gratis y"
+              " citas en pareja en Madrid, Barcelona, Valencia, Sevilla y"
+              " Toledo."
           ),
       },
   }
-  page_html = f"""{render_head("Sobre Nosotros | Qué Plan Hoy", "Conoce cómo seleccionamos los planes locales, gratuitos y en pareja de Qué Plan Hoy en Madrid, Barcelona, Valencia, Sevilla y Toledo.", canonical_url, root_prefix, [org_schema])}
+  page_html = f"""{render_head("Sobre Nosotros: Por Qué Nace Qué Plan Hoy y Criterio Editorial", "Descubre por qué nació ¿Qué Plan Hoy? (queplanhoy.es): una guía local, honesta y sin relleno para encontrar planes reales hoy y este fin de semana.", canonical_url, root_prefix, [org_schema])}
 <body>
   {render_header(root_prefix, "none")}
-  <main class="main-container" style="max-width: 740px;">
-    <span class="hero-kicker">SOBRE NOSOTROS</span>
-    <h1 class="hero-title" style="margin-bottom: 1.25rem;">¿Qué es Qué Plan Hoy?</h1>
-    <p style="font-size: 1.06rem; color: var(--ink-secondary); margin-bottom: 1.5rem;">
-      <strong>¿Qué Plan Hoy?</strong> nació con una idea sencilla: responder a la pregunta de cada viernes por la tarde sin caer siempre en las mismas diez recomendaciones masificadas.
+  <main class="main-container" style="max-width: 760px;">
+    <span class="hero-kicker">SOBRE QUÉ PLAN HOY · NUESTRA HISTORIA</span>
+    <h1 class="hero-title" style="margin-bottom: 1.15rem;">Por qué nace ¿Qué Plan Hoy?</h1>
+    <p style="font-size: 1.08rem; color: var(--ink-secondary); line-height: 1.75; margin-bottom: 1.75rem;">
+      <strong>¿Qué Plan Hoy?</strong> comenzó como una pregunta que todos nos hacemos cada jueves o viernes por la tarde y que en internet casi nunca tenía una buena respuesta.
     </p>
+
     <section class="reader-section">
-      <h2>Qué tipo de planes publicamos</h2>
-      <p style="margin-top: 0.5rem;">
-        Seleccionamos propuestas en <strong>Madrid, Barcelona, Valencia, Sevilla y Toledo</strong> combinando rutas paso a paso con agendas de fin de semana:
+      <h2>El problema de buscar un plan hoy en internet</h2>
+      <p style="margin-top: 0.65rem; line-height: 1.75;">
+        La pregunta era sencilla: <em>«¿qué hacemos hoy o este puente?»</em>. Sin embargo, cada búsqueda en internet devolvía siempre lo mismo: páginas saturadas de anuncios intrusivos que tapan la pantalla del móvil, listas interminables de diez párrafos de relleno antes de decirte dónde está el sitio, notas de prensa copiadas sin verificar o las mismas recomendaciones turísticas que parecen sacadas de un folleto de hace quince años.
       </p>
-      <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
-        <li><strong>Rutas paso a paso:</strong> Itinerarios completos para dedicar una mañana o una tarde a un rincón histórico, jardín secreto o entorno natural sin prisas.</li>
-        <li><strong>Este fin de semana:</strong> Ferias históricas (como la Feria Barroca de Valdemoro), mercados puntuales y citas de agenda con sus fechas exactas.</li>
-        <li><strong>Gratis y baratos:</strong> Jardines ocultos, museos desconocidos, miradores y rutas por menos de 10 €.</li>
-        <li><strong>En pareja:</strong> Citas originales, talleres creativos y paseos al atardecer.</li>
+      <p style="margin-top: 0.75rem; line-height: 1.75;">
+        Nuestras ciudades —<strong>Madrid, Toledo, Barcelona, Valencia y Sevilla</strong>— tienen un ritmo, unos barrios y un calendario cultural vivo que ningún agregador genérico sabe contar bien. <strong>¿Qué Plan Hoy? existe para cambiar eso.</strong>
+      </p>
+    </section>
+
+    <section class="reader-section">
+      <h2>Una guía hecha desde dentro (y cero relleno)</h2>
+      <p style="margin-top: 0.65rem; line-height: 1.75;">
+        Nuestro compromiso editorial se basa en cuatro reglas que aplicamos en cada guía que publicamos:
+      </p>
+      <ul style="margin: 0.9rem 0 0 1.25rem; line-height: 1.85;">
+        <li style="margin-bottom: 0.55rem;"><strong>Agendas oficiales de Ayuntamientos en festivos y puentes:</strong> Cuando llega una fecha señalada (como el <em>12 de Octubre y la Fiesta de la Hispanidad en Madrid</em>, el <em>Puente de Todos los Santos en Toledo</em> o el <em>9 d'Octubre en Valencia</em>), consultamos directamente los programas oficiales de los Ayuntamientos y Comunidades Autónomas para explicarte los eventos reales que suceden en la calle: recorridos de desfiles, escenarios de conciertos gratuitos en plazas, jornadas de puertas abiertas y qué bocas de Metro o calles cortadas conviene evitar.</li>
+        <li style="margin-bottom: 0.55rem;"><strong>Planes de un único rincón a fondo y selecciones con sentido:</strong> No creemos en poner siempre 5 o 10 planes porque sí. Hay mañanas de domingo en las que el mejor plan es dedicarle tres horas a un único lugar explicado paso a paso (como el <em>Parque de El Capricho</em>, el <em>Laberinto de Horta</em> o la <em>Senda Ecológica del Tajo</em>), y días de lluvia en los que necesitas cinco refugios cubiertos con encanto para elegir.</li>
+        <li style="margin-bottom: 0.55rem;"><strong>Datos prácticos al grano (horario, transporte, precio y pin en Google Maps):</strong> Ni quien vive en la ciudad ni quien viene de escapada tiene tiempo de leer párrafos vacíos antes de saber a qué hora cierra un jardín o cuánto cuesta la entrada. Cada parada incluye dirección exacta, parada de Metro, Cercanías o autobús, precio real verificado y enlace directo al <strong>pin exacto en Google Maps</strong>.</li>
+        <li><strong>Fotografías reales verificadas:</strong> Todas las fotografías que ilustran nuestros planes corresponden a imágenes reales de los monumentos, jardines, calles y eventos, para que sepas exactamente qué vas a encontrar al llegar.</li>
       </ul>
     </section>
-    <section class="reader-section">
-      <h2>Datos prácticos y Mapa de Planes</h2>
-      <p style="margin-top: 0.5rem;">
-        En cada propuesta incluimos fotografías reales del lugar, la dirección exacta, cómo llegar en transporte público (Metro, Cercanías, autobús o tren), el precio real en euros y un <strong>mapa interactivo</strong> con enlace directo al pin en Google Maps.
-      </p>
-    </section>
+
     <section class="reader-section" style="border-bottom: none;">
-      <h2>Enlaces y reservas</h2>
-      <p style="margin-top: 0.5rem;">
-        En nuestras guías facilitamos enlaces directos a las páginas oficiales de reserva de entradas y visitas guiadas para que puedas consultar horarios actualizados.
+      <h2>Un proyecto independiente y transparente</h2>
+      <p style="margin-top: 0.65rem; line-height: 1.75;">
+        <strong>¿Qué Plan Hoy?</strong> es una guía de acceso 100 % gratuito. No vendemos artículos patrocinados encubiertos ni recomendamos lugares en los que no pasaríamos nosotros mismos una tarde de sábado. En aquellos palacios, museos o visitas guiadas que requieren reserva previa, facilitamos enlaces directos tanto a las webs oficiales como a plataformas autorizadas de entradas (como <em>Tiqets</em> o <em>Civitatis</em>) con los precios oficiales verificados y sin ningún sobrecoste para el lector.
       </p>
+      <div style="margin-top: 1.35rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <a href="/" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem; padding: 0.65rem 1.2rem; border-radius: var(--radius-pill);">Explorar planes por ciudad →</a>
+        <a href="/mapa/" style="background: var(--bg-sand); color: var(--ink-primary); border: 1px solid var(--border-strong); text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 0.65rem 1.2rem; border-radius: var(--radius-pill);">🗺️ Abrir Mapa Interactivo</a>
+      </div>
     </section>
   </main>
   {render_footer(root_prefix)}
@@ -1623,7 +1775,7 @@ def build_privacy_cookies_page():
   output_path = os.path.join(PUBLIC_DIR, "privacidad-y-cookies", "index.html")
   root_prefix = "../"
   canonical_url = f"{SITE_URL}/privacidad-y-cookies/"
-  page_html = f"""{render_head("Política de Privacidad y Cookies | Qué Plan Hoy", "Información sobre el uso de cookies técnicas y de afiliación y tratamiento de datos en Qué Plan Hoy (queplanhoy.es).", canonical_url, root_prefix, [], robots="noindex, follow")}
+  page_html = f"""{render_head("Aviso Legal, Privacidad y Política de Cookies | Qué Plan Hoy", "Aviso legal, condiciones de uso, descargo de responsabilidad sobre eventos, política de privacidad RGPD y gestión de cookies de Qué Plan Hoy (queplanhoy.es).", canonical_url, root_prefix, [], robots="noindex, follow")}
 <body>
   <script>
     (function() {{
@@ -1637,35 +1789,76 @@ def build_privacy_cookies_page():
     }})();
   </script>
   {render_header(root_prefix, "none")}
-  <main class="main-container" style="max-width: 740px;">
+  <main class="main-container" style="max-width: 760px;">
     <div style="margin-bottom: 1.35rem;">
       <a href="/" style="display:inline-flex;align-items:center;gap:0.45rem;background:var(--terracotta);color:#fff;text-decoration:none;font-weight:700;font-size:0.9rem;padding:0.6rem 1.1rem;border-radius:10px;box-shadow:0 4px 12px rgba(200,75,49,0.22);">← Ir a la página principal de planes</a>
     </div>
-    <span class="hero-kicker">INFORMACIÓN LEGAL · RGPD Y LSSI-CE</span>
-    <h1 class="hero-title" style="margin-bottom: 1.25rem;">Política de Privacidad y Cookies</h1>
-    <p style="font-size: 1.02rem; color: var(--ink-secondary); margin-bottom: 1.5rem;">
-      En <strong>¿Qué Plan Hoy?</strong> (<code>queplanhoy.es</code>) respetamos tu privacidad. A continuación te explicamos de forma clara qué datos y cookies se utilizan al navegar por nuestra guía.
+    <span class="hero-kicker">INFORMACIÓN LEGAL · RGPD, LOPDGDD Y LSSI-CE</span>
+    <h1 class="hero-title" style="margin-bottom: 1.1rem;">Aviso Legal, Privacidad y Política de Cookies</h1>
+    <p style="font-size: 1.02rem; color: var(--ink-secondary); line-height: 1.7; margin-bottom: 1.65rem;">
+      En <strong>¿Qué Plan Hoy?</strong> (<code>queplanhoy.es</code>) apostamos por la transparencia y la claridad, sin letra pequeña. En esta página encontrarás las condiciones de uso de nuestra guía, el alcance de la información publicada sobre eventos y cómo protegemos tu privacidad conforme al Reglamento General de Protección de Datos (RGPD).
     </p>
+
     <section class="reader-section">
-      <h2>1. ¿Qué cookies utiliza esta web?</h2>
-      <p style="margin-top: 0.5rem;">
-        Al navegar por <strong>queplanhoy.es</strong> se pueden emplear dos tipos de almacenamiento o cookies:
+      <h2>1. Finalidad del sitio web y condiciones de uso</h2>
+      <p style="margin-top: 0.55rem; line-height: 1.72;">
+        <strong>¿Qué Plan Hoy?</strong> (<code>https://queplanhoy.es</code>) es una guía cultural y de ocio independiente de acceso gratuito que publica y selecciona información sobre eventos municipales, rutas urbanas, patrimonio histórico y actividades en ciudades de España (Madrid, Barcelona, Valencia, Sevilla y Toledo). El acceso y navegación por el sitio web son gratuitos y atribuyen la condición de usuario, implicando la aceptación del presente Aviso Legal y Política de Privacidad.
+      </p>
+    </section>
+
+    <section class="reader-section">
+      <h2>2. Descargo de responsabilidad sobre la información de eventos, horarios y precios</h2>
+      <p style="margin-top: 0.55rem; line-height: 1.72;">
+        Los detalles de los eventos, monumentos, museos, jardines y actividades publicados en <strong>queplanhoy.es</strong> (incluyendo fechas, horarios de apertura, tarifas, franjas de entrada gratuita, recorridos de desfiles y ubicaciones) se obtienen y contrastan a partir de fuentes oficiales municipales (Ayuntamientos y Comunidades Autónomas), organismos públicos, recintos culturales y plataformas oficiales de venta en el momento de su redacción.
+      </p>
+      <p style="margin-top: 0.65rem; line-height: 1.72;">
+        No obstante, los organizadores, ayuntamientos o recintos pueden modificar horarios, tarifas, aforos o cancelar actividades sin previo aviso (por ejemplo, por alertas meteorológicas en parques históricos o cambios de protocolo en actos oficiales). Por ello, <strong>¿Qué Plan Hoy? ofrece esta información con fines informativos y orientativos, y no asume responsabilidad por cambios imprevistos, cancelaciones, errores u omisiones de terceros</strong>. Recomendamos verificar siempre los detalles actualizados directamente en la web oficial del organizador o recinto antes de desplazarse.
+      </p>
+    </section>
+
+    <section class="reader-section">
+      <h2>3. Enlaces a terceros y transparencia de afiliación</h2>
+      <p style="margin-top: 0.55rem; line-height: 1.72;">
+        Para facilitar la planificación al lector, nuestras guías incluyen enlaces externos tanto a portales institucionales y webs oficiales de museos como a plataformas autorizadas de reserva de entradas y visitas guiadas (como <strong>Tiqets</strong>, <strong>Civitatis</strong> o la red <strong>Travelpayouts</strong>).
+      </p>
+      <p style="margin-top: 0.65rem; line-height: 1.72;">
+        Algunos de estos enlaces son enlaces de afiliación: si reservas tu entrada a través de ellos, <em>Qué Plan Hoy</em> puede recibir una pequeña comisión del proveedor sin que ello suponga ningún sobrecoste ni variación en el precio oficial para ti. Cualquier compra o reserva se celebra única y exclusivamente entre el usuario y la plataforma proveedora correspondiente; <em>Qué Plan Hoy</em> no interviene en la transacción ni asume responsabilidad sobre la prestación del servicio de dichos terceros.
+      </p>
+    </section>
+
+    <section class="reader-section">
+      <h2>4. Política de Cookies y cómo configurar tu consentimiento</h2>
+      <p style="margin-top: 0.55rem; line-height: 1.72;">
+        Al navegar por <strong>queplanhoy.es</strong> se pueden emplear dos tipos de almacenamiento local o cookies:
       </p>
       <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
-        <li><strong>Cookies técnicas y de preferencias (Estrictamente necesarias):</strong> Guardan en tu navegador (`localStorage`) tu elección sobre el aviso de cookies (`qph_cookie_consent_v1`) y permiten el funcionamiento de los mapas interactivos de OpenStreetMap / Leaflet.</li>
-        <li><strong>Cookies de afiliación y reserva de entradas (Terceros):</strong> Algunas de nuestras guías incluyen enlaces de recomendación a plataformas oficiales de venta de entradas culturales y visitas guiadas (como <strong>Tiqets</strong>, <strong>Civitatis</strong> o la red <strong>Travelpayouts</strong>). Si haces clic en uno de esos enlaces o aceptas las cookies, estos proveedores pueden utilizar una cookie técnica de atribución para reconocer que la visita procede de <em>Qué Plan Hoy</em>, sin ningún coste adicional para ti.</li>
+        <li style="margin-bottom: 0.45rem;"><strong>Almacenamiento técnico y de preferencias (Estrictamente necesario):</strong> Guarda en tu propio navegador (<code>localStorage</code>) tu decisión sobre el aviso de cookies (<code>qph_cookie_consent_v1</code>), recuerda la última ciudad que has consultado en la portada (<code>qph_preferred_city</code>) para no mezclarte planes de otras ciudades y permite visualizar los mapas interactivos de OpenStreetMap / Leaflet.</li>
+        <li><strong>Cookies de atribución y reserva de entradas (Terceros):</strong> Cuando aceptas las cookies o interactúas con enlaces de plataformas colaboradoras de entradas (Tiqets / Travelpayouts), estos proveedores pueden utilizar una cookie técnica de atribución para reconocer que la visita procede de <em>Qué Plan Hoy</em>.</li>
       </ul>
-    </section>
-    <section class="reader-section">
-      <h2>2. Cómo cambiar o retirar tu consentimiento</h2>
-      <p style="margin-top: 0.5rem;">
-        Puedes modificar tu elección en cualquier momento haciendo clic en el botón <button type="button" onclick="window.openCookieBanner && window.openCookieBanner()" style="background:none;border:none;padding:0;font:inherit;color:var(--terracotta);font-weight:700;cursor:pointer;text-decoration:underline;">Configurar cookies</button> disponible también en el pie de página de toda la web, o borrando los datos de navegación desde los ajustes de tu navegador.
+      <p style="margin-top: 0.8rem; line-height: 1.72;">
+        <strong>Retirada o cambio del consentimiento en 1 clic:</strong> De conformidad con el artículo 13.2.c) del RGPD, puedes cambiar o retirar tu consentimiento en cualquier momento pulsando en <button type="button" onclick="window.openCookieBanner && window.openCookieBanner()" style="background:none;border:none;padding:0;font:inherit;color:var(--terracotta);font-weight:700;cursor:pointer;text-decoration:underline;">Configurar cookies</button> (también disponible en el pie de página de toda la web) o eliminando los datos de navegación desde la configuración de tu navegador.
       </p>
     </section>
+
+    <section class="reader-section">
+      <h2>5. Protección de datos personales y derechos RGPD / AEPD</h2>
+      <p style="margin-top: 0.55rem; line-height: 1.72;">
+        En <strong>queplanhoy.es</strong> no exigimos registro de usuarios, no contamos con formularios que recopilen datos personales identificables ni vendemos ni cedemos listados de datos a terceros. Los únicos datos técnicos tratados durante la navegación (como la dirección IP necesaria para servir las páginas a través de la infraestructura de alojamiento web en GitHub Pages) se procesan sobre la base del interés legítimo para garantizar la seguridad técnica y el funcionamiento del servicio.
+      </p>
+      <p style="margin-top: 0.65rem; line-height: 1.72;">
+        Como usuario, la normativa europea (RGPD) y española (LOPDGDD) te garantiza en todo momento el ejercicio de los siguientes derechos:
+      </p>
+      <ul style="margin: 0.75rem 0 0 1.25rem; line-height: 1.8;">
+        <li><strong>Derecho de acceso, rectificación y supresión (derecho al olvido).</strong></li>
+        <li><strong>Derecho a la limitación del tratamiento, portabilidad y oposición.</strong></li>
+        <li><strong>Derecho a presentar una reclamación ante la Autoridad de Control:</strong> Si consideras que el tratamiento de datos vulnera la normativa vigente, tienes derecho a acudir ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> a través de su sede electrónica oficial en <a href="https://www.aepd.es/" target="_blank" rel="noopener noreferrer" style="color:var(--terracotta);font-weight:600;">https://www.aepd.es/</a>.</li>
+      </ul>
+    </section>
+
     <section class="reader-section" style="border-bottom: none;">
-      <h2>3. Protección de datos personales</h2>
-      <p style="margin-top: 0.5rem;">
-        En <strong>queplanhoy.es</strong> no exigimos registro de usuarios, no tenemos formularios que recopilen datos personales identificables ni cedemos listados de correo a terceros.
+      <h2>6. Propiedad intelectual y prohibición de extracción automatizada</h2>
+      <p style="margin-top: 0.55rem; line-height: 1.72;">
+        El diseño editorial, la estructura, el código fuente, los textos originales de las rutas, los mapas interactivos, el logotipo y las creatividades gráficas propias de <strong>¿Qué Plan Hoy?</strong> están protegidos por la legislación española e internacional sobre propiedad intelectual e industrial. Queda expresamente prohibida la reproducción, distribución, reutilización o extracción sistemática o automatizada (<em>web scraping</em>) de los contenidos de este sitio web con fines comerciales o para la creación o entrenamiento de servicios competidores sin autorización expresa.
       </p>
     </section>
   </main>

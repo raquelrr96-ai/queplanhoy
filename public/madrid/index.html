@@ -172,9 +172,10 @@
 
   <main class="main-container">
     <section class="page-header-section" aria-labelledby="main-hero-heading">
-      <span class="hero-kicker">GUÍA DE MADRID</span>
+      
+      <span class="hero-kicker" id="main-hero-kicker">GUÍA DE MADRID</span>
       <h1 class="hero-title" id="main-hero-heading">Planes en Madrid: qué hacer hoy y este fin de semana fuera de lo típico</h1>
-      <p class="hero-subtitle">Rutas explicadas paso a paso, ferias históricas, jardines secretos y citas originales en Madrid con direcciones exactas, paradas de Metro, mapa interactivo y precios reales.</p>
+      <p class="hero-subtitle" id="main-hero-subtitle">Rutas explicadas paso a paso, ferias históricas, jardines secretos y citas originales en Madrid con direcciones exactas, paradas de Metro, mapa interactivo y precios reales.</p>
 
       <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
         <div class="style-pills">
@@ -200,11 +201,11 @@
     <div style="margin: 0 0 2rem 0; padding: 1.1rem 1.4rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
       <div>
         <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta);">🗺️ Nuevo · Mapa Interactivo</span>
-        <div style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
+        <div id="map-banner-title" style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
           Explora todos los planes de Madrid en el mapa con enlace directo a Google Maps
         </div>
       </div>
-      <a href="../mapa/?ciudad=Madrid" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
+      <a id="map-banner-link" href="../mapa/?ciudad=Madrid" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
         Abrir Mapa de Planes →
       </a>
     </div>
@@ -212,7 +213,7 @@
     <section aria-label="Guías de planes">
       <div class="articles-grid" id="articles-grid-container">
         
-  <article class="article-card lead-card" data-category="Este Fin de Semana" data-search="planes para el puente de octubre en madrid: programación del 12 de octubre guía con los actos oficiales del 12 de octubre (día de la fiesta nacional) y del festival de la hispanidad organizados por el ayuntamiento y la comunidad de madrid: recorrido del desfile militar, cabalgata en gran vía, conciertos gratuitos, piromusical en cibeles y museos de entrada libre. paseo del prado cibeles gran vía plaza mayor">
+  <article class="article-card lead-card" data-city="Madrid" data-category="Este Fin de Semana" data-search="planes para el puente de octubre en madrid: programación del 12 de octubre guía con los actos oficiales del 12 de octubre (día de la fiesta nacional) y del festival de la hispanidad organizados por el ayuntamiento y la comunidad de madrid: recorrido del desfile militar, cabalgata en gran vía, conciertos gratuitos, piromusical en cibeles y museos de entrada libre. paseo del prado cibeles gran vía plaza mayor">
     <a href="../madrid/planes-puente-octubre-madrid-12-octubre-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/madrid-desfile-12-octubre.jpg" alt="Efectivos desfilando en el Paseo del Prado durante el Desfile Militar del 12 de octubre en Madrid" class="card-image" loading="lazy" width="640" height="360" />
@@ -233,7 +234,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en madrid (agenda del 2 al 4 de octubre) si buscas qué plan hacer en madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al siglo de oro en la feria barroca de valdemoro, música al sol entre trenes antiguos y rutas de aperitivo. valdemoro (cercanías c-3) delicias la latina centro">
+  <article class="article-card" data-city="Madrid" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en madrid (agenda del 2 al 4 de octubre) si buscas qué plan hacer en madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al siglo de oro en la feria barroca de valdemoro, música al sol entre trenes antiguos y rutas de aperitivo. valdemoro (cercanías c-3) delicias la latina centro">
     <a href="../madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/planes-este-fin-de-semana-madrid-feria-barroca.jpg" alt="Recreación histórica y pasacalles del siglo XVII en la Feria Barroca de Valdemoro" class="card-image" loading="lazy" width="640" height="360" />
@@ -254,7 +255,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="cómo visitar el parque de el capricho en madrid te proponemos dedicar una mañana tranquila y 100 % gratuita en madrid a recorrer sin prisas el jardín histórico de 1784 de la duquesa de osuna en la alameda de osuna. alameda de osuna barajas">
+  <article class="article-card" data-city="Madrid" data-category="Gratis y Baratos" data-search="cómo visitar el parque de el capricho en madrid te proponemos dedicar una mañana tranquila y 100 % gratuita en madrid a recorrer sin prisas el jardín histórico de 1784 de la duquesa de osuna en la alameda de osuna. alameda de osuna barajas">
     <a href="../madrid/visitar-parque-el-capricho-madrid-guia-completa-gratis/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/madrid-parque-capricho.jpg" alt="Exedra de los Emperadores y jardines históricos del Parque de El Capricho en la Alameda de Osuna" class="card-image" loading="lazy" width="640" height="360" />
@@ -275,7 +276,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Planes Diferentes" data-search="5 planes en madrid cuando llueve (a cubierto y sin centros comerciales) cinco refugios cubiertos con encanto para disfrutar de madrid en un día de lluvia o frío sin acabar en un centro comercial: invernaderos de cristal, palacios del siglo xix y salones de té. retiro arganzuela argüelles / plaza de españa chueca / malasaña">
+  <article class="article-card" data-city="Madrid" data-category="Planes Diferentes" data-search="5 planes en madrid cuando llueve (a cubierto y sin centros comerciales) cinco refugios cubiertos con encanto para disfrutar de madrid en un día de lluvia o frío sin acabar en un centro comercial: invernaderos de cristal, palacios del siglo xix y salones de té. retiro arganzuela argüelles / plaza de españa chueca / malasaña">
     <a href="../madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/madrid-lluvia-gran-via.jpg" alt="Palacio de Cristal en el Parque del Retiro de Madrid reflejado en el estanque rodeado de cipreses de los pantanos" class="card-image" loading="lazy" width="640" height="360" />
@@ -296,7 +297,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="Gratis y Baratos" data-search="7 planes en madrid por menos de 10 € que parecen de lujo no hace falta dejarse medio sueldo para vivir un sábado inolvidable en madrid. desde un jardín renacentista en la latina hasta una sesión de cine en un palacio de 1922 por solo 3 €. la latina lavapiés chueca antón martín">
+  <article class="article-card" data-city="Madrid" data-category="Gratis y Baratos" data-search="7 planes en madrid por menos de 10 € que parecen de lujo no hace falta dejarse medio sueldo para vivir un sábado inolvidable en madrid. desde un jardín renacentista en la latina hasta una sesión de cine en un palacio de 1922 por solo 3 €. la latina lavapiés chueca antón martín">
     <a href="../madrid/planes-madrid-menos-de-10-euros-parecen-de-lujo/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/madrid-principe-anglona.jpg" alt="Senderos de ladrillo y cenador del Jardín del Príncipe de Anglona en el barrio de La Latina de Madrid" class="card-image" loading="lazy" width="640" height="360" />
@@ -317,7 +318,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-category="En Pareja" data-search="5 citas originales en madrid para huir de la típica cena si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical. malasaña chamberí atocha retiro">
+  <article class="article-card" data-city="Madrid" data-category="En Pareja" data-search="5 citas originales en madrid para huir de la típica cena si ya habéis ido a todos los restaurantes de moda y queréis una cita que de verdad se recuerde: pintar cerámica con vino tinto, escuchar un cuarteto de cuerda entre cientos de velas o perderse en un invernadero tropical. malasaña chamberí atocha retiro">
     <a href="../madrid/citas-originales-madrid-pareja-ceramica-vino/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../images/venues/madrid-salon-concierto-palacio.jpg" alt="Exedra y jardines históricos del Parque de El Capricho en la Alameda de Osuna de Madrid" class="card-image" loading="lazy" width="640" height="360" />
@@ -355,7 +356,7 @@
         Índice completo de guías verificadas en Madrid:
       </p>
       <ul style="margin-left: 1.25rem; line-height: 1.75;">
-        <li style="margin-bottom:0.35rem;"><a href="../madrid/planes-puente-octubre-madrid-12-octubre-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Planes para el Puente de Octubre en Madrid: programación del 12 de octubre</a> — Gratis – 14 €</li><li style="margin-bottom:0.35rem;"><a href="../madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Qué hacer este fin de semana en Madrid (agenda del 2 al 4 de octubre)</a> — Gratis (0 € – 8 €)</li><li style="margin-bottom:0.35rem;"><a href="../madrid/visitar-parque-el-capricho-madrid-guia-completa-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">Cómo visitar el Parque de El Capricho en Madrid</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">5 planes en Madrid cuando llueve (a cubierto y sin centros comerciales)</a> — 0 € – 9,00 €</li><li style="margin-bottom:0.35rem;"><a href="../madrid/planes-madrid-menos-de-10-euros-parecen-de-lujo/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">7 planes en Madrid por menos de 10 € que parecen de lujo</a> — 0 € – 9,50 €</li><li style="margin-bottom:0.35rem;"><a href="../madrid/citas-originales-madrid-pareja-ceramica-vino/" style="color:var(--terracotta);font-weight:600;text-decoration:none;">5 citas originales en Madrid para huir de la típica cena</a> — 15 € – 32 €</li>
+        <li style="margin-bottom:0.35rem;"><a href="../madrid/planes-puente-octubre-madrid-12-octubre-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Madrid:</strong> Planes para el Puente de Octubre en Madrid: programación del 12 de octubre</a> — Gratis – 14 €</li><li style="margin-bottom:0.35rem;"><a href="../madrid/planes-este-fin-de-semana-madrid-que-hacer-hoy/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Madrid:</strong> Qué hacer este fin de semana en Madrid (agenda del 2 al 4 de octubre)</a> — Gratis (0 € – 8 €)</li><li style="margin-bottom:0.35rem;"><a href="../madrid/visitar-parque-el-capricho-madrid-guia-completa-gratis/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Madrid:</strong> Cómo visitar el Parque de El Capricho en Madrid</a> — 100% Gratis (0 €)</li><li style="margin-bottom:0.35rem;"><a href="../madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Madrid:</strong> 5 planes en Madrid cuando llueve (a cubierto y sin centros comerciales)</a> — 0 € – 9,00 €</li><li style="margin-bottom:0.35rem;"><a href="../madrid/planes-madrid-menos-de-10-euros-parecen-de-lujo/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Madrid:</strong> 7 planes en Madrid por menos de 10 € que parecen de lujo</a> — 0 € – 9,50 €</li><li style="margin-bottom:0.35rem;"><a href="../madrid/citas-originales-madrid-pareja-ceramica-vino/" style="color:var(--terracotta);font-weight:600;text-decoration:none;"><strong>Madrid:</strong> 5 citas originales en Madrid para huir de la típica cena</a> — 15 € – 32 €</li>
       </ul>
       
       <div style="margin-top: 2rem;">
@@ -459,22 +460,74 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const pageCityMode = "Madrid";
+      const CITY_STORAGE_KEY = 'qph_preferred_city';
       const pills = document.querySelectorAll('.style-pill-btn');
+      const cityPickCards = document.querySelectorAll('.city-pick-card');
       const searchInput = document.getElementById('article-search-input');
       const cards = document.querySelectorAll('.article-card');
+      const heroKicker = document.getElementById('main-hero-kicker');
+      const heroHeading = document.getElementById('main-hero-heading');
+      const heroSubtitle = document.getElementById('main-hero-subtitle');
+      const hubDirectLink = document.getElementById('city-hub-direct-link');
+      const mapBannerTitle = document.getElementById('map-banner-title');
+      const mapBannerLink = document.getElementById('map-banner-link');
+
       let currentCat = 'all';
       let currentQuery = '';
+      let currentCity = pageCityMode === 'all' ? 'Madrid' : pageCityMode;
+
+      if (pageCityMode !== 'all') {
+        try { localStorage.setItem(CITY_STORAGE_KEY, pageCityMode); } catch (e) {}
+      } else {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const urlCity = params.get('ciudad');
+          const savedCity = localStorage.getItem(CITY_STORAGE_KEY);
+          if (urlCity && document.querySelector(`.city-pick-card[data-city="${urlCity}"]`)) {
+            currentCity = urlCity;
+          } else if (savedCity && document.querySelector(`.city-pick-card[data-city="${savedCity}"]`)) {
+            currentCity = savedCity;
+          }
+        } catch (e) {}
+      }
+
+      function updateCityContext(cityBtn) {
+        if (!cityBtn) return;
+        const cName = cityBtn.getAttribute('data-city');
+        const cSlug = cityBtn.getAttribute('data-slug');
+        const cH1 = cityBtn.getAttribute('data-h1');
+        const cIntro = cityBtn.getAttribute('data-intro');
+        const cKicker = cityBtn.getAttribute('data-kicker');
+
+        cityPickCards.forEach(b => b.classList.toggle('active', b === cityBtn));
+        if (heroKicker && cKicker) heroKicker.textContent = cKicker;
+        if (heroHeading && cH1) heroHeading.textContent = cH1;
+        if (heroSubtitle && cIntro) heroSubtitle.textContent = cIntro;
+        if (hubDirectLink && cSlug) {
+          hubDirectLink.href = cSlug + '/';
+          hubDirectLink.textContent = 'Ir a la página completa de ' + cName + ' →';
+        }
+        if (mapBannerTitle) {
+          mapBannerTitle.textContent = 'Explora todos los planes de ' + cName + ' en el mapa con enlace directo a Google Maps';
+        }
+        if (mapBannerLink) {
+          mapBannerLink.href = 'mapa/?ciudad=' + encodeURIComponent(cName);
+        }
+      }
 
       function applyFilters() {
         let firstVisible = true;
         cards.forEach(card => {
+          const cardCity = card.getAttribute('data-city');
           const cat = card.getAttribute('data-category');
           const text = card.getAttribute('data-search') || '';
+          const matchCity = pageCityMode !== 'all' || cardCity === currentCity;
           const matchCat = currentCat === 'all' || cat === currentCat;
           const matchQuery = !currentQuery || text.includes(currentQuery);
-          if (matchCat && matchQuery) {
+          if (matchCity && matchCat && matchQuery) {
             card.style.display = 'flex';
-            if (firstVisible && cards.length > 1 && currentCat === 'all' && !currentQuery) {
+            if (firstVisible && currentCat === 'all' && !currentQuery) {
               card.classList.add('lead-card');
             } else {
               card.classList.remove('lead-card');
@@ -482,7 +535,25 @@
             firstVisible = false;
           } else {
             card.style.display = 'none';
+            card.classList.remove('lead-card');
           }
+        });
+      }
+
+      if (pageCityMode === 'all' && cityPickCards.length > 0) {
+        const initialBtn = document.querySelector(`.city-pick-card[data-city="${currentCity}"]`) || cityPickCards[0];
+        if (initialBtn) {
+          currentCity = initialBtn.getAttribute('data-city');
+          updateCityContext(initialBtn);
+          applyFilters();
+        }
+        cityPickCards.forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentCity = btn.getAttribute('data-city');
+            try { localStorage.setItem(CITY_STORAGE_KEY, currentCity); } catch (e) {}
+            updateCityContext(btn);
+            applyFilters();
+          });
         });
       }
 
