@@ -20,42 +20,42 @@ KIT_DIR = PUBLIC_DIR / "pinterest-kit"
 PINS_DATA = [
     {
         "id": "pin-01-madrid-puente-octubre",
-        "source_image": "images/venues/madrid-campo-del-moro-portada.jpg",
-        "city_badge": "MADRID · PUENTE DE OCTUBRE",
+        "source_image": "images/venues/madrid-desfile-12-octubre.jpg",
+        "city_badge": "MADRID · 12 DE OCTUBRE",
         "accent_hex": "#c84b31",
-        "headline": "5 Planes para el Puente de Octubre en Madrid",
-        "subheadline": "Museos gratis el 12 de octubre, Campo del Moro en otoño y Mercado de Motores",
-        "footer_tag": "GUÍA PASO A PASO + MAPA · QUEPLANHOY.ES",
+        "headline": "Planes para el Puente de Octubre en Madrid",
+        "subheadline": "Desfile Militar del 12 de octubre, Cabalgata de la Hispanidad, conciertos en plazas y Cibeles",
+        "footer_tag": "PROGRAMA OFICIAL · QUEPLANHOY.ES",
         "board": "Planes en Madrid | Escapadas, Rutas y Rincones Secretos",
-        "pin_title": "5 Planes para el Puente de Octubre en Madrid (10 al 12 Octubre): Museos Gratis y Otoño",
+        "pin_title": "Planes para el Puente de Octubre y 12 de Octubre en Madrid (Programa Oficial)",
         "pin_description": (
-            "¿Te quedas en Madrid este Puente del Pilar (10 al 12 de octubre)? Descubre 5 planes "
-            "diferentes sin salir de la ciudad: museos estatales gratis por el 12 de octubre "
-            "(Museo Arqueológico Nacional y Cerralbo), paseo otoñal por los jardines históricos "
-            "del Campo del Moro, el Real Jardín Botánico en octubre, el Mercado de Motores en el "
-            "Museo del Ferrocarril y ruta de vermut por el Barrio de las Letras. Incluye horarios, "
-            "precios y mapa en Google Maps. #planesmadrid #puentedeoctubre #madridgratis #otoñoenmadrid"
+            "¿Buscas qué eventos oficiales hay en Madrid por la Fiesta Nacional del 12 de octubre "
+            "y el Puente del Pilar? Consulta la guía completa con el recorrido y mejores tramos del "
+            "Desfile Militar y la pasada aérea por el Paseo del Prado y Recoletos, la Cabalgata de la "
+            "Hispanidad en Gran Vía, los conciertos gratuitos en Plaza Mayor, Sol y Plaza de España, "
+            "el espectáculo piromusical en el Palacio de Cibeles y la jornada de puertas abiertas en el "
+            "Palacio de Buenavista y los Museos Estatales. #12deoctubre #madrid #hispanidad #planesmadrid"
         ),
-        "alt_text": "Vista otoñal de los jardines del Campo del Moro con el Palacio Real de Madrid al fondo",
+        "alt_text": "Desfile Militar del Día de la Fiesta Nacional el 12 de octubre en el Paseo del Prado de Madrid",
         "url": "https://queplanhoy.es/madrid/planes-puente-octubre-madrid-12-octubre-gratis/",
     },
     {
         "id": "pin-02-toledo-todos-los-santos-halloween",
         "source_image": "images/venues/tol-puente-san-martin-niebla.jpg",
-        "city_badge": "TOLEDO · PUENTE DE NOVIEMBRE",
+        "city_badge": "TOLEDO · TODOS LOS SANTOS",
         "accent_hex": "#b45309",
-        "headline": "Toledo en Todos los Santos y Halloween",
-        "subheadline": "Subterráneos romanos, leyendas de Bécquer en el Pozo Amargo y mazapán de convento",
-        "footer_tag": "RUTA NOCTURNA + MAPA · QUEPLANHOY.ES",
+        "headline": "Puente de Todos los Santos y Halloween en Toledo",
+        "subheadline": "Don Juan Tenorio en el Teatro de Rojas, Cuevas de Hércules, momias y huesos de santo",
+        "footer_tag": "PROGRAMA OFICIAL · QUEPLANHOY.ES",
         "board": "Toledo Secreto | Escapadas a 30 Min de Madrid",
-        "pin_title": "5 Planes en Toledo para el Puente de Todos los Santos y Halloween: Subterráneos y Leyendas",
+        "pin_title": "Puente de Todos los Santos y Halloween en Toledo: Programación y Ruta Nocturna",
         "pin_description": (
-            "Escapada de otoño a Toledo para el Puente de Todos los Santos (1 de noviembre) y la "
-            "noche de Halloween: baja gratis a las Cuevas de Hércules romanas, recorre los "
-            "callejones de las leyendas de Gustavo Adolfo Bécquer (Pozo Amargo y Cobertizo de "
-            "Santa Clara), visita las momias de la Iglesia de San Andrés y prueba los huesos de "
-            "santo y el mazapán artesano en obradores históricos. Con mapa interactivo. "
-            "#toledo #puentedetodoslossantos #halloweentoledo #escapadasdesdemadrid"
+            "Escapada a Toledo para el Puente de Todos los Santos (1 de noviembre) y la noche de "
+            "Halloween con la programación municipal y del Consorcio: el clásico Don Juan Tenorio en "
+            "el histórico Teatro de Rojas, rutas subterráneas en las Cuevas de Hércules romanas, la "
+            "cripta de las momias de la Iglesia de San Andrés, el Festival de Magia Toledo Ilusión + "
+            "leyendas de Bécquer y los tradicionales huesos de santo y mazapán en los conventos del "
+            "casco histórico. #toledo #puentedetodoslossantos #halloweentoledo #escapadasdesdemadrid"
         ),
         "alt_text": "Puente medieval de San Martín en Toledo iluminado de noche entre la niebla",
         "url": "https://queplanhoy.es/toledo/planes-puente-todos-los-santos-halloween-toledo-leyendas-noche/",

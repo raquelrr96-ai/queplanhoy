@@ -5,10 +5,10 @@
     "city": "Toledo",
     "category": "Planes Diferentes",
     "weekendDates": "30 Oct – 1 Nov",
-    "title": "5 Planes para el Puente de Todos los Santos y Halloween en Toledo: Subterráneos, Leyendas de Bécquer y Dulces de Convento",
-    "metaTitle": "Planes Puente Todos los Santos y Halloween en Toledo (2026): Noche y Leyendas | Qué Plan Hoy",
-    "metaDescription": "¿Qué hacer en el Puente de Todos los Santos (1 de noviembre) o Halloween en Toledo? Cuevas de Hércules gratis, ruta nocturna por las leyendas de Bécquer, criptas, mazapán y huesos de santo.",
-    "excerpt": "A solo 33 minutos en tren desde Madrid, Toledo es la ciudad con más misterio de España para el puente del 1 de noviembre: cisternas romanas subterráneas, los callejones donde Bécquer escribió sus leyendas, criptas mudéjares y huesos de santo recién hechos en los tornos conventuales.",
+    "title": "Qué hacer en Toledo en el Puente de Todos los Santos y Halloween",
+    "metaTitle": "Puente de Todos los Santos y Halloween en Toledo: Programación Oficial | Qué Plan Hoy",
+    "metaDescription": "Qué hacer en Toledo en el Puente de Todos los Santos y Halloween: representaciones en el Teatro de Rojas, rutas nocturnas oficiales por subterráneos, cripta de las momias de San Andrés, festival Toledo Ilusión y huesos de santo.",
+    "excerpt": "Guía con las actividades especiales de Todos los Santos (1 de noviembre) y la noche de Halloween en Toledo: programación escénica en el Teatro de Rojas, rutas nocturnas por subterráneos, cripta de San Andrés, espectáculos del Ayuntamiento y dulces de convento.",
     "publishedAt": "2026-10-06",
     "priceRange": "Gratis – 14 €",
     "neighborhoods": [
@@ -22,26 +22,26 @@
     "imageAlt": "El Puente de San Martín y el Monasterio de San Juan de los Reyes en Toledo iluminados de noche entre la niebla de otoño",
     "sections": [
       {
-        "heading": "1. Bajar a las Cuevas de Hércules en el Callejón de San Ginés",
-        "venue": "Cuevas de Hércules",
-        "location": "Callejón de San Ginés, 3 · A 3 minutos de la Catedral de Toledo",
-        "price": "Entrada libre y gratuita (reservando pase en el Consorcio de Toledo)",
+        "heading": "1. Programación de Todos los Santos y tradición de Don Juan Tenorio en el Teatro de Rojas (Plaza Mayor)",
+        "venue": "Teatro de Rojas, Toledo",
+        "content": "En España, la noche de Todos los Santos y Difuntos está ligada desde el siglo XIX a los versos de Don Juan Tenorio de José Zorrilla y al teatro clásico. En Toledo, el epicentro cultural de la programación municipal impulsada por el Ayuntamiento (toledo.es) es el histórico Teatro de Rojas, inaugurado en 1878 en plena Plaza Mayor junto al Mercado Municipal.\n\nCoincidiendo con el puente del 1 de noviembre, el coliseo toledano programa funciones especiales de su Ciclo de Otoño de Teatro y Danza en su sala principal de herradura a la italiana. Además, al salir de la función de tarde estarás a dos minutos a pie de la Catedral Primada iluminada y de las calles donde transcurren las crónicas románticas de la ciudad.",
+        "location": "Plaza Mayor, s/n (junto a la Catedral y el Teatro de Rojas) · A 8 min a pie desde Plaza de Zocodover",
+        "price": "Desde 12 € según función (consultar cartelera oficial en teatroderojas.es y toledo.es)",
+        "lat": 39.8569,
+        "lng": -4.0229,
+        "image": "images/venues/tol-teatro-de-rojas.jpg",
+        "imageAlt": "Fachada histórica del Teatro Municipal de Rojas en la Plaza Mayor de Toledo"
+      },
+      {
+        "heading": "2. Rutas Nocturnas de Halloween, Inquisición y Subterráneos (Cuevas de Hércules)",
+        "venue": "Cuevas de Hércules, Toledo",
+        "content": "Durante las noches del 31 de octubre (Halloween) y del 1 de noviembre, el casco histórico de Toledo despliega sus rutas nocturnas temáticas sobre brujería, procesos del Tribunal del Santo Oficio y subterráneos. El punto más sobrecogedor del subsuelo gestionado por el Consorcio de la Ciudad de Toledo son las Cuevas de Hércules (Callejón de San Ginés, 3): unas monumentales cisternas romanas del siglo I d.C. excavadas bajo el antiguo templo de la iglesia de San Ginés.\n\nCuenta la tradición que en estas bóvedas subterráneas el rey visigodo Don Rodrigo abrió el palacio encantado que profetizaba la pérdida de Toledo. Puedes visitar el subterráneo de forma gratuita en el horario de apertura del Consorcio y enlazar al anochecer con los pasajes de San Pedro Mártir y el Cobertizo de Santo Domingo el Real.",
+        "location": "Callejón de San Ginés, 3 (Casco Histórico, a 3 min de la Catedral) · Acceso peatonal desde Zocodover",
+        "price": "Gratis en horario del Consorcio de Toledo (martes a sábado de 10:00 a 14:00 h y de 17:00 a 19:00 h)",
         "lat": 39.8582,
         "lng": -4.0235,
         "image": "images/venues/tol-cuevas-hercules.jpg",
-        "imageAlt": "Arcos monumentales de sillería romana subterránea en el interior de las Cuevas de Hércules en Toledo",
-        "content": "No hay mejor forma de empezar el Puente de Todos los Santos o la noche de Halloween en Toledo que descendiendo al subsuelo de la ciudad. Bajo el número 3 del estrecho Callejón de San Ginés se abren las llamadas Cuevas de Hércules, un imponente depósito hidráulico romano del siglo I d.C. cubierto por grandes arcos de granito que durante siglos alimentó la leyenda de un palacio encantado cerrado con candados por los reyes visigodos.\n\nGestionadas por el Consorcio de la Ciudad de Toledo, su acceso es gratuito y permite caminar por las galerías subterráneas donde todavía se aprecia el nivel del agua sobre la roca madre."
-      },
-      {
-        "heading": "2. Ruta libre al anochecer tras los pasos de Bécquer: Pozo Amargo y Callejón del Infierno",
-        "venue": "Plaza del Pozo Amargo y Callejón del Infierno",
-        "location": "Calle del Pozo Amargo · Al sur de la Catedral Primada",
-        "price": "Paseo libre gratuito",
-        "lat": 39.8559,
-        "lng": -4.0232,
-        "image": "images/venues/tol-pozo-amargo.jpg",
-        "imageAlt": "Placa histórica de piedra de la Calle del Pozo Amargo en Toledo con la cúpula de la Catedral al fondo",
-        "content": "Cuando cae la noche de finales de octubre y se encienden los faroles de forja, el laberinto de callejuelas que baja desde detrás de la Catedral hacia el barrio de San Andrés parece detenido en el siglo XIX. Aquí se inspiró Gustavo Adolfo Bécquer durante sus estancias en Toledo para escribir leyendas como El beso, La ajorca de oro o El Cristo de la Calavera.\n\nTe proponemos un recorrido a pie sin prisas empezando en el Callejón del Infierno y la Cuesta del Barco hasta desembocar en la silenciosa plazuela del Pozo Amargo, donde una placa recuerda la leyenda de las lágrimas de Raquel y don Fernando."
+        "imageAlt": "Bóvedas subterráneas de piedra de las Cuevas de Hércules en Toledo"
       },
       {
         "heading": "3. La Iglesia mudéjar de San Andrés y su cripta histórica",
@@ -55,15 +55,15 @@
         "content": "Continuando dos minutos hacia el sur desde el Pozo Amargo llegarás a la Plaza de San Andrés, una de las más tranquilas y auténticas del casco histórico. Su iglesia combina naves mudéjares del siglo XII con una cabecera gótica renacentista espectacular.\n\nDurante siglos fue célebre entre los viajeros románticos por las momias conservadas en su cripta gracias a la sequedad del subsuelo toledano, lo que la convierte en una parada imprescindible e inesperada durante el puente de Todos los Santos."
       },
       {
-        "heading": "4. Huesos de Santo y mazapán artesano recién hecho en los tornos conventuales",
-        "venue": "Convento de Santo Domingo el Antiguo y obradores tradicionales",
-        "location": "Plaza de Santo Domingo el Antiguo · Casco Histórico de Toledo",
-        "price": "Cajas de huesos de santo y mazapán artesano desde 6 € – 12 €",
-        "lat": 39.8598,
-        "lng": -4.0268,
-        "image": "images/venues/tol-mazapan-artesano.jpg",
-        "imageAlt": "Bandejas de mazapán artesano de Toledo, marquesas y dulces tradicionales de almendra y yema",
-        "content": "En Toledo el Puente de Todos los Santos huele a almendra tostada, miel y yema confitada. En los días previos al 1 de noviembre, tanto los conventos de clausura (como Santo Domingo el Antiguo o San Clemente) como los obradores históricos del casco antiguo elaboran a mano los tradicionales Huesos de Santo rellenos de dulce de yema, además de anguilas de mazapán y marquesas.\n\nComprar una caja directamente en el torno de madera de un convento del siglo XVI es una experiencia que solo se vive así en estas fechas."
+        "heading": "4. Festival de Magia «Toledo Ilusión» y Ruta de las Leyendas de Bécquer en el Pozo Amargo",
+        "venue": "Plaza del Pozo Amargo, Toledo",
+        "content": "En torno al Puente de Todos los Santos, el Ayuntamiento de Toledo impulsa espectáculos familiares y actuaciones del festival de magia «Toledo Ilusión» en plazas y centros culturales de la ciudad, que al caer la tarde dan paso al recorrido literario más famoso del otoño toledano: los escenarios reales donde Gustavo Adolfo Bécquer ambientó sus Leyendas.\n\nEmpieza en la recoleta Plaza del Pozo Amargo (protagonista de la leyenda de las lágrimas de Raquel y el caballero cristiano), continúa por la Calle del Cristo de la Calavera y adéntrate bajo las vigas de madera del Cobertizo de Santa Clara, donde Bécquer situó la historia de El beso y de Tres fechas cuando el silencio y los faroles de hierro transforman la judería y la zona conventual.",
+        "location": "Plaza del Pozo Amargo (al sur de la Catedral Primada) · Ruta a pie de 45 min por el Casco Histórico",
+        "price": "Gratis (recorrido libre exterior y actividades municipales)",
+        "lat": 39.8551,
+        "lng": -4.0238,
+        "image": "images/venues/tol-pozo-amargo.jpg",
+        "imageAlt": "Brocal de piedra y placa cerámica en la Plaza del Pozo Amargo de Toledo"
       },
       {
         "heading": "5. Toledo entre las brumas de otoño desde el Mirador del Valle y el Puente de San Martín",
@@ -102,76 +102,75 @@
     "city": "Madrid",
     "category": "Este Fin de Semana",
     "weekendDates": "10 – 12 Oct",
-    "title": "5 Planes para el Puente de Octubre en Madrid (10 al 12 de octubre): Museos Gratis, Jardines de Otoño y Mercado de Motores",
-    "metaTitle": "Planes Puente de Octubre en Madrid 2026 (10 al 12 Oct): Gratis y Originales | Qué Plan Hoy",
-    "metaDescription": "¿Qué hacer en Madrid en el Puente de Octubre y el 12 de octubre (Fiesta Nacional)? Museos estatales y Palacio Real gratis, Mercado de Motores, Jardín Botánico en otoño y ruta de vermut.",
-    "excerpt": "Aprovecha el festivo del 12 de octubre y el puente de otoño en Madrid sin caer en los atascos: jornadas de puertas abiertas en grandes museos y palacios, paseo entre hojas caídas en el Botánico, trenes históricos en Delicias y tabernas centenarias.",
+    "title": "Planes para el Puente de Octubre en Madrid: programación del 12 de octubre",
+    "metaTitle": "Planes Puente de Octubre en Madrid: Desfile 12 de Octubre e Hispanidad | Qué Plan Hoy",
+    "metaDescription": "Programación oficial del Puente de Octubre y 12 de octubre en Madrid: horario y recorrido del Desfile Militar, Cabalgata de la Hispanidad en Gran Vía, conciertos gratis en Plaza Mayor, fuegos artificiales en Cibeles y puertas abiertas.",
+    "excerpt": "Guía con los actos oficiales del 12 de octubre (Día de la Fiesta Nacional) y del Festival de la Hispanidad organizados por el Ayuntamiento y la Comunidad de Madrid: recorrido del Desfile Militar, Cabalgata en Gran Vía, conciertos gratuitos, piromusical en Cibeles y museos de entrada libre.",
     "publishedAt": "2026-10-06",
     "priceRange": "Gratis – 14 €",
     "neighborhoods": [
-      "Palacio y Ópera",
-      "Salamanca y Retiro",
-      "Paseo del Arte",
-      "Delicias",
-      "Barrio de las Letras"
+      "Paseo del Prado",
+      "Cibeles",
+      "Gran Vía",
+      "Plaza Mayor"
     ],
-    "image": "images/venues/madrid-campo-del-moro-portada.jpg",
-    "imageAlt": "Vista del Palacio Real de Madrid desde los jardines históricos del Campo del Moro en otoño",
+    "image": "images/venues/madrid-desfile-12-octubre.jpg",
+    "imageAlt": "Efectivos desfilando en el Paseo del Prado durante el Desfile Militar del 12 de octubre en Madrid",
     "sections": [
       {
-        "heading": "1. Jornada de puertas abiertas el 12 de octubre en el Museo Arqueológico Nacional (MAN)",
-        "venue": "Museo Arqueológico Nacional (MAN)",
-        "location": "Calle de Serrano, 13 · Metro Serrano (L4) o Retiro (L2)",
-        "price": "Gratis el 12 de octubre (y sábados desde las 14:00 h y domingos por la mañana)",
+        "heading": "1. El Desfile Militar del 12 de Octubre y el vuelo de la Patrulla Águila (Paseo del Prado y Recoletos)",
+        "venue": "Plaza de Cánovas del Castillo (Fuente de Neptuno), Madrid",
+        "content": "El acto central del Día de la Fiesta Nacional arranca el 12 de octubre a las 11:00 h en el eje del Paseo del Prado y el Paseo de Recoletos. Tras la llegada de los Reyes a la Tribuna Real instalada en la Plaza de Cánovas del Castillo (Fuente de Neptuno), tiene lugar el salto paracaidista de la PAPEA portando la bandera, el izado solemne, el homenaje a los caídos y la pasada aérea tiñendo el cielo de rojo y gualda.\n\nA continuación, el desfile terrestre recorre desde la Glorieta del Emperador Carlos V (Atocha) hasta la Plaza de Colón pasando por Neptuno y Cibeles con más de 4.000 efectivos de los tres Ejércitos, la Armada, la Guardia Civil, la UME y el paso rápido de La Legión. Consejo práctico del Ayuntamiento: las estaciones de Metro de Banco de España y Colón cierran o restringen accesos por seguridad a media mañana; lo más cómodo es bajar en Retiro (L2), Serrano (L4) o Estación del Arte (L1) antes de las 09:30 h y situarse en el tramo arbolado del Paseo de Recoletos, donde hay mejor visibilidad que en las vallas de Neptuno.",
+        "location": "Desde Glorieta de Carlos V (Atocha) hasta Plaza de Colón (Tribuna en Neptuno) · Metro Retiro (L2), Serrano (L4) o Estación del Arte (L1)",
+        "price": "Gratis (acceso libre a lo largo del recorrido desde las 09:00 h)",
+        "lat": 40.4153,
+        "lng": -3.6942,
+        "image": "images/venues/madrid-patrulla-aguila-12-octubre.jpg",
+        "imageAlt": "Pasada aérea con los colores de la bandera nacional sobre el cielo de Madrid el 12 de octubre"
+      },
+      {
+        "heading": "2. Cabalgata de la Hispanidad por la Gran Vía: carrozas, comparsas y folclore",
+        "venue": "Gran Vía, Madrid",
+        "content": "Uno de los eventos más multitudinarios de la programación oficial de la Hispanidad en Madrid es la gran Cabalgata que toma de extremo a extremo la Gran Vía madrileña (desde Plaza de España hasta la confluencia con la calle Alcalá). Más de veinte delegaciones de países hispanoamericanos participan con carrozas alegóricas, agrupaciones de música tradicional en vivo, danzas folclóricas, zancudos y comparsas.\n\nAl cortarse el tráfico rodado en toda la Gran Vía durante la tarde del desfile, las aceras entre Callao y la Red de San Luis se convierten en una grada al aire libre. Si vas en familia o quieres sacar buenas fotos sin agobios, sitúate en el tramo alto entre Santo Domingo y Callao o cerca del Edificio Metrópolis al final del recorrido.",
+        "location": "Calle Gran Vía (recorrido de Plaza de España a calle Alcalá) · Metro Plaza de España (L3, L10), Callao (L3, L5) o Sevilla (L2)",
+        "price": "Gratis (evento oficial al aire libre)",
+        "lat": 40.4196,
+        "lng": -3.7024,
+        "image": "images/venues/madrid-gran-via-hispanidad.jpg",
+        "imageAlt": "Edificio Metrópolis e inicio de la Gran Vía de Madrid iluminada"
+      },
+      {
+        "heading": "3. Conciertos Gratuitos de la Hispanidad en Plaza Mayor, Puerta del Sol y Plaza de España",
+        "venue": "Plaza Mayor, Madrid",
+        "content": "Durante todo el Puente de Octubre (del 10 al 12 de octubre), el Ayuntamiento de Madrid y la Comunidad de Madrid instalan escenarios oficiales al aire libre con más de una treintena de conciertos gratuitos. La Plaza Mayor, la Puerta del Sol, la Plaza de España y el entorno de la Puerta de Alcalá acogen desde el mediodía hasta la noche actuaciones de artistas invitados de Latinoamérica y España, recitales de flamenco, tango, salsa y música urbana.\n\nEl acceso a todos los recintos es gratuito hasta completar el aforo fijado por Policía Municipal en cada plaza. Para los conciertos principales de tarde-noche en la Plaza Mayor y Plaza de España conviene entrar por los arcos de la calle Toledo o Felipe III al menos 45 minutos antes del inicio.",
+        "location": "Escenarios oficiales en Plaza Mayor, Puerta del Sol y Plaza de España · Metro Sol (L1, L2, L3), Ópera (L2, L5) y Plaza de España (L3, L10)",
+        "price": "Gratis (entrada libre hasta completar aforo del recinto)",
+        "lat": 40.4155,
+        "lng": -3.7074,
+        "image": "images/venues/madrid-concierto-plaza-mayor.jpg",
+        "imageAlt": "Fachada iluminada de la Casa de la Panadería en la Plaza Mayor de Madrid"
+      },
+      {
+        "heading": "4. Espectáculo Piromusical y Fuegos Artificiales en el Palacio de Cibeles (Ayuntamiento de Madrid)",
+        "venue": "Palacio de Cibeles, Madrid",
+        "content": "El cierre institucional de las fiestas del 12 de octubre lo protagoniza el Ayuntamiento de Madrid en la Plaza de Cibeles. Al caer la noche (habitualmente a las 21:30 h del domingo 12 de octubre), la fachada monumental del Palacio de Cibeles se ilumina con una proyección especial y da comienzo un espectáculo piromusical gratuito en el que los fuegos artificiales se disparan sincronizados con un repertorio de música clásica y popular hispanoamericana.\n\nLos mejores puntos para contemplar el castillo de fuegos sin árboles delante son la subida de la calle Alcalá hacia la Puerta de Alcalá y el arranque del Paseo del Prado frente al Banco de España.",
+        "location": "Plaza de Cibeles, 1 (frente al Palacio de Cibeles / Ayuntamiento de Madrid) · Metro Banco de España (L2) o Retiro (L2)",
+        "price": "Gratis (espectáculo piromusical oficial a las 21:30 h)",
+        "lat": 40.4189,
+        "lng": -3.6921,
+        "image": "images/venues/madrid-palacio-cibeles-noche.jpg",
+        "imageAlt": "Palacio de Cibeles, sede del Ayuntamiento de Madrid"
+      },
+      {
+        "heading": "5. Jornada de Puertas Abiertas del 12 de Octubre: Palacio de Buenavista y Museos Estatales Gratis",
+        "venue": "Museo Arqueológico Nacional, Madrid",
+        "content": "Con motivo del Día de la Fiesta Nacional, el 12 de octubre abren gratis al público tanto los grandes Museos Estatales como varias sedes históricas que el resto del año tienen acceso restringido. Justo en la Plaza de Cibeles, el Cuartel General del Ejército celebra jornada de puertas abiertas en los salones y jardines del Palacio de Buenavista; y a pocos pasos, el Museo Arqueológico Nacional (MAN, en calle Serrano 13), el Museo del Prado, el Museo Reina Sofía y el Museo Cerralbo ofrecen entrada gratuita durante toda la jornada festiva.\n\nSi después del desfile militar por Recoletos te acercas al Museo Arqueológico Nacional, podrás recorrer sin coste la sala de la Dama de Elche, el Tesoro de Guarrazar y las bóvedas mudéjares en pleno barrio de Salamanca.",
+        "location": "Calle de Serrano, 13 (Museo Arqueológico Nacional) y Plaza de Cibeles (Palacio de Buenavista) · Metro Serrano (L4) / Banco de España (L2)",
+        "price": "Gratis el 12 de octubre (Jornada oficial de Puertas Abiertas)",
         "lat": 40.4235,
         "lng": -3.6889,
         "image": "images/venues/madrid-museo-arqueologico-interior.jpg",
-        "imageAlt": "Esculturas clásicas en el patio interior renovado del Museo Arqueológico Nacional de Madrid",
-        "content": "Con motivo del Día de la Fiesta Nacional (12 de octubre), todos los museos estatales de Madrid abren sus puertas de forma completamente gratuita durante toda la jornada. Mientras las colas se concentran en la puerta del Museo del Prado, el Museo Arqueológico Nacional (en la calle Serrano) permite recorrer sin agobios uno de los edificios museísticos mejor rehabilitados de Europa.\n\nEn dos horas puedes contemplar la Dama de Elche, el Tesoro de Guarrazar, los mosaicos romanos de gran formato y las bóvedas mudéjares artesonadas. Al salir, estás a solo cinco minutos a pie de la Puerta de Alcalá y los paseos arbolados del Retiro."
-      },
-      {
-        "heading": "2. Paseo de otoño por los Jardines del Campo del Moro y el entorno del Palacio Real",
-        "venue": "Jardines del Campo del Moro",
-        "location": "Paseo de la Virgen del Puerto, s/n · Metro Príncipe Pío (L6, L10, Ramal)",
-        "price": "Entrada libre y gratuita todos los días (10:00 h a 19:00 h)",
-        "lat": 40.4179,
-        "lng": -3.7176,
-        "image": "images/venues/madrid-campo-del-moro-jardines.jpg",
-        "imageAlt": "Senderos arbolados de los Jardines del Campo del Moro en Madrid a principios de otoño",
-        "content": "Octubre es el mejor mes del año para bajar a los Jardines del Campo del Moro, el bosque romántico de 20 hectáreas trazado en el siglo XIX a los pies de la fachada occidental del Palacio Real. Al tener una única entrada principal abajo, junto al río Manzanares y Príncipe Pío, muchos visitantes pasan de largo por la Plaza de Oriente sin saber que este jardín existe.\n\nDurante el puente de octubre los castaños de Indias y los plátanos centenarios empiezan a teñirse de tonos ocres, los pavos reales pasean sueltos junto a la Fuente de los Tritones y obtienes la perspectiva más monumental del Palacio Real y de la nueva Galería de las Colecciones Reales sin ruido de tráfico."
-      },
-      {
-        "heading": "3. Colores de octubre en el Real Jardín Botánico (CSIC)",
-        "venue": "Real Jardín Botánico de Madrid",
-        "location": "Plaza de Murillo, 2 · Metro Estación del Arte (L1)",
-        "price": "4 € entrada general (6 € con exposiciones en el Pabellón Villanueva)",
-        "lat": 40.4111,
-        "lng": -3.6911,
-        "image": "images/venues/madrid-jardin-botanico-otono.jpg",
-        "imageAlt": "Parterres neoclásicos y hojas de otoño en el Real Jardín Botánico de Madrid",
-        "content": "Frente a la fachada sur del Museo del Prado, el Real Jardín Botánico fundado por Carlos III en 1781 vive su transformación más bonita a mediados de octubre. Sus tres terrazas escalonadas (la Terraza de los Cuadros, la de las Escuelas Botánicas y el Plano de la Flor) se llenan de hojas secas de olmos, ginkgos y robles.\n\nMerece la pena entrar a media tarde, recorrer el Invernadero de las Palmas y el de Graells si refresca, y terminar en el Pabellón Villanueva antes de subir caminando hacia las librerías de la Cuesta de Moyano."
-      },
-      {
-        "heading": "4. Mercado de Motores entre locomotoras históricas en el Museo del Ferrocarril",
-        "venue": "Museo del Ferrocarril de Madrid (Estación de Delicias)",
-        "location": "Paseo de las Delicias, 61 · Metro Delicias (L3) y Cercanías Delicias",
-        "price": "Entrada gratuita al Mercado de Motores (reservando pase horario en su web)",
-        "lat": 40.4002,
-        "lng": -3.6931,
-        "image": "images/venues/madrid-museo-ferrocarril-delicias.jpg",
-        "imageAlt": "Locomotoras de vapor y vagones clásicos de madera en el interior del Museo del Ferrocarril de Madrid",
-        "content": "El segundo fin de semana de octubre coincide con una de las citas más singulares de Madrid: el Mercado de Motores dentro de la antigua Estación de Delicias de 1880, hoy sede del Museo del Ferrocarril. Más de un centenar de artesanos, diseñadores independientes, libreros y puestos de objetos vintage montan sus paradas directamente en los andenes, flanqueados por locomotoras de vapor del siglo XIX y vagones restaurante del Orient Express.\n\nEn los jardines exteriores se instalan food trucks, barras al aire libre y conciertos acústicos en directo durante todo el sábado y el domingo."
-      },
-      {
-        "heading": "5. Vermut de grifo y tabernas centenarias en el Barrio de las Letras (Casa Alberto)",
-        "venue": "Taberna Casa Alberto (Barrio de las Letras)",
-        "location": "Calle de las Huertas, 18 · Metro Antón Martín (L1) o Sol (L1, L2, L3)",
-        "price": "Vermut de grifo y raciones tradicionales entre 8 € y 18 € por persona",
-        "lat": 40.4141,
-        "lng": -3.6997,
-        "image": "images/venues/madrid-casa-alberto-huertas.jpg",
-        "imageAlt": "Fachada histórica de madera roja de la taberna centenaria Casa Alberto en la calle de las Huertas de Madrid",
-        "content": "Para rematar el mediodía o la tarde del puente sin caer en franquicias, nada como una ruta a pie por las calles peatonales del Barrio de las Letras deteniéndose en Casa Alberto (Calle de las Huertas, 18). Abierta en 1827 en el mismo edificio donde vivió Miguel de Cervantes cuando escribió la segunda parte del Quijote, conserva su fachada de madera roja, su mostrador de ónice y su famoso vermut de grifo servido con bacalao, callos o rabo de toro."
+        "imageAlt": "Patio acristalado y esculturas clásicas del Museo Arqueológico Nacional de Madrid"
       }
     ],
     "affiliate": {
@@ -184,19 +183,23 @@
     },
     "faqs": [
       {
-        "question": "¿Qué museos son gratis en Madrid el 12 de octubre (Día de la Hispanidad)?",
-        "answer": "El 12 de octubre tienen entrada gratuita durante su horario de apertura el Museo del Prado, el Museo Reina Sofía, el Museo Arqueológico Nacional (MAN), el Museo del Romanticismo, el Museo Cerralbo, el Museo Sorolla y el Museo Nacional de Artes Decorativas, entre otros museos estatales."
+        "question": "¿A qué hora empieza y por dónde pasa el Desfile Militar del 12 de octubre en Madrid?",
+        "answer": "El acto oficial comienza a las 11:00 h del 12 de octubre. El recorrido parte de la Glorieta del Emperador Carlos V (Atocha), sube por el Paseo del Prado (con la Tribuna Real en la Fuente de Neptuno), cruza la Plaza de Cibeles y continúa por el Paseo de Recoletos hasta finalizar en la Plaza de Colón."
       },
       {
-        "question": "¿Hace falta reservar entrada para el Mercado de Motores en el Puente de Octubre?",
-        "answer": "La entrada al Mercado de Motores en el Museo del Ferrocarril es gratuita, pero es recomendable descargar previamente la invitación gratuita con franja horaria desde su web oficial para entrar sin esperas."
+        "question": "¿Dónde son los conciertos gratuitos y los fuegos artificiales de la Hispanidad en Madrid?",
+        "answer": "Los escenarios principales de conciertos gratuitos organizados por la Comunidad y el Ayuntamiento de Madrid se ubican en la Plaza Mayor, la Puerta del Sol, la Plaza de España y la Puerta de Alcalá. El espectáculo piromusical de fuegos artificiales tiene lugar la noche del 12 de octubre en la Plaza de Cibeles frente al Ayuntamiento."
+      },
+      {
+        "question": "¿Qué museos y palacios son gratis en Madrid el 12 de octubre?",
+        "answer": "El 12 de octubre celebran jornada de puertas abiertas gratuita los Museos Estatales (Museo del Prado, Reina Sofía, Museo Arqueológico Nacional, Museo Cerralbo y Museo del Romanticismo), además de aperturas especiales en Patrimonio Nacional y en el Palacio de Buenavista (Cuartel General del Ejército en Cibeles)."
       }
     ]
   },
   {
     "id": "madrid-planes-este-fin-de-semana-feria-barroca",
     "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
-    "title": "5 Planes este Fin de Semana en Madrid (2 al 4 de octubre de 2026): Feria Barroca de Valdemoro, Mercadillos y Rutas Gratis",
+    "title": "Qué hacer este fin de semana en Madrid (agenda del 2 al 4 de octubre)",
     "metaTitle": "Qué Plan Hacer en Madrid este Fin de Semana (2 al 4 de octubre 2026) | Qué Plan Hoy",
     "metaDescription": "¿Buscas qué plan hacer en Madrid este fin de semana del 2 al 4 de octubre de 2026? Feria Barroca de Valdemoro (gratis), mercadillos, rutas y planes originales.",
     "city": "Madrid",
@@ -300,7 +303,7 @@
     "id": "madrid-plan-unico-parque-el-capricho-a-fondo",
     "slug": "visitar-parque-el-capricho-madrid-guia-completa-gratis",
     "articleType": "single_plan",
-    "title": "El Parque de El Capricho en Madrid: Guía Completa del Jardín Secreto de la Duquesa de Osuna (Gratis)",
+    "title": "Cómo visitar el Parque de El Capricho en Madrid",
     "metaTitle": "Visitar el Parque de El Capricho en Madrid: Guía Completa Gratis | Qué Plan Hoy",
     "metaDescription": "Cómo visitar gratis el Parque de El Capricho en Madrid paso a paso: su laberinto de laurel, el Templete de Baco, el embarcadero y dónde tomar el vermut al salir.",
     "city": "Madrid",
@@ -388,7 +391,7 @@
   {
     "id": "barcelona-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
-    "title": "5 Planes este Fin de Semana en Barcelona (2 al 4 de octubre de 2026): Mercados de Otoño, Fiesta Mayor de Les Corts y Rutas Gratis",
+    "title": "Qué hacer este fin de semana en Barcelona (agenda del 2 al 4 de octubre)",
     "metaTitle": "Qué Plan Hacer en Barcelona este Fin de Semana (2 al 4 de octubre 2026) | Qué Plan Hoy",
     "metaDescription": "¿Buscas qué plan hacer en Barcelona este fin de semana del 2 al 4 de octubre de 2026? Fiesta Mayor de Les Corts, mercados gastronómicos en El Born, museos gratis el domingo y miradores.",
     "city": "Barcelona",
@@ -490,7 +493,7 @@
   {
     "id": "valencia-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
-    "title": "5 Planes este Fin de Semana en Valencia (2 al 4 de octubre de 2026): Mercados Medievales del 9 d'Octubre, Huerta y Albufera",
+    "title": "Qué hacer este fin de semana en Valencia (especial 9 d'Octubre)",
     "metaTitle": "Qué Plan Hacer en Valencia este Fin de Semana (2 al 4 de octubre 2026) | Qué Plan Hoy",
     "metaDescription": "¿Buscas qué plan hacer en Valencia este fin de semana del 2 al 4 de octubre de 2026? Vísperas del 9 d'Octubre, mercados en el Jardín del Turia, conciertos gratis y atardecer en la Albufera.",
     "city": "Valencia",
@@ -593,7 +596,7 @@
     "id": "barcelona-plan-unico-laberinto-horta-a-fondo",
     "slug": "visitar-laberinto-de-horta-barcelona-guia-completa-gratis",
     "articleType": "single_plan",
-    "title": "El Laberinto de Horta: Ruta Gratis de Mañana en el Jardín más Antiguo de Barcelona",
+    "title": "Ruta por el Laberinto de Horta: el jardín más antiguo de Barcelona",
     "metaTitle": "Visitar el Laberinto de Horta en Barcelona Gratis: Guía Paso a Paso | Qué Plan Hoy",
     "metaDescription": "Todo lo que necesitas para hacer un plan redondo en el Parque del Laberinto de Horta de Barcelona: días gratis, recorrido por sus terrazas neoclásicas, cascada y vermut en Horta.",
     "city": "Barcelona",
@@ -681,7 +684,7 @@
   {
     "id": "sevilla-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
-    "title": "5 Planes este Fin de Semana en Sevilla (2 al 4 de octubre de 2026): Mercadillo de Arte en Plaza del Museo, Patios y Triana",
+    "title": "Qué hacer este fin de semana en Sevilla (agenda del 2 al 4 de octubre)",
     "metaTitle": "Qué Plan Hacer en Sevilla este Fin de Semana (2 al 4 de octubre 2026) | Qué Plan Hoy",
     "metaDescription": "¿Buscas qué plan hacer en Sevilla este fin de semana del 2 al 4 de octubre de 2026? Mercadillo de Pintores en Plaza del Museo, patios mudéjares gratis, ruta por Triana y atardecer en el río.",
     "city": "Sevilla",
@@ -783,7 +786,7 @@
   {
     "id": "toledo-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
-    "title": "5 Planes este Fin de Semana en Toledo (2 al 4 de octubre de 2026): Mercados de Artesanía, Subterráneos Gratis y Ruta del Tajo",
+    "title": "Qué hacer este fin de semana en Toledo (agenda del 2 al 4 de octubre)",
     "metaTitle": "Qué Plan Hacer en Toledo este Fin de Semana (2 al 4 de octubre 2026) | Qué Plan Hoy",
     "metaDescription": "¿Buscas qué plan hacer en Toledo este fin de semana del 2 al 4 de octubre de 2026? Mercado de artesanía en la Judería, subterráneos romanos gratis, senda del Tajo y miradores.",
     "city": "Toledo",
@@ -886,7 +889,7 @@
     "id": "valencia-plan-unico-albufera-el-palmar-autobus",
     "slug": "como-ir-a-la-albufera-valencia-autobus-el-palmar-atardecer",
     "articleType": "single_plan",
-    "title": "Tarde en L'Albufera y El Palmar en Autobús Urbano: Guía Paso a Paso desde Valencia",
+    "title": "Cómo ir a la Albufera y El Palmar en autobús desde Valencia",
     "metaTitle": "Cómo Visitar la Albufera de Valencia y El Palmar en Bus (Plan Completo) | Qué Plan Hoy",
     "metaDescription": "Cómo ir en el autobús 24 o 25 a la Albufera desde Valencia por muy poco dinero: ruta por la Devesa del Saler, barracas de El Palmar y atardecer en barca.",
     "city": "Valencia",
@@ -975,7 +978,7 @@
   {
     "id": "madrid-planes-cuando-llueve-cubiertos",
     "slug": "planes-en-madrid-cuando-llueve-cubiertos-originales",
-    "title": "5 Planes en Madrid cuando Llueve: Invernaderos Cubiertos, Palacios y Cafés Escondidos",
+    "title": "5 planes en Madrid cuando llueve (a cubierto y sin centros comerciales)",
     "metaTitle": "5 Planes en Madrid cuando Llueve (Cubiertos y Baratos) | Qué Plan Hoy",
     "metaDescription": "¿Qué hacer en Madrid cuando llueve? 5 planes a cubierto fuera de los centros comerciales: invernaderos tropicales, el Salón de Baile del Museo Cerralbo, jardines acristalados y cine.",
     "city": "Madrid",
@@ -1076,7 +1079,7 @@
   {
     "id": "barcelona-citas-originales-pareja-sant-pau",
     "slug": "citas-originales-barcelona-en-pareja-jardines-jazz",
-    "title": "5 Citas Originales en Barcelona en Pareja: Recinto de Sant Pau, Jardines Ocultos y Jazz",
+    "title": "5 citas originales en Barcelona para sorprender en pareja",
     "metaTitle": "5 Citas Originales en Barcelona en Pareja (Diferentes) | Qué Plan Hoy",
     "metaDescription": "5 ideas de citas originales en Barcelona en pareja: paseo por los pabellones modernistas de Sant Pau, el Laberinto de Horta, anfiteatro del Teatre Grec, jazz en El Born y observatorio.",
     "city": "Barcelona",
@@ -1177,7 +1180,7 @@
   {
     "id": "valencia-planes-gratis-monforte-huerta",
     "slug": "planes-gratis-en-valencia-jardines-monforte-cultura",
-    "title": "5 Planes Gratis en Valencia: Jardines de Monforte, Claustros Góticos y Huerta",
+    "title": "5 planes gratis en Valencia que casi nadie conoce",
     "metaTitle": "5 Planes Gratis en Valencia (Fuera de lo Típico) | Qué Plan Hoy",
     "metaDescription": "Los 5 mejores planes gratis en Valencia: los Jardines de Monforte, el claustro gótico del Centre del Carme (CCCC), ruta por la huerta de Alboraya, el Cabanyal y miradores.",
     "city": "Valencia",
@@ -1279,7 +1282,7 @@
     "id": "sevilla-plan-unico-marqueses-algaba-calle-feria",
     "slug": "palacio-marqueses-de-la-algaba-calle-feria-sevilla-plan-gratis",
     "articleType": "single_plan",
-    "title": "El Palacio de los Marqueses de la Algaba y la Calle Feria: Ruta Gratis por la Sevilla Mudéjar",
+    "title": "Ruta por el Palacio de los Marqueses de la Algaba y la Calle Feria",
     "metaTitle": "Visitar el Palacio de los Marqueses de la Algaba y Calle Feria en Sevilla Gratis | Qué Plan Hoy",
     "metaDescription": "Recorrido gratuito y auténtico en Sevilla: visitar sin colas el Palacio mudéjar de los Marqueses de la Algaba, la iglesia de Omnium Sanctorum y el Mercado de la Calle Feria.",
     "city": "Sevilla",
@@ -1368,7 +1371,7 @@
   {
     "id": "sevilla-planes-gratis-pabellon-mudejar-palacios",
     "slug": "planes-gratis-en-sevilla-fuera-de-lo-tipico",
-    "title": "5 Planes Gratis en Sevilla Fuera de lo Típico: Pabellón Mudéjar, Palacios y Mercadillos",
+    "title": "5 planes gratis en Sevilla fuera de lo típico",
     "metaTitle": "5 Planes Gratis en Sevilla Fuera de lo Típico | Qué Plan Hoy",
     "metaDescription": "5 planes gratis en Sevilla fuera de lo turístico: la Plaza de América y el Pabellón Mudéjar, el Palacio de los Marqueses de la Algaba, el Jueves de la Calle Feria y Santa Marta.",
     "city": "Sevilla",
@@ -1469,7 +1472,7 @@
   {
     "id": "toledo-planes-gratis-senda-tajo-puente-san-martin",
     "slug": "planes-gratis-en-toledo-fuera-de-lo-turistico",
-    "title": "5 Planes Gratis en Toledo Fuera de lo Turístico: Senda del Tajo, Puente de San Martín y Cobertizos",
+    "title": "5 planes gratis en Toledo más allá de lo turístico",
     "metaTitle": "5 Planes Gratis en Toledo Fuera de lo Turístico | Qué Plan Hoy",
     "metaDescription": "Descubre 5 planes gratis en Toledo fuera de lo turístico: el Puente de San Martín y la Senda Ecológica del Tajo, las Termas Romanas, el Cerro del Bú y la ruta de los Cobertizos.",
     "city": "Toledo",
@@ -1570,7 +1573,7 @@
   {
     "id": "madrid-menos-10-euros",
     "slug": "planes-madrid-menos-de-10-euros-parecen-de-lujo",
-    "title": "7 Planes en Madrid por menos de 10 € (que parecen de lujo este fin de semana)",
+    "title": "7 planes en Madrid por menos de 10 € que parecen de lujo",
     "metaTitle": "7 Planes en Madrid por menos de 10 € (Originales 2026) | Qué Plan Hoy",
     "metaDescription": "Descubre 7 planes diferentes y baratos en Madrid por menos de 10 €: jardines escondidos en La Latina, cine art déco por 3 €, vermut castizo y palacios gratis.",
     "city": "Madrid",
@@ -1694,7 +1697,7 @@
     "id": "toledo-plan-unico-senda-ecologica-tajo-a-fondo",
     "slug": "senda-ecologica-del-tajo-toledo-ruta-a-pie-gratis",
     "articleType": "single_plan",
-    "title": "La Senda Ecológica del Tajo en Toledo: Guía Completa de la Ruta a Pie Gratis bajo las Murallas",
+    "title": "La Senda Ecológica del Tajo: ruta a pie gratis en Toledo",
     "metaTitle": "Senda Ecológica del Tajo en Toledo: Ruta Paso a Paso Gratis | Qué Plan Hoy",
     "metaDescription": "Ruta al aire libre y 100 % gratis en Toledo: cómo recorrer paso a paso la Senda Ecológica del río Tajo desde el Puente de Alcántara hasta el Puente de San Martín.",
     "city": "Toledo",
@@ -1783,7 +1786,7 @@
   {
     "id": "valencia-planes-diferentes-albufera",
     "slug": "planes-diferentes-valencia-en-pareja-baratos",
-    "title": "6 Planes Diferentes en Valencia para Salir de la Rutina (Atardeceres en Barca, Refugios y Huerta)",
+    "title": "6 planes diferentes en Valencia para salir de la rutina",
     "metaTitle": "6 Planes Diferentes en Valencia y en Pareja (Guía 2026) | Qué Plan Hoy",
     "metaDescription": "¿Qué hacer hoy en Valencia fuera de lo típico? 6 planes originales y baratos: atardecer en L'Albufera desde 5 €, refugios antiaéreos en Ruzafa y almuerzos en la huerta.",
     "city": "Valencia",
@@ -1896,7 +1899,7 @@
   {
     "id": "sevilla-patios-citas-pareja",
     "slug": "planes-en-sevilla-en-pareja-diferentes-baratos",
-    "title": "5 Planes en Sevilla en Pareja y Gratis (Patios Ocultos, Azoteas y Flamenco Íntimo)",
+    "title": "5 planes en pareja en Sevilla diferentes y baratos",
     "metaTitle": "5 Planes en Sevilla en Pareja y Baratos (Guía 2026) | Qué Plan Hoy",
     "metaDescription": "Sorprende en Sevilla sin caer en trampas turísticas: casas-palacio con patios de naranjos casi vacíos, ruta por Santa Cruz al anochecer y flamenco en Triana.",
     "city": "Sevilla",
@@ -1998,7 +2001,7 @@
   {
     "id": "madrid-citas-originales-pareja",
     "slug": "citas-originales-madrid-pareja-ceramica-vino",
-    "title": "5 Citas Originales en Madrid para salir de la típica cena (Cerámica, Vino y Velas)",
+    "title": "5 citas originales en Madrid para huir de la típica cena",
     "metaTitle": "5 Planes en Pareja en Madrid: Citas Originales (2026) | Qué Plan Hoy",
     "metaDescription": "¿Buscas sorprender a tu pareja en Madrid? 5 planes románticos y diferentes: talleres de cerámica y vino en Malasaña, invernaderos ocultos y conciertos a la luz de las velas.",
     "city": "Madrid",
@@ -2095,7 +2098,7 @@
   {
     "id": "barcelona-miradores-secretos-gratis",
     "slug": "miradores-alternativos-barcelona-planes-gratis",
-    "title": "6 Miradores Alternativos y Planes Gratis en Barcelona (Lejos de las colas)",
+    "title": "6 miradores alternativos y gratuitos en Barcelona",
     "metaTitle": "6 Miradores y Planes Gratis en Barcelona (Guía 2026) | Qué Plan Hoy",
     "metaDescription": "Olvida las colas de los Bunkers del Carmel. Descubre 6 miradores tranquilos y planes diferentes en Barcelona gratis con vistas al mar y jardines griegos.",
     "city": "Barcelona",
@@ -2204,7 +2207,7 @@
   {
     "id": "toledo-noche-pareja",
     "slug": "que-hacer-en-toledo-de-noche-en-pareja",
-    "title": "5 Planes en Toledo de Noche y en Pareja: Callejones Medievales, Baños Árabes y Leyendas (A 33 min de Madrid)",
+    "title": "Qué hacer en Toledo de noche en pareja",
     "metaTitle": "5 Planes que hacer en Toledo de Noche y en Pareja (2026) | Qué Plan Hoy",
     "metaDescription": "La guía definitiva para una escapada a Toledo diferente: qué pasa cuando se van los autobuses, ruta de cobertizos iluminados, baños árabes y miradores.",
     "city": "Toledo",

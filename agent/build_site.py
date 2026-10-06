@@ -1121,7 +1121,7 @@ def build_article_page(art: dict, all_articles: list):
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> {html.escape(sec['location'])}</span>
           <span><strong>Precio:</strong> {html.escape(sec['price'])}</span>
-          <a href="{maps_url}" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 700; text-decoration: none; margin-left: auto;">📍 Abrir pin en Google Maps ↗</a>
+          <a href="{maps_url}" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>""")
 
@@ -1141,7 +1141,7 @@ def build_article_page(art: dict, all_articles: list):
   if aff:
     affiliate_html = f"""
       <aside class="affiliate-callout" aria-label="Actividad recomendada">
-        <div style="flex: 1; min-width: 240px;">
+        <div class="affiliate-info">
           <span class="affiliate-badge">{html.escape(aff.get('badge', 'Para completar el plan'))}</span>
           <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.3rem;">
             {html.escape(aff.get('title', ''))}
@@ -1150,7 +1150,7 @@ def build_article_page(art: dict, all_articles: list):
             {html.escape(aff.get('description', ''))}
           </p>
         </div>
-        <div style="text-align: right;">
+        <div class="affiliate-action">
           <div style="font-weight: 600; font-size: 0.9rem; color: var(--ink-secondary); margin-bottom: 0.45rem;">{html.escape(aff.get('price', ''))}</div>
           <a href="{html.escape(aff_url)}" target="_blank" rel="noopener sponsored" class="affiliate-cta-btn">
             {html.escape(aff.get('ctaText', 'Ver horarios y reservar →'))}
@@ -1208,11 +1208,11 @@ def build_article_page(art: dict, all_articles: list):
         <span style="color: var(--ink-muted); font-weight: 500; text-transform: none; letter-spacing: 0;">{html.escape(art['priceRange'])}</span>
       </div>
 
-      <h1 style="font-family: var(--font-serif); font-size: clamp(1.85rem, 3.4vw, 2.55rem); line-height: 1.16; margin-bottom: 0.9rem;">
+      <h1 style="font-family: var(--font-serif); font-size: clamp(1.65rem, 3.4vw, 2.55rem); line-height: 1.18; margin-bottom: 0.9rem;">
         {html.escape(art['title'])}
       </h1>
 
-      <p style="font-size: 1.1rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
+      <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         {html.escape(art['excerpt'])}
       </p>
 
@@ -1246,7 +1246,7 @@ def build_article_page(art: dict, all_articles: list):
           Ver todas las guías de {html.escape(city_name)} →
         </a>
       </div>
-      <div class="articles-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem;">
+      <div class="related-articles-grid">
         {related_cards}
       </div>
     </section>
@@ -1391,7 +1391,7 @@ def build_map_page(articles: list):
           Planes mostrados en el mapa (<span id="visible-pins-count">{len(all_pins)}</span>)
         </h2>
       </div>
-      <div id="pins-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.1rem;"></div>
+      <div id="pins-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 1.1rem;"></div>
     </section>
   </main>
 
