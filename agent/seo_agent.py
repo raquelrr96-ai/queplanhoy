@@ -225,7 +225,7 @@ CITY_KNOWLEDGE_BASE = {
                 " jardines y galerías subterráneas de Sant Pau."
             ),
             "price": "Desde 17 € entrada sin colas",
-            "url": "https://tiqets.tpk.lu/oclT7jKV",
+            "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2Fentradas-para-recinto-modernista-de-sant-pau-entrada-sin-colas-p974414%2F",
             "ctaText": "Ver entradas al Recinto Modernista de Sant Pau →",
         },
     },
