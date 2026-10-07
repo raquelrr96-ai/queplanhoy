@@ -1647,14 +1647,14 @@ def build_map_page(articles: list):
           var card = document.createElement('div');
           card.style.cssText = 'background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:column;';
           card.innerHTML =
-            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" loading="lazy" style="width:100%;height:150px;object-fit:cover;display:block;cursor:pointer;" onclick="focusPinOnMap(' + p.id + ')" />' +
+            '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" loading="lazy" style="width:100%;height:150px;object-fit:cover;display:block;cursor:pointer;" data-pin-id="' + p.id + '" onclick="focusPinOnMap(this.dataset.pinId)" />' +
             '<div style="padding:0.95rem 1.05rem;display:flex;flex-direction:column;flex:1;">' +
               '<div style="font-size:0.73rem;font-weight:700;text-transform:uppercase;color:var(--terracotta);margin-bottom:0.25rem;">' + p.city + ' · ' + p.category + '</div>' +
-              '<h3 style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.28;margin-bottom:0.35rem;cursor:pointer;" onclick="focusPinOnMap(' + p.id + ')">' + p.name + '</h3>' +
+              '<h3 style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.28;margin-bottom:0.35rem;cursor:pointer;" data-pin-id="' + p.id + '" onclick="focusPinOnMap(this.dataset.pinId)">' + p.name + '</h3>' +
               '<p style="font-size:0.83rem;color:var(--ink-secondary);margin-bottom:0.35rem;">' + p.location + '</p>' +
               '<p style="font-size:0.82rem;font-weight:600;color:var(--olive);margin-bottom:0.85rem;">' + p.price + '</p>' +
               '<div style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;">' +
-                '<button type="button" onclick="focusPinOnMap(' + p.id + ')" style="flex:1;text-align:center;background:var(--bg-sand);color:var(--ink-primary);border:1px solid var(--border-subtle);font-weight:600;font-size:0.78rem;padding:0.48rem 0.5rem;border-radius:var(--radius-sm);cursor:pointer;">🎯 Ver en mapa</button>' +
+                '<button type="button" data-pin-id="' + p.id + '" onclick="focusPinOnMap(this.dataset.pinId)" style="flex:1;text-align:center;background:var(--bg-sand);color:var(--ink-primary);border:1px solid var(--border-subtle);font-weight:600;font-size:0.78rem;padding:0.48rem 0.5rem;border-radius:var(--radius-sm);cursor:pointer;">🎯 Ver en mapa</button>' +
                 '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="flex:1;text-align:center;background:var(--terracotta);color:#fff;text-decoration:none;font-weight:600;font-size:0.78rem;padding:0.48rem 0.5rem;border-radius:var(--radius-sm);">📍 Maps ↗</a>' +
                 '<a href="' + p.articleUrl + '" style="flex:1;text-align:center;background:var(--bg-sand);color:var(--ink-primary);text-decoration:none;font-weight:600;font-size:0.78rem;padding:0.48rem 0.5rem;border-radius:var(--radius-sm);border:1px solid var(--border-subtle);">Guía →</a>' +
               '</div>' +

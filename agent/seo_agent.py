@@ -687,11 +687,37 @@ def fetch_real_commons_photo(
       title_low = p.get("title", "").lower()
       if any(
           b in title_low
-          for b in ["map", "logo", "escudo", "coat", "plan", "diagram", "icon"]
+          for b in [
+              "map",
+              "mapa",
+              "logo",
+              "escudo",
+              "coat",
+              "bandera",
+              "flag",
+              "plan",
+              "planta",
+              "diagram",
+              "icon",
+              "portrait",
+              "retrato",
+              "188",
+              "189",
+              "190",
+              "191",
+              "grabado",
+              "drawing",
+          ]
       ):
         continue
       ii = p.get("imageinfo", [{}])[0]
-      if ii.get("mime") not in ("image/jpeg", "image/jpg") or ii.get("width", 0) < 700:
+      w, h_px = ii.get("width", 0), ii.get("height", 0)
+      if (
+          ii.get("mime") not in ("image/jpeg", "image/jpg")
+          or w < 800
+          or h_px < 450
+          or h_px > w
+      ):
         continue
       dl_url = ii.get("thumburl") or ii.get("url")
       if not dl_url:
