@@ -1,5 +1,530 @@
 [
   {
+    "id": "madrid-planes-este-fin-de-semana-madrid",
+    "slug": "planes-este-fin-de-semana-madrid-9-al-11-de-octubre-de-2026",
+    "articleType": "multi_plan",
+    "title": "5 Planes este Fin de Semana en Madrid (9 al 11 de octubre de 2026): Mercadillos, Cultura y Rutas Gratis",
+    "metaTitle": "5 Planes este Fin de Semana en Madrid (9 al 11 de octubre  | Qué Plan Hoy",
+    "metaDescription": "Descubre planes este fin de semana madrid 9 al 11 de octubre de 2026 en Madrid (9 al 11 de octubre de 2026): guía paso a paso con direcciones exactas, mapa interactivo, paradas de transporte público y precios reales.",
+    "city": "Madrid",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "weekendDates": "9 al 11 de octubre de 2026",
+    "readTime": "6 min",
+    "publishedAt": "2026-10-07",
+    "targetKeyword": "planes este fin de semana madrid 9 al 11 de octubre de 2026",
+    "searchVolume": "8.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (18/100)",
+    "image": "images/venues/madrid-principe-anglona.jpg",
+    "imageAlt": "Senderos de ladrillo y cenador del Jardín del Príncipe de Anglona en el centro de Madrid",
+    "imageCredit": "",
+    "excerpt": "Guía detallada para quienes buscan «planes este fin de semana madrid 9 al 11 de octubre de 2026» en Madrid saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos.",
+    "priceRange": "0 € – 15 €",
+    "neighborhoods": [
+      "Malasaña",
+      "Chamberí",
+      "Barrio de las Letras",
+      "La Latina"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el plan",
+      "title": "Entrada al Palacio de Liria de Madrid con Audioguía",
+      "description": "Visita la residencia histórica de la Casa de Alba en la calle Princesa con salones palaciegos y obras de Goya y Velázquez.",
+      "price": "Desde 20 € con audioguía",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2Fentradas-para-palacio-de-liria-entrada-audioguia-p1010845%2F",
+      "ctaText": "Ver entradas al Palacio de Liria →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Agenda en vivo: Qué hacer en Madrid el 12 de octubre: todos los planes gratis por el Día de la Hispanidad 2026",
+        "venue": "Agenda en vivo: Qué hacer en Madrid el 12 de octubre: todos los planes gratis por el Día de la Hispanidad 2026",
+        "location": "Centro y barrios de Madrid (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Madrid para este fin de semana: «Qué hacer en Madrid el 12 de octubre: todos los planes gratis por el Día de la Hispanidad 2026». Una propuesta ideal si buscas qué planes hacer hoy en Madrid combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 40.4188,
+        "lng": -3.7018,
+        "image": "images/venues/madrid-principe-anglona.jpg",
+        "imageAlt": "Agenda en vivo: Qué hacer en Madrid el 12 de octubre: todos los planes gratis por el Día de la Hispanidad 2026"
+      },
+      {
+        "heading": "2. Agenda en vivo: Planes para este fin de semana en Madrid: 2, 3 y 4 de octubre de 2026",
+        "venue": "Agenda en vivo: Planes para este fin de semana en Madrid: 2, 3 y 4 de octubre de 2026",
+        "location": "Centro y barrios de Madrid (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Madrid para este fin de semana: «Planes para este fin de semana en Madrid: 2, 3 y 4 de octubre de 2026». Una propuesta ideal si buscas qué planes hacer hoy en Madrid combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 40.4208,
+        "lng": -3.6998,
+        "image": "images/venues/madrid-principe-anglona.jpg",
+        "imageAlt": "Agenda en vivo: Planes para este fin de semana en Madrid: 2, 3 y 4 de octubre de 2026"
+      },
+      {
+        "heading": "3. Invernadero del Palacio de Cristal de Arganzuela",
+        "venue": "Invernadero del Palacio de Cristal de Arganzuela",
+        "location": "Paseo de la Chopera, 10 (Metro: Legazpi - L3, L6)",
+        "price": "Acceso 100% gratuito",
+        "content": "Un gigantesco invernadero de hierro y cristal del siglo XX con más de 9.000 especies de plantas tropicales, desérticas y estanques con peces. Es cubierto, cálido y perfecto en cualquier época del año.",
+        "lat": 40.3934,
+        "lng": -3.6997,
+        "image": "images/venues/madrid-invernadero-arganzuela.jpg",
+        "imageAlt": "Interior tropical del Invernadero del Palacio de Cristal de Arganzuela junto a Madrid Río"
+      },
+      {
+        "heading": "4. Jardín Cubierto de Salvador Bachiller en Montera",
+        "venue": "Jardín Cubierto de Salvador Bachiller en Montera",
+        "location": "Calle de la Montera, 37 (Metro: Gran Vía - L1, L5)",
+        "price": "Té especial o infusión con tarta casera: 6,50 € – 9,00 €",
+        "content": "Subiendo por el interior de la tienda se encuentra una azotea acristalada cubierta de plantas colgantes donde refugiarse del ruido o de la lluvia en pleno centro.",
+        "lat": 40.4193,
+        "lng": -3.7022,
+        "image": "images/venues/madrid-salon-te-jardin.jpg",
+        "imageAlt": "Jardín y salón de té tranquilo en el centro de Madrid"
+      },
+      {
+        "heading": "5. Museo Cerralbo y su Salón de Baile del siglo XIX",
+        "venue": "Museo Cerralbo y su Salón de Baile del siglo XIX",
+        "location": "Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10)",
+        "price": "3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)",
+        "content": "A diferencia de los grandes museos masificados, este palacio conserva intacta la decoración original de 1893 con espejos venecianos y lámparas de cristal.\n\n💡 Consejo extra: Si buscas más ideas en Madrid, no te pierdas también nuestra guía: «Planes para el Puente de Octubre en Madrid: programación del 12 de octubre».",
+        "lat": 40.4237,
+        "lng": -3.7146,
+        "image": "images/venues/madrid-cerralbo-salon-baile.jpg",
+        "imageAlt": "Palacio del Marqués de Cerralbo junto a la Plaza de España de Madrid"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es el mejor momento para hacer este plan en Madrid?",
+        "answer": "Para disfrutar de este recorrido en Madrid sin colas ni aglomeraciones, te recomendamos ir los viernes por la tarde o los sábados y domingos antes de las 11:30 h."
+      },
+      {
+        "question": "¿Se necesita reservar con antelación en Madrid?",
+        "answer": "Los espacios gratuitos al aire libre no requieren reserva, pero para talleres creativos, espectáculos o entradas monumentales conviene reservar online entre 48 y 72 horas antes."
+      }
+    ]
+  },
+  {
+    "id": "barcelona-planes-este-fin-de-semana-barcel",
+    "slug": "planes-este-fin-de-semana-barcelona-9-al-11-de-octubre-de-2026",
+    "articleType": "multi_plan",
+    "title": "5 Planes este Fin de Semana en Barcelona (9 al 11 de octubre de 2026): Mercadillos, Cultura y Rutas Gratis",
+    "metaTitle": "5 Planes este Fin de Semana en Barcelona (9 al 11 de octub | Qué Plan Hoy",
+    "metaDescription": "Descubre planes este fin de semana barcelona 9 al 11 de octubre de 2026 en Barcelona (9 al 11 de octubre de 2026): guía paso a paso con direcciones exactas, mapa interactivo, paradas de transporte público y precios reales.",
+    "city": "Barcelona",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "weekendDates": "9 al 11 de octubre de 2026",
+    "readTime": "6 min",
+    "publishedAt": "2026-10-07",
+    "targetKeyword": "planes este fin de semana barcelona 9 al 11 de octubre de 2026",
+    "searchVolume": "8.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (18/100)",
+    "image": "images/venues/bcn-teatre-grec-laribal.jpg",
+    "imageAlt": "Anfiteatro de piedra y jardines del Teatre Grec en la montaña de Montjuïc en Barcelona",
+    "imageCredit": "",
+    "excerpt": "Guía detallada para quienes buscan «planes este fin de semana barcelona 9 al 11 de octubre de 2026» en Barcelona saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos.",
+    "priceRange": "0 € – 15 €",
+    "neighborhoods": [
+      "El Born",
+      "Gràcia",
+      "Horta-Guinardó",
+      "Poblenou"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el plan",
+      "title": "Entrada sin Colas al Recinto Modernista de Sant Pau",
+      "description": "Accede directamente sin esperas a los pabellones modernistas, jardines y galerías subterráneas de Sant Pau.",
+      "price": "Desde 17 € entrada sin colas",
+      "url": "https://tiqets.tpk.lu/oclT7jKV",
+      "ctaText": "Ver entradas al Recinto Modernista de Sant Pau →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Agenda en vivo: Los mejores planes para hacer en Barcelona este fin de semana",
+        "venue": "Agenda en vivo: Los mejores planes para hacer en Barcelona este fin de semana",
+        "location": "Centro y barrios de Barcelona (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Barcelona para este fin de semana: «Los mejores planes para hacer en Barcelona este fin de semana». Una propuesta ideal si buscas qué planes hacer hoy en Barcelona combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 41.4005,
+        "lng": 2.1635,
+        "image": "images/venues/bcn-teatre-grec-laribal.jpg",
+        "imageAlt": "Agenda en vivo: Los mejores planes para hacer en Barcelona este fin de semana"
+      },
+      {
+        "heading": "2. Agenda en vivo: Qué hacer esta semana en Barcelona: los mejores planes",
+        "venue": "Agenda en vivo: Qué hacer esta semana en Barcelona: los mejores planes",
+        "location": "Centro y barrios de Barcelona (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Barcelona para este fin de semana: «Qué hacer esta semana en Barcelona: los mejores planes». Una propuesta ideal si buscas qué planes hacer hoy en Barcelona combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 41.4025,
+        "lng": 2.1655,
+        "image": "images/venues/bcn-teatre-grec-laribal.jpg",
+        "imageAlt": "Agenda en vivo: Qué hacer esta semana en Barcelona: los mejores planes"
+      },
+      {
+        "heading": "3. Parque del Laberinto de Horta",
+        "venue": "Parque del Laberinto de Horta",
+        "location": "Passeig dels Castanyers, 1 (Metro: Mundet - L3, salida Velòdrom)",
+        "price": "2,23 € entrada general (Gratis miércoles y domingos)",
+        "content": "Un jardín neoclásico del siglo XVIII con un laberinto de cipreses recortados, templos de columnas italianas, estanques románticos y cascadas.",
+        "lat": 41.4404,
+        "lng": 2.1463,
+        "image": "images/venues/bcn-laberint-horta.jpg",
+        "imageAlt": "Laberinto de cipreses y templete neoclásico del Parc del Laberint d'Horta en Barcelona"
+      },
+      {
+        "heading": "4. Vermut artesanal y jazz en directo en Gràcia y El Born",
+        "venue": "Vermut artesanal y jazz en directo en Gràcia y El Born",
+        "location": "Plaça de la Virreina / Carrer dels Flassaders (Metro: Fontana L3 / Jaume I L4)",
+        "price": "Vermut casero + olivas rellenas y patatas bravas: 7,50 € por persona",
+        "content": "Huye de las Ramblas y siéntate en las terrazas históricas de la Plaça de la Virreina, seguido de una sesión acústica en los sótanos abovedados del Born.",
+        "lat": 41.4046,
+        "lng": 2.1569,
+        "image": "images/venues/bcn-placa-virreina-gracia.jpg",
+        "imageAlt": "Terrazas al sol frente a la iglesia de Sant Joan en la Plaça de la Virreina de Gràcia"
+      },
+      {
+        "heading": "5. Refugio Antiaéreo 307 de Poble-sec y jardines de Miramar",
+        "venue": "Refugio Antiaéreo 307 de Poble-sec y jardines de Miramar",
+        "location": "Carrer Nou de la Rambla, 175 (Metro: Paral·lel - L2, L3)",
+        "price": "Gratis domingos desde las 15:00 h (3,50 € resto de días)",
+        "content": "Casi 400 metros de túneles excavados en la falda de Montjuïc por los vecinos en 1937, conservados intactos.\n\n💡 Consejo extra: Si buscas más ideas en Barcelona, no te pierdas también nuestra guía: «Qué hacer este fin de semana en Barcelona (agenda del 2 al 4 de octubre)».",
+        "lat": 41.3665,
+        "lng": 2.1683,
+        "image": "images/venues/bcn-mirador-alcalde.jpg",
+        "imageAlt": "Jardines y terrazas de Miramar en la ladera de Montjuïc"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es el mejor momento para hacer este plan en Barcelona?",
+        "answer": "Para disfrutar de este recorrido en Barcelona sin colas ni aglomeraciones, te recomendamos ir los viernes por la tarde o los sábados y domingos antes de las 11:30 h."
+      },
+      {
+        "question": "¿Se necesita reservar con antelación en Barcelona?",
+        "answer": "Los espacios gratuitos al aire libre no requieren reserva, pero para talleres creativos, espectáculos o entradas monumentales conviene reservar online entre 48 y 72 horas antes."
+      }
+    ]
+  },
+  {
+    "id": "valencia-planes-este-fin-de-semana-valenc",
+    "slug": "planes-este-fin-de-semana-valencia-9-al-11-de-octubre-de-2026",
+    "articleType": "multi_plan",
+    "title": "5 Planes este Fin de Semana en Valencia (9 al 11 de octubre de 2026): Mercadillos, Cultura y Rutas Gratis",
+    "metaTitle": "5 Planes este Fin de Semana en Valencia (9 al 11 de octubr | Qué Plan Hoy",
+    "metaDescription": "Descubre planes este fin de semana valencia 9 al 11 de octubre de 2026 en Valencia (9 al 11 de octubre de 2026): guía paso a paso con direcciones exactas, mapa interactivo, paradas de transporte público y precios reales.",
+    "city": "Valencia",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "weekendDates": "9 al 11 de octubre de 2026",
+    "readTime": "6 min",
+    "publishedAt": "2026-10-07",
+    "targetKeyword": "planes este fin de semana valencia 9 al 11 de octubre de 2026",
+    "searchVolume": "8.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (18/100)",
+    "image": "images/venues/vlc-albufera-gola-pujol.jpg",
+    "imageAlt": "Barca tradicional de madera al atardecer en el embarcadero de la Albufera de Valencia",
+    "imageCredit": "",
+    "excerpt": "Guía detallada para quienes buscan «planes este fin de semana valencia 9 al 11 de octubre de 2026» en Valencia saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos.",
+    "priceRange": "0 € – 15 €",
+    "neighborhoods": [
+      "El Cabanyal",
+      "Ruzafa",
+      "El Carmen",
+      "Exposición / Monforte"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el plan",
+      "title": "Pase Arte y Ciencia de Valencia (Oceanogràfic, Museo de las Ciencias e IVAM)",
+      "description": "Combina la visita a los espacios culturales del centro histórico con el complejo de las Artes y las Ciencias sin colas.",
+      "price": "Desde 70,50 € pase combinado",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c65847%2Fentradas-para-valencia-pase-arte-y-ciencia-p1124390%2F",
+      "ctaText": "Ver entradas del Pase Arte y Ciencia →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Agenda en vivo: Octubre arranca con un fin de semana lleno de planes en Valencia: gran agenda de eventos del 2 al 4 de octubre de 2026",
+        "venue": "Agenda en vivo: Octubre arranca con un fin de semana lleno de planes en Valencia: gran agenda de eventos del 2 al 4 de octubre de 2026",
+        "location": "Centro y barrios de Valencia (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Valencia para este fin de semana: «Octubre arranca con un fin de semana lleno de planes en Valencia: gran agenda de eventos del 2 al 4 de octubre de 2026». Una propuesta ideal si buscas qué planes hacer hoy en Valencia combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 39.4719,
+        "lng": -0.3743,
+        "image": "images/venues/vlc-albufera-gola-pujol.jpg",
+        "imageAlt": "Agenda en vivo: Octubre arranca con un fin de semana lleno de planes en Valencia: gran agenda de eventos del 2 al 4 de octubre de 2026"
+      },
+      {
+        "heading": "2. Agenda en vivo: Ocho planes gratis para hacer este fin de semana en Valencia (del 2 al 4 de octubre): de la gran feria del marisco a música al aire libre y un campamento medieval",
+        "venue": "Agenda en vivo: Ocho planes gratis para hacer este fin de semana en Valencia (del 2 al 4 de octubre): de la gran feria del marisco a música al aire libre y un campamento medieval",
+        "location": "Centro y barrios de Valencia (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Valencia para este fin de semana: «Ocho planes gratis para hacer este fin de semana en Valencia (del 2 al 4 de octubre): de la gran feria del marisco a música al aire libre y un campamento medieval». Una propuesta ideal si buscas qué planes hacer hoy en Valencia combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 39.4739,
+        "lng": -0.3723,
+        "image": "images/venues/vlc-albufera-gola-pujol.jpg",
+        "imageAlt": "Agenda en vivo: Ocho planes gratis para hacer este fin de semana en Valencia (del 2 al 4 de octubre): de la gran feria del marisco a música al aire libre y un campamento medieval"
+      },
+      {
+        "heading": "3. Jardines de Monforte (El jardín neoclásico escondido de Valencia)",
+        "venue": "Jardines de Monforte (El jardín neoclásico escondido de Valencia)",
+        "location": "Plaza de la Legión Española, s/n (Metro: Facultats - L3, L9)",
+        "price": "Acceso 100% gratuito",
+        "content": "Un jardín histórico de 1859 con estatuas de mármol, galería de buganvillas, fuentes y un pequeño laberinto de mirto donde apenas llegan los turistas.",
+        "lat": 39.4778,
+        "lng": -0.3652,
+        "image": "images/venues/vlc-jardines-monforte-2.jpg",
+        "imageAlt": "Setos recortados, fuentes y estatuas clásicas en el interior de los Jardines de Monforte"
+      },
+      {
+        "heading": "4. Ruta de vermut y clóchinas en las bodegas centenarias de El Cabanyal",
+        "venue": "Ruta de vermut y clóchinas en las bodegas centenarias de El Cabanyal",
+        "location": "Calle Reina y Calle Barraca (Tranvía: Líneas 4 y 6 - Dr. Lluch)",
+        "price": "Vermut + tapa marinera tradicional: 5,50 € – 8,00 €",
+        "content": "Pasea entre las fachadas modernistas de azulejos de colores de los antiguos pescadores del Cabanyal y haz parada en Casa Montaña o en las tabernas jóvenes del barrio.",
+        "lat": 39.4687,
+        "lng": -0.3292,
+        "image": "images/venues/vlc-cabanyal-casas.jpg",
+        "imageAlt": "Calles marineras junto a la playa de El Cabanyal en Valencia"
+      },
+      {
+        "heading": "5. Centro de Arte Hortensia Herrero en el Palacio de Valeriola",
+        "venue": "Centro de Arte Hortensia Herrero en el Palacio de Valeriola",
+        "location": "Calle del Mar, 31 (Barrio de la Seu - Xerea)",
+        "price": "Gratis miércoles por la tarde con reserva previa (10 € general)",
+        "content": "Un palacio del siglo XVII restaurado que combina restos del circo romano subterráneo y un callejón judío medieval con instalaciones inmersivas de luz.\n\n💡 Consejo extra: Si buscas más ideas en Valencia, no te pierdas también nuestra guía: «Qué hacer este fin de semana en Valencia (especial 9 d'Octubre)».",
+        "lat": 39.4743,
+        "lng": -0.3728,
+        "image": "images/venues/vlc-palacio-valeriola.jpg",
+        "imageAlt": "Palacio de Valeriola, sede del Centro de Arte Hortensia Herrero en Valencia"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es el mejor momento para hacer este plan en Valencia?",
+        "answer": "Para disfrutar de este recorrido en Valencia sin colas ni aglomeraciones, te recomendamos ir los viernes por la tarde o los sábados y domingos antes de las 11:30 h."
+      },
+      {
+        "question": "¿Se necesita reservar con antelación en Valencia?",
+        "answer": "Los espacios gratuitos al aire libre no requieren reserva, pero para talleres creativos, espectáculos o entradas monumentales conviene reservar online entre 48 y 72 horas antes."
+      }
+    ]
+  },
+  {
+    "id": "sevilla-planes-este-fin-de-semana-sevill",
+    "slug": "planes-este-fin-de-semana-sevilla-9-al-11-de-octubre-de-2026",
+    "articleType": "multi_plan",
+    "title": "5 Planes este Fin de Semana en Sevilla (9 al 11 de octubre de 2026): Mercadillos, Cultura y Rutas Gratis",
+    "metaTitle": "5 Planes este Fin de Semana en Sevilla (9 al 11 de octubre | Qué Plan Hoy",
+    "metaDescription": "Descubre planes este fin de semana sevilla 9 al 11 de octubre de 2026 en Sevilla (9 al 11 de octubre de 2026): guía paso a paso con direcciones exactas, mapa interactivo, paradas de transporte público y precios reales.",
+    "city": "Sevilla",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "weekendDates": "9 al 11 de octubre de 2026",
+    "readTime": "6 min",
+    "publishedAt": "2026-10-07",
+    "targetKeyword": "planes este fin de semana sevilla 9 al 11 de octubre de 2026",
+    "searchVolume": "8.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (18/100)",
+    "image": "images/venues/sev-marqueses-algaba.jpg",
+    "imageAlt": "Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en Sevilla",
+    "imageCredit": "",
+    "excerpt": "Guía detallada para quienes buscan «planes este fin de semana sevilla 9 al 11 de octubre de 2026» en Sevilla saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos.",
+    "priceRange": "0 € – 15 €",
+    "neighborhoods": [
+      "Triana",
+      "Calle Feria",
+      "Santa Cruz",
+      "Alameda de Hércules"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el plan",
+      "title": "Entrada y Visita a la Casa de Salinas en Sevilla",
+      "description": "Reserva tu pase para recorrer los patios renacentistas, yeserías mudéjares y azulejos del siglo XVI de la Casa de Salinas.",
+      "price": "Desde 12 € con audioguía",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c65870%2Fentradas-para-casa-de-salinas-tour-con-audioguia-p986387%2F",
+      "ctaText": "Ver entradas a la Casa de Salinas →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Agenda en vivo: El pueblo de Sevilla que viajará a la Edad Media este fin de semana: tendrá dragones, caballeros y un mercado histórico",
+        "venue": "Agenda en vivo: El pueblo de Sevilla que viajará a la Edad Media este fin de semana: tendrá dragones, caballeros y un mercado histórico",
+        "location": "Centro y barrios de Sevilla (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Sevilla para este fin de semana: «El pueblo de Sevilla que viajará a la Edad Media este fin de semana: tendrá dragones, caballeros y un mercado histórico». Una propuesta ideal si buscas qué planes hacer hoy en Sevilla combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 37.3911,
+        "lng": -5.9825,
+        "image": "images/venues/sev-marqueses-algaba.jpg",
+        "imageAlt": "Agenda en vivo: El pueblo de Sevilla que viajará a la Edad Media este fin de semana: tendrá dragones, caballeros y un mercado histórico"
+      },
+      {
+        "heading": "2. Agenda en vivo: Planes con niños en Sevilla en octubre: aventuras perfectas para disfrutar en familia",
+        "venue": "Agenda en vivo: Planes con niños en Sevilla en octubre: aventuras perfectas para disfrutar en familia",
+        "location": "Centro y barrios de Sevilla (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Sevilla para este fin de semana: «Planes con niños en Sevilla en octubre: aventuras perfectas para disfrutar en familia». Una propuesta ideal si buscas qué planes hacer hoy en Sevilla combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 37.3931,
+        "lng": -5.9805,
+        "image": "images/venues/sev-marqueses-algaba.jpg",
+        "imageAlt": "Agenda en vivo: Planes con niños en Sevilla en octubre: aventuras perfectas para disfrutar en familia"
+      },
+      {
+        "heading": "3. Casa de Salinas (Patio renacentista y mudéjar del siglo XVI)",
+        "venue": "Casa de Salinas (Patio renacentista y mudéjar del siglo XVI)",
+        "location": "Calle Mateos Gago, 39 (A 2 min de la Giralda)",
+        "price": "12,00 € visita con audioguía",
+        "content": "Una casa-palacio privada aún habitada que combina columnas de mármol italiano, yeserías mudéjares y azulejos de Triana de 1580 sin las aglomeraciones del Alcázar.",
+        "lat": 37.3863,
+        "lng": -5.9904,
+        "image": "images/venues/sev-casa-salinas.jpg",
+        "imageAlt": "Columnas de mármol y arcos con yeserías en un patio mudéjar sevillano del siglo XVI"
+      },
+      {
+        "heading": "4. Mercadillo Histórico de El Jueves y tapeo en la Calle Feria",
+        "venue": "Mercadillo Histórico de El Jueves y tapeo en la Calle Feria",
+        "location": "Calle Feria (Desde Montesión hasta Omnium Sanctorum)",
+        "price": "Paseo gratis / Caña y montadito de pringá: 3,80 €",
+        "content": "El mercadillo al aire libre más antiguo de España (se celebra desde el siglo XIII) lleno de antigüedades, cerámica, vinilos y libros viejos, rodeado de las mejores tabernas locales.",
+        "lat": 37.3991,
+        "lng": -5.9937,
+        "image": "images/venues/sev-calle-feria.jpg",
+        "imageAlt": "Pasaje exterior y puestos tradicionales del histórico Mercado de la Calle Feria en Sevilla"
+      },
+      {
+        "heading": "5. Centro Cerámica Triana y ribera del Guadalquivir",
+        "venue": "Centro Cerámica Triana y ribera del Guadalquivir",
+        "location": "Calle Callao, 16 (Junto al Puente de Triana)",
+        "price": "Paseo por talleres: Gratis (Museo: 2,10 €)",
+        "content": "Con antiguos hornos de ladrillo del siglo XIX y pasarelas peatonales ideales para enlazar con un paseo al atardecer por la calle Betis.\n\n💡 Consejo extra: Si buscas más ideas en Sevilla, no te pierdas también nuestra guía: «Qué hacer este fin de semana en Sevilla (agenda del 2 al 4 de octubre)».",
+        "lat": 37.3859,
+        "lng": -6.0041,
+        "image": "images/venues/sev-ceramica-triana.jpg",
+        "imageAlt": "Antiguos hornos de ladrillo y azulejería histórica en el Centro Cerámica Triana"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es el mejor momento para hacer este plan en Sevilla?",
+        "answer": "Para disfrutar de este recorrido en Sevilla sin colas ni aglomeraciones, te recomendamos ir los viernes por la tarde o los sábados y domingos antes de las 11:30 h."
+      },
+      {
+        "question": "¿Se necesita reservar con antelación en Sevilla?",
+        "answer": "Los espacios gratuitos al aire libre no requieren reserva, pero para talleres creativos, espectáculos o entradas monumentales conviene reservar online entre 48 y 72 horas antes."
+      }
+    ]
+  },
+  {
+    "id": "toledo-planes-este-fin-de-semana-toledo",
+    "slug": "planes-este-fin-de-semana-toledo-9-al-11-de-octubre-de-2026",
+    "articleType": "multi_plan",
+    "title": "5 Planes este Fin de Semana en Toledo (9 al 11 de octubre de 2026): Mercadillos, Cultura y Rutas Gratis",
+    "metaTitle": "5 Planes este Fin de Semana en Toledo (9 al 11 de octubre  | Qué Plan Hoy",
+    "metaDescription": "Descubre planes este fin de semana toledo 9 al 11 de octubre de 2026 en Toledo (9 al 11 de octubre de 2026): guía paso a paso con direcciones exactas, mapa interactivo, paradas de transporte público y precios reales.",
+    "city": "Toledo",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "📅",
+    "weekendDates": "9 al 11 de octubre de 2026",
+    "readTime": "6 min",
+    "publishedAt": "2026-10-07",
+    "targetKeyword": "planes este fin de semana toledo 9 al 11 de octubre de 2026",
+    "searchVolume": "8.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (18/100)",
+    "image": "images/venues/tol-cerro-del-bu.jpg",
+    "imageAlt": "Vista panorámica del Alcázar y las murallas de Toledo sobre el cañón del río Tajo",
+    "imageCredit": "",
+    "excerpt": "Guía detallada para quienes buscan «planes este fin de semana toledo 9 al 11 de octubre de 2026» en Toledo saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos.",
+    "priceRange": "0 € – 15 €",
+    "neighborhoods": [
+      "Judería Mayor",
+      "Barrio de los Conventos",
+      "Zocodover",
+      "Senda Ecológica del Tajo"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el plan",
+      "title": "Pulsera Turística Oficial de Toledo (Acceso a 7 Monumentos)",
+      "description": "Incluye la entrada a San Juan de los Reyes, la Sinagoga de Santa María la Blanca, el Entierro del Señor de Orgaz y cuatro monumentos más.",
+      "price": "Desde 14 € (7 monumentos incluidos)",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c170113%2Fentradas-para-pulsera-turistica-de-toledo-p1031186%2F",
+      "ctaText": "Ver la Pulsera Turística de Toledo →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Agenda en vivo: Los planes de emergencia de Toledo, pendientes de actualización: se incorporará apoyo técnico para terminarlos",
+        "venue": "Agenda en vivo: Los planes de emergencia de Toledo, pendientes de actualización: se incorporará apoyo técnico para terminarlos",
+        "location": "Centro y barrios de Toledo (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Toledo para este fin de semana: «Los planes de emergencia de Toledo, pendientes de actualización: se incorporará apoyo técnico para terminarlos». Una propuesta ideal si buscas qué planes hacer hoy en Toledo combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 39.8601,
+        "lng": -4.0206,
+        "image": "images/venues/tol-cerro-del-bu.jpg",
+        "imageAlt": "Agenda en vivo: Los planes de emergencia de Toledo, pendientes de actualización: se incorporará apoyo técnico para terminarlos"
+      },
+      {
+        "heading": "2. Agenda en vivo: La feria gastronómica ideal para este fin de semana es gratis y tiene tapas a 2,50 euros: conciertos, talleres y más de 60 puestos para conocer la cocina de Toledo",
+        "venue": "Agenda en vivo: La feria gastronómica ideal para este fin de semana es gratis y tiene tapas a 2,50 euros: conciertos, talleres y más de 60 puestos para conocer la cocina de Toledo",
+        "location": "Centro y barrios de Toledo (Transporte público recomendado)",
+        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
+        "content": "Destacado en la agenda cultural de Toledo para este fin de semana: «La feria gastronómica ideal para este fin de semana es gratis y tiene tapas a 2,50 euros: conciertos, talleres y más de 60 puestos para conocer la cocina de Toledo». Una propuesta ideal si buscas qué planes hacer hoy en Toledo combinando cultura, ocio al aire libre y gastronomía local.",
+        "lat": 39.8621,
+        "lng": -4.0186,
+        "image": "images/venues/tol-cerro-del-bu.jpg",
+        "imageAlt": "Agenda en vivo: La feria gastronómica ideal para este fin de semana es gratis y tiene tapas a 2,50 euros: conciertos, talleres y más de 60 puestos para conocer la cocina de Toledo"
+      },
+      {
+        "heading": "3. Senda Ecológica del Río Tajo y Puente de San Martín",
+        "venue": "Senda Ecológica del Río Tajo y Puente de San Martín",
+        "location": "Inicio en el Puente de Alcántara hasta el Puente de San Martín",
+        "price": "100% Gratis",
+        "content": "Un camino peatonal junto al cañón de roca del río Tajo que rodea toda la muralla medieval desde abajo junto a antiguos molinos de agua.",
+        "lat": 39.8568,
+        "lng": -4.0405,
+        "image": "images/venues/tol-puente-san-martin-2.jpg",
+        "imageAlt": "Torreón medieval y arcos de piedra del Puente de San Martín sobre el río Tajo"
+      },
+      {
+        "heading": "4. Torno de mazapán artesano del Convento de San Clemente",
+        "venue": "Torno de mazapán artesano del Convento de San Clemente",
+        "location": "Calle San Clemente, 1 (Junto a Santo Tomé)",
+        "price": "Cajita de mazapán recién horneado desde 4,50 €",
+        "content": "Entra al patio silencioso del convento donde se elaboró el primer mazapán documentado en 1212 y compra a través del torno de madera.",
+        "lat": 39.8588,
+        "lng": -4.0279,
+        "image": "images/venues/tol-convento-san-clemente.jpg",
+        "imageAlt": "Portada renacentista del histórico edificio de San Clemente en Toledo"
+      },
+      {
+        "heading": "5. Mirador del Cerro del Bú frente al Alcázar",
+        "venue": "Mirador del Cerro del Bú frente al Alcázar",
+        "location": "Cruzando la pasarela peatonal del Tajo",
+        "price": "Acceso libre y gratuito",
+        "content": "Un yacimiento arqueológico al aire libre desde el que se obtiene la vista más cercana e imponente de las murallas de Toledo sin un solo autobús.\n\n💡 Consejo extra: Si buscas más ideas en Toledo, no te pierdas también nuestra guía: «Qué hacer en Toledo en el Puente de Todos los Santos y Halloween».",
+        "lat": 39.8541,
+        "lng": -4.0203,
+        "image": "images/venues/tol-cerro-del-bu.jpg",
+        "imageAlt": "Panorámica de las murallas y el Alcázar de Toledo desde la otra orilla del río Tajo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es el mejor momento para hacer este plan en Toledo?",
+        "answer": "Para disfrutar de este recorrido en Toledo sin colas ni aglomeraciones, te recomendamos ir los viernes por la tarde o los sábados y domingos antes de las 11:30 h."
+      },
+      {
+        "question": "¿Se necesita reservar con antelación en Toledo?",
+        "answer": "Los espacios gratuitos al aire libre no requieren reserva, pero para talleres creativos, espectáculos o entradas monumentales conviene reservar online entre 48 y 72 horas antes."
+      }
+    ]
+  },
+  {
     "id": "toledo-puente-todos-los-santos-halloween-leyendas",
     "slug": "planes-puente-todos-los-santos-halloween-toledo-leyendas-noche",
     "city": "Toledo",
