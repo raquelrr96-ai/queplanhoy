@@ -27,6 +27,7 @@ CITIES = {
         "lng": -3.7038,
         "zoom": 12,
         "ogImage": "images/venues/madrid-parque-capricho.jpg",
+        "selectorImage": "images/venues/madrid-palacio-cristal-retiro-2.jpg",
         "h1": "Planes en Madrid: qué hacer hoy y este fin de semana fuera de lo típico",
         "metaTitle": (
             "Planes en Madrid Hoy y Este Fin de Semana (2026): Gratis, Pareja y"
@@ -104,6 +105,7 @@ CITIES = {
         "lng": 2.1615,
         "zoom": 12,
         "ogImage": "images/venues/bcn-laberint-horta.jpg",
+        "selectorImage": "images/venues/bcn-palau-nacional-mnac.jpg",
         "h1": "Planes en Barcelona: miradores, jardines secretos y citas sin colas",
         "metaTitle": (
             "Planes en Barcelona Hoy y Este Fin de Semana (2026): Gratis,"
@@ -164,6 +166,7 @@ CITIES = {
         "lng": -0.3763,
         "zoom": 12,
         "ogImage": "images/venues/vlc-albufera-atardecer-dorado.jpg",
+        "selectorImage": "images/cities/valencia-selector.jpg",
         "h1": "Planes en Valencia: L'Albufera, jardines secretos y cultura local",
         "metaTitle": (
             "Planes en Valencia Hoy y Este Fin de Semana (2026): Gratis,"
@@ -222,6 +225,7 @@ CITIES = {
         "lng": -5.9845,
         "zoom": 13,
         "ogImage": "images/venues/sev-patio-santa-cruz.jpg",
+        "selectorImage": "images/cities/sevilla-selector.jpg",
         "h1": "Planes en Sevilla: casas-palacio, patios ocultos y rutas al atardecer",
         "metaTitle": (
             "Planes en Sevilla Hoy y Este Fin de Semana (2026): Gratis, Patios"
@@ -279,6 +283,7 @@ CITIES = {
         "lng": -4.0226,
         "zoom": 14,
         "ogImage": "images/venues/tol-panoramica-noche.jpg",
+        "selectorImage": "images/cities/toledo-selector.jpg",
         "h1": "Planes en Toledo: rutas por el Tajo, cobertizos y escapadas de noche",
         "metaTitle": (
             "Planes en Toledo Hoy y Este Fin de Semana (2026): Gratis, Pareja y"
@@ -756,9 +761,9 @@ def build_listing_page(
     city_buttons = []
     for c_name in city_order:
       c_info = CITIES[c_name]
-      c_count = sum(1 for a in articles if a["city"] == c_name)
       active_cls = " active" if c_name == "Madrid" else ""
-      thumb_src = f"{root_prefix}{c_info['ogImage'].lstrip('/')}"
+      selector_img = c_info.get("selectorImage", c_info["ogImage"])
+      thumb_src = f"{root_prefix}{selector_img.lstrip('/')}"
       city_buttons.append(f"""
           <button
             type="button"
@@ -769,11 +774,10 @@ def build_listing_page(
             data-intro="{html.escape(c_info['intro'])}"
             data-kicker="GUÍA DE {html.escape(c_name.upper())} · CIUDAD ACTIVA"
           >
-            <img src="{thumb_src}" alt="Planes en {html.escape(c_name)}" class="city-pick-thumb" loading="eager" width="42" height="42" />
-            <span class="city-pick-info">
-              <span class="city-pick-name">{html.escape(c_name)}</span>
-              <span class="city-pick-count">{c_count} guías locales</span>
-            </span>
+            <img src="{thumb_src}" alt="Planes en {html.escape(c_name)}" class="city-pick-photo" loading="eager" width="320" height="180" />
+            <span class="city-pick-overlay"></span>
+            <span class="city-pick-badge">Activa</span>
+            <span class="city-pick-name">{html.escape(c_name)}</span>
           </button>""")
     city_selector_html = f"""
       <div class="city-selector-showcase" aria-label="Selector de ciudad">
@@ -1738,7 +1742,7 @@ def build_about_page():
       </p>
     </section>
 
-    <section class="reader-section">
+    <section class="reader-section" style="border-bottom: none;">
       <h2>Una guía hecha desde dentro (y cero relleno)</h2>
       <p style="margin-top: 0.65rem; line-height: 1.75;">
         Nuestro compromiso editorial se basa en cuatro reglas que aplicamos en cada guía que publicamos:
@@ -1749,14 +1753,7 @@ def build_about_page():
         <li style="margin-bottom: 0.55rem;"><strong>Datos prácticos al grano (horario, transporte, precio y pin en Google Maps):</strong> Ni quien vive en la ciudad ni quien viene de escapada tiene tiempo de leer párrafos vacíos antes de saber a qué hora cierra un jardín o cuánto cuesta la entrada. Cada parada incluye dirección exacta, parada de Metro, Cercanías o autobús, precio real verificado y enlace directo al <strong>pin exacto en Google Maps</strong>.</li>
         <li><strong>Fotografías reales verificadas:</strong> Todas las fotografías que ilustran nuestros planes corresponden a imágenes reales de los monumentos, jardines, calles y eventos, para que sepas exactamente qué vas a encontrar al llegar.</li>
       </ul>
-    </section>
-
-    <section class="reader-section" style="border-bottom: none;">
-      <h2>Un proyecto independiente y transparente</h2>
-      <p style="margin-top: 0.65rem; line-height: 1.75;">
-        <strong>¿Qué Plan Hoy?</strong> es una guía de acceso 100 % gratuito. No vendemos artículos patrocinados encubiertos ni recomendamos lugares en los que no pasaríamos nosotros mismos una tarde de sábado. En aquellos palacios, museos o visitas guiadas que requieren reserva previa, facilitamos enlaces directos tanto a las webs oficiales como a plataformas autorizadas de entradas (como <em>Tiqets</em> o <em>Civitatis</em>) con los precios oficiales verificados y sin ningún sobrecoste para el lector.
-      </p>
-      <div style="margin-top: 1.35rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+      <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
         <a href="/" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem; padding: 0.65rem 1.2rem; border-radius: var(--radius-pill);">Explorar planes por ciudad →</a>
         <a href="/mapa/" style="background: var(--bg-sand); color: var(--ink-primary); border: 1px solid var(--border-strong); text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 0.65rem 1.2rem; border-radius: var(--radius-pill);">🗺️ Abrir Mapa Interactivo</a>
       </div>
