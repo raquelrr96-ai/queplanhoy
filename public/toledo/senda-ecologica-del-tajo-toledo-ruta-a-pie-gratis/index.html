@@ -250,7 +250,7 @@
     </section>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        var pins = [{"idx": 1, "name": "Puente Romano de Alcántara (Inicio de la Senda Ecológica)", "location": "Paseo de la Rosa / Bajada de Alcántara (a 8 min a pie de la estación de tren de Toledo)", "price": "Recorrido 100% gratuito", "lat": 39.8604, "lng": -4.0177, "image": "../../images/venues/tol-puente-alcantara-amanecer.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Puente%20Romano%20de%20Alc%C3%A1ntara%20%28Inicio%20de%20la%20Senda%20Ecol%C3%B3gica%29%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Molinos de Daicán y Mirador del Cerro del Bú", "location": "Primer kilómetro de la Senda Ecológica del Tajo (Orilla sur)", "price": "Gratis", "lat": 39.8541, "lng": -4.0203, "image": "../../images/venues/tol-cerro-del-bu.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Molinos%20de%20Daic%C3%A1n%20y%20Mirador%20del%20Cerro%20del%20B%C3%BA%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Pasarelas del Cañón del Tajo y Embarcadero de la Barca de Pasaje", "location": "Tramo central de la Senda Ecológica bajo la Roca Tarpeya y el Convento de San Gil", "price": "Gratis", "lat": 39.8522, "lng": -4.0285, "image": "../../images/venues/tol-senda-ecologica-tajo.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pasarelas%20del%20Ca%C3%B1%C3%B3n%20del%20Tajo%20y%20Embarcadero%20de%20la%20Barca%20de%20Pasaje%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Puente Medieval de San Martín y Barrio de la Judería", "location": "Puente de San Martín y Calle de los Reyes Católicos", "price": "Paseo gratis / Cazuelita de carcamusas toledanas con pan y caña o vino: 6,50 € – 9,00 €", "lat": 39.8568, "lng": -4.0405, "image": "../../images/venues/tol-puente-san-martin-2.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Puente%20Medieval%20de%20San%20Mart%C3%ADn%20y%20Barrio%20de%20la%20Juder%C3%ADa%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
+        var pins = [{"idx": 1, "name": "Puente Romano de Alcántara (Inicio de la Senda Ecológica)", "location": "Paseo de la Rosa / Bajada de Alcántara (a 8 min a pie de la estación de tren de Toledo)", "price": "Recorrido 100% gratuito", "lat": 39.8604, "lng": -4.0177, "image": "../../images/venues/tol-puente-alcantara-amanecer.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Puente%20Romano%20de%20Alc%C3%A1ntara%20%28Inicio%20de%20la%20Senda%20Ecol%C3%B3gica%29%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Molinos de Daicán y Mirador del Cerro del Bú", "location": "Primer kilómetro de la Senda Ecológica del Tajo (Orilla sur)", "price": "Gratis", "lat": 39.8541, "lng": -4.0203, "image": "../../images/venues/tol-molinos-de-daic-n-y-mirador--uniq.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Molinos%20de%20Daic%C3%A1n%20y%20Mirador%20del%20Cerro%20del%20B%C3%BA%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Pasarelas del Cañón del Tajo y Embarcadero de la Barca de Pasaje", "location": "Tramo central de la Senda Ecológica bajo la Roca Tarpeya y el Convento de San Gil", "price": "Gratis", "lat": 39.8522, "lng": -4.0285, "image": "../../images/venues/tol-canon-tajo-pasarela-uniq.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pasarelas%20del%20Ca%C3%B1%C3%B3n%20del%20Tajo%20y%20Embarcadero%20de%20la%20Barca%20de%20Pasaje%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Puente Medieval de San Martín y Barrio de la Judería", "location": "Puente de San Martín y Calle de los Reyes Católicos", "price": "Paseo gratis / Cazuelita de carcamusas toledanas con pan y caña o vino: 6,50 € – 9,00 €", "lat": 39.8568, "lng": -4.0405, "image": "../../images/venues/tol-puente-medieval-de-san-mart--uniq.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Puente%20Medieval%20de%20San%20Mart%C3%ADn%20y%20Barrio%20de%20la%20Juder%C3%ADa%2C%20Toledo%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
         L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -306,7 +306,7 @@
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Nada más empezar a caminar con el sonido del agua a tu derecha y los cigarrales a tu izquierda, el camino pasa junto a las presas o azudes históricos y las ruinas de los antiguos molinos hidráulicos medievales (como los molinos de Daicán y de Santa Cruz) que aprovechaban la fuerza de la corriente del Tajo para moler trigo y batanar tejidos.</p>
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Apenas quince minutos después de dejar atrás el Puente de Alcántara encontrarás un desvío corto que sube hacia el yacimiento de la Edad del Bronce del Cerro del Bú. Merece muchísimo la pena dedicar diez minutos a subir a este promontorio rocoso: mientras los autobuses turísticos se agolpan arriba en la carretera de circunvalación del Valle, desde el Cerro del Bú tendrás el Alcázar y las cornisas de los conventos toledanos muchísimo más cerca y sin nadie alrededor.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/tol-cerro-del-bu.jpg" alt="Vista frontal del Alcázar y los tejados históricos de Toledo desde el promontorio del Cerro del Bú" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/tol-molinos-de-daic-n-y-mirador--uniq.jpg" alt="Vista frontal del Alcázar y los tejados históricos de Toledo desde el promontorio del Cerro del Bú" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Vista frontal del Alcázar y los tejados históricos de Toledo desde el promontorio del Cerro del Bú
           </figcaption>
@@ -322,7 +322,7 @@
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">De vuelta al sendero principal junto a la orilla, te adentrarás en la parte más espectacular de la ruta: el tramo del estrecho de la Degollada, donde el Tajo corre encajonado entre paredones verticales de roca metamórfica. El camino alterna senderos de tierra compacta entre álamos, tarays y sauces con pasarelas de madera y pequeños puentes que salvan las vaguadas a pocos metros sobre la lámina de agua.</p>
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Si miras hacia arriba desde mitad del cañón, distinguirás colgados sobre el precipicio la Casa-Museo de Victorio Macho (Roca Tarpeya) y los muros de los jardines de la Judería. En los meses de primavera, verano y principios de otoño suele funcionar además a mitad de recorrido la tradicional &#x27;Barca de Pasaje&#x27; municipal (gratuita), que cruza a los caminantes de una orilla a otra del río ayudándose de una maroma como se hacía en el siglo XVI.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/tol-senda-ecologica-tajo.jpg" alt="El cañón del río Tajo rodeando la roca sobre la que se asienta el casco histórico de Toledo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/tol-canon-tajo-pasarela-uniq.jpg" alt="El cañón del río Tajo rodeando la roca sobre la que se asienta el casco histórico de Toledo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             El cañón del río Tajo rodeando la roca sobre la que se asienta el casco histórico de Toledo
           </figcaption>
@@ -339,7 +339,7 @@
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Cruza el puente pasando junto a los restos del torreón del Baño de la Cava (ligado a la leyenda del último rey visigodo don Rodrigo) y sube cinco minutos por la Cuesta de San Martín hasta desembocar en el corazón de la Judería de Toledo, justo a los pies del Monasterio de San Juan de los Reyes y la Sinagoga de Santa María la Blanca.</p>
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Después de haber rodeado toda la ciudad a pie, la recompensa perfecta te espera en las tabernas tradicionales de la Judería y la cercana plaza de Barrio Nuevo: pedir una cazuelita caliente de carcamusas toledanas (el guiso típico de magro con tomate ligeramente picante y guisantes creado en Toledo a mediados del siglo XX) antes de perderte por el casco histórico.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/tol-puente-san-martin-2.jpg" alt="Los cinco arcos y los torreones medievales del Puente de San Martín al final de la Senda Ecológica del Tajo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/tol-puente-medieval-de-san-mart--uniq.jpg" alt="Los cinco arcos y los torreones medievales del Puente de San Martín al final de la Senda Ecológica del Tajo" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Los cinco arcos y los torreones medievales del Puente de San Martín al final de la Senda Ecológica del Tajo
           </figcaption>
@@ -397,27 +397,6 @@
       </div>
       <div class="related-articles-grid">
         
-  <article class="article-card" data-city="Toledo" data-category="Este Fin de Semana" data-search="5 planes este fin de semana en toledo (9 al 11 de octubre de 2026): mercadillos, cultura y rutas gratis guía detallada para quienes buscan «planes este fin de semana toledo 9 al 11 de octubre de 2026» en toledo saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos. judería mayor barrio de los conventos zocodover senda ecológica del tajo">
-    <a href="../../toledo/planes-este-fin-de-semana-toledo-9-al-11-de-octubre-de-2026/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/venues/tol-cerro-del-bu.jpg" alt="Vista panorámica del Alcázar y las murallas de Toledo sobre el cañón del río Tajo" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Toledo</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 9 al 11 de octubre de 2026</span>
-          <span style="color: var(--ink-muted);">0 € – 15 €</span>
-        </div>
-        <h2 class="card-title">5 Planes este Fin de Semana en Toledo (9 al 11 de octubre de 2026): Mercadillos, Cultura y Rutas Gratis</h2>
-        <p class="card-excerpt">Guía detallada para quienes buscan «planes este fin de semana toledo 9 al 11 de octubre de 2026» en Toledo saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Judería Mayor · Barrio de los Conventos · Zocodover · Senda Ecológica del Tajo</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
-
   <article class="article-card" data-city="Toledo" data-category="Planes Diferentes" data-search="qué hacer en toledo en el puente de todos los santos y halloween guía con las actividades especiales de todos los santos (1 de noviembre) y la noche de halloween en toledo: programación escénica en el teatro de rojas, rutas nocturnas por subterráneos, cripta de san andrés, espectáculos del ayuntamiento y dulces de convento. callejón de san ginés pozo amargo y catedral barrio de san andrés conventos de clausura puente de san martín y valle">
     <a href="../../toledo/planes-puente-todos-los-santos-halloween-toledo-leyendas-noche/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
@@ -439,7 +418,7 @@
     </a>
   </article>
 
-  <article class="article-card" data-city="Toledo" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en toledo (agenda del 2 al 4 de octubre) si te preguntas qué plan hacer en toledo este fin de semana (del 2 al 4 de octubre de 2026): ruta por el patrimonio subterráneo gratuito, mercado de artesanía en la judería, senda del tajo con colores de otoño y los cobertizos al anochecer. judería / san juan de los reyes cobertizos senda del tajo zocodover">
+  <article class="article-card" data-city="Toledo" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en toledo (agenda del 9 al 11 de octubre) si te preguntas qué plan hacer en toledo este fin de semana (del 9 al 11 de octubre de 2026): ruta por el patrimonio subterráneo gratuito, mercado de artesanía en la judería, senda del tajo con colores de otoño y los cobertizos al anochecer. judería / san juan de los reyes cobertizos senda del tajo zocodover">
     <a href="../../toledo/planes-este-fin-de-semana-toledo-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../../images/venues/tol-san-juan-reyes.jpg" alt="Monasterio gótico de San Juan de los Reyes en la Judería de Toledo" class="card-image" loading="lazy" width="640" height="360" />
@@ -447,13 +426,34 @@
       </div>
       <div class="card-body">
         <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 2 al 4 de octubre de 2026</span>
+          <span class="card-category">Este Fin de Semana · 9 al 11 de octubre de 2026</span>
           <span style="color: var(--ink-muted);">Gratis (0 € – 10 €)</span>
         </div>
-        <h2 class="card-title">Qué hacer este fin de semana en Toledo (agenda del 2 al 4 de octubre)</h2>
-        <p class="card-excerpt">Si te preguntas qué plan hacer en Toledo este fin de semana (del 2 al 4 de octubre de 2026): ruta por el patrimonio subterráneo gratuito, mercado de artesanía en la Judería, senda del Tajo con colores de otoño y los cobertizos al anochecer.</p>
+        <h2 class="card-title">Qué hacer este fin de semana en Toledo (agenda del 9 al 11 de octubre)</h2>
+        <p class="card-excerpt">Si te preguntas qué plan hacer en Toledo este fin de semana (del 9 al 11 de octubre de 2026): ruta por el patrimonio subterráneo gratuito, mercado de artesanía en la Judería, senda del Tajo con colores de otoño y los cobertizos al anochecer.</p>
         <div class="card-footer">
           <span class="card-neighborhoods">Judería / San Juan de los Reyes · Cobertizos · Senda del Tajo · Zocodover</span>
+          <span class="card-read-link">Leer guía →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
+  <article class="article-card" data-city="Toledo" data-category="Gratis y Baratos" data-search="5 planes gratis en toledo más allá de lo turístico cinco planes gratuitos en toledo para descubrir la ciudad sin pagar entradas ni hacer colas: desde cruzar el puente medieval de san martín sobre el tajo hasta bajar a las bóvedas romanas del consorcio. puente de san martín / judería senda ecológica del tajo centro histórico (subterráneos) barrio de los conventos">
+    <a href="../../toledo/planes-gratis-en-toledo-fuera-de-lo-turistico/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/planes-gratis-toledo-puente-san-martin.jpg" alt="Puente medieval de San Martín reflejado sobre el río Tajo en Toledo" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Toledo</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Gratis y Baratos</span>
+          <span style="color: var(--ink-muted);">100% Gratis (0 €)</span>
+        </div>
+        <h2 class="card-title">5 planes gratis en Toledo más allá de lo turístico</h2>
+        <p class="card-excerpt">Cinco planes gratuitos en Toledo para descubrir la ciudad sin pagar entradas ni hacer colas: desde cruzar el puente medieval de San Martín sobre el Tajo hasta bajar a las bóvedas romanas del Consorcio.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Puente de San Martín / Judería · Senda Ecológica del Tajo · Centro Histórico (Subterráneos) · Barrio de los Conventos</span>
           <span class="card-read-link">Leer guía →</span>
         </div>
       </div>

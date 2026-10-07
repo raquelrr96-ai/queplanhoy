@@ -586,6 +586,27 @@ def fetch_live_weekend_events(city: str, max_items: int = 2) -> list:
   return discovered
 
 
+def _collect_used_image_hashes() -> set:
+  """Devuelve el conjunto de hashes MD5 de todas las imágenes ya usadas en articles.json."""
+  import hashlib
+  used = set()
+  for a in load_json(ARTICLES_FILE):
+    paths = [a.get("image", "")] + [
+        s.get("image", "") for s in a.get("sections", [])
+    ]
+    for rel in paths:
+      if not rel:
+        continue
+      abs_p = os.path.join(BASE_DIR, "public", rel.lstrip("/"))
+      if os.path.exists(abs_p):
+        try:
+          with open(abs_p, "rb") as fp:
+            used.add(hashlib.md5(fp.read()).hexdigest())
+        except Exception:
+          pass
+  return used
+
+
 def fetch_real_commons_photo(
     search_query: str,
     slug: str,
@@ -594,16 +615,16 @@ def fetch_real_commons_photo(
     official_image_url: str = "",
     official_credit: str = "",
 ) -> tuple:
-  """Prioriza fotografías oficiales de ayuntamientos/eventos en alta resolución,
+  """Obtiene una fotografía real verificada garantizando que NUNCA se repita
 
-  o bien imágenes de calidad editorial verificada; si una foto externa no
-  cumple estándares altos de resolución y estética, utiliza la imagen de alta
-  calidad curada de la ciudad.
+  una imagen ya empleada en otro artículo diferente (comparación por MD5).
   """
+  import hashlib
   import ssl
   import urllib.parse
   import urllib.request
 
+  used_hashes = _collect_used_image_hashes()
   ctx = ssl.create_default_context()
   ctx.check_hostname = False
   ctx.verify_mode = ssl.CERT_NONE
@@ -617,12 +638,82 @@ def fetch_real_commons_photo(
           official_image_url, headers={"User-Agent": "Mozilla/5.0"}
       )
       data = urllib.request.urlopen(req, context=ctx, timeout=15).read()
-      if len(data) > 80000:
+      img_md5 = hashlib.md5(data).hexdigest()
+      if len(data) > 40000 and img_md5 not in used_hashes:
         with open(abs_path, "wb") as out_f:
           out_f.write(data)
         return rel_path, fallback_alt, official_credit
     except Exception:
       pass
+
+  # Si fallback_image no se ha usado nunca en ningún otro artículo, podemos usarla
+  fb_abs = os.path.join(BASE_DIR, "public", fallback_image.lstrip("/"))
+  if os.path.exists(fb_abs):
+    try:
+      with open(fb_abs, "rb") as fp:
+        fb_md5 = hashlib.md5(fp.read()).hexdigest()
+      if fb_md5 not in used_hashes:
+        return fallback_image, fallback_alt, ""
+    except Exception:
+      pass
+
+  # Buscar en Wikimedia Commons una fotografía real única que no esté en used_hashes
+  headers = {
+      "User-Agent": (
+          "QuePlanHoyBot/1.0 (https://queplanhoy.es; contacto@queplanhoy.es)"
+      )
+  }
+  params = urllib.parse.urlencode({
+      "action": "query",
+      "generator": "search",
+      "gsrsearch": f"filetype:bitmap {search_query}",
+      "gsrnamespace": "6",
+      "gsrlimit": "15",
+      "prop": "imageinfo",
+      "iiprop": "url|dimensions|mime",
+      "iiurlwidth": "1280",
+      "format": "json",
+  })
+  api_url = f"https://commons.wikimedia.org/w/api.php?{params}"
+  try:
+    req = urllib.request.Request(api_url, headers=headers)
+    resp_data = json.loads(
+        urllib.request.urlopen(req, context=ctx, timeout=15)
+        .read()
+        .decode("utf-8")
+    )
+    pages = resp_data.get("query", {}).get("pages", {})
+    for p in sorted(pages.values(), key=lambda x: x.get("index", 999)):
+      title_low = p.get("title", "").lower()
+      if any(
+          b in title_low
+          for b in ["map", "logo", "escudo", "coat", "plan", "diagram", "icon"]
+      ):
+        continue
+      ii = p.get("imageinfo", [{}])[0]
+      if ii.get("mime") not in ("image/jpeg", "image/jpg") or ii.get("width", 0) < 700:
+        continue
+      dl_url = ii.get("thumburl") or ii.get("url")
+      if not dl_url:
+        continue
+      raw = urllib.request.urlopen(
+          urllib.request.Request(dl_url, headers=headers),
+          context=ctx,
+          timeout=15,
+      ).read()
+      if len(raw) < 25000:
+        continue
+      h = hashlib.md5(raw).hexdigest()
+      if h in used_hashes:
+        continue
+      rel_path = f"images/venues/{slug[:42]}-uniq.jpg"
+      abs_path = os.path.join(BASE_DIR, "public", rel_path)
+      os.makedirs(os.path.dirname(abs_path), exist_ok=True)
+      with open(abs_path, "wb") as out_f:
+        out_f.write(raw)
+      return rel_path, fallback_alt, "Wikimedia Commons"
+  except Exception:
+    pass
 
   return fallback_image, fallback_alt, ""
 

@@ -250,7 +250,7 @@
     </section>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        var pins = [{"idx": 1, "name": "Parada Porta de la Mar / Poeta Querol (Autobuses EMT 24 y 25)", "location": "Calle Poeta Querol / Porta de la Mar (Centro de Valencia) o paradas del Jardín del Turia", "price": "1,50 € billete sencillo EMT (o incluido en el bono Suma / EMTambTu)", "lat": 39.4718, "lng": -0.3694, "image": "../../images/venues/vlc-jardin-del-turia.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parada%20Porta%20de%20la%20Mar%20/%20Poeta%20Querol%20%28Autobuses%20EMT%2024%20y%2025%29%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Sendas de la Devesa del Saler y Playa de la Garrofera", "location": "Parada Pinars - El Saler / Gola de Pujol (Autobús EMT 24 y 25)", "price": "Recorrido 100% gratuito", "lat": 39.3665, "lng": -0.3182, "image": "../../images/venues/vlc-devesa-saler.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sendas%20de%20la%20Devesa%20del%20Saler%20y%20Playa%20de%20la%20Garrofera%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Pedanía de El Palmar (Corazón de L'Albufera)", "location": "Isla de El Palmar (Línea 24 de la EMT hasta el final de línea)", "price": "Paseo libre / Paseo en barca tradicional ('albuferenc') de 45 min: 6,00 € por persona", "lat": 39.3132, "lng": -0.3178, "image": "../../images/venues/vlc-el-palmar.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pedan%C3%ADa%20de%20El%20Palmar%20%28Coraz%C3%B3n%20de%20L%27Albufera%29%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Mirador de la Gola de Pujol", "location": "Carretera CV-500, junto a la Gola de Pujol (Parada EMT Gola de Pujol)", "price": "Acceso al mirador 100% gratuito / Ración de all i pebre tradicional: 12 € – 15 €", "lat": 39.3514, "lng": -0.3179, "image": "../../images/venues/vlc-albufera-gola-pujol.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Gola%20de%20Pujol%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
+        var pins = [{"idx": 1, "name": "Parada Porta de la Mar / Poeta Querol (Autobuses EMT 24 y 25)", "location": "Calle Poeta Querol / Porta de la Mar (Centro de Valencia) o paradas del Jardín del Turia", "price": "1,50 € billete sencillo EMT (o incluido en el bono Suma / EMTambTu)", "lat": 39.4718, "lng": -0.3694, "image": "../../images/venues/vlc-parada-porta-de-la-mar-poeta-uniq.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parada%20Porta%20de%20la%20Mar%20/%20Poeta%20Querol%20%28Autobuses%20EMT%2024%20y%2025%29%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Sendas de la Devesa del Saler y Playa de la Garrofera", "location": "Parada Pinars - El Saler / Gola de Pujol (Autobús EMT 24 y 25)", "price": "Recorrido 100% gratuito", "lat": 39.3665, "lng": -0.3182, "image": "../../images/venues/vlc-devesa-saler.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sendas%20de%20la%20Devesa%20del%20Saler%20y%20Playa%20de%20la%20Garrofera%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Pedanía de El Palmar (Corazón de L'Albufera)", "location": "Isla de El Palmar (Línea 24 de la EMT hasta el final de línea)", "price": "Paseo libre / Paseo en barca tradicional ('albuferenc') de 45 min: 6,00 € por persona", "lat": 39.3132, "lng": -0.3178, "image": "../../images/venues/vlc-el-palmar.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pedan%C3%ADa%20de%20El%20Palmar%20%28Coraz%C3%B3n%20de%20L%27Albufera%29%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Mirador de la Gola de Pujol", "location": "Carretera CV-500, junto a la Gola de Pujol (Parada EMT Gola de Pujol)", "price": "Acceso al mirador 100% gratuito / Ración de all i pebre tradicional: 12 € – 15 €", "lat": 39.3514, "lng": -0.3179, "image": "../../images/venues/vlc-mirador-de-la-gola-de-pujol-uniq.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Gola%20de%20Pujol%2C%20Valencia%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
         L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -289,7 +289,7 @@
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Uno de los mayores privilegios de Valencia es tener un parque natural de más de 21.000 hectáreas conectado directamente con el centro histórico mediante la red de autobuses rojos municipales (EMT). No necesitas alquilar coche ni contratar un autobús turístico: las líneas 24 (con destino El Palmar) y 25 (con destino El Perellonet) salen cada 20–30 minutos desde el entorno de Porta de la Mar y bordean el antiguo cauce del Turia pasando junto al Palau de la Música y la Ciudad de las Artes.</p>
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">En apenas veinticinco minutos de trayecto verás cómo desaparecen los edificios y la carretera se adentra entre el mar Mediterráneo a la izquierda y los arrozales y pinares de la Devesa del Saler a la derecha. Con el mismo billete urbano o tarjeta de transporte puedes bajarte a mitad de camino para caminar entre los pinos y el lago, y volver a subir más tarde para cenar o regresar al centro.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/vlc-jardin-del-turia.jpg" alt="Puentes y jardines del antiguo cauce del río Turia por donde parte la ruta hacia el Parque Natural de L&#x27;Albufera" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/vlc-parada-porta-de-la-mar-poeta-uniq.jpg" alt="Puentes y jardines del antiguo cauce del río Turia por donde parte la ruta hacia el Parque Natural de L&#x27;Albufera" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Puentes y jardines del antiguo cauce del río Turia por donde parte la ruta hacia el Parque Natural de L&#x27;Albufera
           </figcaption>
@@ -338,7 +338,7 @@
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Su pasarela de madera se adentra directamente sobre el espejo de agua mirando hacia el oeste: cuando el sol baja detrás de las montañas del interior de Valencia, toda la superficie tranquila del lago se tiñe primero de dorado y después de tonos violetas y rojizos mientras regresan las bandadas de aves acuáticas.</p>
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Si has hecho el plan a mediodía o primera hora de la tarde en El Palmar, no te vayas sin probar en alguna de sus casas de comidas familiares una cazuela de barro de &#x27;all i pebre&#x27; (la receta tradicional de los pescadores con patata, pimentón, ajo y guindilla) o un arroz a banda mirando directamente a los campos de arroz.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/vlc-albufera-gola-pujol.jpg" alt="El cielo teñido de dorado y violeta sobre las aguas del embarcadero de la Gola de Pujol en L&#x27;Albufera" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/vlc-mirador-de-la-gola-de-pujol-uniq.jpg" alt="El cielo teñido de dorado y violeta sobre las aguas del embarcadero de la Gola de Pujol en L&#x27;Albufera" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             El cielo teñido de dorado y violeta sobre las aguas del embarcadero de la Gola de Pujol en L&#x27;Albufera
           </figcaption>
@@ -396,28 +396,7 @@
       </div>
       <div class="related-articles-grid">
         
-  <article class="article-card" data-city="Valencia" data-category="Este Fin de Semana" data-search="5 planes este fin de semana en valencia (9 al 11 de octubre de 2026): mercadillos, cultura y rutas gratis guía detallada para quienes buscan «planes este fin de semana valencia 9 al 11 de octubre de 2026» en valencia saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos. el cabanyal ruzafa el carmen exposición / monforte">
-    <a href="../../valencia/planes-este-fin-de-semana-valencia-9-al-11-de-octubre-de-2026/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/venues/vlc-albufera-gola-pujol.jpg" alt="Barca tradicional de madera al atardecer en el embarcadero de la Albufera de Valencia" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Valencia</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 9 al 11 de octubre de 2026</span>
-          <span style="color: var(--ink-muted);">0 € – 15 €</span>
-        </div>
-        <h2 class="card-title">5 Planes este Fin de Semana en Valencia (9 al 11 de octubre de 2026): Mercadillos, Cultura y Rutas Gratis</h2>
-        <p class="card-excerpt">Guía detallada para quienes buscan «planes este fin de semana valencia 9 al 11 de octubre de 2026» en Valencia saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">El Cabanyal · Ruzafa · El Carmen · Exposición / Monforte</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
-
-  <article class="article-card" data-city="Valencia" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en valencia (especial 9 d&#x27;octubre) qué plan hacer en valencia este fin de semana (del 2 al 4 de octubre de 2026): ambiente previo al 9 d&#x27;octubre en el cauce del turia, puertas abiertas en el palau de la generalitat, ruta por el cabanyal y puesta de sol en la albufera. jardín del turia el carmen el cabanyal l&#x27;albufera">
+  <article class="article-card" data-city="Valencia" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en valencia (especial 9 d&#x27;octubre) qué plan hacer en valencia este fin de semana (del 9 al 11 de octubre de 2026): ambiente previo al 9 d&#x27;octubre en el cauce del turia, puertas abiertas en el palau de la generalitat, ruta por el cabanyal y puesta de sol en la albufera. jardín del turia el carmen el cabanyal l&#x27;albufera">
     <a href="../../valencia/planes-este-fin-de-semana-valencia-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../../images/venues/vlc-palau-generalitat.jpg" alt="Fachada gótica y torre del Palau de la Generalitat Valenciana en el barrio del Carmen" class="card-image" loading="lazy" width="640" height="360" />
@@ -425,11 +404,11 @@
       </div>
       <div class="card-body">
         <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 2 al 4 de octubre de 2026</span>
+          <span class="card-category">Este Fin de Semana · 9 al 11 de octubre de 2026</span>
           <span style="color: var(--ink-muted);">Gratis (0 € – 9 €)</span>
         </div>
         <h2 class="card-title">Qué hacer este fin de semana en Valencia (especial 9 d&#x27;Octubre)</h2>
-        <p class="card-excerpt">Qué plan hacer en Valencia este fin de semana (del 2 al 4 de octubre de 2026): ambiente previo al 9 d&#x27;Octubre en el cauce del Turia, puertas abiertas en el Palau de la Generalitat, ruta por el Cabanyal y puesta de sol en la Albufera.</p>
+        <p class="card-excerpt">Qué plan hacer en Valencia este fin de semana (del 9 al 11 de octubre de 2026): ambiente previo al 9 d&#x27;Octubre en el cauce del Turia, puertas abiertas en el Palau de la Generalitat, ruta por el Cabanyal y puesta de sol en la Albufera.</p>
         <div class="card-footer">
           <span class="card-neighborhoods">Jardín del Turia · El Carmen · El Cabanyal · L&#x27;Albufera</span>
           <span class="card-read-link">Leer guía →</span>
@@ -453,6 +432,27 @@
         <p class="card-excerpt">Cinco planes 100% gratuitos en Valencia lejos de las rutas masificadas: jardines neoclásicos con estatuas de mármol, claustros medievales con arte contemporáneo y paseos por la huerta histórica.</p>
         <div class="card-footer">
           <span class="card-neighborhoods">Exposición / Monforte · El Carmen · El Cabanyal · Huerta de Alboraya</span>
+          <span class="card-read-link">Leer guía →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
+  <article class="article-card" data-city="Valencia" data-category="Planes Diferentes" data-search="6 planes diferentes en valencia para salir de la rutina más allá de la ciudad de las artes y la malvarrosa: te llevamos en autobús urbano hasta el embarcadero más tranquilo de l&#x27;albufera al caer el sol, a un búnker de 1938 y a tomar horchata recién molida entre campos de chufa. el palmar / albufera ruzafa el carmen alboraya">
+    <a href="../../valencia/planes-diferentes-valencia-en-pareja-baratos/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/vlc-albufera-gola-pujol.jpg" alt="Atardecer sobre las aguas tranquilas del Parque Natural de la Albufera de Valencia" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Valencia</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">Planes Diferentes</span>
+          <span style="color: var(--ink-muted);">0 € – 12 €</span>
+        </div>
+        <h2 class="card-title">6 planes diferentes en Valencia para salir de la rutina</h2>
+        <p class="card-excerpt">Más allá de la Ciudad de las Artes y la Malvarrosa: te llevamos en autobús urbano hasta el embarcadero más tranquilo de L&#x27;Albufera al caer el sol, a un búnker de 1938 y a tomar horchata recién molida entre campos de chufa.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">El Palmar / Albufera · Ruzafa · El Carmen · Alboraya</span>
           <span class="card-read-link">Leer guía →</span>
         </div>
       </div>

@@ -250,7 +250,7 @@
     </section>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        var pins = [{"idx": 1, "name": "Palacio de los Marqueses de la Algaba (Fachada y Jardines)", "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)", "price": "Entrada 100% gratuita (Lunes a sábado)", "lat": 37.3996, "lng": -5.9908, "image": "../../images/venues/sev-marqueses-algaba-fachada.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20%28Fachada%20y%20Jardines%29%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Centro del Arte Mudéjar de Sevilla (Interior del Palacio)", "location": "Planta baja y galería noble del Palacio de los Marqueses de la Algaba", "price": "Gratis", "lat": 37.3998, "lng": -5.9906, "image": "../../images/venues/sev-pabellon-mudejar.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20del%20Arte%20Mud%C3%A9jar%20de%20Sevilla%20%28Interior%20del%20Palacio%29%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Real Parroquia de Omnium Sanctorum y Calle Feria", "location": "Calle Feria, 98 (Justo frente al Palacio de los Marqueses de la Algaba)", "price": "Acceso libre", "lat": 37.3992, "lng": -5.9912, "image": "../../images/venues/sev-omnium-sanctorum.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Real%20Parroquia%20de%20Omnium%20Sanctorum%20y%20Calle%20Feria%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Mercado de Abastos de la Calle Feria y Alameda de Hércules", "location": "Calle Feria, 98 y Alameda de Hércules (a 3 minutos a pie)", "price": "Caña o vermut + tapa de pescado frito o chacinas: 3,50 € – 6,00 €", "lat": 37.3989, "lng": -5.9915, "image": "../../images/venues/sev-calle-feria.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Abastos%20de%20la%20Calle%20Feria%20y%20Alameda%20de%20H%C3%A9rcules%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
+        var pins = [{"idx": 1, "name": "Palacio de los Marqueses de la Algaba (Fachada y Jardines)", "location": "Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)", "price": "Entrada 100% gratuita (Lunes a sábado)", "lat": 37.3996, "lng": -5.9908, "image": "../../images/venues/sev-marqueses-algaba-fachada.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20%28Fachada%20y%20Jardines%29%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-1"}, {"idx": 2, "name": "Centro del Arte Mudéjar de Sevilla (Interior del Palacio)", "location": "Planta baja y galería noble del Palacio de los Marqueses de la Algaba", "price": "Gratis", "lat": 37.3998, "lng": -5.9906, "image": "../../images/venues/sev-centro-del-arte-mud-jar-de-s-uniq.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20del%20Arte%20Mud%C3%A9jar%20de%20Sevilla%20%28Interior%20del%20Palacio%29%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-2"}, {"idx": 3, "name": "Real Parroquia de Omnium Sanctorum y Calle Feria", "location": "Calle Feria, 98 (Justo frente al Palacio de los Marqueses de la Algaba)", "price": "Acceso libre", "lat": 37.3992, "lng": -5.9912, "image": "../../images/venues/sev-omnium-sanctorum.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Real%20Parroquia%20de%20Omnium%20Sanctorum%20y%20Calle%20Feria%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-3"}, {"idx": 4, "name": "Mercado de Abastos de la Calle Feria y Alameda de Hércules", "location": "Calle Feria, 98 y Alameda de Hércules (a 3 minutos a pie)", "price": "Caña o vermut + tapa de pescado frito o chacinas: 3,50 € – 6,00 €", "lat": 37.3989, "lng": -5.9915, "image": "../../images/venues/sev-calle-feria.jpg", "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Abastos%20de%20la%20Calle%20Feria%20y%20Alameda%20de%20H%C3%A9rcules%2C%20Sevilla%2C%20Espa%C3%B1a", "anchor": "#plan-4"}];
         if (!pins.length || typeof L === 'undefined') return;
         var map = L.map('article-leaflet-map', { scrollWheelZoom: false });
         L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -306,7 +306,7 @@
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Al cruzar el zaguán y los jardines laterales llenos de naranjos y palmeras se abre el gran patio central porticado del palacio, articulado en torno a arcos de medio punto sostenidos por esbeltas columnas de mármol blanco traídas desde Génova en el siglo XVI. El sonido de la fuente central y la sombra de las galerías hacen que sea uno de los refugios más frescos de Sevilla.</p>
         <p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">Sube sin prisa por su escalera monumental cubierta por una soberbia armadura de madera mudéjar hasta la planta alta, donde se ubica el Centro del Arte Mudéjar de Sevilla. Allí podrás ver de cerca más de cien piezas originales rescatadas de iglesias y palacios sevillanos de los siglos XIV al XVI: alfarjes policromados con lacerías islámicas, tinajas medievales selladas, lápidas con inscripciones cúficas, castellanas y hebreas que demuestran la convivencia de las tres culturas, y azulejos de arista originales de los antiguos alfares de Triana.</p>
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="../../images/venues/sev-pabellon-mudejar.jpg" alt="Detalles de ladrillo tallado y cerámica vidriada de la tradición mudéjar sevillana" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="../../images/venues/sev-centro-del-arte-mud-jar-de-s-uniq.jpg" alt="Detalles de ladrillo tallado y cerámica vidriada de la tradición mudéjar sevillana" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             Detalles de ladrillo tallado y cerámica vidriada de la tradición mudéjar sevillana
           </figcaption>
@@ -397,28 +397,7 @@
       </div>
       <div class="related-articles-grid">
         
-  <article class="article-card" data-city="Sevilla" data-category="Este Fin de Semana" data-search="5 planes este fin de semana en sevilla (9 al 11 de octubre de 2026): mercadillos, cultura y rutas gratis guía detallada para quienes buscan «planes este fin de semana sevilla 9 al 11 de octubre de 2026» en sevilla saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos. triana calle feria santa cruz alameda de hércules">
-    <a href="../../sevilla/planes-este-fin-de-semana-sevilla-9-al-11-de-octubre-de-2026/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
-      <div class="card-image-wrap">
-        <img src="../../images/venues/sev-marqueses-algaba.jpg" alt="Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en Sevilla" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">Sevilla</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 9 al 11 de octubre de 2026</span>
-          <span style="color: var(--ink-muted);">0 € – 15 €</span>
-        </div>
-        <h2 class="card-title">5 Planes este Fin de Semana en Sevilla (9 al 11 de octubre de 2026): Mercadillos, Cultura y Rutas Gratis</h2>
-        <p class="card-excerpt">Guía detallada para quienes buscan «planes este fin de semana sevilla 9 al 11 de octubre de 2026» en Sevilla saliendo de lo típico: recorrido paso a paso, direcciones reales, mapa y precios exactos.</p>
-        <div class="card-footer">
-          <span class="card-neighborhoods">Triana · Calle Feria · Santa Cruz · Alameda de Hércules</span>
-          <span class="card-read-link">Leer guía →</span>
-        </div>
-      </div>
-    </a>
-  </article>
-
-  <article class="article-card" data-city="Sevilla" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en sevilla (agenda del 2 al 4 de octubre) qué plan hacer en sevilla este fin de semana (del 2 al 4 de octubre de 2026) aprovechando que bajan las temperaturas: el mercadillo de arte en la plaza del museo, casas-palacio gratuitas y ruta de tapeo por triana. museo / arenal santa cruz triana alameda">
+  <article class="article-card" data-city="Sevilla" data-category="Este Fin de Semana" data-search="qué hacer este fin de semana en sevilla (agenda del 9 al 11 de octubre) qué plan hacer en sevilla este fin de semana (del 9 al 11 de octubre de 2026) aprovechando que bajan las temperaturas: el mercadillo de arte en la plaza del museo, casas-palacio gratuitas y ruta de tapeo por triana. museo / arenal santa cruz triana alameda">
     <a href="../../sevilla/planes-este-fin-de-semana-sevilla-que-hacer-hoy/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="../../images/venues/sev-plaza-del-museo.jpg" alt="Plaza del Museo y fachada del Museo de Bellas Artes de Sevilla rodeada de arbolado" class="card-image" loading="lazy" width="640" height="360" />
@@ -426,11 +405,11 @@
       </div>
       <div class="card-body">
         <div class="card-meta-top">
-          <span class="card-category">Este Fin de Semana · 2 al 4 de octubre de 2026</span>
+          <span class="card-category">Este Fin de Semana · 9 al 11 de octubre de 2026</span>
           <span style="color: var(--ink-muted);">Gratis (0 € – 8 €)</span>
         </div>
-        <h2 class="card-title">Qué hacer este fin de semana en Sevilla (agenda del 2 al 4 de octubre)</h2>
-        <p class="card-excerpt">Qué plan hacer en Sevilla este fin de semana (del 2 al 4 de octubre de 2026) aprovechando que bajan las temperaturas: el Mercadillo de Arte en la Plaza del Museo, casas-palacio gratuitas y ruta de tapeo por Triana.</p>
+        <h2 class="card-title">Qué hacer este fin de semana en Sevilla (agenda del 9 al 11 de octubre)</h2>
+        <p class="card-excerpt">Qué plan hacer en Sevilla este fin de semana (del 9 al 11 de octubre de 2026) aprovechando que bajan las temperaturas: el Mercadillo de Arte en la Plaza del Museo, casas-palacio gratuitas y ruta de tapeo por Triana.</p>
         <div class="card-footer">
           <span class="card-neighborhoods">Museo / Arenal · Santa Cruz · Triana · Alameda</span>
           <span class="card-read-link">Leer guía →</span>
@@ -454,6 +433,27 @@
         <p class="card-excerpt">Cinco rincones y planes gratuitos en Sevilla para huir de las colas del centro: desde la arquitectura regionalista de la Plaza de América hasta palacios mudéjares del siglo XV de entrada libre.</p>
         <div class="card-footer">
           <span class="card-neighborhoods">Parque de María Luisa · Calle Feria · Triana · Santa Cruz</span>
+          <span class="card-read-link">Leer guía →</span>
+        </div>
+      </div>
+    </a>
+  </article>
+
+  <article class="article-card" data-city="Sevilla" data-category="En Pareja" data-search="5 planes en pareja en sevilla diferentes y baratos mientras todo el mundo hace cola en el real alcázar, hay casas-palacio mudéjares en sevilla llenas de buganvillas y azulejos del siglo xvi donde puedes pasear casi a solas con tu pareja. santa cruz triana feria / alameda san bartolomé">
+    <a href="../../sevilla/planes-en-sevilla-en-pareja-diferentes-baratos/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image-wrap">
+        <img src="../../images/venues/sev-patio-santa-cruz.jpg" alt="Patio renacentista y mudéjar del Palacio de los Marqueses de la Algaba en Sevilla" class="card-image" loading="lazy" width="640" height="360" />
+        <span class="card-city-tag">Sevilla</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta-top">
+          <span class="card-category">En Pareja</span>
+          <span style="color: var(--ink-muted);">0 € – 18 €</span>
+        </div>
+        <h2 class="card-title">5 planes en pareja en Sevilla diferentes y baratos</h2>
+        <p class="card-excerpt">Mientras todo el mundo hace cola en el Real Alcázar, hay casas-palacio mudéjares en Sevilla llenas de buganvillas y azulejos del siglo XVI donde puedes pasear casi a solas con tu pareja.</p>
+        <div class="card-footer">
+          <span class="card-neighborhoods">Santa Cruz · Triana · Feria / Alameda · San Bartolomé</span>
           <span class="card-read-link">Leer guía →</span>
         </div>
       </div>
