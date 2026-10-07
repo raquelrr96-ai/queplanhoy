@@ -772,11 +772,10 @@ def build_listing_page(
             data-slug="{html.escape(c_info['slug'])}"
             data-h1="{html.escape(c_info['h1'])}"
             data-intro="{html.escape(c_info['intro'])}"
-            data-kicker="GUÍA DE {html.escape(c_name.upper())} · CIUDAD ACTIVA"
+            data-kicker="GUÍA DE {html.escape(c_name.upper())}"
           >
             <img src="{thumb_src}" alt="Planes en {html.escape(c_name)}" class="city-pick-photo" loading="eager" width="320" height="180" />
             <span class="city-pick-overlay"></span>
-            <span class="city-pick-badge">Activa</span>
             <span class="city-pick-name">{html.escape(c_name)}</span>
           </button>""")
     city_selector_html = f"""
@@ -958,7 +957,7 @@ def build_listing_page(
       })
 
   initial_kicker = (
-      "GUÍA DE MADRID · CIUDAD ACTIVA" if active_city == "all" else kicker
+      "GUÍA DE MADRID" if active_city == "all" else kicker
   )
   initial_h1 = CITIES["Madrid"]["h1"] if active_city == "all" else h1
   initial_subtitle = (
