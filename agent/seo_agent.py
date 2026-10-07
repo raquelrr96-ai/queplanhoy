@@ -1016,11 +1016,15 @@ def run_wednesday_weekend_all_cities() -> list:
 
   # Recorremos en orden inverso para que al insertar en posición 0 queden:
   # Madrid, Barcelona, Valencia, Sevilla, Toledo
+  weekend_start = weekend_dates.split(" al ")[0] + " al "
   for city in reversed(cities):
     already_exists = any(
         a.get("city") == city
         and a.get("category") == "Este Fin de Semana"
-        and a.get("weekendDates") == weekend_dates
+        and (
+            a.get("weekendDates") == weekend_dates
+            or str(a.get("weekendDates", "")).startswith(weekend_start)
+        )
         for a in existing_articles
     )
     if already_exists:
@@ -1028,7 +1032,10 @@ def run_wednesday_weekend_all_cities() -> list:
         if (
             a.get("city") == city
             and a.get("category") == "Este Fin de Semana"
-            and a.get("weekendDates") == weekend_dates
+            and (
+                a.get("weekendDates") == weekend_dates
+                or str(a.get("weekendDates", "")).startswith(weekend_start)
+            )
         ):
           published.append(a)
           break
@@ -1039,8 +1046,7 @@ def run_wednesday_weekend_all_cities() -> list:
         f" {slugify(weekend_dates).replace('-', ' ')}"
     )
     suggested_title = (
-        f"5 Planes este Fin de Semana en {city} ({weekend_dates}):"
-        " Mercadillos, Cultura y Rutas Gratis"
+        f"Qué hacer este fin de semana en {city} (agenda del {weekend_dates})"
     )
     art = generate_seo_article(
         city=city,
