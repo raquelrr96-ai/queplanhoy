@@ -225,11 +225,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura · 📍 5 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Madrid%3A%205%20planes%20en%20Madrid%20cuando%20llueve%20%28a%20cubierto%20y%20sin%20centros%20comerciales%29%20https%3A//queplanhoy.es/madrid/planes-en-madrid-cuando-llueve-cubiertos-originales/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         Cinco refugios cubiertos con encanto para disfrutar de Madrid en un día de lluvia o frío sin acabar en un centro comercial: invernaderos de cristal, palacios del siglo XIX y salones de té.
@@ -286,7 +287,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Madrid (Pulsa un pin para ir a Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Madrid</span>
         <a href="../../mapa/?ciudad=Madrid" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Madrid en el gran mapa →
         </a>
@@ -316,7 +317,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -341,7 +342,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Paseo de la Chopera, 10 (Metro: Legazpi - L3 y L6)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Invernadero%20del%20Palacio%20de%20Cristal%20de%20Arganzuela%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -356,7 +356,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Ventura Rodríguez, 17 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)</span>
           <span><strong>Precio:</strong> 3,00 € entrada general (Gratis jueves de 17:00 a 20:00 y domingos)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20Cerralbo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -371,7 +370,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de San Mateo, 13 (Metro: Tribunal - L1, L10 / Alonso Martínez - L4, L5, L10)</span>
           <span><strong>Precio:</strong> Acceso libre al café sin entrada al museo / Café y repostería: 4,50 € – 7,50 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20del%20Jard%C3%ADn%20del%20Museo%20del%20Romanticismo%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
@@ -386,7 +384,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de Cibeles, 1 (Metro: Banco de España - L2)</span>
           <span><strong>Precio:</strong> Acceso a la Galería de Cristal y exposiciones: Gratis (Mirador: 3,00 €)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=CentroCentro%20-%20Palacio%20de%20Cibeles%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
@@ -401,7 +398,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de Santa Isabel, 3 (Metro: Antón Martín - L1)</span>
           <span><strong>Precio:</strong> 3,00 € por entrada (2,00 € con carné joven o estudiante)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Cine%20Dor%C3%A9%20-%20Filmoteca%20Espa%C3%B1ola%2C%20Madrid%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 

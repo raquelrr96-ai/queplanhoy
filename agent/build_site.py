@@ -193,9 +193,10 @@ CITIES = {
             "Valencia permite pasar en menos de media hora de un jardín"
             " romántico del siglo XIX en pleno centro a los arrozales y"
             " embarcaderos de L'Albufera en autobús público. Todas nuestras"
-            " rutas incluyen líneas exactas de EMT, precios reales y enlaces"
-            " directos al pin en Google Maps."
+            " rutas incluyen líneas exactas de EMT, precios reales y mapa"
+            " interactivo del recorrido."
         ),
+
         "faqs": [
             {
                 "question": "¿Cómo ir del centro de Valencia a L'Albufera y El Palmar en transporte público?",
@@ -1211,9 +1212,9 @@ def build_article_page(art: dict, all_articles: list):
     </nav>"""
 
   map_title = (
-      "🗺️ Mapa interactivo del recorrido (Pulsa en cada pin para abrir en Google Maps)"
+      "🗺️ Mapa interactivo del recorrido"
       if is_single_plan
-      else f"🗺️ Mapa con las ubicaciones en {html.escape(city_name)} (Pulsa un pin para ir a Google Maps)"
+      else f"🗺️ Mapa con las ubicaciones en {html.escape(city_name)}"
   )
   pins_json = json.dumps(article_pins, ensure_ascii=False)
   article_map_html = f"""
@@ -1249,7 +1250,7 @@ def build_article_page(art: dict, all_articles: list):
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], {{ icon: icon }}).addTo(map).bindPopup(popupHtml);
         }});
@@ -1264,8 +1265,6 @@ def build_article_page(art: dict, all_articles: list):
   sections_html = []
   for idx, sec in enumerate(art.get("sections", []), start=1):
     venue_name = sec.get("venue", sec["heading"])
-    maps_query = urllib.parse.quote(f"{venue_name}, {city_name}, España")
-    maps_url = f"https://www.google.com/maps/search/?api=1&query={maps_query}"
     sec_img = sec.get("image", "")
     sec_alt = sec.get("imageAlt", venue_name)
     sec_img_html = ""
@@ -1293,9 +1292,9 @@ def build_article_page(art: dict, all_articles: list):
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> {html.escape(sec['location'])}</span>
           <span><strong>Precio:</strong> {html.escape(sec['price'])}</span>
-          <a href="{maps_url}" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>""")
+
 
   aff = art.get("affiliate", {})
   aff_url = aff.get(
@@ -1426,11 +1425,12 @@ def build_article_page(art: dict, all_articles: list):
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ {read_mins} min de lectura · 📍 {len(art.get('sections', []))} pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ {read_mins} min de lectura</span>
         <a href="{wa_share_url}" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         {html.escape(art['excerpt'])}

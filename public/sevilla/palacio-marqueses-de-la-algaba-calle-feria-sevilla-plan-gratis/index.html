@@ -218,11 +218,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 4 min de lectura · 📍 4 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 4 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Sevilla%3A%20Ruta%20por%20el%20Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20y%20la%20Calle%20Feria%20https%3A//queplanhoy.es/sevilla/palacio-marqueses-de-la-algaba-calle-feria-sevilla-plan-gratis/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         A diez minutos a pie de las Setas pero lejos del turismo masivo del barrio de Santa Cruz, te proponemos una ruta de mañana por Sevilla: entrar gratis a un palacio mudéjar de 1474, explorar el mercadillo más antiguo de Europa y tapear en el Mercado de Feria.
@@ -279,7 +280,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa interactivo del recorrido (Pulsa en cada pin para abrir en Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa interactivo del recorrido</span>
         <a href="../../mapa/?ciudad=Sevilla" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Sevilla en el gran mapa →
         </a>
@@ -309,7 +310,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -336,7 +337,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita (Lunes a sábado)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20%28Fachada%20y%20Jardines%29%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -352,7 +352,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Planta baja y galería noble del Palacio de los Marqueses de la Algaba</span>
           <span><strong>Precio:</strong> Gratis</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Centro%20del%20Arte%20Mud%C3%A9jar%20de%20Sevilla%20%28Interior%20del%20Palacio%29%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -368,7 +367,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Feria, 98 (Justo frente al Palacio de los Marqueses de la Algaba)</span>
           <span><strong>Precio:</strong> Acceso libre</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Real%20Parroquia%20de%20Omnium%20Sanctorum%20y%20Calle%20Feria%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
@@ -385,7 +383,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Feria, 98 y Alameda de Hércules (a 3 minutos a pie)</span>
           <span><strong>Precio:</strong> Caña o vermut + tapa de pescado frito o chacinas: 3,50 € – 6,00 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Abastos%20de%20la%20Calle%20Feria%20y%20Alameda%20de%20H%C3%A9rcules%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 

@@ -225,11 +225,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura · 📍 5 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Valencia%3A%205%20planes%20gratis%20en%20Valencia%20que%20casi%20nadie%20conoce%20https%3A//queplanhoy.es/valencia/planes-gratis-en-valencia-jardines-monforte-cultura/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         Cinco planes 100% gratuitos en Valencia lejos de las rutas masificadas: jardines neoclásicos con estatuas de mármol, claustros medievales con arte contemporáneo y paseos por la huerta histórica.
@@ -286,7 +287,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Valencia (Pulsa un pin para ir a Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Valencia</span>
         <a href="../../mapa/?ciudad=Valencia" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Valencia en el gran mapa →
         </a>
@@ -316,7 +317,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -341,7 +342,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de la Legión Española, s/n (Metro: Facultats - L3, L9 / Alameda - L3, L5, L7, L9)</span>
           <span><strong>Precio:</strong> Acceso 100% gratuito (Todos los días de 10:00 a 19:00 h)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Monforte%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -356,7 +356,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle del Museo, 2 (Barrio del Carmen)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita todos los días</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Centre%20del%20Carme%20%28Antiguo%20Convento%20del%20Carmen%29%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -371,7 +370,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calles de la Reina, San Pedro y Barraca (Tranvía: Líneas 4 y 6 - Dr. Lluch)</span>
           <span><strong>Precio:</strong> Paseo 100% gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Conjunto%20Hist%C3%B3rico%20Protegido%20de%20El%20Cabanyal%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
@@ -386,7 +384,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Inicio en Avenida de Aragón junto al Puente de Aragón (Metro: Aragón - L5, L7)</span>
           <span><strong>Precio:</strong> 100% Gratis</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=V%C3%ADa%20Verde%20Xurra%20%28Valencia%20-%20Alboraya%29%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
@@ -401,7 +398,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle del Poeta Querol, 2 (Centro Histórico)</span>
           <span><strong>Precio:</strong> Gratis sábados desde las 16:00 h y domingos todo el día (3,00 € resto de horario)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Cer%C3%A1mica%20y%20Artes%20Suntuarias%20Gonz%C3%A1lez%20Mart%C3%AD%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 

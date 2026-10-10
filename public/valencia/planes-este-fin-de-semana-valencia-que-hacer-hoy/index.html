@@ -211,11 +211,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 3 min de lectura · 📍 3 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 3 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Valencia%3A%20Qu%C3%A9%20hacer%20este%20fin%20de%20semana%20en%20Valencia%3A%20programaci%C3%B3n%20del%209%20d%27Octubre%20https%3A//queplanhoy.es/valencia/planes-este-fin-de-semana-valencia-que-hacer-hoy/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         Agenda real en Valencia del 9 al 12 de octubre: puertas abiertas en el Palau de la Generalitat, Entrada de Moros y Cristianos por la Calle de la Paz y Mercado Medieval en el Jardín del Turia.
@@ -272,7 +273,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Valencia (Pulsa un pin para ir a Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Valencia</span>
         <a href="../../mapa/?ciudad=Valencia" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Valencia en el gran mapa →
         </a>
@@ -302,7 +303,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -328,7 +329,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza del Ayuntamiento y Calle Caballeros, 2 (Metro Xàtiva / Colón L3, L5, L9)</span>
           <span><strong>Precio:</strong> Acceso libre y gratuito en todas las sedes institucionales</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Plaza%20del%20Ayuntamiento%20y%20Palau%20de%20la%20Generalitat%20%28Barrio%20del%20Carmen%29%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -344,7 +344,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Recorrido desde La Glorieta por Calle de la Paz hasta Plaza del Ayuntamiento</span>
           <span><strong>Precio:</strong> Gratis en todo el recorrido a pie de calle</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Calle%20de%20la%20Paz%20y%20Plaza%20del%20Ayuntamiento%2C%20Valencia%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -360,7 +359,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Jardín del Turia, junto al Paseo de la Alameda (Metro Alameda L3, L5, L7, L9)</span>
           <span><strong>Precio:</strong> Entrada libre y gratuita</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20del%20Turia%20%28Tramo%20Puente%20de%20la%20Exposici%C3%B3n%20%E2%80%93%20Puente%20de%20las%20Flores%29%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 

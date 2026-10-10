@@ -225,11 +225,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura · 📍 5 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Toledo%3A%20Qu%C3%A9%20hacer%20en%20Toledo%20en%20el%20Puente%20de%20Todos%20los%20Santos%20y%20Halloween%20https%3A//queplanhoy.es/toledo/planes-puente-todos-los-santos-halloween-toledo-leyendas-noche/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         Guía con las actividades especiales de Todos los Santos (1 de noviembre) y la noche de Halloween en Toledo: programación escénica en el Teatro de Rojas, rutas nocturnas por subterráneos, cripta de San Andrés, espectáculos del Ayuntamiento y dulces de convento.
@@ -286,7 +287,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Toledo (Pulsa un pin para ir a Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Toledo</span>
         <a href="../../mapa/?ciudad=Toledo" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Toledo en el gran mapa →
         </a>
@@ -316,7 +317,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -342,7 +343,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza Mayor, s/n (junto a la Catedral y el Teatro de Rojas) · A 8 min a pie desde Plaza de Zocodover</span>
           <span><strong>Precio:</strong> Desde 12 € según función (consultar cartelera oficial en teatroderojas.es y toledo.es)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Teatro%20de%20Rojas%2C%20Toledo%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -358,7 +358,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Callejón de San Ginés, 3 (Casco Histórico, a 3 min de la Catedral) · Acceso peatonal desde Zocodover</span>
           <span><strong>Precio:</strong> Gratis en horario del Consorcio de Toledo (martes a sábado de 10:00 a 14:00 h y de 17:00 a 19:00 h)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Cuevas%20de%20H%C3%A9rcules%2C%20Toledo%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -374,7 +373,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de San Andrés, s/n · Barrio de San Andrés, Toledo</span>
           <span><strong>Precio:</strong> 3,50 € entrada individual</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Iglesia%20de%20San%20Andr%C3%A9s%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
@@ -390,7 +388,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza del Pozo Amargo (al sur de la Catedral Primada) · Ruta a pie de 45 min por el Casco Histórico</span>
           <span><strong>Precio:</strong> Gratis (recorrido libre exterior y actividades municipales)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Plaza%20del%20Pozo%20Amargo%2C%20Toledo%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
@@ -405,7 +402,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Ronda del Valle y bajada de San Martín · Toledo</span>
           <span><strong>Precio:</strong> Gratis</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20del%20Valle%20y%20Puente%20de%20San%20Mart%C3%ADn%2C%20Toledo%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 

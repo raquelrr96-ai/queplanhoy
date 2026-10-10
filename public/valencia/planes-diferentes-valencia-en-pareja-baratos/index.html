@@ -232,11 +232,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 6 min de lectura · 📍 6 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 6 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Valencia%3A%206%20planes%20diferentes%20en%20Valencia%20para%20salir%20de%20la%20rutina%20https%3A//queplanhoy.es/valencia/planes-diferentes-valencia-en-pareja-baratos/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         Más allá de la Ciudad de las Artes y la Malvarrosa: te llevamos en autobús urbano hasta el embarcadero más tranquilo de L&#x27;Albufera al caer el sol, a un búnker de 1938 y a tomar horchata recién molida entre campos de chufa.
@@ -293,7 +294,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Valencia (Pulsa un pin para ir a Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Valencia</span>
         <a href="../../mapa/?ciudad=Valencia" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Valencia en el gran mapa →
         </a>
@@ -323,7 +324,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -348,7 +349,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Parque Natural de la Albufera (Autobús EMT Línea 24 o 25 desde el centro por 1,50 €)</span>
           <span><strong>Precio:</strong> Mirador gratis / Paseo en barca tradicional: 6,00 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20de%20la%20Gola%20de%20Pujol%20%26%20Embarcadero%20de%20El%20Palmar%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -363,7 +363,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Inicio en Avenida de Aragón (Metro: Aragón - L5 / Palmaret - L3)</span>
           <span><strong>Precio:</strong> Ruta gratis / Horchata artesana con fartons caseros: 4,20 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=V%C3%ADa%20Xurra%20y%20Alquer%C3%ADas%20de%20la%20Huerta%20de%20Alboraya%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -378,7 +377,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Corona, 36 (Barrio de El Carmen)</span>
           <span><strong>Precio:</strong> Acceso 100% gratuito los fines de semana</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Centro%20Cultural%20La%20Benefic%C3%A8ncia%20%28Patio%20Bizantino%29%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
@@ -393,7 +391,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de la Legión Española, s/n (Metro: Facultats - L3, L9)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Monforte%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
@@ -408,7 +405,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle de la Barraca y Calle de la Reina (Tranvía: Líneas 4 y 6 - Dr. Lluch)</span>
           <span><strong>Precio:</strong> Paseo gratis / Vermut de barrica y tapa de michirones o anchoas: 6,50 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Barrio%20de%20El%20Cabanyal%20y%20Bodega%20Casa%20Monta%C3%B1a%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-6" style="scroll-margin-top: 90px;">
@@ -423,7 +419,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Serranos, 25 / Calle del Mar, 31 (Centro Histórico)</span>
           <span><strong>Precio:</strong> Refugio gratis / Palacio gratis miércoles tarde con reserva previa (10 € general)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Refugio%20de%20Serranos%20y%20Centro%20de%20Arte%20Hortensia%20Herrero%2C%20Valencia%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 

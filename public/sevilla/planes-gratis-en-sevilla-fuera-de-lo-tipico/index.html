@@ -225,11 +225,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura · 📍 5 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Sevilla%3A%205%20planes%20gratis%20en%20Sevilla%20fuera%20de%20lo%20t%C3%ADpico%20https%3A//queplanhoy.es/sevilla/planes-gratis-en-sevilla-fuera-de-lo-tipico/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         Cinco rincones y planes gratuitos en Sevilla para huir de las colas del centro: desde la arquitectura regionalista de la Plaza de América hasta palacios mudéjares del siglo XV de entrada libre.
@@ -286,7 +287,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Sevilla (Pulsa un pin para ir a Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Sevilla</span>
         <a href="../../mapa/?ciudad=Sevilla" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Sevilla en el gran mapa →
         </a>
@@ -316,7 +317,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -341,7 +342,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza de América, s/n, extremo sur del Parque de María Luisa (Metro: Prado de San Sebastián - L1)</span>
           <span><strong>Precio:</strong> Plaza 100% gratuita / Museo gratis para ciudadanos de la UE (1,50 € resto)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Am%C3%A9rica%20y%20Museo%20de%20Artes%20y%20Costumbres%20Populares%20%28Pabell%C3%B3n%20Mud%C3%A9jar%29%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -356,7 +356,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Plaza Calderón de la Barca, s/n (Detrás del Mercado de la Calle Feria)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita de lunes a sábado</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Palacio%20de%20los%20Marqueses%20de%20la%20Algaba%20%28Centro%20del%20Arte%20Mud%C3%A9jar%29%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -371,7 +370,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Calle Callao, 16 (Junto al Puente de Triana y Plaza del Altozano)</span>
           <span><strong>Precio:</strong> Paseo por talleres y corrales: Gratis (Museo: 2,10 €)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Centro%20Cer%C3%A1mica%20Triana%20y%20Corrales%20de%20la%20Calle%20Alfarer%C3%ADa%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
@@ -386,7 +384,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Avenida de la Constitución, s/n (Junto a la Catedral)</span>
           <span><strong>Precio:</strong> Entrada 100% gratuita todos los días (Martes a domingo)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Archivo%20General%20de%20Indias%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
@@ -401,7 +398,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Acceso por el estrecho pasadizo junto al Convento de la Encarnación (Plaza Virgen de los Reyes)</span>
           <span><strong>Precio:</strong> Acceso libre y gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Santa%20Marta%2C%20Sevilla%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 

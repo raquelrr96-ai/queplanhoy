@@ -224,11 +224,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 6 min de lectura · 📍 6 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 6 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Barcelona%3A%206%20miradores%20alternativos%20y%20gratuitos%20en%20Barcelona%20https%3A//queplanhoy.es/barcelona/miradores-alternativos-barcelona-planes-gratis/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         Desde que cerraron el acceso nocturno a los Bunkers del Carmel, los barceloneses tienen nuevos rincones para ver caer el sol sobre el Mediterráneo sin agobios y sin gastar un euro.
@@ -285,7 +286,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Barcelona (Pulsa un pin para ir a Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Barcelona</span>
         <a href="../../mapa/?ciudad=Barcelona" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Barcelona en el gran mapa →
         </a>
@@ -315,7 +316,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -340,7 +341,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Passeig de Santa Madrona, 2 (Metro: Espanya / Funicular de Montjuïc)</span>
           <span><strong>Precio:</strong> Acceso 100% gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jardins%20de%20Laribal%20%26%20Teatre%20Grec%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -355,7 +355,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Carretera d&#x27;Horta a Cerdanyola (Metro: Mundet - L3 + 12 min a pie)</span>
           <span><strong>Precio:</strong> Gratis</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20d%27Horta%20/%20Parc%20de%20Collserola%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -370,7 +369,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Passeig dels Castanyers, 1 (Metro: Mundet - Línea 3)</span>
           <span><strong>Precio:</strong> Gratis miércoles y domingos (2,23 € resto de días)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Parc%20del%20Laberint%20d%27Horta%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
@@ -385,7 +383,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Carretera de Montjuïc, 30 (Teleférico o Autobús 150 desde Plaça Espanya)</span>
           <span><strong>Precio:</strong> Acceso libre y gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20de%20l%27Alcalde%20%28Ladera%20mar%C3%ADtima%20de%20Montju%C3%AFc%29%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
@@ -400,7 +397,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Carrer de Manacor, 9 (FGC: El Putxet - L7 / Metro: Lesseps - L3)</span>
           <span><strong>Precio:</strong> 100% Gratis</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jardins%20del%20Tur%C3%B3%20del%20Putxet%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-6" style="scroll-margin-top: 90px;">
@@ -415,7 +411,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Parc de Montjuïc, s/n (Metro: Espanya - L1, L3)</span>
           <span><strong>Precio:</strong> Terrazas exteriores gratuitas (Museo gratis sábados desde las 15:00 h)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Escalinata%20del%20Palau%20Nacional%20%28MNAC%29%20y%20Mirador%20de%20Pla%C3%A7a%20Espanya%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 

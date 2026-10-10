@@ -225,11 +225,12 @@
       </h1>
 
       <div class="article-trust-bar">
-        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura · 📍 5 pines en Maps</span>
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ 5 min de lectura</span>
         <a href="https://api.whatsapp.com/send?text=Mira%20este%20plan%20en%20Barcelona%3A%205%20citas%20originales%20en%20Barcelona%20para%20sorprender%20en%20pareja%20https%3A//queplanhoy.es/barcelona/citas-originales-barcelona-en-pareja-jardines-jazz/" target="_blank" rel="noopener" class="whatsapp-pill-btn">
           📲 Compartir plan por WhatsApp
         </a>
       </div>
+
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         Cinco planes en pareja en Barcelona para salir de la cena de siempre: desde recorrer jardines modernistas y laberintos del siglo XVIII hasta escuchar jazz en directo bajo bóvedas medievales.
@@ -286,7 +287,7 @@
       
     <section style="margin: 1.75rem 0 2.25rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden;" aria-label="Mapa de ubicaciones del artículo">
       <div style="padding: 0.85rem 1.15rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-hairline);">
-        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Barcelona (Pulsa un pin para ir a Google Maps)</span>
+        <span style="font-size: 0.88rem; font-weight: 700; color: var(--ink-primary);">🗺️ Mapa con las ubicaciones en Barcelona</span>
         <a href="../../mapa/?ciudad=Barcelona" style="font-size: 0.78rem; font-weight: 600; color: var(--terracotta); text-decoration: none;">
           Ver todos los planes de Barcelona en el gran mapa →
         </a>
@@ -316,7 +317,7 @@
             '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '" style="width:100%;height:105px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />' +
             '<div style="font-weight:700;font-size:13px;color:#1c1917;line-height:1.3;margin-bottom:4px;">' + p.idx + '. ' + p.name + '</div>' +
             '<div style="font-size:11.5px;color:#57534e;margin-bottom:8px;">' + p.price + '</div>' +
-            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Abrir pin en Google Maps ↗</a>' +
+            '<a href="' + p.mapsUrl + '" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c84b31;color:#fff;text-decoration:none;font-weight:600;font-size:12px;padding:6px 10px;border-radius:6px;">📍 Ver en Google Maps ↗</a>' +
           '</div>';
           L.marker([p.lat, p.lng], { icon: icon }).addTo(map).bindPopup(popupHtml);
         });
@@ -341,7 +342,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Carrer de Sant Antoni Maria Claret, 167 (Metro: Sant Pau | Dos de Maig - L5)</span>
           <span><strong>Precio:</strong> 17,00 € entrada general sin colas (Gratis primer domingo de mes) / Paseo por Avinguda Gaudí: Gratis</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Recinto%20Modernista%20de%20Sant%20Pau%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-2" style="scroll-margin-top: 90px;">
@@ -356,7 +356,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Passeig dels Castanyers, 1 (Metro: Mundet - L3, salida Velòdrom)</span>
           <span><strong>Precio:</strong> 2,23 € entrada general (Gratis miércoles y domingos)</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Parc%20del%20Laberint%20d%27Horta%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-3" style="scroll-margin-top: 90px;">
@@ -371,7 +370,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Passeig de Santa Madrona, 2 (Metro: Espanya - L1, L3 / Paral·lel - L2, L3)</span>
           <span><strong>Precio:</strong> Acceso 100% gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Jardins%20de%20Laribal%20y%20Teatre%20Grec%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-4" style="scroll-margin-top: 90px;">
@@ -386,7 +384,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Carrer dels Flassaders y entorno de Santa Maria del Mar (Metro: Jaume I - L4)</span>
           <span><strong>Precio:</strong> Copa de vino o cóctel: 6,00 € – 10,00 €</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Bares%20ac%C3%BAsticos%20del%20Passeig%20del%20Born%20y%20Carrer%20dels%20Flassaders%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
       <section class="reader-section" id="plan-5" style="scroll-margin-top: 90px;">
@@ -401,7 +398,6 @@
         <div class="venue-meta-bar">
           <span><strong>Dónde:</strong> Carretera de Montjuïc, 22 (Metro: Paral·lel + Funicular de Montjuïc)</span>
           <span><strong>Precio:</strong> Acceso libre y gratuito</span>
-          <a href="https://www.google.com/maps/search/?api=1&query=Mirador%20de%20l%27Alcalde%20%28Montju%C3%AFc%29%2C%20Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener" class="venue-map-link">📍 Abrir pin en Google Maps ↗</a>
         </div>
       </section>
 
