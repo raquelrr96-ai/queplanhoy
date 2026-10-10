@@ -387,12 +387,12 @@ def render_head(
   <meta name="description" content="{html.escape(description)}" />
   <meta name="robots" content="{robots}" />
   <meta name="theme-color" content="#c84b31" />
-  <link rel="icon" href="/favicon.ico" sizes="48x48" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" href="/favicon.ico?v=20261010d" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg?v=20261010d" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=20261010d" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=20261010d" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png?v=20261010d" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20261010d" />
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="canonical" href="{canonical_url}" />
   <link rel="alternate" hreflang="es-ES" href="{canonical_url}" />
@@ -448,7 +448,8 @@ def render_header(root_prefix: str, active_city: str = "all") -> str:
   <header class="site-header">
     <div class="header-inner">
       <a href="{root_prefix if root_prefix else './'}" class="brand-logo" id="brand-home-link" style="display:flex;align-items:center;gap:0.55rem;">
-        <img src="/favicon.svg" alt="" width="30" height="30" style="border-radius:7px;flex-shrink:0;box-shadow:0 2px 6px rgba(200,75,49,0.22);" />
+        <img src="/favicon.svg?v=20261010d" alt="" width="30" height="30" style="border-radius:7px;flex-shrink:0;box-shadow:0 2px 6px rgba(15,23,42,0.22);" />
+
         <span style="display:flex;flex-direction:column;">
           <span class="brand-name">¿Qué<span>Plan</span>Hoy?</span>
           <span class="brand-tagline">Guía de planes originales</span>

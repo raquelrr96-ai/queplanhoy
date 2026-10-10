@@ -1,21 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <!-- Background terracotta badge -->
-  <rect x="0" y="0" width="512" height="512" rx="116" ry="116" fill="#c84b31"/>
-  <rect x="18" y="18" width="476" height="476" rx="100" ry="100" fill="none" stroke="#f8d49b" stroke-opacity="0.45" stroke-width="8"/>
-
-  <!-- Subtle shadow under location pin -->
-  <path d="M256 84 C174 84 108 150 108 232 C108 334 234 434 246 443 C252 448 260 448 266 443 C278 434 404 334 404 232 C404 150 338 84 256 84 Z" fill="#7c2817" transform="translate(0, 10)"/>
-
-  <!-- Main cream location pin -->
-  <path d="M256 76 C174 76 108 142 108 224 C108 326 234 426 246 435 C252 440 260 440 266 435 C278 426 404 326 404 224 C404 142 338 76 256 76 Z" fill="#fdfbf7"/>
-
-  <!-- Inner terracotta circle inside the pin -->
-  <circle cx="256" cy="220" r="82" fill="#c84b31"/>
-
-  <!-- 4-point golden-cream compass star inside the pin -->
-  <path d="M256 148 L275 201 L328 220 L275 239 L256 292 L237 239 L184 220 L237 201 Z" fill="#fbbf24"/>
-  <circle cx="256" cy="220" r="14" fill="#fdfbf7"/>
-
-  <!-- Top-right golden spark ("plan especial") -->
-  <path d="M406 72 L416 98 L442 108 L416 118 L406 144 L396 118 L370 108 L396 98 Z" fill="#fbbf24"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="116" fill="#1e293b"/>
+  <!-- Calendar body -->
+  <rect x="76" y="104" width="360" height="332" rx="56" fill="#fdfbf7"/>
+  <!-- Calendar top header bar -->
+  <path d="M76 160 C76 129 101 104 132 104 L380 104 C411 104 436 129 436 160 L436 196 L76 196 Z" fill="#c84b31"/>
+  <!-- Calendar rings -->
+  <rect x="156" y="64" width="36" height="76" rx="18" fill="#fbbf24"/>
+  <rect x="320" y="64" width="36" height="76" rx="18" fill="#fbbf24"/>
+  <!-- Big bold star inside calendar page -->
+  <path d="M256 224 L284 290 L354 318 L284 346 L256 412 L228 346 L158 318 L228 290 Z" fill="#c84b31"/>
+  <circle cx="256" cy="318" r="22" fill="#fbbf24"/>
 </svg>
