@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="116" fill="#c84b31"/>
+  <!-- Archway cutout -->
+  <path d="M116 436 L116 236 C116 148 178 84 256 84 C334 84 396 148 396 236 L396 436 Z" fill="#172542"/>
+  <!-- Golden setting sun inside arch -->
+  <circle cx="256" cy="248" r="78" fill="#fbbf24"/>
+  <!-- Warm terracotta hills / horizon inside arch -->
+  <path d="M116 356 Q190 310 256 346 T396 336 L396 436 L116 436 Z" fill="#e06d53"/>
+  <path d="M116 392 Q220 356 396 388 L396 436 L116 436 Z" fill="#fdfbf7"/>
+  <!-- Arch white frame -->
+  <path d="M116 436 L116 236 C116 148 178 84 256 84 C334 84 396 148 396 236 L396 436 Z" fill="none" stroke="#fdfbf7" stroke-width="28" stroke-linejoin="round"/>
+</svg>

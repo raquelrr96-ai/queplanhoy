@@ -2010,6 +2010,47 @@ def regenerate_sitemap(articles: list):
     )
 
 
+def regenerate_rss_feed(articles: list):
+  """Genera public/feed.xml (RSS 2.0 con imágenes) para autopublicación automática en Pinterest Business."""
+  items_xml = []
+  for idx, art in enumerate(articles):
+    c_slug = CITIES.get(art["city"], {"slug": art["city"].lower()})["slug"]
+    art_url = f"{SITE_URL}/{c_slug}/{art['slug']}/"
+    img_rel = art.get("image", "").lstrip("/")
+    img_url = f"{SITE_URL}/{img_rel}"
+    title_esc = html.escape(art["title"])
+    desc_esc = html.escape(art.get("metaDescription", art.get("excerpt", "")))
+    pub_rfc = f"Sat, 10 Oct 2026 {max(0, 22 - (idx % 20)):02d}:00:00 +0000"
+    items_xml.append(
+        "    <item>\n"
+        f"      <title>{title_esc}</title>\n"
+        f"      <link>{art_url}</link>\n"
+        f'      <guid isPermaLink="true">{art_url}</guid>\n'
+        f"      <description>{desc_esc}</description>\n"
+        f"      <category>{html.escape(art.get('city', 'España'))}</category>\n"
+        f"      <pubDate>{pub_rfc}</pubDate>\n"
+        f'      <enclosure url="{img_url}" type="image/jpeg" length="150000" />\n'
+        f'      <media:content url="{img_url}" medium="image" type="image/jpeg" />\n'
+        "    </item>"
+    )
+
+  rss_content = (
+      '<?xml version="1.0" encoding="UTF-8"?>\n'
+      '<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"'
+      ' xmlns:atom="http://www.w3.org/2005/Atom">\n'
+      "  <channel>\n"
+      "    <title>Qué Plan Hoy | Guías y Planes Originales en Madrid, Barcelona, Valencia, Sevilla y Toledo</title>\n"
+      f"    <link>{SITE_URL}/</link>\n"
+      "    <description>Guía local de planes originales, agenda de este fin de semana, rutas paso a paso, jardines secretos y planes gratis.</description>\n"
+      "    <language>es-ES</language>\n"
+      f'    <atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />\n'
+      + "\n".join(items_xml)
+      + "\n  </channel>\n</rss>\n"
+  )
+  with open(os.path.join(PUBLIC_DIR, "feed.xml"), "w", encoding="utf-8") as f:
+    f.write(rss_content)
+
+
 def build_all():
   with open(ARTICLES_FILE, "r", encoding="utf-8") as f:
     articles = json.load(f)
@@ -2060,6 +2101,7 @@ def build_all():
   build_about_page()
   build_privacy_cookies_page()
   regenerate_sitemap(articles)
+  regenerate_rss_feed(articles)
   with open(os.path.join(PUBLIC_DIR, "CNAME"), "w", encoding="utf-8") as f:
     f.write("queplanhoy.es\n")
   with open(
@@ -2070,9 +2112,10 @@ def build_all():
     f.write("google-site-verification: googleb24ffbb97ddb75f6.html")
   print(
       "[OK] Sitio estático E-E-A-T generado: Portada + 5 ciudades +"
-      f" {len(articles)} guías + /mapa/ + /sobre-nosotros/ + /privacidad-y-cookies/ + CNAME + sitemap.xml."
+      f" {len(articles)} guías + /mapa/ + /sobre-nosotros/ + /privacidad-y-cookies/ + CNAME + sitemap.xml + feed.xml."
   )
 
 
 if __name__ == "__main__":
   build_all()
+
