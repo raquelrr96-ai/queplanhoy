@@ -365,6 +365,8 @@ def render_head(
   )
   og_img_tag = (
       f'<meta property="og:image" content="{html.escape(resolved_og_image)}" />\n'
+      f'  <meta property="og:image:width" content="1280" />\n'
+      f'  <meta property="og:image:height" content="853" />\n'
       f'  <meta name="twitter:card" content="summary_large_image" />\n'
       f'  <meta name="twitter:title" content="{html.escape(title)}" />\n'
       f'  <meta name="twitter:description" content="{html.escape(description)}" />\n'
@@ -398,6 +400,7 @@ def render_head(
   <link rel="canonical" href="{canonical_url}" />
   <link rel="alternate" hreflang="es-ES" href="{canonical_url}" />
   <link rel="alternate" hreflang="es" href="{canonical_url}" />
+  <link rel="alternate" type="application/rss+xml" title="Qué Plan Hoy - Guías y Planes" href="{SITE_URL}/feed.xml" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Qué Plan Hoy" />
   <meta property="og:title" content="{html.escape(title)}" />
@@ -406,6 +409,7 @@ def render_head(
   <meta property="og:url" content="{canonical_url}" />
   {og_img_tag}
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{root_prefix}sitemap.xml" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
