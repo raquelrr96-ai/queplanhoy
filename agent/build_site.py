@@ -640,8 +640,12 @@ def render_filter_script(active_city: str = "all") -> str:
         }}
       }}
 
+      const emptyState = document.getElementById('empty-filter-state');
+      const resetFiltersBtn = document.getElementById('reset-filters-btn');
+
       function applyFilters() {{
         let firstVisible = true;
+        let visibleCount = 0;
         cards.forEach(card => {{
           const cardCity = card.getAttribute('data-city');
           const cat = card.getAttribute('data-category');
@@ -651,6 +655,7 @@ def render_filter_script(active_city: str = "all") -> str:
           const matchQuery = !currentQuery || text.includes(currentQuery);
           if (matchCity && matchCat && matchQuery) {{
             card.style.display = 'flex';
+            visibleCount++;
             if (firstVisible && currentCat === 'all' && !currentQuery) {{
               card.classList.add('lead-card');
             }} else {{
@@ -661,6 +666,19 @@ def render_filter_script(active_city: str = "all") -> str:
             card.style.display = 'none';
             card.classList.remove('lead-card');
           }}
+        }});
+        if (emptyState) {{
+          emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+        }}
+      }}
+
+      if (resetFiltersBtn) {{
+        resetFiltersBtn.addEventListener('click', () => {{
+          currentCat = 'all';
+          currentQuery = '';
+          if (searchInput) searchInput.value = '';
+          pills.forEach(b => b.classList.toggle('active', b.getAttribute('data-category') === 'all'));
+          applyFilters();
         }});
       }}
 
@@ -725,7 +743,7 @@ def build_listing_page(
               a,
               root_prefix,
               is_lead=is_lead,
-              initial_hidden=not is_visible_default,
+              initial_hidden=False,
           )
       )
     else:
@@ -1000,6 +1018,17 @@ def build_listing_page(
     <section aria-label="Guías de planes">
       <div class="articles-grid" id="articles-grid-container">
         {cards_html}
+      </div>
+      <div id="empty-filter-state" class="empty-filter-state" role="status" aria-live="polite">
+        <p style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--ink-primary); margin-bottom: 0.4rem;">
+          No hemos encontrado planes con ese filtro en esta ciudad
+        </p>
+        <p style="font-size: 0.92rem; color: var(--ink-secondary); margin-bottom: 1rem;">
+          Prueba con otra palabra clave o vuelve a ver todas las guías disponibles.
+        </p>
+        <button type="button" id="reset-filters-btn" style="background: var(--terracotta); color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: var(--radius-pill); font-weight: 700; font-size: 0.86rem; cursor: pointer;">
+          Ver todos los planes →
+        </button>
       </div>
     </section>
 
@@ -1328,6 +1357,47 @@ def build_article_page(art: dict, all_articles: list):
   if art.get("weekendDates"):
     cat_header = f"{cat_header} · {art['weekendDates']}"
 
+  read_mins = max(3, min(6, len(art.get("sections", []))))
+  when_label = (
+      art.get("weekendDates")
+      if art.get("weekendDates")
+      else "Abierto todo el año (ideal hoy o este finde)"
+  )
+  zones_label = " · ".join(art.get("neighborhoods", [city_name])[:3])
+  quick_aff_row = ""
+  if aff:
+    quick_aff_row = f"""
+        <div class="quick-summary-cta-row">
+          <span style="font-size: 0.84rem; color: var(--ink-secondary);">
+            🎟️ <strong>Recomendado:</strong> {html.escape(aff.get('title', ''))} ({html.escape(aff.get('price', ''))})
+          </span>
+          <a href="{html.escape(aff_url)}" target="_blank" rel="noopener sponsored" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 700; font-size: 0.82rem; padding: 0.48rem 0.95rem; border-radius: var(--radius-pill); white-space: nowrap;">
+            {html.escape(aff.get('ctaText', 'Ver entradas y horarios →'))}
+          </a>
+        </div>"""
+
+  quick_summary_html = f"""
+      <aside class="quick-summary-box" aria-label="Resumen práctico en 30 segundos">
+        <div class="quick-summary-header">
+          <span class="quick-summary-title">⚡ En 30 segundos · Datos prácticos</span>
+          <a href="#article-leaflet-map" style="font-size: 0.78rem; font-weight: 700; color: var(--terracotta); text-decoration: none;">🗺️ Saltar al mapa interactivo ↓</a>
+        </div>
+        <div class="quick-summary-grid">
+          <div class="quick-summary-item">
+            <strong>💶 Presupuesto</strong>
+            <span>{html.escape(art['priceRange'])}</span>
+          </div>
+          <div class="quick-summary-item">
+            <strong>🗓️ Cuándo ir</strong>
+            <span>{html.escape(when_label)}</span>
+          </div>
+          <div class="quick-summary-item">
+            <strong>📍 Zonas incluidas</strong>
+            <span>{html.escape(zones_label)}</span>
+          </div>
+        </div>{quick_aff_row}
+      </aside>"""
+
   page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, itemlist_schema, faq_schema, breadcrumb_schema], full_img_url, include_leaflet=True, og_type="article")}
 <body>
   {render_header(root_prefix, city_name)}
@@ -1350,18 +1420,27 @@ def build_article_page(art: dict, all_articles: list):
         <span style="color: var(--ink-muted); font-weight: 500; text-transform: none; letter-spacing: 0;">{html.escape(art['priceRange'])}</span>
       </div>
 
-      <h1 style="font-family: var(--font-serif); font-size: clamp(1.65rem, 3.4vw, 2.55rem); line-height: 1.18; margin-bottom: 0.9rem;">
+      <h1 style="font-family: var(--font-serif); font-size: clamp(1.65rem, 3.4vw, 2.55rem); line-height: 1.18; margin-bottom: 0.85rem;">
         {html.escape(art['title'])}
       </h1>
+
+      <div class="article-trust-bar">
+        <span class="trust-badge-text">🟢 Actualizado en octubre de 2026 · ⏱️ {read_mins} min de lectura · 📍 {len(art.get('sections', []))} pines en Maps</span>
+        <a href="{wa_share_url}" target="_blank" rel="noopener" class="whatsapp-pill-btn">
+          📲 Compartir plan por WhatsApp
+        </a>
+      </div>
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
         {html.escape(art['excerpt'])}
       </p>
 
-      <figure style="margin: 0 0 1.6rem 0;">
+      <figure style="margin: 0 0 1.4rem 0;">
         <img src="{img_src}" alt="{html.escape(img_alt)}" class="reader-hero-img" width="820" height="460" style="margin-bottom: 0.45rem;" />
         <figcaption style="font-size: 0.78rem; color: var(--ink-muted); text-align: right;">{html.escape(img_alt)}</figcaption>
       </figure>
+
+      {quick_summary_html}
 
       {toc_html}
 

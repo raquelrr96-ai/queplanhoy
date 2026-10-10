@@ -101,7 +101,7 @@
     "slug": "planes-puente-octubre-madrid-12-octubre-gratis",
     "city": "Madrid",
     "category": "Este Fin de Semana",
-    "weekendDates": "10 – 12 Oct",
+    "weekendDates": "9 al 12 de octubre",
     "title": "Planes para el Puente de Octubre en Madrid: programación del 12 de octubre",
     "metaTitle": "Planes Puente de Octubre en Madrid: Desfile 12 de Octubre e Hispanidad | Qué Plan Hoy",
     "metaDescription": "Programación oficial del Puente de Octubre y 12 de octubre en Madrid: horario y recorrido del Desfile Militar, Cabalgata de la Hispanidad en Gran Vía, conciertos gratis en Plaza Mayor, fuegos artificiales en Cibeles y puertas abiertas.",
@@ -199,13 +199,13 @@
   {
     "id": "madrid-planes-este-fin-de-semana-feria-barroca",
     "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Madrid (agenda del 2 al 4 de octubre)",
-    "metaTitle": "Qué Plan Hacer en Madrid este Fin de Semana (2 al 4 de octubre 2026) | Qué Plan Hoy",
-    "metaDescription": "¿Buscas qué plan hacer en Madrid este fin de semana del 2 al 4 de octubre de 2026? Feria Barroca de Valdemoro (gratis), mercadillos, rutas y planes originales.",
+    "title": "Qué hacer este fin de semana en Madrid: Feria del Libro Viejo, Pilar y Alcalá",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Madrid (9 al 12 Oct): Feria del Libro, Pilar y Alcalá",
+    "metaDescription": "Agenda real para este fin de semana y Puente de Octubre en Madrid (del 9 al 12 de octubre): Feria del Libro Viejo en Recoletos, Mercado Cervantino en Alcalá, Fiestas del Pilar y Mercado de Motores.",
     "city": "Madrid",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "2 al 4 de octubre de 2026",
+    "weekendDates": "9 al 12 de octubre",
     "readTime": "5 min",
     "publishedAt": "2026-10-03",
     "targetKeyword": "que plan hacer en madrid este fin de semana",
@@ -213,13 +213,13 @@
     "keywordDifficulty": "Media-Baja (21/100)",
     "image": "images/planes-este-fin-de-semana-madrid-feria-barroca.jpg",
     "imageAlt": "Recreación histórica y pasacalles del siglo XVII en la Feria Barroca de Valdemoro",
-    "excerpt": "Si buscas qué plan hacer en Madrid este fin de semana (del 2 al 4 de octubre de 2026) fuera de lo típico: viajar al Siglo de Oro en la Feria Barroca de Valdemoro, música al sol entre trenes antiguos y rutas de aperitivo.",
-    "priceRange": "Gratis (0 € – 8 €)",
+    "excerpt": "Los 4 grandes eventos reales de este fin de semana del 9 al 12 de octubre en Madrid: casetas de la Feria del Libro Viejo en Recoletos, el Mercado Cervantino de Alcalá de Henares, conciertos gratis en las Fiestas del Barrio del Pilar y Mercado de Motores.",
+    "priceRange": "Gratis – 10 €",
     "neighborhoods": [
-      "Valdemoro (Cercanías C-3)",
-      "Delicias",
-      "La Latina",
-      "Centro"
+      "Paseo de Recoletos",
+      "Alcalá de Henares",
+      "Barrio del Pilar",
+      "Delicias"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -232,69 +232,58 @@
     },
     "sections": [
       {
-        "heading": "1. Feria Barroca de Valdemoro (del 2 al 4 de octubre de 2026): mercado del Siglo de Oro y teatro (Gratis)",
-        "venue": "Feria Barroca de Valdemoro (Plaza de la Constitución y Casco Histórico)",
-        "location": "Plaza de la Constitución, Valdemoro (Cercanías C-3 desde Sol o Atocha en 27 min)",
-        "price": "Acceso y espectáculos de calle 100% gratuitos",
-        "content": "Uno de los planes más diferentes para hacer este fin de semana del viernes 2 al domingo 4 de octubre de 2026 en Madrid es acercarse a la Feria Barroca de Valdemoro, que conmemora el privilegio de Feria concedido en 1603 por Felipe III. Todo el casco histórico se transforma en una villa del siglo XVII con más de cien puestos de artesanía, gastronomía tradicional, exhibiciones de cetrería, malabares, música barroca en vivo y espectáculos nocturnos de fuego.",
-        "image": "images/venues/madrid-valdemoro-plaza-constitucion.jpg",
-        "imageAlt": "Plaza de la Constitución de Valdemoro con sus soportales históricos donde se celebra la Feria Barroca",
-        "lat": 40.1908,
-        "lng": -3.6778
+        "heading": "1. Feria de Otoño del Libro Viejo y Antiguo en el Paseo de Recoletos (Gratis)",
+        "venue": "Paseo de Recoletos (tramo Cibeles – Colón), Madrid",
+        "content": "Durante todo este fin de semana y el Puente de Octubre (de 11:00 a 21:00 h), el bulevar arbolado del Paseo de Recoletos desde la Plaza de Cibeles hasta Colón acoge las 34 casetas de la tradicional Feria de Otoño del Libro Viejo y Antiguo de Madrid, organizada por LIBRIS.\n\nEs uno de los paseos culturales más agradables del otoño madrileño: podrás curiosear desde ejemplares de bolsillo descatalogados desde 3 € hasta primeras ediciones históricas de la Generación del 27, grabados antiguos de Madrid, carteles de época y cómics clásicos.",
+        "location": "Paseo de Recoletos (Metro Banco de España L2 / Colón L4)",
+        "price": "Acceso libre (libros de ocasión desde 3 €)",
+        "lat": 40.4218,
+        "lng": -3.6912,
+        "image": "images/venues/madrid-paseo-recoletos-feria-libro.jpg",
+        "imageAlt": "Bulevar arbolado del Paseo de Recoletos con las casetas de la Feria del Libro Antiguo en Madrid"
       },
       {
-        "heading": "2. Mercadillo de diseño, foodtrucks y música en directo entre locomotoras del siglo XIX",
-        "venue": "Museo del Ferrocarril de Madrid (Delicias)",
-        "location": "Paseo de las Delicias, 61 (Metro: Delicias - L3 / Cercanías Delicias)",
-        "price": "Entrada gratuita al mercado (reservar pase horario online)",
-        "content": "Si buscas qué hacer hoy sábado o domingo a mediodía sin salir de la capital, pasear entre vagones históricos de madera mientras escuchas bandas en directo en la terraza exterior y pruebas puestos de artesanos locales es un plan redondo tanto en pareja como con amigos.",
+        "heading": "2. Mercado Cervantino de Alcalá de Henares: el mayor mercado del Siglo de Oro (8 al 12 de octubre)",
+        "venue": "Plaza de Cervantes y Calle Mayor, Alcalá de Henares",
+        "content": "Declarado Fiesta de Interés Turístico Nacional, el Mercado Cervantino transforma del 8 al 12 de octubre todo el casco histórico de Alcalá de Henares (Patrimonio de la Humanidad, a solo 35 minutos en tren de Cercanías C-2 y C-7 desde Atocha, Recoletos o Chamartín) en una villa del siglo XVII.\n\nEncontrarás más de 350 puestos de artesanía y gastronomía en torno a la Plaza de Cervantes, la Calle Mayor porticada y la Huerta del Obispo, además de torneos de justas medievales a caballo, pasacalles teatrales de Don Quijote y Sancho, música renacentista en vivo y campamentos históricos.",
+        "location": "Casco Histórico de Alcalá de Henares (Cercanías C-2 / C-7 Alcalá de Henares)",
+        "price": "Entrada libre a todo el mercado y pasacalles",
+        "lat": 40.4818,
+        "lng": -3.3643,
+        "image": "images/venues/madrid-alcala-plaza-cervantes.jpg",
+        "imageAlt": "Plaza de Cervantes y centro histórico de Alcalá de Henares donde se celebra el Mercado Cervantino"
+      },
+      {
+        "heading": "3. Fiestas del Barrio del Pilar en el Parque de La Vaguada: conciertos gratuitos y fuegos artificiales",
+        "venue": "Recinto Ferial del Parque de La Vaguada (Barrio del Pilar)",
+        "content": "Las grandes fiestas patronales de otoño en la capital se celebran del 9 al 12 de octubre en el Parque de La Vaguada (distrito de Fuencarral-El Pardo). El programa oficial del Ayuntamiento de Madrid incluye conciertos gratuitos cada noche en el escenario principal del parque, pasacalles, jornada infantil, casetas gastronómicas de asociaciones vecinales y el tradicional castillo de fuegos artificiales en honor a la Virgen del Pilar.\n\nPara llegar sin atascos ni problemas de aparcamiento en la avenida de Monforte de Lemos, lo más directo es tomar la línea 9 de Metro hasta Barrio del Pilar o Herrera Oria.",
+        "location": "Parque de La Vaguada, Av. de Monforte de Lemos (Metro Barrio del Pilar L9 / Peñagrande L7)",
+        "price": "Conciertos y acceso al recinto gratuitos",
+        "lat": 40.4792,
+        "lng": -3.7085,
+        "image": "images/venues/madrid-parque-la-vaguada-pilar.jpg",
+        "imageAlt": "Auditorio al aire libre del Parque de La Vaguada en el Barrio del Pilar de Madrid"
+      },
+      {
+        "heading": "4. Mercado de Motores en el Museo del Ferrocarril de Delicias (Sábado 10 y domingo 11 de octubre)",
+        "venue": "Museo del Ferrocarril de Madrid (Paseo de las Delicias, 61)",
+        "content": "Al ser el segundo fin de semana del mes, este sábado 10 (de 11:00 a 22:00 h) y domingo 11 de octubre (de 11:00 a 21:00 h) regresa el Mercado de Motores a la antigua estación histórica de Delicias.\n\nPodrás recorrer más de cien puestos de diseñadores independientes, cerámica, ilustración y segunda mano instalados directamente entre las locomotoras de vapor y los vagones de madera del siglo XIX, y salir después a los andenes exteriores con foodtrucks, música en vivo y karaoke al aire libre.",
+        "location": "Paseo de las Delicias, 61 (Metro Delicias L3 / Cercanías Delicias)",
+        "price": "Entrada gratuita (con reserva previa de franja horaria en su web)",
+        "lat": 40.4002,
+        "lng": -3.6936,
         "image": "images/venues/madrid-museo-ferrocarril.jpg",
-        "imageAlt": "Locomotoras históricas bajo la gran nave de hierro del siglo XIX del Museo del Ferrocarril de Madrid en Delicias",
-        "lat": 40.3999,
-        "lng": -3.6932
-      },
-      {
-        "heading": "3. Ruta de mañana por las galerías de anticuarios de Ribera de Curtidores y vermut",
-        "venue": "Nuevas Galerías del Rastro y Plaza del General Vara de Rey",
-        "location": "Calle Ribera de Curtidores, 12 (Metro: La Latina - L5 / Puerta de Toledo)",
-        "price": "Paseo gratis / Vermut de grifo y tosta: 4,50 €",
-        "content": "En lugar de quedarte solo en la cuesta principal del Rastro el domingo, entra a los patios interiores de las Galerías Piquer y las Nuevas Galerías, donde se esconden los verdaderos talleres de restauración, almonedas del siglo XX y tiendas vintage de Madrid.",
-        "image": "images/venues/madrid-rastro-curtidores.jpg",
-        "imageAlt": "Ambiente de domingo por la mañana en la calle Ribera de Curtidores y las galerías de anticuarios de El Rastro",
-        "lat": 40.4084,
-        "lng": -3.7075
-      },
-      {
-        "heading": "4. Invernadero del Palacio de Cristal de Arganzuela y paseo por Madrid Río",
-        "venue": "Invernadero del Palacio de Cristal de Arganzuela",
-        "location": "Paseo de la Chopera, 10 (Metro: Legazpi - L3, L6)",
-        "price": "Acceso 100% gratuito",
-        "content": "Este antiguo mercado de hierro y cristal de principios del siglo XX alberga cuatro microclimas con más de 9.000 especies de plantas tropicales, desérticas y estanques con carpas y tortugas. Es perfecto para la mañana del sábado o domingo antes de cruzar a tomar el aperitivo en Matadero.",
-        "image": "images/venues/madrid-invernadero-arganzuela-interior.jpg",
-        "imageAlt": "Interior tropical del Invernadero del Palacio de Cristal de Arganzuela junto a Madrid Río",
-        "lat": 40.3934,
-        "lng": -3.6997
-      },
-      {
-        "heading": "5. Atardecer acústico en el Templo de Debod y mirador del Parque del Oeste",
-        "venue": "Jardines del Templo de Debod y Mirador de la Montaña del Príncipe Pío",
-        "location": "Calle de Ferraz, 1 (Metro: Plaza de España - L3, L10 / Ventura Rodríguez - L3)",
-        "price": "Acceso libre y gratuito",
-        "content": "Termina el fin de semana viendo caer el sol detrás de la Casa de Campo y la Sierra de Guadarrama desde la balaustrada del Parque del Oeste, donde suelen tocar músicos de jazz y guitarra acústica al anochecer con vistas al Palacio Real.",
-        "image": "images/venues/madrid-templo-debod.jpg",
-        "imageAlt": "El Templo de Debod iluminado al atardecer reflejado en los estanques del Parque del Oeste",
-        "lat": 40.424,
-        "lng": -3.7178
+        "imageAlt": "Locomotoras históricas en el interior de la estación de Delicias durante el Mercado de Motores"
       }
     ],
     "faqs": [
       {
-        "question": "¿Cómo llegar a la Feria Barroca de Valdemoro desde Madrid centro en transporte público?",
-        "answer": "La forma más rápida es tomar la línea C-3 de Cercanías Renfe desde Puerta del Sol o Atocha en dirección Aranjuez; tarda unos 27 minutos hasta la estación de Valdemoro, o bien los autobuses interurbanos 422 y 428 desde Legazpi."
+        "question": "¿Qué ferias y mercados especiales hay este fin de semana del 9 al 12 de octubre en Madrid?",
+        "answer": "Este puente coinciden tres grandes citas al aire libre: la Feria de Otoño del Libro Viejo y Antiguo en el Paseo de Recoletos, el Mercado Cervantino en el casco histórico de Alcalá de Henares (del 8 al 12 de octubre) y la edición de octubre del Mercado de Motores en el Museo del Ferrocarril (sábado 10 y domingo 11)."
       },
       {
-        "question": "¿Qué planes hacer hoy en Madrid gratis si voy sin reserva?",
-        "answer": "La Feria Barroca de Valdemoro, los jardines del Príncipe de Anglona en La Latina, el Invernadero de Arganzuela en Legazpi y las rutas por el Madrid de los Austrias son de acceso libre sin necesidad de entrada anticipada."
+        "question": "¿Dónde se celebran los conciertos gratuitos de las Fiestas del Barrio del Pilar?",
+        "answer": "El recinto ferial y el escenario principal de conciertos gratuitos del Ayuntamiento de Madrid se sitúan en el Parque de La Vaguada (junto al paseo de Monforte de Lemos, Metro Barrio del Pilar L9)."
       }
     ],
     "imageCredit": "Ayuntamiento de Valdemoro · Feria Barroca de Valdemoro"
@@ -391,13 +380,13 @@
   {
     "id": "barcelona-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Barcelona (agenda del 9 al 11 de octubre)",
-    "metaTitle": "Qué Plan Hacer en Barcelona este Fin de Semana (9 al 11 de octubre 2026) | Qué Plan Hoy",
-    "metaDescription": "¿Buscas qué plan hacer en Barcelona este fin de semana del 9 al 11 de octubre de 2026? Fiesta Mayor de Les Corts, mercados gastronómicos en El Born, museos gratis el domingo y miradores.",
+    "title": "Qué hacer este fin de semana en Barcelona: Festa Major de Sarrià y Puente",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Barcelona (9 al 12 Oct): Festa Major de Sarrià y Planes",
+    "metaDescription": "Agenda real para este fin de semana y Puente de Octubre en Barcelona (del 9 al 12 de octubre): Festa Major de Sarrià, puertas abiertas en Capitanía General, Oktoberfest en Montjuïc y Jardins de Laribal.",
     "city": "Barcelona",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "9 al 11 de octubre de 2026",
+    "weekendDates": "9 al 12 de octubre",
     "readTime": "5 min",
     "publishedAt": "2026-10-03",
     "targetKeyword": "que plan hacer en barcelona este fin de semana",
@@ -405,13 +394,12 @@
     "keywordDifficulty": "Baja (18/100)",
     "image": "images/venues/bcn-mercat-del-born.jpg",
     "imageAlt": "Estructura histórica de hierro y cristal del antiguo Mercat del Born en Barcelona",
-    "excerpt": "Si buscas qué plan hacer en Barcelona este fin de semana (del 9 al 11 de octubre de 2026): arranque de la Fiesta Mayor de Les Corts, mercados al aire libre en El Born, primer domingo de museos gratis y vermut en Gràcia.",
-    "priceRange": "Gratis (0 € – 10 €)",
+    "excerpt": "Los planes reales para disfrutar de Barcelona este fin de semana y Puente de Octubre (del 9 al 12 de octubre): Festa Major de Sarrià, jornada de puertas abiertas en el Palau de la Capitania General, ambiente en Montjuïc y los Jardins de Laribal.",
+    "priceRange": "Gratis – 12 €",
     "neighborhoods": [
-      "El Born",
-      "Les Corts",
-      "Montjuïc",
-      "Gràcia"
+      "Sarrià",
+      "Ciutat Vella y Port Vell",
+      "Montjuïc"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -424,82 +412,71 @@
     },
     "sections": [
       {
-        "heading": "1. Fiesta Mayor de Les Corts (del 2 al 4 de octubre): correfocs, castellers y ruta de tapas en la Plaça de Comas",
-        "venue": "Plaça de Comas y jardines de Can Bruixa (Les Corts)",
-        "location": "Plaça de Comas, s/n (Metro: Les Corts - L3)",
-        "price": "Actividades y conciertos al aire libre 100% gratuitos",
-        "content": "El primer fin de semana de octubre arranca la Fiesta Mayor de Les Corts, que recupera el ambiente de antiguo pueblo independiente con exhibiciones castelleras el domingo a mediodía, pasacalles de gigantes, talleres gastronómicos y conciertos acústicos al aire libre lejos del turismo masivo del centro.",
-        "image": "images/venues/bcn-placa-comas-les-corts.jpg",
-        "imageAlt": "Sede histórica del distrito de Les Corts en la Plaça de Comas de Barcelona",
-        "lat": 41.3854,
-        "lng": 2.1306
+        "heading": "1. Festa Major de Sarrià (del 9 al 12 de octubre): castellers, correfoc, habaneras y conciertos (Gratis)",
+        "venue": "Plaça del Consell de la Vila y Plaça de Sarrià (Sarrià-Sant Gervasi)",
+        "content": "Este fin de semana y hasta el lunes 12 de octubre culmina la Festa Major de Sarrià (Festes del Roser), una de las fiestas de barrio con más encanto de Barcelona porque conserva el ambiente de antiguo pueblo independiente en torno al Carrer Major de Sarrià.\n\nSegún el programa oficial del distrito de Sarrià-Sant Gervasi (Ajuntament de Barcelona), durante el viernes 10, sábado 11 y domingo 12 las plazas de Sarrià y del Consell de la Vila acogen conciertos gratuitos al aire libre, cantada de habaneras, plantada y pasacalles de gigantes, exhibición castellera a mediodía, correfoc nocturno y ruta de tapas en las bodegas históricas del barrio.",
+        "location": "Plaça de Sarrià y Plaça del Consell de la Vila (FGC L6/L12 Sarrià o Reina Elisenda)",
+        "price": "Todas las actividades y conciertos en plaza son gratuitos",
+        "lat": 41.3998,
+        "lng": 2.1215,
+        "image": "images/venues/bcn-sarria-consell-vila.jpg",
+        "imageAlt": "Arquitectura tradicional e histórica en la Plaça de Sarrià y Carrer Major de Sarrià en Barcelona"
       },
       {
-        "heading": "2. Mercado de diseño, artesanos y vermut al sol entre el Passeig del Born y la Ciutadella",
-        "venue": "Passeig del Born y entorno del Mercat del Born",
-        "location": "Plaça Comercial, 12 (Metro: Jaume I - L4 / Arc de Triomf - L1)",
-        "price": "Acceso libre / Vermut artesano y tapa: 5,50 €",
-        "content": "Aprovecha la luz suave de principios de octubre para recorrer los puestos de cerámica, ilustración local y gastronomía de proximidad bajo los plátanos del Born, visitando gratis el yacimiento arqueológico de la Barcelona de 1700 dentro del antiguo mercado de hierro.",
-        "image": "images/venues/bcn-born-passeig.jpg",
-        "imageAlt": "Paseo arbolado del Passeig del Born junto a Santa Maria del Mar en Barcelona",
-        "lat": 41.3853,
-        "lng": 2.1839
+        "heading": "2. Jornada de Puertas Abiertas del 12 de Octubre en el Palau de la Capitania General (Passeig de Colom)",
+        "venue": "Palau de la Capitania General de Barcelona (Passeig de Colom, 14)",
+        "content": "Con motivo del festivo del 12 de octubre, el histórico Palau de la Capitania General de Barcelona —levantado sobre el antiguo convento de la Merced del siglo XVII frente al Port Vell— celebra jornada de puertas abiertas gratuitas al público.\n\nEs una de las pocas ocasiones del año para entrar sin coste a su monumental claustro barroco de piedra, recorrer la escalinata de honor y visitar los salones históricos del piso noble como el Salón del Trono y el Salón de los Espejos antes de dar un paseo al sol por el Moll de la Fusta.",
+        "location": "Passeig de Colom, 14, Ciutat Vella (Metro Barceloneta L4 / Drassanes L3)",
+        "price": "Entrada libre y gratuita en horario de puertas abiertas",
+        "lat": 41.3792,
+        "lng": 2.1808,
+        "image": "images/venues/bcn-capitania-general-colom.jpg",
+        "imageAlt": "Fachada neoclásica del Palau de la Capitania General de Barcelona en el Passeig de Colom"
       },
       {
-        "heading": "3. Primer domingo de mes con entrada gratuita a los grandes museos y al Pabellón Mies van der Rohe",
-        "venue": "Pabellón Mies van der Rohe y Museu Nacional (MNAC) en Montjuïc",
-        "location": "Avinguda Francesc Ferrer i Guàrdia, 7 (Metro: Espanya - L1, L3)",
-        "price": "Entrada 100% gratuita el domingo 4 de octubre",
-        "content": "Al coincidir este domingo 4 de octubre con el primer domingo del mes, numerosos museos y joyas arquitectónicas de Barcelona abren sus puertas gratis, incluyendo el icónico Pabellón de Barcelona de Mies van der Rohe, el MUHBA en la Plaça del Rei y el MNAC.",
-        "image": "images/venues/bcn-pabellon-mies.jpg",
-        "imageAlt": "Estanque y arquitectura de mármol y cristal del Pabellón Mies van der Rohe en Montjuïc",
-        "lat": 41.3706,
-        "lng": 2.1501
+        "heading": "3. Ambiente al aire libre y Oktoberfest Barcelona junto a las Torres Venecianas de Montjuïc",
+        "venue": "Recinto de Montjuïc y Avinguda de la Reina Maria Cristina (Plaça d'Espanya)",
+        "content": "Durante el Puente de Octubre el entorno de Montjuïc y Fira Barcelona reúne música en directo en su gran carpa bávara de Oktoberfest con bandas en vivo, mesas corridas al aire libre y gastronomía tradicional alemana.\n\nPuedes combinar el ambiente festivo a los pies de las Torres Venecianas con la subida por las escalinatas hacia las Cuatro Columnas de Puig i Cadafalch y el mirador panorámico frente al Palau Nacional (MNAC), desde donde se domina toda la ciudad con la luz limpia de octubre.",
+        "location": "Plaça d'Espanya y Av. de la Reina Maria Cristina (Metro Espanya L1 / L3)",
+        "price": "Acceso libre al recinto diurno (reserva opcional de mesa)",
+        "lat": 41.3718,
+        "lng": 2.1512,
+        "image": "images/venues/bcn-fira-montjuic-torres.jpg",
+        "imageAlt": "Las Cuatro Columnas, explanada de Montjuïc y Torres Venecianas desde el mirador del Palau Nacional en Barcelona"
       },
       {
-        "heading": "4. Paseo de otoño por los Jardins de Laribal y el anfiteatro oculto del Teatre Grec",
+        "heading": "4. Paseo tranquilo por los Jardins de Laribal y el anfiteatro oculto del Teatre Grec (Gratis)",
         "venue": "Jardins de Laribal y Teatre Grec (Montjuïc)",
-        "location": "Passeig de Santa Madrona, 2 (Metro: Espanya / Funicular de Montjuïc)",
-        "price": "Acceso libre y gratuito",
-        "content": "Después de visitar el pabellón, sube por las escalinatas de cerámica y fuentes árabes que diseñó Forestier en 1922 hasta la terraza del Teatre Grec, uno de los rincones más silenciosos de Barcelona para leer o tomar un café a media mañana.",
+        "content": "Si después de pasar por la explanada de Montjuïc buscas un rincón en calma lejos de las terrazas masificadas, adéntrate por las escalinatas de cerámica azul, albercas y fuentes escalonadas que diseñó Jean-Claude Nicolas Forestier en los Jardins de Laribal.\n\nEl sendero desemboca en la rosaleda y el anfiteatro de piedra del Teatre Grec, cuyos jardines permanecen abiertos de forma gratuita durante todo el fin de semana como uno de los refugios más fotogénicos de Barcelona.",
+        "location": "Passeig de Santa Madrona, Montjuïc (Metro Espanya L1/L3 o Poble Sec L3)",
+        "price": "Entrada libre y gratuita (de 10:00 h al atardecer)",
+        "lat": 41.3698,
+        "lng": 2.1597,
         "image": "images/venues/bcn-jardins-de-laribal-y-teatre--uniq.jpg",
-        "imageAlt": "Gradas de piedra y jardines del Teatre Grec en la montaña de Montjuïc",
-        "lat": 41.3696,
-        "lng": 2.1597
-      },
-      {
-        "heading": "5. Tarde de librerías de barrio y aperitivo en la Plaça de la Virreina en Gràcia",
-        "venue": "Plaça de la Virreina y Carrer de Verdi (Vila de Gràcia)",
-        "location": "Plaça de la Virreina (Metro: Fontana - L3)",
-        "price": "Paseo gratis / Caña y bravas caseras: 6,00 €",
-        "content": "Cierra el domingo paseando por las calles peatonales de la parte alta de Gràcia, curioseando en sus librerías independientes antes de sentarte en los escalones o terrazas frente a la iglesia de Sant Joan o de pasar a una sesión en versión original en los Cines Verdi.",
-        "image": "images/venues/bcn-placa-virreina-gracia.jpg",
-        "imageAlt": "Terrazas al aire libre frente a la iglesia de Sant Joan en la Plaça de la Virreina de Gràcia",
-        "lat": 41.4046,
-        "lng": 2.1569
+        "imageAlt": "Pérgolas, vegetación y escalinatas de piedra en los Jardins de Laribal de Montjuïc en Barcelona"
       }
     ],
     "faqs": [
       {
-        "question": "¿Qué museos son gratis en Barcelona este domingo 4 de octubre de 2026?",
-        "answer": "Por ser primer domingo de mes, abren gratis todo el día el Pabellón Mies van der Rohe, el Museu Nacional d'Art de Catalunya (MNAC), el Museu de la Música, el Museu Marítim y el Castillo de Montjuïc."
+        "question": "¿Qué fiesta mayor de barrio se celebra en Barcelona este fin de semana del 9 al 12 de octubre?",
+        "answer": "Se celebra el fin de semana grande de la Festa Major de Sarrià (Festes del Roser), con conciertos gratuitos, habaneras, castellers, gigantes y correfoc en torno a la Plaça de Sarrià y la Plaça del Consell de la Vila hasta el 12 de octubre."
       },
       {
-        "question": "¿Hace falta reservar entrada para los museos gratuitos del primer domingo de mes?",
-        "answer": "En el MNAC y el Museo Picasso es muy recomendable sacar la entrada gratuita anticipada en su web oficial entre el jueves y el viernes para asegurar franja horaria."
+        "question": "¿Qué edificio histórico abre gratis en Barcelona por el 12 de octubre?",
+        "answer": "El Palau de la Capitania General de Barcelona (en el Passeig de Colom, 14, junto al Port Vell) celebra jornada de puertas abiertas gratuitas permitiendo visitar su claustro barroco del siglo XVII y sus salones históricos."
       }
     ]
   },
   {
     "id": "valencia-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Valencia (especial 9 d'Octubre)",
-    "metaTitle": "Qué Plan Hacer en Valencia este Fin de Semana (9 al 11 de octubre 2026) | Qué Plan Hoy",
-    "metaDescription": "¿Buscas qué plan hacer en Valencia este fin de semana del 9 al 11 de octubre de 2026? Vísperas del 9 d'Octubre, mercados en el Jardín del Turia, conciertos gratis y atardecer en la Albufera.",
+    "title": "Qué hacer este fin de semana en Valencia: programación del 9 d'Octubre",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Valencia (9 al 12 Oct): Programa Oficial 9 d'Octubre",
+    "metaDescription": "Agenda oficial para este fin de semana y Puente del 9 d'Octubre en Valencia (del 9 al 12 de octubre): Reial Senyera, Entrada de Moros y Cristianos, Puertas Abiertas en el Palau de la Generalitat y Mercado Medieval en el Turia.",
     "city": "Valencia",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "9 al 11 de octubre de 2026",
+    "weekendDates": "9 al 12 de octubre",
     "readTime": "5 min",
     "publishedAt": "2026-10-03",
     "targetKeyword": "que plan hacer en valencia este fin de semana",
@@ -507,12 +484,12 @@
     "keywordDifficulty": "Baja (16/100)",
     "image": "images/venues/vlc-palau-generalitat.jpg",
     "imageAlt": "Fachada gótica y torre del Palau de la Generalitat Valenciana en el barrio del Carmen",
-    "excerpt": "Qué plan hacer en Valencia este fin de semana (del 9 al 11 de octubre de 2026): ambiente previo al 9 d'Octubre en el cauce del Turia, puertas abiertas en el Palau de la Generalitat, ruta por el Cabanyal y puesta de sol en la Albufera.",
-    "priceRange": "Gratis (0 € – 9 €)",
+    "excerpt": "Valencia vive su puente grande del 9 d'Octubre (del 9 al 12 de octubre): Procesión Cívica de la Reial Senyera, Entrada de Moros y Cristianos por la calle de la Paz, puertas abiertas en el Palau de la Generalitat y Mercado Medieval en el Jardín del Turia.",
+    "priceRange": "Gratis – 6 €",
     "neighborhoods": [
+      "Plaza del Ayuntamiento",
+      "Barrio del Carmen",
       "Jardín del Turia",
-      "El Carmen",
-      "El Cabanyal",
       "L'Albufera"
     ],
     "affiliate": {
@@ -526,69 +503,58 @@
     },
     "sections": [
       {
-        "heading": "1. Puertas abiertas en los palacios históricos del Carmen por la semana del 9 d'Octubre (Gratis)",
-        "venue": "Palau de la Generalitat y Palau dels Borja (Barrio del Carmen)",
-        "location": "Calle de los Caballeros, 2 (Plaza de Manises)",
-        "price": "Entrada 100% gratuita",
-        "content": "El primer fin de semana de octubre marca el inicio de la programación cultural del 9 d'Octubre en Valencia, una ocasión única del año para entrar gratis sin cita a los patios góticos, el Salón Dorado artesonado y los jardines del Palau de la Generalitat en pleno corazón de Ciutat Vella.",
-        "image": "images/venues/vlc-palau-borja-corts.jpg",
-        "imageAlt": "Patio histórico y arcadas de piedra en el barrio del Carmen de Valencia",
+        "heading": "1. Procesión Cívica de la Reial Senyera y Puertas Abiertas en el Palau de la Generalitat (Gratis)",
+        "venue": "Plaza del Ayuntamiento y Palau de la Generalitat (Barrio del Carmen)",
+        "content": "El programa oficial del Ayuntamiento de València y la Generalitat por el 9 d'Octubre (Día de la Comunitat Valenciana) tiene como acto central la bajada solemne de la Reial Senyera desde el balcón del Ayuntamiento a las 12:00 h y su recorrido procesional por San Vicente y la Plaza de la Reina hasta el Parterre, seguido de mascletà en la Plaza del Ayuntamiento.\n\nDurante todo el puente del 9 al 12 de octubre, tanto el Salón de Cristal del Ayuntamiento (donde se expone la Senyera junto a la espada histórica de Jaume I) como el gótico Palau de la Generalitat y el Palau dels Borja celebran jornadas de puertas abiertas con acceso libre y gratuito a sus patios, jardines y al impresionante Salón Dorado artesonado.",
+        "location": "Plaza del Ayuntamiento y Calle Caballeros, 2 (Metro Xàtiva / Colón L3, L5, L9)",
+        "price": "Acceso libre y gratuito en todas las sedes institucionales",
         "lat": 39.4767,
-        "lng": -0.3764
+        "lng": -0.3764,
+        "image": "images/venues/vlc-palau-borja-corts.jpg",
+        "imageAlt": "Fachada histórica del Palau dels Borja junto al Palau de la Generalitat en el centro de Valencia"
       },
       {
-        "heading": "2. Mercado y paseo de mañana en bici bajo los puentes históricos del Jardín del Turia",
+        "heading": "2. Gran Entrada de Moros y Cristianos por la Calle de la Paz y Plaza del Ayuntamiento (Gratis)",
+        "venue": "Calle de la Paz y Plaza del Ayuntamiento, Valencia",
+        "content": "Uno de los espectáculos más vistosos de la agenda municipal es la XXI Entrada de Moros y Cristianos del Cap i Casal, organizada por Fevamic y el Ayuntamiento de València. Tras la Bajada de Gloria a las 15:45 h, el gran desfile arranca a las 17:00 h desde la Glorieta y recorre toda la Calle de la Paz, Poeta Querol y Barcas hasta entrar en la Plaza del Ayuntamiento y Marqués de Sotelo.\n\nDecenas de escuadras cristianas y moras desfilan con trajes de gala, carrozas, ballets temáticos y bandas de música en directo. Consejo práctico: el tramo medio de la Calle de la Paz ofrece una perspectiva espectacular con las fachadas modernistas de fondo y la Torre de Santa Catalina al final.",
+        "location": "Recorrido desde La Glorieta por Calle de la Paz hasta Plaza del Ayuntamiento",
+        "price": "Gratis en todo el recorrido a pie de calle",
+        "lat": 39.4728,
+        "lng": -0.3735,
+        "image": "images/venues/vlc-moros-cristianos-calle-paz.jpg",
+        "imageAlt": "Perspectiva de la histórica Calle de la Paz en el centro de Valencia por donde discurre la Entrada de Moros y Cristianos"
+      },
+      {
+        "heading": "3. Mercado Medieval del 9 d'Octubre en el Jardín del Turia (hasta el 12 de octubre)",
         "venue": "Jardín del Turia (Tramo Puente de la Exposición – Puente de las Flores)",
-        "location": "Paseo de la Alameda / Jardín del Turia (Metro: Alameda - L3, L5, L7, L9)",
-        "price": "Acceso libre y gratuito",
-        "content": "Con 23 grados al mediodía, recorrer el antiguo cauce del río Turia entre naranjos, exposiciones al aire libre y puestos de artesanía del mercado de otoño frente al Puente de la Exposición es el plan matinal más agradable de este sábado y domingo.",
+        "content": "Durante todo el puente festivo (abierto de 10:30 a 23:00 h hasta el lunes 12 de octubre), el antiguo cauce del río Turia entre el Puente de la Exposición y el Puente de las Flores se transforma en el gran Mercado Medieval oficial del 9 d'Octubre.\n\nEncontrarás más de sesenta puestos de artesanía en cuero, cerámica, orfebrería, juguetes de madera y gastronomía tradicional, ambientados con campamentos históricos de recreación de la época de Jaume I, pasacalles musicales de juglares, cetrería y espectáculos de fuego al anochecer.",
+        "location": "Jardín del Turia, junto al Paseo de la Alameda (Metro Alameda L3, L5, L7, L9)",
+        "price": "Entrada libre y gratuita",
+        "lat": 39.4733,
+        "lng": -0.3656,
         "image": "images/venues/vlc-jardin-del-turia.jpg",
-        "imageAlt": "El Puente de las Flores sobre el antiguo cauce ajardinado del río Turia en Valencia",
-        "lat": 39.4731,
-        "lng": -0.3651
+        "imageAlt": "Puente de las Flores y Jardín del Turia en Valencia donde se instala el Mercado Medieval del 9 d'Octubre"
       },
       {
-        "heading": "3. Aperitivo marinero de clóchinas y vermut en las barracas modernistas de El Cabanyal",
-        "venue": "Barrio de El Cabanyal (Calle Reina y entorno del Mercat del Cabanyal)",
-        "location": "Calle Reina, 110 (Tranvía: Líneas 4 y 6 - Dr. Lluch / Metro Marítim)",
-        "price": "Vermut de grifo y tapa marinera: 5,50 € – 8,00 €",
-        "content": "Acércate a mediodía a las calles de casas bajas recubiertas de azulejos policromados de El Cabanyal para tomar el aperitivo al sol en sus tabernas centenarias antes de caminar cinco minutos hasta el paseo de la Malvarrosa.",
-        "image": "images/venues/vlc-cabanyal-casas-progres.jpg",
-        "imageAlt": "Paseo marítimo y entorno tradicional del barrio marinero de El Cabanyal en Valencia",
-        "lat": 39.4687,
-        "lng": -0.3292
-      },
-      {
-        "heading": "4. Tarde de arte inmersivo y restos del circo romano en el Palacio de Valeriola",
-        "venue": "Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
-        "location": "Calle del Mar, 31 (Junto a Plaza de la Reina)",
-        "price": "Entrada general 10 € (Consultar descuentos de fin de semana)",
-        "content": "Si te apetece un plan cultural diferente el sábado por la tarde, este palacio del siglo XVII rehabilitado esconde en su subsuelo un tramo del circo romano de Valentia y un horno medieval integrados con grandes instalaciones de arte contemporáneo.",
-        "image": "images/venues/vlc-palacio-valeriola.jpg",
-        "imageAlt": "Patio y arquitectura restaurada del Palacio de Valeriola (Centro de Arte Hortensia Herrero)",
-        "lat": 39.4743,
-        "lng": -0.3728
-      },
-      {
-        "heading": "5. Atardecer de octubre desde el embarcadero de madera de la Gola de Pujol en L'Albufera",
+        "heading": "4. Puesta de sol de octubre desde el embarcadero de la Gola de Pujol en L'Albufera",
         "venue": "Mirador y Embarcadero de la Gola de Pujol (Parque Natural de L'Albufera)",
-        "location": "Carretera de El Saler (Autobús EMT Línea 24 o 25 desde el centro por 1,50 €)",
-        "price": "Mirador gratuito / Paseo en barca tradicional: 6,00 €",
-        "content": "En octubre el sol cae sobre las aguas tranquilas de L'Albufera hacia las 19:40 h tiñendo toda la laguna de tonos cobrizos y violetas sin el calor del verano. Puedes llegar directamente desde la calle Colón en el autobús urbano número 25.",
+        "content": "Si el sábado o el domingo del puente te apetece escapar un par de horas del bullicio de los desfiles del centro, súbete en el centro de Valencia a los autobuses rojos de la EMT (líneas 24 o 25 desde Porta de la Mar / Navarro Reverter) hasta el embarcadero de madera de la Gola de Pujol.\n\nEn octubre el sol se pone sobre las aguas tranquilas de la laguna hacia las 19:35 h tiñendo el cielo de tonos cobrizos y violetas con una temperatura suave ideal para pasear por la pasarela o dar una vuelta en barca tradicional (albuferenc).",
+        "location": "Carretera de El Saler, Parque Natural de L'Albufera (Bus EMT líneas 24 y 25)",
+        "price": "Mirador gratuito (billete de autobús urbano 2 € / paseo en barca opcional 6 €)",
+        "lat": 39.3422,
+        "lng": -0.3188,
         "image": "images/venues/vlc-mirador-y-embarcadero-de-la--uniq.jpg",
-        "imageAlt": "Aguas del Parque Natural de L'Albufera de Valencia al caer el sol",
-        "lat": 39.3514,
-        "lng": -0.3179
+        "imageAlt": "Embarcadero de madera rodeado de vegetación en la laguna del Parque Natural de L'Albufera de Valencia"
       }
     ],
     "faqs": [
       {
-        "question": "¿A qué hora se pone el sol en la Albufera de Valencia este primer fin de semana de octubre?",
-        "answer": "Del 2 al 4 de octubre el atardecer en la Albufera tiene lugar en torno a las 19:40 h; lo ideal es llegar al embarcadero de la Gola de Pujol o de El Palmar a las 18:45 h."
+        "question": "¿Cuál es el recorrido y horario de la Entrada de Moros y Cristianos de Valencia por el 9 d'Octubre?",
+        "answer": "La Gran Entrada de Moros y Cristianos arranca a las 17:00 h (precedida por la Bajada de Gloria a las 15:45 h) desde la Glorieta y recorre la Calle de la Paz, Poeta Querol, Barcas y la Plaza del Ayuntamiento hasta Marqués de Sotelo."
       },
       {
-        "question": "¿Qué planes gratis hay este fin de semana en Valencia centro?",
-        "answer": "Además de las jornadas de puertas abiertas en los palacios de la Generalitat por el 9 d'Octubre, los domingos por la mañana la entrada al Museo de Bellas Artes, la Lonja de la Seda y las Torres de Serranos es gratuita."
+        "question": "¿Dónde está instalado el Mercado Medieval del 9 d'Octubre en Valencia?",
+        "answer": "El Mercado Medieval oficial permanece abierto durante todo el puente (hasta el 12 de octubre) en el Jardín del Turia, en el tramo situado entre el Puente de la Exposición y el Puente de las Flores (Metro Alameda)."
       }
     ]
   },
@@ -684,13 +650,13 @@
   {
     "id": "sevilla-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Sevilla (agenda del 9 al 11 de octubre)",
-    "metaTitle": "Qué Plan Hacer en Sevilla este Fin de Semana (9 al 11 de octubre 2026) | Qué Plan Hoy",
-    "metaDescription": "¿Buscas qué plan hacer en Sevilla este fin de semana del 9 al 11 de octubre de 2026? Mercadillo de Pintores en Plaza del Museo, patios mudéjares gratis, ruta por Triana y atardecer en el río.",
+    "title": "Qué hacer este fin de semana en Sevilla: Puente de Octubre y mercadillos",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Sevilla (9 al 12 Oct): Puente del Pilar y Planes Gratis",
+    "metaDescription": "Agenda real para este fin de semana y Puente del Pilar en Sevilla (del 9 al 12 de octubre): Archivo de Indias gratis por el 12 de octubre, Mercadillo de Arte en Plaza del Museo, Casa de las Sirenas y Triana.",
     "city": "Sevilla",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "9 al 11 de octubre de 2026",
+    "weekendDates": "9 al 12 de octubre",
     "readTime": "5 min",
     "publishedAt": "2026-10-03",
     "targetKeyword": "que plan hacer en sevilla este fin de semana",
@@ -698,13 +664,13 @@
     "keywordDifficulty": "Muy Baja (15/100)",
     "image": "images/venues/sev-plaza-del-museo.jpg",
     "imageAlt": "Plaza del Museo y fachada del Museo de Bellas Artes de Sevilla rodeada de arbolado",
-    "excerpt": "Qué plan hacer en Sevilla este fin de semana (del 9 al 11 de octubre de 2026) aprovechando que bajan las temperaturas: el Mercadillo de Arte en la Plaza del Museo, casas-palacio gratuitas y ruta de tapeo por Triana.",
-    "priceRange": "Gratis (0 € – 8 €)",
+    "excerpt": "Qué plan hacer en Sevilla este fin de semana y Puente del Pilar (del 9 al 12 de octubre): visitas gratuitas al Archivo General de Indias por el 12 de Octubre, Mercadillo de Arte del domingo en la Plaza del Museo, exposiciones en la Casa de las Sirenas y atardecer en el Guadalquivir.",
+    "priceRange": "Gratis – 10 €",
     "neighborhoods": [
-      "Museo / Arenal",
-      "Santa Cruz",
-      "Triana",
-      "Alameda"
+      "Avenida de la Constitución",
+      "Plaza del Museo",
+      "Alameda y Calle Feria",
+      "Triana"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -717,82 +683,71 @@
     },
     "sections": [
       {
-        "heading": "1. Domingo por la mañana en el Mercadillo del Arte de la Plaza del Museo y patios del Bellas Artes (Gratis)",
-        "venue": "Plaza del Museo y Museo de Bellas Artes de Sevilla",
-        "location": "Plaza del Museo, 9 (Casco Antiguo, a 4 min de Plaza de Armas)",
-        "price": "Acceso 100% gratuito",
-        "content": "Cada domingo de 10:00 a 14:00 h más de cincuenta acuarelistas, pintores e ilustradores locales montan sus caballetes a la sombra de los ficus gigantes de la Plaza del Museo. Después de pasear entre los puestos, entra gratis a los tres claustros ajardinados del antiguo Convento de la Merced.",
-        "image": "images/venues/sev-plaza-del-museo-bellas-artes.jpg",
-        "imageAlt": "Patio porticado e interior museístico en el centro histórico de Sevilla",
-        "lat": 37.3925,
-        "lng": -5.9997
-      },
-      {
-        "heading": "2. Sábado en el Mercado de Productores y cervecerías al sol de la Alameda de Hércules",
-        "venue": "Alameda de Hércules y Calle Feria",
-        "location": "Alameda de Hércules, s/n (Barrio de Feria / San Lorenzo)",
-        "price": "Paseo gratis / Caña y montadito en el Mercado de Feria: 3,80 €",
-        "content": "Con la llegada del otoño el centro de vida de los sábados a mediodía vuelve a la calle Feria y la Alameda de Hércules, donde puedes combinar el tapeo en las mesas exteriores del histórico Mercado de Feria (el más antiguo de Sevilla) con puestos de artesanía y librerías de viejo.",
-        "image": "images/venues/sev-alameda-hercules-columnas.jpg",
-        "imageAlt": "Columnas romanas y paseo peatonal arbolado de la Alameda de Hércules en Sevilla",
-        "lat": 37.3991,
-        "lng": -5.9937
-      },
-      {
-        "heading": "3. Jardines de la Casa de las Sirenas y Pabellón Mudéjar del Parque de María Luisa",
-        "venue": "Palacete de la Casa de las Sirenas y Plaza de América",
-        "location": "Alameda de Hércules, 30 / Plaza de América (Parque de María Luisa)",
+        "heading": "1. Especial 12 de Octubre en el Archivo General de Indias: mapas y legajos del Nuevo Mundo (Gratis)",
+        "venue": "Archivo General de Indias (Av. de la Constitución, Sevilla)",
+        "content": "En el Puente de la Hispanidad y el 12 de octubre, ningún edificio de Sevilla tiene tanto simbolismo histórico como el Archivo General de Indias, proyectado en el siglo XVI por Juan de Herrera como Casa Lonja de Mercaderes y declarado Patrimonio de la Humanidad junto a la Catedral.\n\nSu acceso es completamente gratuito durante todo el puente festivo: podrás subir por su monumental escalera imperial de jaspe y recorrer las galerías abovedadas donde se exponen cartas náuticas originales, tratados históricos y documentos de las expediciones transoceánicas sin las colas de otros monumentos.",
+        "location": "Av. de la Constitución, s/n (Tranvía T1 Archivo de Indias / Metro Puerta Jerez L1)",
         "price": "Entrada libre y gratuita",
-        "content": "Dos joyas arquitectónicas que puedes visitar gratis este fin de semana sin hacer las colas del Alcázar: el palacete francés del siglo XIX de la Casa de las Sirenas (con exposiciones temporales gratuitas) y los estanques de lotos frente al Pabellón Mudéjar.",
-        "image": "images/venues/sev-palacete-de-la-casa-de-las-s-uniq.jpg",
-        "imageAlt": "Fachada de ladrillo y azulejos del Pabellón Mudéjar en la Plaza de América del Parque de María Luisa",
-        "lat": 37.3718,
-        "lng": -5.9873
+        "lat": 37.3847,
+        "lng": -5.9931,
+        "image": "images/venues/sev-archivo-indias-galeria.jpg",
+        "imageAlt": "Galería renacentista interior del Archivo General de Indias en Sevilla con sus estanterías históricas de legajos"
       },
       {
-        "heading": "4. Ruta de alfarería histórica en el Centro Cerámica Triana y callejón de la Inquisición",
-        "venue": "Centro Cerámica Triana y Paseo de Nuestra Señora de la O",
-        "location": "Calle Callao, 16 (Junto al Puente de Triana y Mercado de Triana)",
-        "price": "2,10 € entrada general",
-        "content": "Adéntrate en los antiguos hornos de ladrillo del siglo XIX de la fábrica Santa Ana en Triana y baja después por el estrecho Callejón de la Inquisición hasta el paseo fluvial junto al Guadalquivir.",
-        "image": "images/venues/sev-ceramica-triana.jpg",
-        "imageAlt": "Hornos históricos y piezas de alfarería tradicional en el Centro Cerámica Triana",
-        "lat": 37.3859,
-        "lng": -6.0041
+        "heading": "2. Domingo 11 de octubre en el Mercadillo del Arte de la Plaza del Museo y patios del Bellas Artes (Gratis)",
+        "venue": "Plaza del Museo y Museo de Bellas Artes de Sevilla",
+        "content": "El domingo 11 de octubre de 10:00 a 14:00 h más de cincuenta acuarelistas, pintores y grabadores sevillanos instalan sus caballetes al aire libre bajo la sombra de los ficus centenarios de la Plaza del Museo, alrededor de la escultura de Murillo.\n\nTras pasear entre las obras, entra de forma gratuita al antiguo Convento de la Merced (Museo de Bellas Artes de Sevilla) para recorrer en silencio sus tres claustros revestidos de azulejos del siglo XVII y su colección de pintura barroca.",
+        "location": "Plaza del Museo, 9, Casco Antiguo (Parada Plaza de Armas / Campana)",
+        "price": "Mercadillo al aire libre y entrada al Museo de Bellas Artes gratuitos",
+        "lat": 37.3925,
+        "lng": -5.9996,
+        "image": "images/venues/sev-plaza-del-museo-bellas-artes.jpg",
+        "imageAlt": "Claustro ajardinado del Museo de Bellas Artes de Sevilla junto a la Plaza del Museo"
       },
       {
-        "heading": "5. Atardecer en el Muelle de la Sal y paseo nocturno por la Judería de Santa Cruz",
-        "venue": "Muelle de la Sal (Puente de Triana) y Plaza de Doña Elvira",
-        "location": "Paseo de Cristóbal Colón / Barrio de Santa Cruz (Metro: Puerta de Jerez - L1)",
-        "price": "Paseo 100% gratuito",
-        "content": "Termina el sábado o el domingo viendo encenderse el Puente de Isabel II sobre el río Guadalquivir y adéntrate al anochecer por el Pasaje del Agua y la Plaza de Doña Elvira bajo el aroma a azahar y dama de noche.",
+        "heading": "3. Aperitivo de otoño en la Alameda de Hércules y exposiciones gratis en la Casa de las Sirenas",
+        "venue": "Alameda de Hércules y Palacete de la Casa de las Sirenas",
+        "content": "Aprovecha los 25 grados suaves de este puente en Sevilla para acercarte a mediodía al entorno de la Calle Feria y la Alameda de Hércules. Antes de sentarte al sol en las terrazas bajo los álamos o tapear en el histórico Mercado de Feria, entra gratis al Centro Cívico Casa de las Sirenas.\n\nEste palacete recreativo del siglo XIX inspirado en un hôtel particulier francés conserva sus rejas originales de las esfinges, sus jardines y exposiciones temporales de fotografía e ilustración local de entrada libre.",
+        "location": "Alameda de Hércules, 30, Casco Antiguo",
+        "price": "Entrada libre al palacete y exposiciones (caña y tapa en Feria desde 4 €)",
+        "lat": 37.3988,
+        "lng": -5.9942,
+        "image": "images/venues/sev-alameda-hercules-columnas.jpg",
+        "imageAlt": "Paseo arbolado y columnas romanas de la Alameda de Hércules en Sevilla"
+      },
+      {
+        "heading": "4. Procesiones de Gloria de octubre y puesta de sol desde el Muelle de la Sal junto al Puente de Triana",
+        "venue": "Muelle de la Sal (Puente de Isabel II) y Paseo de Nuestra Señora de la O",
+        "content": "El Puente del Pilar coincide en Sevilla con uno de los fines de semana grandes del calendario de procesiones de Gloria (como las salidas vespertinas en torno a la festividad de la Virgen del Rosario y del Pilar por las calles del casco antiguo acompañadas de bandas de música).\n\nAl caer la tarde hacia las 19:50 h, baja hasta las gradas del Muelle de la Sal junto al Puente de Triana para ver encenderse la iluminación del río Guadalquivir y cruza a la calle Betis o al Paseo de Nuestra Señora de la O.",
+        "location": "Paseo de Cristóbal Colón / Puente de Isabel II (Triana – Arenal)",
+        "price": "Plan gratuito al aire libre",
+        "lat": 37.3862,
+        "lng": -6.0018,
         "image": "images/venues/sev-muelle-sal-triana.jpg",
-        "imageAlt": "El Puente de Isabel II (Puente de Triana) iluminado al atardecer sobre el río Guadalquivir",
-        "lat": 37.3858,
-        "lng": -6.0011
+        "imageAlt": "Puente de Isabel II (Puente de Triana) iluminado al anochecer sobre el río Guadalquivir en Sevilla"
       }
     ],
     "faqs": [
       {
-        "question": "¿A qué hora se celebra el Mercadillo de Pintores de la Plaza del Museo en Sevilla?",
-        "answer": "Se celebra todos los domingos del año (excepto meses de pleno verano) de 10:00 a 14:00 horas frente a la fachada principal del Museo de Bellas Artes."
+        "question": "¿Se puede visitar gratis el Archivo General de Indias en Sevilla durante el Puente del 12 de Octubre?",
+        "answer": "Sí, la entrada al Archivo General de Indias (en la Avenida de la Constitución, junto a la Catedral) es completamente libre y gratuita durante todo el año, incluidos los días del Puente de Octubre."
       },
       {
-        "question": "¿Es gratis entrar al Museo de Bellas Artes de Sevilla el fin de semana?",
-        "answer": "Sí, la entrada al Museo de Bellas Artes de Sevilla es gratuita para todos los ciudadanos de la Unión Europea tanto el sábado (de 9:00 a 21:00 h) como el domingo (de 9:00 a 15:00 h)."
+        "question": "¿Qué horario tiene el Mercadillo de Pintura y Arte de la Plaza del Museo?",
+        "answer": "Se celebra todos los domingos por la mañana de 10:00 a 14:00 h en la Plaza del Museo, justo delante de la puerta del Museo de Bellas Artes de Sevilla."
       }
     ]
   },
   {
     "id": "toledo-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Toledo (agenda del 9 al 11 de octubre)",
-    "metaTitle": "Qué Plan Hacer en Toledo este Fin de Semana (9 al 11 de octubre 2026) | Qué Plan Hoy",
-    "metaDescription": "¿Buscas qué plan hacer en Toledo este fin de semana del 9 al 11 de octubre de 2026? Mercado de artesanía en la Judería, subterráneos romanos gratis, senda del Tajo y miradores.",
+    "title": "Qué hacer este fin de semana en Toledo: FARCAMA y Puente de Octubre",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Toledo (9 al 12 Oct): FARCAMA y Museos Gratis",
+    "metaDescription": "Agenda oficial para este fin de semana y Puente del Pilar en Toledo (del 9 al 12 de octubre): feria de artesanía FARCAMA gratis en el Parque de la Vega, puertas abiertas el 12 de octubre en el Museo Sefardí y el Greco, y subterráneos romanos.",
     "city": "Toledo",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "9 al 11 de octubre de 2026",
+    "weekendDates": "9 al 12 de octubre",
     "readTime": "5 min",
     "publishedAt": "2026-10-03",
     "targetKeyword": "que plan hacer en toledo este fin de semana",
@@ -800,13 +755,13 @@
     "keywordDifficulty": "Muy Baja (12/100)",
     "image": "images/venues/tol-san-juan-reyes.jpg",
     "imageAlt": "Monasterio gótico de San Juan de los Reyes en la Judería de Toledo",
-    "excerpt": "Si te preguntas qué plan hacer en Toledo este fin de semana (del 9 al 11 de octubre de 2026): ruta por el patrimonio subterráneo gratuito, mercado de artesanía en la Judería, senda del Tajo con colores de otoño y los cobertizos al anochecer.",
-    "priceRange": "Gratis (0 € – 10 €)",
+    "excerpt": "Qué plan hacer en Toledo este fin de semana y Puente de Octubre (del 9 al 12 de octubre): visita gratuita a FARCAMA en el Parque de la Vega, puertas abiertas del 12 de octubre en la Sinagoga del Tránsito y el Museo del Greco, cuevas romanas y Senda del Tajo.",
+    "priceRange": "Gratis – 5 €",
     "neighborhoods": [
-      "Judería / San Juan de los Reyes",
-      "Cobertizos",
-      "Senda del Tajo",
-      "Zocodover"
+      "Parque de la Vega y Bisagra",
+      "Judería Mayor",
+      "Casco Histórico",
+      "Río Tajo"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -819,69 +774,58 @@
     },
     "sections": [
       {
-        "heading": "1. Ruta de otoño por la Senda Ecológica del Tajo desde el Puente de Alcántara al de San Martín (Gratis)",
-        "venue": "Senda Ecológica del Río Tajo (Tramo Alcántara – San Martín)",
-        "location": "Inicio en el Puente Romano de Alcántara (a 10 min a pie de la estación de tren Avant)",
-        "price": "Recorrido 100% gratuito",
-        "content": "El primer fin de semana de octubre es el mejor momento del año para recorrer a pie los 4 kilómetros del cañón del río Tajo bajo las murallas de Toledo: los álamos de la ribera empiezan a teñirse de dorado y caminarás junto a antiguos molinos medievales sin cruzarte con las multitudes del casco alto.",
-        "image": "images/venues/tol-senda-ecologica-tajo.jpg",
-        "imageAlt": "El río Tajo y el puente histórico de Alcántara al inicio de la Senda Ecológica de Toledo",
-        "lat": 39.8604,
-        "lng": -4.0177
+        "heading": "1. FARCAMA en el Parque de la Vega (del 7 al 12 de octubre): 150 artesanos, talleres en vivo y entrada gratuita",
+        "venue": "Parque de la Vega (Paseo de Merchán, junto a Puerta de Bisagra)",
+        "content": "El gran evento oficial del Puente del Pilar en Toledo es la Feria Regional de Artesanía de Castilla-La Mancha (FARCAMA), que este año celebra su edición de otoño del 7 al 12 de octubre en el recién rehabilitado Parque de la Vega (Paseo de Merchán), justo enfrente de la monumental Puerta de Bisagra y con acceso completamente gratuito de 11:00 a 21:00 h.\n\nReúne a más de 150 maestros artesanos de cerámica de Talavera y Puente del Arzobispo, damasquinado toledano, forja, cuchillería, cuero y vidrio soplado, además de demostraciones de torno alfarero en directo, talleres participativos y una zona gastronómica con foodtrucks entre los jardines.",
+        "location": "Paseo de Merchán / Parque de la Vega, junto a Puerta de Bisagra",
+        "price": "Entrada libre y gratuita a todo el recinto ferial (11:00 a 21:00 h)",
+        "lat": 39.8632,
+        "lng": -4.0258,
+        "image": "images/venues/tol-parque-la-vega-farcama.jpg",
+        "imageAlt": "Entorno amurallado de la Puerta de Bisagra y arbolado del Parque de la Vega en Toledo donde se celebra FARCAMA"
       },
       {
-        "heading": "2. Artesanía en la Judería y claustro gótico de San Juan de los Reyes",
-        "venue": "Plaza de San Juan de los Reyes y Paseo de San Cristóbal",
-        "location": "Calle de los Reyes Católicos, 17 (Barrio de la Judería)",
-        "price": "Paseo exterior gratis / Entrada al claustro: 4,00 €",
-        "content": "Sube desde el Puente de San Martín hasta la Judería para recorrer los talleres de damasquinado, cerámica y cuero en torno a San Juan de los Reyes y asómate al mirador del Paseo de San Cristóbal sobre los cigarrales.",
-        "image": "images/venues/tol-claustro-san-juan-reyes.jpg",
-        "imageAlt": "Galería y arcos históricos del patrimonio monumental de Toledo",
-        "lat": 39.8578,
-        "lng": -4.0315
-      },
-      {
-        "heading": "3. Los subterráneos romanos gratuitos del Consorcio de Toledo (Termas y Cuevas de Hércules)",
-        "venue": "Termas Romanas de Amador de los Ríos y Cuevas de Hércules",
-        "location": "Plaza Amador de los Ríos y Callejón de San Ginés, 3 (Centro Histórico)",
-        "price": "Entrada 100% gratuita (Viernes y sábado en horario de mañana y tarde)",
-        "content": "Poca gente sabe que el Consorcio de Toledo abre de forma totalmente gratuita las bóvedas subterráneas romanas del siglo I bajo el nivel de las calles medievales, incluyendo los depósitos hidráulicos de las míticas Cuevas de Hércules.",
-        "image": "images/venues/tol-cuevas-hercules-termas.jpg",
-        "imageAlt": "Muros y bóvedas subterráneas de las Termas Romanas de la Plaza de Amador de los Ríos en Toledo",
-        "lat": 39.8579,
-        "lng": -4.0246
-      },
-      {
-        "heading": "4. Domingo de museos gratis: Museo del Greco y Museo Sefardí (Sinagoga del Tránsito)",
-        "venue": "Museo del Greco y Sinagoga del Tránsito (Judería)",
-        "location": "Paseo del Tránsito, s/n (Judería de Toledo)",
-        "price": "Gratis sábados desde las 14:00 h y domingos toda la mañana",
-        "content": "Tanto el sábado a partir de las 14:00 h como el domingo por la mañana, los dos museos estatales más bellos de la Judería son completamente gratuitos, con sus jardines renacentistas y la impresionante yesería mudéjar de la Sinagoga del Tránsito.",
-        "image": "images/venues/tol-sinagoga-transito-greco.jpg",
-        "imageAlt": "Yeserías hebreas y artesonado mudéjar de la Sinagoga del Tránsito en la Judería de Toledo",
+        "heading": "2. Jornada de Puertas Abiertas del 12 de Octubre: Museo Sefardí (Sinagoga del Tránsito) y Museo del Greco (Gratis)",
+        "venue": "Museo Sefardí (Sinagoga del Tránsito) y Museo del Greco, Judería de Toledo",
+        "content": "Durante este puente tienes tres franjas para visitar completamente gratis los dos museos estatales más espectaculares de la Judería de Toledo: el sábado 10 a partir de las 14:00 h, el domingo 11 por la mañana y durante toda la jornada festiva del lunes 12 de octubre con motivo del Día de la Fiesta Nacional.\n\nPodrás admirar sin coste el artesonado mudéjar de madera de alerce y las yeserías hebreas del siglo XIV en la Gran Sala de Oración de la Sinagoga del Tránsito, y pasar justo al lado a la casa-palacio renacentista y los jardines con vistas al Tajo del Museo del Greco.",
+        "location": "Calle Samuel Leví y Paseo del Tránsito, Judería de Toledo",
+        "price": "Gratis sábado tarde, domingo y el festivo 12 de octubre (resto de horario 3 €)",
         "lat": 39.8557,
-        "lng": -4.0293
+        "lng": -4.0294,
+        "image": "images/venues/tol-sinagoga-transito-greco.jpg",
+        "imageAlt": "Artesonado mudéjar e inscripciones históricas del interior de la Sinagoga del Tránsito (Museo Sefardí) en Toledo"
       },
       {
-        "heading": "5. Dulces en el torno conventual de San Clemente y paseo nocturno por los Cobertizos",
-        "venue": "Convento de San Clemente y Cobertizos de Santo Domingo el Real",
-        "location": "Calle San Clemente, 1 y Plaza de Santo Domingo el Real",
-        "price": "Mazapán artesano desde 4,50 € / Paseo nocturno gratis",
-        "content": "Antes de que caiga la tarde, compra una cajita de mazapán recién horneado a través del torno de madera del Convento de San Clemente y espera al anochecer para cruzar los pasadizos techados del siglo XVI iluminados por faroles de hierro.",
-        "image": "images/venues/tol-convento-san-clemente.jpg",
-        "imageAlt": "Portada renacentista del histórico edificio de San Clemente en Toledo",
+        "heading": "3. Los subterráneos romanos gratuitos del Consorcio de Toledo: Termas Romanas y Cuevas de Hércules",
+        "venue": "Termas Romanas de Amador de los Ríos y Cuevas de Hércules (Consorcio de Toledo)",
+        "content": "En pleno centro histórico, el Consorcio de la Ciudad de Toledo abre de forma gratuita de martes a sábado (de 10:00 a 14:00 h y de 17:00 a 19:00 h) su red de espacios arqueológicos subterráneos bajo las calles medievales.\n\nNo te pierdas las monumentales cisternas hidráulicas romanas del siglo I de las Cuevas de Hércules (en el Callejón de San Ginés, envueltas en las leyendas visigodas del rey Don Rodrigo) ni los vestigios subterráneos de las Termas Romanas de la Plaza Amador de los Ríos.",
+        "location": "Plaza Amador de los Ríos y Callejón de San Ginés, 3, Casco Histórico",
+        "price": "Entrada libre y gratuita gestionada por el Consorcio de Toledo",
         "lat": 39.8588,
-        "lng": -4.0279
+        "lng": -4.0241,
+        "image": "images/venues/tol-cuevas-hercules-termas.jpg",
+        "imageAlt": "Galería subterránea abovedada de época romana en las Termas y Cuevas de Hércules de Toledo"
+      },
+      {
+        "heading": "4. Ruta de otoño por la Senda Ecológica del Tajo y mazapán en el torno del Convento de San Clemente",
+        "venue": "Senda Ecológica del Río Tajo y Convento de San Clemente",
+        "content": "Completa la escapada del puente bajando al sendero peatonal de la Senda Ecológica del Tajo entre el Puente de Alcántara y el Puente de San Martín: en octubre el cañón del río se tiñe de ocres y dorados y ofrece las mejores vistas de la roca de Toledo sin aglomeraciones.\n\nAl subir de nuevo hacia la zona conventual, acércate al Convento Imperial de San Clemente (donde se elaboró el primer mazapán documentado de la ciudad) para comprar dulces artesanos directamente a través de su antiguo torno de madera.",
+        "location": "Puente de Alcántara – Puente de San Martín y Calle San Clemente, 1",
+        "price": "Senda gratuita (cajita de mazapán artesano de torno desde 5 €)",
+        "lat": 39.8603,
+        "lng": -4.018,
+        "image": "images/venues/tol-senda-ecologica-tajo.jpg",
+        "imageAlt": "Puente medieval sobre el cañón del río Tajo en el recorrido de la Senda Ecológica de Toledo"
       }
     ],
     "faqs": [
       {
-        "question": "¿Qué monumentos son gratis en Toledo los sábados por la tarde y domingos?",
-        "answer": "El Museo del Greco y el Museo Sefardí (Sinagoga del Tránsito) son gratuitos los sábados desde las 14:00 h y los domingos de 10:00 a 15:00 h; además, el Museo de Santa Cruz y las Termas Romanas del Consorcio tienen acceso libre."
+        "question": "¿Dónde se celebra la feria de artesanía FARCAMA en Toledo este Puente de Octubre y cuánto cuesta?",
+        "answer": "FARCAMA se celebra del 7 al 12 de octubre en el Parque de la Vega (Paseo de Merchán, justo frente a la Puerta de Bisagra) en horario ininterrumpido de 11:00 a 21:00 h, y la entrada al recinto es totalmente gratuita."
       },
       {
-        "question": "¿Cuánto se tarda desde Madrid a Toledo para ir y volver en el día este fin de semana?",
-        "answer": "En el tren Avant de Renfe desde Madrid-Puerta de Atocha se tarda exactamente 33 minutos hasta la estación modernista de Toledo."
+        "question": "¿Qué museos de Toledo son gratis el 12 de octubre?",
+        "answer": "El 12 de octubre (Día de la Fiesta Nacional), así como el sábado desde las 14:00 h y el domingo por la mañana, tienen entrada gratuita los Museos Estatales de Toledo: el Museo Sefardí (Sinagoga del Tránsito) y el Museo del Greco en la Judería."
       }
     ]
   },
