@@ -549,7 +549,7 @@ def render_article_card(
 ) -> str:
   city_slug = CITIES.get(art["city"], {"slug": art["city"].lower()})["slug"]
   article_href = f"{root_prefix}{city_slug}/{art['slug']}/"
-  img_src = f"{root_prefix}{art['image'].lstrip('/')}"
+  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261010c"
   img_alt = art.get("imageAlt", art["title"])
   cat_label = art["category"]
   if art.get("weekendDates"):
@@ -1062,7 +1062,7 @@ def build_article_page(art: dict, all_articles: list):
       PUBLIC_DIR, city_slug, art["slug"], "index.html"
   )
   canonical_url = f"{SITE_URL}/{city_slug}/{art['slug']}/"
-  img_src = f"{root_prefix}{art['image'].lstrip('/')}"
+  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261010c"
   img_alt = art.get("imageAlt", art["title"])
   full_img_url = f"{SITE_URL}/{art['image'].lstrip('/')}"
   is_single_plan = art.get("articleType") == "single_plan"
@@ -1178,7 +1178,7 @@ def build_article_page(art: dict, all_articles: list):
         "lat": sec.get("lat", city_info.get("lat", 40.4168)),
         "lng": sec.get("lng", city_info.get("lng", -3.7038)),
         "image": (
-            f"{root_prefix}{sec['image'].lstrip('/')}"
+            f"{root_prefix}{sec['image'].lstrip('/')}?v=20261010c"
             if sec.get("image")
             else img_src
         ),
@@ -1271,7 +1271,7 @@ def build_article_page(art: dict, all_articles: list):
     if sec_img:
       sec_img_html = f"""
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="{root_prefix}{html.escape(sec_img)}" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="{root_prefix}{html.escape(sec_img)}?v=20261010c" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             {html.escape(sec_alt)}
           </figcaption>

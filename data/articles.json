@@ -394,12 +394,12 @@
     "keywordDifficulty": "Baja (18/100)",
     "image": "images/venues/bcn-mercat-del-born.jpg",
     "imageAlt": "Estructura histórica de hierro y cristal del antiguo Mercat del Born en Barcelona",
-    "excerpt": "Los planes reales para disfrutar de Barcelona este fin de semana y Puente de Octubre (del 9 al 12 de octubre): Festa Major de Sarrià, jornada de puertas abiertas en el Palau de la Capitania General, ambiente en Montjuïc y los Jardins de Laribal.",
+    "excerpt": "Agenda real en Barcelona del 9 al 12 de octubre: Festa Major de Sarrià (castellers y correfoc), puertas abiertas en el Palau de la Capitania General y Oktoberfest en Montjuïc.",
     "priceRange": "Gratis – 12 €",
     "neighborhoods": [
-      "Sarrià",
-      "Ciutat Vella y Port Vell",
-      "Montjuïc"
+      "Sarrià (Plaça del Consell de la Vila)",
+      "Passeig de Colom y Ciutat Vella",
+      "Montjuïc (Plaça d'Espanya)"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -443,17 +443,6 @@
         "lng": 2.1512,
         "image": "images/venues/bcn-fira-montjuic-torres.jpg",
         "imageAlt": "Las Cuatro Columnas, explanada de Montjuïc y Torres Venecianas desde el mirador del Palau Nacional en Barcelona"
-      },
-      {
-        "heading": "4. Paseo tranquilo por los Jardins de Laribal y el anfiteatro oculto del Teatre Grec (Gratis)",
-        "venue": "Jardins de Laribal y Teatre Grec (Montjuïc)",
-        "content": "Si después de pasar por la explanada de Montjuïc buscas un rincón en calma lejos de las terrazas masificadas, adéntrate por las escalinatas de cerámica azul, albercas y fuentes escalonadas que diseñó Jean-Claude Nicolas Forestier en los Jardins de Laribal.\n\nEl sendero desemboca en la rosaleda y el anfiteatro de piedra del Teatre Grec, cuyos jardines permanecen abiertos de forma gratuita durante todo el fin de semana como uno de los refugios más fotogénicos de Barcelona.",
-        "location": "Passeig de Santa Madrona, Montjuïc (Metro Espanya L1/L3 o Poble Sec L3)",
-        "price": "Entrada libre y gratuita (de 10:00 h al atardecer)",
-        "lat": 41.3698,
-        "lng": 2.1597,
-        "image": "images/venues/bcn-jardins-de-laribal-y-teatre--uniq.jpg",
-        "imageAlt": "Pérgolas, vegetación y escalinatas de piedra en los Jardins de Laribal de Montjuïc en Barcelona"
       }
     ],
     "faqs": [
@@ -484,13 +473,12 @@
     "keywordDifficulty": "Baja (16/100)",
     "image": "images/venues/vlc-palau-generalitat.jpg",
     "imageAlt": "Fachada gótica y torre del Palau de la Generalitat Valenciana en el barrio del Carmen",
-    "excerpt": "Valencia vive su puente grande del 9 d'Octubre (del 9 al 12 de octubre): Procesión Cívica de la Reial Senyera, Entrada de Moros y Cristianos por la calle de la Paz, puertas abiertas en el Palau de la Generalitat y Mercado Medieval en el Jardín del Turia.",
+    "excerpt": "Agenda real en Valencia del 9 al 12 de octubre: puertas abiertas en el Palau de la Generalitat, Entrada de Moros y Cristianos por la Calle de la Paz y Mercado Medieval en el Jardín del Turia.",
     "priceRange": "Gratis – 6 €",
     "neighborhoods": [
-      "Plaza del Ayuntamiento",
-      "Barrio del Carmen",
-      "Jardín del Turia",
-      "L'Albufera"
+      "Ciutat Vella y Plaza de Manises",
+      "Calle de la Paz y Plaza del Ayuntamiento",
+      "Jardín del Turia (Puente de las Flores)"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -534,17 +522,6 @@
         "lng": -0.3656,
         "image": "images/venues/vlc-jardin-del-turia.jpg",
         "imageAlt": "Puente de las Flores y Jardín del Turia en Valencia donde se instala el Mercado Medieval del 9 d'Octubre"
-      },
-      {
-        "heading": "4. Puesta de sol de octubre desde el embarcadero de la Gola de Pujol en L'Albufera",
-        "venue": "Mirador y Embarcadero de la Gola de Pujol (Parque Natural de L'Albufera)",
-        "content": "Si el sábado o el domingo del puente te apetece escapar un par de horas del bullicio de los desfiles del centro, súbete en el centro de Valencia a los autobuses rojos de la EMT (líneas 24 o 25 desde Porta de la Mar / Navarro Reverter) hasta el embarcadero de madera de la Gola de Pujol.\n\nEn octubre el sol se pone sobre las aguas tranquilas de la laguna hacia las 19:35 h tiñendo el cielo de tonos cobrizos y violetas con una temperatura suave ideal para pasear por la pasarela o dar una vuelta en barca tradicional (albuferenc).",
-        "location": "Carretera de El Saler, Parque Natural de L'Albufera (Bus EMT líneas 24 y 25)",
-        "price": "Mirador gratuito (billete de autobús urbano 2 € / paseo en barca opcional 6 €)",
-        "lat": 39.3422,
-        "lng": -0.3188,
-        "image": "images/venues/vlc-mirador-y-embarcadero-de-la--uniq.jpg",
-        "imageAlt": "Embarcadero de madera rodeado de vegetación en la laguna del Parque Natural de L'Albufera de Valencia"
       }
     ],
     "faqs": [
@@ -556,7 +533,8 @@
         "question": "¿Dónde está instalado el Mercado Medieval del 9 d'Octubre en Valencia?",
         "answer": "El Mercado Medieval oficial permanece abierto durante todo el puente (hasta el 12 de octubre) en el Jardín del Turia, en el tramo situado entre el Puente de la Exposición y el Puente de las Flores (Metro Alameda)."
       }
-    ]
+    ],
+    "QuickSummary": "3 planes clave de la programación oficial del Puente del 9 d'Octubre en Valencia (del 9 al 12 de octubre), sin planes de relleno."
   },
   {
     "id": "barcelona-plan-unico-laberinto-horta-a-fondo",
@@ -664,13 +642,11 @@
     "keywordDifficulty": "Muy Baja (15/100)",
     "image": "images/venues/sev-plaza-del-museo.jpg",
     "imageAlt": "Plaza del Museo y fachada del Museo de Bellas Artes de Sevilla rodeada de arbolado",
-    "excerpt": "Qué plan hacer en Sevilla este fin de semana y Puente del Pilar (del 9 al 12 de octubre): visitas gratuitas al Archivo General de Indias por el 12 de Octubre, Mercadillo de Arte del domingo en la Plaza del Museo, exposiciones en la Casa de las Sirenas y atardecer en el Guadalquivir.",
+    "excerpt": "Los 2 planes clave de este fin de semana en Sevilla (del 9 al 12 de octubre): programación especial del 12 de Octubre en el Archivo General de Indias y el Mercadillo del Arte del domingo en la Plaza del Museo.",
     "priceRange": "Gratis – 10 €",
     "neighborhoods": [
-      "Avenida de la Constitución",
-      "Plaza del Museo",
-      "Alameda y Calle Feria",
-      "Triana"
+      "Archivo de Indias y Catedral",
+      "Plaza del Museo"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -703,28 +679,6 @@
         "lng": -5.9996,
         "image": "images/venues/sev-plaza-del-museo-bellas-artes.jpg",
         "imageAlt": "Claustro ajardinado del Museo de Bellas Artes de Sevilla junto a la Plaza del Museo"
-      },
-      {
-        "heading": "3. Aperitivo de otoño en la Alameda de Hércules y exposiciones gratis en la Casa de las Sirenas",
-        "venue": "Alameda de Hércules y Palacete de la Casa de las Sirenas",
-        "content": "Aprovecha los 25 grados suaves de este puente en Sevilla para acercarte a mediodía al entorno de la Calle Feria y la Alameda de Hércules. Antes de sentarte al sol en las terrazas bajo los álamos o tapear en el histórico Mercado de Feria, entra gratis al Centro Cívico Casa de las Sirenas.\n\nEste palacete recreativo del siglo XIX inspirado en un hôtel particulier francés conserva sus rejas originales de las esfinges, sus jardines y exposiciones temporales de fotografía e ilustración local de entrada libre.",
-        "location": "Alameda de Hércules, 30, Casco Antiguo",
-        "price": "Entrada libre al palacete y exposiciones (caña y tapa en Feria desde 4 €)",
-        "lat": 37.3988,
-        "lng": -5.9942,
-        "image": "images/venues/sev-alameda-hercules-columnas.jpg",
-        "imageAlt": "Paseo arbolado y columnas romanas de la Alameda de Hércules en Sevilla"
-      },
-      {
-        "heading": "4. Procesiones de Gloria de octubre y puesta de sol desde el Muelle de la Sal junto al Puente de Triana",
-        "venue": "Muelle de la Sal (Puente de Isabel II) y Paseo de Nuestra Señora de la O",
-        "content": "El Puente del Pilar coincide en Sevilla con uno de los fines de semana grandes del calendario de procesiones de Gloria (como las salidas vespertinas en torno a la festividad de la Virgen del Rosario y del Pilar por las calles del casco antiguo acompañadas de bandas de música).\n\nAl caer la tarde hacia las 19:50 h, baja hasta las gradas del Muelle de la Sal junto al Puente de Triana para ver encenderse la iluminación del río Guadalquivir y cruza a la calle Betis o al Paseo de Nuestra Señora de la O.",
-        "location": "Paseo de Cristóbal Colón / Puente de Isabel II (Triana – Arenal)",
-        "price": "Plan gratuito al aire libre",
-        "lat": 37.3862,
-        "lng": -6.0018,
-        "image": "images/venues/sev-muelle-sal-triana.jpg",
-        "imageAlt": "Puente de Isabel II (Puente de Triana) iluminado al anochecer sobre el río Guadalquivir en Sevilla"
       }
     ],
     "faqs": [
@@ -755,13 +709,11 @@
     "keywordDifficulty": "Muy Baja (12/100)",
     "image": "images/venues/tol-san-juan-reyes.jpg",
     "imageAlt": "Monasterio gótico de San Juan de los Reyes en la Judería de Toledo",
-    "excerpt": "Qué plan hacer en Toledo este fin de semana y Puente de Octubre (del 9 al 12 de octubre): visita gratuita a FARCAMA en el Parque de la Vega, puertas abiertas del 12 de octubre en la Sinagoga del Tránsito y el Museo del Greco, cuevas romanas y Senda del Tajo.",
+    "excerpt": "Los 2 grandes planes de este fin de semana en Toledo (del 9 al 12 de octubre): entrada gratuita a FARCAMA en el Parque de la Vega y Jornada de Puertas Abiertas del 12 de Octubre en el Museo Sefardí y el Museo del Greco.",
     "priceRange": "Gratis – 5 €",
     "neighborhoods": [
-      "Parque de la Vega y Bisagra",
-      "Judería Mayor",
-      "Casco Histórico",
-      "Río Tajo"
+      "Parque de la Vega y Puerta de Bisagra",
+      "Judería de Toledo"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -794,28 +746,6 @@
         "lng": -4.0294,
         "image": "images/venues/tol-sinagoga-transito-greco.jpg",
         "imageAlt": "Artesonado mudéjar e inscripciones históricas del interior de la Sinagoga del Tránsito (Museo Sefardí) en Toledo"
-      },
-      {
-        "heading": "3. Los subterráneos romanos gratuitos del Consorcio de Toledo: Termas Romanas y Cuevas de Hércules",
-        "venue": "Termas Romanas de Amador de los Ríos y Cuevas de Hércules (Consorcio de Toledo)",
-        "content": "En pleno centro histórico, el Consorcio de la Ciudad de Toledo abre de forma gratuita de martes a sábado (de 10:00 a 14:00 h y de 17:00 a 19:00 h) su red de espacios arqueológicos subterráneos bajo las calles medievales.\n\nNo te pierdas las monumentales cisternas hidráulicas romanas del siglo I de las Cuevas de Hércules (en el Callejón de San Ginés, envueltas en las leyendas visigodas del rey Don Rodrigo) ni los vestigios subterráneos de las Termas Romanas de la Plaza Amador de los Ríos.",
-        "location": "Plaza Amador de los Ríos y Callejón de San Ginés, 3, Casco Histórico",
-        "price": "Entrada libre y gratuita gestionada por el Consorcio de Toledo",
-        "lat": 39.8588,
-        "lng": -4.0241,
-        "image": "images/venues/tol-cuevas-hercules-termas.jpg",
-        "imageAlt": "Galería subterránea abovedada de época romana en las Termas y Cuevas de Hércules de Toledo"
-      },
-      {
-        "heading": "4. Ruta de otoño por la Senda Ecológica del Tajo y mazapán en el torno del Convento de San Clemente",
-        "venue": "Senda Ecológica del Río Tajo y Convento de San Clemente",
-        "content": "Completa la escapada del puente bajando al sendero peatonal de la Senda Ecológica del Tajo entre el Puente de Alcántara y el Puente de San Martín: en octubre el cañón del río se tiñe de ocres y dorados y ofrece las mejores vistas de la roca de Toledo sin aglomeraciones.\n\nAl subir de nuevo hacia la zona conventual, acércate al Convento Imperial de San Clemente (donde se elaboró el primer mazapán documentado de la ciudad) para comprar dulces artesanos directamente a través de su antiguo torno de madera.",
-        "location": "Puente de Alcántara – Puente de San Martín y Calle San Clemente, 1",
-        "price": "Senda gratuita (cajita de mazapán artesano de torno desde 5 €)",
-        "lat": 39.8603,
-        "lng": -4.018,
-        "image": "images/venues/tol-senda-ecologica-tajo.jpg",
-        "imageAlt": "Puente medieval sobre el cañón del río Tajo en el recorrido de la Senda Ecológica de Toledo"
       }
     ],
     "faqs": [
