@@ -1198,7 +1198,10 @@ def build_article_page(art: dict, all_articles: list):
       if is_single_plan
       else "En este artículo"
   )
-  toc_html = f"""
+  toc_html = (
+      ""
+      if len(toc_items) <= 1
+      else f"""
     <nav class="article-toc" aria-label="Índice del artículo">
       <div class="article-toc-header">
         <span class="article-toc-title">{toc_heading}</span>
@@ -1210,6 +1213,8 @@ def build_article_page(art: dict, all_articles: list):
         {''.join(toc_items)}
       </ol>
     </nav>"""
+  )
+
 
   map_title = (
       "🗺️ Mapa interactivo del recorrido"

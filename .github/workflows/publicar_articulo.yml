@@ -4,10 +4,10 @@ on:
   push:
     branches: ["main"]
   schedule:
-    # Todos los miércoles a las 09:00 AM (Hora España): publica los planes de "Este Fin de Semana" de las 5 ciudades
+    # Martes a las 09:00 AM (Hora España, tras el puente): publica el reportaje extenso de Las Barrancas de Burujón en Toledo y en Madrid
+    - cron: '0 7 * * 2'
+    # Todos los miércoles a las 09:00 AM (Hora España): actualiza los planes de "Este Fin de Semana" de las 5 ciudades
     - cron: '0 7 * * 3'
-    # Domingos a las 09:00 AM (Hora España): publica el siguiente artículo atemporal de la cola SEO
-    - cron: '0 7 * * 0'
   workflow_dispatch: # También permite pulsarlo manualmente con 1 clic desde GitHub
 
 permissions:
@@ -31,10 +31,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Ejecutar el Agente SEO (Miércoles 5 Ciudades + Cola SEO)
+      - name: Ejecutar el Agente SEO (Martes Barrancas + Miércoles 5 Ciudades)
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
-          if [ "${{ github.event.schedule }}" = "0 7 * * 3" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "${{ github.event.schedule }}" = "0 7 * * 2" ]; then
+            python3 agent/seo_agent.py --tuesday-barrancas
+          elif [ "${{ github.event.schedule }}" = "0 7 * * 3" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             python3 agent/seo_agent.py --wednesday-all-cities
           else
             python3 agent/seo_agent.py --next
@@ -42,8 +44,9 @@ jobs:
           git config user.name "Agente SEO HoyQuePlan"
           git config user.email "agente@queplanhoy.es"
           git add data/ public/
-          git commit -m "chore(seo): publicar planes de fin de semana en las 5 ciudades" || echo "Sin cambios"
+          git commit -m "chore(seo): publicar artículos programados en QuePlanHoy" || echo "Sin cambios"
           git push
+
 
       - name: Configurar GitHub Pages (Hosting 0 €/mes)
         uses: actions/configure-pages@v5
