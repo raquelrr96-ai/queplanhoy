@@ -18,6 +18,12 @@ class RutaSecretaHandler(SimpleHTTPRequestHandler):
   def __init__(self, *args, **kwargs):
     super().__init__(*args, directory=PUBLIC_DIR, **kwargs)
 
+  def end_headers(self):
+    self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+    self.send_header("Pragma", "no-cache")
+    self.send_header("Expires", "0")
+    super().end_headers()
+
   def _send_json(self, payload, status=200):
     raw = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     self.send_response(status)
@@ -57,7 +63,8 @@ class RutaSecretaHandler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
   port = int(os.environ.get("PORT", "8090"))
   articles = seo_agent.load_json(seo_agent.ARTICLES_FILE)
-  seo_agent.regenerate_sitemap(articles)
+  seo_agent.build_site.regenerate_sitemap(articles)
   server = HTTPServer(("0.0.0.0", port), RutaSecretaHandler)
   print(f"Servidor RutaSecreta.es activo en http://raquelrobles.c.googlers.com:{port}")
   server.serve_forever()
+

@@ -1502,6 +1502,33 @@ def build_article_page(art: dict, all_articles: list):
   with open(os.path.join(redirect_dir, "index.html"), "w", encoding="utf-8") as f:
     f.write(redirect_html)
 
+  if art["slug"] == f"planes-este-fin-de-semana-{city_slug}-que-hacer-hoy":
+    legacy_slug = f"planes-este-fin-de-semana-{city_slug}-9-al-11-de-octubre-de-2026"
+    bust_url = f"{canonical_url}?v=20261010c"
+    leg_redirect_html = f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>{html.escape(art['metaTitle'])}</title>
+  <link rel="canonical" href="{canonical_url}" />
+  <meta name="robots" content="noindex, follow" />
+  <meta http-equiv="refresh" content="0; url={bust_url}" />
+  <script>window.location.replace({json.dumps(bust_url)});</script>
+</head>
+<body>
+  <p>Redirigiendo a <a href="{bust_url}">{html.escape(art['title'])}</a>...</p>
+</body>
+</html>
+"""
+    for leg_dir in (
+        os.path.join(PUBLIC_DIR, legacy_slug),
+        os.path.join(PUBLIC_DIR, city_slug, legacy_slug),
+    ):
+      os.makedirs(leg_dir, exist_ok=True)
+      with open(os.path.join(leg_dir, "index.html"), "w", encoding="utf-8") as f:
+        f.write(leg_redirect_html)
+
+
 
 def build_map_page(articles: list):
   """Genera /mapa/index.html con todos los planes geolocalizados y redirección directa a Google Maps."""

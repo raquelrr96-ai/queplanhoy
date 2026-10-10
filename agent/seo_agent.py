@@ -778,44 +778,9 @@ def regenerate_sitemap(
     articles: list, base_url: str = "https://queplanhoy.es"
 ):
   """Genera automáticamente public/sitemap.xml para las 5 ciudades y todos los artículos."""
-  today = date.today().isoformat()
-  urls = [
-      "  <url>\n"
-      f"    <loc>{base_url}/</loc>\n"
-      f"    <lastmod>{today}</lastmod>\n"
-      "    <changefreq>daily</changefreq>\n"
-      "    <priority>1.0</priority>\n"
-      "  </url>"
-  ]
-  for city in ["madrid", "barcelona", "valencia", "sevilla", "toledo"]:
-    urls.append(
-        "  <url>\n"
-        f"    <loc>{base_url}/ciudad/{city}</loc>\n"
-        f"    <lastmod>{today}</lastmod>\n"
-        "    <changefreq>weekly</changefreq>\n"
-        "    <priority>0.9</priority>\n"
-        "  </url>"
-    )
-  for art in articles:
-    pub = art.get("publishedAt", today)
-    slug = art.get("slug", art.get("id"))
-    urls.append(
-        "  <url>\n"
-        f"    <loc>{base_url}/planes/{slug}</loc>\n"
-        f"    <lastmod>{pub}</lastmod>\n"
-        "    <changefreq>monthly</changefreq>\n"
-        "    <priority>0.8</priority>\n"
-        "  </url>"
-    )
-  xml_content = (
-      '<?xml version="1.0" encoding="UTF-8"?>\n'
-      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-      + "\n".join(urls)
-      + "\n</urlset>\n"
-  )
-  os.makedirs(os.path.dirname(SITEMAP_FILE), exist_ok=True)
-  with open(SITEMAP_FILE, "w", encoding="utf-8") as f:
-    f.write(xml_content)
+  del base_url
+  build_site.regenerate_sitemap(articles)
+
 
 
 MONTHS_ES = {
@@ -956,9 +921,9 @@ def generate_seo_article(
         or "fin de semana" in keyword.lower()
         or "que hacer hoy" in keyword.lower()
     ):
-      live_events = fetch_live_weekend_events(city, max_items=2)
+      live_events = fetch_live_weekend_events(city, max_items=3)
       if live_events:
-        raw_venues = (live_events + raw_venues)[:5]
+        raw_venues = live_events
 
     sections = []
     for idx, v in enumerate(raw_venues, start=1):
@@ -1121,62 +1086,64 @@ def run_next_from_queue() -> dict:
 
 
 def run_wednesday_weekend_all_cities() -> list:
-  """Publica todos los miércoles la guía 'Este Fin de Semana' para las 5 ciudades
+  """Publica o actualiza todos los miércoles la guía 'Este Fin de Semana' para las 5 ciudades
 
-  (Madrid, Barcelona, Valencia, Sevilla y Toledo) con las fechas exactas del
-  viernes al domingo entrante y la agenda cultural en vivo de cada ciudad.
+  (Madrid, Barcelona, Valencia, Sevilla y Toledo) manteniendo la URL canónica
+  planes-este-fin-de-semana-<ciudad>-que-hacer-hoy sin duplicar artículos ni
+  añadir planes de relleno.
   """
   cities = ["Madrid", "Barcelona", "Valencia", "Sevilla", "Toledo"]
   weekend_dates = get_current_weekend_dates_es()
   existing_articles = load_json(ARTICLES_FILE)
   published = []
-
-  # Recorremos en orden inverso para que al insertar en posición 0 queden:
-  # Madrid, Barcelona, Valencia, Sevilla, Toledo
+  today_str = date.today().isoformat()
   weekend_start = weekend_dates.split(" al ")[0] + " al "
-  for city in reversed(cities):
-    already_exists = any(
-        a.get("city") == city
-        and a.get("category") == "Este Fin de Semana"
-        and (
-            a.get("weekendDates") == weekend_dates
-            or str(a.get("weekendDates", "")).startswith(weekend_start)
-        )
-        for a in existing_articles
-    )
-    if already_exists:
-      for a in existing_articles:
-        if (
-            a.get("city") == city
-            and a.get("category") == "Este Fin de Semana"
-            and (
-                a.get("weekendDates") == weekend_dates
-                or str(a.get("weekendDates", "")).startswith(weekend_start)
-            )
-        ):
-          published.append(a)
-          break
-      continue
 
-    keyword = (
-        f"planes este fin de semana {city.lower()}"
-        f" {slugify(weekend_dates).replace('-', ' ')}"
-    )
-    suggested_title = (
-        f"Qué hacer este fin de semana en {city} (agenda del {weekend_dates})"
-    )
-    art = generate_seo_article(
-        city=city,
-        category="Este Fin de Semana",
-        keyword=keyword,
-        suggested_title=suggested_title,
-        search_volume="8.400 búsquedas/mes",
-        difficulty="Baja (18/100)",
-    )
-    published.append(art)
+  for city in cities:
+    canonical_slug = f"planes-este-fin-de-semana-{city.lower()}-que-hacer-hoy"
+    target_art = None
+    for a in existing_articles:
+      if a.get("slug") == canonical_slug or (
+          a.get("city") == city and a.get("category") == "Este Fin de Semana"
+      ):
+        target_art = a
+        break
 
+    if target_art:
+      cur_dates = str(target_art.get("weekendDates", ""))
+      if cur_dates != weekend_dates and not cur_dates.startswith(weekend_start):
+        target_art["weekendDates"] = weekend_dates
+        target_art["publishedAt"] = today_str
+        live_events = fetch_live_weekend_events(city, max_items=3)
+        if live_events:
+          default_coords = {
+              "Madrid": (40.4168, -3.7038),
+              "Barcelona": (41.3985, 2.1615),
+              "Valencia": (39.4699, -0.3763),
+              "Sevilla": (37.3891, -5.9845),
+              "Toledo": (39.8581, -4.0226),
+          }.get(city, (40.4168, -3.7038))
+          kb = CITY_KNOWLEDGE_BASE[city]
+          target_art["sections"] = [
+              {
+                  "heading": f"{idx}. {v['name']}",
+                  "venue": v["name"],
+                  "location": v["location"],
+                  "price": v["price"],
+                  "content": v["desc"],
+                  "lat": v.get("lat", round(default_coords[0] + idx * 0.002, 4)),
+                  "lng": v.get("lng", round(default_coords[1] + idx * 0.002, 4)),
+                  "image": v.get("image", kb["image"]),
+                  "imageAlt": v.get("imageAlt", v["name"]),
+              }
+              for idx, v in enumerate(live_events, start=1)
+          ]
+      published.append(target_art)
+
+  save_json(ARTICLES_FILE, existing_articles)
   build_site.build_all()
-  return list(reversed(published))
+  return published
+
 
 
 if __name__ == "__main__":
