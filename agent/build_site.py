@@ -555,7 +555,7 @@ def render_article_card(
 ) -> str:
   city_slug = CITIES.get(art["city"], {"slug": art["city"].lower()})["slug"]
   article_href = f"{root_prefix}{city_slug}/{art['slug']}/"
-  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261010c"
+  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261015a"
   img_alt = art.get("imageAlt", art["title"])
   cat_label = art["category"]
   if art.get("weekendDates"):
@@ -1068,7 +1068,7 @@ def build_article_page(art: dict, all_articles: list):
       PUBLIC_DIR, city_slug, art["slug"], "index.html"
   )
   canonical_url = f"{SITE_URL}/{city_slug}/{art['slug']}/"
-  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261010c"
+  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261015a"
   img_alt = art.get("imageAlt", art["title"])
   full_img_url = f"{SITE_URL}/{art['image'].lstrip('/')}"
   is_single_plan = art.get("articleType") == "single_plan"
@@ -1184,7 +1184,7 @@ def build_article_page(art: dict, all_articles: list):
         "lat": sec.get("lat", city_info.get("lat", 40.4168)),
         "lng": sec.get("lng", city_info.get("lng", -3.7038)),
         "image": (
-            f"{root_prefix}{sec['image'].lstrip('/')}?v=20261010c"
+            f"{root_prefix}{sec['image'].lstrip('/')}?v=20261015a"
             if sec.get("image")
             else img_src
         ),
@@ -1280,7 +1280,7 @@ def build_article_page(art: dict, all_articles: list):
     if sec_img:
       sec_img_html = f"""
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="{root_prefix}{html.escape(sec_img)}?v=20261010c" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="{root_prefix}{html.escape(sec_img)}?v=20261015a" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             {html.escape(sec_alt)}
           </figcaption>
@@ -1513,8 +1513,12 @@ def build_article_page(art: dict, all_articles: list):
     f.write(redirect_html)
 
   if art["slug"] == f"planes-este-fin-de-semana-{city_slug}-que-hacer-hoy":
-    legacy_slug = f"planes-este-fin-de-semana-{city_slug}-9-al-11-de-octubre-de-2026"
-    bust_url = f"{canonical_url}?v=20261010c"
+    legacy_slugs = [
+        f"planes-este-fin-de-semana-{city_slug}-9-al-11-de-octubre-de-2026"
+    ]
+    if city_slug == "madrid":
+      legacy_slugs.append("planes-puente-octubre-madrid-12-octubre-gratis")
+    bust_url = f"{canonical_url}?v=20261015a"
     leg_redirect_html = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -1530,13 +1534,16 @@ def build_article_page(art: dict, all_articles: list):
 </body>
 </html>
 """
-    for leg_dir in (
-        os.path.join(PUBLIC_DIR, legacy_slug),
-        os.path.join(PUBLIC_DIR, city_slug, legacy_slug),
-    ):
-      os.makedirs(leg_dir, exist_ok=True)
-      with open(os.path.join(leg_dir, "index.html"), "w", encoding="utf-8") as f:
-        f.write(leg_redirect_html)
+    for legacy_slug in legacy_slugs:
+      for leg_dir in (
+          os.path.join(PUBLIC_DIR, legacy_slug),
+          os.path.join(PUBLIC_DIR, city_slug, legacy_slug),
+      ):
+        os.makedirs(leg_dir, exist_ok=True)
+        with open(
+            os.path.join(leg_dir, "index.html"), "w", encoding="utf-8"
+        ) as f:
+          f.write(leg_redirect_html)
 
 
 
@@ -2061,9 +2068,115 @@ def regenerate_rss_feed(articles: list):
     f.write(rss_content)
 
 
+def validate_articles_quality(articles: list):
+  """Valida de forma estricta la calidad editorial y técnica de todos los artículos antes de generar la web.
+
+  Bloquea el build con ValueError si detecta:
+  - Titulares repetidos o textos automáticos tipo 'Agenda en vivo', 'Qué hacer este fin de semana en...' dentro de secciones.
+  - Subtítulos (heading), lugares (venue) o pies de foto (imageAlt) idénticos o duplicados.
+  - Imágenes inexistentes, corruptas (<15 KB) o repetidas (mismo archivo o mismo hash MD5) dentro de un mismo artículo.
+  """
+  import hashlib
+  import re
+
+  errors = []
+  forbidden_phrases = [
+      "agenda en vivo",
+      "planes de emergencia",
+      "abre pin en google maps",
+      "qué hacer este fin de semana en",
+      "que hacer este fin de semana en",
+      "los mejores planes para disfrutar",
+  ]
+
+  for art in articles:
+    slug = art.get("slug", "<sin-slug>")
+    title = art.get("title", "").strip()
+    if not title or len(title) < 18:
+      errors.append(f"[{slug}] Título demasiado corto o vacío: {title!r}")
+
+    hero_img = art.get("image", "").lstrip("/")
+    hero_abs = os.path.join(PUBLIC_DIR, hero_img)
+    if not hero_img or not os.path.exists(hero_abs):
+      errors.append(f"[{slug}] Imagen principal no existe: {hero_img!r}")
+    elif os.path.getsize(hero_abs) < 15000:
+      errors.append(f"[{slug}] Imagen principal demasiado pequeña (<15 KB): {hero_img!r}")
+
+    sections = art.get("sections", [])
+    if not sections:
+      errors.append(f"[{slug}] El artículo no tiene ninguna sección.")
+      continue
+
+    seen_headings = set()
+    seen_venues = set()
+    seen_sec_imgs = set()
+    seen_sec_md5 = set()
+
+    for idx, sec in enumerate(sections, start=1):
+      h = sec.get("heading", "").strip()
+      v = sec.get("venue", "").strip()
+      alt = sec.get("imageAlt", "").strip()
+      content = sec.get("content", "").strip()
+      s_img = sec.get("image", "").lstrip("/")
+
+      h_clean = re.sub(r"^\d+\.\s*", "", h).strip().lower()
+      v_low = v.lower()
+      alt_low = alt.lower()
+
+      for phrase in forbidden_phrases:
+        if phrase in h.lower() or phrase in v_low or phrase in content.lower() or phrase in alt_low:
+          errors.append(
+              f"[{slug} · Sec {idx}] Frase prohibida o titular genérico detectado ({phrase!r}) en heading/venue/content."
+          )
+
+      if h_clean in seen_headings:
+        errors.append(f"[{slug} · Sec {idx}] Subtítulo (heading) repetido: {h!r}")
+      seen_headings.add(h_clean)
+
+      if v_low in seen_venues:
+        errors.append(f"[{slug} · Sec {idx}] Nombre de lugar (venue) repetido: {v!r}")
+      seen_venues.add(v_low)
+
+      if alt_low and (alt_low == h.lower() or alt_low == h_clean or alt_low == v_low):
+        errors.append(
+            f"[{slug} · Sec {idx}] El pie de foto (imageAlt) repite exactamente el título o venue: {alt!r}"
+        )
+
+      if len(content) < 140:
+        errors.append(
+            f"[{slug} · Sec {idx}] Contenido demasiado breve ({len(content)} caracteres)."
+        )
+
+      if not s_img:
+        errors.append(f"[{slug} · Sec {idx}] Falta imagen en la sección.")
+      else:
+        s_abs = os.path.join(PUBLIC_DIR, s_img)
+        if not os.path.exists(s_abs):
+          errors.append(f"[{slug} · Sec {idx}] Imagen no existe en disco: {s_img!r}")
+        else:
+          if os.path.getsize(s_abs) < 15000:
+            errors.append(f"[{slug} · Sec {idx}] Imagen corrupta o <15 KB: {s_img!r}")
+          with open(s_abs, "rb") as fp:
+            md5_val = hashlib.md5(fp.read()).hexdigest()
+          if s_img in seen_sec_imgs or md5_val in seen_sec_md5:
+            errors.append(
+                f"[{slug} · Sec {idx}] Imagen repetida dentro del mismo artículo: {s_img!r}"
+            )
+          seen_sec_imgs.add(s_img)
+          seen_sec_md5.add(md5_val)
+
+  if errors:
+    err_msg = "\n".join(f"  - {e}" for e in errors)
+    raise ValueError(
+        f"[BLOQUEO DE CALIDAD EDITORIAL] Se encontraron {len(errors)} errores en articles.json:\n{err_msg}"
+    )
+
+
 def build_all():
   with open(ARTICLES_FILE, "r", encoding="utf-8") as f:
     articles = json.load(f)
+
+  validate_articles_quality(articles)
 
   build_listing_page(
       articles=articles,

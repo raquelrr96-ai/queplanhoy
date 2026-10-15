@@ -542,50 +542,6 @@ CATEGORY_ICONS = {
 }
 
 
-def fetch_live_weekend_events(city: str, max_items: int = 2) -> list:
-  """Consulta en tiempo real Google News España (RSS) sobre planes, ferias y mercadillos
-
-  que tienen lugar este fin de semana en la ciudad indicada.
-  """
-  import urllib.parse
-  import urllib.request
-  import xml.etree.ElementTree as ET
-
-  query = f'planes "este fin de semana" {city} OR feria OR mercadillo OR exposicion'
-  url = (
-      "https://news.google.com/rss/search?q="
-      + urllib.parse.quote(query)
-      + "&hl=es&gl=ES&ceid=ES:es"
-  )
-  discovered = []
-  try:
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=8) as resp:
-      xml_bytes = resp.read()
-    root = ET.fromstring(xml_bytes)
-    for item in root.findall("./channel/item"):
-      raw_title = item.findtext("title") or ""
-      # Limpiar el nombre del medio al final (" - Medio")
-      clean_title = raw_title.rsplit(" - ", 1)[0].strip()
-      if len(clean_title) > 25 and city.lower() in clean_title.lower():
-        discovered.append({
-            "name": f"Agenda en vivo: {clean_title}",
-            "location": f"Centro y barrios de {city} (Transporte público recomendado)",
-            "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-            "desc": (
-                f"Destacado en la agenda cultural de {city} para este fin de"
-                f" semana: «{clean_title}». Una propuesta ideal si buscas qué"
-                f" planes hacer hoy en {city} combinando cultura, ocio al aire"
-                " libre y gastronomía local."
-            ),
-        })
-      if len(discovered) >= max_items:
-        break
-  except Exception:
-    pass
-  return discovered
-
-
 def _collect_used_image_hashes() -> set:
   """Devuelve el conjunto de hashes MD5 de todas las imágenes ya usadas en articles.json."""
   import hashlib
@@ -858,11 +814,22 @@ def generate_seo_article(
   }.get(city, (40.4168, -3.7038))
 
   if article_type == "single_plan":
-    lead_v = raw_venues[0]
-    second_v = raw_venues[1] if len(raw_venues) > 1 else lead_v
+    kw_tokens = set(re.findall(r"[a-záéíóúñ]{4,}", (keyword + " " + suggested_title).lower()))
+    ranked_venues = sorted(
+        raw_venues,
+        key=lambda v: sum(
+            1 for tok in kw_tokens if tok in (v["name"] + " " + v["desc"]).lower()
+        ),
+        reverse=True,
+    )
+    lead_v = ranked_venues[0]
+    remaining_v = [v for v in raw_venues if v["name"] != lead_v["name"]]
+    second_v = remaining_v[0] if len(remaining_v) > 0 else lead_v
+    third_v = remaining_v[1] if len(remaining_v) > 1 else second_v
     base_lat, base_lng = lead_v.get("lat", default_coords[0]), lead_v.get("lng", default_coords[1])
     lead_img = lead_v.get("image", kb["image"])
     second_img = second_v.get("image", kb["image"])
+    third_img = third_v.get("image", kb["image"])
 
     sections = [
         {
@@ -873,7 +840,7 @@ def generate_seo_article(
             "lat": base_lat,
             "lng": base_lng,
             "image": lead_img,
-            "imageAlt": lead_v.get("imageAlt", lead_v["name"]),
+            "imageAlt": lead_v.get("imageAlt", f"Vista principal de {lead_v['name']} en {city}"),
             "content": (
                 f"{lead_v['desc']}\n\n"
                 f"Dedicar una mañana o una tarde tranquila a este recorrido en {city} permite disfrutar del ambiente a otro ritmo, fijarse en su arquitectura histórica y pasear por sus rincones menos transitados sin aglomeraciones.\n\n"
@@ -882,30 +849,30 @@ def generate_seo_article(
         },
         {
             "heading": "El recorrido paso a paso: qué ver y en qué detalles fijarse",
-            "venue": f"Recorrido interior por {lead_v['name']}",
-            "location": lead_v["location"],
-            "price": lead_v["price"],
-            "lat": round(base_lat + 0.0012, 4),
-            "lng": round(base_lng + 0.0012, 4),
+            "venue": f"Recorrido interior por {lead_v['name']} y {second_v['name']}",
+            "location": second_v["location"],
+            "price": second_v["price"],
+            "lat": second_v.get("lat", round(base_lat + 0.0012, 4)),
+            "lng": second_v.get("lng", round(base_lng + 0.0012, 4)),
             "image": second_img,
-            "imageAlt": second_v.get("imageAlt", f"Recorrido paso a paso en {city}"),
+            "imageAlt": second_v.get("imageAlt", f"Detalle arquitectónico del recorrido en {city}"),
             "content": (
                 f"Una vez dentro del entorno de {lead_v['name']}, te recomendamos seguir un itinerario circular sin quedarte solo en la entrada principal. Empieza recorriendo el eje central y detente en los patios, galerías o senderos laterales donde se conserva el trazado histórico original.\n\n"
                 f"Dedica al menos cuarenta y cinco minutos a caminar sin prisa por la zona principal antes de enlazar a pie con {second_v['name']} ({second_v['location']}), que complementa la visita a la perfección: {second_v['desc']}"
             ),
         },
         {
-            "heading": f"Dónde tomar el aperitivo o algo tranquilo al terminar en {kb['neighborhoods'][0]}",
-            "venue": f"Entorno gastronómico de {kb['neighborhoods'][0]} y {kb['neighborhoods'][1]}",
-            "location": f"Barrio de {kb['neighborhoods'][0]} ({city})",
+            "heading": f"Dónde continuar el paseo y tomar el aperitivo en {kb['neighborhoods'][0]}",
+            "venue": f"Parada final en {third_v['name']} y entorno de {kb['neighborhoods'][0]}",
+            "location": third_v["location"],
             "price": "Vermut de grifo, café especial o tapa local: 4,50 € – 8,50 €",
-            "lat": round(base_lat - 0.0015, 4),
-            "lng": round(base_lng + 0.0018, 4),
-            "image": lead_img,
-            "imageAlt": f"Ambiente local en {kb['neighborhoods'][0]} ({city})",
+            "lat": third_v.get("lat", round(base_lat - 0.0015, 4)),
+            "lng": third_v.get("lng", round(base_lng + 0.0018, 4)),
+            "image": third_img,
+            "imageAlt": third_v.get("imageAlt", f"Entorno histórico y gastronómico en {kb['neighborhoods'][0]} ({city})"),
             "content": (
-                f"Ningún plan en {city} está completo sin saber dónde sentarse al salir sin caer en trampas para turistas. A menos de diez minutos caminando desde {lead_v['name']}, adentrarse por las calles secundarias de {kb['neighborhoods'][0]} y {kb['neighborhoods'][1]} es la mejor opción.\n\n"
-                f"Allí encontrarás bodegas tradicionales, cafeterías tranquilas y barras de barrio donde pedir un vermut casero, una caña bien tirada o una merienda artesana comentando el recorrido."
+                f"Ningún plan en {city} está completo sin saber dónde sentarse al salir sin caer en trampas para turistas. A pocos minutos desde el recorrido principal puedes acercarte a {third_v['name']} ({third_v['location']}) y adentrarte por las calles secundarias de {kb['neighborhoods'][0]} y {kb['neighborhoods'][1]}.\n\n"
+                f"Allí encontrarás bodegas tradicionales, cafeterías tranquilas y barras de barrio donde pedir un vermut casero, una caña bien tirada o una merienda artesana comentando la visita."
             ),
         },
     ]
@@ -916,15 +883,6 @@ def generate_seo_article(
       )
     read_time = "8 min"
   else:
-    if (
-        is_weekend_cat
-        or "fin de semana" in keyword.lower()
-        or "que hacer hoy" in keyword.lower()
-    ):
-      live_events = fetch_live_weekend_events(city, max_items=3)
-      if live_events:
-        raw_venues = live_events
-
     sections = []
     for idx, v in enumerate(raw_venues, start=1):
       sec_obj = {
@@ -932,11 +890,15 @@ def generate_seo_article(
           "venue": v["name"],
           "location": v["location"],
           "price": v["price"],
-          "content": v["desc"],
+          "content": (
+              f"{v['desc']} Te recomendamos acudir en horario de mañana o a media"
+              " tarde para recorrer el espacio con tranquilidad y combinarlo"
+              f" con un paseo a pie por las calles colindantes de {city}."
+          ),
           "lat": v.get("lat", round(default_coords[0] + idx * 0.002, 4)),
           "lng": v.get("lng", round(default_coords[1] + idx * 0.002, 4)),
           "image": v.get("image", kb["image"]),
-          "imageAlt": v.get("imageAlt", v["name"]),
+          "imageAlt": v.get("imageAlt", f"Fotografía de {v['name']} en {city}"),
       }
       sections.append(sec_obj)
 
@@ -1114,30 +1076,6 @@ def run_wednesday_weekend_all_cities() -> list:
       if cur_dates != weekend_dates and not cur_dates.startswith(weekend_start):
         target_art["weekendDates"] = weekend_dates
         target_art["publishedAt"] = today_str
-        live_events = fetch_live_weekend_events(city, max_items=3)
-        if live_events:
-          default_coords = {
-              "Madrid": (40.4168, -3.7038),
-              "Barcelona": (41.3985, 2.1615),
-              "Valencia": (39.4699, -0.3763),
-              "Sevilla": (37.3891, -5.9845),
-              "Toledo": (39.8581, -4.0226),
-          }.get(city, (40.4168, -3.7038))
-          kb = CITY_KNOWLEDGE_BASE[city]
-          target_art["sections"] = [
-              {
-                  "heading": f"{idx}. {v['name']}",
-                  "venue": v["name"],
-                  "location": v["location"],
-                  "price": v["price"],
-                  "content": v["desc"],
-                  "lat": v.get("lat", round(default_coords[0] + idx * 0.002, 4)),
-                  "lng": v.get("lng", round(default_coords[1] + idx * 0.002, 4)),
-                  "image": v.get("image", kb["image"]),
-                  "imageAlt": v.get("imageAlt", v["name"]),
-              }
-              for idx, v in enumerate(live_events, start=1)
-          ]
       published.append(target_art)
 
   save_json(ARTICLES_FILE, existing_articles)

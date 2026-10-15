@@ -223,107 +223,28 @@
     ]
   },
   {
-    "id": "madrid-puente-octubre-12-octubre-hispanidad",
-    "slug": "planes-puente-octubre-madrid-12-octubre-gratis",
-    "city": "Madrid",
-    "category": "Este Fin de Semana",
-    "weekendDates": "16 al 18 de octubre de 2026",
-    "title": "Planes para el Puente de Octubre en Madrid: programación del 12 de octubre",
-    "metaTitle": "Planes Puente de Octubre en Madrid: Desfile 12 de Octubre e Hispanidad | Qué Plan Hoy",
-    "metaDescription": "Programación oficial del Puente de Octubre y 12 de octubre en Madrid: horario y recorrido del Desfile Militar, Cabalgata de la Hispanidad en Gran Vía, conciertos gratis en Plaza Mayor, fuegos artificiales en Cibeles y puertas abiertas.",
-    "excerpt": "Guía con los actos oficiales del 12 de octubre (Día de la Fiesta Nacional) y del Festival de la Hispanidad organizados por el Ayuntamiento y la Comunidad de Madrid: recorrido del Desfile Militar, Cabalgata en Gran Vía, conciertos gratuitos, piromusical en Cibeles y museos de entrada libre.",
-    "publishedAt": "2026-10-14",
-    "priceRange": "Gratis – 14 €",
-    "neighborhoods": [
-      "Paseo del Prado",
-      "Cibeles",
-      "Gran Vía",
-      "Plaza Mayor"
-    ],
-    "image": "images/venues/madrid-desfile-12-octubre.jpg",
-    "imageAlt": "Efectivos desfilando en el Paseo del Prado durante el Desfile Militar del 12 de octubre en Madrid",
-    "sections": [
-      {
-        "heading": "1. Agenda en vivo: Qué hacer este fin de semana en Madrid: Del 9 al 11 de Octubre de 2026",
-        "venue": "Agenda en vivo: Qué hacer este fin de semana en Madrid: Del 9 al 11 de Octubre de 2026",
-        "location": "Centro y barrios de Madrid (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Madrid para este fin de semana: «Qué hacer este fin de semana en Madrid: Del 9 al 11 de Octubre de 2026». Una propuesta ideal si buscas qué planes hacer hoy en Madrid combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 40.4188,
-        "lng": -3.7018,
-        "image": "images/venues/madrid-principe-anglona.jpg",
-        "imageAlt": "Agenda en vivo: Qué hacer este fin de semana en Madrid: Del 9 al 11 de Octubre de 2026"
-      },
-      {
-        "heading": "2. Agenda en vivo: Planes en Madrid este fin de semana: del concierto gratuito de Sebastián Yatra a una fiesta exclusiva con Amaia",
-        "venue": "Agenda en vivo: Planes en Madrid este fin de semana: del concierto gratuito de Sebastián Yatra a una fiesta exclusiva con Amaia",
-        "location": "Centro y barrios de Madrid (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Madrid para este fin de semana: «Planes en Madrid este fin de semana: del concierto gratuito de Sebastián Yatra a una fiesta exclusiva con Amaia». Una propuesta ideal si buscas qué planes hacer hoy en Madrid combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 40.4208,
-        "lng": -3.6998,
-        "image": "images/venues/madrid-principe-anglona.jpg",
-        "imageAlt": "Agenda en vivo: Planes en Madrid este fin de semana: del concierto gratuito de Sebastián Yatra a una fiesta exclusiva con Amaia"
-      },
-      {
-        "heading": "3. Agenda en vivo: Qué hacer en Madrid este puente del Día de la Hispanidad 2026: planes gratuitos para el 9, 10, 11 y 12 de octubre",
-        "venue": "Agenda en vivo: Qué hacer en Madrid este puente del Día de la Hispanidad 2026: planes gratuitos para el 9, 10, 11 y 12 de octubre",
-        "location": "Centro y barrios de Madrid (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Madrid para este fin de semana: «Qué hacer en Madrid este puente del Día de la Hispanidad 2026: planes gratuitos para el 9, 10, 11 y 12 de octubre». Una propuesta ideal si buscas qué planes hacer hoy en Madrid combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 40.4228,
-        "lng": -3.6978,
-        "image": "images/venues/madrid-principe-anglona.jpg",
-        "imageAlt": "Agenda en vivo: Qué hacer en Madrid este puente del Día de la Hispanidad 2026: planes gratuitos para el 9, 10, 11 y 12 de octubre"
-      }
-    ],
-    "affiliate": {
-      "badge": "Sin colas en el Puente de Octubre",
-      "title": "Entrada rápida al Palacio Real de Madrid",
-      "description": "Si quieres visitar por dentro los salones oficiales, la Real Armería y la Real Botica durante el puente sin esperar la cola de taquilla en la calle Bailén, puedes reservar tu entrada con hora asignada.",
-      "price": "Desde 18 €",
-      "ctaText": "Ver disponibilidad y entradas →",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2Fentradas-para-palacio-real-de-madrid-entrada-rapida-p991272%2F"
-    },
-    "faqs": [
-      {
-        "question": "¿A qué hora empieza y por dónde pasa el Desfile Militar del 12 de octubre en Madrid?",
-        "answer": "El acto oficial comienza a las 11:00 h del 12 de octubre. El recorrido parte de la Glorieta del Emperador Carlos V (Atocha), sube por el Paseo del Prado (con la Tribuna Real en la Fuente de Neptuno), cruza la Plaza de Cibeles y continúa por el Paseo de Recoletos hasta finalizar en la Plaza de Colón."
-      },
-      {
-        "question": "¿Dónde son los conciertos gratuitos y los fuegos artificiales de la Hispanidad en Madrid?",
-        "answer": "Los escenarios principales de conciertos gratuitos organizados por la Comunidad y el Ayuntamiento de Madrid se ubican en la Plaza Mayor, la Puerta del Sol, la Plaza de España y la Puerta de Alcalá. El espectáculo piromusical de fuegos artificiales tiene lugar la noche del 12 de octubre en la Plaza de Cibeles frente al Ayuntamiento."
-      },
-      {
-        "question": "¿Qué museos y palacios son gratis en Madrid el 12 de octubre?",
-        "answer": "El 12 de octubre celebran jornada de puertas abiertas gratuita los Museos Estatales (Museo del Prado, Reina Sofía, Museo Arqueológico Nacional, Museo Cerralbo y Museo del Romanticismo), además de aperturas especiales en Patrimonio Nacional y en el Palacio de Buenavista (Cuartel General del Ejército en Cibeles)."
-      }
-    ]
-  },
-  {
     "id": "madrid-planes-este-fin-de-semana-feria-barroca",
     "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Madrid: Feria del Libro Viejo, Pilar y Alcalá",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Madrid (9 al 12 Oct): Feria del Libro, Pilar y Alcalá",
-    "metaDescription": "Agenda real para este fin de semana y Puente de Octubre en Madrid (del 9 al 12 de octubre): Feria del Libro Viejo en Recoletos, Mercado Cervantino en Alcalá, Fiestas del Pilar y Mercado de Motores.",
+    "title": "Qué hacer este fin de semana en Madrid (16 al 18 de octubre): Madrid Otra Mirada, Ciencias Naturales gratis y Matadero",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Madrid (16 al 18 Oct): MOM y Planes Gratis | Qué Plan Hoy",
+    "metaDescription": "Agenda cultural verificada en Madrid del viernes 16 al domingo 18 de octubre de 2026: edificios históricos abiertos gratis en Madrid Otra Mirada (MOM), puertas abiertas en el Museo de Ciencias Naturales y danza en Matadero.",
     "city": "Madrid",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "9 al 12 de octubre",
+    "weekendDates": "16 al 18 de octubre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-03",
+    "publishedAt": "2026-10-15",
     "targetKeyword": "que plan hacer en madrid este fin de semana",
     "searchVolume": "8.100 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (21/100)",
-    "image": "images/planes-este-fin-de-semana-madrid-feria-barroca.jpg",
-    "imageAlt": "Recreación histórica y pasacalles del siglo XVII en la Feria Barroca de Valdemoro",
-    "excerpt": "Los 4 grandes eventos reales de este fin de semana del 9 al 12 de octubre en Madrid: casetas de la Feria del Libro Viejo en Recoletos, el Mercado Cervantino de Alcalá de Henares, conciertos gratis en las Fiestas del Barrio del Pilar y Mercado de Motores.",
-    "priceRange": "Gratis – 10 €",
+    "image": "images/venues/madrid-palacio-cibeles-noche.jpg",
+    "imageAlt": "Fachada iluminada del Palacio de Cibeles en Madrid durante el fin de semana cultural de otoño",
+    "excerpt": "Los 3 grandes planes reales en Madrid del viernes 16 al domingo 18 de octubre: apertura gratuita de palacios e instituciones históricas por Madrid Otra Mirada (MOM), jornada de puertas abiertas por el 255.º aniversario del Museo Nacional de Ciencias Naturales y danza al aire libre en Matadero.",
+    "priceRange": "Gratis",
     "neighborhoods": [
-      "Paseo de Recoletos",
-      "Alcalá de Henares",
-      "Barrio del Pilar",
-      "Delicias"
+      "Paseo del Prado y Retiro",
+      "Castellana y Chamberí",
+      "Legazpi (Matadero Madrid)"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -336,61 +257,50 @@
     },
     "sections": [
       {
-        "heading": "1. Feria de Otoño del Libro Viejo y Antiguo en el Paseo de Recoletos (Gratis)",
-        "venue": "Paseo de Recoletos (tramo Cibeles – Colón), Madrid",
-        "content": "Durante todo este fin de semana y el Puente de Octubre (de 11:00 a 21:00 h), el bulevar arbolado del Paseo de Recoletos desde la Plaza de Cibeles hasta Colón acoge las 34 casetas de la tradicional Feria de Otoño del Libro Viejo y Antiguo de Madrid, organizada por LIBRIS.\n\nEs uno de los paseos culturales más agradables del otoño madrileño: podrás curiosear desde ejemplares de bolsillo descatalogados desde 3 € hasta primeras ediciones históricas de la Generación del 27, grabados antiguos de Madrid, carteles de época y cómics clásicos.",
-        "location": "Paseo de Recoletos (Metro Banco de España L2 / Colón L4)",
-        "price": "Acceso libre (libros de ocasión desde 3 €)",
-        "lat": 40.4218,
-        "lng": -3.6912,
-        "image": "images/venues/madrid-paseo-recoletos-feria-libro.jpg",
-        "imageAlt": "Bulevar arbolado del Paseo de Recoletos con las casetas de la Feria del Libro Antiguo en Madrid"
+        "heading": "1. Madrid Otra Mirada (MOM): palacios, jardines y edificios históricos abiertos gratis (16 al 18 de octubre)",
+        "venue": "Sedes patrimoniales de Madrid Otra Mirada (Ayuntamiento de Madrid)",
+        "location": "Centro, Retiro, Chamberí y Barrio de Salamanca (Programa oficial en esmadrid.com/mom)",
+        "price": "100% Gratis (Muchas actividades de acceso libre hasta completar aforo)",
+        "lat": 40.4238,
+        "lng": -3.6889,
+        "image": "images/venues/madrid-museo-arqueologico-interior.jpg",
+        "imageAlt": "Salas históricas y arquitectura monumental dentro del circuito cultural de Madrid Otra Mirada",
+        "content": "Este viernes 16, sábado 17 y domingo 18 de octubre vive sus días principales la nueva edición de Madrid Otra Mirada (MOM), la gran cita anual de patrimonio impulsada por el Ayuntamiento de Madrid en la que más de 160 instituciones, palacetes, archivos históricos, bibliotecas, teatros e iglesias abren sus puertas de forma gratuita.\n\nAunque los palacios con cupo reducido agotan rápido su inscripción previa, durante todo el fin de semana hay decenas de conciertos matinales, exposiciones conmemorativas, jardines históricos y visitas a museos y fundaciones en Chamberí, el Paseo del Arte y el Madrid de los Austrias con entrada libre por orden de llegada."
       },
       {
-        "heading": "2. Mercado Cervantino de Alcalá de Henares: el mayor mercado del Siglo de Oro (8 al 12 de octubre)",
-        "venue": "Plaza de Cervantes y Calle Mayor, Alcalá de Henares",
-        "content": "Declarado Fiesta de Interés Turístico Nacional, el Mercado Cervantino transforma del 8 al 12 de octubre todo el casco histórico de Alcalá de Henares (Patrimonio de la Humanidad, a solo 35 minutos en tren de Cercanías C-2 y C-7 desde Atocha, Recoletos o Chamartín) en una villa del siglo XVII.\n\nEncontrarás más de 350 puestos de artesanía y gastronomía en torno a la Plaza de Cervantes, la Calle Mayor porticada y la Huerta del Obispo, además de torneos de justas medievales a caballo, pasacalles teatrales de Don Quijote y Sancho, música renacentista en vivo y campamentos históricos.",
-        "location": "Casco Histórico de Alcalá de Henares (Cercanías C-2 / C-7 Alcalá de Henares)",
-        "price": "Entrada libre a todo el mercado y pasacalles",
-        "lat": 40.4818,
-        "lng": -3.3643,
-        "image": "images/venues/madrid-alcala-plaza-cervantes.jpg",
-        "imageAlt": "Plaza de Cervantes y centro histórico de Alcalá de Henares donde se celebra el Mercado Cervantino"
+        "heading": "2. Jornada de puertas abiertas por el 255.º Aniversario del Museo Nacional de Ciencias Naturales (sábado 17 y domingo 18)",
+        "venue": "Museo Nacional de Ciencias Naturales (CSIC)",
+        "location": "Calle de José Gutiérrez Abascal, 2 (Metro: Gregorio Marañón - L7, L10 / Nuevos Ministerios)",
+        "price": "Laboratorio exterior gratuito el sábado 17 y Puertas Abiertas 100% gratis el domingo 18 de octubre",
+        "lat": 40.4405,
+        "lng": -3.6898,
+        "image": "images/venues/madrid-museo-ciencias-naturales.jpg",
+        "imageAlt": "Histórico Palacio de las Artes y la Industria en la Castellana, sede del Museo Nacional de Ciencias Naturales",
+        "content": "El Museo Nacional de Ciencias Naturales celebra este fin de semana su 255.º aniversario en el histórico Palacio de las Artes y la Industria junto al Paseo de la Castellana con una programación especial para todos los públicos.\n\nEl sábado 17 de octubre instala en el exterior el laboratorio interactivo gratuito «Curiosity Cube» con experimentos científicos en vivo, y el domingo 18 de octubre celebra una Jornada de Puertas Abiertas completamente gratuita (además de coincidir por la mañana con la tradicional Carrera de la Ciencia del CSIC por el entorno de Serrano y Castellana)."
       },
       {
-        "heading": "3. Fiestas del Barrio del Pilar en el Parque de La Vaguada: conciertos gratuitos y fuegos artificiales",
-        "venue": "Recinto Ferial del Parque de La Vaguada (Barrio del Pilar)",
-        "content": "Las grandes fiestas patronales de otoño en la capital se celebran del 9 al 12 de octubre en el Parque de La Vaguada (distrito de Fuencarral-El Pardo). El programa oficial del Ayuntamiento de Madrid incluye conciertos gratuitos cada noche en el escenario principal del parque, pasacalles, jornada infantil, casetas gastronómicas de asociaciones vecinales y el tradicional castillo de fuegos artificiales en honor a la Virgen del Pilar.\n\nPara llegar sin atascos ni problemas de aparcamiento en la avenida de Monforte de Lemos, lo más directo es tomar la línea 9 de Metro hasta Barrio del Pilar o Herrera Oria.",
-        "location": "Parque de La Vaguada, Av. de Monforte de Lemos (Metro Barrio del Pilar L9 / Peñagrande L7)",
-        "price": "Conciertos y acceso al recinto gratuitos",
-        "lat": 40.4792,
-        "lng": -3.7085,
-        "image": "images/venues/madrid-parque-la-vaguada-pilar.jpg",
-        "imageAlt": "Auditorio al aire libre del Parque de La Vaguada en el Barrio del Pilar de Madrid"
-      },
-      {
-        "heading": "4. Mercado de Motores en el Museo del Ferrocarril de Delicias (Sábado 10 y domingo 11 de octubre)",
-        "venue": "Museo del Ferrocarril de Madrid (Paseo de las Delicias, 61)",
-        "content": "Al ser el segundo fin de semana del mes, este sábado 10 (de 11:00 a 22:00 h) y domingo 11 de octubre (de 11:00 a 21:00 h) regresa el Mercado de Motores a la antigua estación histórica de Delicias.\n\nPodrás recorrer más de cien puestos de diseñadores independientes, cerámica, ilustración y segunda mano instalados directamente entre las locomotoras de vapor y los vagones de madera del siglo XIX, y salir después a los andenes exteriores con foodtrucks, música en vivo y karaoke al aire libre.",
-        "location": "Paseo de las Delicias, 61 (Metro Delicias L3 / Cercanías Delicias)",
-        "price": "Entrada gratuita (con reserva previa de franja horaria en su web)",
-        "lat": 40.4002,
-        "lng": -3.6936,
-        "image": "images/venues/madrid-museo-ferrocarril.jpg",
-        "imageAlt": "Locomotoras históricas en el interior de la estación de Delicias durante el Mercado de Motores"
+        "heading": "3. Festival de Danza Contemporánea «Cuerpo Romo» en la Plaza de Matadero Madrid (16 al 18 de octubre)",
+        "venue": "Matadero Madrid (Plaza Matadero y Nave 16)",
+        "location": "Plaza de Legazpi, 8 (Metro: Legazpi - L3, L6)",
+        "price": "Espectáculos en Plaza Matadero de acceso libre y gratuito",
+        "lat": 40.3917,
+        "lng": -3.6974,
+        "image": "images/venues/madrid-invernadero-arganzuela.jpg",
+        "imageAlt": "Entorno cultural de Matadero Madrid y el Invernadero de Arganzuela junto a Legazpi",
+        "content": "Del viernes 16 al domingo 18 de octubre regresa a Matadero Madrid el festival internacional de danza en espacios no convencionales «Cuerpo Romo», dirigido por la Premio Nacional de Danza Elías Aguirre.\n\nDurante las mañanas y tardes del sábado y el domingo, las explanadas de ladrillo de Plaza Matadero acogen piezas cortas de danza contemporánea y danza urbana al aire libre de acceso gratuito. Al terminar, estás a solo dos minutos caminando del Invernadero de Cristal de Arganzuela y de las sendas arboladas de Madrid Río."
       }
     ],
     "faqs": [
       {
-        "question": "¿Qué ferias y mercados especiales hay este fin de semana del 9 al 12 de octubre en Madrid?",
-        "answer": "Este puente coinciden tres grandes citas al aire libre: la Feria de Otoño del Libro Viejo y Antiguo en el Paseo de Recoletos, el Mercado Cervantino en el casco histórico de Alcalá de Henares (del 8 al 12 de octubre) y la edición de octubre del Mercado de Motores en el Museo del Ferrocarril (sábado 10 y domingo 11)."
+        "question": "¿Qué planes gratis hay en Madrid este fin de semana del 16 al 18 de octubre?",
+        "answer": "Destacan las actividades patrimoniales de acceso libre de Madrid Otra Mirada (MOM), la Jornada de Puertas Abiertas gratuita del domingo 18 de octubre en el Museo Nacional de Ciencias Naturales por su 255.º aniversario y los espectáculos de danza al aire libre del festival Cuerpo Romo en Plaza Matadero."
       },
       {
-        "question": "¿Dónde se celebran los conciertos gratuitos de las Fiestas del Barrio del Pilar?",
-        "answer": "El recinto ferial y el escenario principal de conciertos gratuitos del Ayuntamiento de Madrid se sitúan en el Parque de La Vaguada (junto al paseo de Monforte de Lemos, Metro Barrio del Pilar L9)."
+        "question": "¿Sigue abierta la Feria de Otoño del Libro Viejo en Recoletos este fin de semana?",
+        "answer": "No, la Feria de Otoño del Libro Viejo y Antiguo en el Paseo de Recoletos finalizó el pasado 12 de octubre coincidiendo con el cierre del puente."
       }
     ],
-    "imageCredit": "Ayuntamiento de Valdemoro · Feria Barroca de Valdemoro"
+    "imageCredit": "Wikimedia Commons"
   },
   {
     "id": "madrid-plan-unico-parque-el-capricho-a-fondo",
@@ -484,26 +394,26 @@
   {
     "id": "barcelona-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Barcelona: Festa Major de Sarrià y Puente",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Barcelona (9 al 12 Oct): Festa Major de Sarrià y Planes",
-    "metaDescription": "Agenda real para este fin de semana y Puente de Octubre en Barcelona (del 9 al 12 de octubre): Festa Major de Sarrià, puertas abiertas en Capitanía General, Oktoberfest en Montjuïc y Jardins de Laribal.",
+    "title": "Qué hacer este fin de semana en Barcelona (16 al 18 de octubre): Mercat de Mercats en Glòries, Barcelona Dibuixa y Design Week",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Barcelona (16 al 18 Oct): Mercat de Mercats | Qué Plan Hoy",
+    "metaDescription": "Agenda verificada en Barcelona del viernes 16 al domingo 18 de octubre de 2026: feria gastronómica Mercat de Mercats en Glòries, 46 talleres gratuitos de Barcelona Dibuixa y Barcelona Design Week.",
     "city": "Barcelona",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre de 2026",
+    "weekendDates": "16 al 18 de octubre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-14",
+    "publishedAt": "2026-10-15",
     "targetKeyword": "que plan hacer en barcelona este fin de semana",
     "searchVolume": "6.800 búsquedas/mes",
     "keywordDifficulty": "Baja (18/100)",
     "image": "images/venues/bcn-mercat-del-born.jpg",
-    "imageAlt": "Estructura histórica de hierro y cristal del antiguo Mercat del Born en Barcelona",
-    "excerpt": "Agenda real en Barcelona del 9 al 12 de octubre: Festa Major de Sarrià (castellers y correfoc), puertas abiertas en el Palau de la Capitania General y Oktoberfest en Montjuïc.",
-    "priceRange": "Gratis – 12 €",
+    "imageAlt": "Arquitectura histórica de hierro de los mercados de Barcelona, protagonistas de la feria Mercat de Mercats",
+    "excerpt": "Los 3 grandes planes reales en Barcelona del viernes 16 al domingo 18 de octubre: la feria gastronómica Mercat de Mercats al aire libre en la Plaça de les Glòries, los 46 talleres gratuitos de Barcelona Dibuixa en museos y patios góticos, y la Barcelona Design Week.",
+    "priceRange": "Gratis (Tapas desde 4 €)",
     "neighborhoods": [
-      "Sarrià (Plaça del Consell de la Vila)",
-      "Passeig de Colom y Ciutat Vella",
-      "Montjuïc (Plaça d'Espanya)"
+      "Glòries y Poblenou",
+      "El Born y Ciutat Vella",
+      "El Raval y Montjuïc"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -516,73 +426,74 @@
     },
     "sections": [
       {
-        "heading": "1. Agenda en vivo: Qué hacer este fin de semana en Barcelona: Del 9 al 11 de Octubre de 2026",
-        "venue": "Agenda en vivo: Qué hacer este fin de semana en Barcelona: Del 9 al 11 de Octubre de 2026",
-        "location": "Centro y barrios de Barcelona (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Barcelona para este fin de semana: «Qué hacer este fin de semana en Barcelona: Del 9 al 11 de Octubre de 2026». Una propuesta ideal si buscas qué planes hacer hoy en Barcelona combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 41.4005,
-        "lng": 2.1635,
-        "image": "images/venues/bcn-teatre-grec-laribal.jpg",
-        "imageAlt": "Agenda en vivo: Qué hacer este fin de semana en Barcelona: Del 9 al 11 de Octubre de 2026"
+        "heading": "1. Feria gastronómica «Mercat de Mercats» en la Plaça de les Glòries (viernes 16 al domingo 18 de octubre)",
+        "venue": "Plaça de les Glòries Catalanes (junto al Disseny Hub Barcelona)",
+        "location": "Plaça de les Glòries Catalanes (Metro: Glòries - L1 / Tranvía T4, T5, T6)",
+        "price": "Entrada al recinto 100% gratuita (Platillos de mercado y brasas desde 4 € – 6 €)",
+        "lat": 41.4024,
+        "lng": 2.1879,
+        "image": "images/venues/bcn-disseny-hub-glories.jpg",
+        "imageAlt": "Explanada de la Plaça de les Glòries y edificio del Disseny Hub Barcelona donde se celebra Mercat de Mercats",
+        "content": "Desde el viernes 16 hasta el domingo 18 de octubre (de 11:00 a 22:00 h el viernes y sábado, y hasta las 21:00 h el domingo), la gran explanada de la Plaça de les Glòries frente al Disseny Hub acoge una nueva edición de «Mercat de Mercats», la gran fiesta gastronómica de los mercados municipales de Barcelona.\n\nCon acceso libre y gratuito, el recinto reúne paradas de producto fresco de los mercados históricos de la ciudad (con zona de brasas al momento para cocinar lo que compres), showcookings de chefs con estrella Michelin, aula de catas de vinos catalanes y tapas preparadas por bares de mercado."
       },
       {
-        "heading": "2. Agenda en vivo: Los mejores planes para hacer en Barcelona este fin de semana",
-        "venue": "Agenda en vivo: Los mejores planes para hacer en Barcelona este fin de semana",
-        "location": "Centro y barrios de Barcelona (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Barcelona para este fin de semana: «Los mejores planes para hacer en Barcelona este fin de semana». Una propuesta ideal si buscas qué planes hacer hoy en Barcelona combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 41.4025,
-        "lng": 2.1655,
-        "image": "images/venues/bcn-teatre-grec-laribal.jpg",
-        "imageAlt": "Agenda en vivo: Los mejores planes para hacer en Barcelona este fin de semana"
+        "heading": "2. Festival «Barcelona Dibuixa»: 46 talleres gratuitos de arte en patios góticos y museos (sábado 17 y domingo 18)",
+        "venue": "Museu Picasso, Born Centre de Cultura i Memòria, Fundació Miró y centros cívicos",
+        "location": "Carrer de Montcada, 15-23 (El Born) y sedes en los 10 distritos (Metro: Jaume I - L4)",
+        "price": "100% Gratis (Material de dibujo incluido y sin necesidad de reserva previa)",
+        "lat": 41.3852,
+        "lng": 2.1809,
+        "image": "images/venues/bcn-capitania-general-colom.jpg",
+        "imageAlt": "Claustro y patio histórico en Ciutat Vella durante las jornadas culturales de otoño en Barcelona",
+        "content": "Organizado por el Institut de Cultura de Barcelona (ICUB) y el Museu Picasso, este sábado 17 y domingo 18 de octubre se celebra «Barcelona Dibuixa», el festival que convierte patios medievales, museos y plazas de toda la ciudad en grandes estudios de creación abiertos a todo el mundo.\n\nNo hace falta saber dibujar ni llevar material: en los patios góticos de la calle Montcada (Museu Picasso), en el Born CCM o en la Fundació Joan Miró encontrarás papel, lápices, carboncillos y artistas e ilustradores locales guiando propuestas gratuitas durante todo el fin de semana."
       },
       {
-        "heading": "3. Agenda en vivo: Qué Hacer en Barcelona Este Fin de Semana: Agenda del 2 al 4 de Octubre de 2026",
-        "venue": "Agenda en vivo: Qué Hacer en Barcelona Este Fin de Semana: Agenda del 2 al 4 de Octubre de 2026",
-        "location": "Centro y barrios de Barcelona (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Barcelona para este fin de semana: «Qué Hacer en Barcelona Este Fin de Semana: Agenda del 2 al 4 de Octubre de 2026». Una propuesta ideal si buscas qué planes hacer hoy en Barcelona combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 41.4045,
-        "lng": 2.1675,
-        "image": "images/venues/bcn-teatre-grec-laribal.jpg",
-        "imageAlt": "Agenda en vivo: Qué Hacer en Barcelona Este Fin de Semana: Agenda del 2 al 4 de Octubre de 2026"
+        "heading": "3. Barcelona Design Week y recta final de la Biennal de Pensament en el CCCB y Montjuïc (hasta el 18 de octubre)",
+        "venue": "CCCB (Centre de Cultura Contemporània) y Pabellón Mies van der Rohe",
+        "location": "Carrer de Montalegre, 5 (Metro: Universitat) y Av. Francesc Ferrer i Guàrdia, 7 (Metro: Espanya)",
+        "price": "Debates de la Biennal e instalaciones urbanas de acceso gratuito",
+        "lat": 41.3706,
+        "lng": 2.15,
+        "image": "images/venues/bcn-pabellon-mies.jpg",
+        "imageAlt": "Espejo de agua y travertino del Pabellón Mies van der Rohe a los pies de Montjuïc en Barcelona",
+        "content": "Este fin de semana coinciden en Barcelona dos grandes citas culturales de otoño: el arranque de la Barcelona Design Week —con instalaciones efímeras de diseño, arquitectura y sostenibilidad repartidas entre el Disseny Hub y el Pabellón Mies van der Rohe en Montjuïc— y la clausura de la Biennal de Pensament.\n\nHasta el domingo 18 de octubre puedes asistir gratis en el patio de las Dones del CCCB (El Raval) a charlas al aire libre, recitales poéticos y encuentros sobre ciudad, cultura digital y arte contemporáneo."
       }
     ],
     "faqs": [
       {
-        "question": "¿Qué fiesta mayor de barrio se celebra en Barcelona este fin de semana del 9 al 12 de octubre?",
-        "answer": "Se celebra el fin de semana grande de la Festa Major de Sarrià (Festes del Roser), con conciertos gratuitos, habaneras, castellers, gigantes y correfoc en torno a la Plaça de Sarrià y la Plaça del Consell de la Vila hasta el 12 de octubre."
+        "question": "¿Dónde se celebra Mercat de Mercats en Barcelona este fin de semana del 16 al 18 de octubre?",
+        "answer": "Se celebra en la Plaça de les Glòries Catalanes (junto al edificio del Disseny Hub Barcelona, parada de Metro Glòries L1) del viernes 16 al domingo 18 de octubre con entrada gratuita al recinto."
       },
       {
-        "question": "¿Qué edificio histórico abre gratis en Barcelona por el 12 de octubre?",
-        "answer": "El Palau de la Capitania General de Barcelona (en el Passeig de Colom, 14, junto al Port Vell) celebra jornada de puertas abiertas gratuitas permitiendo visitar su claustro barroco del siglo XVII y sus salones históricos."
+        "question": "¿Cuándo se celebra este año el festival de arquitectura 48h Open House Barcelona?",
+        "answer": "El festival 48h Open House Barcelona no es este fin de semana, sino el próximo fin de semana del sábado 24 y domingo 25 de octubre de 2026."
       }
-    ]
+    ],
+    "imageCredit": "Wikimedia Commons"
   },
   {
     "id": "valencia-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Valencia: programación del 9 d'Octubre",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Valencia (9 al 12 Oct): Programa Oficial 9 d'Octubre",
-    "metaDescription": "Agenda oficial para este fin de semana y Puente del 9 d'Octubre en Valencia (del 9 al 12 de octubre): Reial Senyera, Entrada de Moros y Cristianos, Puertas Abiertas en el Palau de la Generalitat y Mercado Medieval en el Turia.",
+    "title": "Qué hacer este fin de semana en Valencia (16 al 18 de octubre): concierto gratis en el Palau de la Música, Valeriola y Beneficència",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Valencia (16 al 18 Oct): Palau de la Música y Planes | Qué Plan Hoy",
+    "metaDescription": "Agenda cultural verificada en Valencia del viernes 16 al domingo 18 de octubre de 2026: apertura de temporada y concierto gratuito del 700.º Aniversario del Corpus en el Palau de la Música, Palacio de Valeriola y La Beneficència.",
     "city": "Valencia",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre de 2026",
+    "weekendDates": "16 al 18 de octubre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-14",
+    "publishedAt": "2026-10-15",
     "targetKeyword": "que plan hacer en valencia este fin de semana",
     "searchVolume": "5.400 búsquedas/mes",
     "keywordDifficulty": "Baja (16/100)",
-    "image": "images/venues/vlc-palau-generalitat.jpg",
-    "imageAlt": "Fachada gótica y torre del Palau de la Generalitat Valenciana en el barrio del Carmen",
-    "excerpt": "Agenda real en Valencia del 9 al 12 de octubre: puertas abiertas en el Palau de la Generalitat, Entrada de Moros y Cristianos por la Calle de la Paz y Mercado Medieval en el Jardín del Turia.",
-    "priceRange": "Gratis – 6 €",
+    "image": "images/venues/vlc-jardin-del-turia.jpg",
+    "imageAlt": "Jardín del Turia y entorno monumental de Valencia en octubre",
+    "excerpt": "Los 3 planes culturales verificados para este fin de semana del 16 al 18 de octubre en Valencia: estreno de temporada y concierto extraordinario gratuito en la Sala Iturbi del Palau de la Música, arte inmersivo en el Palacio de Valeriola y música en los patios de La Beneficència.",
+    "priceRange": "Gratis – 12 €",
     "neighborhoods": [
-      "Ciutat Vella y Plaza de Manises",
-      "Calle de la Paz y Plaza del Ayuntamiento",
-      "Jardín del Turia (Puente de las Flores)"
+      "Jardín del Turia y Paseo de la Alameda",
+      "Ciutat Vella (Calle del Mar)",
+      "Barrio del Carmen (La Beneficència)"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -595,50 +506,50 @@
     },
     "sections": [
       {
-        "heading": "1. Agenda en vivo: Valencia se llena de mercados y ferias este octubre de 2026 con artesanía, gastronomía y sabor medieval",
-        "venue": "Agenda en vivo: Valencia se llena de mercados y ferias este octubre de 2026 con artesanía, gastronomía y sabor medieval",
-        "location": "Centro y barrios de Valencia (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Valencia para este fin de semana: «Valencia se llena de mercados y ferias este octubre de 2026 con artesanía, gastronomía y sabor medieval». Una propuesta ideal si buscas qué planes hacer hoy en Valencia combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 39.4719,
-        "lng": -0.3743,
-        "image": "images/venues/vlc-albufera-gola-pujol.jpg",
-        "imageAlt": "Agenda en vivo: Valencia se llena de mercados y ferias este octubre de 2026 con artesanía, gastronomía y sabor medieval"
+        "heading": "1. Apertura de temporada y concierto extraordinario gratuito en el Palau de la Música (sábado 17 y domingo 18 de octubre)",
+        "venue": "Sala Iturbi del Palau de la Música de València",
+        "location": "Paseo de la Alameda, 30, Jardín del Turia (Metro: Aragón - L5, L7)",
+        "price": "Concierto del domingo 18 (19:00 h) gratuito con invitación / Sábado 17 desde 12 €",
+        "lat": 39.4664,
+        "lng": -0.3602,
+        "image": "images/venues/vlc-palau-musica-iturbi.jpg",
+        "imageAlt": "Bóveda acristalada y columnata del Palau de la Música de València frente al Jardín del Turia",
+        "content": "El gran auditorio acristalado del Jardín del Turia protagoniza la agenda musical de este fin de semana en Valencia con dos citas consecutivas en su Sala Iturbi. El sábado 17 de octubre la Orquestra de València, dirigida por Alexander Liebreich, inaugura la Temporada de Abono con obras de Wagner y Richard Strauss.\n\nY el domingo 18 de octubre a las 19:00 h se celebra el Concierto Extraordinario del 700.º Aniversario del Corpus de la Ciudad de València, con acceso gratuito previa retirada de invitación en las taquillas y web del Palau."
       },
       {
-        "heading": "2. Agenda en vivo: 8 planes gratis para el puente de octubre en Valencia: de una muestra de artesanía a un festival de cometas",
-        "venue": "Agenda en vivo: 8 planes gratis para el puente de octubre en Valencia: de una muestra de artesanía a un festival de cometas",
-        "location": "Centro y barrios de Valencia (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Valencia para este fin de semana: «8 planes gratis para el puente de octubre en Valencia: de una muestra de artesanía a un festival de cometas». Una propuesta ideal si buscas qué planes hacer hoy en Valencia combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 39.4739,
-        "lng": -0.3723,
-        "image": "images/venues/vlc-albufera-gola-pujol.jpg",
-        "imageAlt": "Agenda en vivo: 8 planes gratis para el puente de octubre en Valencia: de una muestra de artesanía a un festival de cometas"
+        "heading": "2. Arte digital inmersivo y circo romano subterráneo en el Palacio de Valeriola",
+        "venue": "Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
+        "location": "Calle del Mar, 31 (Barrio de la Seu-Xerea, a 3 min de la Plaza de la Reina)",
+        "price": "10 € entrada general",
+        "lat": 39.4743,
+        "lng": -0.3728,
+        "image": "images/venues/vlc-palacio-valeriola.jpg",
+        "imageAlt": "Fachada noble del Palacio de Valeriola en la calle del Mar de Valencia",
+        "content": "Si buscas un plan cultural en pleno centro histórico para la tarde del viernes o del sábado, el rehabilitado Palacio de Valeriola del siglo XVII reúne en un mismo recorrido diecisiete salas con obras monumentales de Olafur Eliasson, Anselm Kiefer, Jaume Plensa y TeamLab.\n\nAdemás de las instalaciones inmersivas de luz, en el subsuelo del palacio podrás caminar junto a un tramo original de la espina del circo romano de Valentia y un antiguo horno medieval de la judería."
       },
       {
-        "heading": "3. Agenda en vivo: Qué hacer en Valencia este puente de octubre: gran agenda de planes del 9 al 12 de octubre de 2026",
-        "venue": "Agenda en vivo: Qué hacer en Valencia este puente de octubre: gran agenda de planes del 9 al 12 de octubre de 2026",
-        "location": "Centro y barrios de Valencia (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Valencia para este fin de semana: «Qué hacer en Valencia este puente de octubre: gran agenda de planes del 9 al 12 de octubre de 2026». Una propuesta ideal si buscas qué planes hacer hoy en Valencia combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 39.4759,
-        "lng": -0.3703,
-        "image": "images/venues/vlc-albufera-gola-pujol.jpg",
-        "imageAlt": "Agenda en vivo: Qué hacer en Valencia este puente de octubre: gran agenda de planes del 9 al 12 de octubre de 2026"
+        "heading": "3. Conciertos matinales y exposiciones gratuitas en los patios de La Beneficència (sábado 17 y domingo 18)",
+        "venue": "Centro Cultural La Beneficència",
+        "location": "Calle Corona, 36 (Barrio del Carmen)",
+        "price": "Entrada y actividades de fin de semana 100% gratuitas",
+        "lat": 39.4781,
+        "lng": -0.3829,
+        "image": "images/venues/vlc-la-beneficencia.jpg",
+        "imageAlt": "Patios históricos del Centro Cultural La Beneficència en el barrio del Carmen de Valencia",
+        "content": "En el extremo occidental del barrio del Carmen, junto a las Torres de Quart, los cuatro patios arbolados del antiguo hospital de La Beneficència (y su sorprendente iglesia de estilo neobizantino) ofrecen cada sábado y domingo por la mañana actuaciones acústicas gratuitas, talleres culturales y acceso libre al Museu de Prehistòria y al Museu Valencià d'Etnologia.\n\nAl salir a mediodía estás en el punto ideal para tomar el vermut en las plazas peatonales de El Carmen o acercarte al claustro gótico del vecino Centre del Carme (CCCC)."
       }
     ],
     "faqs": [
       {
-        "question": "¿Cuál es el recorrido y horario de la Entrada de Moros y Cristianos de Valencia por el 9 d'Octubre?",
-        "answer": "La Gran Entrada de Moros y Cristianos arranca a las 17:00 h (precedida por la Bajada de Gloria a las 15:45 h) desde la Glorieta y recorre la Calle de la Paz, Poeta Querol, Barcas y la Plaza del Ayuntamiento hasta Marqués de Sotelo."
+        "question": "¿Cómo conseguir las invitaciones gratuitas para el concierto del domingo 18 de octubre en el Palau de la Música de Valencia?",
+        "answer": "Las localidades gratuitas para el concierto extraordinario del 700.º Aniversario del Corpus (domingo 18 de octubre a las 19:00 h en la Sala Iturbi) se retiran a través de la web oficial palauvalencia.com o en las taquillas del auditorio hasta completar aforo."
       },
       {
-        "question": "¿Dónde está instalado el Mercado Medieval del 9 d'Octubre en Valencia?",
-        "answer": "El Mercado Medieval oficial permanece abierto durante todo el puente (hasta el 12 de octubre) en el Jardín del Turia, en el tramo situado entre el Puente de la Exposición y el Puente de las Flores (Metro Alameda)."
+        "question": "¿Qué museos y centros culturales son gratis este fin de semana en Valencia?",
+        "answer": "El Centro Cultural La Beneficència, el Centre del Carme (CCCC) y el Museo de Bellas Artes son gratuitos durante todo el fin de semana, mientras que el IVAM y los museos municipales tienen entrada libre el sábado por la tarde y el domingo."
       }
     ],
-    "QuickSummary": "3 planes clave de la programación oficial del Puente del 9 d'Octubre en Valencia (del 9 al 12 de octubre), sin planes de relleno."
+    "imageCredit": "Wikimedia Commons"
   },
   {
     "id": "barcelona-plan-unico-laberinto-horta-a-fondo",
@@ -732,25 +643,26 @@
   {
     "id": "sevilla-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Sevilla: Puente de Octubre y mercadillos",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Sevilla (9 al 12 Oct): Puente del Pilar y Planes Gratis",
-    "metaDescription": "Agenda real para este fin de semana y Puente del Pilar en Sevilla (del 9 al 12 de octubre): Archivo de Indias gratis por el 12 de octubre, Mercadillo de Arte en Plaza del Museo, Casa de las Sirenas y Triana.",
+    "title": "Qué hacer este fin de semana en Sevilla (16 al 18 de octubre): Jardín de las Delicias en la Cartuja, Lope de Vega y Plaza del Museo",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Sevilla (16 al 18 Oct): Cartuja, Teatro y Planes | Qué Plan Hoy",
+    "metaDescription": "Agenda real en Sevilla del viernes 16 al domingo 18 de octubre de 2026: edición especial del festival Jardín de las Delicias en el Monasterio de la Cartuja (CAAC), estreno en el Teatro Lope de Vega y Mercadillo del Arte en Plaza del Museo.",
     "city": "Sevilla",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre de 2026",
+    "weekendDates": "16 al 18 de octubre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-14",
+    "publishedAt": "2026-10-15",
     "targetKeyword": "que plan hacer en sevilla este fin de semana",
     "searchVolume": "4.900 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (15/100)",
     "image": "images/venues/sev-plaza-del-museo.jpg",
-    "imageAlt": "Plaza del Museo y fachada del Museo de Bellas Artes de Sevilla rodeada de arbolado",
-    "excerpt": "Los 2 planes clave de este fin de semana en Sevilla (del 9 al 12 de octubre): programación especial del 12 de Octubre en el Archivo General de Indias y el Mercadillo del Arte del domingo en la Plaza del Museo.",
-    "priceRange": "Gratis – 10 €",
+    "imageAlt": "Arbolado y fachada del Museo de Bellas Artes en la Plaza del Museo de Sevilla",
+    "excerpt": "Los 3 planes reales para este fin de semana del 16 al 18 de octubre en Sevilla: música y arte contemporáneo en el Monasterio de la Cartuja (CAAC), teatro de otoño con «Largo viaje hacia la noche» en el Teatro Lope de Vega y el Mercadillo dominical de Pintura en la Plaza del Museo.",
+    "priceRange": "Gratis – 12 €",
     "neighborhoods": [
-      "Archivo de Indias y Catedral",
-      "Plaza del Museo"
+      "Isla de la Cartuja y Triana",
+      "Parque de María Luisa (Teatro Lope de Vega)",
+      "Plaza del Museo (Centro Histórico)"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -763,72 +675,74 @@
     },
     "sections": [
       {
-        "heading": "1. Agenda en vivo: Circo, hinchables y talleres gratuitos para niños en estos dos parques de Sevilla por el puente de octubre: programación completa del mejor plan en familia",
-        "venue": "Agenda en vivo: Circo, hinchables y talleres gratuitos para niños en estos dos parques de Sevilla por el puente de octubre: programación completa del mejor plan en familia",
-        "location": "Centro y barrios de Sevilla (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Sevilla para este fin de semana: «Circo, hinchables y talleres gratuitos para niños en estos dos parques de Sevilla por el puente de octubre: programación completa del mejor plan en familia». Una propuesta ideal si buscas qué planes hacer hoy en Sevilla combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 37.3911,
-        "lng": -5.9825,
-        "image": "images/venues/sev-marqueses-algaba.jpg",
-        "imageAlt": "Agenda en vivo: Circo, hinchables y talleres gratuitos para niños en estos dos parques de Sevilla por el puente de octubre: programación completa del mejor plan en familia"
+        "heading": "1. Arte contemporáneo y Festival Jardín de las Delicias en el Monasterio de la Cartuja (sábado 17 y domingo 18)",
+        "venue": "Centro Andaluz de Arte Contemporáneo (CAAC) – Monasterio de Santa María de las Cuevas",
+        "location": "Avenida Américo Vespucio, 2, Isla de la Cartuja (A 10 min a pie cruzando desde Triana)",
+        "price": "Exposiciones del CAAC gratis sábados de 11:00 a 21:00 h y domingos de 10:00 a 15:30 h",
+        "lat": 37.3982,
+        "lng": -6.0094,
+        "image": "images/venues/sev-ceramica-triana.jpg",
+        "imageAlt": "Hornos históricos de cerámica y arquitectura patrimonial junto al eje de Triana y la Cartuja en Sevilla",
+        "content": "El histórico Monasterio de la Cartuja —con sus chimeneas industriales de ladrillo del siglo XIX, sus claustros mudéjares y sus praderas de ombúes centenarios— vive este sábado 17 de octubre el desembarco en Sevilla del festival musical y escénico «Jardín de las Delicias», además de mantener abiertas las nuevas exposiciones de otoño del Centro Andaluz de Arte Contemporáneo (CAAC).\n\nSi prefieres un plan tranquilo y gratuito, el domingo 18 por la mañana puedes recorrer sin coste todas las salas de arte actual y las capillas históricas del monasterio y cruzar después por la pasarela del Guadalquivir a tomar el aperitivo en Triana."
       },
       {
-        "heading": "2. Agenda en vivo: El pueblo de Sevilla que viajará a la Edad Media este fin de semana: tendrá dragones, caballeros y un mercado histórico",
-        "venue": "Agenda en vivo: El pueblo de Sevilla que viajará a la Edad Media este fin de semana: tendrá dragones, caballeros y un mercado histórico",
-        "location": "Centro y barrios de Sevilla (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Sevilla para este fin de semana: «El pueblo de Sevilla que viajará a la Edad Media este fin de semana: tendrá dragones, caballeros y un mercado histórico». Una propuesta ideal si buscas qué planes hacer hoy en Sevilla combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 37.3931,
-        "lng": -5.9805,
-        "image": "images/venues/sev-marqueses-algaba.jpg",
-        "imageAlt": "Agenda en vivo: El pueblo de Sevilla que viajará a la Edad Media este fin de semana: tendrá dragones, caballeros y un mercado histórico"
+        "heading": "2. «Largo viaje hacia la noche» en el Teatro Lope de Vega y paseo por el Parque de María Luisa (16 al 18 de octubre)",
+        "venue": "Teatro Lope de Vega, Sevilla",
+        "location": "Avenida de María Luisa, s/n (Metro y Tranvía: Prado de San Sebastián / Puerta de Jerez)",
+        "price": "Paseo por las glorietas del parque gratis / Entradas de teatro desde 10 €",
+        "lat": 37.3774,
+        "lng": -5.9901,
+        "image": "images/venues/sev-teatro-lope-de-vega.jpg",
+        "imageAlt": "Cúpula y fachada neobarroca del Teatro Lope de Vega junto al Parque de María Luisa en Sevilla",
+        "content": "Durante las tres tardes de este fin de semana (viernes 16, sábado 17 y domingo 18 de octubre), el monumental Teatro Lope de Vega levantado para la Exposición Iberoamericana de 1929 acoge el drama «Largo viaje hacia la noche» de Eugene O'Neill, protagonizado por Carlos Hipólito bajo la dirección de Ernesto Caballero.\n\nAprovecha los suaves 25 grados del otoño sevillano para llegar una hora antes de la función y pasear bajo los árboles del vecino Parque de María Luisa hasta la Glorieta de Bécquer y el Estanque de los Lotos."
       },
       {
-        "heading": "3. Agenda en vivo: El pueblo de Sevilla que se convertirá en una aldea romana este fin de semana con su mercado artesano histórico: habrá puestos de comida, talleres y pintacaras para los niños",
-        "venue": "Agenda en vivo: El pueblo de Sevilla que se convertirá en una aldea romana este fin de semana con su mercado artesano histórico: habrá puestos de comida, talleres y pintacaras para los niños",
-        "location": "Centro y barrios de Sevilla (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Sevilla para este fin de semana: «El pueblo de Sevilla que se convertirá en una aldea romana este fin de semana con su mercado artesano histórico: habrá puestos de comida, talleres y pintacaras para los niños». Una propuesta ideal si buscas qué planes hacer hoy en Sevilla combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 37.3951,
-        "lng": -5.9785,
-        "image": "images/venues/sev-marqueses-algaba.jpg",
-        "imageAlt": "Agenda en vivo: El pueblo de Sevilla que se convertirá en una aldea romana este fin de semana con su mercado artesano histórico: habrá puestos de comida, talleres y pintacaras para los niños"
+        "heading": "3. Mercadillo dominical del Arte en la Plaza del Museo (domingo 18 de octubre de 10:00 a 14:00 h)",
+        "venue": "Plaza del Museo y Museo de Bellas Artes de Sevilla",
+        "location": "Plaza del Museo, s/n (Casco Antiguo)",
+        "price": "Mercadillo exterior y acceso al Museo de Bellas Artes 100% gratuitos",
+        "lat": 37.3925,
+        "lng": -5.9996,
+        "image": "images/venues/sev-plaza-del-museo-bellas-artes.jpg",
+        "imageAlt": "Fachada del antiguo Convento de la Merced, sede del Museo de Bellas Artes en la Plaza del Museo de Sevilla",
+        "content": "El plan más agradable para la mañana del domingo 18 de octubre en el centro de Sevilla es acercarse entre las 10:00 y las 14:00 h a la arbolada Plaza del Museo. Alrededor de la escultura de bronce de Bartolomé Esteban Murillo, decenas de pintores, acuarelistas y grabadores locales exponen directamente sus obras al aire libre y conversan con los visitantes.\n\nJusto detrás de los caballetes tienes abierta con entrada gratuita la puerta del antiguo Convento de la Merced (Museo de Bellas Artes), con sus tres patios de naranjos y azulejos sevillanos del siglo XVII."
       }
     ],
     "faqs": [
       {
-        "question": "¿Se puede visitar gratis el Archivo General de Indias en Sevilla durante el Puente del 12 de Octubre?",
-        "answer": "Sí, la entrada al Archivo General de Indias (en la Avenida de la Constitución, junto a la Catedral) es completamente libre y gratuita durante todo el año, incluidos los días del Puente de Octubre."
+        "question": "¿Se celebra este año el Festival de las Naciones en el Prado de San Sebastián en Sevilla?",
+        "answer": "No, el antiguo Festival de las Naciones dejó de celebrarse en los Jardines del Prado de San Sebastián; este fin de semana del 16 al 18 de octubre los grandes focos culturales al aire libre están en el Monasterio de la Cartuja (CAAC) y en la Plaza del Museo."
       },
       {
-        "question": "¿Qué horario tiene el Mercadillo de Pintura y Arte de la Plaza del Museo?",
-        "answer": "Se celebra todos los domingos por la mañana de 10:00 a 14:00 h en la Plaza del Museo, justo delante de la puerta del Museo de Bellas Artes de Sevilla."
+        "question": "¿Qué horario tiene el domingo el Mercadillo de Pintura de la Plaza del Museo?",
+        "answer": "Los pintores y acuarelistas instalan sus puestos todos los domingos de 10:00 a 14:00 h frente a la fachada del Museo de Bellas Artes."
       }
-    ]
+    ],
+    "imageCredit": "Wikimedia Commons"
   },
   {
     "id": "toledo-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Toledo: FARCAMA y Puente de Octubre",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Toledo (9 al 12 Oct): FARCAMA y Museos Gratis",
-    "metaDescription": "Agenda oficial para este fin de semana y Puente del Pilar en Toledo (del 9 al 12 de octubre): feria de artesanía FARCAMA gratis en el Parque de la Vega, puertas abiertas el 12 de octubre en el Museo Sefardí y el Greco, y subterráneos romanos.",
+    "title": "Qué hacer este fin de semana en Toledo (16 al 18 de octubre): Feria del Libro, Batalla de Órganos en la Catedral y Teatro de Rojas",
+    "metaTitle": "Qué Hacer Este Fin de Semana en Toledo (16 al 18 Oct): Feria del Libro y Órganos | Qué Plan Hoy",
+    "metaDescription": "Agenda cultural verificada en Toledo del viernes 16 al domingo 18 de octubre de 2026: Feria del Libro en la Plaza del Ayuntamiento, XXXII Batalla de Órganos en la Catedral Primada, La verbena de la Paloma en el Teatro de Rojas y Museo de Santa Cruz.",
     "city": "Toledo",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre de 2026",
+    "weekendDates": "16 al 18 de octubre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-14",
+    "publishedAt": "2026-10-15",
     "targetKeyword": "que plan hacer en toledo este fin de semana",
     "searchVolume": "3.600 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (12/100)",
     "image": "images/venues/tol-san-juan-reyes.jpg",
-    "imageAlt": "Monasterio gótico de San Juan de los Reyes en la Judería de Toledo",
-    "excerpt": "Los 2 grandes planes de este fin de semana en Toledo (del 9 al 12 de octubre): entrada gratuita a FARCAMA en el Parque de la Vega y Jornada de Puertas Abiertas del 12 de Octubre en el Museo Sefardí y el Museo del Greco.",
-    "priceRange": "Gratis – 5 €",
+    "imageAlt": "Arquitectura gótica e histórica del casco antiguo de Toledo",
+    "excerpt": "Los 3 planes reales de este fin de semana del 16 al 18 de octubre en Toledo: casetas y firmas de la Feria del Libro en la Plaza del Ayuntamiento frente a la Catedral, la XXXII Batalla de Órganos y el Ciclo de Otoño del Teatro de Rojas, y la exposición histórica del Museo de Santa Cruz.",
+    "priceRange": "Gratis – 12 €",
     "neighborhoods": [
-      "Parque de la Vega y Puerta de Bisagra",
-      "Judería de Toledo"
+      "Plaza del Ayuntamiento y Catedral",
+      "Plaza Mayor (Teatro de Rojas)",
+      "Plaza de Zocodover (Museo de Santa Cruz)"
     ],
     "affiliate": {
       "partner": "Tiqets",
@@ -841,49 +755,50 @@
     },
     "sections": [
       {
-        "heading": "1. Agenda en vivo: Los planes de emergencia de Toledo, pendientes de actualización: se incorporará apoyo técnico para terminarlos",
-        "venue": "Agenda en vivo: Los planes de emergencia de Toledo, pendientes de actualización: se incorporará apoyo técnico para terminarlos",
-        "location": "Centro y barrios de Toledo (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Toledo para este fin de semana: «Los planes de emergencia de Toledo, pendientes de actualización: se incorporará apoyo técnico para terminarlos». Una propuesta ideal si buscas qué planes hacer hoy en Toledo combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 39.8601,
-        "lng": -4.0206,
-        "image": "images/venues/tol-cerro-del-bu.jpg",
-        "imageAlt": "Agenda en vivo: Los planes de emergencia de Toledo, pendientes de actualización: se incorporará apoyo técnico para terminarlos"
+        "heading": "1. Feria del Libro de Toledo en la Plaza del Ayuntamiento frente a la Catedral (viernes 16 al domingo 18 de octubre)",
+        "venue": "Plaza del Ayuntamiento de Toledo",
+        "location": "Plaza del Ayuntamiento, s/n (Casco Histórico, entre la Catedral Primada y el Palacio Arzobispal)",
+        "price": "Acceso libre y gratuito a todas las casetas y presentaciones (10% de descuento en libros)",
+        "lat": 39.8571,
+        "lng": -4.0245,
+        "image": "images/venues/tol-convento-san-clemente.jpg",
+        "imageAlt": "Arquitectura renacentista del centro histórico de Toledo junto al eje de la Catedral y San Clemente",
+        "content": "Desde el miércoles 14 hasta este domingo 18 de octubre, la monumental Plaza del Ayuntamiento —enmarcada por la fachada gótica de la Catedral Primada, el Palacio Arzobispal y la casa consistorial trazada por Jorge Manuel Theotocópuli y Juan de Herrera— acoge la Feria del Libro de Toledo.\n\nDurante todo el fin de semana en horario de mañana y tarde podrás recorrer las casetas de librerías y editoriales locales, asistir gratis a encuentros con autores, cuentacuentos y recitales al aire libre con un 10% de descuento en todos los ejemplares."
       },
       {
-        "heading": "2. Agenda en vivo: ¿Sin planes para este fin de semana? Estos tres barrios de Toledo están de fiesta",
-        "venue": "Agenda en vivo: ¿Sin planes para este fin de semana? Estos tres barrios de Toledo están de fiesta",
-        "location": "Centro y barrios de Toledo (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Toledo para este fin de semana: «¿Sin planes para este fin de semana? Estos tres barrios de Toledo están de fiesta». Una propuesta ideal si buscas qué planes hacer hoy en Toledo combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 39.8621,
-        "lng": -4.0186,
-        "image": "images/venues/tol-cerro-del-bu.jpg",
-        "imageAlt": "Agenda en vivo: ¿Sin planes para este fin de semana? Estos tres barrios de Toledo están de fiesta"
+        "heading": "2. XXXII Batalla de Órganos en la Catedral y «La verbena de la Paloma» en el Teatro de Rojas (16 y 17 de octubre)",
+        "venue": "Catedral Primada y Teatro Municipal de Rojas (Plaza Mayor)",
+        "location": "Plaza del Ayuntamiento y Plaza Mayor, s/n (A 2 minutos a pie entre ambas sedes)",
+        "price": "Funciones en el Teatro de Rojas desde 12 €",
+        "lat": 39.8569,
+        "lng": -4.0229,
+        "image": "images/venues/tol-sinagoga-transito-greco.jpg",
+        "imageAlt": "Artesonado histórico y patrimonio musical del casco antiguo de Toledo",
+        "content": "Este fin de semana concentra tres citas musicales y escénicas extraordinarias en el corazón de Toledo. El viernes 16 de octubre (19:30 h), el Teatro de Rojas acoge el concierto conmemorativo «450 años de teatro, poesía y música» a cargo del Orfeón Tres Culturas.\n\nEl sábado 17 de octubre a las 20:00 h tendrás doble elección: la esperada XXXII Batalla de Órganos en el interior de la Catedral Primada —donde dialogan en directo los órganos históricos del Emperador, de Berdalonga y de Echevarría— o la representación de la zarzuela clásica «La verbena de la Paloma» en el Teatro de Rojas inaugurando el XXVIII Ciclo Toledo Siglo de Oro."
       },
       {
-        "heading": "3. Agenda en vivo: La feria gastronómica ideal para este fin de semana es gratis y tiene tapas a 2,50 euros: conciertos, talleres y más de 60 puestos para conocer la cocina de Toledo",
-        "venue": "Agenda en vivo: La feria gastronómica ideal para este fin de semana es gratis y tiene tapas a 2,50 euros: conciertos, talleres y más de 60 puestos para conocer la cocina de Toledo",
-        "location": "Centro y barrios de Toledo (Transporte público recomendado)",
-        "price": "Consultar acceso (mayoría de actividades gratuitas o entrada libre)",
-        "content": "Destacado en la agenda cultural de Toledo para este fin de semana: «La feria gastronómica ideal para este fin de semana es gratis y tiene tapas a 2,50 euros: conciertos, talleres y más de 60 puestos para conocer la cocina de Toledo». Una propuesta ideal si buscas qué planes hacer hoy en Toledo combinando cultura, ocio al aire libre y gastronomía local.",
-        "lat": 39.8641,
-        "lng": -4.0166,
-        "image": "images/venues/tol-cerro-del-bu.jpg",
-        "imageAlt": "Agenda en vivo: La feria gastronómica ideal para este fin de semana es gratis y tiene tapas a 2,50 euros: conciertos, talleres y más de 60 puestos para conocer la cocina de Toledo"
+        "heading": "3. Exposición «Los Mapas y la Primera Vuelta al Mundo» en el Museo de Santa Cruz (gratis sábado tarde y domingo)",
+        "venue": "Museo de Santa Cruz",
+        "location": "Calle Miguel de Cervantes, 3 (Junto al Arco de la Sangre en la Plaza de Zocodover)",
+        "price": "Claustro de acceso libre / Exposiciones gratis el sábado desde las 14:00 h y el domingo por la mañana",
+        "lat": 39.8594,
+        "lng": -4.0202,
+        "image": "images/venues/tol-museo-santa-cruz.jpg",
+        "imageAlt": "Claustro plateresco y escalinata de Covarrubias en el Museo de Santa Cruz de Toledo",
+        "content": "A menos de cien metros de la Plaza de Zocodover, el antiguo Hospital de Santa Cruz del siglo XVI acoge este mes la exposición temporal «Los Mapas y la Primera Vuelta al Mundo: las expediciones de Magallanes y Elcano», junto a su colección permanente de lienzos de El Greco.\n\nEl acceso a su impresionante claustro renacentista de dos pisos y a la escalera plateresca de Alonso de Covarrubias es libre, y tanto el sábado por la tarde como el domingo por la mañana la entrada a todas las salas del museo es completamente gratuita."
       }
     ],
     "faqs": [
       {
-        "question": "¿Dónde se celebra la feria de artesanía FARCAMA en Toledo este Puente de Octubre y cuánto cuesta?",
-        "answer": "FARCAMA se celebra del 7 al 12 de octubre en el Parque de la Vega (Paseo de Merchán, justo frente a la Puerta de Bisagra) en horario ininterrumpido de 11:00 a 21:00 h, y la entrada al recinto es totalmente gratuita."
+        "question": "¿Dónde está instalada la Feria del Libro de Toledo este fin de semana del 16 al 18 de octubre?",
+        "answer": "Las casetas y el escenario de firmas de la Feria del Libro de Toledo están instalados en la Plaza del Ayuntamiento, justo delante de la Catedral Primada, hasta el domingo 18 de octubre."
       },
       {
-        "question": "¿Qué museos de Toledo son gratis el 12 de octubre?",
-        "answer": "El 12 de octubre (Día de la Fiesta Nacional), así como el sábado desde las 14:00 h y el domingo por la mañana, tienen entrada gratuita los Museos Estatales de Toledo: el Museo Sefardí (Sinagoga del Tránsito) y el Museo del Greco en la Judería."
+        "question": "¿Cuándo es la Batalla de Órganos en la Catedral de Toledo?",
+        "answer": "La XXXII Batalla de Órganos se celebra el sábado 17 de octubre a las 20:00 h dentro del Festival de Música El Greco en Toledo en la Catedral Primada."
       }
-    ]
+    ],
+    "imageCredit": "Wikimedia Commons"
   },
   {
     "id": "valencia-plan-unico-albufera-el-palmar-autobus",
