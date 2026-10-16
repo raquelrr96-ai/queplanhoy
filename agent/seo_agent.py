@@ -1072,10 +1072,8 @@ def run_wednesday_weekend_all_cities() -> list:
         break
 
     if target_art:
-      cur_dates = str(target_art.get("weekendDates", ""))
-      if cur_dates != weekend_dates and not cur_dates.startswith(weekend_start):
-        target_art["weekendDates"] = weekend_dates
-        target_art["publishedAt"] = today_str
+      # NUNCA modificar weekendDates en solitario sin actualizar a la vez title, excerpt y sections,
+      # para evitar que la etiqueta de fecha muestre el nuevo fin de semana mientras el texto habla del anterior.
       published.append(target_art)
 
   save_json(ARTICLES_FILE, existing_articles)

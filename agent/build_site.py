@@ -2092,8 +2092,41 @@ def validate_articles_quality(articles: list):
   for art in articles:
     slug = art.get("slug", "<sin-slug>")
     title = art.get("title", "").strip()
+    excerpt = art.get("excerpt", "").strip()
+    meta_desc = art.get("metaDescription", "").strip()
     if not title or len(title) < 18:
       errors.append(f"[{slug}] Título demasiado corto o vacío: {title!r}")
+
+    if art.get("category") == "Este Fin de Semana":
+      wd = art.get("weekendDates", "").strip()
+      wd_match = re.search(
+          r"\b(\d{1,2})\s+al\s+(?:[a-záéíóú]+\s+)?(\d{1,2})\s+de\s+([a-záéíóú]+)",
+          wd.lower(),
+      )
+      if not wd_match:
+        errors.append(
+            f"[{slug}] Artículo de 'Este Fin de Semana' sin rango válido en weekendDates={wd!r}."
+        )
+      else:
+        wd_tuple = (wd_match.group(1), wd_match.group(2), wd_match.group(3))
+        for field_name, field_val in [
+            ("title", title),
+            ("excerpt", excerpt),
+            ("metaDescription", meta_desc),
+        ]:
+          found_ranges = re.findall(
+              r"\b(\d{1,2})\s+al\s+(?:[a-záéíóú]+\s+)?(\d{1,2})\s+de\s+([a-záéíóú]+)",
+              field_val.lower(),
+          )
+          if not found_ranges:
+            errors.append(
+                f"[{slug}] Desajuste de fechas: weekendDates={wd!r} NO aparece en {field_name} ({field_val!r})."
+            )
+          for r_tuple in found_ranges:
+            if r_tuple != wd_tuple:
+              errors.append(
+                  f"[{slug}] Fecha de otro fin de semana detectada en {field_name}: {r_tuple} != {wd_tuple}."
+              )
 
     hero_img = art.get("image", "").lstrip("/")
     hero_abs = os.path.join(PUBLIC_DIR, hero_img)
