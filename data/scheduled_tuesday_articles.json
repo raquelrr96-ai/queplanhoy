@@ -1,127 +1,351 @@
 [
   {
-    "id": "toledo-barrancas-de-burujon-toledo-guia",
-    "slug": "barrancas-de-burujon-toledo-guia-completa-como-llegar",
+    "id": "madrid-cementerio-san-isidro-todos-los-santos",
+    "slug": "cementerio-sacramental-san-isidro-madrid-visita-todos-los-santos",
     "articleType": "single_plan",
-    "title": "Las Barrancas de Burujón en Toledo: cómo visitar el gran cañón de arcilla roja sobre el Tajo",
-    "metaTitle": "Barrancas de Burujón en Toledo: Cómo Llegar, Ruta y Aparcamiento | Qué Plan Hoy",
-    "metaDescription": "Guía completa para visitar las Barrancas de Burujón en Toledo: cómo llegar por la CM-4000, dónde aparcar gratis, ruta a pie por la Senda Ecológica y mejores miradores al atardecer.",
-    "city": "Toledo",
-    "category": "Gratis y Baratos",
-    "categoryIcon": "💸",
+    "title": "El Cementerio Sacramental de San Isidro en Madrid: cómo visitar la joya romántica oculta tras el Puente de Toledo (y ruta de buñuelos por Todos los Santos)",
+    "metaTitle": "Cementerio Sacramental de San Isidro Madrid (2026): Horarios y Visita por Todos los Santos | Qué Plan Hoy",
+    "metaDescription": "Guía para visitar gratis la Sacramental de San Isidro en Madrid por Todos los Santos: horarios del Patio de la Concepción, panteones modernistas y dónde comprar huesos de santo y buñuelos.",
+    "city": "Madrid",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "weekendDates": "Especial Todos los Santos",
     "readTime": "7 min",
-    "publishedAt": "2026-10-13",
-    "targetKeyword": "barrancas de burujon toledo como llegar ruta",
-    "searchVolume": "9.800 búsquedas/mes",
-    "keywordDifficulty": "Baja (14/100)",
-    "image": "images/venues/tol-barrancas-burujon-turquesa.jpg",
-    "imageAlt": "Cortados de arcilla rojiza de las Barrancas de Burujón sobre las aguas turquesas del embalse de Castrejón en Toledo",
+    "publishedAt": "2026-10-20",
+    "targetKeyword": "cementerio sacramental san isidro madrid visita todos los santos",
+    "searchVolume": "6.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (15/100)",
+    "image": "images/venues/madrid-cementerio-san-isidro-patio.jpg",
+    "imageAlt": "Galería de columnas y jardín central del Patio de la Concepción en la Sacramental de San Isidro de Madrid",
     "imageCredit": "Wikimedia Commons",
-    "excerpt": "A menos de media hora de Toledo capital se esconde uno de los paisajes naturales más sobrecogedores de la península: un cañón de cárcavas rojizas de más de cien metros de altura cortado a pico sobre las aguas del río Tajo.",
-    "priceRange": "100% Gratis (Acceso y aparcamiento libre)",
+    "excerpt": "A pocos pasos de la Ermita de San Isidro se esconde el cementerio más antiguo conservado en Madrid (1811): un museo al aire libre de panteones neogóticos, modernistas y románticos con vistas a la cornisa del Manzanares.",
+    "priceRange": "Entrada libre (Buñuelos y huesos de santo: 9 €)",
     "neighborhoods": [
-      "Burujón (CM-4000 km 26)",
-      "Embalse de Castrejón",
-      "Mirador del Cambrón"
+      "Carabanchel Bajo (Ermita del Santo)",
+      "Madrid Río y Puente de Toledo",
+      "Madrid de los Austrias"
     ],
     "affiliate": {
-      "partner": "Tiqets",
-      "badge": "Si combinas la ruta con Toledo capital",
-      "title": "Pulsera Turística Oficial de Toledo (Acceso a 7 Monumentos)",
-      "description": "Si visitas las Barrancas por la mañana y pasas la tarde en el casco histórico de Toledo, esta pulsera incluye San Juan de los Reyes, Santa María la Blanca, el Entierro del Señor de Orgaz y cuatro monumentos más.",
-      "price": "Desde 14 € (7 monumentos incluidos)",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c170113%2Fentradas-para-pulsera-turistica-de-toledo-p1031186%2F",
-      "ctaText": "Ver la Pulsera Turística de Toledo →"
+      "partner": "Civitatis",
+      "badge": "Especial Todos los Santos en Madrid",
+      "title": "Free Tour de los Fantasmas y Casas Encantadas de Madrid",
+      "description": "Si después de la ruta matinal quieres recorrer al anochecer el Palacio de Linares, la Casa de las Siete Chimeneas y los misterios del Madrid de los Austrias.",
+      "price": "Gratis (Free Tour de 2 horas)",
+      "url": "https://www.civitatis.com/es/madrid/free-tour-fantasmas-madrid/",
+      "ctaText": "Reservar plaza en el Free Tour nocturno →"
     },
-    "generatedByAgent": false,
     "sections": [
       {
-        "heading": "El Monumento Natural de las Barrancas de Castrejón y Calaña: cómo llegar, dónde aparcar y recorrido por el cañón",
-        "venue": "Barrancas de Burujón (Mirador del Cambrón y Senda Ecológica)",
-        "location": "Carretera CM-4000, km 26 (Desvío junto a Bar El Refugio, Burujón, Toledo — a 25 min en coche de Toledo capital)",
-        "price": "Entrada y aparcamiento 100% gratuitos",
-        "lat": 39.8736,
-        "lng": -4.2947,
-        "image": "images/venues/tol-barrancas-burujon-atardecer.jpg",
-        "imageAlt": "Luz dorada de la tarde sobre los cortados arcillosos del Pico del Cambrón en las Barrancas de Burujón",
-        "content": "Quien recorre la carretera CM-4000 que une Toledo con Talavera de la Reina entre campos de cereal y olivares llanos no imagina lo que se abre de golpe al tomar el desvío del kilómetro 26, en el término municipal de Burujón. Sin previo aviso, la meseta toledana se quiebra en un anfiteatro natural de arcilla rojiza y ocre que cae en vertical más de cien metros sobre las aguas calmadas del embalse de Castrejón. Declarado Monumento Natural bajo el nombre oficial de Barrancas de Castrejón y Calaña, este paisaje esculpido durante veinticinco millones de años por el viento y la lluvia del cuaternario recuerda tanto a los grandes cañones de Arizona que fue incluso escenario de anuncios míticos de televisión y rodajes cinematográficos.\n\nLlegar desde Toledo capital no tiene pérdida y apenas lleva veinticinco minutos en coche. Basta con salir por la CM-4000 en dirección a La Puebla de Montalbán y Talavera de la Reina; al alcanzar el punto kilométrico 26 verás a mano izquierda la explanada del restaurante El Refugio y la señalización de madera que marca la entrada a la pista de zahorra prensada. Justo al inicio de ese camino de tierra se encuentra la explanada principal de aparcamiento gratuito. Nuestro consejo es dejar el coche ahí mismo y hacer la aproximación caminando: además de proteger el entorno del polvo en suspensión, el paseo de apenas quince minutos entre retamas, tomillos y almendros hace que la primera aparición del cortado frente a tus ojos sea mucho más impactante.\n\nAl asomarte por primera vez al Mirador del Cambrón —el balcón principal acondicionado con talanquera de madera—, la escala del paisaje obliga a detenerse en silencio. Frente a ti se levanta el Pico del Cambrón, la aguja de arcilla más alta del conjunto con 120 metros de caída vertical sobre el embalse, donde es habitual ver planear a ras de acantilado buitres leonados, águilas imperiales, halcones peregrinos y garzas reales que anidan en las islas de carrizo del agua.\n\nDesde ese primer mirador arranca la Senda Ecológica de las Barrancas, un sendero peatonal de unos cuatro kilómetros entre ida y vuelta completamente llano y fácil de seguir que bordea la cresta superior de las cárcavas hasta el Mirador de los Enebros. A medida que avanzas de balcón en balcón, la perspectiva sobre los barrancos cambia por completo: las paredes de greda muestran sus estrías rojizas, anaranjadas y rosadas según incide el sol, mientras abajo el río Tajo retenido en el embalse cambia del verde esmeralda al azul intenso en los días despejados de otoño.\n\nSi quieres llevarte la imagen más inolvidable de las Barrancas de Burujón, planifica la visita para llegar dos horas antes de la puesta de sol. En esa franja final de la tarde, la luz rasante del oeste enciende la arcilla con un tono fuego casi irreal que se refleja sobre la lámina de agua. Eso sí, ten en cuenta dos detalles importantes antes de ir: fuera de los miradores vallados el borde natural del precipicio no tiene barandillas y el terreno arcilloso puede resbalar si te acercas demasiado al corte, por lo que conviene mantenerse siempre dentro del sendero marcado; y en toda la ruta no hay fuentes de agua potable ni papeleras, así que lleva tu propia botella en la mochila para disfrutar sin prisa de uno de los rincones más extraordinarios de la provincia de Toledo."
+        "heading": "Los patios históricos del siglo XIX: de la sobriedad neoclásica de 1811 al delirio modernista del Patio de la Concepción",
+        "venue": "Archicofradía Sacramental de San Isidro (Patio de la Concepción)",
+        "location": "Paseo de la Ermita del Santo, 72 (Metro: Marqués de Vadillo - L5 / Puerta del Ángel - L6)",
+        "price": "Acceso libre a los patios (9:00 a 15:00 h; ampliado hasta las 17:00 h del 24 oct al 2 nov)",
+        "lat": 40.4011,
+        "lng": -3.7262,
+        "image": "images/venues/madrid-cementerio-san-isidro-panteones.jpg",
+        "imageAlt": "Avenida de panteones monumentales neogóticos y cipreses centenarios en la Sacramental de San Isidro",
+        "content": "Cuando se acerca finales de octubre y el puente de Todos los Santos, Madrid ofrece mucho más que fiestas temáticas de disfraces: en el Cerro de las Ánimas, justo detrás de la Ermita del Santo, sobrevive intacta desde 1811 la Pontificia y Real Archicofradía Sacramental de San Isidro. Es el cementerio monumental más antiguo que conserva la capital y el mismo paisaje que inspiró a Goya sus Pinturas Negras a pocos metros de allí, en la antigua Quinta del Sordo.\n\nPara disfrutar de la visita conviene empezar por la parte más antigua del recinto, situada junto a la capilla de la Ermita. Los tres primeros patios —San Pedro (1811), San Andrés (1829) y San Nicolás (1842)— conservan la traza original de galerías porticadas diseñadas por arquitectos reales de la talla de Isidro González Velázquez. Son claustros recogidos, de estética romántica y silenciosa, donde descansan figuras clave del siglo XIX como Leandro Fernández de Moratín, Ramón de Mesonero Romanos o los padres de Goya.\n\nSin embargo, el gran espectáculo arquitectónico se abre al cruzar hacia el Patio de la Concepción, proyectado a mediados del Ochocientos como un gran jardín cuadrangular rodeado de columnas de hierro fundido y coronado por una soberbia colección de panteones privados. Aquí la aristocracia y la alta burguesía encargaron auténticas capillas en miniatura: desde el imponente panteón neobizantino de los Duques de Denia hasta joyas del modernismo diseñadas por Arturo Mélida o Ricardo García Guereta, con esculturas en mármol y bronce de Mariano Benlliure y Agustín Querol."
+      },
+      {
+        "heading": "El eco del Madrid romántico y la ruta de buñuelos de viento y huesos de santo por el centro histórico",
+        "venue": "Pastelería El Riojano (Calle Mayor) y Museo del Romanticismo",
+        "location": "Calle Mayor, 10 (Metro: Sol) / Calle de San Mateo, 13 (Metro: Tribunal)",
+        "price": "Bandeja de buñuelos y huesos de santo: 9 € – 12 € / Museo del Romanticismo: 3 € (Gratis sábados desde las 14:00 h y domingos)",
+        "lat": 40.4159,
+        "lng": -3.7064,
+        "image": "images/venues/madrid-romanticismo-salon-baile.jpg",
+        "imageAlt": "Salón de Baile decimonónico del Museo del Romanticismo en Madrid con retratos y lámparas de araña",
+        "content": "A medida que avanzas hacia los bordes del Patio de Santa María de la Cabeza, el terreno desciende hacia el río Manzanares regalando una de las perspectivas más desconocidas de Madrid: los pináculos neogóticos de piedra recortados contra la silueta blanca del Palacio Real y la cúpula de San Francisco el Grande al otro lado del valle.\n\nAl salir a mediodía, el plan otoñal perfecto consiste en bajar caminando diez minutos hasta el Puente de Toledo y subir hacia el centro para seguir el hilo del siglo XIX madrileño. Durante las dos últimas semanas de octubre y los primeros días de noviembre, los obradores centenarios sacan del horno sus dos dulces de temporada más esperados: los buñuelos de viento (rellenos al momento de crema pastelera, nata, trufa o cabello de ángel) y los huesos de santo de mazapán artesano en hornos históricos como El Riojano (Calle Mayor, 10, fundado en 1855 por el pastelero de la reina Isabel II) o Casa Mira (Carrera de San Jerónimo, 30).\n\nY si te has quedado con ganas de sumergirte del todo en la atmósfera literaria de aquel Madrid decimonónico de Larra, Bécquer y Espronceda, remata la tarde en el palacete del Museo del Romanticismo (Calle de San Mateo, 13), cuyo jardín del magnolio y salón de té son un refugio silencioso en pleno barrio de Justicia."
       }
     ],
     "faqs": [
       {
-        "question": "¿Hay que pagar entrada o reservar para visitar las Barrancas de Burujón?",
-        "answer": "No, el acceso al Monumento Natural de las Barrancas de Burujón y el estacionamiento en las zonas habilitadas junto a la carretera CM-4000 son completamente gratuitos y están abiertos durante todo el año."
+        "question": "¿Se puede visitar el Cementerio de San Isidro de Madrid por libre y gratis?",
+        "answer": "Sí, el acceso al recinto monumental de la Sacramental de San Isidro es gratuito todos los días del año en su horario habitual de mañana (9:00 a 15:00 h), ampliándose hasta las 17:00 h durante la semana de Todos los Santos."
       },
       {
-        "question": "¿Cuánto se tarda en recorrer la senda de las Barrancas de Burujón?",
-        "answer": "El recorrido completo a pie desde el primer aparcamiento pasando por el Mirador del Cambrón y la Senda Ecológica hasta el Mirador de los Enebros (ida y vuelta de unos 4,4 km en llano) lleva entre una hora y media y dos horas caminando sin prisa y parando a hacer fotografías."
-      },
-      {
-        "question": "¿Cuál es la mejor hora para ver las Barrancas de Burujón?",
-        "answer": "Las últimas dos horas de la tarde antes del atardecer son el momento más espectacular del día, ya que el sol ilumina de frente las paredes de arcilla rojiza del Pico del Cambrón y multiplica el contraste con el agua del embalse de Castrejón."
+        "question": "¿Dónde comprar los mejores huesos de santo y buñuelos de viento en el centro de Madrid?",
+        "answer": "Dos de los obradores históricos más recomendables cerca de Sol son Pastelería El Riojano (Calle Mayor, 10, con salón de té interior) y Casa Mira (Carrera de San Jerónimo, 30), además de La Mallorquina y Horno San Onofre."
       }
     ]
   },
   {
-    "id": "madrid-barrancas-de-burujon-escapada-una-hora",
-    "slug": "barrancas-de-burujon-escapada-a-una-hora-de-madrid",
+    "id": "barcelona-cementerio-poblenou-castanyada",
+    "slug": "cementerio-poblenou-beso-de-la-muerte-barcelona-castanyada",
     "articleType": "single_plan",
-    "title": "Las Barrancas de Burujón: la escapada a una hora de Madrid que parece el Gran Cañón",
-    "metaTitle": "Las Barrancas de Burujón: Escapada a 1 Hora de Madrid Gratis | Qué Plan Hoy",
-    "metaDescription": "Cómo ir a las Barrancas de Burujón desde Madrid en poco más de una hora: ruta por los acantilados de arcilla roja sobre el Tajo, dónde aparcar y mejores horas para ir.",
-    "city": "Madrid",
-    "category": "Planes Diferentes",
-    "categoryIcon": "✨",
+    "title": "Ruta por el Cementerio Monumental de Poblenou y «El Beso de la Muerte» en Barcelona: el plan cultural para La Castanyada y Todos los Santos",
+    "metaTitle": "Cementerio de Poblenou y El Beso de la Muerte en Barcelona: Ruta de Todos los Santos | Qué Plan Hoy",
+    "metaDescription": "Cómo visitar gratis el Cementerio de Poblenou en Barcelona por Todos los Santos y La Castanyada: dónde está la escultura de El Beso de la Muerte, el Santet y dónde probar los mejores panellets artesanos.",
+    "city": "Barcelona",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
+    "weekendDates": "La Castanyada y Tots Sants",
     "readTime": "7 min",
-    "publishedAt": "2026-10-13",
-    "targetKeyword": "barrancas de burujon escapada a una hora de madrid",
-    "searchVolume": "12.100 búsquedas/mes",
-    "keywordDifficulty": "Baja (15/100)",
-    "image": "images/venues/madrid-barrancas-burujon-escapada.jpg",
-    "imageAlt": "Acantilados de arcilla rojiza de las Barrancas de Burujón sobre el embalse de Castrejón en una escapada de día desde Madrid",
+    "publishedAt": "2026-10-20",
+    "targetKeyword": "cementerio de poblenou el beso de la muerte barcelona visita",
+    "searchVolume": "5.900 búsquedas/mes",
+    "keywordDifficulty": "Baja (14/100)",
+    "image": "images/venues/bcn-cementiri-poblenou-capella.jpg",
+    "imageAlt": "Capilla neoclásica y cipreses del Cementerio Monumental de Poblenou en Barcelona",
     "imageCredit": "Wikimedia Commons",
-    "excerpt": "Cuando apetece salir de Madrid un día de otoño pero ya te conoces de memoria Navacerrada, Patones y Aranjuez, a poco más de una hora hacia el suroeste te espera un paisaje de cañones rojizos y agua turquesa que parece sacado de otro continente.",
-    "priceRange": "100% Gratis (Ruta al aire libre y parking gratuito)",
+    "excerpt": "Inaugurado en 1775 y rediseñado por el arquitecto italiano Antonio Ginesi, el Cementerio de Poblenou alberga una de las esculturas más sobrecogedoras de Europa, «El Beso de la Muerte», a diez minutos de la Rambla del Poblenou.",
+    "priceRange": "100% Gratis (Panellets y castañas opcionales: 4 € – 10 €)",
     "neighborhoods": [
-      "Escapada a 1 h de Madrid (A-5 / A-42)",
-      "Burujón (Toledo)",
-      "Embalse de Castrejón"
+      "El Poblenou (Sant Martí)",
+      "Rambla del Poblenou",
+      "Vila Olímpica / Llacuna"
     ],
     "affiliate": {
-      "partner": "Tiqets",
-      "badge": "Si paras en Toledo de camino de vuelta a Madrid",
-      "title": "Pulsera Turística Oficial de Toledo (Acceso a 7 Monumentos)",
-      "description": "Como la ruta desde Madrid por la A-42 pasa justo al lado de Toledo, muchos viajeros aprovechan para comer allí y visitar sus siete monumentos históricos con pase único.",
-      "price": "Desde 14 € (7 monumentos incluidos)",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c170113%2Fentradas-para-pulsera-turistica-de-toledo-p1031186%2F",
-      "ctaText": "Ver la Pulsera Turística de Toledo →"
+      "partner": "Civitatis",
+      "badge": "Misterios al caer la noche",
+      "title": "Free Tour de los Fantasmas y Leyendas del Barrio Gótico",
+      "description": "Completa la jornada de La Castanyada recorriendo al anochecer las historias ocultas de la calle Estruc, Santa Maria del Pi y el Pont del Bisbe.",
+      "price": "Gratis (Free Tour con reserva)",
+      "url": "https://www.civitatis.com/es/barcelona/free-tour-misterios-leyendas-barcelona/",
+      "ctaText": "Ver horarios del Free Tour nocturno →"
     },
-    "generatedByAgent": false,
     "sections": [
       {
-        "heading": "Cómo organizar la escapada desde Madrid a las Barrancas de Burujón: ruta en coche, sendero por los cortados y atardecer",
-        "venue": "Monumento Natural de las Barrancas de Burujón",
-        "location": "Autovía A-42 (por Toledo) o A-5 (salida Maqueda / Torrijos) hasta CM-4000 km 26 · A 1 h 10 min desde el suroeste de Madrid",
-        "price": "Acceso libre y aparcamiento 100% gratuito",
-        "lat": 39.8736,
-        "lng": -4.2947,
-        "image": "images/venues/madrid-barrancas-burujon-mirador.jpg",
-        "imageAlt": "Vista panorámica desde la cresta de las Barrancas de Burujón sobre las islas y aguas del embalse de Castrejón",
-        "content": "Los fines de semana de otoño en Madrid suelen repetir siempre el mismo guion: atasco de subida a la sierra de Guadarrama a las diez de la mañana y aparcamientos completos en Cotos o La Pedriza antes del mediodía. Sin embargo, si en lugar de poner rumbo al norte tomas la salida sur por la A-42 o la A-5, en poco más de una hora de conducción tranquila llegas a uno de los paisajes geológicos más asombrosos del centro peninsular: las Barrancas de Burujón, un inmenso tajo de cárcavas de arcilla rojiza suspendido sobre las aguas del embalse de Castrejón.\n\nPara llegar desde Madrid tienes dos alternativas igual de cómodas que rondan los setenta minutos sin peajes. La primera consiste en bajar por la autovía de Extremadura (A-5) hasta la salida de Maqueda (km 74) y enlazar por Torrijos hacia La Puebla de Montalbán y Burujón; la segunda, ideal si sales desde el centro o el sur de la capital, es tomar la autovía de Toledo (A-42) y continuar desde allí veinte minutos por la carretera autonómica CM-4000 en dirección a Talavera de la Reina. En ambos casos tu referencia exacta en el navegador es el kilómetro 26 de la CM-4000, justo donde se sitúa el restaurante El Refugio y el desvío señalizado hacia la pista de tierra del Monumento Natural.\n\nNada más dejar el coche en la explanada gratuita de la entrada y caminar unos minutos por el sendero llano entre campos de labor, el terreno se abre de repente en un abismo de greda y arcilla de más de un kilómetro de longitud. La erosión del viento y la lluvia durante millones de años ha tallado aquí un laberinto de agujas, crestas afiladas y cañones verticales que alcanzan los 120 metros de altura en el llamado Pico del Cambrón, reflejándose directamente sobre el agua remansada del río Tajo.\n\nLo mejor de esta escapada es que no exige equipamiento técnico de montaña ni grandes desniveles: la Senda Ecológica que recorre el borde superior de los cortados entre el Mirador del Cambrón y el Mirador de los Enebros es un paseo de unos cuatro kilómetros (ida y vuelta) apto para cualquier persona acostumbrada a caminar. A lo largo del recorrido te acompañará el vuelo silencioso de los buitres leonados y aguiluchos laguneros que aprovechan las corrientes térmicas del acantilado, con vistas limpias hasta los Montes de Toledo en el horizonte.\n\nPara redondear el día saliendo desde Madrid sin prisas, nuestro consejo es comer a mediodía por la zona de Burujón o La Puebla de Montalbán (o llevar tu propio pícnic en la mochila, respetando siempre la limpieza del paraje) y entrar a la senda a media tarde. A partir de las cinco de la tarde en otoño, el sol baja de frente a los cortados y tiñe toda la pared de arcilla de un color cobre y carmesí espectacular antes de regresar a Madrid en apenas una hora de carretera despejada."
+        "heading": "«El Beso de la Muerte», el Santet y la ciudad neoclásica de Antonio Ginesi en el Departamento II",
+        "venue": "Cementiri del Poblenou (Entrada por Carrer de Taulat, 2)",
+        "location": "Avinguda d'Icària, s/n — Carrer de Taulat, 2 (Metro: Llacuna o Bogatell - L4)",
+        "price": "100% Gratis (Abierto todos los días de 8:00 a 18:00 h; plano de ruta gratuito en la entrada)",
+        "lat": 41.3961,
+        "lng": 2.2036,
+        "image": "images/venues/bcn-sant-pau-2.jpg",
+        "imageAlt": "Arquitectura histórica monumental barcelonesa iluminada al anochecer en la ruta de los grandes arquitectos del Modernismo",
+        "content": "En Barcelona, la transición de octubre a noviembre huele a leña de castañera en las esquinas, a boniatos asados y a bandejas de panellets recién salidos del horno. Es también el momento del año en que el Cementerio General de Poblenou —reconstruido en 1819 por el arquitecto italiano Antonio Ginesi tras la invasión napoleónica— cobra un protagonismo cultural único como museo de escultura al aire libre.\n\nAl cruzar la verja principal verás cómo el primer sector responde al ideal igualitario de principios del siglo XIX: calles rectilíneas de nichos blancos custodiadas por cipreses que conducen hasta la capilla central de inspiración toscana y egipcia. Justo detrás, en el Departamento II, se abre el recinto de panteones monumentales donde la burguesía industrial encargó obras a los grandes maestros del Modernismo que también trabajaron en joyas como Sant Pau o el Palau de la Música, entre ellos Josep Llimona, Domènech i Montaner o Josep Fontserè.\n\nEs aquí, en la sepultura de la familia Llaudet Soler (tallada en mármol en 1930 en el taller de Jaume Barba), donde se encuentra «El Beso de la Muerte» (El Petó de la Mort): un joven tejedor agotado cae en brazos de un esqueleto alado de anatomía perfecta que deposita un beso sereno en su mejilla sobre los versos de Jacint Verdaguer. A pocos pasos verás también la tumba de «El Santet» (Francesc Canals Ambrós, fallecido en 1899), cuyo nicho sigue repleto de flores frescas y pequeños exvotos más de un siglo después."
+      },
+      {
+        "heading": "De la escultura funeraria a la tradición de La Castanyada: ruta de panellets artesanos por la Rambla del Poblenou",
+        "venue": "Rambla del Poblenou y Pastisseria Triomf",
+        "location": "Rambla del Poblenou, 41 (Metro: Poblenou o Llacuna - L4)",
+        "price": "Cucurucho de castañas asadas: 3,50 € / Degustación de panellets de piñones: 8,00 € – 12,00 €",
+        "lat": 41.4002,
+        "lng": 2.2039,
+        "image": "images/venues/bcn-panellets-castanyada.jpg",
+        "imageAlt": "Bandeja de panellets tradicionales de piñones, almendra y membrillo recién horneados para La Castanyada en Barcelona",
+        "content": "Al salir del recinto por la calle Taulat estarás a solo cinco minutos caminando del corazón de la antigua villa industrial de Sant Martí de Provençals: la Rambla del Poblenou. A diferencia de otras arterias turísticas de Barcelona, este bulevar arbolado mantiene intacta su vida de barrio, sus terrazas soleadas, sus casinos decimonónicos como L'Aliança del Poblenou y sus pastelerías familiares de varias generaciones.\n\nEn los días previos al 31 de octubre (noche de La Castanyada) y al 1 de noviembre, los escaparates se llenan de panellets artesanos elaborados exclusivamente con mazapán crudo de almendra marcona, azúcar y huevo —sin patata ni boniato en la masa base—, rebozados uno a uno con piñones del país y horneados a fuego fuerte para que queden dorados por fuera y tiernos por dentro.\n\nHaz una parada en obradores históricos del barrio como la Pastisseria Triomf (fundada en 1952 en la Rambla del Poblenou, 41, galardonada en la Ruta dels Millors Panellets de Pinyons) para llevarte un surtido de piñones, almendra, coco y café, o compra un cucurucho de papel de periódico con castañas recién asadas al carbón en la esquina con la calle Joncar antes de bajar dando un paseo hasta el mar en la playa del Bogatell."
       }
     ],
     "faqs": [
       {
-        "question": "¿Cuánto se tarda en llegar a las Barrancas de Burujón desde Madrid?",
-        "answer": "Desde el centro o suroeste de Madrid se tarda aproximadamente 1 hora y 10 minutos en coche (unos 98 km), ya sea por la autovía A-42 pasando junto a Toledo y tomando la CM-4000 hasta el km 26, o bien por la A-5 desviándose en Maqueda hacia Torrijos y Burujón."
+        "question": "¿En qué cementerio de Barcelona está la escultura de El Beso de la Muerte?",
+        "answer": "Está en el Cementerio de Poblenou (entrada por Carrer de Taulat, 2), concretamente en el Departamento II (tras cruzar la capilla central hacia el fondo y girar a la derecha), sobre la tumba de la familia Llaudet Soler realizada en 1930."
       },
       {
-        "question": "¿Se puede ir en transporte público o hace falta coche?",
-        "answer": "Al encontrarse el acceso en el kilómetro 26 de la carretera CM-4000 fuera del casco urbano de Burujón, la forma más práctica de llegar desde Madrid es en coche particular. Si no dispones de vehículo, puedes ir en AVE desde Atocha a Toledo en 33 minutos y tomar allí un taxi hasta el inicio de la senda (25 minutos de trayecto)."
+        "question": "¿Cuánto cuesta entrar al Cementerio Monumental de Poblenou?",
+        "answer": "La entrada es 100 % libre y gratuita todos los días de 8:00 a 18:00 h. En la entrada puedes solicitar gratis el folleto con los 29 puntos de la ruta histórica o seguir los códigos QR de cada panteón."
+      }
+    ]
+  },
+  {
+    "id": "valencia-barrio-carmen-cripta-todos-los-santos",
+    "slug": "ruta-nocturna-barrio-del-carmen-leyendas-todos-los-santos-valencia",
+    "articleType": "single_plan",
+    "title": "Ruta al anochecer por el Barrio del Carmen y la Cripta de San Vicente en Valencia: historia oculta y hornos centenarios de Todos los Santos",
+    "metaTitle": "Ruta por el Barrio del Carmen y Cripta de San Vicente en Valencia (Todos los Santos) | Qué Plan Hoy",
+    "metaDescription": "Ruta de misterio e historia por Valencia en Todos los Santos: la Cripta Arqueológica de San Vicente, el Portal de la Valldigna en el Barrio del Carmen y los hornos tradicionales de Ciutat Vella.",
+    "city": "Valencia",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "weekendDates": "Especial Todos los Santos",
+    "readTime": "7 min",
+    "publishedAt": "2026-10-20",
+    "targetKeyword": "ruta nocturna barrio del carmen valencia todos los santos",
+    "searchVolume": "4.200 búsquedas/mes",
+    "keywordDifficulty": "Baja (13/100)",
+    "image": "images/venues/vlc-portal-valldigna-carmen.jpg",
+    "imageAlt": "Arco gótico de piedra del año 1400 en el Portal de la Valldigna, abierto sobre la muralla árabe del Barrio del Carmen de Valencia",
+    "imageCredit": "Wikimedia Commons",
+    "excerpt": "Un recorrido a pie al caer la tarde por la capilla funeraria visigoda de la Cripta de San Vicente, las murallas árabes del Portal de la Valldigna y los hornos históricos de Ciutat Vella donde se hornean los dulces de Todos los Santos.",
+    "priceRange": "2 € Cripta (Gratis domingos) + Ruta exterior libre",
+    "neighborhoods": [
+      "El Carmen (Portal de la Valldigna)",
+      "Plaza del Arzobispo y Almoina",
+      "Plaza de San Lorenzo"
+    ],
+    "affiliate": {
+      "partner": "Civitatis",
+      "badge": "Para hacer al caer la noche",
+      "title": "Free Tour de los Misterios y Leyendas de Valencia",
+      "description": "Un recorrido guiado nocturno por los sucesos históricos, fantasmas y crónicas medievales de Ciutat Vella y el Barrio del Carmen.",
+      "price": "Gratis (Free Tour de 2 horas)",
+      "url": "https://www.civitatis.com/es/valencia/free-tour-misterios-leyendas-valencia/",
+      "ctaText": "Reservar plaza en el Free Tour de leyendas →"
+    },
+    "sections": [
+      {
+        "heading": "Bajo el suelo de la Valencia visigoda: la Cripta Arqueológica de la Cárcel de San Vicente",
+        "venue": "Cripta Arqueológica de la Cárcel de San Vicente Mártir",
+        "location": "Plaza del Arzobispo, 1 — junto a la Plaza de la Almoina (Autobuses EMT: 4, 6, 16, 26 a Plaza de la Reina)",
+        "price": "2,00 € entrada general (1,00 € reducida; 100% Gratis los domingos y festivos)",
+        "lat": 39.476,
+        "lng": -0.3746,
+        "image": "images/venues/vlc-cripta-san-vicente.jpg",
+        "imageAlt": "Arcos y muros excavados en el subsuelo arqueológico del entorno episcopal de San Vicente y la Almoina en Valencia",
+        "content": "Cuando cae el sol sobre Ciutat Vella a finales de octubre, las callejuelas estrechas que rodean la Catedral y la antigua muralla islámica de Valencia cambian por completo de atmósfera. Antes de que anochezca del todo, la primera parada imprescindible se esconde a varios metros bajo el nivel actual de la calle, en el número 1 de la Plaza del Arzobispo.\n\nLa Cripta Arqueológica de la Cárcel de San Vicente no es un museo convencional, sino una capilla funeraria cruciforme del siglo VI d. C. perteneciente al complejo episcopal visigodo de Valentia, descubierta en 1989 durante unas excavaciones en el interior de una vivienda señorial contigua a la Almoina.\n\nAl descender a la cámara subterránea caminarás entre muros de sillería tardorromana, un altar monolítico y sepulturas privilegiadas excavadas bajo el pavimento visigodo, todo ello acompañado de una proyección audiovisual envolvente que reconstruye el paso de la ciudad romana a la cristiana y musulmana. Es uno de los espacios subterráneos más sobrecogedores y menos masificados del centro histórico."
       },
       {
-        "question": "¿Es una ruta apta para ir con niños o perros desde Madrid?",
-        "answer": "El camino principal de la Senda Ecológica es llano y muy sencillo de recorrer, pero fuera de los miradores principales de madera el borde del acantilado no tiene vallas de protección. Si vas con niños pequeños o con perro, es fundamental que vayan siempre de la mano o con correa sin acercarse a las grietas del borde."
+        "heading": "Del Palau dels Borja al Portal de la Valldigna: leyendas medievales y dulces de Todos los Santos",
+        "venue": "Portal de la Valldigna, Palau dels Borja y Hornos Históricos de Ciutat Vella",
+        "location": "Plaza de San Lorenzo, 4 y Carrer del Portal de la Valldigna (Barrio del Carmen)",
+        "price": "Paseo exterior gratuito / Huesos de santo, arnadí y panellets valencianos: desde 4,50 €",
+        "lat": 39.4789,
+        "lng": -0.3778,
+        "image": "images/venues/vlc-palau-borja-corts.jpg",
+        "imageAlt": "Escalera gótica de piedra en el patio interior del Palau dels Borja junto a la Plaza de San Lorenzo en Valencia",
+        "content": "Al salir de la cripta con las farolas ya encendidas, sube por la calle Navellos hasta la Plaza de San Lorenzo para contemplar el imponente Palau dels Borja (antigua mansión ducal del siglo XV de la familia Borgia, hoy sede de Les Corts Valencianes) y adéntrate después en el corazón del Barrio del Carmen hasta toparte con el Portal de la Valldigna.\n\nEste arco de piedra sin puertas, abierto en el año 1400 directamente sobre el lienzo de la muralla árabe del siglo XI para comunicar la ciudad cristiana con la morería, concentra buena parte de las crónicas medievales valencianas: desde el retablo dedicado a la fundación del monasterio de Santa María de la Valldigna hasta la placa que recuerda que a pocos metros de aquí el maestro Lambert Palmart imprimió en 1474 el primer libro literario de España.\n\nReserva media hora antes del cierre comercial para acercarte a los obradores centenarios del centro —como el Horno de San Bartolomé, Forn Llatzer o La Tahona del Abuelo—, que en las vísperas del 1 de noviembre llenan sus vitrinas de huesos de santo de yema artesana, buñuelos de calabaza, arnadí de boniato y los tradicionales panellets de mazapán y piñones."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es el horario de la Cripta Arqueológica de San Vicente en Valencia?",
+        "answer": "Abre de martes a sábado de 10:00 a 19:00 h y los domingos y festivos de 10:00 a 14:00 h. La entrada cuesta 2 € entre semana y sábado, y es gratuita los domingos."
+      },
+      {
+        "question": "¿Qué dulces tradicionales se comen en Valencia por Todos los Santos?",
+        "answer": "En los hornos tradicionales valencianos destacan los huesos de santo rellenos de yema o dulce de boniato, los panellets o mazapanes de piñones, las cocas de calabaza y el arnadí (postre de origen árabe hecho con calabaza o boniato asado y almendra)."
+      }
+    ]
+  },
+  {
+    "id": "sevilla-ruta-don-juan-tenorio-todos-los-santos",
+    "slug": "ruta-don-juan-tenorio-barrio-santa-cruz-sevilla-todos-los-santos",
+    "articleType": "single_plan",
+    "title": "La Sevilla de Don Juan Tenorio en Todos los Santos: ruta por la Hostería del Laurel en Santa Cruz y el museo al aire libre de San Fernando",
+    "metaTitle": "Ruta de Don Juan Tenorio en Sevilla por Todos los Santos: Hostería del Laurel y Santa Cruz | Qué Plan Hoy",
+    "metaDescription": "Ruta literaria de Don Juan Tenorio en Sevilla por Todos los Santos: la auténtica Hostería del Laurel en la Plaza de los Venerables, el Barrio de Santa Cruz y el Cementerio de San Fernando.",
+    "city": "Sevilla",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "weekendDates": "Especial Todos los Santos",
+    "readTime": "7 min",
+    "publishedAt": "2026-10-20",
+    "targetKeyword": "ruta don juan tenorio sevilla todos los santos hosteria del laurel",
+    "searchVolume": "5.100 búsquedas/mes",
+    "keywordDifficulty": "Baja (14/100)",
+    "image": "images/venues/sev-hosteria-del-laurel-venerables.jpg",
+    "imageAlt": "Fachada histórica y terraza de la Hostería del Laurel en la Plaza de los Venerables del Barrio de Santa Cruz de Sevilla",
+    "imageCredit": "Wikimedia Commons",
+    "excerpt": "Ninguna ciudad española vive el puente de Todos los Santos con el magnetismo literario de Sevilla: sigue los pasos reales del Don Juan de José Zorrilla desde la taberna de Cristófano Buttarelli en Santa Cruz hasta los panteones románticos de San Fernando.",
+    "priceRange": "Ruta libre (Tapas en Hostería del Laurel: 4,50 € – 6,50 €)",
+    "neighborhoods": [
+      "Barrio de Santa Cruz (Plaza de los Venerables)",
+      "Plaza de Doña Elvira y Refinadores",
+      "Macarena (San Fernando)"
+    ],
+    "affiliate": {
+      "partner": "Civitatis",
+      "badge": "Especial Noches de Otoño en Sevilla",
+      "title": "Free Tour de los Misterios y Leyendas de Santa Cruz",
+      "description": "Recorre con guía al caer la noche los callejones de la antigua Judería sevillana, la historia de la Susona, Miguel Mañara y Don Juan Tenorio.",
+      "price": "Gratis (Free Tour de 2 horas)",
+      "url": "https://www.civitatis.com/es/sevilla/free-tour-misterios-leyendas-sevilla/",
+      "ctaText": "Ver disponibilidad del Free Tour nocturno →"
+    },
+    "sections": [
+      {
+        "heading": "«¡Cuál gritan esos malditos!»: la Hostería del Laurel y el laberinto nocturno del Barrio de Santa Cruz",
+        "venue": "Hostería del Laurel (Plaza de los Venerables, 5)",
+        "location": "Plaza de los Venerables, 5 — Barrio de Santa Cruz (Metro: Puerta Jerez - L1 / Tranvía T1: Archivo de Indias)",
+        "price": "Paseo gratuito / Tapas tradicionales y copa de vino oloroso en barra: 4,50 € – 7,50 €",
+        "lat": 37.3852,
+        "lng": -5.9901,
+        "image": "images/patio-mudejar-planes-sevilla.jpg",
+        "imageAlt": "Patio andaluz tradicional con arco de flores, naranjos y zócalo de azulejos en el corazón del Barrio de Santa Cruz de Sevilla",
+        "content": "Mientras medio mundo importa calabazas iluminadas al llegar finales de octubre, Sevilla conserva intacto su propio ritual de otoño desde que José Zorrilla estrenó Don Juan Tenorio en 1844. Lo fascinante de recorrer la ciudad en la antesala de Todos los Santos es que los escenarios reales que Zorrilla escribió en verso siguen en pie con sus mismos nombres y adoquines.\n\nEl Acto Primero de la obra arranca exactamente en la Hostería del Laurel, la taberna regentada por el hostelero italiano Cristófano Buttarelli donde Don Juan Tenorio y Don Luis Mejía se citan tras un año de apuestas. Ese mesón existe de verdad en el número 5 de la Plaza de los Venerables, justo enfrente del antiguo Hospital de los Venerables Sacerdotes.\n\nAcércate al caer la tarde cruzando desde los Jardines de Murillo por el Callejón del Agua, la Plaza de Alfaro y la Plaza de Doña Elvira hasta desembocar en los Venerables. En la fachada de la Hostería verás el gran panel de azulejos con los versos de la apuesta, y en su interior, rodeado de columnas de mármol y jamones colgados de las vigas de madera, puedes pedir una copa de vino oloroso acompañada de espinacas con garbanzos o cola de toro antes de caminar tres minutos hasta la estatua en bronce de Don Juan en la Plaza de Refinadores."
+      },
+      {
+        "heading": "El segundo acto bajo los cipreses: ruta escultórica por el Cementerio de San Fernando",
+        "venue": "Cementerio de San Fernando (Glorieta del Cristo de las Mieles y Paseo Central)",
+        "location": "Avenida Doctor Fedriani, s/n — Macarena (Autobuses TUSSAM: líneas 1, 6, 10 y 14)",
+        "price": "Entrada diurna 100% libre y gratuita (8:00 a 18:00 h todos los días)",
+        "lat": 37.4162,
+        "lng": -5.9825,
+        "image": "images/venues/sev-cementerio-san-fernando.jpg",
+        "imageAlt": "Panteones románticos, cipreses y esculturas históricas del siglo XIX en el Cementerio de San Fernando de Sevilla",
+        "content": "Para vivir el espíritu de la segunda parte del drama —que transcurre cinco años después en una noche de Todos los Santos entre las estatuas de mármol del panteón de los Tenorio y Doña Inés—, merece la pena dedicar una mañana soleada de otoño a recorrer el Cementerio de San Fernando, inaugurado en 1852 más allá del antiguo hospital de San Lázaro.\n\nSus avenidas principales forman uno de los conjuntos de escultura funeraria de los siglos XIX y XX más ricos de España. Nada más cruzar la rotonda de entrada te recibe el sobrecogedor Cristo de las Mieles (1920), fundido en bronce por el escultor Antonio Susillo.\n\nAvanzando por el paseo central se suceden dos paradas que resumen la historia sentimental de la ciudad: el mausoleo del torero Joselito el Gallo, obra maestra de Mariano Benlliure que reproduce en bronce y mármol una procesión de dieciocho figuras a tamaño real portando el féretro del diestro, y el panteón de Juan Belmonte, además de los mausoleos neogóticos y regionalistas de las grandes familias sevillanas del Ochocientos."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Dónde está la Hostería del Laurel de Don Juan Tenorio en Sevilla?",
+        "answer": "Se encuentra en la Plaza de los Venerables, número 5, en pleno corazón del Barrio de Santa Cruz, justo frente al Hospital de los Venerables. Abre todos los días para comidas y cenas (de 12:00 a 16:30 h y de 19:30 a 23:30 h)."
+      },
+      {
+        "question": "¿Es gratis visitar el Cementerio de San Fernando en Sevilla?",
+        "answer": "Sí, el acceso diurno para recorrer por libre el paseo central, el Cristo de las Mieles y el mausoleo de Mariano Benlliure dedicado a Joselito el Gallo es libre y gratuito todos los días de 8:00 a 18:00 h."
+      }
+    ]
+  },
+  {
+    "id": "toledo-cuevas-de-hercules-subterraneo-gratis",
+    "slug": "visitar-cuevas-de-hercules-y-toledo-subterraneo-gratis",
+    "articleType": "single_plan",
+    "title": "Cómo visitar gratis las Cuevas de Hércules y el Toledo subterráneo: bóvedas romanas y leyendas bajo el casco histórico",
+    "metaTitle": "Cuevas de Hércules y Toledo Subterráneo Gratis (2026): Horarios y Leyenda | Qué Plan Hoy",
+    "metaDescription": "Guía para visitar gratis las Cuevas de Hércules y las Termas Romanas en el Toledo subterráneo: horarios del Consorcio de Toledo, cómo entrar y la leyenda del rey Don Rodrigo.",
+    "city": "Toledo",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
+    "weekendDates": "Toledo Subterráneo",
+    "readTime": "7 min",
+    "publishedAt": "2026-10-20",
+    "targetKeyword": "visitar cuevas de hercules toledo gratis horarios",
+    "searchVolume": "7.200 búsquedas/mes",
+    "keywordDifficulty": "Baja (14/100)",
+    "image": "images/venues/tol-cueva-hercules-entrada.jpg",
+    "imageAlt": "Puerta de acceso sobre sillares históricos a las Cuevas de Hércules en el Callejón de San Ginés de Toledo",
+    "imageCredit": "Wikimedia Commons",
+    "excerpt": "Bajo el Callejón de San Ginés se ocultan las monumentales bóvedas hidráulicas del siglo I d. C. que alimentaron durante siglos el mito del palacio encantado del rey Don Rodrigo: te contamos cómo bajar gratis con el Consorcio de Toledo.",
+    "priceRange": "100% Gratis (Gestionado por el Consorcio de Toledo)",
+    "neighborhoods": [
+      "Callejón de San Ginés (Centro)",
+      "Plaza Amador de los Ríos",
+      "Ronda del Tajo y Alcántara"
+    ],
+    "affiliate": {
+      "partner": "Civitatis",
+      "badge": "Para bajar a más subterráneos cerrados al público",
+      "title": "Tour por el Toledo Subterráneo y Mazmorras Medievales",
+      "description": "Si además de las Cuevas de Hércules quieres entrar con guía oficial a los Baños Árabes del Cenizal, el Pozo del Salvador y las cuevas privadas del casco.",
+      "price": "Desde 12 € por persona",
+      "url": "https://www.civitatis.com/es/toledo/toledo-subterraneo/",
+      "ctaText": "Ver horarios del tour Toledo Subterráneo →"
+    },
+    "sections": [
+      {
+        "heading": "Las Cuevas de Hércules en el Callejón de San Ginés y las Termas Romanas: cisternas del siglo I y el mito de Don Rodrigo",
+        "venue": "Cuevas de Hércules y Termas Romanas (Consorcio de Toledo)",
+        "location": "Callejón de San Ginés, 3 y Plaza Amador de los Ríos, 5 (a 3 min a pie de la Catedral y Zocodover)",
+        "price": "100% Gratis (Martes a sábado de 10:00 a 14:00 h y de 16:00 a 18:00 h; domingos y lunes cerrado)",
+        "lat": 39.8581,
+        "lng": -4.0235,
+        "image": "images/venues/tol-cuevas-hercules-termas.jpg",
+        "imageAlt": "Galería subterránea romana con bóveda de piedra en el interior de las Cuevas de Hércules y Termas de Toledo",
+        "content": "Bajo las calles empedradas de Toledo existe una segunda ciudad invisible excavada en la roca granítica: aljibes mudéjares, baños islámicos, hipocaustos romanos y galerías abovedadas que durante siglos alimentaron la imaginación de viajeros románticos como Washington Irving o Gustavo Adolfo Bécquer. De todos esos espacios ocultos, ninguno despierta tanta fascinación como las Cuevas de Hércules, en el número 3 del Callejón de San Ginés.\n\nLo que muchos visitantes desconocen es que tanto las Cuevas de Hércules como las vecinas Termas Romanas de la Plaza Amador de los Ríos están rehabilitadas por el Consorcio de la Ciudad de Toledo y su entrada es 100 % gratuita. Al cruzar el umbral de San Ginés y descender por las pasarelas metálicas hacia el subsuelo, te encontrarás frente a los muros ciclópeos de una gran cisterna romana de abastecimiento de agua del siglo I d. C., cubierta por arcos de medio punto de granito.\n\nDurante toda la Edad Media nadie recordaba ya su función hidráulica y la tradición identificó estas bóvedas con el palacio encantado donde el último rey visigodo, Don Rodrigo, rompió los candados prohibidos y encontró el lienzo que profetizaba la pérdida de su reino en el año 711. Al salir, camina apenas cien metros hasta la Plaza Amador de los Ríos, 5 para bajar también gratis a los conductos abovedados de las Termas Públicas de Toletum."
+      },
+      {
+        "heading": "El final del viaje del agua: paseo desde el subsuelo romano hasta el Puente de Alcántara sobre el cañón del Tajo",
+        "venue": "Puente Romano de Alcántara y Senda del Tajo",
+        "location": "Bajada de Alcántara, s/n (Bajo el Alcázar, a 10 min caminando desde Zocodover o escaleras mecánicas de Safont)",
+        "price": "100% Gratis (Abierto las 24 horas)",
+        "lat": 39.8604,
+        "lng": -4.0177,
+        "image": "images/venues/tol-senda-ecologica-tajo.jpg",
+        "imageAlt": "Vista panorámica del Puente de Alcántara y el cañón del río Tajo abrazando la muralla histórica de Toledo",
+        "content": "Para entender de dónde procedía el agua que llenaba las gigantescas cisternas subterráneas de las Cuevas de Hércules y las Termas de Amador de los Ríos, no hay mejor complemento que bajar caminando desde Zocodover hacia la garganta oriental del río Tajo hasta cruzar el monumental Puente de Alcántara.\n\nJusto en las laderas escarpadas que flanquean este puente de origen romano se apoyaban las pilas de casi cuarenta metros de altura del colosal acueducto y sifón invertido que traía el caudal desde la presa romana de La Alcantarilla (en Mazarambroz) salvando el abismo del Tajo.\n\nCruzar el arco triunfal barroco y el torreón almenado del Puente de Alcántara a media tarde, con las paredes de roca del río iluminadas por el sol de otoño y el perfil del Alcázar alzándose sobre tu cabeza, permite conectar en un solo paseo gratuito el Toledo subterráneo con el paisaje más imponente de la ciudad."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Hay que pagar entrada o reservar para ver las Cuevas de Hércules en Toledo?",
+        "answer": "No hay que pagar nada: el acceso por libre a las Cuevas de Hércules (Callejón de San Ginés, 3) y a las Termas Romanas (Plaza Amador de los Ríos, 5) es totalmente gratuito de martes a sábado de 10:00 a 14:00 h y de 16:00 a 18:00 h."
+      },
+      {
+        "question": "¿Están abiertas las Cuevas de Hércules los domingos?",
+        "answer": "No, los espacios de Patrimonio Desconocido del Consorcio de Toledo abren de martes a sábado y permanecen cerrados los domingos y los lunes."
       }
     ]
   }

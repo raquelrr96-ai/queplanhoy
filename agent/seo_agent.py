@@ -1082,8 +1082,31 @@ def run_wednesday_weekend_all_cities() -> list:
 
 
 def run_tuesday_scheduled_articles() -> list:
-  """Publica el martes (pasado el puente) los artículos extensos programados en data/scheduled_tuesday_articles.json."""
+  """Publica el martes los 5 artículos extensos programados (1 por ciudad) en data/scheduled_tuesday_articles.json."""
   sched_file = os.path.join(BASE_DIR, "data", "scheduled_tuesday_articles.json")
+  scheduled = load_json(sched_file)
+  if not scheduled:
+    return []
+  existing_articles = load_json(ARTICLES_FILE)
+  existing_slugs = {a.get("slug") for a in existing_articles}
+  today_str = date.today().isoformat()
+  published = []
+  for art in reversed(scheduled):
+    art["publishedAt"] = today_str
+    if art.get("slug") not in existing_slugs:
+      existing_articles.insert(0, art)
+      published.append(art)
+  if published:
+    save_json(ARTICLES_FILE, existing_articles)
+  build_site.build_all()
+  return list(reversed(published))
+
+
+def run_thursday_scheduled_articles() -> list:
+  """Publica el jueves los 5 artículos extensos programados (1 por ciudad) en data/scheduled_thursday_articles.json."""
+  sched_file = os.path.join(
+      BASE_DIR, "data", "scheduled_thursday_articles.json"
+  )
   scheduled = load_json(sched_file)
   if not scheduled:
     return []
@@ -1108,8 +1131,15 @@ if __name__ == "__main__":
   )
   parser.add_argument(
       "--tuesday-barrancas",
+      "--tuesday-batch",
+      dest="tuesday_batch",
       action="store_true",
-      help="Publica el martes los dos reportajes extensos de Las Barrancas de Burujón (Toledo y Madrid)",
+      help="Publica el martes los 5 reportajes programados (1 por ciudad)",
+  )
+  parser.add_argument(
+      "--thursday-batch",
+      action="store_true",
+      help="Publica el jueves los 5 reportajes programados (1 por ciudad)",
   )
   parser.add_argument(
       "--wednesday-all-cities",
@@ -1144,10 +1174,14 @@ if __name__ == "__main__":
   )
   args = parser.parse_args()
 
-  if args.tuesday_barrancas:
+  if args.tuesday_batch:
     arts = run_tuesday_scheduled_articles()
     for a in arts:
       print(f"[OK] [{a['city']}] Reportaje del martes publicado: {a['title']}")
+  elif args.thursday_batch:
+    arts = run_thursday_scheduled_articles()
+    for a in arts:
+      print(f"[OK] [{a['city']}] Reportaje del jueves publicado: {a['title']}")
   elif args.wednesday_all_cities:
     arts = run_wednesday_weekend_all_cities()
     for a in arts:

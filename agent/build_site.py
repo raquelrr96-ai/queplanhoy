@@ -2080,6 +2080,7 @@ def validate_articles_quality(articles: list):
   import re
 
   errors = []
+  global_md5_owners = {}
   forbidden_phrases = [
       "agenda en vivo",
       "planes de emergencia",
@@ -2096,6 +2097,9 @@ def validate_articles_quality(articles: list):
     meta_desc = art.get("metaDescription", "").strip()
     if not title or len(title) < 18:
       errors.append(f"[{slug}] Título demasiado corto o vacío: {title!r}")
+    for req_field in ("metaTitle", "metaDescription", "city", "category", "priceRange", "publishedAt"):
+      if not art.get(req_field):
+        errors.append(f"[{slug}] Falta campo obligatorio {req_field!r}.")
 
     if art.get("category") == "Este Fin de Semana":
       wd = art.get("weekendDates", "").strip()
@@ -2130,10 +2134,22 @@ def validate_articles_quality(articles: list):
 
     hero_img = art.get("image", "").lstrip("/")
     hero_abs = os.path.join(PUBLIC_DIR, hero_img)
+    seen_sec_imgs = set()
+    seen_sec_md5 = set()
     if not hero_img or not os.path.exists(hero_abs):
       errors.append(f"[{slug}] Imagen principal no existe: {hero_img!r}")
     elif os.path.getsize(hero_abs) < 15000:
       errors.append(f"[{slug}] Imagen principal demasiado pequeña (<15 KB): {hero_img!r}")
+    else:
+      with open(hero_abs, "rb") as fp:
+        hero_md5 = hashlib.md5(fp.read()).hexdigest()
+      seen_sec_imgs.add(hero_img)
+      seen_sec_md5.add(hero_md5)
+      if hero_md5 in global_md5_owners:
+        errors.append(
+            f"[{slug} · Hero] Imagen duplicada con {global_md5_owners[hero_md5]}: {hero_img!r}"
+        )
+      global_md5_owners[hero_md5] = f"{slug} (Hero)"
 
     sections = art.get("sections", [])
     if not sections:
@@ -2142,8 +2158,6 @@ def validate_articles_quality(articles: list):
 
     seen_headings = set()
     seen_venues = set()
-    seen_sec_imgs = set()
-    seen_sec_md5 = set()
 
     for idx, sec in enumerate(sections, start=1):
       h = sec.get("heading", "").strip()
@@ -2195,8 +2209,13 @@ def validate_articles_quality(articles: list):
             errors.append(
                 f"[{slug} · Sec {idx}] Imagen repetida dentro del mismo artículo: {s_img!r}"
             )
+          elif md5_val in global_md5_owners:
+            errors.append(
+                f"[{slug} · Sec {idx}] Imagen duplicada con {global_md5_owners[md5_val]}: {s_img!r}"
+            )
           seen_sec_imgs.add(s_img)
           seen_sec_md5.add(md5_val)
+          global_md5_owners[md5_val] = f"{slug} (Sec {idx})"
 
   if errors:
     err_msg = "\n".join(f"  - {e}" for e in errors)

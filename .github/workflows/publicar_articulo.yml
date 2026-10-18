@@ -1,13 +1,15 @@
-name: Publicar Planes de Fin de Semana (Miércoles - 5 Ciudades) y Desplegar Web (QuePlanHoy)
+name: Publicar Planes Semanales (Martes, Miércoles y Jueves - 5 Ciudades) y Desplegar Web (QuePlanHoy)
 
 on:
   push:
     branches: ["main"]
   schedule:
-    # Martes a las 09:00 AM (Hora España, tras el puente): publica el reportaje extenso de Las Barrancas de Burujón en Toledo y en Madrid
+    # Martes a las 09:00 AM (Hora España): publica el primer reportaje semanal por ciudad (5 artículos: Madrid, Barcelona, Valencia, Sevilla y Toledo)
     - cron: '0 7 * * 2'
-    # Todos los miércoles a las 09:00 AM (Hora España): actualiza los planes de "Este Fin de Semana" de las 5 ciudades
+    # Miércoles a las 09:00 AM (Hora España): verifica/actualiza los planes de "Este Fin de Semana" de las 5 ciudades
     - cron: '0 7 * * 3'
+    # Jueves a las 09:00 AM (Hora España): publica el segundo reportaje semanal por ciudad (5 artículos: Madrid, Barcelona, Valencia, Sevilla y Toledo)
+    - cron: '0 7 * * 4'
   workflow_dispatch: # También permite pulsarlo manualmente con 1 clic desde GitHub
 
 permissions:
@@ -30,11 +32,13 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Ejecutar el Agente SEO (Martes + Miércoles 5 Ciudades)
+      - name: Ejecutar el Agente SEO (Martes + Miércoles + Jueves 5 Ciudades)
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           if [ "${{ github.event.schedule }}" = "0 7 * * 2" ]; then
-            python3 agent/seo_agent.py --tuesday-barrancas
+            python3 agent/seo_agent.py --tuesday-batch
+          elif [ "${{ github.event.schedule }}" = "0 7 * * 4" ]; then
+            python3 agent/seo_agent.py --thursday-batch
           elif [ "${{ github.event.schedule }}" = "0 7 * * 3" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             python3 agent/seo_agent.py --wednesday-all-cities
           else
