@@ -2104,7 +2104,7 @@ def validate_articles_quality(articles: list):
     if art.get("category") == "Este Fin de Semana":
       wd = art.get("weekendDates", "").strip()
       wd_match = re.search(
-          r"\b(\d{1,2})\s+al\s+(?:[a-záéíóú]+\s+)?(\d{1,2})\s+de\s+([a-záéíóú]+)",
+          r"\b(\d{1,2})(?:\s+de\s+[a-záéíóú]+)?\s+al\s+(?:[a-záéíóú]+\s+)?(\d{1,2})\s+de\s+([a-záéíóú]+)",
           wd.lower(),
       )
       if not wd_match:
@@ -2119,7 +2119,7 @@ def validate_articles_quality(articles: list):
             ("metaDescription", meta_desc),
         ]:
           found_ranges = re.findall(
-              r"\b(\d{1,2})\s+al\s+(?:[a-záéíóú]+\s+)?(\d{1,2})\s+de\s+([a-záéíóú]+)",
+              r"\b(\d{1,2})(?:\s+de\s+[a-záéíóú]+)?\s+al\s+(?:[a-záéíóú]+\s+)?(\d{1,2})\s+de\s+([a-záéíóú]+)",
               field_val.lower(),
           )
           if not found_ranges:

@@ -1010,21 +1010,21 @@
   {
     "id": "madrid-planes-este-fin-de-semana-feria-barroca",
     "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Madrid (16 al 18 de octubre): Madrid Otra Mirada, Ciencias Naturales gratis y Matadero",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Madrid (16 al 18 Oct): MOM y Planes Gratis | Qué Plan Hoy",
-    "metaDescription": "Agenda cultural verificada en Madrid del viernes 16 al domingo 18 de octubre de 2026: edificios históricos abiertos gratis en Madrid Otra Mirada (MOM), puertas abiertas en el Museo de Ciencias Naturales y danza en Matadero.",
+    "title": "Qué hacer este fin de semana en Madrid (30 de octubre al 1 de noviembre): Altares de Muertos gratis, Noche de Halloween y Matadero",
+    "metaTitle": "Qué Hacer este Fin de Semana en Madrid (30 oct - 1 nov) | Qué Plan Hoy",
+    "metaDescription": "Agenda real de planes en Madrid del viernes 30 de octubre al domingo 1 de noviembre: Altares de Muertos gratuitos, Halloween en Matadero y Ciencias Naturales y rutas de buñuelos.",
     "city": "Madrid",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre",
+    "weekendDates": "30 de octubre al 1 de noviembre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-15",
+    "publishedAt": "2026-10-26",
     "targetKeyword": "que plan hacer en madrid este fin de semana",
     "searchVolume": "8.100 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (21/100)",
     "image": "images/venues/madrid-palacio-cibeles-noche.jpg",
     "imageAlt": "Fachada iluminada del Palacio de Cibeles en Madrid durante el fin de semana cultural de otoño",
-    "excerpt": "Los 3 grandes planes reales en Madrid del viernes 16 al domingo 18 de octubre: apertura gratuita de palacios e instituciones históricas por Madrid Otra Mirada (MOM), jornada de puertas abiertas por el 255.º aniversario del Museo Nacional de Ciencias Naturales y danza al aire libre en Matadero.",
+    "excerpt": "Los tres mejores planes verificados para este fin de semana de Halloween y Todos los Santos en Madrid (30 de octubre al 1 de noviembre): visita gratuita a los grandes Altares de Muertos en palacios históricos, programación especial en el Museo de Ciencias Naturales y cine y pasacalles en Matadero Madrid.",
     "priceRange": "Gratis",
     "neighborhoods": [
       "Paseo del Prado y Retiro",
@@ -1042,37 +1042,37 @@
     },
     "sections": [
       {
-        "heading": "1. Madrid Otra Mirada (MOM): palacios, jardines y edificios históricos abiertos gratis (16 al 18 de octubre)",
-        "venue": "Sedes patrimoniales de Madrid Otra Mirada (Ayuntamiento de Madrid)",
-        "location": "Centro, Retiro, Chamberí y Barrio de Salamanca (Programa oficial en esmadrid.com/mom)",
-        "price": "100% Gratis (Muchas actividades de acceso libre hasta completar aforo)",
+        "heading": "1. Ruta de Altares de Muertos monumentales y gratuitos por el centro (viernes 30 de octubre al domingo 1 de noviembre)",
+        "venue": "Casa de México en España (Alberto Aguilera, 20) y Casa de América / Palacio de Linares (Plaza de Cibeles)",
+        "location": "Calle de Alberto Aguilera, 20 / Plaza de Cibeles, s/n (Metro: San Bernardo L2, L4 / Banco de España L2)",
+        "price": "Acceso libre y 100% gratuito",
         "lat": 40.4238,
         "lng": -3.6889,
         "image": "images/venues/madrid-museo-arqueologico-interior.jpg",
         "imageAlt": "Salas históricas y arquitectura monumental dentro del circuito cultural de Madrid Otra Mirada",
-        "content": "Este viernes 16, sábado 17 y domingo 18 de octubre vive sus días principales la nueva edición de Madrid Otra Mirada (MOM), la gran cita anual de patrimonio impulsada por el Ayuntamiento de Madrid en la que más de 160 instituciones, palacetes, archivos históricos, bibliotecas, teatros e iglesias abren sus puertas de forma gratuita.\n\nAunque los palacios con cupo reducido agotan rápido su inscripción previa, durante todo el fin de semana hay decenas de conciertos matinales, exposiciones conmemorativas, jardines históricos y visitas a museos y fundaciones en Chamberí, el Paseo del Arte y el Madrid de los Austrias con entrada libre por orden de llegada."
+        "content": "Durante todo el fin de semana del 30 de octubre al 1 de noviembre, los grandes palacios madrileños exhiben sus monumentales ofrendas mexicanas de Día de Muertos con miles de flores de cempasúchil, papel picado artesanal, catrinas y calaveras de azúcar.\n\nEn Casa de América (Palacio de Linares, famoso por la leyenda del fantasma de Raimundita) y en el Centro Cultural de México el acceso al patio principal es completamente libre y sin inscripción previa. Te recomendamos acudir el viernes a última hora de la tarde o el sábado antes de las 11:00 h y rematar el paseo probando buñuelos de viento o pan de muerto recién horneado."
       },
       {
-        "heading": "2. Jornada de puertas abiertas por el 255.º Aniversario del Museo Nacional de Ciencias Naturales (sábado 17 y domingo 18)",
+        "heading": "2. Especial Halloween científico y esqueletos gigantes en el Museo Nacional de Ciencias Naturales (sábado 31 y domingo 1)",
         "venue": "Museo Nacional de Ciencias Naturales (CSIC)",
         "location": "Calle de José Gutiérrez Abascal, 2 (Metro: Gregorio Marañón - L7, L10 / Nuevos Ministerios)",
-        "price": "Laboratorio exterior gratuito el sábado 17 y Puertas Abiertas 100% gratis el domingo 18 de octubre",
+        "price": "8,00 € entrada general (4,00 € reducida e infantil)",
         "lat": 40.4405,
         "lng": -3.6898,
         "image": "images/venues/madrid-museo-ciencias-naturales.jpg",
         "imageAlt": "Histórico Palacio de las Artes y la Industria en la Castellana, sede del Museo Nacional de Ciencias Naturales",
-        "content": "El Museo Nacional de Ciencias Naturales celebra este fin de semana su 255.º aniversario en el histórico Palacio de las Artes y la Industria junto al Paseo de la Castellana con una programación especial para todos los públicos.\n\nEl sábado 17 de octubre instala en el exterior el laboratorio interactivo gratuito «Curiosity Cube» con experimentos científicos en vivo, y el domingo 18 de octubre celebra una Jornada de Puertas Abiertas completamente gratuita (además de coincidir por la mañana con la tradicional Carrera de la Ciencia del CSIC por el entorno de Serrano y Castellana)."
+        "content": "Para quienes buscan un plan diferente el sábado 31 de octubre o el domingo 1 de noviembre (tanto adultos como familias con niños), el histórico Palacio de las Artes y la Industria del Paseo de la Castellana organiza actividades temáticas sobre las criaturas más misteriosas de la naturaleza.\n\nPodrás recorrer sus galerías decimonónicas bajo las réplicas monumentales del Diplodocus carnegii, el esqueleto real del Megaterio traído de América en 1789 y las vitrinas históricas del Real Gabinete de Historia Natural."
       },
       {
-        "heading": "3. Festival de Danza Contemporánea «Cuerpo Romo» en la Plaza de Matadero Madrid (16 al 18 de octubre)",
-        "venue": "Matadero Madrid (Plaza Matadero y Nave 16)",
-        "location": "Plaza de Legazpi, 8 (Metro: Legazpi - L3, L6)",
-        "price": "Espectáculos en Plaza Matadero de acceso libre y gratuito",
+        "heading": "3. Pasacalles de Halloween, cine de terror en Cineteca y mercado otoñal en Matadero Madrid (30 de octubre al 1 de noviembre)",
+        "venue": "Matadero Madrid (Plaza Matadero, Casa del Lector y Cineteca) e Invernadero de Arganzuela",
+        "location": "Paseo de la Chopera, 14 (Metro: Legazpi - L3, L6)",
+        "price": "Acceso libre a Plaza Matadero e Invernadero (Cineteca desde 3,50 €)",
         "lat": 40.3917,
         "lng": -3.6974,
         "image": "images/venues/madrid-invernadero-arganzuela.jpg",
         "imageAlt": "Entorno cultural de Matadero Madrid y el Invernadero de Arganzuela junto a Legazpi",
-        "content": "Del viernes 16 al domingo 18 de octubre regresa a Matadero Madrid el festival internacional de danza en espacios no convencionales «Cuerpo Romo», dirigido por la Premio Nacional de Danza Elías Aguirre.\n\nDurante las mañanas y tardes del sábado y el domingo, las explanadas de ladrillo de Plaza Matadero acogen piezas cortas de danza contemporánea y danza urbana al aire libre de acceso gratuito. Al terminar, estás a solo dos minutos caminando del Invernadero de Cristal de Arganzuela y de las sendas arboladas de Madrid Río."
+        "content": "La gran explanada de ladrillo neomudéjar de Matadero Madrid concentra este fin de semana del 30 de octubre al 1 de noviembre talleres familiares en la Casa del Lector, sesiones especiales de cine de culto y misterio en la Cineteca y ambiente gastronómico en sus terrazas.\n\nAntes o después de pasar por Matadero, cruza al contiguo Invernadero del Palacio de Cristal de Arganzuela (acceso 100% gratuito de 09:00 a 20:00 h) para pasear bajo su cúpula de hierro entre más de 9.000 plantas tropicales y subtropciales."
       }
     ],
     "faqs": [
@@ -1179,21 +1179,21 @@
   {
     "id": "barcelona-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Barcelona (16 al 18 de octubre): Mercat de Mercats en Glòries, Barcelona Dibuixa y Design Week",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Barcelona (16 al 18 Oct): Mercat de Mercats | Qué Plan Hoy",
-    "metaDescription": "Agenda verificada en Barcelona del viernes 16 al domingo 18 de octubre de 2026: feria gastronómica Mercat de Mercats en Glòries, 46 talleres gratuitos de Barcelona Dibuixa y Barcelona Design Week.",
+    "title": "Qué hacer este fin de semana en Barcelona (30 de octubre al 1 de noviembre): La Castanyada, Altares del Born y Halloween",
+    "metaTitle": "Qué Hacer este Fin de Semana en Barcelona (30 oct - 1 nov) | Qué Plan Hoy",
+    "metaDescription": "Agenda de planes en Barcelona del viernes 30 de octubre al domingo 1 de noviembre: ruta de La Castanyada y panellets, Altares de Muertos en el Born y Halloween en Montjuïc.",
     "city": "Barcelona",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre",
+    "weekendDates": "30 de octubre al 1 de noviembre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-15",
+    "publishedAt": "2026-10-26",
     "targetKeyword": "que plan hacer en barcelona este fin de semana",
     "searchVolume": "6.800 búsquedas/mes",
     "keywordDifficulty": "Baja (18/100)",
     "image": "images/venues/bcn-mercat-del-born.jpg",
     "imageAlt": "Arquitectura histórica de hierro de los mercados de Barcelona, protagonistas de la feria Mercat de Mercats",
-    "excerpt": "Los 3 grandes planes reales en Barcelona del viernes 16 al domingo 18 de octubre: la feria gastronómica Mercat de Mercats al aire libre en la Plaça de les Glòries, los 46 talleres gratuitos de Barcelona Dibuixa en museos y patios góticos, y la Barcelona Design Week.",
+    "excerpt": "Tres planes imprescindibles en Barcelona para este fin de semana de Halloween, La Castanyada y Todos los Santos (30 de octubre al 1 de noviembre): las ofrendas de Día de Muertos en los palacios góticos del Born, la ruta de castañas y panellets por Ciutat Vella y la programación especial en Montjuïc y Glòries.",
     "priceRange": "Gratis (Tapas desde 4 €)",
     "neighborhoods": [
       "Glòries y Poblenou",
@@ -1211,37 +1211,37 @@
     },
     "sections": [
       {
-        "heading": "1. Feria gastronómica «Mercat de Mercats» en la Plaça de les Glòries (viernes 16 al domingo 18 de octubre)",
-        "venue": "Plaça de les Glòries Catalanes (junto al Disseny Hub Barcelona)",
-        "location": "Plaça de les Glòries Catalanes (Metro: Glòries - L1 / Tranvía T4, T5, T6)",
-        "price": "Entrada al recinto 100% gratuita (Platillos de mercado y brasas desde 4 € – 6 €)",
+        "heading": "1. Feria de otoño, castañeras y mercados al aire libre en el entorno de Glòries y el Poblenou (viernes 30 oct al domingo 1 nov)",
+        "venue": "Plaça de les Glòries Catalanes y Rambla del Poblenou (junto al Disseny Hub Barcelona)",
+        "location": "Plaça de les Glòries Catalanes, 37 / Rambla del Poblenou (Metro: Glòries - L1 / Llacuna - L4)",
+        "price": "Acceso libre y gratuito al paseo / Cucurucho de castañas desde 3,50 €",
         "lat": 41.4024,
         "lng": 2.1879,
         "image": "images/venues/bcn-disseny-hub-glories.jpg",
         "imageAlt": "Explanada de la Plaça de les Glòries y edificio del Disseny Hub Barcelona donde se celebra Mercat de Mercats",
-        "content": "Desde el viernes 16 hasta el domingo 18 de octubre (de 11:00 a 22:00 h el viernes y sábado, y hasta las 21:00 h el domingo), la gran explanada de la Plaça de les Glòries frente al Disseny Hub acoge una nueva edición de «Mercat de Mercats», la gran fiesta gastronómica de los mercados municipales de Barcelona.\n\nCon acceso libre y gratuito, el recinto reúne paradas de producto fresco de los mercados históricos de la ciudad (con zona de brasas al momento para cocinar lo que compres), showcookings de chefs con estrella Michelin, aula de catas de vinos catalanes y tapas preparadas por bares de mercado."
+        "content": "Coincidiendo con la noche de La Castanyada (sábado 31 de octubre) y el festivo de Todos los Santos (domingo 1 de noviembre), el eje peatonal entre la Plaça de les Glòries y la Rambla del Poblenou se llena de paradas tradicionales de castañas asadas al carbón, boniatos calientes y ambiente vecinal.\n\nEs el punto de partida perfecto para pasear por el parque de la Clariana del Disseny Hub y acercarse a pie hasta el histórico Cementerio Monumental del Poblenou, que abre sus puertas en horario especial con visitas a sus panteones neoclásicos y a la escultura «El Beso de la Muerte»."
       },
       {
-        "heading": "2. Festival «Barcelona Dibuixa»: 46 talleres gratuitos de arte en patios góticos y museos (sábado 17 y domingo 18)",
-        "venue": "Museu Picasso, Born Centre de Cultura i Memòria, Fundació Miró y centros cívicos",
-        "location": "Carrer de Montcada, 15-23 (El Born) y sedes en los 10 distritos (Metro: Jaume I - L4)",
-        "price": "100% Gratis (Material de dibujo incluido y sin necesidad de reserva previa)",
+        "heading": "2. Ruta gratuita de Altares de Muertos y misterios góticos en el Born y la calle Montcada (sábado 31 y domingo 1)",
+        "venue": "Born Centre de Cultura i Memòria, calle Montcada y entorno de Santa Maria del Mar",
+        "location": "Plaça Comercial, 12 y Carrer de Montcada (Metro: Jaume I - L4 / Barceloneta - L4)",
+        "price": "Acceso 100% gratuito a los patios góticos y al yacimiento del Born",
         "lat": 41.3852,
         "lng": 2.1809,
         "image": "images/venues/bcn-capitania-general-colom.jpg",
         "imageAlt": "Claustro y patio histórico en Ciutat Vella durante las jornadas culturales de otoño en Barcelona",
-        "content": "Organizado por el Institut de Cultura de Barcelona (ICUB) y el Museu Picasso, este sábado 17 y domingo 18 de octubre se celebra «Barcelona Dibuixa», el festival que convierte patios medievales, museos y plazas de toda la ciudad en grandes estudios de creación abiertos a todo el mundo.\n\nNo hace falta saber dibujar ni llevar material: en los patios góticos de la calle Montcada (Museu Picasso), en el Born CCM o en la Fundació Joan Miró encontrarás papel, lápices, carboncillos y artistas e ilustradores locales guiando propuestas gratuitas durante todo el fin de semana."
+        "content": "Los patios medievales de la calle Montcada y el antiguo mercado de hierro del Born acogen este fin de semana del 30 de octubre al 1 de noviembre altares mexicanos de Día de Muertos decorados con flores de cempasúchil, papel picado, fotografías históricas y catrinas.\n\nAprovecha el domingo 1 de noviembre (primer domingo de mes) para acceder gratuitamente a varios de los museos municipales del barrio y probar los panellets artesanos de piñones en las pastelerías históricas del Born como Brunells."
       },
       {
-        "heading": "3. Barcelona Design Week y recta final de la Biennal de Pensament en el CCCB y Montjuïc (hasta el 18 de octubre)",
-        "venue": "CCCB (Centre de Cultura Contemporània) y Pabellón Mies van der Rohe",
-        "location": "Carrer de Montalegre, 5 (Metro: Universitat) y Av. Francesc Ferrer i Guàrdia, 7 (Metro: Espanya)",
-        "price": "Debates de la Biennal e instalaciones urbanas de acceso gratuito",
+        "heading": "3. Especial de arquitectura, jardines de otoño y misterios en Montjuïc y el CCCB (30 de octubre al 1 de noviembre)",
+        "venue": "CCCB (Centre de Cultura Contemporània) y ladera cultural de Montjuïc (Pabellón Mies van der Rohe y Poble Espanyol)",
+        "location": "Carrer de Montalegre, 5 / Av. Francesc Ferrer i Guàrdia (Metro: Universitat L1, L2 / Espanya L1, L3)",
+        "price": "Patios y jardines gratuitos / Exposiciones y Poble Espanyol desde 6,00 € – 12,00 €",
         "lat": 41.3706,
         "lng": 2.15,
         "image": "images/venues/bcn-pabellon-mies.jpg",
         "imageAlt": "Espejo de agua y travertino del Pabellón Mies van der Rohe a los pies de Montjuïc en Barcelona",
-        "content": "Este fin de semana coinciden en Barcelona dos grandes citas culturales de otoño: el arranque de la Barcelona Design Week —con instalaciones efímeras de diseño, arquitectura y sostenibilidad repartidas entre el Disseny Hub y el Pabellón Mies van der Rohe en Montjuïc— y la clausura de la Biennal de Pensament.\n\nHasta el domingo 18 de octubre puedes asistir gratis en el patio de las Dones del CCCB (El Raval) a charlas al aire libre, recitales poéticos y encuentros sobre ciudad, cultura digital y arte contemporáneo."
+        "content": "En la montaña de Montjuïc confluyen este fin de semana el ambiente familiar y nocturno de Halloween en el Poble Espanyol (decorado con cientos de calabazas y pasacalles) y la calma arquitectónica del Pabellón Mies van der Rohe y los Jardins de Laribal.\n\nSi prefieres un plan cubierto en el centro, el CCCB en el Raval mantiene abiertas sus grandes exposiciones de otoño y proyecciones audiovisuales durante todo el puente, con entrada gratuita el domingo por la tarde de 15:00 a 20:00 h."
       }
     ],
     "faqs": [
@@ -1259,21 +1259,21 @@
   {
     "id": "valencia-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Valencia (16 al 18 de octubre): concierto gratis en el Palau de la Música, Valeriola y Beneficència",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Valencia (16 al 18 Oct): Palau de la Música y Planes | Qué Plan Hoy",
-    "metaDescription": "Agenda cultural verificada en Valencia del viernes 16 al domingo 18 de octubre de 2026: apertura de temporada y concierto gratuito del 700.º Aniversario del Corpus en el Palau de la Música, Palacio de Valeriola y La Beneficència.",
+    "title": "Qué hacer este fin de semana en Valencia (30 de octubre al 1 de noviembre): «Espanta la Por» gratis, Palau de la Música y El Carmen",
+    "metaTitle": "Qué Hacer este Fin de Semana en Valencia (30 oct - 1 nov) | Qué Plan Hoy",
+    "metaDescription": "Planes verificados en Valencia del viernes 30 de octubre al domingo 1 de noviembre: fiesta gratuita de Espanta la Por en La Beneficència, música en el Turia y ruta nocturna por El Carmen.",
     "city": "Valencia",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre",
+    "weekendDates": "30 de octubre al 1 de noviembre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-15",
+    "publishedAt": "2026-10-26",
     "targetKeyword": "que plan hacer en valencia este fin de semana",
     "searchVolume": "5.400 búsquedas/mes",
     "keywordDifficulty": "Baja (16/100)",
     "image": "images/venues/vlc-jardin-del-turia.jpg",
     "imageAlt": "Jardín del Turia y entorno monumental de Valencia en octubre",
-    "excerpt": "Los 3 planes culturales verificados para este fin de semana del 16 al 18 de octubre en Valencia: estreno de temporada y concierto extraordinario gratuito en la Sala Iturbi del Palau de la Música, arte inmersivo en el Palacio de Valeriola y música en los patios de La Beneficència.",
+    "excerpt": "Los mejores planes en Valencia para este fin de semana de Halloween y Todos los Santos (30 de octubre al 1 de noviembre): conciertos en el Jardín del Turia, palacios subterráneos iluminados en Ciutat Vella y la gran fiesta gratuita de los monstruos valencianos («Espanta la Por») en La Beneficència.",
     "priceRange": "Gratis – 12 €",
     "neighborhoods": [
       "Jardín del Turia y Paseo de la Alameda",
@@ -1291,37 +1291,37 @@
     },
     "sections": [
       {
-        "heading": "1. Apertura de temporada y concierto extraordinario gratuito en el Palau de la Música (sábado 17 y domingo 18 de octubre)",
-        "venue": "Sala Iturbi del Palau de la Música de València",
-        "location": "Paseo de la Alameda, 30, Jardín del Turia (Metro: Aragón - L5, L7)",
-        "price": "Concierto del domingo 18 (19:00 h) gratuito con invitación / Sábado 17 desde 12 €",
+        "heading": "1. Concierto de otoño y paseo entre estanques iluminados en el Palau de la Música y el Jardín del Turia (30 oct al 1 nov)",
+        "venue": "Palau de la Música de València y tramo central del Jardín del Turia",
+        "location": "Paseo de la Alameda, 30 (Metro: Aragón - L5, L7 / Alameda - L3, L5, L7, L9)",
+        "price": "Paseo y jardines 100% gratis (Ciclo de cámara y sinfónico desde 10,00 €)",
         "lat": 39.4664,
         "lng": -0.3602,
         "image": "images/venues/vlc-palau-musica-iturbi.jpg",
         "imageAlt": "Bóveda acristalada y columnata del Palau de la Música de València frente al Jardín del Turia",
-        "content": "El gran auditorio acristalado del Jardín del Turia protagoniza la agenda musical de este fin de semana en Valencia con dos citas consecutivas en su Sala Iturbi. El sábado 17 de octubre la Orquestra de València, dirigida por Alexander Liebreich, inaugura la Temporada de Abono con obras de Wagner y Richard Strauss.\n\nY el domingo 18 de octubre a las 19:00 h se celebra el Concierto Extraordinario del 700.º Aniversario del Corpus de la Ciudad de València, con acceso gratuito previa retirada de invitación en las taquillas y web del Palau."
+        "content": "El cauce verde del Jardín del Turia y la gran bóveda acristalada del Palau de la Música ofrecen uno de los paseos más agradables para abrir el fin de semana del 30 de octubre al 1 de noviembre en Valencia.\n\nAl caer la tarde, los estanques frente al Palau se iluminan junto al Puente de las Flores y el Parque Gulliver, convirtiéndose en el recorrido ideal antes de cruzar hacia las terrazas de Cánovas y Ruzafa."
       },
       {
-        "heading": "2. Arte digital inmersivo y circo romano subterráneo en el Palacio de Valeriola",
+        "heading": "2. Criptas subterráneas, callejón judío y arte de luz en el Palacio de Valeriola (viernes 30 oct al domingo 1 nov)",
         "venue": "Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
-        "location": "Calle del Mar, 31 (Barrio de la Seu-Xerea, a 3 min de la Plaza de la Reina)",
-        "price": "10 € entrada general",
+        "location": "Calle del Mar, 31 (Barrio de la Seu - Xerea, a 3 min de la Plaza de la Reina)",
+        "price": "10,00 € entrada general",
         "lat": 39.4743,
         "lng": -0.3728,
         "image": "images/venues/vlc-palacio-valeriola.jpg",
         "imageAlt": "Fachada noble del Palacio de Valeriola en la calle del Mar de Valencia",
-        "content": "Si buscas un plan cultural en pleno centro histórico para la tarde del viernes o del sábado, el rehabilitado Palacio de Valeriola del siglo XVII reúne en un mismo recorrido diecisiete salas con obras monumentales de Olafur Eliasson, Anselm Kiefer, Jaume Plensa y TeamLab.\n\nAdemás de las instalaciones inmersivas de luz, en el subsuelo del palacio podrás caminar junto a un tramo original de la espina del circo romano de Valentia y un antiguo horno medieval de la judería."
+        "content": "En pleno fin de semana de Halloween y Todos los Santos, recorrer el subsuelo arqueológico del Palacio de Valeriola es uno de los planes culturales más sorprendentes del centro histórico.\n\nBajo sus salones nobles del siglo XVII podrás caminar sobre los restos originales del circo romano de Valentia del siglo II, un baño medieval y una fuente islámica, combinados con instalaciones inmersivas de luz digital."
       },
       {
-        "heading": "3. Conciertos matinales y exposiciones gratuitas en los patios de La Beneficència (sábado 17 y domingo 18)",
-        "venue": "Centro Cultural La Beneficència",
-        "location": "Calle Corona, 36 (Barrio del Carmen)",
-        "price": "Entrada y actividades de fin de semana 100% gratuitas",
+        "heading": "3. Gran fiesta gratuita de «Espanta la Por» y monstruos valencianos en los patios de La Beneficència (sábado 31 y domingo 1)",
+        "venue": "Centro Cultural La Beneficència (Museu Valencià d'Etnologia - L'ETNO)",
+        "location": "Calle de la Corona, 36 (Barrio del Carmen · Bus EMT C1, 28, 95)",
+        "price": "Acceso 100% gratuito",
         "lat": 39.4781,
         "lng": -0.3829,
         "image": "images/venues/vlc-la-beneficencia.jpg",
         "imageAlt": "Patios históricos del Centro Cultural La Beneficència en el barrio del Carmen de Valencia",
-        "content": "En el extremo occidental del barrio del Carmen, junto a las Torres de Quart, los cuatro patios arbolados del antiguo hospital de La Beneficència (y su sorprendente iglesia de estilo neobizantino) ofrecen cada sábado y domingo por la mañana actuaciones acústicas gratuitas, talleres culturales y acceso libre al Museu de Prehistòria y al Museu Valencià d'Etnologia.\n\nAl salir a mediodía estás en el punto ideal para tomar el vermut en las plazas peatonales de El Carmen o acercarte al claustro gótico del vecino Centre del Carme (CCCC)."
+        "content": "El sábado 31 de octubre y el domingo 1 de noviembre, los cinco patios bizantinos de La Beneficència celebran el clímax de «Espanta la Por», el festival gratuito con el que L'ETNO reivindica el imaginario valenciano del miedo frente al Halloween comercial.\n\nHay exposición sobre el Butoni, la Quarantamaula y l'Home del Sac, talleres familiares, cuentacuentos y música popular, a solo dos minutos a pie de las murallas medievales de las Torres de Quart y los hornos tradicionales de huesos de santo del barrio del Carmen."
       }
     ],
     "faqs": [
@@ -1428,21 +1428,21 @@
   {
     "id": "sevilla-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Sevilla (16 al 18 de octubre): Jardín de las Delicias en la Cartuja, Lope de Vega y Plaza del Museo",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Sevilla (16 al 18 Oct): Cartuja, Teatro y Planes | Qué Plan Hoy",
-    "metaDescription": "Agenda real en Sevilla del viernes 16 al domingo 18 de octubre de 2026: edición especial del festival Jardín de las Delicias en el Monasterio de la Cartuja (CAAC), estreno en el Teatro Lope de Vega y Mercadillo del Arte en Plaza del Museo.",
+    "title": "Qué hacer este fin de semana en Sevilla (30 de octubre al 1 de noviembre): Don Juan Tenorio, Halloween en la Cartuja y Plaza del Museo",
+    "metaTitle": "Qué Hacer este Fin de Semana en Sevilla (30 oct - 1 nov) | Qué Plan Hoy",
+    "metaDescription": "Agenda de planes en Sevilla del viernes 30 de octubre al domingo 1 de noviembre: rutas de Don Juan Tenorio, Halloween en el Monasterio de la Cartuja, Teatro Lope de Vega y Plaza del Museo.",
     "city": "Sevilla",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre",
+    "weekendDates": "30 de octubre al 1 de noviembre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-15",
+    "publishedAt": "2026-10-26",
     "targetKeyword": "que plan hacer en sevilla este fin de semana",
     "searchVolume": "4.900 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (15/100)",
     "image": "images/venues/sev-plaza-del-museo.jpg",
     "imageAlt": "Arbolado y fachada del Museo de Bellas Artes en la Plaza del Museo de Sevilla",
-    "excerpt": "Los 3 planes reales para este fin de semana del 16 al 18 de octubre en Sevilla: música y arte contemporáneo en el Monasterio de la Cartuja (CAAC), teatro de otoño con «Largo viaje hacia la noche» en el Teatro Lope de Vega y el Mercadillo dominical de Pintura en la Plaza del Museo.",
+    "excerpt": "Tres planes redondos para este fin de semana de Halloween, Noche de Difuntos y Todos los Santos en Sevilla (30 de octubre al 1 de noviembre): arte y misterios en el antiguo Monasterio de la Cartuja, teatro y paseo nocturno junto al Parque de María Luisa y el mercadillo dominical de arte en la Plaza del Museo.",
     "priceRange": "Gratis – 12 €",
     "neighborhoods": [
       "Isla de la Cartuja y Triana",
@@ -1460,37 +1460,37 @@
     },
     "sections": [
       {
-        "heading": "1. Arte contemporáneo y Festival Jardín de las Delicias en el Monasterio de la Cartuja (sábado 17 y domingo 18)",
-        "venue": "Centro Andaluz de Arte Contemporáneo (CAAC) – Monasterio de Santa María de las Cuevas",
-        "location": "Avenida Américo Vespucio, 2, Isla de la Cartuja (A 10 min a pie cruzando desde Triana)",
-        "price": "Exposiciones del CAAC gratis sábados de 11:00 a 21:00 h y domingos de 10:00 a 15:30 h",
+        "heading": "1. Misterios monacales, hornos mudéjares y arte contemporáneo en el Monasterio de la Cartuja y Triana (30 oct al 1 nov)",
+        "venue": "Centro Andaluz de Arte Contemporáneo (CAAC) – Monasterio de Santa María de las Cuevas y Centro Cerámica Triana",
+        "location": "Av. Américo Vespucio, 2 / Calle Callao, 16 (Isla de la Cartuja y Triana)",
+        "price": "Gratis sábados de 11:00 a 21:00 h y domingos de 10:00 a 15:30 h (3,01 € resto de horarios)",
         "lat": 37.3982,
         "lng": -6.0094,
         "image": "images/venues/sev-ceramica-triana.jpg",
         "imageAlt": "Hornos históricos de cerámica y arquitectura patrimonial junto al eje de Triana y la Cartuja en Sevilla",
-        "content": "El histórico Monasterio de la Cartuja —con sus chimeneas industriales de ladrillo del siglo XIX, sus claustros mudéjares y sus praderas de ombúes centenarios— vive este sábado 17 de octubre el desembarco en Sevilla del festival musical y escénico «Jardín de las Delicias», además de mantener abiertas las nuevas exposiciones de otoño del Centro Andaluz de Arte Contemporáneo (CAAC).\n\nSi prefieres un plan tranquilo y gratuito, el domingo 18 por la mañana puedes recorrer sin coste todas las salas de arte actual y las capillas históricas del monasterio y cruzar después por la pasarela del Guadalquivir a tomar el aperitivo en Triana."
+        "content": "Fundado en el año 1400 sobre antiguas cuevas alfareras almohades y panteón histórico de la familia Ribera (cuyos sepulcros inspiraron el acto final de Don Juan Tenorio), el Monasterio de la Cartuja tiene acceso gratuito durante todo el sábado 31 de octubre y la mañana del domingo 1 de noviembre.\n\nPasea entre sus claustros mudéjares, sus chimeneas de ladrillo del siglo XIX y sus jardines de ombúes centenarios antes de cruzar la pasarela hacia el Callejón de la Inquisición y el mercado de Triana."
       },
       {
-        "heading": "2. «Largo viaje hacia la noche» en el Teatro Lope de Vega y paseo por el Parque de María Luisa (16 al 18 de octubre)",
-        "venue": "Teatro Lope de Vega, Sevilla",
-        "location": "Avenida de María Luisa, s/n (Metro y Tranvía: Prado de San Sebastián / Puerta de Jerez)",
-        "price": "Paseo por las glorietas del parque gratis / Entradas de teatro desde 10 €",
+        "heading": "2. Noche de Difuntos y Don Juan Tenorio entre el Teatro Lope de Vega, el Parque de María Luisa y Santa Cruz (30 oct al 1 nov)",
+        "venue": "Entorno del Teatro Lope de Vega, Glorieta de Bécquer (Parque de María Luisa) y Barrio de Santa Cruz",
+        "location": "Avenida de María Luisa, s/n y Plaza de los Venerables (Puerta de Jerez - Metro L1)",
+        "price": "Paseo histórico 100% gratuito / Dulces de Todos los Santos desde 4,00 €",
         "lat": 37.3774,
         "lng": -5.9901,
         "image": "images/venues/sev-teatro-lope-de-vega.jpg",
         "imageAlt": "Cúpula y fachada neobarroca del Teatro Lope de Vega junto al Parque de María Luisa en Sevilla",
-        "content": "Durante las tres tardes de este fin de semana (viernes 16, sábado 17 y domingo 18 de octubre), el monumental Teatro Lope de Vega levantado para la Exposición Iberoamericana de 1929 acoge el drama «Largo viaje hacia la noche» de Eugene O'Neill, protagonizado por Carlos Hipólito bajo la dirección de Ernesto Caballero.\n\nAprovecha los suaves 25 grados del otoño sevillano para llegar una hora antes de la función y pasear bajo los árboles del vecino Parque de María Luisa hasta la Glorieta de Bécquer y el Estanque de los Lotos."
+        "content": "Ninguna ciudad vive la víspera de Todos los Santos como Sevilla con el mito de Don Juan Tenorio y las leyendas románticas de Gustavo Adolfo Bécquer.\n\nAprovecha el viernes 30 o el sábado 31 al atardecer para recorrer la Glorieta de Bécquer y el Monte Gurugú en el Parque de María Luisa, admirar la iluminación barroca del Lope de Vega y adentrarte a pie hasta la Hostería del Laurel y la Plaza de Santa Marta bajo los faroles de forja."
       },
       {
-        "heading": "3. Mercadillo dominical del Arte en la Plaza del Museo (domingo 18 de octubre de 10:00 a 14:00 h)",
+        "heading": "3. Mercadillo dominical del Arte en la Plaza del Museo y lienzos de Valdés Leal (domingo 1 de noviembre de 10:00 a 14:00 h)",
         "venue": "Plaza del Museo y Museo de Bellas Artes de Sevilla",
-        "location": "Plaza del Museo, s/n (Casco Antiguo)",
-        "price": "Mercadillo exterior y acceso al Museo de Bellas Artes 100% gratuitos",
+        "location": "Plaza del Museo, 9 (Casco Antiguo, a 4 min de Plaza de Armas y Calle Alfonso XII)",
+        "price": "100% gratuito (tanto el mercadillo al aire libre como el Museo para ciudadanos UE)",
         "lat": 37.3925,
         "lng": -5.9996,
         "image": "images/venues/sev-plaza-del-museo-bellas-artes.jpg",
         "imageAlt": "Fachada del antiguo Convento de la Merced, sede del Museo de Bellas Artes en la Plaza del Museo de Sevilla",
-        "content": "El plan más agradable para la mañana del domingo 18 de octubre en el centro de Sevilla es acercarse entre las 10:00 y las 14:00 h a la arbolada Plaza del Museo. Alrededor de la escultura de bronce de Bartolomé Esteban Murillo, decenas de pintores, acuarelistas y grabadores locales exponen directamente sus obras al aire libre y conversan con los visitantes.\n\nJusto detrás de los caballetes tienes abierta con entrada gratuita la puerta del antiguo Convento de la Merced (Museo de Bellas Artes), con sus tres patios de naranjos y azulejos sevillanos del siglo XVII."
+        "content": "El domingo 1 de noviembre (día de Todos los Santos) por la mañana, más de cincuenta pintores, acuarelistas e ilustradores instalan sus caballetes al aire libre bajo los árboles centenarios de la Plaza del Museo.\n\nEntra después de forma gratuita al antiguo Convento de la Merced (Museo de Bellas Artes) para contemplar los sobrecogedores cuadros barrocos de Murillo, Zurbarán y Valdés Leal, y termina tomando unos huesos de santo en la cercana Confitería La Campana."
       }
     ],
     "faqs": [
@@ -1508,21 +1508,21 @@
   {
     "id": "toledo-planes-este-fin-de-semana-octubre",
     "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Toledo (16 al 18 de octubre): Feria del Libro, Batalla de Órganos en la Catedral y Teatro de Rojas",
-    "metaTitle": "Qué Hacer Este Fin de Semana en Toledo (16 al 18 Oct): Feria del Libro y Órganos | Qué Plan Hoy",
-    "metaDescription": "Agenda cultural verificada en Toledo del viernes 16 al domingo 18 de octubre de 2026: Feria del Libro en la Plaza del Ayuntamiento, XXXII Batalla de Órganos en la Catedral Primada, La verbena de la Paloma en el Teatro de Rojas y Museo de Santa Cruz.",
+    "title": "Qué hacer este fin de semana en Toledo (30 de octubre al 1 de noviembre): Halloween en las Cuevas, Cobertizos y Dulces de Convento",
+    "metaTitle": "Qué Hacer este Fin de Semana en Toledo (30 oct - 1 nov) | Qué Plan Hoy",
+    "metaDescription": "Planes en Toledo del viernes 30 de octubre al domingo 1 de noviembre (Puente de Todos los Santos y Halloween): rutas nocturnas de leyendas, bóvedas subterráneas gratis y Museo de Santa Cruz.",
     "city": "Toledo",
     "category": "Este Fin de Semana",
     "categoryIcon": "📅",
-    "weekendDates": "16 al 18 de octubre",
+    "weekendDates": "30 de octubre al 1 de noviembre",
     "readTime": "5 min",
-    "publishedAt": "2026-10-15",
+    "publishedAt": "2026-10-26",
     "targetKeyword": "que plan hacer en toledo este fin de semana",
     "searchVolume": "3.600 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (12/100)",
     "image": "images/venues/tol-san-juan-reyes.jpg",
     "imageAlt": "Arquitectura gótica e histórica del casco antiguo de Toledo",
-    "excerpt": "Los 3 planes reales de este fin de semana del 16 al 18 de octubre en Toledo: casetas y firmas de la Feria del Libro en la Plaza del Ayuntamiento frente a la Catedral, la XXXII Batalla de Órganos y el Ciclo de Otoño del Teatro de Rojas, y la exposición histórica del Museo de Santa Cruz.",
+    "excerpt": "Los mejores planes para este fin de semana de Halloween y Puente de Todos los Santos en Toledo (30 de octubre al 1 de noviembre): rutas de leyendas y mazapán en los conventos del Casco Histórico, música y teatro junto a la Catedral Primada y acceso gratuito al Museo de Santa Cruz.",
     "priceRange": "Gratis – 12 €",
     "neighborhoods": [
       "Plaza del Ayuntamiento y Catedral",
@@ -1540,37 +1540,37 @@
     },
     "sections": [
       {
-        "heading": "1. Feria del Libro de Toledo en la Plaza del Ayuntamiento frente a la Catedral (viernes 16 al domingo 18 de octubre)",
-        "venue": "Plaza del Ayuntamiento de Toledo",
-        "location": "Plaza del Ayuntamiento, s/n (Casco Histórico, entre la Catedral Primada y el Palacio Arzobispal)",
-        "price": "Acceso libre y gratuito a todas las casetas y presentaciones (10% de descuento en libros)",
+        "heading": "1. Ruta de huesos de santo, mazapán artesano y leyendas entre la Plaza del Ayuntamiento y San Clemente (viernes 30 oct al domingo 1 nov)",
+        "venue": "Plaza del Ayuntamiento de Toledo y Torno del Convento de San Clemente",
+        "location": "Plaza del Consistorio y Calle San Clemente, 1 (Casco Histórico de Toledo)",
+        "price": "Acceso libre y gratuito / Caja de huesos de santo y mazapán desde 4,80 €",
         "lat": 39.8571,
         "lng": -4.0245,
         "image": "images/venues/tol-convento-san-clemente.jpg",
         "imageAlt": "Arquitectura renacentista del centro histórico de Toledo junto al eje de la Catedral y San Clemente",
-        "content": "Desde el miércoles 14 hasta este domingo 18 de octubre, la monumental Plaza del Ayuntamiento —enmarcada por la fachada gótica de la Catedral Primada, el Palacio Arzobispal y la casa consistorial trazada por Jorge Manuel Theotocópuli y Juan de Herrera— acoge la Feria del Libro de Toledo.\n\nDurante todo el fin de semana en horario de mañana y tarde podrás recorrer las casetas de librerías y editoriales locales, asistir gratis a encuentros con autores, cuentacuentos y recitales al aire libre con un 10% de descuento en todos los ejemplares."
+        "content": "En el puente de Todos los Santos (30 de octubre al 1 de noviembre), el aroma a almendra tostada y almíbar inunda los callejones que unen la Plaza del Ayuntamiento con el barrio de los conventos.\n\nAcércate al patio silencioso del Real Monasterio de San Clemente o a los obradores centenarios de Zocodover para comprar huesos de santo rellenos de yema dulce y buñuelos recién hechos antes de recorrer los cobertizos medievales al caer la noche."
       },
       {
-        "heading": "2. XXXII Batalla de Órganos en la Catedral y «La verbena de la Paloma» en el Teatro de Rojas (16 y 17 de octubre)",
-        "venue": "Catedral Primada y Teatro Municipal de Rojas (Plaza Mayor)",
-        "location": "Plaza del Ayuntamiento y Plaza Mayor, s/n (A 2 minutos a pie entre ambas sedes)",
-        "price": "Funciones en el Teatro de Rojas desde 12 €",
+        "heading": "2. Noche de Halloween y Don Juan Tenorio entre la Catedral Primada, el Teatro de Rojas y los callejones templarios (30 y 31 de octubre)",
+        "venue": "Entorno de la Catedral Primada, Teatro Municipal de Rojas (Plaza Mayor) y Barrio de San Miguel",
+        "location": "Calle Cardenal Cisneros, 1 y Plaza Mayor, s/n (Casco Histórico)",
+        "price": "Rutas a pie por el casco gratuitas / Funciones en el Teatro de Rojas desde 12,00 €",
         "lat": 39.8569,
         "lng": -4.0229,
         "image": "images/venues/tol-sinagoga-transito-greco.jpg",
         "imageAlt": "Artesonado histórico y patrimonio musical del casco antiguo de Toledo",
-        "content": "Este fin de semana concentra tres citas musicales y escénicas extraordinarias en el corazón de Toledo. El viernes 16 de octubre (19:30 h), el Teatro de Rojas acoge el concierto conmemorativo «450 años de teatro, poesía y música» a cargo del Orfeón Tres Culturas.\n\nEl sábado 17 de octubre a las 20:00 h tendrás doble elección: la esperada XXXII Batalla de Órganos en el interior de la Catedral Primada —donde dialogan en directo los órganos históricos del Emperador, de Berdalonga y de Echevarría— o la representación de la zarzuela clásica «La verbena de la Paloma» en el Teatro de Rojas inaugurando el XXVIII Ciclo Toledo Siglo de Oro."
+        "content": "Las noches del viernes 30 y sábado 31 de octubre transforman las callejuelas empedradas que rodean la Catedral y el Teatro de Rojas en un escenario vivo del Siglo de Oro y de las leyendas góticas de Bécquer.\n\nAl terminar las representaciones teatrales, piérdete a pie por la Cuesta de la Sal, el Callejón del Diablo y el Pozo Amargo bajo la luz ámbar de los faroles de hierro forjado."
       },
       {
-        "heading": "3. Exposición «Los Mapas y la Primera Vuelta al Mundo» en el Museo de Santa Cruz (gratis sábado tarde y domingo)",
+        "heading": "3. Claustro plateresco y colecciones históricas en el Museo de Santa Cruz (gratis sábado tarde y domingo 1 de noviembre)",
         "venue": "Museo de Santa Cruz",
-        "location": "Calle Miguel de Cervantes, 3 (Junto al Arco de la Sangre en la Plaza de Zocodover)",
-        "price": "Claustro de acceso libre / Exposiciones gratis el sábado desde las 14:00 h y el domingo por la mañana",
+        "location": "Calle Miguel de Cervantes, 3 (junto a la Plaza de Zocodover y el Alcázar)",
+        "price": "Entrada 100% gratuita (sábados desde las 14:00 h y domingos todo el día)",
         "lat": 39.8594,
         "lng": -4.0202,
         "image": "images/venues/tol-museo-santa-cruz.jpg",
         "imageAlt": "Claustro plateresco y escalinata de Covarrubias en el Museo de Santa Cruz de Toledo",
-        "content": "A menos de cien metros de la Plaza de Zocodover, el antiguo Hospital de Santa Cruz del siglo XVI acoge este mes la exposición temporal «Los Mapas y la Primera Vuelta al Mundo: las expediciones de Magallanes y Elcano», junto a su colección permanente de lienzos de El Greco.\n\nEl acceso a su impresionante claustro renacentista de dos pisos y a la escalera plateresca de Alonso de Covarrubias es libre, y tanto el sábado por la tarde como el domingo por la mañana la entrada a todas las salas del museo es completamente gratuita."
+        "content": "Antiguo hospital fundado en 1504 por el Cardenal Mendoza para niños expósitos —lleno de leyendas históricas en sus galerías subterráneas y su crucero renacentista—, el Museo de Santa Cruz es visita obligada este puente.\n\nSu claustro de dos plantas con escalera de Alonso de Covarrubias y su colección de dieciocho lienzos originales de El Greco pueden visitarse de forma completamente gratuita tanto el sábado 31 desde las 14:00 h como durante toda la mañana del domingo 1 de noviembre."
       }
     ],
     "faqs": [
