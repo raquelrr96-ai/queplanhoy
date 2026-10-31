@@ -112,15 +112,16 @@ CITY_KNOWLEDGE_BASE = {
             "partner": "Tiqets",
             "badge": "Para completar el plan",
             "title": (
-                "Entrada al Palacio de Liria de Madrid con Audioguía"
+                "Entrada a la Galería de las Colecciones Reales de Madrid"
             ),
             "description": (
-                "Visita la residencia histórica de la Casa de Alba en la calle"
-                " Princesa con salones palaciegos y obras de Goya y Velázquez."
+                "Recorre el gran museo junto al Palacio Real y la Almudena con"
+                " carruajes reales, tapices y obras maestras de Velázquez, Goya"
+                " y Caravaggio."
             ),
-            "price": "Desde 20 € con audioguía",
-            "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2Fentradas-para-palacio-de-liria-entrada-audioguia-p1010845%2F",
-            "ctaText": "Ver entradas al Palacio de Liria →",
+            "price": "Desde 14 € entrada oficial",
+            "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2Fentradas-para-galeria-de-las-colecciones-reales-p1036675%2F",
+            "ctaText": "Ver entradas y horarios →",
         },
     },
     "Barcelona": {

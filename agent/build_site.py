@@ -1068,7 +1068,7 @@ def build_article_page(art: dict, all_articles: list):
       PUBLIC_DIR, city_slug, art["slug"], "index.html"
   )
   canonical_url = f"{SITE_URL}/{city_slug}/{art['slug']}/"
-  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261031a"
+  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261031b"
   img_alt = art.get("imageAlt", art["title"])
   img_credit = art.get("imageCredit", "").strip()
   hero_caption = (
@@ -1190,7 +1190,7 @@ def build_article_page(art: dict, all_articles: list):
         "lat": sec.get("lat", city_info.get("lat", 40.4168)),
         "lng": sec.get("lng", city_info.get("lng", -3.7038)),
         "image": (
-            f"{root_prefix}{sec['image'].lstrip('/')}?v=20261015a"
+            f"{root_prefix}{sec['image'].lstrip('/')}?v=20261031b"
             if sec.get("image")
             else img_src
         ),
@@ -1292,7 +1292,7 @@ def build_article_page(art: dict, all_articles: list):
     if sec_img:
       sec_img_html = f"""
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="{root_prefix}{html.escape(sec_img)}?v=20261031a" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="{root_prefix}{html.escape(sec_img)}?v=20261031b" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
             {sec_caption}
           </figcaption>
@@ -1385,17 +1385,6 @@ def build_article_page(art: dict, all_articles: list):
       else "Abierto todo el año (ideal hoy o este finde)"
   )
   zones_label = " · ".join(art.get("neighborhoods", [city_name])[:3])
-  quick_aff_row = ""
-  if aff:
-    quick_aff_row = f"""
-        <div class="quick-summary-cta-row">
-          <span style="font-size: 0.84rem; color: var(--ink-secondary);">
-            🎟️ <strong>Recomendado:</strong> {html.escape(aff.get('title', ''))} ({html.escape(aff.get('price', ''))})
-          </span>
-          <a href="{html.escape(aff_url)}" target="_blank" rel="noopener sponsored" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 700; font-size: 0.82rem; padding: 0.48rem 0.95rem; border-radius: var(--radius-pill); white-space: nowrap;">
-            {html.escape(aff.get('ctaText', 'Ver entradas y horarios →'))}
-          </a>
-        </div>"""
 
   quick_summary_html = f"""
       <aside class="quick-summary-box" aria-label="Resumen práctico en 30 segundos">
@@ -1416,7 +1405,7 @@ def build_article_page(art: dict, all_articles: list):
             <strong>📍 Zonas incluidas</strong>
             <span>{html.escape(zones_label)}</span>
           </div>
-        </div>{quick_aff_row}
+        </div>
       </aside>"""
 
   page_html = f"""{render_head(art['metaTitle'], art['metaDescription'], canonical_url, root_prefix, [article_schema, itemlist_schema, faq_schema, breadcrumb_schema], full_img_url, include_leaflet=True, og_type="article")}
