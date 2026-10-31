@@ -1068,8 +1068,14 @@ def build_article_page(art: dict, all_articles: list):
       PUBLIC_DIR, city_slug, art["slug"], "index.html"
   )
   canonical_url = f"{SITE_URL}/{city_slug}/{art['slug']}/"
-  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261015a"
+  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261031a"
   img_alt = art.get("imageAlt", art["title"])
+  img_credit = art.get("imageCredit", "").strip()
+  hero_caption = (
+      f"{html.escape(img_alt)} · <strong style='color:var(--ink-secondary);'>{html.escape(img_credit)}</strong>"
+      if img_credit
+      else html.escape(img_alt)
+  )
   full_img_url = f"{SITE_URL}/{art['image'].lstrip('/')}"
   is_single_plan = art.get("articleType") == "single_plan"
   today_iso = date.today().isoformat()
@@ -1276,13 +1282,19 @@ def build_article_page(art: dict, all_articles: list):
     venue_name = sec.get("venue", sec["heading"])
     sec_img = sec.get("image", "")
     sec_alt = sec.get("imageAlt", venue_name)
+    sec_credit = sec.get("imageCredit", "").strip()
+    sec_caption = (
+        f"{html.escape(sec_alt)} · <strong style='color:var(--ink-secondary);'>{html.escape(sec_credit)}</strong>"
+        if sec_credit
+        else html.escape(sec_alt)
+    )
     sec_img_html = ""
     if sec_img:
       sec_img_html = f"""
         <figure style="margin: 1.15rem 0 1.25rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-sand);">
-          <img src="{root_prefix}{html.escape(sec_img)}?v=20261015a" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
+          <img src="{root_prefix}{html.escape(sec_img)}?v=20261031a" alt="{html.escape(sec_alt)}" loading="lazy" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;" />
           <figcaption style="padding: 0.55rem 0.95rem; font-size: 0.8rem; color: var(--ink-muted);">
-            {html.escape(sec_alt)}
+            {sec_caption}
           </figcaption>
         </figure>"""
 
@@ -1447,7 +1459,7 @@ def build_article_page(art: dict, all_articles: list):
 
       <figure style="margin: 0 0 1.4rem 0;">
         <img src="{img_src}" alt="{html.escape(img_alt)}" class="reader-hero-img" width="820" height="460" style="margin-bottom: 0.45rem;" />
-        <figcaption style="font-size: 0.78rem; color: var(--ink-muted); text-align: right;">{html.escape(img_alt)}</figcaption>
+        <figcaption style="font-size: 0.78rem; color: var(--ink-muted); text-align: right;">{hero_caption}</figcaption>
       </figure>
 
       {quick_summary_html}
