@@ -1051,31 +1051,42 @@ def run_next_from_queue() -> dict:
 def run_wednesday_weekend_all_cities() -> list:
   """Publica o actualiza todos los miércoles la guía 'Este Fin de Semana' para las 5 ciudades
 
-  (Madrid, Barcelona, Valencia, Sevilla y Toledo) manteniendo la URL canónica
-  planes-este-fin-de-semana-<ciudad>-que-hacer-hoy sin duplicar artículos ni
-  añadir planes de relleno.
+  (Madrid, Barcelona, Valencia, Sevilla y Toledo) desde data/scheduled_wednesday_articles.json,
+  manteniendo la URL canónica planes-este-fin-de-semana-<ciudad>-que-hacer-hoy y
+  colocándolas en portada como las guías más recientes.
   """
-  cities = ["Madrid", "Barcelona", "Valencia", "Sevilla", "Toledo"]
-  weekend_dates = get_current_weekend_dates_es()
+  sched_file = os.path.join(
+      BASE_DIR, "data", "scheduled_wednesday_articles.json"
+  )
+  scheduled = load_json(sched_file)
   existing_articles = load_json(ARTICLES_FILE)
-  published = []
   today_str = date.today().isoformat()
-  weekend_start = weekend_dates.split(" al ")[0] + " al "
+  published = []
 
-  for city in cities:
-    canonical_slug = f"planes-este-fin-de-semana-{city.lower()}-que-hacer-hoy"
-    target_art = None
-    for a in existing_articles:
-      if a.get("slug") == canonical_slug or (
-          a.get("city") == city and a.get("category") == "Este Fin de Semana"
-      ):
-        target_art = a
-        break
-
-    if target_art:
-      # NUNCA modificar weekendDates en solitario sin actualizar a la vez title, excerpt y sections,
-      # para evitar que la etiqueta de fecha muestre el nuevo fin de semana mientras el texto habla del anterior.
-      published.append(target_art)
+  if scheduled:
+    sched_slugs = {a.get("slug") for a in scheduled}
+    sched_ids = {a.get("id") for a in scheduled}
+    remaining = [
+        a
+        for a in existing_articles
+        if a.get("slug") not in sched_slugs and a.get("id") not in sched_ids
+    ]
+    for art in reversed(scheduled):
+      art["publishedAt"] = today_str
+      remaining.insert(0, art)
+      published.append(art)
+    existing_articles = remaining
+    published = list(reversed(published))
+  else:
+    cities = ["Madrid", "Barcelona", "Valencia", "Sevilla", "Toledo"]
+    for city in cities:
+      canonical_slug = f"planes-este-fin-de-semana-{city.lower()}-que-hacer-hoy"
+      for a in existing_articles:
+        if a.get("slug") == canonical_slug or (
+            a.get("city") == city and a.get("category") == "Este Fin de Semana"
+        ):
+          published.append(a)
+          break
 
   save_json(ARTICLES_FILE, existing_articles)
   build_site.build_all()

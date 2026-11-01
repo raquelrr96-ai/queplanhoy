@@ -1,19 +1,17 @@
-name: Publicar Planes Semanales (Martes y Jueves - 5 Ciudades) y Desplegar Web (QuePlanHoy)
+name: Publicar Guías de Fin de Semana (Miércoles - 5 Ciudades) y Desplegar Web (QuePlanHoy)
 
 on:
   push:
     branches: ["main"]
   schedule:
-    # Martes a las 09:00 AM (Hora España): publica el primer reportaje semanal por ciudad (5 artículos: Madrid, Barcelona, Valencia, Sevilla y Toledo)
-    - cron: '0 7 * * 2'
-    # Jueves a las 09:00 AM (Hora España): publica el segundo reportaje semanal por ciudad (5 artículos: Madrid, Barcelona, Valencia, Sevilla y Toledo)
-    - cron: '0 7 * * 4'
+    # Miércoles a las 09:00 AM (Hora España / 08:00 UTC en horario de invierno): publica la guía de planes de fin de semana por ciudad (5 artículos: Madrid, Barcelona, Valencia, Sevilla y Toledo)
+    - cron: '0 8 * * 3'
   workflow_dispatch:
     inputs:
       lote:
-        description: 'Qué lote publicar manualmente (martes o jueves)'
+        description: 'Qué lote publicar manualmente (miercoles, martes o jueves)'
         required: false
-        default: 'martes'
+        default: 'miercoles'
 
 permissions:
   contents: write
@@ -35,18 +33,20 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Ejecutar el Agente SEO (Martes 5 Ciudades + Jueves 5 Ciudades)
+      - name: Ejecutar el Agente SEO (Miércoles 5 Ciudades - Fin de Semana)
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
-          if [ "${{ github.event.schedule }}" = "0 7 * * 4" ] || [ "${{ github.event.inputs.lote }}" = "jueves" ]; then
+          if [ "${{ github.event.inputs.lote }}" = "jueves" ]; then
             python3 agent/seo_agent.py --thursday-batch
-          else
+          elif [ "${{ github.event.inputs.lote }}" = "martes" ]; then
             python3 agent/seo_agent.py --tuesday-batch
+          else
+            python3 agent/seo_agent.py --wednesday-all-cities
           fi
           git config user.name "Agente SEO HoyQuePlan"
           git config user.email "agente@queplanhoy.es"
           git add data/ public/
-          git commit -m "chore(seo): publicar artículos programados en QuePlanHoy" || echo "Sin cambios"
+          git commit -m "chore(seo): publicar guías de fin de semana en QuePlanHoy" || echo "Sin cambios"
           git push
 
       - name: Auditoría de Calidad Editorial (Bloqueo anti-errores antes de publicar)
