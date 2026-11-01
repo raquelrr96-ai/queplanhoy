@@ -1866,15 +1866,14 @@ def build_about_page():
     </section>
 
     <section class="reader-section" style="border-bottom: none;">
-      <h2>Una guía hecha desde dentro (y cero relleno)</h2>
+      <h2>Una guía hecha desde dentro</h2>
       <p style="margin-top: 0.65rem; line-height: 1.75;">
-        Nuestro compromiso editorial se basa en cuatro reglas que aplicamos en cada guía que publicamos:
+        Nuestro compromiso editorial se basa en tres reglas que aplicamos en cada guía que publicamos:
       </p>
       <ul style="margin: 0.9rem 0 0 1.25rem; line-height: 1.85;">
-        <li style="margin-bottom: 0.55rem;"><strong>Agendas oficiales de Ayuntamientos en festivos y puentes:</strong> Cuando llega una fecha señalada (como el <em>12 de Octubre y la Fiesta de la Hispanidad en Madrid</em>, el <em>Puente de Todos los Santos en Toledo</em> o el <em>9 d'Octubre en Valencia</em>), consultamos directamente los programas oficiales de los Ayuntamientos y Comunidades Autónomas para explicarte los eventos reales que suceden en la calle: recorridos de desfiles, escenarios de conciertos gratuitos en plazas, jornadas de puertas abiertas y qué bocas de Metro o calles cortadas conviene evitar.</li>
+        <li style="margin-bottom: 0.55rem;"><strong>Agendas oficiales de Ayuntamientos en festivos y puentes:</strong> Cuando llega una fecha señalada, consultamos directamente los programas oficiales de los Ayuntamientos y Comunidades Autónomas para explicarte los eventos reales que suceden en la calle: recorridos de desfiles, escenarios de conciertos gratuitos en plazas, jornadas de puertas abiertas y qué bocas de Metro o calles cortadas conviene evitar.</li>
         <li style="margin-bottom: 0.55rem;"><strong>Planes de un único rincón a fondo y selecciones con sentido:</strong> No creemos en poner siempre 5 o 10 planes porque sí. Hay mañanas de domingo en las que el mejor plan es dedicarle tres horas a un único lugar explicado paso a paso (como el <em>Parque de El Capricho</em>, el <em>Laberinto de Horta</em> o la <em>Senda Ecológica del Tajo</em>), y días de lluvia en los que necesitas cinco refugios cubiertos con encanto para elegir.</li>
-        <li style="margin-bottom: 0.55rem;"><strong>Datos prácticos al grano (horario, transporte, precio y pin en Google Maps):</strong> Ni quien vive en la ciudad ni quien viene de escapada tiene tiempo de leer párrafos vacíos antes de saber a qué hora cierra un jardín o cuánto cuesta la entrada. Cada parada incluye dirección exacta, parada de Metro, Cercanías o autobús, precio real verificado y enlace directo al <strong>pin exacto en Google Maps</strong>.</li>
-        <li><strong>Fotografías reales verificadas:</strong> Todas las fotografías que ilustran nuestros planes corresponden a imágenes reales de los monumentos, jardines, calles y eventos, para que sepas exactamente qué vas a encontrar al llegar.</li>
+        <li><strong>Datos prácticos al grano (horario, transporte, precio y pin en Google Maps):</strong> Ni quien vive en la ciudad ni quien viene de escapada tiene tiempo de leer párrafos vacíos antes de saber a qué hora cierra un jardín o cuánto cuesta la entrada. Cada parada incluye dirección exacta, parada de Metro, Cercanías o autobús, precio real verificado y enlace directo al <strong>pin exacto en Google Maps</strong>.</li>
       </ul>
       <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
         <a href="/" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem; padding: 0.65rem 1.2rem; border-radius: var(--radius-pill);">Explorar planes por ciudad →</a>
@@ -1939,7 +1938,7 @@ def build_privacy_cookies_page():
     <section class="reader-section">
       <h2>3. Enlaces a terceros y transparencia de afiliación</h2>
       <p style="margin-top: 0.55rem; line-height: 1.72;">
-        Para facilitar la planificación al lector, nuestras guías incluyen enlaces externos tanto a portales institucionales y webs oficiales de museos como a plataformas autorizadas de reserva de entradas y visitas guiadas (como <strong>Tiqets</strong>, <strong>Civitatis</strong> o la red <strong>Travelpayouts</strong>).
+        Para facilitar la planificación al lector, nuestras guías incluyen enlaces externos tanto a portales institucionales y webs oficiales de museos como a plataformas autorizadas de reserva de entradas y visitas guiadas.
       </p>
       <p style="margin-top: 0.65rem; line-height: 1.72;">
         Algunos de estos enlaces son enlaces de afiliación: si reservas tu entrada a través de ellos, <em>Qué Plan Hoy</em> puede recibir una pequeña comisión del proveedor sin que ello suponga ningún sobrecoste ni variación en el precio oficial para ti. Cualquier compra o reserva se celebra única y exclusivamente entre el usuario y la plataforma proveedora correspondiente; <em>Qué Plan Hoy</em> no interviene en la transacción ni asume responsabilidad sobre la prestación del servicio de dichos terceros.
@@ -1953,7 +1952,7 @@ def build_privacy_cookies_page():
       </p>
       <ul style="margin: 0.85rem 0 0 1.25rem; line-height: 1.8;">
         <li style="margin-bottom: 0.45rem;"><strong>Almacenamiento técnico y de preferencias (Estrictamente necesario):</strong> Guarda en tu propio navegador (<code>localStorage</code>) tu decisión sobre el aviso de cookies (<code>qph_cookie_consent_v1</code>), recuerda la última ciudad que has consultado en la portada (<code>qph_preferred_city</code>) para no mezclarte planes de otras ciudades y permite visualizar los mapas interactivos de OpenStreetMap / Leaflet.</li>
-        <li><strong>Cookies de atribución y reserva de entradas (Terceros):</strong> Cuando aceptas las cookies o interactúas con enlaces de plataformas colaboradoras de entradas (Tiqets / Travelpayouts), estos proveedores pueden utilizar una cookie técnica de atribución para reconocer que la visita procede de <em>Qué Plan Hoy</em>.</li>
+        <li><strong>Cookies de atribución y reserva de entradas (Terceros):</strong> Cuando aceptas las cookies o interactúas con enlaces de plataformas colaboradoras de entradas, estos proveedores pueden utilizar una cookie técnica de atribución para reconocer que la visita procede de <em>Qué Plan Hoy</em>.</li>
       </ul>
       <p style="margin-top: 0.8rem; line-height: 1.72;">
         <strong>Retirada o cambio del consentimiento en 1 clic:</strong> De conformidad con el artículo 13.2.c) del RGPD, puedes cambiar o retirar tu consentimiento en cualquier momento pulsando en <button type="button" onclick="window.openCookieBanner && window.openCookieBanner()" style="background:none;border:none;padding:0;font:inherit;color:var(--terracotta);font-weight:700;cursor:pointer;text-decoration:underline;">Configurar cookies</button> (también disponible en el pie de página de toda la web) o eliminando los datos de navegación desde la configuración de tu navegador.
