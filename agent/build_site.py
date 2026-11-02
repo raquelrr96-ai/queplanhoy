@@ -13,6 +13,7 @@ from datetime import date
 import html
 import json
 import os
+import re
 import urllib.parse
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -413,7 +414,7 @@ def render_head(
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{root_prefix}index.css?v=20261102a" />{leaflet_tags}
+  <link rel="stylesheet" href="{root_prefix}index.css?v=20261102b" />{leaflet_tags}
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {{
         var script = document.createElement("script");
@@ -547,6 +548,35 @@ def render_footer(root_prefix: str) -> str:
   </script>"""
 
 
+def format_short_price_badge(price_text: str) -> str:
+  """Devuelve una versión corta (<=16 caracteres) del precio para la pastilla sobre la foto."""
+  s = price_text.strip()
+  s = re.sub(r"\s*\([^)]*\)", "", s).strip()
+  if "/" in s:
+    if "gratis" in s.lower():
+      nums = re.findall(r"\d+(?:,\d+)?\s*€", price_text)
+      if nums:
+        return f"Gratis – {nums[-1]}"
+      return "100% Gratis"
+    parts = [p.strip() for p in s.split("/") if p.strip()]
+    s = parts[0]
+  if s.lower() in (
+      "gratis",
+      "100% gratis",
+      "ruta exterior gratis",
+      "ruta por libre gratis",
+      "entrada 100% gratis",
+  ):
+    return "100% Gratis"
+  if s.lower() == "ruta libre":
+    return "Ruta Gratis"
+  if s.lower() == "1,50 € bus":
+    return "Desde 1,50 €"
+  if "gratis miércoles y domingos" in s.lower():
+    return "Gratis / 2,23 €"
+  return s
+
+
 def render_article_card(
     art: dict,
     root_prefix: str,
@@ -563,16 +593,18 @@ def render_article_card(
   lead_cls = " lead-card" if is_lead else ""
   style_attr = ' style="display: none;"' if initial_hidden else ""
   read_cta = "Leer guía →"
-  price_text = art.get("priceRange", "")
-  is_freeish = "gratis" in price_text.lower()
+  price_text = format_short_price_badge(art.get("priceRange", ""))
+  is_freeish = "gratis" in price_text.lower() or "libre" in price_text.lower()
   price_cls = "card-price-tag free-tone" if is_freeish else "card-price-tag"
   return f"""
   <article class="article-card{lead_cls}"{style_attr} data-city="{html.escape(art['city'])}" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
     <a href="{article_href}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="{img_src}" alt="{html.escape(img_alt)}" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag"><span class="lead-badge-prefix">⭐ Plan Destacado · </span>{html.escape(art['city'])}</span>
-        <span class="{price_cls}">{html.escape(price_text)}</span>
+        <div class="card-badges-row">
+          <span class="card-city-tag"><span class="lead-badge-prefix">⭐ Plan Destacado · </span>{html.escape(art['city'])}</span>
+          <span class="{price_cls}">{html.escape(price_text)}</span>
+        </div>
       </div>
       <div class="card-body">
         <div class="card-meta-top">

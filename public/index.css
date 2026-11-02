@@ -361,33 +361,46 @@ img, svg, video, canvas, iframe {
   transform: scale(1.03);
 }
 
-.card-city-tag {
+.card-badges-row {
   position: absolute;
-  top: 0.75rem;
-  left: 0.75rem;
+  top: 0.7rem;
+  left: 0.7rem;
+  right: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.45rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.card-city-tag {
   background-color: rgba(28, 25, 23, 0.84);
   backdrop-filter: blur(6px);
   color: #ffffff;
-  padding: 0.24rem 0.68rem;
+  padding: 0.22rem 0.62rem;
   border-radius: var(--radius-sm);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .card-price-tag {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(6px);
   color: var(--ink-primary);
-  padding: 0.24rem 0.72rem;
+  padding: 0.22rem 0.68rem;
   border-radius: var(--radius-pill);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
   box-shadow: 0 2px 8px rgba(28, 25, 23, 0.14);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 62%;
 }
 
 .card-price-tag.free-tone {
