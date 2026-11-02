@@ -413,7 +413,7 @@ def render_head(
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{root_prefix}index.css" />{leaflet_tags}
+  <link rel="stylesheet" href="{root_prefix}index.css?v=20261102a" />{leaflet_tags}
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {{
         var script = document.createElement("script");
@@ -555,7 +555,7 @@ def render_article_card(
 ) -> str:
   city_slug = CITIES.get(art["city"], {"slug": art["city"].lower()})["slug"]
   article_href = f"{root_prefix}{city_slug}/{art['slug']}/"
-  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261015a"
+  img_src = f"{root_prefix}{art['image'].lstrip('/')}?v=20261102a"
   img_alt = art.get("imageAlt", art["title"])
   cat_label = art["category"]
   if art.get("weekendDates"):
@@ -563,22 +563,25 @@ def render_article_card(
   lead_cls = " lead-card" if is_lead else ""
   style_attr = ' style="display: none;"' if initial_hidden else ""
   read_cta = "Leer guía →"
+  price_text = art.get("priceRange", "")
+  is_freeish = "gratis" in price_text.lower()
+  price_cls = "card-price-tag free-tone" if is_freeish else "card-price-tag"
   return f"""
   <article class="article-card{lead_cls}"{style_attr} data-city="{html.escape(art['city'])}" data-category="{html.escape(art['category'])}" data-search="{html.escape((art['title'] + ' ' + art['excerpt'] + ' ' + ' '.join(art['neighborhoods'])).lower())}">
     <a href="{article_href}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="card-image-wrap">
         <img src="{img_src}" alt="{html.escape(img_alt)}" class="card-image" loading="lazy" width="640" height="360" />
-        <span class="card-city-tag">{html.escape(art['city'])}</span>
+        <span class="card-city-tag"><span class="lead-badge-prefix">⭐ Plan Destacado · </span>{html.escape(art['city'])}</span>
+        <span class="{price_cls}">{html.escape(price_text)}</span>
       </div>
       <div class="card-body">
         <div class="card-meta-top">
           <span class="card-category">{html.escape(cat_label)}</span>
-          <span style="color: var(--ink-muted);">{html.escape(art['priceRange'])}</span>
         </div>
         <h2 class="card-title">{html.escape(art['title'])}</h2>
         <p class="card-excerpt">{html.escape(art['excerpt'])}</p>
         <div class="card-footer">
-          <span class="card-neighborhoods">{html.escape(' · '.join(art['neighborhoods']))}</span>
+          <span class="card-neighborhoods">📍 {html.escape(' · '.join(art['neighborhoods']))}</span>
           <span class="card-read-link">{read_cta}</span>
         </div>
       </div>
@@ -636,7 +639,7 @@ def render_filter_script(active_city: str = "all") -> str:
         if (heroSubtitle && cIntro) heroSubtitle.textContent = cIntro;
         if (hubDirectLink && cSlug) {{
           hubDirectLink.href = cSlug + '/';
-          hubDirectLink.textContent = 'Ir a la página completa de ' + cName + ' →';
+          hubDirectLink.textContent = 'Ver guía completa de ' + cName + ' →';
         }}
         if (mapBannerTitle) {{
           mapBannerTitle.textContent = 'Explora todos los planes de ' + cName + ' en el mapa con enlace directo a Google Maps';
@@ -788,6 +791,7 @@ def build_listing_page(
       active_cls = " active" if c_name == "Madrid" else ""
       selector_img = c_info.get("selectorImage", c_info["ogImage"])
       thumb_src = f"{root_prefix}{selector_img.lstrip('/')}"
+      c_count = sum(1 for a in articles if a["city"] == c_name)
       city_buttons.append(f"""
           <button
             type="button"
@@ -796,17 +800,21 @@ def build_listing_page(
             data-slug="{html.escape(c_info['slug'])}"
             data-h1="{html.escape(c_info['h1'])}"
             data-intro="{html.escape(c_info['intro'])}"
-            data-kicker="GUÍA DE {html.escape(c_name.upper())}"
+            data-kicker="GUÍA DE {html.escape(c_name.upper())} · ACTUALIZADA CADA SEMANA"
           >
             <img src="{thumb_src}" alt="Planes en {html.escape(c_name)}" class="city-pick-photo" loading="eager" width="320" height="180" />
             <span class="city-pick-overlay"></span>
-            <span class="city-pick-name">{html.escape(c_name)}</span>
+            <span class="city-pick-badge">Activa</span>
+            <span class="city-pick-meta">
+              <span class="city-pick-name">{html.escape(c_name)}</span>
+              <span class="city-pick-count">{c_count} guías locales</span>
+            </span>
           </button>""")
     city_selector_html = f"""
       <div class="city-selector-showcase" aria-label="Selector de ciudad">
         <div class="city-selector-header">
-          <span class="city-selector-title">📍 ¿En qué ciudad buscas plan hoy? <span style="font-weight:500;color:var(--ink-muted);font-size:0.78rem;">(Toca tu ciudad para ver solo sus planes)</span></span>
-          <a href="madrid/" id="city-hub-direct-link" class="city-selector-hub-link">Ir a la página completa de Madrid →</a>
+          <span class="city-selector-title">📍 Elige tu ciudad para explorar planes</span>
+          <a href="madrid/" id="city-hub-direct-link" class="city-selector-hub-link">Ver guía completa de Madrid →</a>
         </div>
         <div class="city-selector-grid">
           {''.join(city_buttons)}
@@ -817,14 +825,17 @@ def build_listing_page(
       f"{root_prefix}mapa/?ciudad={urllib.parse.quote(city_label)}"
   )
   map_banner = f"""
-    <div style="margin: 0 0 2rem 0; padding: 1.1rem 1.4rem; background: var(--bg-sand); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
-      <div>
-        <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--terracotta);">🗺️ Nuevo · Mapa Interactivo</span>
-        <div id="map-banner-title" style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: var(--ink-primary); margin-top: 0.15rem;">
-          Explora todos los planes de {html.escape(city_label)} en el mapa con enlace directo a Google Maps
+    <div class="editorial-map-banner">
+      <div class="editorial-map-banner-left">
+        <div class="editorial-map-banner-icon" aria-hidden="true">🗺️</div>
+        <div>
+          <span class="editorial-map-banner-kicker">MAPA INTERACTIVO CON REDIRECCIÓN A GOOGLE MAPS</span>
+          <div id="map-banner-title" class="editorial-map-banner-title">
+            Explora todos los planes de {html.escape(city_label)} en el mapa con enlace directo a Google Maps
+          </div>
         </div>
       </div>
-      <a id="map-banner-link" href="{map_href}" style="background: var(--terracotta); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.15rem; border-radius: var(--radius-pill); white-space: nowrap;">
+      <a id="map-banner-link" href="{map_href}" class="editorial-map-banner-cta">
         Abrir Mapa de Planes →
       </a>
     </div>"""
@@ -981,7 +992,7 @@ def build_listing_page(
       })
 
   initial_kicker = (
-      "GUÍA DE MADRID" if active_city == "all" else kicker
+      "GUÍA DE MADRID · ACTUALIZADA CADA SEMANA" if active_city == "all" else kicker
   )
   initial_h1 = CITIES["Madrid"]["h1"] if active_city == "all" else h1
   initial_subtitle = (
@@ -995,31 +1006,33 @@ def build_listing_page(
   <main class="main-container">
     <section class="page-header-section" aria-labelledby="main-hero-heading">
       {city_selector_html}
-      <span class="hero-kicker" id="main-hero-kicker">{html.escape(initial_kicker)}</span>
-      <h1 class="hero-title" id="main-hero-heading">{html.escape(initial_h1)}</h1>
-      <p class="hero-subtitle" id="main-hero-subtitle">{html.escape(initial_subtitle)}</p>
-
-      <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
-        <div class="style-pills">
-          <button type="button" class="style-pill-btn active" data-category="all" id="filter-cat-all">Todos</button>
-          <button type="button" class="style-pill-btn" data-category="Este Fin de Semana" id="filter-cat-weekend">Este fin de semana</button>
-          <button type="button" class="style-pill-btn" data-category="Gratis y Baratos" id="filter-cat-cheap">Gratis y baratos</button>
-          <button type="button" class="style-pill-btn" data-category="Planes Diferentes" id="filter-cat-unique">Planes diferentes</button>
-          <button type="button" class="style-pill-btn" data-category="En Pareja" id="filter-cat-couple">En pareja</button>
+      <div class="hero-header-row">
+        <div class="hero-header-copy">
+          <span class="hero-kicker" id="main-hero-kicker">{html.escape(initial_kicker)}</span>
+          <h1 class="hero-title" id="main-hero-heading">{html.escape(initial_h1)}</h1>
+          <p class="hero-subtitle" id="main-hero-subtitle">{html.escape(initial_subtitle)}</p>
         </div>
         <div class="search-box-wrapper">
           <input
             type="search"
             id="article-search-input"
             class="search-input"
-            placeholder="Buscar plan o barrio..."
+            placeholder="🔍 Buscar plan o barrio..."
             aria-label="Buscar planes"
           />
         </div>
       </div>
-    </section>
 
-    {map_banner}
+      <div class="filter-toolbar" aria-label="Filtrar por tipo de plan">
+        <div class="style-pills">
+          <button type="button" class="style-pill-btn active" data-category="all" id="filter-cat-all">Todos</button>
+          <button type="button" class="style-pill-btn" data-category="Este Fin de Semana" id="filter-cat-weekend">📅 Este fin de semana</button>
+          <button type="button" class="style-pill-btn" data-category="Gratis y Baratos" id="filter-cat-cheap">💸 Gratis y baratos</button>
+          <button type="button" class="style-pill-btn" data-category="Planes Diferentes" id="filter-cat-unique">✨ Planes diferentes</button>
+          <button type="button" class="style-pill-btn" data-category="En Pareja" id="filter-cat-couple">❤️ En pareja</button>
+        </div>
+      </div>
+    </section>
 
     <section aria-label="Guías de planes">
       <div class="articles-grid" id="articles-grid-container">
@@ -1037,6 +1050,8 @@ def build_listing_page(
         </button>
       </div>
     </section>
+
+    {map_banner}
 
     {seo_bottom_section}
   </main>
