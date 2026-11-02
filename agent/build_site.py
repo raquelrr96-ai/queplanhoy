@@ -823,7 +823,6 @@ def build_listing_page(
       active_cls = " active" if c_name == "Madrid" else ""
       selector_img = c_info.get("selectorImage", c_info["ogImage"])
       thumb_src = f"{root_prefix}{selector_img.lstrip('/')}"
-      c_count = sum(1 for a in articles if a["city"] == c_name)
       city_buttons.append(f"""
           <button
             type="button"
@@ -839,7 +838,6 @@ def build_listing_page(
             <span class="city-pick-badge">Activa</span>
             <span class="city-pick-meta">
               <span class="city-pick-name">{html.escape(c_name)}</span>
-              <span class="city-pick-count">{c_count} guías locales</span>
             </span>
           </button>""")
     city_selector_html = f"""
