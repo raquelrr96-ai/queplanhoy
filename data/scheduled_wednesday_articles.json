@@ -14,8 +14,8 @@
     "targetKeyword": "que plan hacer en madrid este fin de semana",
     "searchVolume": "8.100 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (21/100)",
-    "image": "images/venues/madrid-palacio-cibeles-noche.jpg",
-    "imageAlt": "Fachada iluminada del Palacio de Cibeles en Madrid durante el fin de semana cultural de otoño",
+    "image": "images/venues/madrid-catedral-almudena-plaza-armeria.jpg",
+    "imageAlt": "Cúpula y fachada de la Catedral de Santa María la Real de la Almudena en Madrid durante el Puente de la Almudena",
     "excerpt": "Madrid vive su gran puente festivo de otoño del viernes 6 al lunes 9 de noviembre (Día de la Virgen de la Almudena, festivo en la capital): te contamos los horarios de la Ofrenda Floral frente al Palacio Real, a qué hora reparten gratis la Corona de la Almudena gigante en la Plaza Mayor, dónde comprar las mejores coronas artesanas y los conciertos de JazzMadrid.",
     "priceRange": "Gratis – 15 €",
     "neighborhoods": [
@@ -41,8 +41,8 @@
         "price": "Gratis (acceso libre a la ofrenda, conciertos y actuaciones castizas)",
         "lat": 40.4238,
         "lng": -3.6889,
-        "image": "images/venues/madrid-museo-arqueologico-interior.jpg",
-        "imageAlt": "Recorrido monumental e iluminado por el centro histórico de Madrid durante el Puente de la Almudena",
+        "image": "images/venues/madrid-catedral-almudena-bailen-ofrenda.jpg",
+        "imageAlt": "Torres y portada de la Catedral de la Almudena sobre el perfil histórico de Madrid, epicentro de la Ofrenda Floral Solidaria",
         "content": "El corazón del Puente de la Almudena late entre la Plaza de Oriente, la calle Bailén y la Plaza Mayor desde el viernes 6 hasta el lunes 9 de noviembre (festivo local en Madrid capital). Durante todo el fin de semana y el lunes festivo (de 09:00 a 20:00 h), la Explanada de la Catedral de la Almudena frente al Palacio Real se cubre con un enorme tapiz de flores gracias a la tradicional Ofrenda Floral y Solidaria, donde madrileños, colegios y asociaciones depositan claveles y rosas blancas junto a alimentos no perecederos para fines benéficos.\n\nEl plato fuerte llega el lunes 9 de noviembre a las 11:00 h con la Misa Mayor al aire libre en la explanada de la Almudena (con la Renovación del Voto de la Villa) y la posterior procesión por las calles Bailén, Mayor, Santiago y Plaza de la Villa, acompañada por asociaciones castizas vestidas de chulapos y chulapas. Además, durante el fin de semana la Plaza Mayor y los jardines de las Vistillas acogen actuaciones gratuitas de chotis, pasacalles de gigantes y cabezudos, recitales de zarzuela y conciertos de la Banda Sinfónica Municipal en la Catedral."
       },
       {
@@ -52,8 +52,8 @@
         "price": "Degustación gratuita en la Plaza Mayor (lunes 9 a mediodía) / Corona en pastelería: 4,50 € porción",
         "lat": 40.4405,
         "lng": -3.6898,
-        "image": "images/venues/madrid-museo-ciencias-naturales.jpg",
-        "imageAlt": "Arquitectura histórica del siglo XIX en el centro de Madrid junto a la ruta de pastelerías tradicionales de la Almudena",
+        "image": "images/venues/madrid-pasteleria-el-riojano-almudena.jpg",
+        "imageAlt": "Mostrador de mármol y vitrinas históricas de 1855 de la pastelería El Riojano junto a la Plaza Mayor de Madrid",
         "content": "Si hay una tradición gastronómica imprescindible en este puente en Madrid es probar la Corona de la Almudena: un bollo artesano de masa fermentada con aroma de azahar (creado en 1978 por el gremio de pasteleros madrileños en honor a su patrona, sin agua de azahar excesiva y coronado con almendra laminada y frutas o rellenos de crema pastelera, nata montada y trufa). El lunes 9 de noviembre a partir de las 12:30 h en la Plaza Mayor, los maestros pasteleros de ACYRE y ASEMPAS reparten de forma completamente gratuita más de mil raciones de una Corona de la Almudena gigante de varios metros de longitud.\n\nSi quieres llevarte una a casa durante el sábado 7 o el domingo 8 sin esperar colas en la plaza, haz la ruta a pie por los obradores centenarios del entorno de Sol: El Riojano (Calle Mayor, 10, con su salón de té de madera de caoba de 1855 donde puedes tomar una porción con café), la Antigua Pastelería del Pozo (Calle del Pozo, 8), La Mallorquina en la Puerta del Sol o la versión de autor de Oriol Balaguer en La Duquesita (Fernando VI, 2)."
       },
       {
@@ -63,8 +63,8 @@
         "price": "Exposiciones gratuitas / Conciertos de JazzMadrid desde 12 € – 15 €",
         "lat": 40.3917,
         "lng": -3.6974,
-        "image": "images/venues/madrid-invernadero-arganzuela.jpg",
-        "imageAlt": "Espacios culturales de Matadero Madrid y el Invernadero de Arganzuela durante el puente de noviembre",
+        "image": "images/venues/madrid-concierto-patio-condeduque.jpg",
+        "imageAlt": "Auditorio del Centro Cultural Condeduque en Madrid, una de las sedes principales del Festival Internacional JAZZMADRID",
         "content": "Para quienes buscan un plan cultural diferente durante los cuatro días del puente sin depender del tiempo, el Festival Internacional JAZZMADRID celebra su primer gran fin de semana de noviembre con directos de jazz contemporáneo, flamenco-jazz y soul en los auditorios de CentroCentro (Palacio de Cibeles), el Teatro Fernán Gómez y el Centro Cultural Condeduque, además de sesiones nocturnas en clubes míticos como el Café Central o Sala Villanos.\n\nDurante el día, puedes combinar el paseo con las nuevas exposiciones gratuitas de fotografía y arte en las plantas del Palacio de Cibeles o bajar hasta Matadero Madrid y el Invernadero de Arganzuela, que mantienen abiertas todas sus naves, mercadillos de diseño y ciclos de cine independiente en Cineteca incluso durante el lunes festivo de la Almudena."
       }
     ],
@@ -96,7 +96,7 @@
     "searchVolume": "6.800 búsquedas/mes",
     "keywordDifficulty": "Baja (18/100)",
     "image": "images/venues/bcn-mercat-del-born.jpg",
-    "imageAlt": "Estructura histórica de hierro del Born Centre de Cultura i Memòria en Barcelona durante el puente de Todos los Santos y La Castanyada",
+    "imageAlt": "Estructura histórica de hierro del Born Centre de Cultura i Memòria en el barrio de la Ribera de Barcelona",
     "excerpt": "Tres planes verificados para exprimir el fin de semana del 6 al 8 de noviembre en Barcelona: instalaciones de luz y arte digital en Montjuïc, entrada gratuita el domingo a los museos e interiores góticos del Born y la ruta de bodegas y setas de temporada en Sant Antoni.",
     "priceRange": "Gratis (Tapas desde 4 €)",
     "neighborhoods": [
@@ -122,7 +122,7 @@
         "lat": 41.4024,
         "lng": 2.1879,
         "image": "images/venues/bcn-disseny-hub-glories.jpg",
-        "imageAlt": "Explanada peatonal de Glòries y entorno de la Rambla del Poblenou en Barcelona durante las fiestas de otoño y La Castanyada",
+        "imageAlt": "Explanada peatonal de Glòries y fachada iluminada del Disseny Hub Barcelona junto a la Torre Glòries al anochecer",
         "content": "El primer fin de semana completo de noviembre arranca en Barcelona con una intensa agenda de artes digitales, diseño y cultura visual. En el eje de la Plaça de les Glòries y el distrito creativo del 22@ en Poblenou, el Disseny Hub Barcelona (DHub) y los espacios creativos colindantes acogen instalaciones interactivas, muestras de arquitectura contemporánea y mercados de diseño independiente durante el sábado 7 y el domingo 8 de noviembre.\n\nAl salir, te recomendamos bajar caminando por la peatonal Rambla del Poblenou bajo los plátanos teñidos de ocre para tomar un vermut al sol en las terrazas históricas del Casino l'Aliança antes de llegar a la playa del Bogatell."
       },
       {
@@ -132,8 +132,8 @@
         "price": "Acceso 100% gratuito a los patios góticos y al yacimiento del Born",
         "lat": 41.3852,
         "lng": 2.1809,
-        "image": "images/venues/bcn-capitania-general-colom.jpg",
-        "imageAlt": "Claustro y patio histórico en Ciutat Vella durante las jornadas culturales de otoño en Barcelona",
+        "image": "images/venues/bcn-born-ccm-interior-yacimientos.jpg",
+        "imageAlt": "Interior de hierro forjado y yacimiento arqueológico de 1700 en El Born Centre de Cultura i Memòria de Barcelona",
         "content": "El domingo 8 de noviembre es una oportunidad perfecta para recorrer gratis el patrimonio medieval de Ciutat Vella sin colas. El yacimiento arqueológico bajo la estructura de hierro de 1876 del Born Centre de Cultura i Memòria mantiene su acceso libre, y a partir de las 15:00 h del domingo abren gratuitamente numerosos museos municipales del entorno.\n\nAprovecha para adentrarte por los patios góticos señoriales de la calle Montcada (como el Palau Cervelló o el Palau Dalmases), admirar las gárgolas y vitrales de la basílica de Santa Maria del Mar y tomar algo al atardecer en las calles empedradas de la Ribera."
       },
       {
@@ -176,7 +176,7 @@
     "searchVolume": "5.400 búsquedas/mes",
     "keywordDifficulty": "Baja (16/100)",
     "image": "images/venues/vlc-jardin-del-turia.jpg",
-    "imageAlt": "Jardín del Turia y entorno monumental de Valencia en octubre",
+    "imageAlt": "Puente de las Flores y jardines del antiguo cauce del río Turia en Valencia",
     "excerpt": "Los tres mejores planes para disfrutar del fin de semana del 6 al 8 de noviembre en Valencia: conciertos de otoño frente a los estanques del Palau de la Música, las instalaciones digitales del Palacio de Valeriola y la programación gratuita de fin de semana en los patios de La Beneficència y El Carmen.",
     "priceRange": "Gratis – 12 €",
     "neighborhoods": [
@@ -223,8 +223,8 @@
         "price": "Acceso 100% gratuito",
         "lat": 39.4781,
         "lng": -0.3829,
-        "image": "images/venues/vlc-la-beneficencia.jpg",
-        "imageAlt": "Patios históricos del Centro Cultural La Beneficència en el barrio del Carmen de Valencia",
+        "image": "images/venues/vlc-centre-del-carme-claustro-renacentista.jpg",
+        "imageAlt": "Claustro renacentista ajardinado del Centre del Carme Cultura Contemporània (CCCC) en el barrio del Carmen de Valencia",
         "content": "Si buscas un plan 100% gratuito para la mañana del sábado 7 o del domingo 8 de noviembre en el Barrio del Carmen, el Centro Cultural La Beneficència (calle Corona, 36) ofrece entrada libre tanto a sus seis patios ajardinados del siglo XIX como a las colecciones permanentes del Museu de Prehistòria y de L'ETNO (Premio al Mejor Museo Europeo).\n\nAl salir por la puerta mudéjar, camina cinco minutos por las callejuelas de El Carmen hasta el antiguo Convento del Carmen (CCCC) para recorrer gratis sus dos claustros monumentales y tomar unas tapas en el entorno de la Plaza del Tossal."
       }
     ],
@@ -255,8 +255,8 @@
     "targetKeyword": "que plan hacer en sevilla este fin de semana",
     "searchVolume": "4.900 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (15/100)",
-    "image": "images/venues/sev-plaza-del-museo.jpg",
-    "imageAlt": "Arbolado y fachada del Museo de Bellas Artes en la Plaza del Museo de Sevilla",
+    "image": "images/venues/sev-plaza-del-museo-murillo-bellas-artes.jpg",
+    "imageAlt": "Portada barroca de piedra y muros rosados del Museo de Bellas Artes en la Plaza del Museo de Sevilla",
     "excerpt": "Guía práctica para el fin de semana del 6 al 8 de noviembre en Sevilla: el ambiente del Festival de Cine Europeo (SEFF) en torno al Teatro Lope de Vega y la Alameda, paseo cultural entre Triana y el Monasterio de la Cartuja, y el Mercadillo dominical del Arte en la Plaza del Museo.",
     "priceRange": "Gratis – 12 €",
     "neighborhoods": [
@@ -281,8 +281,8 @@
         "price": "Gratis sábados de 11:00 a 21:00 h y domingos de 10:00 a 15:30 h (3,01 € resto de horarios)",
         "lat": 37.3982,
         "lng": -6.0094,
-        "image": "images/venues/sev-ceramica-triana.jpg",
-        "imageAlt": "Hornos históricos de cerámica y arquitectura patrimonial junto al eje de Triana y la Cartuja en Sevilla",
+        "image": "images/venues/sev-monasterio-cartuja-hornos-caac.jpg",
+        "imageAlt": "Portada monumental y estanque del Monasterio de Santa María de las Cuevas (CAAC) en la Isla de la Cartuja de Sevilla",
         "content": "Con la luz dorada y la temperatura perfecta de principios de noviembre en Sevilla, el mejor recorrido para el sábado 7 por la mañana arranca cruzando el Puente de Triana hacia el callejón de San Jorge para visitar el Centro Cerámica Triana, construido alrededor de los antiguos hornos de ladrillo del siglo XVI de la fábrica Santa Ana.\n\nDesde allí, camina diez minutos junto al Guadalquivir hasta el recinto amurallado del Monasterio de Santa María de las Cuevas (sede del CAAC en la Cartuja), donde puedes pasear entre sus claustros mudéjares, los antiguos secaderos de loza de Pickman y sus praderas de ombúes centenarios."
       },
       {
@@ -304,7 +304,7 @@
         "lat": 37.3925,
         "lng": -5.9996,
         "image": "images/venues/sev-plaza-del-museo-bellas-artes.jpg",
-        "imageAlt": "Fachada del antiguo Convento de la Merced, sede del Museo de Bellas Artes en la Plaza del Museo de Sevilla",
+        "imageAlt": "Claustro Mayor de arcos y jardines recortados en el interior del Museo de Bellas Artes de Sevilla",
         "content": "Cada domingo por la mañana (de 10:00 a 14:00 h), los pies de la estatua de bronce de Bartolomé Esteban Murillo en la Plaza del Museo se transforman en una galería de arte al aire libre donde decenas de pintores, acuarelistas y grabadores locales exponen sus obras directamente bajo la sombra de los árboles.\n\nEs el preámbulo perfecto para entrar gratis (para ciudadanos de la UE) al antiguo Convento de la Merced Calzada, sede del Museo de Bellas Artes de Sevilla, recorrer sus tres patios de azulejos y naranjos y terminar tomando un vino de naranja o unas espinacas con garbanzos en las tabernas del barrio de San Vicente."
       }
     ],
@@ -335,8 +335,8 @@
     "targetKeyword": "que plan hacer en toledo este fin de semana",
     "searchVolume": "3.600 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (12/100)",
-    "image": "images/venues/tol-san-juan-reyes.jpg",
-    "imageAlt": "Arquitectura gótica e histórica del casco antiguo de Toledo",
+    "image": "images/venues/tol-plaza-ayuntamiento-catedral-arzobispal.jpg",
+    "imageAlt": "Plaza del Ayuntamiento de Toledo con la torre gótica de la Catedral Primada y el Palacio Arzobispal",
     "excerpt": "Los mejores planes en Toledo para el fin de semana del 6 al 8 de noviembre (y el lunes 9 para quienes se escapan desde Madrid por el Puente de la Almudena): ruta de tapas de otoño y mazapán conventual en torno a San Clemente, teatro y callejones nocturnos junto a la Catedral, y entrada gratuita al claustro de Santa Cruz.",
     "priceRange": "Gratis – 12 €",
     "neighborhoods": [
@@ -361,8 +361,8 @@
         "price": "Acceso libre y gratuito / Caja de huesos de santo y mazapán desde 4,80 €",
         "lat": 39.8571,
         "lng": -4.0245,
-        "image": "images/venues/tol-convento-san-clemente.jpg",
-        "imageAlt": "Arquitectura renacentista del centro histórico de Toledo junto al eje de la Catedral y San Clemente",
+        "image": "images/venues/tol-mazapan-artesano-san-clemente.jpg",
+        "imageAlt": "Escaparate tradicional de mazapán artesano de Toledo y dulces conventuales en el casco histórico",
         "content": "Noviembre es el mes gastronómico por excelencia en Toledo con el arranque de las tradicionales jornadas de la tapa por los barrios del Casco Histórico y la afluencia de escapadas desde Madrid por el Puente de la Almudena (del viernes 6 al lunes 9 de noviembre). Es el momento ideal para recorrer las tabernas entre Zocodover, el Barrio de los Conventos y Santo Tomé probando tapas elaboradas con caza de los Montes de Toledo, setas de temporada y carcamusas.\n\nPara el postre, acércate a la silenciosa plaza de San Clemente para comprar mazapán artesano y pastas de almendra a través del torno de madera de su convento renacentista."
       },
       {
@@ -372,8 +372,8 @@
         "price": "Rutas a pie por el casco gratuitas / Funciones en el Teatro de Rojas desde 12,00 €",
         "lat": 39.8569,
         "lng": -4.0229,
-        "image": "images/venues/tol-sinagoga-transito-greco.jpg",
-        "imageAlt": "Arquitectura histórica e iluminación monumental en el casco antiguo de Toledo durante las noches de Halloween y Don Juan Tenorio",
+        "image": "images/venues/tol-teatro-de-rojas-fachada.jpg",
+        "imageAlt": "Fachada histórica del Teatro Municipal de Rojas en la Plaza Mayor de Toledo",
         "content": "Al caer la tarde del viernes 6 o del sábado 7 de noviembre, cuando se encienden los faroles de forja sobre la piedra imperial, te proponemos combinar una función de la temporada de otoño en el encantador Teatro Municipal de Rojas (inaugurado en 1878 en la Plaza Mayor) con un paseo tranquilo alrededor de la Catedral Primada iluminada.\n\nSube después por las cuestas empedradas del antiguo barrio templario de San Miguel el Alto y los Cobertizos, donde el silencio nocturno y las vistas sobre los tejados de Toledo son inolvidables."
       },
       {
@@ -383,8 +383,8 @@
         "price": "Entrada 100% gratuita (sábados desde las 14:00 h y domingos todo el día)",
         "lat": 39.8594,
         "lng": -4.0202,
-        "image": "images/venues/tol-museo-santa-cruz.jpg",
-        "imageAlt": "Claustro plateresco y escalinata de Covarrubias en el Museo de Santa Cruz de Toledo",
+        "image": "images/venues/tol-museo-santa-cruz-claustro-plateresco.jpg",
+        "imageAlt": "Claustro plateresco de doble galería en el Museo de Santa Cruz de Toledo",
         "content": "A pocos pasos de los arcos de la Plaza de Zocodover se levanta la fachada plateresca del antiguo Hospital de Santa Cruz, fundado a principios del siglo XVI por el Cardenal Mendoza. Tanto el sábado 7 de noviembre a partir de las 14:00 h como durante toda la mañana del domingo 8 de noviembre (de 09:00 a 15:00 h), la entrada al Museo de Santa Cruz es completamente gratuita.\n\nPodrás recorrer su famoso crucero de dos pisos con artesonados renacentistas, subir por la escalinata monumental de Alonso de Covarrubias, admirar los lienzos originales de El Greco y salir al jardín arqueológico de su claustro."
       }
     ],
