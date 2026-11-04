@@ -15,7 +15,7 @@
     "searchVolume": "8.100 búsquedas/mes",
     "keywordDifficulty": "Media-Baja (21/100)",
     "image": "images/venues/madrid-catedral-almudena-plaza-armeria.jpg",
-    "imageAlt": "Cúpula y fachada de la Catedral de Santa María la Real de la Almudena en Madrid durante el Puente de la Almudena",
+    "imageAlt": "Paso procesional de la Virgen de la Almudena adornado con flores recorriendo el centro histórico de Madrid el 9 de noviembre",
     "excerpt": "Madrid vive su gran puente festivo de otoño del viernes 6 al lunes 9 de noviembre (Día de la Virgen de la Almudena, festivo en la capital): te contamos los horarios de la Ofrenda Floral frente al Palacio Real, a qué hora reparten gratis la Corona de la Almudena gigante en la Plaza Mayor, dónde comprar las mejores coronas artesanas y los conciertos de JazzMadrid.",
     "priceRange": "Gratis – 15 €",
     "neighborhoods": [
@@ -39,43 +39,50 @@
         "venue": "Explanada de la Catedral de la Almudena (Calle Bailén) y Plaza Mayor",
         "location": "Plaza de la Almudena y Plaza Mayor (Metro: Ópera L2/L5/R y Sol L1/L2/L3)",
         "price": "Gratis (acceso libre a la ofrenda, conciertos y actuaciones castizas)",
-        "lat": 40.4238,
-        "lng": -3.6889,
+        "lat": 40.4158,
+        "lng": -3.7145,
         "image": "images/venues/madrid-catedral-almudena-bailen-ofrenda.jpg",
-        "imageAlt": "Torres y portada de la Catedral de la Almudena sobre el perfil histórico de Madrid, epicentro de la Ofrenda Floral Solidaria",
-        "content": "El corazón del Puente de la Almudena late entre la Plaza de Oriente, la calle Bailén y la Plaza Mayor desde el viernes 6 hasta el lunes 9 de noviembre (festivo local en Madrid capital). Durante todo el fin de semana y el lunes festivo (de 09:00 a 20:00 h), la Explanada de la Catedral de la Almudena frente al Palacio Real se cubre con un enorme tapiz de flores gracias a la tradicional Ofrenda Floral y Solidaria, donde madrileños, colegios y asociaciones depositan claveles y rosas blancas junto a alimentos no perecederos para fines benéficos.\n\nEl plato fuerte llega el lunes 9 de noviembre a las 11:00 h con la Misa Mayor al aire libre en la explanada de la Almudena (con la Renovación del Voto de la Villa) y la posterior procesión por las calles Bailén, Mayor, Santiago y Plaza de la Villa, acompañada por asociaciones castizas vestidas de chulapos y chulapas. Además, durante el fin de semana la Plaza Mayor y los jardines de las Vistillas acogen actuaciones gratuitas de chotis, pasacalles de gigantes y cabezudos, recitales de zarzuela y conciertos de la Banda Sinfónica Municipal en la Catedral."
+        "imageAlt": "Ofrenda Floral Solidaria a la Virgen de la Almudena en la Explanada de la Catedral con el tapiz de flores y grupos tradicionales",
+        "content": "El corazón del Puente de la Almudena late entre la Plaza de Oriente, la calle Bailén y la Plaza Mayor desde el viernes 6 hasta el lunes 9 de noviembre (festivo local en Madrid capital). Durante todo el fin de semana y el lunes festivo (de 09:00 a 20:00 h), la Explanada de la Catedral de la Almudena frente al Palacio Real se cubre con un enorme tapiz de flores gracias a la tradicional Ofrenda Floral y Solidaria, donde madrileños, colegios y asociaciones depositan claveles y rosas blancas junto a alimentos no perecederos para fines benéficos.\n\nEl plato fuerte llega el lunes 9 de noviembre a las 11:00 h con la Misa Mayor al aire libre en la explanada de la Almudena (con la Renovación del Voto de la Villa) y la posterior procesión por las calles Bailén, Mayor, Santiago y Plaza de la Villa, acompañada por asociaciones castizas vestidas de chulapos y chulapas. Además, durante el fin de semana la Plaza Mayor y los jardines de las Vistillas acogen actuaciones gratuitas de chotis, pasacalles de gigantes y cabezudos, recitales de zarzuela y conciertos de la Banda Sinfónica Municipal en la Catedral.",
+        "imageCredit": "Archidiócesis de Madrid / Catedral de la Almudena"
       },
       {
         "heading": "2. Degustación gratuita de la Corona de la Almudena gigante en la Plaza Mayor y ruta de pastelerías centenarias",
         "venue": "Plaza Mayor de Madrid y obradores históricos (El Riojano, La Mallorquina y Antigua Pastelería del Pozo)",
         "location": "Plaza Mayor, Calle Mayor 10 y Calle del Pozo 8 (Metro: Sol y Ópera)",
         "price": "Degustación gratuita en la Plaza Mayor (lunes 9 a mediodía) / Corona en pastelería: 4,50 € porción",
-        "lat": 40.4405,
-        "lng": -3.6898,
+        "lat": 40.4155,
+        "lng": -3.7074,
         "image": "images/venues/madrid-pasteleria-el-riojano-almudena.jpg",
-        "imageAlt": "Mostrador de mármol y vitrinas históricas de 1855 de la pastelería El Riojano junto a la Plaza Mayor de Madrid",
-        "content": "Si hay una tradición gastronómica imprescindible en este puente en Madrid es probar la Corona de la Almudena: un bollo artesano de masa fermentada con aroma de azahar (creado en 1978 por el gremio de pasteleros madrileños en honor a su patrona, sin agua de azahar excesiva y coronado con almendra laminada y frutas o rellenos de crema pastelera, nata montada y trufa). El lunes 9 de noviembre a partir de las 12:30 h en la Plaza Mayor, los maestros pasteleros de ACYRE y ASEMPAS reparten de forma completamente gratuita más de mil raciones de una Corona de la Almudena gigante de varios metros de longitud.\n\nSi quieres llevarte una a casa durante el sábado 7 o el domingo 8 sin esperar colas en la plaza, haz la ruta a pie por los obradores centenarios del entorno de Sol: El Riojano (Calle Mayor, 10, con su salón de té de madera de caoba de 1855 donde puedes tomar una porción con café), la Antigua Pastelería del Pozo (Calle del Pozo, 8), La Mallorquina en la Puerta del Sol o la versión de autor de Oriol Balaguer en La Duquesita (Fernando VI, 2)."
+        "imageAlt": "Reparto y corte de porciones de la Corona de la Almudena gigante en la Plaza Mayor de Madrid",
+        "content": "Si hay una tradición gastronómica imprescindible en este puente en Madrid es probar la Corona de la Almudena: un bollo artesano de masa fermentada con aroma de azahar (creado en 1978 por el gremio de pasteleros madrileños en honor a su patrona, sin agua de azahar excesiva y coronado con almendra laminada y frutas o rellenos de crema pastelera, nata montada y trufa). El lunes 9 de noviembre a partir de las 12:30 h en la Plaza Mayor, los maestros pasteleros de ACYRE y ASEMPAS reparten de forma completamente gratuita más de mil raciones de una Corona de la Almudena gigante de varios metros de longitud.\n\nSi quieres llevarte una a casa durante el sábado 7 o el domingo 8 sin esperar colas en la plaza, haz la ruta a pie por los obradores centenarios del entorno de Sol: El Riojano (Calle Mayor, 10, con su salón de té de madera de caoba de 1855 donde puedes tomar una porción con café), la Antigua Pastelería del Pozo (Calle del Pozo, 8), La Mallorquina en la Puerta del Sol o la versión de autor de Oriol Balaguer en La Duquesita (Fernando VI, 2).",
+        "imageCredit": "Ayuntamiento de Madrid / esMADRID"
       },
       {
         "heading": "3. Conciertos de otoño de JAZZMADRID y exposiciones gratuitas entre CentroCentro, Condeduque y Matadero (6 al 9 de noviembre)",
         "venue": "CentroCentro (Palacio de Cibeles), Centro Cultural Condeduque y Matadero Madrid",
         "location": "Plaza de Cibeles 1, Calle Conde Duque 11 y Plaza de Legazpi 8 (Metro: Banco de España, Ventura Rodríguez y Legazpi)",
         "price": "Exposiciones gratuitas / Conciertos de JazzMadrid desde 12 € – 15 €",
-        "lat": 40.3917,
-        "lng": -3.6974,
+        "lat": 40.4274,
+        "lng": -3.7106,
         "image": "images/venues/madrid-concierto-patio-condeduque.jpg",
         "imageAlt": "Auditorio del Centro Cultural Condeduque en Madrid, una de las sedes principales del Festival Internacional JAZZMADRID",
-        "content": "Para quienes buscan un plan cultural diferente durante los cuatro días del puente sin depender del tiempo, el Festival Internacional JAZZMADRID celebra su primer gran fin de semana de noviembre con directos de jazz contemporáneo, flamenco-jazz y soul en los auditorios de CentroCentro (Palacio de Cibeles), el Teatro Fernán Gómez y el Centro Cultural Condeduque, además de sesiones nocturnas en clubes míticos como el Café Central o Sala Villanos.\n\nDurante el día, puedes combinar el paseo con las nuevas exposiciones gratuitas de fotografía y arte en las plantas del Palacio de Cibeles o bajar hasta Matadero Madrid y el Invernadero de Arganzuela, que mantienen abiertas todas sus naves, mercadillos de diseño y ciclos de cine independiente en Cineteca incluso durante el lunes festivo de la Almudena."
+        "content": "Para quienes buscan un plan cultural diferente durante los cuatro días del puente sin depender del tiempo, el Festival Internacional JAZZMADRID celebra su primer gran fin de semana de noviembre con directos de jazz contemporáneo, flamenco-jazz y soul en los auditorios de CentroCentro (Palacio de Cibeles), el Teatro Fernán Gómez y el Centro Cultural Condeduque, además de sesiones nocturnas en clubes míticos como el Café Central o Sala Villanos.\n\nDurante el día, puedes combinar el paseo con las nuevas exposiciones gratuitas de fotografía y arte en las plantas del Palacio de Cibeles o bajar hasta Matadero Madrid y el Invernadero de Arganzuela, que mantienen abiertas todas sus naves, mercadillos de diseño y ciclos de cine independiente en Cineteca incluso durante el lunes festivo de la Almudena.",
+        "imageCredit": "Wikimedia Commons"
       }
     ],
     "faqs": [
       {
-        "question": "¿Qué día es festivo por el Puente de la Almudena en Madrid y qué abre?",
-        "answer": "El Día de la Virgen de la Almudena es el lunes 9 de noviembre, festivo oficial en el municipio de Madrid (creando un puente de cuatro días del viernes 6 al lunes 9 de noviembre). Museos, centros culturales como Matadero y Cibeles, pastelerías y restaurantes del centro abren con normalidad."
+        "question": "¿Cuándo y dónde se puede ver la Ofrenda Floral Solidaria de la Virgen de la Almudena?",
+        "answer": "La Ofrenda Floral y Solidaria permanece abierta en la Explanada de la Catedral de la Almudena (frente al Palacio Real, acceso por la calle Bailén) desde el viernes 6 hasta el lunes 9 de noviembre en horario continuo de 09:00 a 20:00 h. Puedes llevar flores o alimentos no perecederos para Cáritas o acercarte libremente a ver el gran tapiz floral y los grupos castizos."
       },
       {
         "question": "¿A qué hora reparten gratis la Corona de la Almudena gigante en la Plaza Mayor?",
-        "answer": "El reparto gratuito de porciones de la gran Corona de la Almudena en la Plaza Mayor tiene lugar el lunes 9 de noviembre en torno a las 12:30 h tras la Misa Mayor. Conviene acercarse unos 30 minutos antes."
+        "answer": "La degustación gratuita de raciones de la Corona de la Almudena gigante (elaborada por los reposteros de ACYRE Madrid) se celebra el lunes 9 de noviembre en torno a las 12:30 h frente a la Casa de la Panadería en la Plaza Mayor. Recomendamos acudir unos 30 minutos antes."
+      },
+      {
+        "question": "¿Qué día es festivo por el Puente de la Almudena en Madrid y dónde son los conciertos de JAZZMADRID?",
+        "answer": "El lunes 9 de noviembre es festivo oficial en Madrid capital (formando un puente de cuatro días del viernes 6 al lunes 9 de noviembre). Museos, pastelerías históricas y restaurantes abren con normalidad, y el Festival Internacional JAZZMADRID ofrece conciertos en el Centro Cultural Condeduque, CentroCentro (Palacio de Cibeles) y el Teatro Fernán Gómez."
       }
     ],
     "imageCredit": "Wikimedia Commons"
@@ -150,12 +157,16 @@
     ],
     "faqs": [
       {
-        "question": "¿Dónde se celebra Mercat de Mercats en Barcelona este fin de semana del 16 al 18 de octubre?",
-        "answer": "Se celebra en la Plaça de les Glòries Catalanes (junto al edificio del Disseny Hub Barcelona, parada de Metro Glòries L1) del viernes 16 al domingo 18 de octubre con entrada gratuita al recinto."
+        "question": "¿Qué museos son gratis en Barcelona este domingo 8 de noviembre por la tarde?",
+        "answer": "Todos los domingos a partir de las 15:00 h tienen entrada gratuita el CCCB, el Castell de Montjuïc, el Museu Marítim, el Jardí Botànic y las sedes del MUHBA, mientras que el recinto y el mirador arqueológico de El Born Centre de Cultura i Memòria son de acceso libre durante todo el fin de semana."
       },
       {
-        "question": "¿Hay que reservar entrada para los talleres gratuitos de Barcelona Dibuixa el 17 y 18 de octubre?",
-        "answer": "No, los 46 talleres de dibujo e ilustración de Barcelona Dibuixa (en el Museu Picasso, el Born CCM, la Fundació Miró y centros cívicos) son de acceso libre y gratuito con todo el material incluido."
+        "question": "¿Cuánto cuesta entrar al Pabellón Mies van der Rohe y qué horario tiene en noviembre?",
+        "answer": "Durante la temporada de otoño-invierno abre de lunes a domingo de 10:00 a 18:00 h en la Av. Francesc Ferrer i Guàrdia, 7 (Montjuïc), con entrada general de 9 €."
+      },
+      {
+        "question": "¿Hay que pagar entrada para visitar el Disseny Hub Barcelona en la Plaça de les Glòries?",
+        "answer": "El acceso al vestíbulo principal del Disseny Hub, su terraza-mirador sobre el parque de les Glòries y las exposiciones temporales gratuitas de planta baja es libre de martes a domingo de 10:00 a 20:00 h."
       }
     ],
     "imageCredit": "Wikimedia Commons"
@@ -230,12 +241,16 @@
     ],
     "faqs": [
       {
-        "question": "¿Cómo conseguir las invitaciones gratuitas para el concierto del domingo 18 de octubre en el Palau de la Música de Valencia?",
-        "answer": "Las localidades gratuitas para el concierto extraordinario del 700.º Aniversario del Corpus (domingo 18 de octubre a las 19:00 h en la Sala Iturbi) se retiran a través de la web oficial palauvalencia.com o en las taquillas del auditorio hasta completar aforo."
+        "question": "¿Cómo consultar los conciertos de este fin de semana (6 al 8 de noviembre) en el Palau de la Música de València?",
+        "answer": "La programación de otoño de la Orquesta de València y los recitales de cámara en las salas Iturbi y Rodrigo se pueden consultar y adquirir en la web oficial palauvalencia.com o directamente en las taquillas del Paseo de la Alameda, 30."
       },
       {
-        "question": "¿Qué museos y centros culturales son gratis este fin de semana en Valencia?",
-        "answer": "El Centro Cultural La Beneficència, el Centre del Carme (CCCC) y el Museo de Bellas Artes son gratuitos durante todo el fin de semana, mientras que el IVAM y los museos municipales tienen entrada libre el sábado por la tarde y el domingo."
+        "question": "¿Hace falta reservar con antelación para visitar el Centro de Arte Hortensia Herrero (Palacio de Valeriola)?",
+        "answer": "Sí, para recorrer las instalaciones de arte contemporáneo, el callejón judío y el vestigio del circo romano subterráneo durante el fin de semana conviene reservar entrada con franja horaria previa (10 €) en su web oficial."
+      },
+      {
+        "question": "¿Qué centros culturales y claustros históricos son gratis este fin de semana en Valencia?",
+        "answer": "Tanto el Centro Cultural La Beneficència (sede de L'ETNO y del Museo de Prehistoria) como el Centre del Carme Cultura Contemporània (CCCC) tienen entrada 100 % gratuita el sábado y el domingo de 10:00 a 20:00 h."
       }
     ],
     "imageCredit": "Wikimedia Commons"
@@ -310,12 +325,16 @@
     ],
     "faqs": [
       {
-        "question": "¿Se celebra este año el Festival de las Naciones en el Prado de San Sebastián en Sevilla?",
-        "answer": "No, el antiguo Festival de las Naciones dejó de celebrarse en los Jardines del Prado de San Sebastián; este fin de semana del 16 al 18 de octubre los grandes focos culturales al aire libre están en el Monasterio de la Cartuja (CAAC) y en la Plaza del Museo."
+        "question": "¿Dónde se proyectan las películas del Festival de Cine Europeo de Sevilla (SEFF) este fin de semana?",
+        "answer": "Las proyecciones y coloquios del SEFF (del 6 al 8 de noviembre) se reparten entre el Teatro Lope de Vega, los cines MK2 Cinesur Nervión Plaza, el Cine Cervantes y el Teatro Alameda, con entradas individuales desde 4,50 €."
       },
       {
-        "question": "¿Qué horario tiene el domingo el Mercadillo de Pintura de la Plaza del Museo?",
-        "answer": "Los pintores y acuarelistas instalan sus puestos todos los domingos de 10:00 a 14:00 h frente a la fachada del Museo de Bellas Artes."
+        "question": "¿Qué horario tiene el domingo 8 de noviembre el Mercadillo del Arte en la Plaza del Museo?",
+        "answer": "Los pintores y acuarelistas instalan sus puestos al aire libre en la Plaza del Museo todos los domingos de 10:00 a 14:00 h, coincidiendo con la jornada de apertura dominical del Museo de Bellas Artes (de 09:00 a 15:00 h, gratis para ciudadanos de la UE)."
+      },
+      {
+        "question": "¿Cuándo es gratis visitar el Monasterio de la Cartuja (CAAC) en Sevilla?",
+        "answer": "El Centro Andaluz de Arte Contemporáneo (CAAC) abre de martes a sábado de 10:00 a 20:00 h y domingos de 10:00 a 15:30 h; la entrada es gratuita de martes a viernes de 19:00 a 20:00 h y los sábados durante todo el día."
       }
     ],
     "imageCredit": "Wikimedia Commons"
@@ -390,12 +409,16 @@
     ],
     "faqs": [
       {
-        "question": "¿Dónde está instalada la Feria del Libro de Toledo este fin de semana del 16 al 18 de octubre?",
-        "answer": "Las casetas y el escenario de firmas de la Feria del Libro de Toledo están instalados en la Plaza del Ayuntamiento, justo delante de la Catedral Primada, hasta el domingo 18 de octubre."
+        "question": "¿En qué horario es gratis el Museo de Santa Cruz de Toledo este fin de semana?",
+        "answer": "El Museo de Santa Cruz (junto a la Plaza de Zocodover) ofrece entrada 100 % gratuita los sábados a partir de las 14:00 h y durante toda la mañana del domingo (de 09:00 a 15:00 h)."
       },
       {
-        "question": "¿Cuándo es la Batalla de Órganos en la Catedral de Toledo?",
-        "answer": "La XXXII Batalla de Órganos se celebra el sábado 17 de octubre a las 20:00 h dentro del Festival de Música El Greco en Toledo en la Catedral Primada."
+        "question": "¿Qué precio suelen tener las tapas en las Jornadas de la Tapa de Toledo («De Tapas por Toledo»)?",
+        "answer": "Las tabernas y restaurantes participantes del Casco Histórico sirven sus tapas especiales de otoño a precios populares de entre 3,50 € y 5,00 €."
+      },
+      {
+        "question": "¿Dónde comprar mazapán artesano cerca de la Catedral Primada y Santo Tomé?",
+        "answer": "Puedes comprarlo en el torno histórico del Convento de San Clemente (Calle San Clemente, 1), en el Convento de Santo Domingo el Antiguo o en los obradores centenarios de Santo Tomé y San Telesforo en Zocodover."
       }
     ],
     "imageCredit": "Wikimedia Commons"
