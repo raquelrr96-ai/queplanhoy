@@ -1,421 +1,446 @@
 [
   {
-    "id": "madrid-cafeterias-decoradas-halloween-salvador-bachiller-malasana",
-    "slug": "cafeterias-y-locales-decorados-halloween-madrid-salvador-bachiller-malasana",
+    "id": "madrid-mercadillos-navidad-plaza-mayor-luces-guia-2026",
+    "slug": "mercadillos-navidad-madrid-plaza-mayor-encendido-luces-ruta",
     "articleType": "single_plan",
-    "title": "Cafeterías y locales decorados de Halloween en Madrid",
-    "metaTitle": "Cafeterías y locales decorados de Halloween en Madrid | Qué Plan Hoy",
-    "metaDescription": "Ruta por las cafeterías y locales decorados de Halloween en Madrid: el jardín encantado de Salvador Bachiller, meriendas de calabaza en Malasaña, Estupenda Café y Salón des Fleurs.",
+    "title": "Mercadillos de Navidad y encendido de luces en Madrid 2026: fechas y ruta",
+    "metaTitle": "Mercadillos de Navidad y Luces en Madrid 2026: Plaza Mayor y Ruta | Qué Plan Hoy",
+    "metaDescription": "Guía completa de Navidad en Madrid 2026: fechas del encendido de luces, horario de las 104 casetas del Mercadillo de la Plaza Mayor, Cortylandia y dónde tomar chocolate con churros sin colas.",
     "city": "Madrid",
-    "category": "Planes Diferentes",
-    "categoryIcon": "✨",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
     "readTime": "9 min",
-    "publishedAt": "2026-10-27",
-    "targetKeyword": "cafeterias decoradas halloween madrid sitios chulos merendar",
-    "searchVolume": "4.200 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (11/100)",
-    "image": "images/venues/madrid-halloween-calabazas-cafe.jpg",
-    "imageAlt": "Mesa de cafetería en Madrid decorada para Halloween con pumpkin spice latte, tarta de calabaza, velas y pequeñas calabazas naturales",
-    "imageCredit": "Fuente: Instagram @salvadorbachiller",
-    "excerpt": "Guía paso a paso por las cafeterías, salones de té y locales con mejor decoración de Halloween y carta de otoño en Madrid: pociones humeantes entre plantas colgantes en los jardines secretos de Salvador Bachiller, ruta de «pumpkin spice latte» y rollos de calabaza en Malasaña, y cafés de estética misteriosa como Estupenda Café Bar y Salón des Fleurs.",
-    "priceRange": "4,50 € – 12,00 €",
+    "publishedAt": "2026-11-10",
+    "targetKeyword": "mercadillos navidad madrid 2026 plaza mayor encendido luces fechas horarios",
+    "searchVolume": "18.500 búsquedas/mes",
+    "keywordDifficulty": "Baja (15/100)",
+    "image": "images/venues/madrid-mercadillo-navidad-plaza-mayor-hero.jpg",
+    "imageAlt": "Casetas rojas iluminadas del tradicional Mercadillo de Navidad en la Plaza Mayor de Madrid al anochecer",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "Madrid empieza a encender su temporada navideña a finales de noviembre: aquí tienes las fechas y horarios confirmados del tradicional Mercadillo de la Plaza Mayor con sus 104 casetas rojas, el recorrido a pie bajo el alumbrado de Sol, Gran Vía y Alcalá, y las chocolaterías centenarias donde esquivar las colas.",
+    "priceRange": "100% Gratis (Chocolate con churros opcional: 4,50 €)",
     "neighborhoods": [
-      "Sol / Gran Vía",
-      "Malasaña",
-      "Salesas / Tribunal",
-      "Chamberí"
+      "Plaza Mayor / Austrias",
+      "Puerta del Sol / Preciados",
+      "Alcalá / Gran Vía",
+      "Plaza de España"
     ],
     "affiliate": {
-      "title": "Free Tour de los Fantasmas y Casas Encantadas de Madrid",
-      "badge": "El plan perfecto al salir de merendar",
-      "description": "Cuando salgas de tomar el té o el pumpkin spice latte en Montera o Malasaña al caer la noche, únete a la ruta a pie por el Palacio de Linares, la Casa de las Siete Chimeneas y los callejones encantados del centro.",
-      "price": "Gratis (Free Tour de 2 horas con reserva)",
-      "url": "https://www.civitatis.com/es/madrid/free-tour-fantasmas-madrid/",
-      "ctaText": "Reservar plaza gratis para esta tarde →"
+      "partner": "Tiqets",
+      "badge": "Junto al recorrido navideño",
+      "title": "Entrada al Palacio Real de Madrid sin Colas",
+      "description": "Termina o empieza tu paseo por la Plaza Mayor y Plaza de España visitando los salones oficiales y el Belén del Príncipe en el Palacio Real.",
+      "price": "Desde 14 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2F",
+      "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": false,
     "sections": [
       {
-        "heading": "El Jardín de Montera y el Invernadero Secreto de Salvador Bachiller: calabazas, plantas colgantes y pociones humeantes",
-        "venue": "El Jardín de Salvador Bachiller (Calle Montera, 37) y El Invernadero / Rincón Secreto (Calle Alcalá, 151)",
-        "location": "Calle de la Montera, 37 (Metro: Gran Vía / Sol) y Calle de Alcalá, 151 (Metro: Príncipe de Vergara / Goya)",
-        "price": "Tarta temática de Halloween, pumpkin latte o cóctel-poción con hielo seco: 6,50 € – 12,00 €",
-        "lat": 40.4193,
-        "lng": -3.7022,
-        "image": "images/venues/madrid-salon-te-jardin.jpg",
-        "imageAlt": "Mesa en el Jardín Secreto de Salvador Bachiller en la calle Montera rodeada de plantas naturales, teteras y merienda de otoño",
-        "content": "Para vivir el ambiente de Halloween en una cafetería que parece sacada de un cuento fantástico, los gastrobares escondidos dentro de las tiendas de Salvador Bachiller —especialmente la azotea acristalada de El Jardín (Calle de la Montera, 37, cuarta planta) y el patio interior cubierto de vegetación de El Invernadero y su salón subterráneo El Rincón Secreto (Calle de Alcalá, 151)— son la parada más espectacular del centro de Madrid.\n\nDurante la última semana de octubre y el puente de Todos los Santos, sus techos cubiertos de lianas, helechos y flores se transforman en un jardín encantado con calabazas talladas, candelabros y luces cálidas. En su carta especial de otoño y Halloween encontrarás tartas de chocolate negro y calabaza especiada, gofres artesanos, infusiones servidas en teteras de hierro y vistosos cócteles (con y sin alcohol) que llegan a la mesa humeando con hielo seco como auténticas pociones mágicas.",
-        "imageCredit": "Fuente: Instagram @salvadorbachiller"
+        "heading": "1. El Mercadillo de Navidad de la Plaza Mayor: 104 casetas históricas de belenes, figuras y bromas",
+        "venue": "Mercado Tradicional de Navidad de la Plaza Mayor de Madrid",
+        "location": "Plaza Mayor, s/n (Metro: Sol - L1, L2, L3 / Ópera - L2, L5, R)",
+        "price": "Acceso 100% gratuito (Abierto desde finales de noviembre hasta el 31 de diciembre, de 10:00 a 21:00 h; viernes, sábados y vísperas hasta las 22:00 h)",
+        "lat": 40.4155,
+        "lng": -3.7074,
+        "image": "images/venues/madrid-casetas-navidad-plaza-mayor-figuras.jpg",
+        "imageAlt": "Puestos y casetas con tejado rojo a dos aguas del Mercadillo de Navidad de la Plaza Mayor de Madrid",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Con origen en el siglo XVII como mercado de pavos, dulces y verduras en la vecina Plaza de Santa Cruz y asentado en la **Plaza Mayor** desde mediados del siglo XIX, el Mercadillo de Navidad de Madrid despliega desde el último fin de semana de noviembre sus **104 casetas con tejado triangular rojo**.\n\nDividido entre la zona de figuras artesanales de barro y musgo para el Belén, adornos para el árbol e instrumentos tradicionales (zambombas, panderetas y carracas) y el sector de artículos de broma, el mejor momento para recorrerlo sin aglomeraciones es entre semana de 11:00 a 13:30 h o justo a las 17:45 h, cuando se encienden los arcos luminosos bajo los soportales sin haberse formado aún las colas de los accesos."
       },
       {
-        "heading": "Meriendas de calabaza en Malasaña y Salesas: dónde tomar los mejores «pumpkin spice rolls», cafés especiados y dulces de fantasmas",
-        "venue": "Cafeterías de especialidad y obradores de Malasaña (Calle de la Palma, Espíritu Santo y Pez) y La Duquesita (Fernando VI, 2)",
-        "location": "Calles Espíritu Santo, La Palma y Pez (Metro: Tribunal / Noviciado) y Calle de Fernando VI, 2 (Metro: Alonso Martínez)",
-        "price": "Pumpkin spice latte + rollo de canela y calabaza o dulce de Halloween: 5,20 € – 8,80 €",
-        "lat": 40.4254,
+        "heading": "2. Ruta a pie del encendido de luces de Navidad: de Alcalá y Puerta del Sol hasta Gran Vía y Plaza de España",
+        "venue": "Eje luminoso Calle de Alcalá – Puerta del Sol – Calle Preciados – Gran Vía – Plaza de España",
+        "location": "Inicio en Metro Sevilla / Banco de España (L2) y final en Plaza de España (L3, L10)",
+        "price": "Recorrido peatonal 100% gratuito (Encendido diario de domingo a jueves de 18:00 a 00:00 h; viernes y sábados hasta la 01:00 h)",
+        "lat": 40.4169,
         "lng": -3.7035,
-        "image": "images/venues/madrid-duquesita-pasteleria-halloween.jpg",
-        "imageAlt": "Mostrador y mesa de cafetería artesanal en Malasaña con rollos de canela y calabaza, fantasmas de merengue, pan de muerto y café con leche",
-        "content": "A cinco minutos caminando desde Gran Vía, las calles interiores de Malasaña y el vecino barrio de las Salesas concentran la mejor ruta a pie para los amantes de las meriendas de calabaza (*pumpkin spice*) y la repostería artesanal de Halloween en Madrid.\n\nEn Malasaña, cafeterías de especialidad y obradores del entorno de la calle de la Palma, Corredera Baja de San Pablo y Espíritu Santo (como Toma Café, HanSo Café o los hornos artesanos del barrio y de Chamberí como Alma Nomad Bakery) preparan durante todo octubre su *pumpkin spice latte* elaborado con puré real de calabaza asada, canela, nuez moscada y clavo, acompañado de *pumpkin cinnamon rolls* templados, bizcocho húmedo de calabaza con *frosting* de queso y galletas decoradas. Si te acercas hasta la calle Fernando VI, 2, el centenario mostrador de mármol de La Duquesita (1914) despliega además fantasmas de merengue blanco, bombones en forma de calabaza, *pan de muerto* tierno y huesos de santo recién bañados.",
-        "imageCredit": "Fuente: Instagram @duquesitamadrid"
+        "image": "images/venues/madrid-luces-navidad-puerta-del-sol.jpg",
+        "imageAlt": "Gran abeto luminoso de Navidad encendido al anochecer en el centro de la Puerta del Sol de Madrid",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Para ver los principales motivos del alumbrado navideño de Madrid en un paseo continuo de unos 45 minutos sin depender del autobús turístico, arranca a las 18:00 h en el cruce de **Alcalá con Gran Vía** (frente al edificio Metrópolis) y camina hacia la **Puerta del Sol**, presidida por su gigantesco abeto transitable de luz LED.\n\nDesde Sol, desvíate dos minutos a la **Calle Maestro Victoria** para ver el clásico pase musical gratuito de **Cortylandia** en la fachada posterior de El Corte Inglés de Preciados, y sube después por Callao y el tramo final de Gran Vía hasta la renovada **Plaza de España**, donde se instalan el mercado navideño de artesanía (*La Navideña*), la pista de hielo al aire libre y el gran abeto frente a los Jardines de Sabatini."
       },
       {
-        "heading": "Salones de té entre flores de otoño, velas y sofás vintage en Chamberí y Malasaña: Salón des Fleurs, La Paca y Lolina",
-        "venue": "Salón des Fleurs (Guzmán el Bueno, 106), La Paca Café Bar (Valverde, 36) y Lolina Vintage Café (Espíritu Santo, 9)",
-        "location": "Calle de San Roque, 14 y Calle de Valverde, 36 (Malasaña) / Calle de Guzmán el Bueno, 106 (Chamberí)",
-        "price": "Tetera de porcelana con tarta casera, batido o café especial: 4,80 € – 9,50 €",
-        "lat": 40.4228,
-        "lng": -3.7048,
-        "image": "images/venues/madrid-malasana-cafe-halloween-estupenda.jpg",
-        "imageAlt": "Fachada acristalada y entrada llena de flores de otoño del salón de té Salón des Fleurs en Chamberí (Madrid)",
-        "content": "Si prefieres un ambiente más íntimo o alternativo para merendar en la víspera de Todos los Santos, el paseo entre Chamberí y Malasaña reúne tres de los cafés con más personalidad de Madrid cuando cae la tarde en octubre.\n\nEn Chamberí, **Salón des Fleurs** (calle Guzmán el Bueno, 106) es un salón de té y floristería con grandes ventanales ingleses donde tomar tés especiados de otoño y tartas caseras rodeado de centros florales de temporada y calabazas decorativas. Bajando hacia Malasaña, **La Paca Café Bar** (calle Valverde, 36) ilumina sus mesas de madera con velas, lámparas retro y sesiones acústicas o de tarot en fechas señaladas de Halloween, mientras que **Lolina Vintage Café** (calle del Espíritu Santo, 9) ofrece sofás *mid-century* de los años 60 y tartas de zanahoria y calabaza recién horneadas.",
-        "imageCredit": "Fuente: Instagram @salondesfleurs"
+        "heading": "3. Dónde tomar chocolate espeso con churros y porras en el centro esquivando las colas de San Ginés",
+        "venue": "Chocolatería 1902 (Calle de San Martín, 2), Chocolatería Valor (Postigo de San Martín, 7) y La Antigua Churrería (Calle Bravo Murillo / Conde de Peñalver)",
+        "location": "Calle de San Martín, 2 y Postigo de San Martín, 7 (Metro: Callao / Ópera / Sol)",
+        "price": "Taza de chocolate caliente a la taza + ración de 4 churros o 2 porras: 4,20 € – 5,90 €",
+        "lat": 40.4184,
+        "lng": -3.7066,
+        "image": "images/venues/madrid-chocolate-con-churros-invierno.jpg",
+        "imageAlt": "Taza de chocolate caliente espeso acompañada de churros recién hechos en una chocolatería tradicional de Madrid",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY 2.0)",
+        "content": "En las tardes de noviembre y diciembre, el Pasadizo de San Ginés suele registrar esperas de más de 40 minutos en la calle. Sin embargo, a menos de 150 metros a pie tienes dos alternativas centenarias donde sentarte al calor en cuestión de minutos.\n\nLa primera es la **Chocolatería 1902** (Calle de San Martín, 2, quinta generación de maestros churreros), donde elaboran al momento churros de lazo crujientes, porras y su propio chocolate artesano (incluso con opciones sin gluten). La segunda, subiendo hacia las Descalzas Reales, es la histórica **Chocolatería Valor** en el Postigo de San Martín, 7, ideal para pedir un chocolate negro intenso a la taza después de recorrer las casetas de la Plaza Mayor."
       }
     ],
     "faqs": [
       {
-        "question": "¿Hay que reservar mesa en las cafeterías decoradas de Halloween en Madrid?",
-        "answer": "En El Jardín de Montera y El Invernadero de Salvador Bachiller es muy recomendable reservar turno gratuito en su web oficial si vas entre el viernes y el domingo a la hora de la merienda (17:30 a 20:00 h). En las cafeterías de Malasaña (Estupenda Café Bar, La Paca, Toma Café o Lolina) el acceso es directo por orden de llegada."
+        "question": "¿Cuándo abren el Mercadillo de Navidad de la Plaza Mayor y las luces de Madrid en 2026?",
+        "answer": "El encendido oficial del alumbrado navideño de Madrid y la apertura de las 104 casetas del Mercadillo de la Plaza Mayor arrancan la última semana de noviembre (en torno al jueves 26 y viernes 27 de noviembre de 2026), permaneciendo el mercadillo abierto hasta el 31 de diciembre y las luces hasta la noche de Reyes (6 de enero)."
       },
       {
-        "question": "¿Dónde tomar el té o merendar en un salón decorado con flores en Madrid?",
-        "answer": "Tanto el Jardín de Salvador Bachiller (calle Montera, 37) e Invernadero SB (Gran Vía, 65) en Centro como Salón des Fleurs (calle Guzmán el Bueno, 106) en Chamberí combinan salón de té y repostería casera rodeados de decoración floral."
+        "question": "¿Cuál es la mejor hora para visitar la Plaza Mayor en temporada navideña sin aglomeraciones?",
+        "answer": "Por la mañana entre las 10:30 y las 13:30 h cualquier día de la semana, o de lunes a jueves entre las 17:45 y las 19:00 h si quieres ver ya las casetas y los soportales iluminados sin los cortes de aforo puntuales que aplica la Policía Municipal los sábados por la tarde."
+      },
+      {
+        "question": "¿Qué horarios tienen los pases gratuitos de Cortylandia en la calle Maestro Victoria?",
+        "answer": "Los pases duran unos 15 minutos y son totalmente gratuitos. De lunes a viernes suelen celebrarse a las 12:00, 13:00, 14:00, 17:00, 18:00, 19:00, 20:00 y 21:00 h, añadiendo pases extra a las 12:30, 13:30, 17:30, 18:30, 19:30 y 20:30 h durante los fines de semana y festivos."
       }
     ]
   },
   {
-    "id": "bcn-cafeterias-decoradas-halloween-bosc-de-les-fades-petritxol",
-    "slug": "cafeterias-decoradas-halloween-barcelona-bosc-de-les-fades-born-petritxol",
+    "id": "bcn-mercadillos-navidad-barcelona-fira-santa-llucia-luces-2026",
+    "slug": "mercadillos-navidad-barcelona-fira-santa-llucia-sant-pau-luces",
     "articleType": "single_plan",
-    "title": "Cafeterías mágicas y locales decorados de Halloween en Barcelona",
-    "metaTitle": "Cafeterías mágicas y locales decorados de Halloween en Barcelona | Qué Plan Hoy",
-    "metaDescription": "Descubre las cafeterías más mágicas y decoradas de Halloween en Barcelona: el bosque encantado de El Bosc de les Fades, las chocolaterías de Petritxol y el Barri Gòtic de noche.",
+    "title": "Mercadillos de Navidad en Barcelona 2026: Fira de Santa Llúcia y luces",
+    "metaTitle": "Mercadillos de Navidad en Barcelona 2026: Santa Llúcia y Luces | Qué Plan Hoy",
+    "metaDescription": "Guía de los mercadillos y luces de Navidad en Barcelona 2026: fechas de la 240ª Fira de Santa Llúcia frente a la Catedral, Fira de la Sagrada Família, Els Llums de Sant Pau y ruta por el Gòtic.",
     "city": "Barcelona",
-    "category": "Planes Diferentes",
-    "categoryIcon": "✨",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
     "readTime": "9 min",
-    "publishedAt": "2026-10-27",
-    "targetKeyword": "cafeterias decoradas halloween barcelona bosc de les fades sitios chulos",
-    "searchVolume": "3.600 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (11/100)",
-    "image": "images/venues/bcn-bosc-de-les-fades-barcelona.jpg",
-    "imageAlt": "Interior real del bosque encantado con árboles centenarios iluminados y puente sobre el agua en la cafetería El Bosc de les Fades de Barcelona",
-    "imageCredit": "Fuente: Instagram @elboscdelesfades",
-    "excerpt": "Un recorrido por las cafeterías con la ambientación más fantástica y misteriosa de Barcelona para la semana de Halloween y La Castanyada: tomar algo bajo árboles encantados y tormentas simuladas en El Bosc de les Fades, chocolate caliente en Petritxol y jardines ocultos en el Born.",
-    "priceRange": "4,00 € – 10,00 €",
+    "publishedAt": "2026-11-10",
+    "targetKeyword": "mercadillos navidad barcelona 2026 fira de santa llucia fechas horarios luces",
+    "searchVolume": "14.200 búsquedas/mes",
+    "keywordDifficulty": "Baja (14/100)",
+    "image": "images/venues/bcn-fira-santa-llucia-catedral-hero.jpg",
+    "imageAlt": "Paradas iluminadas de la tradicional Fira de Santa Llúcia en la Avenida de la Catedral de Barcelona al anochecer",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "Desde finales de noviembre, la Avenida de la Catedral de Barcelona se llena de abetos, musgo, figuras de pesebre y Tions de Nadal con la histórica Fira de Santa Llúcia (documentada desde 1786). Te contamos todas las fechas, horarios y la ruta a pie para enlazarla con el encendido de luces, las chocolaterías del Gòtic y la feria de la Sagrada Família.",
+    "priceRange": "100% Gratis (Suizo en Petritxol opcional: 4,20 €)",
     "neighborhoods": [
-      "Barri Gòtic",
-      "La Rambla / Drassanes",
+      "Barri Gòtic / Catedral",
       "Carrer Petritxol",
-      "El Born"
+      "Sagrada Família",
+      "Sant Pau / Guinardó"
     ],
     "affiliate": {
-      "title": "Entrada al renovado Museu de Cera de Barcelona (junto a El Bosc de les Fades)",
-      "badge": "En el mismo Passatge de la Banca",
-      "description": "Puerta con puerta con la cafetería El Bosc de les Fades: recorre las 28 salas interactivas del renovado Museo de Cera de Barcelona, incluyendo su mítico Pasaje del Terror y escenarios de cine.",
-      "price": "Desde 15 € infantil / 21 € adulto",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2Fentradas-para-museo-de-cera-de-barcelona-p1016415%2F",
-      "ctaText": "Ver entradas al Museu de Cera →"
+      "partner": "Tiqets",
+      "badge": "Junto a los mercadillos de Navidad",
+      "title": "Entrada al Recinto Modernista de Sant Pau",
+      "description": "Completa tu ruta por las ferias navideñas de la Sagrada Família y el Eixample visitando el mayor conjunto modernista de Domènech i Montaner.",
+      "price": "Desde 17 € entrada sin colas",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2Fentradas-para-recinto-modernista-de-sant-pau-entrada-sin-colas-p974414%2F",
+      "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": false,
     "sections": [
       {
-        "heading": "El Bosc de les Fades (Passatge de la Banca): tomar un café o una poción dentro de un bosque encantado con tormenta",
-        "venue": "El Bosc de les Fades (junto al Museu de Cera de Barcelona)",
-        "location": "Passatge de la Banca, 7 (Metro: Drassanes - L3, al final de La Rambla)",
-        "price": "Café, chocolate o refresco desde 3,80 € / Cócteles especiales desde 9,50 € (Entrada libre sin entrada al museo)",
-        "lat": 41.3772,
-        "lng": 2.1774,
-        "image": "images/venues/bcn-museu-cera-passatge-banca.jpg",
-        "imageAlt": "Sala del espejo gótico y arcos de piedra entre raíces y calabazas iluminadas en El Bosc de les Fades (Passatge de la Banca)",
-        "content": "Escondida al fondo del silencioso Passatge de la Banca —un callejón sin salida a pocos pasos del final de La Rambla—, la cafetería El Bosc de les Fades es el rincón más mágico de Barcelona para visitar en la semana de Halloween, tanto en pareja como con amigos o niños.\n\nAl cruzar su puerta entras literalmente en un bosque nocturno cubierto de árboles centenarios retorcidos, gnomos, cascadas de agua real, grillos y luciérnagas donde cada pocos minutos se apagan las luces y estalla una tormenta simulada con relámpagos y truenos. Más al fondo esconde la sala del espejo encantado y un pasillo de estética gótica. No hace falta comprar entrada para el Museo de Cera: el acceso a la cafetería es totalmente libre pagando únicamente tu consumición.",
-        "imageCredit": "Fuente: Instagram @elboscdelesfades"
+        "heading": "1. La Fira de Santa Llúcia frente a la Catedral de Barcelona (1786): paradas de pesebres, verde y Tió Gegant",
+        "venue": "Fira de Santa Llúcia (Avinguda de la Catedral · Barri Gòtic)",
+        "location": "Avinguda de la Catedral, s/n (Metro: Jaume I - L4 / Urquinaona - L1, L4)",
+        "price": "Acceso 100% gratuito (Finales de noviembre al 23 de diciembre, de 10:00 a 21:00 h)",
+        "lat": 41.3843,
+        "lng": 2.1756,
+        "image": "images/venues/bcn-fira-santa-llucia-parades-pessebre.jpg",
+        "imageAlt": "Puestos artesanales de figuras de pesebre, caganers y decoración navideña en la Fira de Santa Llúcia de Barcelona",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Celebrada ininterrumpidamente desde **1786**, la **Fira de Santa Llúcia** es el mercadillo navideño más antiguo de España y transforma desde el último viernes de noviembre hasta el 23 de diciembre toda la explanada frente a la fachada neogótica de la Catedral de Barcelona.\n\nSus más de 200 paradas se organizan en cuatro sectores históricos: el de **pesebres y figuras** (donde encontrar desde cuevas de corcho y figuras de barro pintadas a mano hasta los tradicionales *caganers*), el sector de **verde y vegetación** (abetos naturales del Montseny, ramilletes de muérdago de la suerte, musgo y eucalipto), el de **artesanía** y el de **simbombes** (instrumentos musicales navideños), presididos además por más de quince árboles iluminados y el popular *Tió Gegant* para los más pequeños."
       },
       {
-        "heading": "Granjas centenarias del Carrer Petritxol y escaparates de Halloween y Castanyada en el Gòtic",
-        "venue": "Granja Dulcinea, La Pallaresa y obradores del Carrer Petritxol y Plaça del Pi",
-        "location": "Carrer de Petritxol, 2 y 11 (Metro: Liceu - L3)",
-        "price": "Suizo caliente con nata y churros o degustación de panellets: 5,20 € – 8,00 €",
-        "lat": 41.3831,
-        "lng": 2.1732,
-        "image": "images/venues/bcn-carrer-petritxol-chocolateria.jpg",
-        "imageAlt": "Mesa de mármol con chocolate suizo con nata, churros y panellets de piñones en una granja centenaria del Carrer Petritxol",
-        "content": "Saliendo del Passatge de la Banca y subiendo diez minutos a pie por el Barri Gòtic (pasando bajo la famosa calavera atravesada por una daga del Pont del Bisbe), llegarás al estrecho y peatonal Carrer Petritxol, la calle del chocolate de Barcelona desde el siglo XIX.\n\nDurante la última semana de octubre, los escaparates de sus chocolaterías y pastelerías combinan las calabazas y figuras de chocolate negro de Halloween con las bandejas de *panellets* de piñones, almendra, café y coco recién horneados para La Castanyada. Siéntate en los salones revestidos de madera de Granja Dulcinea (fundada en 1941 y frecuentada por Salvador Dalí) o La Pallaresa (1947) a pedir un suizo espeso bien caliente.",
-        "imageCredit": "Fuente: Instagram @granjadulcinea"
+        "heading": "2. Tradición del Tió de Nadal en el Gòtic y chocolate caliente con melindros en el Carrer Petritxol",
+        "venue": "Sector de Tions de la Fira de Santa Llúcia y Granjas históricas del Carrer Petritxol (Granja Dulcinea y La Pallaresa)",
+        "location": "Pla de la Seu / Carrer Petritxol, 2 y 11 (Metro: Liceu - L3 / Jaume I - L4)",
+        "price": "Paseo gratuito · Taza de chocolate a la piedra o suizo con nata y melindros: 4,20 € – 5,80 €",
+        "lat": 41.3828,
+        "lng": 2.1731,
+        "image": "images/venues/bcn-fira-santa-llucia-tio-nadal.jpg",
+        "imageAlt": "Parada tradicional llena de troncos sonrientes del Tió de Nadal con barretina roja en la Fira de Santa Llúcia de Barcelona",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Después de recorrer los puestos de *tions de Nadal* —los troncos sonrientes tocados con barretina roja y manta a cuadros que forman una de las estampas más fotogénicas de la feria—, cruza cinco minutos a pie por la Plaça del Pi hasta el estrecho y peatonal **Carrer Petritxol**.\n\nEntre sus placas de cerámica que recuerdan a Ángel Guimerà y exposiciones de arte en la Sala Parés, las granjas centenarias **La Pallaresa** (1947) y **Granja Dulcinea** (1941) sirven el clásico **suizo** (chocolate caliente espeso coronado por una generosa montaña de nata montada artesanal) acompañado de *melindros* (bizcochos de soletilla tiernos) o churros recién hechos."
       },
       {
-        "heading": "El jardín oculto del Antic Teatre y las terrazas bajo las gárgolas de Santa Maria del Mar en el Born",
-        "venue": "Antic Teatre (Carrer de Verdaguer i Callís, 12) y Passeig del Born",
-        "location": "Carrer de Verdaguer i Callís, 12 y Passeig del Born (Metro: Urquinaona L1, L4 / Jaume I L4)",
-        "price": "Caña, vermut o infusión en el jardín neoclásico: 3,00 € – 6,50 €",
-        "lat": 41.3872,
-        "lng": 2.1761,
-        "image": "images/venues/bcn-antic-teatre-born-jardin.jpg",
-        "imageAlt": "Jardín secreto iluminado con guirnaldas y calabazas de Halloween bajo la gran higuera del Antic Teatre en El Born",
-        "content": "Para terminar la tarde en un ambiente bohemio y lleno de historia, cruza la Via Laietana hacia el barrio de Sant Pere y El Born para subir las escaleras de piedra del Antic Teatre (un palacio neoclásico de 1650 escondido detrás del Palau de la Música que esconde un jardín elevado con una higuera gigante).\n\nAl caer la noche, baja caminando hasta el Fossar de les Moreres y el Passeig del Born, donde los bares y coctelerías que rodean los muros góticos y las gárgolas de la basílica de Santa Maria del Mar se iluminan con velas y decoración especial para la noche del 31 de octubre.",
-        "imageCredit": "Fuente: Instagram @anticteatre.nou"
+        "heading": "3. La Fira de Nadal de la Sagrada Família y el paseo iluminado por la Avenida Gaudí hasta Sant Pau",
+        "venue": "Fira de Nadal de la Sagrada Família (Plaça de la Sagrada Família) y Avinguda de Gaudí",
+        "location": "Plaça de la Sagrada Família, s/n (Metro: Sagrada Família - L2, L5)",
+        "price": "Recorrido por la feria y la Avenida Gaudí 100% gratuito (Finales de noviembre al 23 de diciembre, de 10:00 a 21:00 h; festivos y vísperas hasta las 22:00 h)",
+        "lat": 41.4036,
+        "lng": 2.1744,
+        "image": "images/venues/bcn-concert-nadal-sagrada-familia.jpg",
+        "imageAlt": "Fachada iluminada de la Basílica de la Sagrada Família durante la programación navideña en Barcelona",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Para una segunda parada navideña mucho más amplia y tranquila que el centro gótico, toma la línea L2 o L5 hasta la **Plaça de la Sagrada Família**. Nacida en 1962 como prolongación de los artesanos de Santa Llúcia en el Eixample, su **Fira de Nadal** rodea los jardines frente a la Fachada del Nacimiento de Gaudí con cerca de un centenar de casetas.\n\nAdemás de abetos, figuras y regalos hechos a mano, cuenta con un sector gastronómico propio donde probar castañas asadas, churros, turrones artesanos, quesos del Pirineo y embutidos tradicionales. Al caer la noche, sube caminando por el bulevar peatonal de la **Avenida Gaudí** bajo sus farolas modernistas iluminadas hasta la fachada del **Recinto Modernista de Sant Pau**, donde se celebra el espectáculo lumínico *Els Llums de Sant Pau*."
       }
     ],
     "faqs": [
       {
-        "question": "¿Se puede ir con niños a la cafetería El Bosc de les Fades en Halloween?",
-        "answer": "Sí, es uno de los sitios favoritos de los niños en Barcelona por sus árboles parlantes, el puente sobre el agua y la tormenta de luces. Si vas con niños pequeños, el mejor horario es entre las 16:30 y las 19:00 h."
+        "question": "¿En qué fechas abren la Fira de Santa Llúcia y la Fira de la Sagrada Família en 2026?",
+        "answer": "Ambas ferias inauguran su campaña navideña el último viernes de noviembre (27 de noviembre de 2026) coincidiendo con la semana del encendido de luces de Barcelona, y permanecen abiertas todos los días hasta el 23 de diciembre en horario de 10:00 a 21:00 h (hasta las 22:00 h los sábados, domingos y vísperas de festivo en Sagrada Família)."
       },
       {
-        "question": "¿Hay que pagar entrada para entrar a El Bosc de les Fades?",
-        "answer": "No, la entrada al café es gratuita e independiente del Museo de Cera; solo abonas lo que tomes en la barra o en las mesas del bosque."
+        "question": "¿Cuándo se encienden las luces de Navidad en Barcelona (Passeig de Gràcia, Portal de l'Àngel y Gran Via)?",
+        "answer": "El acto oficial del encendido de las luces de Navidad de Barcelona se celebra la última semana de noviembre a las 18:00 h. A partir de ese día, el alumbrado se enciende de domingo a jueves de 17:30 a 01:00 h y los viernes, sábados y vísperas de festivo de 17:30 a 02:00 h."
+      },
+      {
+        "question": "¿Hay que pagar entrada para visitar los mercadillos navideños de la Catedral y Sagrada Família?",
+        "answer": "No, tanto la Fira de Santa Llúcia como la Fira de Nadal de la Sagrada Família y el paseo por la Avenida Gaudí son mercados tradicionales al aire libre de acceso 100% libre y gratuito."
       }
     ]
   },
   {
-    "id": "vlc-cafeterias-decoradas-halloween-ruzafa-cafe-de-las-horas",
-    "slug": "cafeterias-decoradas-halloween-valencia-ruzafa-el-carmen-meriendas",
+    "id": "vlc-mercadillos-navidad-valencia-plaza-reina-ayuntamiento-luces-2026",
+    "slug": "mercadillos-navidad-valencia-plaza-reina-luces-ayuntamiento-colon",
     "articleType": "single_plan",
-    "title": "Cafeterías y sitios decorados de Halloween en Valencia: del Café de las Horas a las meriendas de Ruzafa",
-    "metaTitle": "Cafeterías y sitios decorados de Halloween en Valencia: del Café de las Horas a las meriendas de Ruzafa | Qué Plan Hoy",
-    "metaDescription": "Dónde merendar en cafeterías decoradas de Halloween en Valencia: el salón victoriano del Café de las Horas en El Carmen, pastelerías de Ruzafa y el Mercado de Colón.",
+    "title": "Mercadillos y luces de Navidad en Valencia 2026: Plaza de la Reina y ruta",
+    "metaTitle": "Mercadillos y Luces de Navidad en Valencia 2026: Ruta y Fechas | Qué Plan Hoy",
+    "metaDescription": "Guía de Navidad en Valencia 2026: Feria de Artesanía en la Plaza de la Reina, encendido del árbol y pista de hielo en la Plaza del Ayuntamiento, Mercado de Colón y belenes monumentales.",
     "city": "Valencia",
-    "category": "Planes Diferentes",
-    "categoryIcon": "✨",
-    "readTime": "8 min",
-    "publishedAt": "2026-10-27",
-    "targetKeyword": "cafeterias decoradas halloween valencia sitios chulos merendar ruzafa",
-    "searchVolume": "2.900 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (9/100)",
-    "image": "images/venues/vlc-cafe-de-las-horas-valencia.jpg",
-    "imageAlt": "Salón literario neobarroco con cortinajes de terciopelo rojo, lámparas de araña, candelabros y tetera de plata en el Café de las Horas de Valencia",
-    "imageCredit": "Fuente: Instagram @cafedelashoras",
-    "excerpt": "Los locales y cafeterías con mejor ambientación para vivir Halloween en Valencia: tomar una tetera humeante o un cóctel entre candelabros y terciopelos rojos en el Café de las Horas, probar las tartas de calabaza y «fantasmas» en Ruzafa y recorrer los hornos centenarios de Ciutat Vella.",
-    "priceRange": "4,50 € – 10,50 €",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-10",
+    "targetKeyword": "mercadillos navidad valencia 2026 plaza de la reina luces ayuntamiento fechas",
+    "searchVolume": "8.900 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (12/100)",
+    "image": "images/venues/vlc-mercado-navidad-plaza-reina-hero.jpg",
+    "imageAlt": "Casetas blancas iluminadas de la Feria de Artesanía de Navidad en la Plaza de la Reina de Valencia con el Miguelete y la Catedral al fondo",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "Valencia estrena la campaña navideña iluminando la Plaza del Ayuntamiento, la calle de la Paz y la peatonalizada Plaza de la Reina: te contamos las fechas de la Feria de Artesanía a los pies del Miguelete, el mercado y árbol monumental del modernista Mercado de Colón y la ruta gratuita de belenes históricos.",
+    "priceRange": "100% Gratis (Chocolate con buñuelos opcional: 4,00 €)",
     "neighborhoods": [
-      "El Carmen / La Seu",
-      "Ruzafa",
-      "Pla del Remei (Mercado de Colón)",
-      "Ciutat Vella"
+      "Plaza de la Reina / Catedral",
+      "Plaza del Ayuntamiento",
+      "Mercado de Colón / Pla del Remei",
+      "Calle Poeta Querol"
     ],
     "affiliate": {
-      "title": "Entrada con Audioguía a San Nicolás (a 3 minutos a pie del Café de las Horas)",
-      "badge": "En el mismo Barrio del Carmen",
-      "description": "Antes de sentarte entre los candelabros y terciopelos del Café de las Horas, descubre a solo dos calles las bóvedas góticas pintadas al fresco de la «Capilla Sixtina Valenciana».",
-      "price": "Desde 11 € con audioguía incluida",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c65847%2Fentradas-para-iglesia-de-san-nicolas-valencia-p977611%2F",
-      "ctaText": "Ver entradas a San Nicolás →"
+      "partner": "Tiqets",
+      "badge": "Junto a la ruta navideña",
+      "title": "Entrada a la Iglesia de San Nicolás (la Capilla Sixtina Valenciana)",
+      "description": "A solo 3 minutos a pie de la Plaza de la Reina: contempla los casi 2.000 m² de frescos barrocos restaurados de San Nicolás de Bari.",
+      "price": "Desde 11 € entrada con audioguía",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c66345%2F",
+      "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": false,
     "sections": [
       {
-        "heading": "Café de las Horas (junto a la Plaza de la Virgen): terciopelos rojos, candelabros y atmósfera victoriana en El Carmen",
-        "venue": "Café de las Horas y entorno nocturno de la Plaza de la Virgen",
-        "location": "Calle del Conde de Almodóvar, 1 (Barrio de la Seu - El Carmen, a 1 min de la Plaza de la Virgen)",
-        "price": "Tetera especial, tarta casera o Agua de Valencia en copa labrada: 5,50 € – 10,00 €",
-        "lat": 39.4768,
-        "lng": -0.3758,
-        "image": "images/venues/vlc-plaza-virgen-noche-carmen.jpg",
-        "imageAlt": "Mesa con candelabros encendidos, sillones de terciopelo granate, espejos dorados y copas de Agua de Valencia en el Café de las Horas",
-        "content": "Si hay un local en Valencia que parece sacado de una novela gótica del siglo XIX —y que durante la semana de Halloween multiplica su encanto teatral—, es el Café de las Horas en la calle Conde de Almodóvar, 1, justo detrás de la Basílica de la Virgen.\n\nSu interior mezcla un salón literario neobarroco con techos pintados al fresco, grandes lámparas de araña de cristal, cortinajes de terciopelo granate, bustos clásicos, candelabros y música clásica o de cabaret a media luz. Puedes ir a media tarde a pedir una tetera victoriana con tarta casera o acudir al anochecer para probar sus cócteles antes de pasear por los callejones iluminados del barrio del Carmen.",
-        "imageCredit": "Fuente: Instagram @cafedelashoras"
+        "heading": "1. Feria de Artesanía de Navidad en la Plaza de la Reina y horchaterías históricas con chocolate y buñuelos",
+        "venue": "Feria de Artesanía de Navidad (ARTEVAL) en la Plaza de la Reina y Horchatería Santa Catalina (Plaza de Santa Catalina, 6)",
+        "location": "Plaza de la Reina, s/n (Autobuses EMT al centro o Metro: Xàtiva / Colón)",
+        "price": "Acceso 100% gratuito (Finales de noviembre al 6 de enero, de 10:30 a 14:00 h y de 16:30 a 21:00 h)",
+        "lat": 39.4746,
+        "lng": -0.3754,
+        "image": "images/venues/vlc-plaza-ayuntamiento-luces-navidad.jpg",
+        "imageAlt": "Iluminación navideña y fachada del Ayuntamiento de Valencia encendida al anochecer en la Plaza del Ayuntamiento",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Desde la peatonalización integral de la **Plaza de la Reina**, la histórica **Feria de Artesanía de Navidad** organizada por ARTEVAL luce espectacular a los pies de la Puerta de los Hierros de la Catedral y la torre del Miguelete. Sus cerca de treinta casetas blancas exponen piezas elaboradas exclusivamente por artesanos acreditados de la Comunitat Valenciana: cerámica tradicional de Manises, juguetes de madera, joyería en plata, marroquinería, vidrio soplado y figuras de belén.\n\nAl salir de las casetas, cruza un minuto hacia la **Horchatería Santa Catalina** (Plaza de Santa Catalina, 6, decorada con azulejería cerámica de Manises desde hace más de dos siglos) o **El Siglo** para entrar en calor con una taza de chocolate espeso a la valenciana acompañado de **buñuelos de calabaza recién fritos**."
       },
       {
-        "heading": "Tartas de calabaza, «pumpkin spice latte» y vitrinas decoradas de Halloween entre Ruzafa y el Mercado de Colón",
-        "venue": "Pastelerías de Ruzafa (Pintor Gisbert y Cuba) y cafeterías modernistas del Mercado de Colón",
-        "location": "Calle del Pintor Gisbert, 2 / Calle de Jorge Juan, 19 (Metro: Bailén L7 / Xàtiva L3, L5, L9 / Colón)",
-        "price": "Café de especialidad o pumpkin latte + porción de tarta temática: 5,20 € – 8,80 €",
-        "lat": 39.4628,
-        "lng": -0.3736,
-        "image": "images/venues/vlc-ruzafa-cafeterias-terraces.jpg",
-        "imageAlt": "Merienda de Halloween en una cafetería de Ruzafa con tarta de queso y calabaza, cupcakes de murciélago y pumpkin spice latte",
-        "content": "Para quienes buscan escaparates llenos de calabazas naturales, telarañas decorativas y repostería especial de Halloween, el paseo imprescindible une las calles peatonales del barrio de Ruzafa con la nave modernista del Mercado de Colón.\n\nEn Ruzafa, obradores como Dulce de Leche Boutique (calle Pintor Gisbert, 2), Blackbird o las librerías-café como Ubik Café (calle Literato Azorín, 13) preparan durante toda la última semana de octubre *cupcakes* decorados con murciélagos y fantasmas, *cheesecake* de calabaza asada y rollos de canela templados. A diez minutos a pie, bajo las bóvedas modernistas de 1916 del Mercado de Colón, las horchaterías y salones de té ofrecen meriendas otoñales rodeadas de cerámica modernista.",
-        "imageCredit": "Fuente: Instagram @ddlboutique_"
+        "heading": "2. Árbol gigante, carrusel clásico y encendido musical en la Plaza del Ayuntamiento",
+        "venue": "Plaza del Ayuntamiento de Valencia (Árbol de Navidad, Pista de Hielo y Belén del Salón de Cristal)",
+        "location": "Plaza del Ayuntamiento, 1 (Metro: Xàtiva - L3, L5, L9 / Bailén - L7)",
+        "price": "Espectáculo de luces y Belén del Salón de Cristal 100% gratuitos (Pista de hielo y carrusel: 4 € – 9 €)",
+        "lat": 39.4698,
+        "lng": -0.3763,
+        "image": "images/venues/vlc-palacio-marques-dos-aguas-belen.jpg",
+        "imageAlt": "Salón histórico del Palacio del Marqués de Dos Aguas (Museo Nacional de Cerámica) donde se expone el Belén napolitano del siglo XVIII en Valencia",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Bajando por la calle San Vicente Mártir se abre la **Plaza del Ayuntamiento**, epicentro del encendido navideño de Valencia desde la última semana de noviembre. En el centro peatonal de la plaza se instalan el gran árbol de Navidad transitable de más de 20 metros, el tiovivo clásico de dos plantas y la pista de patinaje sobre hielo impulsada por los comerciantes del Centro Histórico.\n\nNo te quedes solo en el exterior: accede gratis al interior de la Casa Consistorial para visitar el **Belén artístico del Salón de Cristal**, y camina cinco minutos por Poeta Querol hasta el **Palacio del Marqués de Dos Aguas** (Museo Nacional de Cerámica), cuya planta baja exhibe el extraordinario **Belén Napolitano del siglo XVIII** con figuras de alambre, terracota y sedas reales."
       },
       {
-        "heading": "Hornos centenarios de Ciutat Vella: figuras de mazapán, huesos de santo y dulces de Todos los Santos",
-        "venue": "Pastelería La Rosa de Jericó (Hernán Cortés, 14) y Horno de San Bartolomé en Ciutat Vella",
-        "location": "Calle de Hernán Cortés, 14 y Plaza de Manises / Calle Serranos (Centro Histórico)",
-        "price": "Surtido artesanal de huesos de santo, buñuelos y mazapán: desde 4,50 €",
-        "lat": 39.4702,
-        "lng": -0.3712,
-        "image": "images/venues/vlc-horno-tradicional-sant-donis.jpg",
-        "imageAlt": "Cesta de mimbre con buñuelos artesanos rellenos de crema, trufa y calabaza recién hechos en la histórica Pastelería La Rosa de Jericó de Valencia",
-        "content": "En Valencia, octubre es el mes grande del mazapán artesanal: tras las coloridas frutas de la *Mocadorà* de Sant Donís, los hornos históricos de Ciutat Vella llenan sus vitrinas de huesos de santo rellenos de yema, chocolate, trufa y boniato, además de *panellets* de piñones y buñuelos de calabaza.\n\nHaz parada en La Rosa de Jericó (fundada en 1890 en la calle Hernán Cortés) o en los hornos tradicionales del entorno de la calle Caballeros y Serranos para llevarte una cajita recién hecha mientras recorres las torres medievales de la ciudad al atardecer.",
-        "imageCredit": "Fuente: Instagram @larosadejerico_vlc"
+        "heading": "3. Mostra de Nadal, conciertos de villancicos y belén a tamaño real bajo las bóvedas del Mercado de Colón",
+        "venue": "Mercado de Colón (Calle de Jorge Juan, 19 · Barrio de Pla del Remei)",
+        "location": "Calle de Jorge Juan, 19 (Metro: Colón - L3, L5, L7, L9)",
+        "price": "Entrada libre y gratuita (Abierto todos los días de 08:00 a 01:30 h)",
+        "lat": 39.4689,
+        "lng": -0.3685,
+        "image": "images/venues/vlc-mercado-colon-arquitectura-navidad.jpg",
+        "imageAlt": "Fachada modernista con mosaicos cerámicos y grandes arcos de ladrillo y hierro del Mercado de Colón de Valencia",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Si hay un espacio cubierto en Valencia donde el ambiente prenavideño y navideño resulta mágico incluso si refresca o llueve, es el **Mercado de Colón** (joya modernista de 1916 proyectada por Francisco Mora Berenguer en el barrio del Pla del Remei).\n\nBajo sus altísimas naves de hierro forjado, ladrillo visto y mosaicos cerámicos se instalan un **gran árbol de Navidad**, un nacimiento monumental a tamaño real y la *Mostra de Nadal* de diseñadores y artesanos locales, acompañada de coros y conciertos acústicos gratuitos y de las terrazas interiores donde tomar desde un vermut o una horchata templada hasta dulces navideños valencianos (*pastissets de moniato*, *rotllets d'anís* y turrón de Jijona)."
       }
     ],
     "faqs": [
       {
-        "question": "¿Cuál es la mejor hora para ir al Café de las Horas en la semana de Halloween?",
-        "answer": "Entre las 17:00 y las 19:30 h el ambiente es tranquilo y perfecto para merendar té con tarta; a partir de las 20:30 h la iluminación baja y se transforma en una coctelería nocturna muy animada."
+        "question": "¿Cuándo se encienden las luces de Navidad en la Plaza del Ayuntamiento de Valencia en 2026?",
+        "answer": "El encendido oficial del árbol y de los arcos luminosos de la Plaza del Ayuntamiento, Calle de la Paz y San Vicente se celebra el último viernes de noviembre (o primeros días de diciembre) a las 19:00 h, con pases musicales diarios al caer la tarde cada media hora entre las 18:30 y las 21:30 h."
       },
       {
-        "question": "¿Dónde probar los mejores dulces de calabaza y Halloween en Valencia?",
-        "answer": "Para repostería creativa decorada de Halloween (tartas de calabaza, cookies y cupcakes), acércate al barrio de Ruzafa; para dulces tradicionales como huesos de santo y buñuelos de calabaza, visita los hornos centenarios de Ciutat Vella."
+        "question": "¿Es gratis ver el Belén Napolitano del Palacio del Marqués de Dos Aguas y el del Salón de Cristal?",
+        "answer": "Sí: tanto el Belén monumental del Salón de Cristal del Ayuntamiento de Valencia como la visita a la sala del Belén Napolitano del siglo XVIII en el Museo Nacional de Cerámica (Palacio del Marqués de Dos Aguas) son de acceso gratuito para todos los visitantes."
+      },
+      {
+        "question": "¿Qué otros mercados navideños abren en Valencia además de la Plaza de la Reina?",
+        "answer": "Además de la Feria de Artesanía de la Plaza de la Reina y la Mostra de Nadal del Mercado de Colón, destacan el Mercado de Navidad de la Ciudad de las Artes y las Ciencias (bajo los arcos del Umbracle con foodtrucks y talleres infantiles) y el tradicional Mercado de Reyes del Cabanyal a primeros de enero."
       }
     ]
   },
   {
-    "id": "sev-cafeterias-decoradas-halloween-campana-santa-cruz-alameda",
-    "slug": "cafeterias-con-encanto-y-dulces-halloween-sevilla-campana-santa-cruz",
+    "id": "sev-feria-del-belen-luces-navidad-dulces-convento-sevilla-2026",
+    "slug": "navidad-en-sevilla-feria-del-belen-luces-y-dulces-de-convento",
     "articleType": "single_plan",
-    "title": "Cafeterías con encanto y dulces de Halloween en Sevilla",
-    "metaTitle": "Cafeterías con encanto y dulces de Halloween en Sevilla | Qué Plan Hoy",
-    "metaDescription": "Ruta por las cafeterías con encanto, teterías en patios mudéjares y pastelerías de Halloween en Sevilla: Confitería La Campana, Barrio de Santa Cruz y Calle Feria.",
+    "title": "Navidad en Sevilla 2026: Feria del Belén, luces y dulces de convento",
+    "metaTitle": "Navidad en Sevilla 2026: Feria del Belén, Luces y Conventos | Qué Plan Hoy",
+    "metaDescription": "Guía para adelantarse a la Navidad en Sevilla 2026: la Feria del Belén junto a la Catedral (abierta ya en noviembre), fechas del encendido de luces en Avenida de la Constitución y ruta de dulces de convento.",
     "city": "Sevilla",
-    "category": "Planes Diferentes",
-    "categoryIcon": "✨",
-    "readTime": "8 min",
-    "publishedAt": "2026-10-27",
-    "targetKeyword": "cafeterias halloween sevilla sitios chulos merendar dulces todos los santos",
-    "searchVolume": "2.600 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (9/100)",
-    "image": "images/venues/sev-confiteria-la-campana-sierpes.jpg",
-    "imageAlt": "Fachada modernista con vidrieras históricas de la Confitería La Campana en la calle Sierpes de Sevilla",
-    "imageCredit": "Fuente: Instagram @confiterialacampana",
-    "excerpt": "Dónde disfrutar de una merienda de Halloween y Todos los Santos en Sevilla con mucho encanto: las vidrieras modernistas de 1885 en la Confitería La Campana, las teterías y cafés en patios mudéjares del Barrio de Santa Cruz y las cafeterías decoradas de calabazas en la Calle Feria.",
-    "priceRange": "4,00 € – 9,50 €",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-10",
+    "targetKeyword": "feria del belen sevilla 2026 horarios luces navidad dulces de convento",
+    "searchVolume": "9.600 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (11/100)",
+    "image": "images/venues/sev-feria-del-belen-catedral-hero.jpg",
+    "imageAlt": "Casetas artesanales de la tradicional Feria del Belén de Sevilla instaladas junto a los muros góticos de la Catedral y el Archivo de Indias",
+    "imageCredit": "Fotografía: CarlosVdeHabsburgo / Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "Sevilla es una de las primeras ciudades de España en inaugurar su ambiente navideño: ya desde mediados de noviembre abre sus puertas la histórica Feria del Belén entre la Catedral y el Archivo de Indias. Te proponemos recorrer sus puestos artesanales, ver el alumbrado de la Avenida de la Constitución y comprar yemas y mantecados en los tornos de los conventos de clausura.",
+    "priceRange": "100% Gratis (Caja de dulces de convento opcional: 6 € – 12 €)",
     "neighborhoods": [
-      "Calle Sierpes / Campana",
-      "Alameda de Hércules",
-      "Calle Feria",
-      "Barrio de Santa Cruz"
+      "Catedral / Archivo de Indias",
+      "Avenida de la Constitución / Plaza Nueva",
+      "Calle Sierpes y Tetuán",
+      "San Leandro / Santa Paula"
     ],
     "affiliate": {
-      "title": "Entrada al Mirador Nocturno y Espectáculo «Aurora» en las Setas de Sevilla",
-      "badge": "A 2 minutos a pie de La Campana",
-      "description": "Después de merendar huesos de santo en la calle Sierpes o antes de bajar hacia la Alameda de Hércules, sube al mirador panorámico de las Setas iluminado de noche sobre los tejados de Sevilla.",
-      "price": "Desde 15 € acceso directo",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c65870%2Fentradas-para-setas-de-sevilla-p1025096%2F",
-      "ctaText": "Ver entradas a las Setas de Sevilla →"
+      "partner": "Tiqets",
+      "badge": "Justo frente a la Feria del Belén",
+      "title": "Entrada a la Catedral de Sevilla y Subida a la Giralda",
+      "description": "Aprovecha tu visita a las casetas de la Feria del Belén en la calle Fray Ceferino González para entrar sin colas a la Catedral y subir a la Giralda.",
+      "price": "Desde 13 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c66344%2F",
+      "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": false,
     "sections": [
       {
-        "heading": "Confitería La Campana (desde 1885): vidrieras modernistas, calabazas de chocolate y huesos de santo en la calle Sierpes",
-        "venue": "Confitería La Campana (Calle Sierpes, 1) y hornos tradicionales del centro",
-        "location": "Calle Sierpes, 1, esquina Plaza de la Campana (Casco Antiguo de Sevilla)",
-        "price": "Café o chocolate caliente + huesos de santo o pastel temático: 4,50 € – 7,80 €",
-        "lat": 37.3926,
+        "heading": "1. La Feria del Belén de Sevilla junto a la Catedral y el Archivo de Indias (abierta desde noviembre)",
+        "venue": "Feria del Belén de Sevilla (Calle Fray Ceferino González y Avenida de la Constitución)",
+        "location": "Entre la Catedral de Sevilla y el Archivo de Indias (Tranvía T1: Archivo de Indias / Metro: Puerta Jerez)",
+        "price": "Acceso 100% gratuito (Abierta desde mediados de noviembre hasta el 23 de diciembre; L-V de 10:30 a 14:00 y 17:00 a 21:00 h; S, D y festivos de 11:00 a 15:00 y 16:30 a 21:30 h)",
+        "lat": 37.3852,
+        "lng": -5.9932,
+        "image": "images/venues/sev-feria-belen-puestos-figuras.jpg",
+        "imageAlt": "Expositores con misterios de barro policromado, portales artesanales y miniaturas en la Feria del Belén de Sevilla",
+        "imageCredit": "Fotografía: CarlosVdeHabsburgo / Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "A diferencia de otros mercados que esperan a diciembre, la **Feria del Belén de Sevilla** (organizada por la Asociación de Comerciantes del Belén de Sevilla, ACOBESE, y considerada una de las más importantes de Europa) levanta el telón **a mediados de noviembre** a los pies mismos de la Giralda.\n\nA lo largo de la calle **Fray Ceferino González** (entre la muralla de la Catedral y el Archivo de Indias) y el tramo contiguo de la Avenida de la Constitución, catorce maestros artesanos y talleres belenistas exponen verdaderas obras de arte en miniatura: figuras de barro cocido y lienzo encolado de escuela sevillana, jerezana y murciana, hornos de pan en movimiento, fuentes de agua y dulces tradicionales de Estepa."
+      },
+      {
+        "heading": "2. Paseo bajo el encendido de luces de Navidad: Avenida de la Constitución, Plaza de San Francisco y Calle Sierpes",
+        "venue": "Eje luminoso Avenida de la Constitución – Plaza de San Francisco – Calle Sierpes y Tetuán",
+        "location": "Plaza de San Francisco y Plaza Nueva (Tranvía T1: Plaza Nueva)",
+        "price": "Paseo y espectáculos de luz y música en Plaza de San Francisco 100% gratuitos (desde finales de noviembre)",
+        "lat": 37.3886,
         "lng": -5.9953,
-        "image": "images/venues/sev-calle-sierpes-confiteria.jpg",
-        "imageAlt": "Bandeja de huesos de santo artesanos típicos de Todos los Santos y finales de octubre",
-        "content": "El epicentro de las meriendas de otoño y de la semana de Halloween en el centro de Sevilla está en la esquina de la calle Sierpes con la Plaza de la Campana. Fundada en 1885 y decorada con vidrieras modernistas y boiseries de caoba, la Confitería La Campana viste cada final de octubre sus escaparates combinando calabazas de chocolate, dulces decorados de Halloween para los más pequeños y las bandejas clásicas de Todos los Santos.\n\nPide mesa en su salón interior o en sus veladores exteriores para probar sus famosos huesos de santo elaborados a mano en su obrador (rellenos de yema, cidra, batata o praliné) y sus buñuelos de viento recién hechos acompañados de un café o chocolate caliente.",
-        "imageCredit": "Fuente: Instagram @confiterialacampana"
+        "image": "images/venues/sev-luces-navidad-avenida-constitucion.jpg",
+        "imageAlt": "Avenida de la Constitución de Sevilla iluminada con grandes motivos dorados de Navidad y el tranvía frente a la Catedral",
+        "imageCredit": "Fotografía: CarlosVdeHabsburgo / Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Al caer la tarde, continúa desde la Feria del Belén subiendo por la **Avenida de la Constitución**, donde las palmeras, las fachadas históricas y la portada de la Catedral se reflejan bajo los grandes árboles y esferas de luz dorada.\n\nA mitad de camino se abre la **Plaza de San Francisco**, que cada campaña navideña instala su gran estructura inmersiva de luz y sonido a los pies del Ayuntamiento renacentista con pases musicales cada media hora entre las 19:00 y las 21:30 h. Desde allí, toma en paralelo las calles peatonales **Sierpes** y **Tetuán** bajo su techo de guirnaldas iluminadas hasta la Plaza de la Campana, donde la histórica Confitería La Campana (1885) despacha sus primeras bandejas de polvorones, turrones a la piedra y yemas."
       },
       {
-        "heading": "Teterías árabes a la luz de las velas y salones de café en casas-palacio del Barrio de Santa Cruz",
-        "venue": "Teterías de la calle Aire y Mateos Gago y Salón del Hotel Alfonso XIII (San Fernando, 2)",
-        "location": "Alameda de Hércules, 30 (a 5 min de la Plaza del Duque y Calle Torneo)",
-        "price": "Entrada libre y gratuita al palacete y sus jardines",
-        "lat": 37.4005,
-        "lng": -5.9942,
-        "image": "images/venues/sev-palacete-de-la-casa-de-las-s-uniq.jpg",
-        "imageAlt": "Galería de arcos neomudéjares, columnas de mármol y azulejos sevillanos del salón de té y patio del Hotel Alfonso XIII en el centro de Sevilla",
-        "content": "Al caer la tarde, cuando los callejones encalados del Barrio de Santa Cruz —el escenario histórico donde transcurre la leyenda sevillana de Don Juan Tenorio en la víspera de Difuntos— se iluminan con faroles de forja, el mejor plan es refugiarse a tomar el té o un chocolate en el interior de sus casas-palacio.\n\nEn torno a la calle Aire, la calle Agua y la subida de Mateos Gago encontrarás íntimas teterías de estética andalusí y salones situados en antiguos patios mudéjares con columnas de mármol, fuentes centrales y azulejos de Triana, donde sirven té verde con hierbabuena en bandejas de latón labrado y pastelitos árabes de miel y almendra a la luz de las velas. Si buscas un salón palaciego en mayúsculas, la galería y el patio neomudéjar del Hotel Alfonso XIII (de acceso libre para tomar el café o la merienda sin estar alojado) ofrecen una atmósfera de época inigualable en pleno centro.",
-        "imageCredit": "Fuente: Instagram @hotelalfonsoxiii"
-      },
-      {
-        "heading": "Cafeterías creativas decoradas de Halloween, tartas de calabaza y ambiente nocturno en la Alameda y Calle Feria",
-        "venue": "Cafeterías y locales de la Alameda de Hércules y Calle Feria",
-        "location": "Alameda de Hércules y Calle Feria (Barrio de Feria / Macarena)",
-        "price": "Tarta de calabaza especiada, chai latte o cóctel de otoño: 4,80 € – 9,00 €",
-        "lat": 37.3991,
-        "lng": -5.9937,
-        "image": "images/venues/sev-alameda-hercules.jpg",
-        "imageAlt": "Cafetería creativa en la Calle Feria y Alameda de Hércules decorada con calabazas de Halloween, tarta de calabaza especiada y chai latte caliente",
-        "content": "Mientras el casco histórico clásico vive la tradición de Don Juan Tenorio, el eje alternativo de la Alameda de Hércules y la contigua Calle Feria es donde los cafés de especialidad, librerías-café y bares se vuelcan con la decoración de Halloween.\n\nDurante toda la semana hasta el 1 de noviembre encontrarás locales decorados con calabazas talladas, iluminación tenue, sesiones de música temática, tartas caseras de calabaza (*pumpkin pie*) y meriendas dulces a pocos metros de la iglesia mudéjar de Omnium Sanctorum y del Palacio de los Marqueses de la Algaba.",
-        "imageCredit": "Fuente: Instagram @parceria.cafe"
+        "heading": "3. Ruta de dulces de convento por los tornos de clausura (San Leandro, Santa Paula y el Alcázar)",
+        "venue": "Torno del Convento de San Leandro (Plaza de San Ildefonso, 1), Monasterio de Santa Paula y Muestra de Dulces de Conventos",
+        "location": "Plaza de San Ildefonso, 1 y Calle Santa Paula, 11 (Casco Antiguo de Sevilla)",
+        "price": "Cajas de yemas de San Leandro, pestiños, cortadillos de cidra o mantecados artesanos: 6,00 € – 14,00 €",
+        "lat": 37.3901,
+        "lng": -5.9869,
+        "image": "images/venues/sev-luces-navidad-centro-sierpes.jpg",
+        "imageAlt": "Calles peatonales del casco histórico de Sevilla decoradas con arcos y esferas de iluminación navideña al anochecer",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Una de las tradiciones más auténticas del otoño y la prenavidad sevillana es acercarse por la mañana o a primera hora de la tarde a los **tornos de madera de los conventos de clausura** (además de la famosa exposición anual de dulces conventuales en el Real Alcázar durante el Puente de diciembre).\n\nNo hace falta esperar a diciembre para girar el torno del **Convento de San Leandro** (Plaza de San Ildefonso, 1; horario habitual de 09:30 a 13:00 y de 17:00 a 19:00 h), donde las monjas agustinas elaboran desde el siglo XVI sus míticas **Yemas de San Leandro** en cajitas de madera atadas con cordel. A diez minutos a pie, en el **Monasterio de Santa Paula** (Calle Santa Paula, 11) y en **Santa Inés** (Calle Doña María Coronel, 5) podrás comprar mantecados caseros, polvorones, bollitos de Santa Inés, pestiños de miel y mermeladas artesanas."
       }
     ],
     "faqs": [
       {
-        "question": "¿Dónde comprar los mejores huesos de santo y buñuelos en Sevilla por Todos los Santos?",
-        "answer": "Además de la histórica Confitería La Campana (Calle Sierpes, 1), son célebres los obradores de La Despensa de Palacio, Ochoa en Sierpes y los tornos conventuales de Santa Paula y San Leandro."
+        "question": "¿En qué fechas abre la Feria del Belén de Sevilla junto a la Catedral?",
+        "answer": "La Feria del Belén de Sevilla abre ya desde la segunda semana de noviembre y permanece instalada en la calle Fray Ceferino González y la Avenida de la Constitución hasta el 23 de diciembre. Abre de lunes a viernes de 10:30 a 14:00 h y de 17:00 a 21:00 h, y los sábados, domingos y festivos de 11:00 a 15:00 h y de 16:30 a 21:30 h."
       },
       {
-        "question": "¿Se puede entrar a tomar café al patio del Hotel Alfonso XIII o a las teterías de Santa Cruz sin reserva previa?",
-        "answer": "Sí, tanto la cafetería del patio y galería del Hotel Alfonso XIII como las teterías del entorno de la calle Aire y el Barrio de Santa Cruz admiten clientes de paso para la merienda, aunque en las tardes del puente de Todos los Santos conviene acudir antes de las 18:00 h."
+        "question": "¿Cuándo se encienden las luces de Navidad en Sevilla en 2026?",
+        "answer": "El encendido oficial del alumbrado navideño de Sevilla (con casi 300 calles iluminadas y el espectáculo de luz y música de la Plaza de San Francisco) tiene lugar el último fin de semana de noviembre a partir de las 18:30 h."
+      },
+      {
+        "question": "¿Cómo se compran los dulces en el torno de un convento de clausura en Sevilla?",
+        "answer": "Entras al zaguán del convento en su horario de torno (por ejemplo, en San Leandro o Santa Inés), consultas la lista de dulces y precios colgada en la pared, dices en voz suave junto al cilindro giratorio de madera ('Ave María Purísima' o 'Buenos días') qué caja deseas, depositas el importe en el torno y la hermana lo gira de vuelta con tu caja recién envuelta."
       }
     ]
   },
   {
-    "id": "tol-cafeterias-subterraneas-y-hornos-decorados-halloween-toledo",
-    "slug": "cafeterias-subterraneas-y-hornos-decorados-halloween-toledo-casco-historico",
+    "id": "tol-navidad-en-toledo-luces-mercadillo-zocodover-ruta-mazapan-2026",
+    "slug": "navidad-en-toledo-luces-zocodover-y-ruta-mazapan-artesano",
     "articleType": "single_plan",
-    "title": "Cafeterías en bóvedas subterráneas y hornos de Halloween en Toledo: dónde merendar en el Casco Histórico",
-    "metaTitle": "Cafeterías en bóvedas subterráneas y hornos de Halloween en Toledo: dónde merendar en el Casco Histórico | Qué Plan Hoy",
-    "metaDescription": "Dónde merendar en Toledo en Halloween y Todos los Santos: cafeterías con cuevas y bóvedas medievales subterráneas, escaparates de Santo Tomé y termas romanas gratis.",
+    "title": "Navidad en Toledo 2026: luces, mercadillo y ruta del mazapán artesano",
+    "metaTitle": "Navidad en Toledo 2026: Luces, Zocodover y Ruta del Mazapán | Qué Plan Hoy",
+    "metaDescription": "Guía de Navidad en Toledo 2026: el túnel de luz de la Calle Comercio, el mercadillo de Zocodover y la Plaza del Ayuntamiento, la ruta de belenes y los obradores históricos donde comprar mazapán recién horneado.",
     "city": "Toledo",
-    "category": "Planes Diferentes",
-    "categoryIcon": "✨",
-    "readTime": "8 min",
-    "publishedAt": "2026-10-27",
-    "targetKeyword": "cafeterias halloween toledo sitios chulos merendar cuevas casco historico",
-    "searchVolume": "2.100 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (7/100)",
-    "image": "images/venues/tol-bovedas-subterraneas-cafe.jpg",
-    "imageAlt": "Cafetería subterránea bajo bóvedas medievales de ladrillo del siglo XIII en el Casco Histórico de Toledo con chocolate caliente, mazapán y velas",
-    "imageCredit": "Fuente: Instagram @cerveceriaabadia",
-    "excerpt": "En Toledo no hace falta cartón piedra para vivir Halloween: muchas de las cafeterías, teterías y salones del Casco Histórico esconden en su planta baja auténticas cuevas mudéjares, aljibes y bóvedas subterráneas del siglo XIII donde tomar un chocolate caliente o probar los huesos de santo recién horneados.",
-    "priceRange": "3,80 € – 9,00 €",
+    "category": "Gratis y Baratos",
+    "categoryIcon": "💸",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-10",
+    "targetKeyword": "navidad en toledo 2026 luces mercadillo zocodover donde comprar mazapan",
+    "searchVolume": "6.100 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (10/100)",
+    "image": "images/venues/tol-catedral-noche-navidad-hero.jpg",
+    "imageAlt": "Torre y fachada gótica de la Catedral Primada de Santa María de Toledo iluminada de noche en la Plaza del Ayuntamiento",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+    "excerpt": "Ninguna ciudad huele tanto a almendra tostada y miel en noviembre y diciembre como Toledo: te contamos cuándo arrancan el encendido de luces de Zocodover y el mercadillo navideño frente a la Catedral, y te trazamos la ruta a pie por los obradores centenarios y conventos donde comprar el auténtico mazapán con IGP recién salido del horno.",
+    "priceRange": "100% Gratis (Figuritas de mazapán desde 3,50 €)",
     "neighborhoods": [
-      "Plaza de Zocodover",
-      "Amador de los Ríos / San Ginés",
-      "Barrio de los Conventos",
-      "Judería"
+      "Plaza de Zocodover / Calle Comercio",
+      "Plaza del Ayuntamiento / Catedral",
+      "Calle Santo Tomé",
+      "Zona Conventual (San Clemente / Santo Domingo)"
     ],
     "affiliate": {
-      "title": "Ruta Guiada por el Toledo Subterráneo: Cuevas, Termas y Aljibes",
-      "badge": "Para seguir bajo tierra al anochecer",
-      "description": "Si te ha fascinado merendar bajo las bóvedas medievales de ladrillo, completa la tarde bajando con un guía oficial a los subterráneos cerrados al público general en el casco histórico.",
-      "price": "Desde 14 € por persona",
-      "url": "https://www.civitatis.com/es/toledo/toledo-subterraneo/",
-      "ctaText": "Ver horarios del Toledo Subterráneo →"
+      "partner": "Tiqets",
+      "badge": "Frente al mercado navideño",
+      "title": "Entrada a la Catedral Primada de Toledo",
+      "description": "En la misma Plaza del Ayuntamiento donde se instala el mercado navideño: visita el Transparente barroco, la Sacristía con obras de El Greco y el Tesoro Mayor.",
+      "price": "Desde 12,50 € entrada completa",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c66346%2F",
+      "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": false,
     "sections": [
       {
-        "heading": "Merendar bajo tierra en el Casco Histórico: cafeterías con cuevas medievales y teterías árabes entre Zocodover y San Ginés",
-        "venue": "Cafeterías con sótanos abovedados del entorno de Zocodover, Calle Comercio y teterías de la Magdalena",
-        "location": "Plaza de Zocodover, Plaza de la Magdalena y Cuesta de los Pascuales (Casco Histórico de Toledo)",
-        "price": "Café especial, té moruno con pastas de almendra o chocolate espeso: 3,80 € – 7,50 €",
+        "heading": "1. El encendido navideño de la Plaza de Zocodover, el túnel de luz de Calle Comercio y el Mercado de la Plaza del Ayuntamiento",
+        "venue": "Plaza de Zocodover, Calle Comercio (Cuatro Calles) y Mercado Navideño de la Plaza del Ayuntamiento",
+        "location": "Plaza de Zocodover y Plaza del Ayuntamiento (Casco Histórico de Toledo)",
+        "price": "Recorrido por el alumbrado, espectáculos musicales y mercadillo 100% gratuitos (desde el último viernes de noviembre)",
         "lat": 39.8594,
-        "lng": -4.0214,
-        "image": "images/venues/tol-plaza-zocodover-noche.jpg",
-        "imageAlt": "Tetería subterránea en una cueva mudéjar con arcos de herradura y lámparas de cristal de colores junto a la Plaza de Zocodover en Toledo",
-        "content": "El secreto mejor guardado de la hostelería del Casco Histórico de Toledo está bajo sus suelos: al estar edificada sobre restos romanos, visigodos y mudéjares, varias cafeterías, gastrobares y teterías situadas entre la Plaza de Zocodover, la Plaza de la Magdalena y el Callejón de San Ginés conservan en su planta inferior auténticas bóvedas de ladrillo medieval y muros de sillería.\n\nEn la semana de Halloween, bajar por sus escaleras de piedra para tomar un té especiado con dulces árabes a la luz de los faroles de cristal o un chocolate caliente bajo arcos del siglo XIII ofrece una experiencia mucho más auténtica que cualquier local temático moderno.",
-        "imageCredit": "Fuente: Instagram @teteriadarlachica"
+        "lng": -4.0213,
+        "image": "images/venues/tol-plaza-zocodover-mercadillo-navidad.jpg",
+        "imageAlt": "Vista de la histórica Plaza de Zocodover y el Arco de la Sangre en el corazón del Casco Histórico de Toledo",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Desde el último fin de semana de noviembre, el eje histórico que une la **Plaza de Zocodover** con la **Catedral Primada** se viste de gala al caer la tarde (18:00 h). En Zocodover se instalan el gran arco y árbol luminoso junto al tiovivo infantil y los puestos de castañas asadas y garrapiñadas, desde donde arranca el **túnel de luz y sonido de la Calle Comercio** (Hombre de Palo y Cuatro Calles).\n\nAl desembocar en la **Plaza del Ayuntamiento**, entre el Palacio Arzobispal, el Consistorio y la fachada gótica de la Catedral, se despliega el **Mercado Navideño de Toledo**, con casetas de madera de artesanía, gastronomía local, talleres infantiles y el Belén monumental frente a la Puerta Llana."
       },
       {
-        "heading": "Escaparates de otoño, huesos de santo y mazapán caliente en Santo Tomé (desde 1856) y los hornos conventuales",
-        "venue": "Obrador de Santo Tomé (Plaza de Zocodover, 7 y Calle Santo Tomé, 3) y Torno de San Clemente",
-        "location": "Plaza de Zocodover, 7 (junto al Arco de la Sangre) y Calle San Clemente, 1",
-        "price": "Bandeja de huesos de santo artesanos y figuritas de mazapán: desde 4,80 €",
-        "lat": 39.8588,
-        "lng": -4.0279,
-        "image": "images/venues/tol-mazapan-huesos-santo.jpg",
-        "imageAlt": "Mostrador de mármol de un obrador centenario de Toledo con figuritas de mazapán artesanal, huesos de santo glaseados, castañas asadas y café",
-        "content": "Justo al lado del Arco de la Sangre en Zocodover y en el corazón de la Judería, el histórico obrador de Santo Tomé (fundado en 1856) y las confiterías centenarias de la ciudad cambian sus escaparates en los últimos días de octubre para dar protagonismo a los dulces de Todos los Santos y la Noche de Difuntos.\n\nAquí los huesos de santo se elaboran con auténtica pasta de mazapán toledano de almendra mediterránea y se rellenan a mano con dulce de yema, cabello de ángel, chocolate o batata. Puedes pedirlos para tomar con café en sus salones o comprarlos recién salidos del torno de madera en el vecino Convento de San Clemente.",
-        "imageCredit": "Fuente: Instagram @mazapanessantotome"
+        "heading": "2. Ruta de obradores centenarios de Mazapán de Toledo: Santo Tomé (1856), San Telesforo (1806) y Casa Rodrigo",
+        "venue": "Obrador Santo Tomé (Plaza de Zocodover, 7 y Calle Santo Tomé, 3) y Confitería San Telesforo (Plaza de Zocodover, 8)",
+        "location": "Plaza de Zocodover, 7-8 y Calle de Santo Tomé, 3 (Judería / Santo Tomé)",
+        "price": "Anguilas de mazapán, figuritas al peso, marquesas y pasteles de yema: desde 3,50 € los 100 g",
+        "lat": 39.8569,
+        "lng": -4.0283,
+        "image": "images/venues/tol-mazapan-artesano-obrador-navidad.jpg",
+        "imageAlt": "Calle histórica de Santo Tomé en Toledo, sede del obrador centenario de mazapán Santo Tomé fundado en 1856",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Noviembre es el mejor mes del año para comprar **Mazapán de Toledo con Indicación Geográfica Protegida (IGP)** porque los obradores hornean a diario la nueva campaña de almendra mediterránea sin las largas colas del puente de diciembre. La normativa del auténtico mazapán toledano exige al menos un 50% de almendra pelada y azúcares naturales, sin conservantes ni fécula.\n\nEmpieza en **Santo Tomé** (fundado en 1856, con obrador histórico en la calle Santo Tomé, 3 y tienda en Zocodover, 7), donde moldean y pintan con huevo una a una sus figuritas, las tradicionales **anguilas de mazapán rellenas de yema y cabello de ángel**, los huesos de santo y las *marquesas* de almendra. Justo al lado, en los soportales de Zocodover, 8, **San Telesforo** (1806, el obrador de mazapán más antiguo de España) sirve además su famoso helado y turrón de mazapán artesano."
       },
       {
-        "heading": "Cafés-mirador al anochecer, chocolaterías históricas y dulces conventuales entre el Alcázar y Santo Domingo el Antiguo",
-        "venue": "Cafés-mirador del Casco Histórico, chocolaterías de Zocodover y torno del Convento de San Clemente",
-        "location": "Plaza Amador de los Ríos, s/n y Plaza de Santo Domingo el Antiguo (a 3 min de la Catedral)",
-        "price": "Acceso 100% gratuito (Rutas del Patrimonio Desconocido del Consorcio de Toledo)",
-        "lat": 39.8579,
-        "lng": -4.0246,
-        "image": "images/venues/tol-santo-domingo-antiguo-plaza.jpg",
-        "imageAlt": "Terraza acristalada de un café-mirador al anochecer en Toledo con chocolate con churros, dulces de convento, farolillo y vistas a la Catedral y el Alcázar iluminados",
-        "content": "Para cerrar la ruta de meriendas cuando cae la noche sobre las callejuelas empedradas y empiezan a pasar los grupos de las rutas nocturnas de brujas y templarios, sube hacia las terrazas acristaladas y cafés-mirador situados en las cornisas del Casco Histórico y el entorno del Alcázar.\n\nTomar una taza de chocolate espeso a la española con churros recién hechos o una infusión caliente junto a un farolillo mientras se encienden la aguja gótica de la Catedral Primada y las cuatro torres del Alcázar sobre el cañón del río Tajo es uno de los planes con más encanto del otoño toledano. Si prefieres llevarte dulces artesanos a casa antes de que cierren a las 19:00 h, acércate a las silenciosas plazuelas de San Clemente y Santo Domingo el Antiguo para comprar mazapanes y pastas de almendra directamente en los tornos conventuales.",
-        "imageCredit": "Fuente: Instagram @paradores"
+        "heading": "3. Esculturas gigantes de mazapán y compra en los tornos de los conventos de San Clemente y Santo Domingo el Antiguo",
+        "venue": "Escaparates monumentales de mazapán y Convento de San Clemente el Real (Calle San Clemente, 1)",
+        "location": "Calle de Santo Tomé y Plaza de Padilla / Calle San Clemente, 1 (Zona Conventual)",
+        "price": "Visita a los escaparates escultóricos de mazapán: Gratis · Cajas de mazapán de convento: 7,50 € – 15,00 €",
+        "lat": 39.8592,
+        "lng": -4.0268,
+        "image": "images/venues/tol-escultura-mazapan-quijote-santo-tome.jpg",
+        "imageAlt": "Escultura de Don Quijote de la Mancha modelada íntegramente en pasta de mazapán artesano en un obrador histórico de Toledo",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Además de probar las figuritas recién doradas al horno, no dejes de asomarte a los escaparates de los maestros confiteros del Casco Histórico, donde se exhiben **auténticas esculturas a tamaño natural modeladas íntegramente con cientos de kilos de pasta de mazapán**, desde la figura de Don Quijote de la Mancha hasta reproducciones de puertas monumentales de Toledo.\n\nPara rematar la ruta en silencio lejos del bullicio comercial, camina cinco minutos hasta la zona conventual: en el **Monasterio Cisterciense de San Clemente el Real** (donde la tradición sitúa el origen del mazapán en 1212) y en el **Torno de Santo Domingo el Antiguo** (Plaza de Santo Domingo el Antiguo, s/n) podrás adquirir cajas de mazapán, pastas de almendra y dulces navideños elaborados por las religiosas y por la Asociación de Amigos de los Conventos de Toledo."
       }
     ],
     "faqs": [
       {
-        "question": "¿En qué zonas del Casco Histórico de Toledo están las cafeterías y teterías con cuevas subterráneas?",
-        "answer": "Se concentran principalmente entre la Plaza de Zocodover, la calle Comercio, la Plaza de la Magdalena (antiguo zoco árabe) y las callejuelas que suben hacia San Ginés y el Alcázar, donde los locales conservan aljibes y sótanos abovedados medievales."
+        "question": "¿Cuándo se encienden las luces de Navidad y abre el mercadillo de la Plaza del Ayuntamiento en Toledo en 2026?",
+        "answer": "El encendido oficial de las luces de Navidad de Toledo (Zocodover, Calle Comercio, Cuatro Calles y Puerta de Bisagra) y la apertura del Mercado Navideño de la Plaza del Ayuntamiento tienen lugar el último viernes de noviembre (27 de noviembre de 2026), manteniéndose activos durante todo diciembre hasta el 6 de enero."
       },
       {
-        "question": "¿Se fabrican huesos de santo sin gluten en los obradores de Toledo?",
-        "answer": "Al elaborarse la base tradicional del hueso de santo y del mazapán toledano exclusivamente con almendra molida, azúcar y huevo (sin harina de trigo), muchos obradores cuentan con variedades aptas, aunque siempre conviene consultar la trazabilidad en mostrador."
+        "question": "¿Cómo distinguir el auténtico Mazapán de Toledo artesano del industrial?",
+        "answer": "El auténtico Mazapán de Toledo lleva el sello oficial de la IGP Mazapán de Toledo y se elabora únicamente con almendra dulce repelada (mínimo un 50% del peso total), azúcar y miel, dándole un baño de huevo antes de hornearlo a fuerte temperatura durante apenas unos minutos para que quede dorado por fuera y tierno y húmedo por dentro."
+      },
+      {
+        "question": "¿Dónde aparcar gratis si vas en coche a ver las luces y comprar mazapán en Toledo?",
+        "answer": "La mejor opción es dejar el coche en el aparcamiento gratuito de Safont (junto a la estación de autobuses) o en el del Paseo de la Rosa (frente a la estación de tren) y subir gratis al Casco Histórico por los remontes mecánicos de Safont o Recaredo."
       }
     ]
   }

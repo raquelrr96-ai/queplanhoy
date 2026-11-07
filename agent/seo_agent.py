@@ -1093,6 +1093,27 @@ def run_wednesday_weekend_all_cities() -> list:
   return published
 
 
+def run_sunday_scheduled_articles() -> list:
+  """Publica el domingo los 5 artículos extensos programados (1 por ciudad: Ruta + Cocido/Cuchara) en data/scheduled_sunday_articles.json."""
+  sched_file = os.path.join(BASE_DIR, "data", "scheduled_sunday_articles.json")
+  scheduled = load_json(sched_file)
+  if not scheduled:
+    return []
+  existing_articles = load_json(ARTICLES_FILE)
+  existing_slugs = {a.get("slug") for a in existing_articles}
+  today_str = date.today().isoformat()
+  published = []
+  for art in reversed(scheduled):
+    art["publishedAt"] = today_str
+    if art.get("slug") not in existing_slugs:
+      existing_articles.insert(0, art)
+      published.append(art)
+  if published:
+    save_json(ARTICLES_FILE, existing_articles)
+  build_site.build_all()
+  return list(reversed(published))
+
+
 def run_tuesday_scheduled_articles() -> list:
   """Publica el martes los 5 artículos extensos programados (1 por ciudad) en data/scheduled_tuesday_articles.json."""
   sched_file = os.path.join(BASE_DIR, "data", "scheduled_tuesday_articles.json")
@@ -1142,11 +1163,17 @@ if __name__ == "__main__":
       description="Agente SEO Generador de Artículos para HoyQuePlan"
   )
   parser.add_argument(
+      "--sunday-batch",
+      dest="sunday_batch",
+      action="store_true",
+      help="Publica el domingo los 5 reportajes programados (1 por ciudad: Ruta + Cocido/Cuchara)",
+  )
+  parser.add_argument(
       "--tuesday-barrancas",
       "--tuesday-batch",
       dest="tuesday_batch",
       action="store_true",
-      help="Publica el martes los 5 reportajes programados (1 por ciudad)",
+      help="Publica el martes los 5 reportajes programados (1 por ciudad: Mercadillos de Navidad)",
   )
   parser.add_argument(
       "--thursday-batch",
@@ -1155,9 +1182,11 @@ if __name__ == "__main__":
   )
   parser.add_argument(
       "--wednesday-all-cities",
+      "--thursday-weekend-all-cities",
+      dest="wednesday_all_cities",
       action="store_true",
       help=(
-          "Publica todos los miércoles los planes de 'Este Fin de Semana'"
+          "Publica las guías de 'Este Fin de Semana'"
           " para las 5 ciudades (Madrid, Barcelona, Valencia, Sevilla y Toledo)"
       ),
   )
@@ -1186,7 +1215,11 @@ if __name__ == "__main__":
   )
   args = parser.parse_args()
 
-  if args.tuesday_batch:
+  if args.sunday_batch:
+    arts = run_sunday_scheduled_articles()
+    for a in arts:
+      print(f"[OK] [{a['city']}] Reportaje del domingo publicado: {a['title']}")
+  elif args.tuesday_batch:
     arts = run_tuesday_scheduled_articles()
     for a in arts:
       print(f"[OK] [{a['city']}] Reportaje del martes publicado: {a['title']}")
