@@ -1,5 +1,450 @@
 [
   {
+    "id": "madrid-ruta-otono-y-cocido-madrileno-puchero-barro",
+    "slug": "ruta-otono-y-cocido-madrileno-el-escorial-tabernas-historicas",
+    "articleType": "single_plan",
+    "title": "Ruta de otoño y cocido madrileño: paseo real y puchero en tres vuelcos",
+    "metaTitle": "Ruta de otoño y cocido madrileño: paseo y tabernas históricas | Qué Plan Hoy",
+    "metaDescription": "El plan de domingo perfecto en Madrid: caminata matinal entre castaños por el Bosque de La Herrería (El Escorial) o el Madrid de los Austrias y dónde comer cocido madrileño en puchero de barro (Charolés, La Bola y Malacatín).",
+    "city": "Madrid",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-08",
+    "targetKeyword": "ruta otono y donde comer cocido madrileno madrid el escorial la bola",
+    "searchVolume": "6.800 búsquedas/mes",
+    "keywordDifficulty": "Baja (14/100)",
+    "image": "images/venues/madrid-cocido-madrileno-puchero-hero.jpg",
+    "imageAlt": "Puchero y bandeja tradicional de cocido madrileño completo con garbanzos, verduras, chorizo, morcilla y carnes",
+    "imageCredit": "Fotografía: Tamorlan / Wikimedia Commons (CC BY-SA 3.0)",
+    "excerpt": "Nada sienta mejor un domingo de noviembre que combinar dos horas de caminata entre hojas secas con un gran plato de cuchara: te proponemos la ruta circular por el Bosque de La Herrería en San Lorenzo de El Escorial (o el paseo histórico por el Madrid de los Austrias) seguida de las tres mejores casas de cocido madrileño en puchero de barro y brasas de encina.",
+    "priceRange": "Ruta Gratis · Cocido: 23 € – 36 €",
+    "neighborhoods": [
+      "San Lorenzo de El Escorial",
+      "Madrid de los Austrias / Ópera",
+      "La Latina",
+      "Barrio de Salamanca"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar la mañana real",
+      "title": "Entrada al Real Monasterio de San Lorenzo de El Escorial",
+      "description": "Antes de sentarte a la mesa a tomar el cocido, recorre sin colas el Palacio de los Austrias, la Biblioteca Real con frescos renacentistas y el Panteón de los Reyes.",
+      "price": "Desde 14 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Caminata matinal entre robles y castaños por el Bosque de La Herrería hasta la Silla de Felipe II (10:30 h)",
+        "venue": "Bosque de La Herrería y Mirador de la Silla de Felipe II (San Lorenzo de El Escorial)",
+        "location": "Subida desde la Ermita de Nuestra Señora de Gracia / Paseo de Carlos III (Cercanías C-8a o Bus 661 y 664 desde Moncloa)",
+        "price": "Ruta senderista 100% gratuita (5,2 km ida y vuelta · dificultad baja)",
+        "lat": 40.5762,
+        "lng": -4.1531,
+        "image": "images/venues/madrid-bosque-herreria-escorial-otono.jpg",
+        "imageAlt": "Vista panorámica otoñal del Real Monasterio de San Lorenzo de El Escorial rodeado por el robledal del Bosque de La Herrería",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Para abrir el apetito antes de un cocido completo, ningún recorrido otoñal supera el **Bosque de La Herrería**, a los pies del Monasterio de San Lorenzo de El Escorial. A mediados de noviembre, los robles melojos, fresnos y castaños centenarios tiñen todo el valle de tonos ocres y cobrizos.\n\nEl sendero señalizado arranca junto a los Jardines de los Frailes y asciende suavemente bajo la arboleda hasta las gradas graníticas de la **Silla de Felipe II**, desde donde se contempla la fachada herreriana del monasterio y todo el perfil de la Sierra de Guadarrama. El paseo completo lleva unas dos horas a ritmo tranquilo, ideal para regresar al casco histórico de San Lorenzo o bajar de nuevo al centro de Madrid a las 13:30 h."
+      },
+      {
+        "heading": "2. Cocido en puchero de barro individual sobre carbón de encina en Taberna La Bola (Ópera) o El Charolés (El Escorial)",
+        "venue": "Taberna La Bola (Calle de la Bola, 5) y Restaurante Charolés (Calle Floridablanca, 24 · El Escorial)",
+        "location": "Calle de la Bola, 5 (Metro: Santo Domingo L2 / Ópera L2, L5) y Calle Floridablanca, 24 en San Lorenzo de El Escorial",
+        "price": "Cocido en puchero de barro en La Bola: 25,00 € · Cocido completo en Charolés (lunes, miércoles y viernes) o tabernas serranas: 28,00 € – 38,00 €",
+        "lat": 40.4202,
+        "lng": -3.7103,
+        "image": "images/venues/madrid-taberna-la-bola-cocido.jpg",
+        "imageAlt": "Fachada roja tradicional de la centenaria Taberna La Bola en la esquina de la calle de la Bola de Madrid",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Si decides bajar a comer al Madrid de los Austrias tras un paseo por los Jardines del Campo del Moro y la Plaza de Oriente, **Taberna La Bola** (fundada en 1870 en la calle de la Bola, 5) mantiene intacto el ritual más famoso de la ciudad: cada ración de cocido se cocina de forma individual durante más de cuatro horas en un **pequeño puchero de barro rojo arrimado a las brasas de carbón de encina**.\n\nEl camarero vuelca primero en tu plato hondo el caldo dorado con fideos finos y guindilla con cebolleta, y a continuación sirve los garbanzos de Fuentesaúco con repollo, patata, morcilla, chorizo, tocino ibérico, gallina y morcillo. Si prefieres quedarte a comer arriba en San Lorenzo de El Escorial tras la ruta por La Herrería, tanto las terrazas acristaladas de la **Calle Floridablanca** (con el histórico **Charolés** como templo de referencia) como mesones clásicos de la Plaza de la Constitución sirven cocidos serranos humeantes frente al Monasterio."
+      },
+      {
+        "heading": "3. Los tres vuelcos castizos en La Latina y Salamanca: Malacatín (1895) y Casa Carola",
+        "venue": "Restaurante Malacatín (Calle de la Ruda, 5) y Casa Carola (Calle de Padilla, 54)",
+        "location": "Calle de la Ruda, 5 (Metro: La Latina - L5) y Calle de Padilla, 54 (Metro: Núñez de Balboa / Diego de León)",
+        "price": "Cocido completo en Malacatín: 24,50 € · Menú de cocido en tres vuelcos con copa de cava en Casa Carola: 34,90 €",
+        "lat": 40.4106,
+        "lng": -3.7082,
+        "image": "images/venues/madrid-malacatin-vuelcos-cocido.jpg",
+        "imageAlt": "Bandeja de cocido madrileño tradicional servida con garbanzos castellanos, repollo rehogado, chorizo, morcilla y morcillo",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Para quienes prefieren combinar una mañana de domingo paseando por el Rastro, las Vistillas y el Jardín del Príncipe de Anglona con una taberna centenaria, **Malacatín** (Calle de la Ruda, 5, abierta desde 1895) es toda una institución de La Latina. Aquí el cocido se presenta en nueve fuentes rebosantes donde no faltan las manitas de cerdo, el codillo, el relleno (la pelota de miga de pan, huevo, ajo y perejil) y su famosa salsa de tomate con comino.\n\nOtra alternativa impecable tras caminar por el Parque de El Retiro es **Casa Carola** (Calle de Padilla, 54, en el Barrio de Salamanca), donde te colocan el babero oficial y te sirven el cocido en **tres vuelcos al centro de la mesa para repetir cuantas veces quieras**, empezando con una copa de cava y croqueta de cocido de bienvenida."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Con cuánta antelación hay que reservar para comer cocido madrileño en domingo?",
+        "answer": "En tabernas históricas como La Bola (turnos a las 13:00 y 15:00 h), Malacatín (lunes a sábado) o Casa Carola (abierta todos los días de la semana en temporada de frío), conviene reservar mesa entre 4 y 7 días antes, ya que en noviembre y diciembre los turnos de mediodía se agotan rápido."
+      },
+      {
+        "question": "¿Cómo llegar en transporte público a la ruta del Bosque de La Herrería en El Escorial?",
+        "answer": "Los autobuses interurbanos 661 y 664 salen cada 15-20 minutos desde el Intercambiador de Moncloa y te dejan en 50 minutos en la estación de autobuses de San Lorenzo de El Escorial, a 5 minutos a pie del Monasterio y del inicio de la senda hacia la Silla de Felipe II."
+      },
+      {
+        "question": "¿Qué incluyen exactamente los tres vuelcos del cocido madrileño?",
+        "answer": "El primer vuelco es la sopa de fideos finos (cabello de ángel) colada del caldo de cocción; el segundo vuelco reúne los garbanzos junto con la verdura (repollo rehogado con ajo y pimentón, patata y zanahoria); y el tercer vuelco presenta las carnes o viandas (morcillo de ternera, gallina, tocino, chorizo, morcilla, punta de jamón y el tradicional relleno o pelota)."
+      }
+    ]
+  },
+  {
+    "id": "bcn-ruta-collserola-montjuic-escudella-i-carn-d-olla-barcelona",
+    "slug": "ruta-otono-y-donde-comer-escudella-i-carn-d-olla-barcelona",
+    "articleType": "single_plan",
+    "title": "Ruta de otoño en Barcelona y dónde comer escudella i carn d'olla tradicional",
+    "metaTitle": "Ruta de otoño y dónde comer escudella i carn d'olla en Barcelona | Qué Plan Hoy",
+    "metaDescription": "El mejor plan de cuchara y senderismo en Barcelona: caminata matinal por la Carretera de les Aigües (Collserola) y casas históricas donde comer escudella i carn d'olla, pilota y fricandó (Can Culleretes, Ca l'Estevet y Gelida).",
+    "city": "Barcelona",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-08",
+    "targetKeyword": "donde comer escudella i carn d olla barcelona ruta collserola can culleretes",
+    "searchVolume": "4.900 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (12/100)",
+    "image": "images/venues/bcn-escudella-carn-dolla-hero.jpg",
+    "imageAlt": "Plato hondo humeante de escudella catalana tradicional con galets rellenos y caldo de carn d'olla en Barcelona",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+    "excerpt": "Cuando bajan las temperaturas en noviembre, Barcelona recupera su gran ritual de cuchara: la escudella amb galets y la carn d'olla con pilota. Te proponemos empezar la mañana caminando por el balcón natural de la Carretera de les Aigües en Collserola y bajar en funicular directo a las fondas centenarias del Gòtic, el Raval y el Eixample.",
+    "priceRange": "Ruta Gratis · Escudella / Cuchara: 14 € – 26 €",
+    "neighborhoods": [
+      "Collserola / Vallvidrera",
+      "Barri Gòtic",
+      "El Raval / Ciutat Vella",
+      "Eixample Esquerra"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el domingo",
+      "title": "Entrada sin Colas al Palau de la Música Catalana",
+      "description": "Después de comer en las fondas históricas del centro, visita a pocos minutos a pie la joya modernista de Domènech i Montaner y su impresionante claraboya de cristal.",
+      "price": "Desde 18 € visita oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Caminata panorámica de mañana por la Carretera de les Aigües en la Serra de Collserola (10:30 h)",
+        "venue": "Paseo de la Carretera de les Aigües y Mirador dels Xiprers (Parque Natural de Collserola)",
+        "location": "Estación Carretera de les Aigües (Funicular de Vallvidrera desde Peu del Funicular - FGC L6 / S1 / S2)",
+        "price": "Ruta a pie 100% gratuita (solo billete integrado T-Casual de FGC + Funicular)",
+        "lat": 41.4143,
+        "lng": 2.1187,
+        "image": "images/venues/bcn-carretera-les-aigues-collserola.jpg",
+        "imageAlt": "Sendero llano entre pinos de la Carretera de les Aigües en la sierra de Collserola con vistas a la ciudad de Barcelona y el mar",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Para disfrutar de la montaña sin salir de Barcelona y llegar con hambre a la hora de la comida, toma los Ferrocarrils de la Generalitat (FGC) en Plaça Catalunya hasta Peu del Funicular y sube un tramo en el Funicular de Vallvidrera hasta el apeadero de **Carretera de les Aigües**.\n\nEste antiguo trazado de conducciones de agua discurre completamente llano a unos 400 metros de altitud a lo largo de la ladera de **Collserola**, entre pinos carrascos y encinas, regalando la panorámica más limpia de toda la cuadrícula del Eixample, la Sagrada Família, Montjuïc y el Mediterráneo al fondo. En hora y media puedes completar el tramo hasta el Mirador dels Xiprers o Sant Pere Màrtir y regresar en tren directo al centro histórico antes de las 13:30 h."
+      },
+      {
+        "heading": "2. Escudella barrejada, galets con pilota y canelones en Can Culleretes (1786) y Ca l'Estevet",
+        "venue": "Restaurante Can Culleretes (Carrer d'en Quintana, 5) y Ca l'Estevet (Carrer de Valldonzella, 46)",
+        "location": "Carrer d'en Quintana, 5 (Metro: Liceu - L3) y Carrer de Valldonzella, 46 (Metro: Universitat - L1, L2)",
+        "price": "Escudella / plato de cuchara: 12,50 € – 18,00 € · Menú tradicional completo: 26,00 € – 32,00 €",
+        "lat": 41.3806,
+        "lng": 2.1746,
+        "image": "images/venues/bcn-can-culleretes-interior.jpg",
+        "imageAlt": "Comedor histórico con pinturas costumbristas y azulejos en Can Culleretes, el restaurante más antiguo de Barcelona (1786)",
+        "imageCredit": "Fotografía: Enfo / Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Al bajar en FGC hasta Catalunya o Liceu, adéntrate en las callejuelas del Gòtic hasta el Carrer d'en Quintana, 5, donde abre sus puertas **Can Culleretes**, fundado en 1786 y reconocido como el restaurante en activo más antiguo de Cataluña. Bajo sus comedores decorados con grandes lienzos costumbristas del siglo XIX y fotografías firmadas, en los meses fríos sirven la auténtica **escudella i carn d'olla** de larga cocción, seguida de sus famosos canelones trufados o *civet* de jabalí.\n\nA diez minutos caminando hacia el Raval alto, **Ca l'Estevet** (Carrer de Valldonzella, 46, abierto desde 1890) mantiene la misma devoción por la cocina catalana de temporada: manteles de cuadros, caldo reconfortante con *galets* y *pilota* (la gran albóndiga especiada de cerdo y ternera con ajo y perejil), y bacalao a la llauna."
+      },
+      {
+        "heading": "3. Fricandó con setas de otoño, capipota y guisos a precios populares en Bodega Gelida",
+        "venue": "Restaurant Gelida (Carrer de la Diputació, 133) y casas de comidas del Eixample Esquerra",
+        "location": "Carrer de la Diputació, 133 (Metro: Urgell - L1 / Rocafort - L1)",
+        "price": "Medias raciones y platos de cuchara / guisos caseros: 6,50 € – 13,50 €",
+        "lat": 41.3821,
+        "lng": 2.1563,
+        "image": "images/venues/bcn-carn-dolla-tradicional-plato.jpg",
+        "imageAlt": "Cazuela y plato tradicional de cuchara catalán con carnes tiernas, garbanzos, verduras de temporada y caldo",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Si buscas un templo de cuchara y guiso catalán con precios de casa de comidas de toda la vida (entre 6 y 13 € el plato), el **Restaurant Gelida** (Carrer de la Diputació, 133, fundado en 1946 rodeado de enormes botas de vino de madera) es una parada imprescindible entre semana y los sábados.\n\nSu pizarra cambia a diario con guisos melosos que saben a hogar: **fricandó de ternera con moixernons** (setas de temporada), *capipota* con garbanzos, estofado de ternera con alcachofas, albóndigas con sepia y alubias de Santa Pau con butifarra esparracada, siempre acompañados de pan de payés con tomate y vino a granel en porrón."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Qué diferencia hay entre la escudella amb galets y la carn d'olla?",
+        "answer": "Forman parte de un mismo cocido tradicional catalán en dos vuelcos: primero se sirve la escudella (el caldo concentrado cocido con huesos, verduras y carnes al que se añaden los galets o caracolas de pasta y un poco de arroz y garbanzos), y en una fuente aparte o dentro del plato se sirve la carn d'olla (la pilota o albóndiga alargada, butifarra negra y blanca, morcillo, gallina, oreja, col y patata)."
+      },
+      {
+        "question": "¿Es necesario reservar en Can Culleretes o Ca l'Estevet en fin de semana?",
+        "answer": "Sí, especialmente para los turnos de mediodía de viernes, sábado y domingo en noviembre y diciembre. Can Culleretes cierra los lunes y permite reservar turno por teléfono o desde su web; en Restaurant Gelida (abierto de lunes a sábado) te recomendamos acudir a las 13:00 h en punto."
+      },
+      {
+        "question": "¿Cuánto se tarda en llegar desde Plaça Catalunya a la Carretera de les Aigües?",
+        "answer": "Apenas 20 minutos: tomas las líneas S1 o S2 de FGC en Plaça Catalunya hasta la estación Peu del Funicular (12 minutos) y allí mismo enlazas sin salir de la estación con el Funicular de Vallvidrera, bajando en la parada intermedia Carretera de les Aigües."
+      }
+    ]
+  },
+  {
+    "id": "vlc-ruta-albufera-el-palmar-all-i-pebre-arroz-caldoso-valencia",
+    "slug": "ruta-albufera-y-donde-comer-arroz-caldoso-y-all-i-pebre-valencia",
+    "articleType": "single_plan",
+    "title": "Ruta por la Albufera y dónde comer arroz caldoso y all i pebre en El Palmar",
+    "metaTitle": "Ruta por la Albufera y dónde comer arroz caldoso y all i pebre en Valencia | Qué Plan Hoy",
+    "metaDescription": "Plan redondo de otoño en Valencia: ruta a pie entre pinares y lagunas por la Devesa del Saler y dónde comer auténtico all i pebre en cazuela de barro y arròs amb fesols i naps en El Palmar.",
+    "city": "Valencia",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-08",
+    "targetKeyword": "ruta albufera y donde comer all i pebre y arroz caldoso el palmar valencia",
+    "searchVolume": "5.400 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (11/100)",
+    "image": "images/venues/vlc-all-i-pebre-cazuela-hero.jpg",
+    "imageAlt": "Cazuela de barro humeante de auténtico all i pebre tradicional servido en un restaurante de El Palmar junto a la Albufera de Valencia",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "Noviembre es el mes perfecto para descubrir la Albufera sin el calor del verano y sentarse a comer de cuchara frente a los canales: empieza la mañana recorriendo el sendero botánico de la Devesa del Saler y la Gola de Pujol, y entra en calor en El Palmar con una cazuela de barro de all i pebre y un perol humeante de arròs amb fesols i naps.",
+    "priceRange": "Ruta Gratis · Cazuela y Arroz Caldoso: 18 € – 28 €",
+    "neighborhoods": [
+      "Devesa del Saler",
+      "L'Albufera / Gola de Pujol",
+      "El Palmar",
+      "Ciutat Vella / El Cabanyal"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el día en Valencia",
+      "title": "Entrada combinada a la Ciudad de las Artes y las Ciencias",
+      "description": "En el camino de ida o vuelta hacia el Parque Natural de la Albufera (autobús EMT 24 y 25), haz parada en el Oceanogràfic y el Museu de les Ciències.",
+      "price": "Desde 14 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c66345%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Ruta matinal a pie por el sendero de la Devesa del Saler y el mirador de la Gola de Pujol (10:30 h)",
+        "venue": "Itinerario Botánico de la Devesa del Saler y Estany de Pujol (Parque Natural de l'Albufera)",
+        "location": "Gola de Pujol, Carrera del Riu, km 12 (Autobús EMT líneas 24 y 25 desde Porta de la Mar / Cánovas por 1,50 €)",
+        "price": "Sendero natural 100% gratuito · Paseo opcional en albuferenc tradicional: 5 € – 6 €",
+        "lat": 39.3496,
+        "lng": -0.3204,
+        "image": "images/venues/vlc-devesa-saler-sendero-albufera.jpg",
+        "imageAlt": "Barcas tradicionales de madera amarradas junto a los carrizales y aguas tranquilas de la laguna de la Albufera de Valencia",
+        "imageCredit": "Fotografía: Diego Delso / Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "A solo 25 minutos del centro de Valencia en los autobuses rojos de la EMT (líneas 24 y 25), la parada de la **Gola de Pujol** es el punto de partida ideal para una caminata matinal entre el bosque mediterráneo y la laguna. El **Itinerario Botánico y del Estany de Pujol** (unos 4 km llanos sobre pasarelas de madera y senderos de arena compacta) atraviesa pinos piñoneros inclinados por el viento marino, lentiscos, mirtos y malladas dunares.\n\nEn noviembre la laguna de la Albufera recibe a miles de aves invernantes —patos colorados, garzas reales, cormoranes y flamencos— que se observan a simple vista desde la torre-mirador de madera de la Gola de Pujol antes de continuar en el autobús 24 (o en un paseo de 35 minutos bordeando las acequias) hasta la pedanía isleña de **El Palmar**."
+      },
+      {
+        "heading": "2. Cazuela de barro de all i pebre tradicional junto a los canales y barracas de El Palmar",
+        "venue": "Restaurante Bon Aire, El Rek y Arrocería Maribel (Pedanía de El Palmar · L'Albufera)",
+        "location": "Calle Caudete y Pintor Martí Girbés, El Palmar (Autobús EMT línea 24 hasta el final de línea)",
+        "price": "Ración de all i pebre en cazuela de barro: 13,50 € – 16,50 € · Arroz caldoso o meloso: 16,00 € – 21,00 €",
+        "lat": 39.3134,
+        "lng": -0.3178,
+        "image": "images/venues/vlc-el-palmar-canal-barracas.jpg",
+        "imageAlt": "Barraca valenciana tradicional de paredes blancas y cubierta inclinada de carrizo en la isla de El Palmar junto a la Albufera",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Antigua isla de pescadores rodeada de acequias y arrozales donde Joaquín Sorolla pintó sus escenas de la Albufera y Vicente Blasco Ibáñez ambientó *Cañas y barro*, **El Palmar** conserva las mejores barracas históricas de tejado de carrizo y la receta original del **all i pebre**.\n\nAntes del arroz, es obligatorio pedir al centro una cazuela de barro hirviendo de *all i pebre*: un guiso tradicional de pescadores elaborado con anguila fresca (o en su versión de rape y langostinos para quienes prefieren pescado blanco), patata chascada, ajo machacado, pimentón dulce de la Vera, guindilla y almendra picada, pensado para mojar medio pan de pueblo. Casas premiadas como **Bon Aire** (Calle Caudete, 41), **Arrocería Maribel** o **El Rek** (frente al embarcadero del canal) lo bordan siguiendo la cocción lenta de toda la vida."
+      },
+      {
+        "heading": "3. Arròs amb fesols i naps en perol alto de hierro: el gran plato de cuchara del otoño valenciano",
+        "venue": "Casas de arroz caldoso de El Palmar y La Riuà (Calle del Mar, 27 · Ciutat Vella)",
+        "location": "El Palmar (L'Albufera) y Calle del Mar, 27 en el centro histórico de Valencia (Metro: Colón - L3, L5, L7, L9)",
+        "price": "Ración de arròs amb fesols i naps o arroz caldoso de pato y setas en perol: 15,50 € – 19,50 € por persona",
+        "lat": 39.4742,
+        "lng": -0.3728,
+        "image": "images/venues/vlc-arros-amb-fesols-i-naps-perol.jpg",
+        "imageAlt": "Plato hondo tradicional de arròs amb fesols i naps (arroz caldoso valenciano con alubias, nabo y carnes) recién servido del perol",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Mientras que en verano manda la paella seca en recipiente plano, en cuanto llega el fresco de noviembre el rey indiscutible de las mesas valencianas es el **arròs amb fesols i naps** (arroz caldoso con alubias blancas y nabos), inmortalizado en verso por Teodoro Llorente como el plato más reconfortante de la huerta.\n\nCocinando durante horas en un **perol o caldero hondo de hierro** nabo blanco (*napicol*), alubias tiernas, manitas y careta de cerdo, costilla, morcilla de cebolla, pimentón y azafrán con arroz variedad Senia o Albufera que absorbe todo el colágeno del caldo, se sirve humeante para comer con cuchara. Puedes pedirlo tanto en las arrocerías de El Palmar (junto al arroz meloso de pato de la Albufera con boletus y alcachofas) como en el centro histórico de Valencia en **La Riuà** (Calle del Mar, 27)."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cómo ir del centro de Valencia a la Devesa del Saler y El Palmar sin coche?",
+        "answer": "La línea 24 de autobús de la EMT sale desde Porta de la Mar / Cánovas, para primero en la Gola de Pujol (Devesa del Saler) y termina su recorrido dentro del mismo pueblo de El Palmar. Cuesta 1,50 € el billete sencillo (o un viaje del bono Suma 10)."
+      },
+      {
+        "question": "¿Hay que encargar por adelantado el arròs amb fesols i naps en los restaurantes?",
+        "answer": "Como el caldo de nabos, alubias y carnes requiere más de dos horas de cocción previa a fuego lento antes de echar el arroz, la mayoría de las arrocerías de El Palmar y del centro (como La Riuà) piden indicar al hacer la reserva telefónica que vais a tomar arròs amb fesols i naps o arroz caldoso de pato."
+      },
+      {
+        "question": "¿Qué diferencia tiene el arroz caldoso valenciano respecto al arroz meloso?",
+        "answer": "Ambos se cocinan en caldero o perol hondo (nunca en paella plana), pero el arroz caldoso se retira del fuego con abundante caldo trabado para comer íntegramente con cuchara en plato hondo (como el arròs amb fesols i naps), mientras que el meloso queda con una textura cremosa intermedia entre el seco y el caldoso."
+      }
+    ]
+  },
+  {
+    "id": "sev-ruta-santa-cruz-triana-guisos-cuchara-puchero-sevilla",
+    "slug": "ruta-otono-sevilla-y-tabernas-historicas-cuchara-puchero-espinacas",
+    "articleType": "single_plan",
+    "title": "Ruta de otoño en Sevilla y tabernas históricas de cuchara y puchero",
+    "metaTitle": "Ruta de otoño en Sevilla y tabernas de cuchara y puchero | Qué Plan Hoy",
+    "metaDescription": "Paseo de mañana por los Jardines de Murillo, Santa Cruz y el Guadalquivir, seguido de las tabernas centenarias de Sevilla donde comer espinacas con garbanzos, puchero andaluz con hierbabuena y pringá (El Rinconcillo, Bodeguita Romero y Casa Morales).",
+    "city": "Sevilla",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-08",
+    "targetKeyword": "donde comer platos de cuchara puchero espinacas con garbanzos sevilla tabernas",
+    "searchVolume": "4.300 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (11/100)",
+    "image": "images/venues/sev-espinacas-con-garbanzos-cuchara-hero.jpg",
+    "imageAlt": "Cazuela tradicional sevillana de espinacas con garbanzos especiados con comino, pimentón y pan frito",
+    "imageCredit": "Fotografía: Tamorlan / Wikimedia Commons (CC BY 3.0)",
+    "excerpt": "Cuando el sol de noviembre templa las mañanas en Sevilla, las barras de caoba y las pizarras de tiza sacan sus grandes guisos de cuchara: empieza con un paseo a pie entre los Jardines de Murillo, las plazuelas de Santa Cruz y el Arenal, y haz ruta de mediodía probando las espinacas con garbanzos de El Rinconcillo (1670), el puchero con hierbabuena y la pringá de Bodeguita Romero y Casa Morales.",
+    "priceRange": "Ruta Gratis · Tapas y Cuchara: 3,80 € – 15,00 €",
+    "neighborhoods": [
+      "Barrio de Santa Cruz / Jardines de Murillo",
+      "Santa Catalina",
+      "El Arenal",
+      "Triana"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Al lado del paseo matinal",
+      "title": "Entrada al Real Alcázar de Sevilla",
+      "description": "Justo al inicio de los Jardines de Murillo: recorre los palacios mudéjares, el Estanque de Mercurio y los salones históricos del Real Alcázar.",
+      "price": "Desde 15,50 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c66344%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Paseo matinal bajo las murallas de los Jardines de Murillo, Santa Cruz y el Paseo de Cristóbal Colón (11:00 h)",
+        "venue": "Jardines de Murillo, Plaza de Santa Cruz y ribera del Guadalquivir hasta el Puente de Triana",
+        "location": "Paseo de Catalina de Ribera / Calle Cano y Cueto (Metro y Tranvía T1: Prado de San Sebastián o Puerta Jerez)",
+        "price": "Recorrido monumental al aire libre 100% gratuito",
+        "lat": 37.3838,
+        "lng": -5.9879,
+        "image": "images/venues/sev-jardines-murillo-paseo.jpg",
+        "imageAlt": "Glorieta con bancos de azulejería trianera y árboles monumentales en los Jardines de Murillo junto a la muralla del Alcázar de Sevilla",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Antes de ir de taberna en taberna, aprovecha la luz dorada de las mañanas de noviembre en Sevilla para recorrer a pie los **Jardines de Murillo**, trazados a principios del siglo XX al pie de los lienzos almenados de la muralla del Real Alcázar con glorietas de ladrillo visto y cerámica trianera.\n\nDesde allí, entra en el **Barrio de Santa Cruz** por el Callejón del Agua hasta la silenciosa Plaza de Santa Cruz y la Plaza de los Refinadores, y cruza después por el entorno del Archivo de Indias hacia el Arenal y la ribera del Guadalquivir. En poco más de hora y media de paseo llano estarás en pleno corazón histórico a las 12:45 h, la hora exacta en que abren las cocinas de las tabernas centenarias antes de que se llenen sus barras."
+      },
+      {
+        "heading": "2. Espinacas con garbanzos, carrillada ibérica y cuenta en tiza en El Rinconcillo (fundado en 1670)",
+        "venue": "Bodega El Rinconcillo (Calle Gerona, 40 · Barrio de Santa Catalina)",
+        "location": "Calle Gerona, 40, esquina Calle Alhóndiga (a 5 min a pie de Las Setas de la Encarnación)",
+        "price": "Tapa de espinacas con garbanzos o guiso del día: 3,90 € – 4,80 € · Media ración: 8,50 €",
+        "lat": 37.3929,
+        "lng": -5.9866,
+        "image": "images/venues/sev-el-rinconcillo-taberna-historica.jpg",
+        "imageAlt": "Barra tradicional de caoba, jamones colgados y estanterías de botellas antiguas en la centenaria bodega El Rinconcillo de Sevilla",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Fundado en **1670** en la esquina de la calle Gerona con Alhóndiga, **El Rinconcillo** es el bar más antiguo de Sevilla y el santuario donde probar el plato de cuchara vegano (y de origen sefardí-andalusí) más famoso de la ciudad: las **espinacas con garbanzos**.\n\nApoyado en su barra de caoba centenaria —donde los camareros siguen apuntando tu cuenta con tiza blanca directamente sobre la madera—, pide un plato de espinacas con garbanzos ligadas con majado de comino, ajo, pimentón y rebanadas de pan frito, acompañado de una tapa de **carrillada ibérica en salsa** o garbanzos con menudo. Si prefieres sentarte a comer de mantel, su salón superior abre a mediodía con raciones completas de cuchara y guisos tradicionales."
+      },
+      {
+        "heading": "3. Puchero andaluz con hierbabuena, garbanzos con langostinos y la mejor pringá en Bodeguita Romero y Casa Morales",
+        "venue": "Bodeguita Romero (Calle Harinas, 10) y Bodega Casa Morales (Calle García de Vinuesa, 11 · El Arenal)",
+        "location": "Calle Harinas, 10 y Calle García de Vinuesa, 11 (a 3 minutos a pie de la Catedral y la Plaza Nueva)",
+        "price": "Tazón de caldo de puchero, cazuelita de cuchara o montadito de pringá: 3,50 € – 5,20 €",
+        "lat": 37.3867,
+        "lng": -5.9958,
+        "image": "images/venues/sev-puchero-andaluz-pringa-cuchara.jpg",
+        "imageAlt": "Plato hondo tradicional de puchero andaluz con garbanzos, fideos, caldo blanquecino aromático y carnes",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "En el vecino barrio de **El Arenal**, a dos calles de la Catedral, dos tabernas separadas por apenas 150 metros forman el dúo imbatible del cuchareo sevillano. En **Bodeguita Romero** (Calle Harinas, 10) se sirve tanto el reconfortante **puchero andaluz con su ramita de hierbabuena fresca** (y sus garbanzos con langostinos o menudo) como el que para muchos sevillanos es el mejor **montadito de pringá** de la ciudad, elaborado desmenuzando la carne, el tocino, la morcilla y el chorizo del propio cocido dentro de un panecillo crujiente.\n\nJusto al doblar la esquina, **Casa Morales** (Calle García de Vinuesa, 11, fundada en 1850 y famosa por sus gigantescas tinajas de barro de Valdepeñas empotradas en la pared) ofrece en su pizarra de mediodía fabada, potaje de garbanzos con espinacas y bacalao, y albóndigas de chocos en salsa."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿A qué hora conviene llegar a El Rinconcillo, Casa Morales o Bodeguita Romero para coger sitio en barra?",
+        "answer": "En fin de semana lo ideal es llegar en la primera franja, entre las 12:45 y las 13:15 h. Así encuentras sitio directo en la barra o en las mesas altas junto a las tinajas antes del lleno de las 14:00 h y te aseguras de que no se hayan agotado los guisos de cuchara del día."
+      },
+      {
+        "question": "¿Qué lleva el puchero andaluz y qué es exactamente la pringá?",
+        "answer": "El puchero andaluz es el cocido tradicional del sur, elaborado con garbanzos, hueso blanco añejo (que le da a su caldo su característico color blanquecino), jarrete de ternera, gallina, tocino, patata, apio y puerro, servido siempre en plato hondo con fideos o arroz y una hoja de hierbabuena fresca. La pringá es el segundo vuelco de sus carnes (carne, tocino, chorizo y morcilla), que se aplasta tradicionalmente con trozos de pan ('pringar') o se sirve caliente en montadito."
+      },
+      {
+        "question": "¿Se puede hacer toda la ruta andando desde los Jardines de Murillo hasta El Arenal y Santa Catalina?",
+        "answer": "Sí, el casco histórico de Sevilla es completamente llano: desde los Jardines de Murillo hasta Casa Morales y Bodeguita Romero en El Arenal hay 12 minutos a pie cruzando Santa Cruz, y desde allí hasta El Rinconcillo en Santa Catalina son otros 12 minutos agradables por el centro."
+      }
+    ]
+  },
+  {
+    "id": "tol-ruta-senda-tajo-y-donde-comer-carcamusas-y-cocido-toledo",
+    "slug": "ruta-tajo-y-donde-comer-carcamusas-y-cocido-en-toledo",
+    "articleType": "single_plan",
+    "title": "Ruta por el Tajo y dónde comer carcamusas y cocido en Toledo",
+    "metaTitle": "Ruta por el Tajo y dónde comer carcamusas y cocido en Toledo | Qué Plan Hoy",
+    "metaDescription": "Escapada de otoño perfecta a Toledo: caminata matinal junto al cañón del río por la Senda Ecológica del Tajo y los mejores sitios donde comer carcamusas en cazuela de barro (Bar Ludeña), sopa castellana y cocido.",
+    "city": "Toledo",
+    "category": "Planes Diferentes",
+    "categoryIcon": "✨",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-08",
+    "targetKeyword": "ruta tajo y donde comer carcamusas y cocido en toledo bar ludena",
+    "searchVolume": "3.900 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (10/100)",
+    "image": "images/venues/tol-carcamusas-cazuela-barro-hero.jpg",
+    "imageAlt": "Cazuela de barro tradicional de carcamusas toledanas con magro de cerdo tierno, guisantes y salsa de tomate ligeramente picante",
+    "imageCredit": "Fotografía: Tamorlan / Wikimedia Commons (CC BY 3.0)",
+    "excerpt": "A 33 minutos en tren desde Madrid, ningún plan de domingo en Toledo supera caminar por la mañana a orillas del Tajo entre los puentes medievales de Alcántara y San Martín, y subir después al Casco Histórico para entrar en calor con una cazuela de barro de carcamusas en el mítico Bar Ludeña, una sopa castellana con huevo escalfado o un cocido en tres vuelcos.",
+    "priceRange": "Ruta Gratis · Cazuela / Menú: 6,50 € – 24,00 €",
+    "neighborhoods": [
+      "Senda Ecológica del Tajo / San Martín",
+      "Plaza de la Magdalena / Zocodover",
+      "San Nicolás / Alfileritos",
+      "Vega Baja"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el día en Toledo",
+      "title": "Pulsera Turística de los 7 Monumentos de Toledo",
+      "description": "Al terminar la ruta por el Tajo, accede con una sola entrada al Puente y Monasterio de San Juan de los Reyes, la Sinagoga de Santa María la Blanca, Santo Tomé y la Iglesia de los Jesuitas.",
+      "price": "Desde 12 € pulsera oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c66346%2F",
+      "ctaText": "Ver monumentos incluidos →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Caminata matinal por la Senda Ecológica del Tajo desde Alcántara hasta el Puente de San Martín (10:30 h)",
+        "venue": "Senda Ecológica del Río Tajo y Torreón del Puente de San Martín",
+        "location": "Inicio junto al Puente de Alcántara (a 8 minutos andando de la estación de AVE de Toledo)",
+        "price": "Ruta senderista a orillas del río 100% gratuita (4,8 km · dificultad baja)",
+        "lat": 39.8569,
+        "lng": -4.0402,
+        "image": "images/venues/tol-senda-tajo-puente-san-martin-ruta.jpg",
+        "imageAlt": "Puente medieval de San Martín con sus torreones almenados sobre el cañón del río Tajo al final de la Senda Ecológica de Toledo",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Si llegas en el tren Avant de la mañana a la estación neomudéjar de Toledo, en lugar de subir directamente en autobús a Zocodover, cruza hacia el **Puente romano-medieval de Alcántara** para tomar el sendero peatonal de la **Senda Ecológica del Tajo**.\n\nDurante unos 4,8 kilómetros encajonados en el torno granítico del río, el camino bordea antiguos molinos hidráulicos, azudes, pasarelas de madera sobre el agua y cortados de roca donde planean garzas y rapaces, con la silueta de los conventos y el Alcázar alzándose en lo alto. En hora y media llegarás al monumental **Puente de San Martín** (siglo XIV), desde donde puedes subir al Casco Histórico por las escaleras mecánicas gratuitas del Paseo de Recaredo justo a la hora del aperitivo."
+      },
+      {
+        "heading": "2. Cazuela de barro de carcamusas donde se inventó la receta en 1948: Bar Ludeña (Plaza de la Magdalena)",
+        "venue": "Bar Ludeña (Plaza de la Magdalena, 10 · Casco Histórico de Toledo)",
+        "location": "Plaza de la Magdalena, 10 (a 2 minutos a pie de la Plaza de Zocodover y del Alcázar)",
+        "price": "Cazuela de barro de carcamusas con pan: 6,50 € – 9,50 € · Menú tradicional con carcamusas: 16,50 € – 19,50 €",
+        "lat": 39.8584,
+        "lng": -4.0218,
+        "image": "images/venues/tol-bar-ludena-carcamusas-plato.jpg",
+        "imageAlt": "Ración humeante de carcamusas toledanas con magro de cerdo, salsa de tomate picante y guisantes acompañada de pan",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY 2.0)",
+        "content": "Declaradas plato típico por excelencia de la capital castellano-manchega, las **carcamusas** nacieron a mediados del siglo XX precisamente en los fogones del **Bar Ludeña** (Plaza de la Magdalena, 10), cuando su fundador, don José Ludeña, creó este guiso para acompañar el vino de sus clientes de mediana edad (los «carcas») y de las jóvenes («musas») que frecuentaban el local.\n\nServidas siempre en **cazuelita de barro hirviendo**, se elaboran con magro de cerdo de primera cortado en dados muy tiernos, chorizo, jamón, guisantes y una salsa de tomate casera trabada a fuego lento con vino blanco y un toque exacto de guindilla que invita a mojar media hogaza de pan. Puedes pedirlas de ración en la barra de Ludeña o sentarte en su comedor interior junto con unas migas manchegas o ciervo en salsa."
+      },
+      {
+        "heading": "3. Sopa castellana en barro, cocido en aljibes del siglo XVI y perdiz estofada en La Abadía y Venta de Aires",
+        "venue": "Cervecería Abadía (Plaza de San Nicolás, 3) y Restaurante Venta de Aires ( Paseo del Circo Romano, 35 · fundado en 1891)",
+        "location": "Plaza de San Nicolás, 3 (junto a la calle Alfileritos) y Paseo del Circo Romano, 35",
+        "price": "Sopa castellana + segundo plato tradicional en La Abadía: 18,00 € – 24,00 € · Perdiz estofada / cocido en Venta de Aires: 26,00 € – 38,00 €",
+        "lat": 39.8601,
+        "lng": -4.0235,
+        "image": "images/venues/tol-sopa-castellana-perdiz-cazuela.jpg",
+        "imageAlt": "Cazuela de barro de sopa castellana tradicional con pan sopako, ajo dorado, pimentón de la Vera, jamón y huevo escalfado",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Si después de la caminata te apetece sentarte a comer un plato de cuchara completo en un espacio único, a tres minutos de Zocodover se encuentra **La Abadía** (Plaza de San Nicolás, 3), instalada en un antiguo palacio del siglo XVI cuyas **cuevas, aljibes subterráneos abovedados y pozos medievales** sirven hoy de comedor. Allí son imprescindibles su **sopa castellana** en cazuela de barro con huevo escalfado, el arroz caldoso de caza y sus guisos de venado y carcamusas.\n\nPara quienes buscan un clásico centenario con mantel, **Venta de Aires** (Paseo del Circo Romano, 35, abierto ininterrumpidamente desde 1891 y único restaurante centenario de Castilla-La Mancha) es el lugar de referencia donde probar la **perdiz roja estofada a la toledana**, las judías blancas con perdiz y los grandes guisos de cuchara tras pasear por la Vega Baja y el Puente de San Martín."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Dónde se comen las mejores carcamusas de Toledo?",
+        "answer": "El lugar más emblemático es el Bar Ludeña (Plaza de la Magdalena, 10, a 2 minutos de Zocodover), donde don José Ludeña inventó la receta hacia 1948. También se preparan de forma excelente en cuevas históricas cercanas como La Abadía (Plaza de San Nicolás, 3) o Taberna El Botero."
+      },
+      {
+        "question": "¿Cómo subir gratis desde el Puente de San Martín al Casco Histórico al terminar la ruta del Tajo?",
+        "answer": "Al cruzar o llegar al Puente de San Martín, camina 300 metros hacia la Puerta del Cambrón y el Paseo de Recaredo: allí mismo encontrarás las escaleras mecánicas gratuitas de Recaredo, que te suben sin esfuerzo hasta la zona alta del Casco Histórico."
+      },
+      {
+        "question": "¿Pican mucho las carcamusas toledanas?",
+        "answer": "Tienen un punto alegre y cálido gracias a la guindilla o cayena que se añade durante el sofrito de la salsa de tomate, pero en los bares tradicionales de Toledo como Ludeña el picante es suave y equilibrado para que resalte el sabor del magro de cerdo y los guisantes."
+      }
+    ]
+  },
+  {
     "id": "madrid-planes-este-fin-de-semana-feria-barroca",
     "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
     "title": "Planes en Madrid para el Puente de la Almudena y fin de semana (6 al 9 de noviembre): Corona gigante gratis, Ofrenda Floral y JazzMadrid",
