@@ -548,6 +548,25 @@ def render_footer(root_prefix: str) -> str:
   </script>"""
 
 
+def strip_markdown(text: str) -> str:
+  """Elimina marcas Markdown (**negrita** y *cursiva*) para metadatos y Schema.org."""
+  if not text:
+    return ""
+  s = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
+  s = re.sub(r"\*(.+?)\*", r"\1", s)
+  return s
+
+
+def format_inline_html(text: str) -> str:
+  """Escapa HTML y convierte **negrita** en <strong> y *cursiva* en <em>."""
+  if not text:
+    return ""
+  escaped = html.escape(text)
+  escaped = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", escaped)
+  escaped = re.sub(r"\*(.+?)\*", r"<em>\1</em>", escaped)
+  return escaped
+
+
 def format_short_price_badge(price_text: str) -> str:
   """Devuelve una versión corta (<=16 caracteres) del precio para la pastilla sobre la foto."""
   s = price_text.strip()
@@ -610,8 +629,8 @@ def render_article_card(
         <div class="card-meta-top">
           <span class="card-category">{html.escape(cat_label)}</span>
         </div>
-        <h2 class="card-title">{html.escape(art['title'])}</h2>
-        <p class="card-excerpt">{html.escape(art['excerpt'])}</p>
+        <h2 class="card-title">{html.escape(strip_markdown(art['title']))}</h2>
+        <p class="card-excerpt">{format_inline_html(art['excerpt'])}</p>
         <div class="card-footer">
           <span class="card-neighborhoods">📍 {html.escape(' · '.join(art['neighborhoods']))}</span>
           <span class="card-read-link">{read_cta}</span>
@@ -1173,8 +1192,8 @@ def build_article_page(art: dict, all_articles: list):
           {
               "@type": "ListItem",
               "position": idx,
-              "name": sec.get("venue", sec["heading"]),
-              "description": sec["content"].replace("\n\n", " "),
+              "name": strip_markdown(sec.get("venue", sec["heading"])),
+              "description": strip_markdown(sec["content"].replace("\n\n", " ")),
               "url": f"{canonical_url}#plan-{idx}",
           }
           for idx, sec in enumerate(art.get("sections", []), start=1)
@@ -1186,8 +1205,8 @@ def build_article_page(art: dict, all_articles: list):
       "mainEntity": [
           {
               "@type": "Question",
-              "name": f["question"],
-              "acceptedAnswer": {"@type": "Answer", "text": f["answer"]},
+              "name": strip_markdown(f["question"]),
+              "acceptedAnswer": {"@type": "Answer", "text": strip_markdown(f["answer"])},
           }
           for f in art.get("faqs", [])
       ],
@@ -1347,17 +1366,17 @@ def build_article_page(art: dict, all_articles: list):
         p.strip() for p in sec.get("content", "").split("\n\n") if p.strip()
     ]
     paragraphs_html = "\n        ".join(
-        f'<p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">{html.escape(p)}</p>'
+        f'<p style="font-size: 1.05rem; color: var(--ink-primary); line-height: 1.78; margin-bottom: 0.95rem;">{format_inline_html(p)}</p>'
         for p in paragraphs
     )
 
     sections_html.append(f"""
       <section class="reader-section" id="plan-{idx}" style="scroll-margin-top: 90px;">
-        <h2>{html.escape(sec['heading'])}</h2>
+        <h2>{html.escape(strip_markdown(sec['heading']))}</h2>
         {paragraphs_html}{sec_img_html}
         <div class="venue-meta-bar">
-          <span><strong>Dónde:</strong> {html.escape(sec['location'])}</span>
-          <span><strong>Precio:</strong> {html.escape(sec['price'])}</span>
+          <span><strong>Dónde:</strong> {format_inline_html(sec['location'])}</span>
+          <span><strong>Precio:</strong> {format_inline_html(sec['price'])}</span>
         </div>
       </section>""")
 
@@ -1399,8 +1418,8 @@ def build_article_page(art: dict, all_articles: list):
   for faq in art.get("faqs", []):
     faqs_html.append(f"""
       <div style="background: var(--bg-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-sm); padding: 1.15rem 1.35rem; margin-bottom: 0.85rem;">
-        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem;">{html.escape(faq['question'])}</h3>
-        <p style="font-size: 0.94rem; color: var(--ink-secondary);">{html.escape(faq['answer'])}</p>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem;">{format_inline_html(faq['question'])}</h3>
+        <p style="font-size: 0.94rem; color: var(--ink-secondary);">{format_inline_html(faq['answer'])}</p>
       </div>""")
 
   related = [
@@ -1488,7 +1507,7 @@ def build_article_page(art: dict, all_articles: list):
 
 
       <p style="font-size: 1.05rem; color: var(--ink-secondary); margin-bottom: 1.35rem;">
-        {html.escape(art['excerpt'])}
+        {format_inline_html(art['excerpt'])}
       </p>
 
       <figure style="margin: 0 0 1.4rem 0;">
@@ -2237,6 +2256,11 @@ def validate_articles_quality(articles: list):
       if len(content) < 140:
         errors.append(
             f"[{slug} · Sec {idx}] Contenido demasiado breve ({len(content)} caracteres)."
+        )
+
+      if "**" in format_inline_html(content):
+        errors.append(
+            f"[{slug} · Sec {idx}] Sintaxis Markdown sin cerrar (**) detectada en content."
         )
 
       if not s_img:
