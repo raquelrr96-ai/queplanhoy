@@ -1,5 +1,455 @@
 [
   {
+    "id": "madrid-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
+    "articleType": "multi_plan",
+    "title": "Qué hacer este fin de semana en Madrid (13 al 15 de noviembre): palacios abiertos, Beti Jai y JazzMadrid",
+    "metaTitle": "Planes Fin de Semana Madrid (13 al 15 Nov): Palacios Gratis y Beti Jai | Qué Plan Hoy",
+    "metaDescription": "Agenda verificada de planes en Madrid para el fin de semana del 13 al 15 de noviembre: visitas gratis al Frontón Beti Jai, salones del Palacio de Fernán Núñez, conciertos de JazzMadrid y CentroCentro.",
+    "city": "Madrid",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
+    "readTime": "10 min",
+    "publishedAt": "2026-11-12",
+    "targetKeyword": "planes este fin de semana madrid 13 al 15 de noviembre que hacer gratis",
+    "searchVolume": "22.400 búsquedas/mes",
+    "keywordDifficulty": "Media (24/100)",
+    "image": "images/venues/madrid-palacio-fernan-nunez-mom-hero.jpg",
+    "imageAlt": "Fachada neoclásica y patio de carruajes del Palacio de Fernán Núñez en el barrio de las Letras / Lavapiés de Madrid",
+    "imageCredit": "Fotografía: Luis García (Zaqarbal) / Wikimedia Commons (CC BY-SA 3.0)",
+    "excerpt": "Llega el tercer fin de semana del mes en Madrid (del viernes 13 al domingo 15 de noviembre) con tres grandes citas culturales y patrimoniales: la apertura gratuita del restaurado Frontón Beti Jai de 1894 en Chamberí, las rutas por palacios decimonónicos como Fernán Núñez y la recta final de conciertos de JAZZMADRID y exposiciones en CentroCentro Cibeles.",
+    "priceRange": "Gratis – 15 €",
+    "neighborhoods": [
+      "Antón Martín / Santa Isabel",
+      "Chamberí / Almagro",
+      "Paseo del Prado / Cibeles",
+      "Conde Duque"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el fin de semana",
+      "title": "Entrada al Palacio de Liria de Madrid (Casa de Alba)",
+      "description": "Si te apasionan los palacios habitados del siglo XVIII y XIX, completa el fin de semana visitando los salones de Goya, Velázquez y la biblioteca del Palacio de Liria.",
+      "price": "Desde 16 € entrada con audioguía",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Visita a los salones románticos del Palacio de Fernán Núñez y el Madrid de los palacios del siglo XIX",
+        "venue": "Palacio de Fernán Núñez (Fundación de los Ferrocarriles Españoles · Calle de Santa Isabel, 44)",
+        "location": "Calle de Santa Isabel, 44 (Metro: Antón Martín - L1 / Estación del Arte - L1)",
+        "price": "Jornadas de puertas abiertas gratuitas con inscripción previa · Visitas guiadas regulares: 6 € – 10 €",
+        "lat": 40.4103,
+        "lng": -3.6974,
+        "image": "images/venues/madrid-palacio-fernan-nunez-interior.jpg",
+        "imageAlt": "Salones históricos con lámparas de cristal, tapices y alfombras de la Real Fábrica en el interior del Palacio de Fernán Núñez de Madrid",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Uno de los secretos mejor guardados frente al Cine Doré y el Museo Reina Sofía es el **Palacio de Fernán Núñez** (Calle de Santa Isabel, 44), remodelado en la década de 1840 por los duques de Fernán Núñez como escenario de los grandes bailes de la aristocracia isabelina.\n\nDurante los fines de semana de mediados de noviembre enmarcados en las jornadas de difusión del patrimonio madrileño, sus salones abren al público mostrando el espectacular **Salón de Baile** inspirado en la Galería de los Espejos de Versalles, el Salón Isabelino, la escalera de roble y las alfombras originales de la Real Fábrica de Tapices. Al salir, estás a dos minutos a pie del Mercado de Antón Martín y de las tabernas históricas de la calle Ave María."
+      },
+      {
+        "heading": "2. Entrada libre al Frontón Beti Jai restaurado en Chamberí (la joya neomudéjar de 1894)",
+        "venue": "Frontón Beti Jai y su Centro de Interpretación (Calle del Marqués del Riscal, 7)",
+        "location": "Calle del Marqués del Riscal, 7 (Metro: Rubén Darío - L5 / Alonso Martínez - L4, L5, L10)",
+        "price": "Acceso 100% gratuito (Viernes, sábados y domingos de 10:00 a 14:00 h sin necesidad de reserva previa para acceso libre)",
+        "lat": 40.4316,
+        "lng": -3.6914,
+        "image": "images/venues/madrid-fronton-beti-jai-cancha.jpg",
+        "imageAlt": "Cancha al aire libre y galerías curvas de hierro forjado y ladrillo neomudéjar del Frontón Beti Jai de 1894 en Chamberí",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Tras décadas oculto tras los bloques señoriales de Almagro y una meticulosa restauración municipal premiada internacionalmente, el **Frontón Beti Jai** (levantado en 1894 por el arquitecto Joaquín Rucoba, autor también del Teatro Arriaga de Bilbao) abre sus puertas de forma totalmente gratuita las mañanas de viernes, sábado y domingo.\n\nEs el único frontón industrial de pelota vasca del siglo XIX que se conserva en pie en el mundo: al cruzar su fachada neomudéjar a la **cancha central de 67 metros de largo**, te rodean cuatro plantas de galerías curvas de hierro forjado, madera y frescos decorativos con capacidad original para 4.000 espectadores, además de un nuevo museo en la primera planta donde también se recuerda que aquí ensayó Leonardo Torres Quevedo su primer mando a distancia (*Telekino*) en 1904."
+      },
+      {
+        "heading": "3. Conciertos de otoño en CentroCentro Cibeles y fin de semana de JAZZMADRID (13 al 15 de noviembre)",
+        "venue": "CentroCentro (Palacio de Cibeles, Plaza de Cibeles, 1) y sedes de JAZZMADRID (Fernán Gómez y Condeduque)",
+        "location": "Plaza de Cibeles, 1 (Metro: Banco de España - L2) y Plaza de Colón, 4 (Metro: Colón - L4)",
+        "price": "Exposiciones de las plantas 1, 3, 4 y 5 de CentroCentro: Gratis · Conciertos de ciclo: desde 5 € – 15 €",
+        "lat": 40.4189,
+        "lng": -3.6921,
+        "image": "images/venues/madrid-centrocentro-cibeles-concierto.jpg",
+        "imageAlt": "Actuación musical bajo la bóveda acristalada del Patio de Operaciones de CentroCentro en el Palacio de Cibeles de Madrid",
+        "imageCredit": "Fotografía: Ayuntamiento de Madrid / Wikimedia Commons (CC BY 4.0)",
+        "content": "Para la tarde del sábado 14 o la mañana del domingo 15 de noviembre, el antiguo Palacio de Comunicaciones (**CentroCentro**, en la Plaza de Cibeles, 1) ofrece acceso libre y gratuito a sus plantas de exposiciones temporales de fotografía, diseño e historia urbana de Madrid, además de conciertos corales y acústicos en su auditorio y Galería de Cristal.\n\nDesde Cibeles puedes subir en diez minutos por el Paseo de Recoletos hasta el **Teatro Fernán Gómez (Centro Cultural de la Villa)** en la Plaza de Colón, sede principal junto a Condeduque del **Festival Internacional JAZZMADRID**, que este fin de semana del 13 al 15 de noviembre celebra sus conciertos centrales de otoño a las 20:00 h."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Hace falta reservar entrada para visitar gratis el Frontón Beti Jai este fin de semana?",
+        "answer": "No: el Ayuntamiento de Madrid mantiene abierto el acceso libre y gratuito tanto a la cancha histórica como al Centro de Interpretación del Frontón Beti Jai (Calle del Marqués del Riscal, 7) de martes a domingo en horario continuo de 10:00 a 14:00 h por orden de llegada."
+      },
+      {
+        "question": "¿Qué exposiciones son gratuitas en CentroCentro Cibeles del 13 al 15 de noviembre?",
+        "answer": "Todas las exposiciones temporales situadas en las plantas 1, 3, 4 y 5 de CentroCentro (Palacio de Cibeles) son de entrada 100% libre y gratuita en horario de martes a domingo de 10:00 a 20:00 h; solo el Mirador de la torre (planta 8) tiene una tarifa municipal de 3 €."
+      },
+      {
+        "question": "¿Dónde consultar los horarios y entradas del Festival JAZZMADRID este fin de semana?",
+        "answer": "Las actuaciones principales del viernes 13, sábado 14 y domingo 15 de noviembre se reparten entre el Teatro Fernán Gómez (Plaza de Colón, 4), el Auditorio de Condeduque y CentroCentro, con precios populares entre 12 € y 25 € disponibles en la web oficial del festival y en las taquillas municipales."
+      }
+    ]
+  },
+  {
+    "id": "bcn-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
+    "articleType": "multi_plan",
+    "title": "Qué hacer este fin de semana en Barcelona (13 al 15 de noviembre): L'Alternativa en el CCCB, MACBA y Palo Alto",
+    "metaTitle": "Planes Fin de Semana Barcelona (13 al 15 Nov): CCCB y Palo Alto | Qué Plan Hoy",
+    "metaDescription": "Agenda de planes en Barcelona del 13 al 15 de noviembre: Festival de Cine Independiente L'Alternativa en el CCCB, tardes gratuitas de sábado en el MACBA y mercado de diseño en los jardines de Palo Alto.",
+    "city": "Barcelona",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-12",
+    "targetKeyword": "planes este fin de semana barcelona 13 al 15 de noviembre que hacer hoy",
+    "searchVolume": "16.800 búsquedas/mes",
+    "keywordDifficulty": "Baja (19/100)",
+    "image": "images/venues/bcn-cccb-alternativa-festival-hero.jpg",
+    "imageAlt": "Patio del Centre de Cultura Contemporània de Barcelona (CCCB) con su fachada de cristal inclinada reflejando el Raval y el mar",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "Este fin de semana del 13 al 15 de noviembre Barcelona celebra dos grandes citas de otoño: el arranque del Festival de Cine Independiente L'Alternativa en el CCCB y la Filmoteca, las puertas abiertas de los sábados por la tarde en el MACBA y las galerías fabriles ajardinadas de Palo Alto en Poblenou.",
+    "priceRange": "Gratis – 9 €",
+    "neighborhoods": [
+      "El Raval (CCCB y MACBA)",
+      "Poblenou / Diagonal Mar",
+      "Barri Gòtic",
+      "Sant Antoni"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el fin de semana",
+      "title": "Entrada a Casa Batlló o La Pedrera (Casa Milà)",
+      "description": "A 10 minutos a pie del CCCB subiendo por Rambla de Catalunya: recorre las azoteas de chimeneas escultóricas de Antoni Gaudí en el Passeig de Gràcia.",
+      "price": "Desde 25 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Festival de Cine Independiente de Barcelona (L'Alternativa) en el CCCB y el Pati de les Dones",
+        "venue": "Centre de Cultura Contemporània de Barcelona - CCCB (Carrer deontalegre, 5 · El Raval)",
+        "location": "Carrer de Montalegre, 5 (Metro: Universitat - L1, L2 / Catalunya - L1, L3)",
+        "price": "Proyecciones y encuentros gratuitos en el Hall y Pati de les Dones · Sesiones de sala: 4 € – 8 €",
+        "lat": 41.3842,
+        "lng": 2.1668,
+        "image": "images/venues/bcn-cccb-pati-de-les-dones.jpg",
+        "imageAlt": "Claustro histórico y fachada espejada del Pati de les Dones en el Centre de Cultura Contemporània de Barcelona (CCCB)",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Durante el fin de semana del **13 al 15 de noviembre**, el **Centre de Cultura Contemporània de Barcelona (CCCB)** es el epicentro de la 33ª edición de **L'Alternativa**, el festival histórico de cine independiente y de autor de la ciudad.\n\nAdemás de los estrenos internacionales en versión original subtitulada en el Teatro del CCCB y en la vecina Filmoteca de Catalunya, el festival programa sesiones gratuitas al aire libre y en el Hall, mesas redondas con directores y proyecciones familiares matinales el sábado y el domingo. Aprovecha también el domingo entre las 15:00 y las 20:00 h para visitar gratis las grandes exposiciones temporales del CCCB y subir a su **Mirador de la quinta planta** (abierto gratis el primer domingo de mes y en jornadas especiales)."
+      },
+      {
+        "heading": "2. Sábado por la tarde gratis en el MACBA y ruta de librerías y cafés por la Plaça dels Àngels",
+        "venue": "Museu d'Art Contemporani de Barcelona - MACBA (Plaça dels Àngels, 1)",
+        "location": "Plaça dels Àngels, 1 (Metro: Universitat - L1, L2 / Liceu - L3)",
+        "price": "Entrada 100% gratuita todos los sábados de 16:00 a 20:00 h (12 € resto de horarios)",
+        "lat": 41.3832,
+        "lng": 2.1669,
+        "image": "images/venues/bcn-macba-exposiciones-raval.jpg",
+        "imageAlt": "Edificio luminoso blanco diseñado por Richard Meier para el Museu d'Art Contemporani de Barcelona (MACBA) en la Plaça dels Àngels",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "Puerta con puerta con el CCCB se abre la luminosa **Plaça dels Àngels** y el edificio blanco racionalista proyectado por Richard Meier para el **MACBA**. Todos los **sábados del año de 16:00 a 20:00 h**, el museo abre de forma completamente gratuita sus tres plantas de exposiciones y la antigua Capella MACBA dels Àngels (siglo XVI), situada justo enfrente.\n\nAl salir a las 18:30 h, piérdete por las calles peatonales adyacentes (Carrer d'Elisabets, Doctor Dou y Pintor Fortuny) para ojear la librería La Central del Raval —instalada en la antigua capilla de la Misericordia con jardín interior— y tomar un vino natural o vermut en las bodegas históricas de Sant Antoni."
+      },
+      {
+        "heading": "3. Diseño, gastronomía y jardines industriales cubiertos de hiedra en la antigua fábrica de Palo Alto (Poblenou)",
+        "venue": "Recinto fabril de Palo Alto (Carrer dels Pellaires, 30 · Poblenou / Diagonal Mar)",
+        "location": "Carrer dels Pellaires, 30 (Metro: Selva de Mar - L4 / Tranvía T4: Selva de Mar)",
+        "price": "Entrada a jornadas de mercado y música en los jardines: 5,50 € (Menores de 12 años gratis)",
+        "lat": 41.4046,
+        "lng": 2.2108,
+        "image": "images/venues/bcn-palo-alto-poblenou-jardin.jpg",
+        "imageAlt": "Pasaje interior empedrado y naves industriales del siglo XIX cubiertas de hiedra y buganvillas en Palo Alto (Poblenou, Barcelona)",
+        "imageCredit": "Fotografía: Enfo / Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Si el sábado 14 o el domingo 15 de noviembre buscas un plan diurno al sol cerca del mar, acércate al barrio de **Poblenou** hasta la antigua fábrica textil de **Palo Alto** (Carrer dels Pellaires, 30, levantada en 1875 y rehabilitada como oasis creativo por el estudio de Javier Mariscal).\n\nSus chimeneas de ladrillo rojo, pasajes empedrados cubiertos de hiedra centenaria, buganvillas y huertos urbanos acogen talleres de artistas, exposiciones de diseño local, conciertos de jazz y soul al mediodía y *foodtrucks* gastronómicos a solo cinco minutos caminando de la playa de la Mar Bella y de la Rambla del Poblenou."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Qué museos son gratis este fin de semana del 13 al 15 de noviembre en Barcelona?",
+        "answer": "El sábado 14 de noviembre de 16:00 a 20:00 h es gratuito el MACBA (Plaça dels Àngels, 1). Y el domingo 15 de noviembre a partir de las 15:00 h (hasta las 20:00 h) abren gratis el CCCB, el MUHBA Plaça del Rei, el Museu Marítim en las Drassanes Reials, el Castell de Montjuïc, el Museu de Ciències Naturals y el Jardí Botànic."
+      },
+      {
+        "question": "¿Dónde ver la programación gratuita del festival L'Alternativa en el CCCB?",
+        "answer": "En la taquilla y en el vestíbulo principal del CCCB (Carrer de Montalegre, 5) puedes recoger el programa de mano con todas las proyecciones del Hall, sesiones familiares de Pequeños Experimento y coloquios de entrada libre hasta completar aforo."
+      },
+      {
+        "question": "¿Cómo llegar en transporte público a Palo Alto en Poblenou?",
+        "answer": "Toma la línea amarilla L4 de Metro o el tranvía T4 hasta la parada Selva de Mar y camina 4 minutos hacia el mar por la calle Provençals hasta el Carrer dels Pellaires, 30."
+      }
+    ]
+  },
+  {
+    "id": "vlc-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
+    "articleType": "multi_plan",
+    "title": "Qué hacer este fin de semana en Valencia (13 al 15 de noviembre): Palau de la Música, Centre del Carme y Museo de la Ciudad",
+    "metaTitle": "Planes Fin de Semana Valencia (13 al 15 Nov): Palau y El Carmen | Qué Plan Hoy",
+    "metaDescription": "Planes en Valencia para el fin de semana del 13 al 15 de noviembre: conciertos de otoño en el Palau de la Música, exposiciones gratis en los claustros del Centre del Carme (CCCC) y el Palacio del Marqués de Campo.",
+    "city": "Valencia",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-12",
+    "targetKeyword": "planes este fin de semana valencia 13 al 15 de noviembre que hacer hoy",
+    "searchVolume": "11.200 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (14/100)",
+    "image": "images/venues/vlc-palau-musica-conciertos-nov-hero.jpg",
+    "imageAlt": "Bóveda acristalada del Palau de la Música de Valencia reflejada sobre el estanque del Jardín del Turia",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "Del viernes 13 al domingo 15 de noviembre Valencia combina música en directo junto al Jardín del Turia y arte gratuito en antiguos conventos y palacios: conciertos matinales y vespertinos en el Palau de la Música, exposiciones en los dos claustros del Centre del Carme (CCCC) y visita gratuita al Palacio del Marqués de Campo.",
+    "priceRange": "Gratis – 12 €",
+    "neighborhoods": [
+      "Jardín del Turia / Pla del Real",
+      "Barrio del Carmen",
+      "Plaza del Arzobispo / Catedral",
+      "Ruzafa"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el fin de semana",
+      "title": "Entrada al Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
+      "description": "A pocos minutos a pie del Centre del Carme: visita el palacio del siglo XVII rehabilitado con más de 100 obras de arte contemporáneo y restos del circo romano.",
+      "price": "Desde 10 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c66345%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Conciertos de otoño y matinales de domingo en el Palau de la Música junto al Jardín del Turia",
+        "venue": "Palau de la Música de València (Paseo de la Alameda, 30 · Jardín del Turia)",
+        "location": "Paseo de la Alameda, 30 (Metro: Aragón - L5, L7 / Alameda - L3, L5, L7, L9)",
+        "price": "Conciertos de cámara en Sala Rodrigo y matinales: Gratis o desde 5 € – 12 € · Abono Sala Iturbi: 10 € – 20 €",
+        "lat": 39.4664,
+        "lng": -0.3603,
+        "image": "images/venues/vlc-palau-musica-auditorio-interior.jpg",
+        "imageAlt": "Interior de la gran Sala José Iturbi del Palau de la Música de Valencia durante un concierto sinfónico",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY 2.0)",
+        "content": "Con sus salas principales plenamente renovadas frente a los estanques diseñados por Ricardo Bofill en el antiguo cauce del río Turia, el **Palau de la Música de València** vive del **viernes 13 al domingo 15 de noviembre** uno de los fines de semana más intensos de su temporada de otoño.\n\nAdemás del gran concierto sinfónico del viernes por la tarde en la Sala José Iturbi, el sábado y el domingo a las 11:30 h destacan los recitales de cámara de la Sala Joaquín Rodrigo y las matinales de la Banda Simfònica Municipal (muchas de ellas de entrada gratuita retirando localidad en taquilla o web). Al salir a las 13:00 h, cruza el Puente de las Flores hacia el Mercado de Colón para la hora del vermut."
+      },
+      {
+        "heading": "2. Arte contemporáneo y conciertos gratuitos entre los claustros gótico y renacentista del Centre del Carme (CCCC)",
+        "venue": "Centre del Carme Cultura Contemporània - CCCC (Calle del Museo, 2 · Barrio del Carmen)",
+        "location": "Calle del Museo, 2 (junto a la Plaza del Carmen y las Torres de Serranos)",
+        "price": "Acceso 100% gratuito a los claustros, exposiciones y actividades (Martes a domingo de 11:00 a 21:00 h)",
+        "lat": 39.4795,
+        "lng": -0.3789,
+        "image": "images/venues/vlc-centre-del-carme-claustro-arte.jpg",
+        "imageAlt": "Claustro gótico de arcos apuntados y jardín de naranjos del antiguo Real Monasterio de Nuestra Señora del Carmen (CCCC) en Valencia",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "En el corazón del Barrio del Carmen, el antiguo Real Monasterio de Nuestra Señora del Carmen (fundado en 1281 y reconvertido hoy en el **Centre del Carme Cultura Contemporània - CCCC**) es el plan cultural gratuito más vivo de Valencia durante todo el fin de semana.\n\nCon horario ininterrumpido de 11:00 a 21:00 h, puedes recorrer libremente su **Claustro Gótico** (siglo XIV), su **Claustro Renacentista** lleno de naranjos, la Sala Ferreres-Goerlich y media docena de exposiciones temporales de ilustración, diseño valenciano, fotografía y arte sonoro, acompañadas los sábados al mediodía de encuentros acústicos y talleres familiares gratuitos."
+      },
+      {
+        "heading": "3. Entrada libre al Palacio del Marqués de Campo (Museo de la Ciudad) junto a la Plaza del Arzobispo",
+        "venue": "Museo de la Ciudad · Palacio del Marqués de Campo (Plaza del Arzobispo, 3)",
+        "location": "Plaza del Arzobispo, 3 (a 2 minutos a pie de la Catedral y la Plaza de la Virgen)",
+        "price": "Entrada 100% gratuita durante los fines de semana y festivos (Sábados de 10:00 a 19:00 h; domingos de 10:00 a 14:00 h)",
+        "lat": 39.4754,
+        "lng": -0.3742,
+        "image": "images/venues/vlc-palau-marques-campo-museo-ciudad.jpg",
+        "imageAlt": "Salón noble con techos pintados al fresco, lámparas de araña y mobiliario de época en el Palacio del Marqués de Campo de Valencia",
+        "imageCredit": "Fotografía: Diego Delso / Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "A dos pasos del Miguelete, pero fuera del circuito habitual de turistas, el **Palacio del Marqués de Campo** (Plaza del Arzobispo, 3, sede del **Museo de la Ciudad**) abre de forma totalmente gratuita los sábados y domingos.\n\nTras cruzar su patio señorial con carruajes históricos y su escalera imperial de mármol, accederás a la planta noble isabelina con su **Salón de Baile decorado con frescos alegóricos de José Bellver**, espejos dorados, capilla privada y colecciones de pintura valenciana desde la Edad Media hasta Joaquín Sorolla e Ignacio Pinazo."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Hay que pagar entrada para visitar el Centre del Carme (CCCC) en Valencia?",
+        "answer": "No, el acceso a los dos claustros históricos y a todas las salas de exposiciones del Centre del Carme Cultura Contemporània (Calle del Museo, 2) es siempre 100% libre y gratuito de martes a domingo entre las 11:00 y las 21:00 h."
+      },
+      {
+        "question": "¿Qué museos municipales de Valencia son gratis los sábados y domingos?",
+        "answer": "Todos los museos y monumentos dependientes del Ayuntamiento de Valencia —incluyendo la Lonja de la Seda, las Torres de Serranos y de Quart, el Museo de la Ciudad (Palacio del Marqués de Campo), el Palacio de Cervelló y el Centro Arqueológico de l'Almoina— tienen entrada gratuita los domingos y festivos de 10:00 a 14:00 h."
+      },
+      {
+        "question": "¿Cómo conseguir entradas para los conciertos de fin de semana del Palau de la Música?",
+        "answer": "Puedes adquirirlas sin comisión o retirar las invitaciones gratuitas de los ciclos matinales directamente en la web oficial del Palau de la Música de València o en sus taquillas del Paseo de la Alameda, 30 desde dos horas antes de cada concierto."
+      }
+    ]
+  },
+  {
+    "id": "sev-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
+    "articleType": "multi_plan",
+    "title": "Qué hacer este fin de semana en Sevilla (13 al 15 de noviembre): Festival de Cine Europeo, Los Venerables y la Alameda",
+    "metaTitle": "Planes Fin de Semana Sevilla (13 al 15 Nov): Cine Europeo y Santa Cruz | Qué Plan Hoy",
+    "metaDescription": "Guía de planes en Sevilla para el fin de semana del 13 al 15 de noviembre: estrenos del Festival de Cine Europeo (SEFF), visita al Hospital de los Venerables en Santa Cruz y rutas por la Alameda.",
+    "city": "Sevilla",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-12",
+    "targetKeyword": "planes este fin de semana sevilla 13 al 15 de noviembre que hacer hoy",
+    "searchVolume": "10.400 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (13/100)",
+    "image": "images/venues/sev-teatro-lope-de-vega-seff-hero.jpg",
+    "imageAlt": "Fachada neobarroca iluminada del Teatro Lope de Vega y el Pabellón del Perú junto al Parque de María Luisa en Sevilla",
+    "imageCredit": "Fotografía: CarlosVdeHabsburgo / Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "El fin de semana del 13 al 15 de noviembre Sevilla vive las jornadas grandes del Festival de Cine Europeo (SEFF) con pases en versión original y coloquios a precios populares, que te proponemos combinar con una mañana barroca en el Hospital de los Venerables (en el corazón de Santa Cruz) y la ruta de mercados y terrazas de la Alameda de Hércules.",
+    "priceRange": "Gratis – 10 €",
+    "neighborhoods": [
+      "Parque de María Luisa / Prado",
+      "Barrio de Santa Cruz (Plaza de los Venerables)",
+      "Alameda de Hércules / Feria",
+      "Nervión / Centro"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "En el mismo corazón de Santa Cruz",
+      "title": "Entrada al Hospital de los Venerables y Centro Velázquez",
+      "description": "Recorre con audioguía el patio hundido barroco, la iglesia pintada al fresco por Valdés Leal y la colección del Centro Velázquez en la Plaza de los Venerables.",
+      "price": "Desde 12 € entrada completa",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c66344%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Fin de semana grande del Festival de Cine Europeo de Sevilla (SEFF): estrenos y coloquios por 3,50 €",
+        "venue": "Sedes del Festival de Cine Europeo de Sevilla (Cartuja Center, Cines Cervantes, MK2 Cinesur y entorno Lope de Vega)",
+        "location": "Calle Amor de Dios, 33 (Cine Cervantes en Alameda/Centro) y sedes oficiales del SEFF",
+        "price": "Entradas individuales por sesión: 3,50 € – 4,50 € · Encuentros con cineastas y mesas redondas: Gratis",
+        "lat": 37.3965,
+        "lng": -5.9938,
+        "image": "images/venues/sev-teatro-lope-de-vega-fachada-festival.jpg",
+        "imageAlt": "Vista exterior del histórico Teatro Lope de Vega de 1929 rodeado de palmeras y jardines en Sevilla",
+        "imageCredit": "Fotografía: CarlosVdeHabsburgo / Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Del **viernes 13 al domingo 15 de noviembre**, el **Festival de Cine Europeo de Sevilla (SEFF)** celebra su fin de semana central, llenando las salas históricas de la ciudad —como el **Cine Cervantes** de 1873 en la calle Amor de Dios, el Teatro Alameda o MK2 Cinesur— con los mejores estrenos del cine europeo antes de que lleguen a la cartelera comercial.\n\nLo mejor del SEFF es su ambiente cercano y sus precios populares: por apenas **3,50 € o 4,50 € la butaca**, puedes ver películas premiadas en Cannes, Venecia o San Sebastián en versión original subtitulada y quedarte al terminar la proyección al coloquio en vivo con los propios directores y actores."
+      },
+      {
+        "heading": "2. El patio barroco y los frescos de Valdés Leal en el Hospital de los Venerables (Barrio de Santa Cruz)",
+        "venue": "Hospital de los Venerables Sacerdotes y Centro Velázquez (Plaza de los Venerables, 8)",
+        "location": "Plaza de los Venerables, 8 (en el corazón peatonal del Barrio de Santa Cruz)",
+        "price": "Entrada con audioguía: 10 € – 12 € (Acceso gratuito en horario especial de domingo por la tarde con reserva previa online)",
+        "lat": 37.3853,
+        "lng": -5.9901,
+        "image": "images/venues/sev-hospital-venerables-santa-cruz.jpg",
+        "imageAlt": "Patio barroco escalonado con fuente central de azulejos, galerías de arcos y naranjos en el Hospital de los Venerables de Sevilla",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Escondido en la pequeña Plaza de los Venerables, en pleno laberinto blanco del **Barrio de Santa Cruz**, el **Hospital de los Venerables Sacerdotes** (proyectado a finales del siglo XVII por Leonardo de Figueroa) es una de las joyas barrocas más deslumbrantes de Andalucía.\n\nSu patio interior —con una fuente central a la que se desciende por gradas circulares de ladrillo y azulejo sevillano bajo naranjos— da paso a una iglesia cubierta de arriba abajo con los frescos ilusionistas de **Juan de Valdés Leal** y su hijo Lucas, además del **Centro Velázquez**, donde se exhibe la *Santa Rufina* de Diego Velázquez junto a lienzos de Murillo y esculturas de Martínez Montañés."
+      },
+      {
+        "heading": "3. Mañana de domingo entre el mercadillo de arte y coleccionismo de la Alameda de Hércules y la Calle Feria",
+        "venue": "Alameda de Hércules y entorno de la Calle Feria / Palacio de los Marqueses de la Algaba",
+        "location": "Alameda de Hércules, s/n (Casco Antiguo Norte)",
+        "price": "Recorrido por el mercadillo dominical y visita al Palacio de los Marqueses de la Algaba: 100% gratuito",
+        "lat": 37.3988,
+        "lng": -5.9939,
+        "image": "images/venues/sev-alameda-hercules-ambiente-otono.jpg",
+        "imageAlt": "Columnas romanas de Hércules y Julio César al inicio del paseo arbolado de la Alameda de Hércules en Sevilla",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
+        "content": "El **domingo 15 de noviembre por la mañana** (de 09:30 a 14:30 h), el gran bulevar arbolado de la **Alameda de Hércules** —el jardín público más antiguo de Europa (1574), flanqueado por las dos columnas romanas procedentes del templo de la calle Mármoles— despliega su animado rastro y mercadillo dominical de vinilos, libros de segunda mano, cerámica, antigüedades y artesanía.\n\nCombínalo cruzando dos calles hacia la **Plaza Calderón de la Barca** para entrar **gratis** al patio y salones del **Palacio de los Marqueses de la Algaba** (Centro del Mudéjar) antes de sentarte al sol a tomar el aperitivo en las terrazas de la Alameda o de la calle Feria."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Dónde se compran las entradas de 3,50 € para el Festival de Cine Europeo de Sevilla (SEFF)?",
+        "answer": "Están disponibles tanto en la web oficial del Festival de Cine de Sevilla (festivalcinesevilla.eu) como en las taquillas físicas del Cine Cervantes (Calle Amor de Dios, 33), Teatro Alameda y MK2 Cinesur Nervión Plaza."
+      },
+      {
+        "question": "¿Cómo visitar gratis el Hospital de los Venerables en el Barrio de Santa Cruz?",
+        "answer": "El monumento ofrece una franja de visita gratuita los domingos por la tarde (últimos pases de la jornada) reservando previamente la entrada sin coste en su página web oficial hasta completar el cupo semanal."
+      },
+      {
+        "question": "¿A qué hora se celebra el mercadillo de los domingos en la Alameda de Hércules?",
+        "answer": "Los puestos se instalan todos los domingos por la mañana desde las 09:30 h hasta las 14:30 h a lo largo del paseo central de la Alameda de Hércules."
+      }
+    ]
+  },
+  {
+    "id": "tol-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
+    "articleType": "multi_plan",
+    "title": "Qué hacer este fin de semana en Toledo (13 al 15 de noviembre): recta final de las Jornadas de la Tapa, Sinagoga del Tránsito y Taller del Moro",
+    "metaTitle": "Planes Fin de Semana Toledo (13 al 15 Nov): Tapas y Judería | Qué Plan Hoy",
+    "metaDescription": "Planes en Toledo para el fin de semana del 13 al 15 de noviembre: último fin de semana de las XXV Jornadas de la Tapa, entrada gratis de fin de semana a la Sinagoga del Tránsito y al Taller del Moro.",
+    "city": "Toledo",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
+    "readTime": "9 min",
+    "publishedAt": "2026-11-12",
+    "targetKeyword": "planes este fin de semana toledo 13 al 15 de noviembre que hacer hoy",
+    "searchVolume": "7.500 búsquedas/mes",
+    "keywordDifficulty": "Muy Baja (11/100)",
+    "image": "images/venues/tol-sinagoga-transito-juderia-hero.jpg",
+    "imageAlt": "Gran Sala de Oración con yeserías mudéjares y artesonado de madera de alerce en la Sinagoga del Tránsito (Museo Sefardí) de Toledo",
+    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+    "excerpt": "El fin de semana del 13 al 15 de noviembre es la última oportunidad para probar los bocados de autor de las XXV Jornadas de la Tapa de Toledo: te proponemos combinarlos con las franjas de entrada gratuita de sábado y domingo a la Sinagoga del Tránsito (Museo Sefardí), las yeserías del Taller del Moro y el parque del Circo Romano.",
+    "priceRange": "Gratis – 5 € por tapa",
+    "neighborhoods": [
+      "Judería Mayor (San Juan de los Reyes / Tránsito)",
+      "Corral de Don Diego / Magdalena",
+      "El Salvador / Taller del Moro",
+      "Vega Baja / Circo Romano"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar la ruta por la Judería",
+      "title": "Entrada a la Sinagoga de Santa María la Blanca y San Juan de los Reyes",
+      "description": "A solo 2 minutos a pie de la Sinagoga del Tránsito: admira el bosque de arcos blancos de herradura del siglo XII y el claustro gótico de los Reyes Católicos.",
+      "price": "Desde 4 € por monumento (o 12 € pulsera 7 monumentos)",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c66346%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": false,
+    "sections": [
+      {
+        "heading": "1. Último fin de semana de las XXV Jornadas de la Tapa de Toledo y los Dehesa (13 al 15 de noviembre)",
+        "venue": "Ruta de locales de las XXV Jornadas de la Tapa (Corral de Don Diego, Barrio de Santa Teresa y Zocodover)",
+        "location": "Plaza del Corral de Don Diego, Plaza de la Magdalena y Calle Alfileritos (Casco Histórico)",
+        "price": "Tapa de autor de concurso: 3,50 € – 5,00 € · Cóctel especial de las jornadas: 6,00 € – 8,00 €",
+        "lat": 39.8588,
+        "lng": -4.0224,
+        "image": "images/venues/tol-corral-don-diego-jornadas-tapa.jpg",
+        "imageAlt": "Plaza rehabilitada y Salón Rico medieval del Corral de Don Diego en el corazón del Casco Histórico de Toledo",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "El **domingo 15 de noviembre** se despide la 25ª edición de las **Jornadas de la Tapa de Toledo** (organizadas por la Asociación Provincial de Hostelería y Turismo de Toledo), en la que más de cuarenta barras y restaurantes compiten por la mejor tapa del año elaborada con productos de caza de los Montes de Toledo, queso manchego, azafrán y pistacho.\n\nAprovecha el mediodía del sábado o del domingo para recorrer la zona recién rehabilitada del **Corral de Don Diego y el Salón Rico** (donde puedes ver gratis las yeserías mudéjares del palacio de los Trastámara) y enlazar las tabernas de la Plaza de la Magdalena, Tornerías y la Plaza de San Nicolás."
+      },
+      {
+        "heading": "2. Entrada gratuita de sábado tarde y domingo mañana a la Sinagoga del Tránsito (Museo Sefardí) en la Judería",
+        "venue": "Sinagoga de Samuel ha-Leví / Sinagoga del Tránsito (Calle Samuel Leví, s/n · Judería de Toledo)",
+        "location": "Calle Samuel Leví, s/n, junto a los Jardines del Tránsito y el Museo del Greco",
+        "price": "Gratis los sábados desde las 14:00 h y los domingos de 10:00 a 15:00 h (3 € resto de horarios)",
+        "lat": 39.8557,
+        "lng": -4.0295,
+        "image": "images/venues/tol-taller-del-moro-yeserias.jpg",
+        "imageAlt": "Yeserías mudéjares caladas y arcos de herradura del siglo XIV en el interior de la Judería de Toledo",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "Mandada construir hacia 1357 por Samuel ha-Leví, tesorero del rey Pedro I de Castilla, la **Sinagoga del Tránsito** (sede del Museo Sefardí en el corazón de la Judería) conserva la **Gran Sala de Oración** mudéjar más rica de España, coronada por un impresionante artesonado de madera de alerce con incrustaciones de marfil y frisos de yeserías con inscripciones hebreas y motivos vegetales.\n\nComo museo estatal, la entrada es **100% gratuita todos los sábados a partir de las 14:00 h** (hasta las 18:00 h en horario de invierno) y **todos los domingos por la mañana de 10:00 a 15:00 h**, lo mismo que su vecino **Museo del Greco**, situado literalmente en la calle de al lado."
+      },
+      {
+        "heading": "3. Las bóvedas mudéjares del Taller del Moro y paseo por el parque arqueológico del Circo Romano",
+        "venue": "Taller del Moro (Calle Taller del Moro, s/n) y Parque del Circo Romano de Toledo (Avenida de Carlos III)",
+        "location": "Calle Taller del Moro, s/n (junto a Santo Tomé) y Avenida de Carlos III, s/n (Vega Baja)",
+        "price": "Parque del Circo Romano: 100% Gratis · Taller del Moro: Gratis sábados tarde y domingos mañana (o entrada general simbólica)",
+        "lat": 39.8565,
+        "lng": -4.0273,
+        "image": "images/venues/tol-circo-romano-parque-otono.jpg",
+        "imageAlt": "Arcos monumentales de ladrillo y piedra del Circo Romano de Toledo rodeados de los jardines de la Vega Baja",
+        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
+        "content": "A solo tres minutos a pie de la Sinagoga del Tránsito y de la iglesia de Santo Tomé se esconde un palacio mudéjar noble del siglo XIV que casi ningún visitante de un día llega a cruzar: el **Taller del Moro** (llamado así porque durante el siglo XV sirvió de almacén y taller de cantería para las obras de la Catedral de Toledo).\n\nSus tres salones conectados por arcos de herradura apuntados conservan extraordinarias yeserías caladas de tradición almohade y nazarí y cúpulas de mocárabes. Al terminar, puedes bajar dando un paseo otoñal hacia la Puerta del Cambrón y el **Parque del Circo Romano de Toledo** (siglo I d.C.), cuyos grandes arcos de hormigón y ladrillo para las carreras de cuadrigas de *Toletum* se recorren libremente al aire libre entre jardines."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Hasta qué día duran las XXV Jornadas de la Tapa de Toledo en noviembre?",
+        "answer": "El domingo 15 de noviembre de 2026 es el último día para degustar las tapas a concurso de esta 25ª edición en los más de 40 establecimientos participantes del Casco Histórico y los barrios de Santa Teresa y Buenavista."
+      },
+      {
+        "question": "¿En qué horario son gratis la Sinagoga del Tránsito y el Museo del Greco el fin de semana?",
+        "answer": "Ambos museos estatales de la Judería de Toledo tienen acceso gratuito todos los sábados a partir de las 14:00 h (en noviembre cierran a las 18:00 h) y los domingos durante toda su jornada de apertura de 10:00 a 15:00 h."
+      },
+      {
+        "question": "¿Hay que pagar entrada para ver las ruinas del Circo Romano de Toledo?",
+        "answer": "No: el recinto del Circo Romano de Toledo está integrado dentro de un gran parque público ajardinado en la Avenida de Carlos III (Vega Baja) y se puede pasear entre sus bóvedas y graderíos de forma completamente libre y gratuita todos los días."
+      }
+    ]
+  },
+  {
     "id": "madrid-mercadillos-navidad-plaza-mayor-luces-guia-2026",
     "slug": "mercadillos-navidad-madrid-plaza-mayor-encendido-luces-ruta",
     "articleType": "single_plan",
@@ -888,430 +1338,6 @@
         "answer": "Tienen un punto alegre y cálido gracias a la guindilla o cayena que se añade durante el sofrito de la salsa de tomate, pero en los bares tradicionales de Toledo como Ludeña el picante es suave y equilibrado para que resalte el sabor del magro de cerdo y los guisantes."
       }
     ]
-  },
-  {
-    "id": "madrid-planes-este-fin-de-semana-feria-barroca",
-    "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
-    "title": "Planes en Madrid para el Puente de la Almudena y fin de semana (6 al 9 de noviembre): Corona gigante gratis, Ofrenda Floral y JazzMadrid",
-    "metaTitle": "Planes Puente de la Almudena y Fin de Semana en Madrid (6 al 9 nov) | Qué Plan Hoy",
-    "metaDescription": "Qué hacer en Madrid este fin de semana y Puente de la Almudena (6 al 9 de noviembre): horarios de la Ofrenda Floral, reparto gratis de la Corona de la Almudena gigante en la Plaza Mayor y conciertos de JazzMadrid.",
-    "city": "Madrid",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "📅",
-    "weekendDates": "6 al 9 de noviembre",
-    "readTime": "5 min",
-    "publishedAt": "2026-11-04",
-    "targetKeyword": "que plan hacer en madrid este fin de semana",
-    "searchVolume": "8.100 búsquedas/mes",
-    "keywordDifficulty": "Media-Baja (21/100)",
-    "image": "images/venues/madrid-catedral-almudena-plaza-armeria.jpg",
-    "imageAlt": "Paso procesional de la Virgen de la Almudena adornado con flores recorriendo el centro histórico de Madrid el 9 de noviembre",
-    "excerpt": "Madrid vive su gran puente festivo de otoño del viernes 6 al lunes 9 de noviembre (Día de la Virgen de la Almudena, festivo en la capital): te contamos los horarios de la Ofrenda Floral frente al Palacio Real, a qué hora reparten gratis la Corona de la Almudena gigante en la Plaza Mayor, dónde comprar las mejores coronas artesanas y los conciertos de JazzMadrid.",
-    "priceRange": "Gratis – 15 €",
-    "neighborhoods": [
-      "Madrid de los Austrias",
-      "Plaza Mayor",
-      "Sol",
-      "Cibeles"
-    ],
-    "affiliate": {
-      "partner": "Tiqets",
-      "badge": "Para completar el plan",
-      "title": "Visita Guiada y Entrada sin Colas al Museo del Prado",
-      "description": "Recorre las obras maestras de Velázquez, Goya y El Bosco con acceso directo sin esperar cola en taquilla.",
-      "price": "Desde 39,70 € (entrada + visita guiada)",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2Fentradas-para-museo-del-prado-sin-colas-visita-guiada-p976157%2F",
-      "ctaText": "Ver disponibilidad en el Museo del Prado →"
-    },
-    "sections": [
-      {
-        "heading": "1. Ofrenda Floral Solidaria en la Explanada de la Almudena, procesión castiza y zarzuela en la Plaza Mayor (6 al 9 de noviembre)",
-        "venue": "Explanada de la Catedral de la Almudena (Calle Bailén) y Plaza Mayor",
-        "location": "Plaza de la Almudena y Plaza Mayor (Metro: Ópera L2/L5/R y Sol L1/L2/L3)",
-        "price": "Gratis (acceso libre a la ofrenda, conciertos y actuaciones castizas)",
-        "lat": 40.4158,
-        "lng": -3.7145,
-        "image": "images/venues/madrid-catedral-almudena-bailen-ofrenda.jpg",
-        "imageAlt": "Ofrenda Floral Solidaria a la Virgen de la Almudena en la Explanada de la Catedral con el tapiz de flores y grupos tradicionales",
-        "content": "El corazón del Puente de la Almudena late entre la Plaza de Oriente, la calle Bailén y la Plaza Mayor desde el viernes 6 hasta el lunes 9 de noviembre (festivo local en Madrid capital). Durante todo el fin de semana y el lunes festivo (de 09:00 a 20:00 h), la Explanada de la Catedral de la Almudena frente al Palacio Real se cubre con un enorme tapiz de flores gracias a la tradicional Ofrenda Floral y Solidaria, donde madrileños, colegios y asociaciones depositan claveles y rosas blancas junto a alimentos no perecederos para fines benéficos.\n\nEl plato fuerte llega el lunes 9 de noviembre a las 11:00 h con la Misa Mayor al aire libre en la explanada de la Almudena (con la Renovación del Voto de la Villa) y la posterior procesión por las calles Bailén, Mayor, Santiago y Plaza de la Villa, acompañada por asociaciones castizas vestidas de chulapos y chulapas. Además, durante el fin de semana la Plaza Mayor y los jardines de las Vistillas acogen actuaciones gratuitas de chotis, pasacalles de gigantes y cabezudos, recitales de zarzuela y conciertos de la Banda Sinfónica Municipal en la Catedral.",
-        "imageCredit": "Archidiócesis de Madrid / Catedral de la Almudena"
-      },
-      {
-        "heading": "2. Degustación gratuita de la Corona de la Almudena gigante en la Plaza Mayor y ruta de pastelerías centenarias",
-        "venue": "Plaza Mayor de Madrid y obradores históricos (El Riojano, La Mallorquina y Antigua Pastelería del Pozo)",
-        "location": "Plaza Mayor, Calle Mayor 10 y Calle del Pozo 8 (Metro: Sol y Ópera)",
-        "price": "Degustación gratuita en la Plaza Mayor (lunes 9 a mediodía) / Corona en pastelería: 4,50 € porción",
-        "lat": 40.4155,
-        "lng": -3.7074,
-        "image": "images/venues/madrid-pasteleria-el-riojano-almudena.jpg",
-        "imageAlt": "Reparto y corte de porciones de la Corona de la Almudena gigante en la Plaza Mayor de Madrid",
-        "content": "Si hay una tradición gastronómica imprescindible en este puente en Madrid es probar la Corona de la Almudena: un bollo artesano de masa fermentada con aroma de azahar (creado en 1978 por el gremio de pasteleros madrileños en honor a su patrona, sin agua de azahar excesiva y coronado con almendra laminada y frutas o rellenos de crema pastelera, nata montada y trufa). El lunes 9 de noviembre a partir de las 12:30 h en la Plaza Mayor, los maestros pasteleros de ACYRE y ASEMPAS reparten de forma completamente gratuita más de mil raciones de una Corona de la Almudena gigante de varios metros de longitud.\n\nSi quieres llevarte una a casa durante el sábado 7 o el domingo 8 sin esperar colas en la plaza, haz la ruta a pie por los obradores centenarios del entorno de Sol: El Riojano (Calle Mayor, 10, con su salón de té de madera de caoba de 1855 donde puedes tomar una porción con café), la Antigua Pastelería del Pozo (Calle del Pozo, 8), La Mallorquina en la Puerta del Sol o la versión de autor de Oriol Balaguer en La Duquesita (Fernando VI, 2).",
-        "imageCredit": "Ayuntamiento de Madrid / esMADRID"
-      },
-      {
-        "heading": "3. Conciertos de otoño de JAZZMADRID y exposiciones gratuitas entre CentroCentro, Condeduque y Matadero (6 al 9 de noviembre)",
-        "venue": "CentroCentro (Palacio de Cibeles), Centro Cultural Condeduque y Matadero Madrid",
-        "location": "Plaza de Cibeles 1, Calle Conde Duque 11 y Plaza de Legazpi 8 (Metro: Banco de España, Ventura Rodríguez y Legazpi)",
-        "price": "Exposiciones gratuitas / Conciertos de JazzMadrid desde 12 € – 15 €",
-        "lat": 40.4274,
-        "lng": -3.7106,
-        "image": "images/venues/madrid-concierto-patio-condeduque.jpg",
-        "imageAlt": "Auditorio del Centro Cultural Condeduque en Madrid, una de las sedes principales del Festival Internacional JAZZMADRID",
-        "content": "Para quienes buscan un plan cultural diferente durante los cuatro días del puente sin depender del tiempo, el Festival Internacional JAZZMADRID celebra su primer gran fin de semana de noviembre con directos de jazz contemporáneo, flamenco-jazz y soul en los auditorios de CentroCentro (Palacio de Cibeles), el Teatro Fernán Gómez y el Centro Cultural Condeduque, además de sesiones nocturnas en clubes míticos como el Café Central o Sala Villanos.\n\nDurante el día, puedes combinar el paseo con las nuevas exposiciones gratuitas de fotografía y arte en las plantas del Palacio de Cibeles o bajar hasta Matadero Madrid y el Invernadero de Arganzuela, que mantienen abiertas todas sus naves, mercadillos de diseño y ciclos de cine independiente en Cineteca incluso durante el lunes festivo de la Almudena.",
-        "imageCredit": "Wikimedia Commons"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "¿Cuándo y dónde se puede ver la Ofrenda Floral Solidaria de la Virgen de la Almudena?",
-        "answer": "La Ofrenda Floral y Solidaria permanece abierta en la Explanada de la Catedral de la Almudena (frente al Palacio Real, acceso por la calle Bailén) desde el viernes 6 hasta el lunes 9 de noviembre en horario continuo de 09:00 a 20:00 h. Puedes llevar flores o alimentos no perecederos para Cáritas o acercarte libremente a ver el gran tapiz floral y los grupos castizos."
-      },
-      {
-        "question": "¿A qué hora reparten gratis la Corona de la Almudena gigante en la Plaza Mayor?",
-        "answer": "La degustación gratuita de raciones de la Corona de la Almudena gigante (elaborada por los reposteros de ACYRE Madrid) se celebra el lunes 9 de noviembre en torno a las 12:30 h frente a la Casa de la Panadería en la Plaza Mayor. Recomendamos acudir unos 30 minutos antes."
-      },
-      {
-        "question": "¿Qué día es festivo por el Puente de la Almudena en Madrid y dónde son los conciertos de JAZZMADRID?",
-        "answer": "El lunes 9 de noviembre es festivo oficial en Madrid capital (formando un puente de cuatro días del viernes 6 al lunes 9 de noviembre). Museos, pastelerías históricas y restaurantes abren con normalidad, y el Festival Internacional JAZZMADRID ofrece conciertos en el Centro Cultural Condeduque, CentroCentro (Palacio de Cibeles) y el Teatro Fernán Gómez."
-      }
-    ],
-    "imageCredit": "Wikimedia Commons"
-  },
-  {
-    "id": "barcelona-planes-este-fin-de-semana-octubre",
-    "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Barcelona (6 al 8 de noviembre)",
-    "metaTitle": "Qué hacer este fin de semana en Barcelona (6 al 8 de noviembre) | Qué Plan Hoy",
-    "metaDescription": "Planes en Barcelona este fin de semana del 6 al 8 de noviembre: arte digital inmersivo en Montjuïc, domingo de museos gratis en el Born y ruta de vermut y setas de otoño en Sant Antoni.",
-    "city": "Barcelona",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "📅",
-    "weekendDates": "6 al 8 de noviembre",
-    "readTime": "5 min",
-    "publishedAt": "2026-11-04",
-    "targetKeyword": "que plan hacer en barcelona este fin de semana",
-    "searchVolume": "6.800 búsquedas/mes",
-    "keywordDifficulty": "Baja (18/100)",
-    "image": "images/venues/bcn-mercat-del-born.jpg",
-    "imageAlt": "Estructura histórica de hierro del Born Centre de Cultura i Memòria en el barrio de la Ribera de Barcelona",
-    "excerpt": "Tres planes verificados para exprimir el fin de semana del 6 al 8 de noviembre en Barcelona: instalaciones de luz y arte digital en Montjuïc, entrada gratuita el domingo a los museos e interiores góticos del Born y la ruta de bodegas y setas de temporada en Sant Antoni.",
-    "priceRange": "Gratis (Tapas desde 4 €)",
-    "neighborhoods": [
-      "Glòries y Poblenou",
-      "El Born y Ciutat Vella",
-      "El Raval y Montjuïc"
-    ],
-    "affiliate": {
-      "partner": "Tiqets",
-      "badge": "Para completar el plan",
-      "title": "Entrada sin Colas al Poble Espanyol y Talleres de Artesanía en Montjuïc",
-      "description": "Pasea por plazas, claustros y talleres de artesanos en vivo junto a los jardines de Montjuïc con acceso directo.",
-      "price": "Desde 14,40 € entrada online",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2Fentradas-para-poble-espanyol-entrada-sin-colas-p973586%2F",
-      "ctaText": "Ver entradas al Poble Espanyol →"
-    },
-    "sections": [
-      {
-        "heading": "1. Arte digital, diseño y paseo de otoño entre Glòries, el Disseny Hub y el Poblenou (viernes 6 al domingo 8 de noviembre)",
-        "venue": "Plaça de les Glòries Catalanes y Rambla del Poblenou (junto al Disseny Hub Barcelona)",
-        "location": "Plaça de les Glòries Catalanes, 37 / Rambla del Poblenou (Metro: Glòries - L1 / Llacuna - L4)",
-        "price": "Acceso libre y gratuito al paseo / Cucurucho de castañas desde 3,50 €",
-        "lat": 41.4024,
-        "lng": 2.1879,
-        "image": "images/venues/bcn-disseny-hub-glories.jpg",
-        "imageAlt": "Explanada peatonal de Glòries y fachada iluminada del Disseny Hub Barcelona junto a la Torre Glòries al anochecer",
-        "content": "El primer fin de semana completo de noviembre arranca en Barcelona con una intensa agenda de artes digitales, diseño y cultura visual. En el eje de la Plaça de les Glòries y el distrito creativo del 22@ en Poblenou, el Disseny Hub Barcelona (DHub) y los espacios creativos colindantes acogen instalaciones interactivas, muestras de arquitectura contemporánea y mercados de diseño independiente durante el sábado 7 y el domingo 8 de noviembre.\n\nAl salir, te recomendamos bajar caminando por la peatonal Rambla del Poblenou bajo los plátanos teñidos de ocre para tomar un vermut al sol en las terrazas históricas del Casino l'Aliança antes de llegar a la playa del Bogatell."
-      },
-      {
-        "heading": "2. Primer domingo de mes y tardes gratuitas en el Born y los palacios góticos de la calle Montcada (sábado 7 y domingo 8)",
-        "venue": "Born Centre de Cultura i Memòria, calle Montcada y entorno de Santa Maria del Mar",
-        "location": "Plaça Comercial, 12 y Carrer de Montcada (Metro: Jaume I - L4 / Barceloneta - L4)",
-        "price": "Acceso 100% gratuito a los patios góticos y al yacimiento del Born",
-        "lat": 41.3852,
-        "lng": 2.1809,
-        "image": "images/venues/bcn-born-ccm-interior-yacimientos.jpg",
-        "imageAlt": "Interior de hierro forjado y yacimiento arqueológico de 1700 en El Born Centre de Cultura i Memòria de Barcelona",
-        "content": "El domingo 8 de noviembre es una oportunidad perfecta para recorrer gratis el patrimonio medieval de Ciutat Vella sin colas. El yacimiento arqueológico bajo la estructura de hierro de 1876 del Born Centre de Cultura i Memòria mantiene su acceso libre, y a partir de las 15:00 h del domingo abren gratuitamente numerosos museos municipales del entorno.\n\nAprovecha para adentrarte por los patios góticos señoriales de la calle Montcada (como el Palau Cervelló o el Palau Dalmases), admirar las gárgolas y vitrales de la basílica de Santa Maria del Mar y tomar algo al atardecer en las calles empedradas de la Ribera."
-      },
-      {
-        "heading": "3. Ruta de arquitectura en Montjuïc, Pabellón Mies van der Rohe y exposiciones de temporada en el CCCB (6 al 8 de noviembre)",
-        "venue": "CCCB (Centre de Cultura Contemporània) y ladera cultural de Montjuïc (Pabellón Mies van der Rohe y Poble Espanyol)",
-        "location": "Carrer de Montalegre, 5 / Av. Francesc Ferrer i Guàrdia (Metro: Universitat L1, L2 / Espanya L1, L3)",
-        "price": "Patios y jardines gratuitos / Exposiciones y Poble Espanyol desde 6,00 € – 12,00 €",
-        "lat": 41.3706,
-        "lng": 2.15,
-        "image": "images/venues/bcn-pabellon-mies.jpg",
-        "imageAlt": "Espejo de agua y travertino del Pabellón Mies van der Rohe a los pies de Montjuïc en Barcelona",
-        "content": "Con las temperaturas suaves del mediodía de noviembre, subir a pie o en las escaleras mecánicas gratuitas desde Plaça Espanya hacia la ladera de Montjuïc es uno de los mejores paseos del fin de semana. Puedes visitar la serenidad de mármol travertino y láminas de agua del Pabellón Mies van der Rohe y continuar por las cascadas ocultas de los Jardins de Laribal hasta la Fundació Joan Miró.\n\nSi prefieres terminar la tarde en el centro, baja hacia el Raval para ver la gran exposición temática de otoño del CCCB (Centre de Cultura Contemporània de Barcelona) y cenar tapas de temporada con setas (*rovellons* y *ceps*) en las bodegas históricas de Sant Antoni."
-      }
-    ],
-    "faqs": [
-      {
-        "question": "¿Qué museos son gratis en Barcelona este domingo 8 de noviembre por la tarde?",
-        "answer": "Todos los domingos a partir de las 15:00 h tienen entrada gratuita el CCCB, el Castell de Montjuïc, el Museu Marítim, el Jardí Botànic y las sedes del MUHBA, mientras que el recinto y el mirador arqueológico de El Born Centre de Cultura i Memòria son de acceso libre durante todo el fin de semana."
-      },
-      {
-        "question": "¿Cuánto cuesta entrar al Pabellón Mies van der Rohe y qué horario tiene en noviembre?",
-        "answer": "Durante la temporada de otoño-invierno abre de lunes a domingo de 10:00 a 18:00 h en la Av. Francesc Ferrer i Guàrdia, 7 (Montjuïc), con entrada general de 9 €."
-      },
-      {
-        "question": "¿Hay que pagar entrada para visitar el Disseny Hub Barcelona en la Plaça de les Glòries?",
-        "answer": "El acceso al vestíbulo principal del Disseny Hub, su terraza-mirador sobre el parque de les Glòries y las exposiciones temporales gratuitas de planta baja es libre de martes a domingo de 10:00 a 20:00 h."
-      }
-    ],
-    "imageCredit": "Wikimedia Commons"
-  },
-  {
-    "id": "valencia-planes-este-fin-de-semana-octubre",
-    "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Valencia (6 al 8 de noviembre): conciertos en el Palau, arte en Valeriola y El Carmen",
-    "metaTitle": "Qué hacer este fin de semana en Valencia (6 al 8 de noviembre) | Qué Plan Hoy",
-    "metaDescription": "Planes en Valencia este fin de semana del 6 al 8 de noviembre: ciclo de conciertos de otoño en el Palau de la Música, arte inmersivo en el Palacio de Valeriola y domingo gratis en La Beneficència.",
-    "city": "Valencia",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "📅",
-    "weekendDates": "6 al 8 de noviembre",
-    "readTime": "5 min",
-    "publishedAt": "2026-11-04",
-    "targetKeyword": "que plan hacer en valencia este fin de semana",
-    "searchVolume": "5.400 búsquedas/mes",
-    "keywordDifficulty": "Baja (16/100)",
-    "image": "images/venues/vlc-jardin-del-turia.jpg",
-    "imageAlt": "Puente de las Flores y jardines del antiguo cauce del río Turia en Valencia",
-    "excerpt": "Los tres mejores planes para disfrutar del fin de semana del 6 al 8 de noviembre en Valencia: conciertos de otoño frente a los estanques del Palau de la Música, las instalaciones digitales del Palacio de Valeriola y la programación gratuita de fin de semana en los patios de La Beneficència y El Carmen.",
-    "priceRange": "Gratis – 12 €",
-    "neighborhoods": [
-      "Jardín del Turia y Paseo de la Alameda",
-      "Ciutat Vella (Calle del Mar)",
-      "Barrio del Carmen (La Beneficència)"
-    ],
-    "affiliate": {
-      "partner": "Tiqets",
-      "badge": "Para completar el plan",
-      "title": "The Valencia Pass: Entrada a los Principales Monumentos y Museos",
-      "description": "Acceso directo incluido a las principales atracciones culturales, museos e iglesias históricas de Valencia.",
-      "price": "Desde 106,50 € pase completo",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c65847%2Fentradas-para-the-valencia-pass-p1012538%2F",
-      "ctaText": "Ver qué incluye The Valencia Pass →"
-    },
-    "sections": [
-      {
-        "heading": "1. Conciertos de otoño y paseo entre estanques iluminados en el Palau de la Música y el Jardín del Turia (6 al 8 de noviembre)",
-        "venue": "Palau de la Música de València y tramo central del Jardín del Turia",
-        "location": "Paseo de la Alameda, 30 (Metro: Aragón - L5, L7 / Alameda - L3, L5, L7, L9)",
-        "price": "Paseo y jardines 100% gratis (Ciclo de cámara y sinfónico desde 10,00 €)",
-        "lat": 39.4664,
-        "lng": -0.3602,
-        "image": "images/venues/vlc-palau-musica-iturbi.jpg",
-        "imageAlt": "Bóveda acristalada y columnata del Palau de la Música de València frente al Jardín del Turia",
-        "content": "El primer fin de semana de noviembre en Valencia invita a disfrutar de la música en directo bajo la gran bóveda acristalada del Palau de la Música, frente a los estanques diseñados por Ricardo Bofill en el antiguo cauce del río Turia. Entre el viernes 6 y el domingo 8 de noviembre se suceden los recitales de cámara y conciertos matinales de la temporada de otoño con entradas muy asequibles (y sesiones gratuitas en las salas de exposición).\n\nAntes o después del concierto, pasea junto a los naranjos y fuentes del tramo central del Jardín del Turia hasta el Puente de las Flores y el Mercado de Colón para tomar un aperitivo al sol."
-      },
-      {
-        "heading": "2. Cripta subterránea, callejón judío y arte de luz en el Palacio de Valeriola (viernes 6 al domingo 8 de noviembre)",
-        "venue": "Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
-        "location": "Calle del Mar, 31 (Barrio de la Seu - Xerea, a 3 min de la Plaza de la Reina)",
-        "price": "10,00 € entrada general",
-        "lat": 39.4743,
-        "lng": -0.3728,
-        "image": "images/venues/vlc-palacio-valeriola.jpg",
-        "imageAlt": "Fachada noble del Palacio de Valeriola en la calle del Mar de Valencia",
-        "content": "En pleno corazón de Ciutat Vella (calle del Mar, 31), el restaurado Palacio de Valeriola del siglo XVII —sede del Centro de Arte Hortensia Herrero— es el plan cultural estrella para la tarde del viernes 6 o del sábado 7 de noviembre. Su recorrido combina patios nobles e instalaciones de arte digital inmersivo y esculturas monumentales de artistas como Olafur Eliasson, Jaume Plensa o Mat Collishaw.\n\nEn el subsuelo del propio palacio podrás ver un tramo original del circo romano de Valentia y un callejón de la antigua judería medieval conservado intacto."
-      },
-      {
-        "heading": "3. Exposiciones gratuitas, recitales matinales y patios históricos en La Beneficència y el Centre del Carme (sábado 7 y domingo 8)",
-        "venue": "Centro Cultural La Beneficència (Museu Valencià d'Etnologia - L'ETNO)",
-        "location": "Calle de la Corona, 36 (Barrio del Carmen · Bus EMT C1, 28, 95)",
-        "price": "Acceso 100% gratuito",
-        "lat": 39.4781,
-        "lng": -0.3829,
-        "image": "images/venues/vlc-centre-del-carme-claustro-renacentista.jpg",
-        "imageAlt": "Claustro renacentista ajardinado del Centre del Carme Cultura Contemporània (CCCC) en el barrio del Carmen de Valencia",
-        "content": "Si buscas un plan 100% gratuito para la mañana del sábado 7 o del domingo 8 de noviembre en el Barrio del Carmen, el Centro Cultural La Beneficència (calle Corona, 36) ofrece entrada libre tanto a sus seis patios ajardinados del siglo XIX como a las colecciones permanentes del Museu de Prehistòria y de L'ETNO (Premio al Mejor Museo Europeo).\n\nAl salir por la puerta mudéjar, camina cinco minutos por las callejuelas de El Carmen hasta el antiguo Convento del Carmen (CCCC) para recorrer gratis sus dos claustros monumentales y tomar unas tapas en el entorno de la Plaza del Tossal."
-      }
-    ],
-    "faqs": [
-      {
-        "question": "¿Cómo consultar los conciertos de este fin de semana (6 al 8 de noviembre) en el Palau de la Música de València?",
-        "answer": "La programación de otoño de la Orquesta de València y los recitales de cámara en las salas Iturbi y Rodrigo se pueden consultar y adquirir en la web oficial palauvalencia.com o directamente en las taquillas del Paseo de la Alameda, 30."
-      },
-      {
-        "question": "¿Hace falta reservar con antelación para visitar el Centro de Arte Hortensia Herrero (Palacio de Valeriola)?",
-        "answer": "Sí, para recorrer las instalaciones de arte contemporáneo, el callejón judío y el vestigio del circo romano subterráneo durante el fin de semana conviene reservar entrada con franja horaria previa (10 €) en su web oficial."
-      },
-      {
-        "question": "¿Qué centros culturales y claustros históricos son gratis este fin de semana en Valencia?",
-        "answer": "Tanto el Centro Cultural La Beneficència (sede de L'ETNO y del Museo de Prehistoria) como el Centre del Carme Cultura Contemporània (CCCC) tienen entrada 100 % gratuita el sábado y el domingo de 10:00 a 20:00 h."
-      }
-    ],
-    "imageCredit": "Wikimedia Commons"
-  },
-  {
-    "id": "sevilla-planes-este-fin-de-semana-octubre",
-    "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Sevilla (6 al 8 de noviembre)",
-    "metaTitle": "Qué hacer este fin de semana en Sevilla (6 al 8 de noviembre) | Qué Plan Hoy",
-    "metaDescription": "Planes en Sevilla este fin de semana del 6 al 8 de noviembre: Festival de Cine Europeo de Sevilla (SEFF), hornos mudéjares en la Cartuja y Triana, y el Mercadillo del Arte en la Plaza del Museo.",
-    "city": "Sevilla",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "📅",
-    "weekendDates": "6 al 8 de noviembre",
-    "readTime": "5 min",
-    "publishedAt": "2026-11-04",
-    "targetKeyword": "que plan hacer en sevilla este fin de semana",
-    "searchVolume": "4.900 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (15/100)",
-    "image": "images/venues/sev-plaza-del-museo-murillo-bellas-artes.jpg",
-    "imageAlt": "Portada barroca de piedra y muros rosados del Museo de Bellas Artes en la Plaza del Museo de Sevilla",
-    "excerpt": "Guía práctica para el fin de semana del 6 al 8 de noviembre en Sevilla: el ambiente del Festival de Cine Europeo (SEFF) en torno al Teatro Lope de Vega y la Alameda, paseo cultural entre Triana y el Monasterio de la Cartuja, y el Mercadillo dominical del Arte en la Plaza del Museo.",
-    "priceRange": "Gratis – 12 €",
-    "neighborhoods": [
-      "Isla de la Cartuja y Triana",
-      "Parque de María Luisa (Teatro Lope de Vega)",
-      "Plaza del Museo (Centro Histórico)"
-    ],
-    "affiliate": {
-      "partner": "Tiqets",
-      "badge": "Para completar el plan",
-      "title": "Espectáculo de Flamenco Tradicional en el Teatro de Triana",
-      "description": "Vive una sesión íntima de cante, toque y baile flamenco en el corazón del barrio de Triana.",
-      "price": "Desde 25 € entrada oficial",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c65870%2Fentradas-para-flamenco-show-at-triana-theater-p1015363%2F",
-      "ctaText": "Ver entradas para el Teatro Flamenco Triana →"
-    },
-    "sections": [
-      {
-        "heading": "1. Hornos mudéjares, cerámica histórica y arte contemporáneo entre Triana y el Monasterio de la Cartuja (6 al 8 de noviembre)",
-        "venue": "Centro Andaluz de Arte Contemporáneo (CAAC) – Monasterio de Santa María de las Cuevas y Centro Cerámica Triana",
-        "location": "Av. Américo Vespucio, 2 / Calle Callao, 16 (Isla de la Cartuja y Triana)",
-        "price": "Gratis sábados de 11:00 a 21:00 h y domingos de 10:00 a 15:30 h (3,01 € resto de horarios)",
-        "lat": 37.3982,
-        "lng": -6.0094,
-        "image": "images/venues/sev-monasterio-cartuja-hornos-caac.jpg",
-        "imageAlt": "Portada monumental y estanque del Monasterio de Santa María de las Cuevas (CAAC) en la Isla de la Cartuja de Sevilla",
-        "content": "Con la luz dorada y la temperatura perfecta de principios de noviembre en Sevilla, el mejor recorrido para el sábado 7 por la mañana arranca cruzando el Puente de Triana hacia el callejón de San Jorge para visitar el Centro Cerámica Triana, construido alrededor de los antiguos hornos de ladrillo del siglo XVI de la fábrica Santa Ana.\n\nDesde allí, camina diez minutos junto al Guadalquivir hasta el recinto amurallado del Monasterio de Santa María de las Cuevas (sede del CAAC en la Cartuja), donde puedes pasear entre sus claustros mudéjares, los antiguos secaderos de loza de Pickman y sus praderas de ombúes centenarios."
-      },
-      {
-        "heading": "2. Festival de Cine Europeo de Sevilla (SEFF) y paseo de otoño entre el Teatro Lope de Vega y el Parque de María Luisa (6 al 8 nov)",
-        "venue": "Entorno del Teatro Lope de Vega, Glorieta de Bécquer (Parque de María Luisa) y Barrio de Santa Cruz",
-        "location": "Avenida de María Luisa, s/n y Plaza de los Venerables (Puerta de Jerez - Metro L1)",
-        "price": "Paseo histórico 100% gratuito / Dulces de Todos los Santos desde 4,00 €",
-        "lat": 37.3774,
-        "lng": -5.9901,
-        "image": "images/venues/sev-teatro-lope-de-vega.jpg",
-        "imageAlt": "Cúpula y fachada neobarroca del Teatro Lope de Vega junto al Parque de María Luisa en Sevilla",
-        "content": "Noviembre es el mes del cine de autor en Sevilla gracias a la celebración del Festival de Cine Europeo (SEFF), que llena de estrenos, coloquios con directores y sesiones especiales distintos espacios de la ciudad (con entradas individuales desde 4 € – 6 €).\n\nAprovecha la tarde del viernes 6 o del sábado 7 de noviembre para dar un paseo al atardecer frente a la fachada neobarroca del Teatro Lope de Vega y adentrarte en el Parque de María Luisa para ver la Glorieta de Bécquer, el Estanque de los Lotos y la Plaza de España bañada por la luz del ocaso."
-      },
-      {
-        "heading": "3. Mercadillo dominical del Arte en la Plaza del Museo y entrada gratuita al Museo de Bellas Artes (domingo 8 de noviembre)",
-        "venue": "Plaza del Museo y Museo de Bellas Artes de Sevilla",
-        "location": "Plaza del Museo, 9 (Casco Antiguo, a 4 min de Plaza de Armas y Calle Alfonso XII)",
-        "price": "100% gratuito (tanto el mercadillo al aire libre como el Museo para ciudadanos UE)",
-        "lat": 37.3925,
-        "lng": -5.9996,
-        "image": "images/venues/sev-plaza-del-museo-bellas-artes.jpg",
-        "imageAlt": "Claustro Mayor de arcos y jardines recortados en el interior del Museo de Bellas Artes de Sevilla",
-        "content": "Cada domingo por la mañana (de 10:00 a 14:00 h), los pies de la estatua de bronce de Bartolomé Esteban Murillo en la Plaza del Museo se transforman en una galería de arte al aire libre donde decenas de pintores, acuarelistas y grabadores locales exponen sus obras directamente bajo la sombra de los árboles.\n\nEs el preámbulo perfecto para entrar gratis (para ciudadanos de la UE) al antiguo Convento de la Merced Calzada, sede del Museo de Bellas Artes de Sevilla, recorrer sus tres patios de azulejos y naranjos y terminar tomando un vino de naranja o unas espinacas con garbanzos en las tabernas del barrio de San Vicente."
-      }
-    ],
-    "faqs": [
-      {
-        "question": "¿Dónde se proyectan las películas del Festival de Cine Europeo de Sevilla (SEFF) este fin de semana?",
-        "answer": "Las proyecciones y coloquios del SEFF (del 6 al 8 de noviembre) se reparten entre el Teatro Lope de Vega, los cines MK2 Cinesur Nervión Plaza, el Cine Cervantes y el Teatro Alameda, con entradas individuales desde 4,50 €."
-      },
-      {
-        "question": "¿Qué horario tiene el domingo 8 de noviembre el Mercadillo del Arte en la Plaza del Museo?",
-        "answer": "Los pintores y acuarelistas instalan sus puestos al aire libre en la Plaza del Museo todos los domingos de 10:00 a 14:00 h, coincidiendo con la jornada de apertura dominical del Museo de Bellas Artes (de 09:00 a 15:00 h, gratis para ciudadanos de la UE)."
-      },
-      {
-        "question": "¿Cuándo es gratis visitar el Monasterio de la Cartuja (CAAC) en Sevilla?",
-        "answer": "El Centro Andaluz de Arte Contemporáneo (CAAC) abre de martes a sábado de 10:00 a 20:00 h y domingos de 10:00 a 15:30 h; la entrada es gratuita de martes a viernes de 19:00 a 20:00 h y los sábados durante todo el día."
-      }
-    ],
-    "imageCredit": "Wikimedia Commons"
-  },
-  {
-    "id": "toledo-planes-este-fin-de-semana-octubre",
-    "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
-    "title": "Qué hacer este fin de semana en Toledo (6 al 8 de noviembre): Jornadas de la Tapa, Puente de la Almudena y Santa Cruz",
-    "metaTitle": "Qué hacer este fin de semana en Toledo (6 al 8 de noviembre) | Qué Plan Hoy",
-    "metaDescription": "Planes en Toledo este fin de semana del 6 al 8 de noviembre (y lunes 9 por el Puente de la Almudena): Jornadas de la Tapa en el Casco Histórico, dulces conventuales en San Clemente y Museo de Santa Cruz gratis.",
-    "city": "Toledo",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "📅",
-    "weekendDates": "6 al 8 de noviembre",
-    "readTime": "5 min",
-    "publishedAt": "2026-11-04",
-    "targetKeyword": "que plan hacer en toledo este fin de semana",
-    "searchVolume": "3.600 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (12/100)",
-    "image": "images/venues/tol-plaza-ayuntamiento-catedral-arzobispal.jpg",
-    "imageAlt": "Plaza del Ayuntamiento de Toledo con la torre gótica de la Catedral Primada y el Palacio Arzobispal",
-    "excerpt": "Los mejores planes en Toledo para el fin de semana del 6 al 8 de noviembre (y el lunes 9 para quienes se escapan desde Madrid por el Puente de la Almudena): ruta de tapas de otoño y mazapán conventual en torno a San Clemente, teatro y callejones nocturnos junto a la Catedral, y entrada gratuita al claustro de Santa Cruz.",
-    "priceRange": "Gratis – 12 €",
-    "neighborhoods": [
-      "Plaza del Ayuntamiento y Catedral",
-      "Plaza Mayor (Teatro de Rojas)",
-      "Plaza de Zocodover (Museo de Santa Cruz)"
-    ],
-    "affiliate": {
-      "partner": "Tiqets",
-      "badge": "Para completar el plan",
-      "title": "Pulsera Turística Oficial de Toledo (Acceso a 7 Monumentos)",
-      "description": "Entrada combinada a San Juan de los Reyes, Santa María la Blanca, Santo Tomé, Cristo de la Luz y tres monumentos más.",
-      "price": "Desde 14 € (7 monumentos incluidos)",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c170113%2Fentradas-para-pulsera-turistica-de-toledo-p1031186%2F",
-      "ctaText": "Ver la Pulsera Turística de Toledo →"
-    },
-    "sections": [
-      {
-        "heading": "1. Ruta de tapas de otoño («De Tapas por Toledo») y dulces conventuales entre el Ayuntamiento y San Clemente (6 al 9 de noviembre)",
-        "venue": "Plaza del Ayuntamiento de Toledo y Torno del Convento de San Clemente",
-        "location": "Plaza del Consistorio y Calle San Clemente, 1 (Casco Histórico de Toledo)",
-        "price": "Acceso libre y gratuito / Caja de huesos de santo y mazapán desde 4,80 €",
-        "lat": 39.8571,
-        "lng": -4.0245,
-        "image": "images/venues/tol-mazapan-artesano-san-clemente.jpg",
-        "imageAlt": "Escaparate tradicional de mazapán artesano de Toledo y dulces conventuales en el casco histórico",
-        "content": "Noviembre es el mes gastronómico por excelencia en Toledo con el arranque de las tradicionales jornadas de la tapa por los barrios del Casco Histórico y la afluencia de escapadas desde Madrid por el Puente de la Almudena (del viernes 6 al lunes 9 de noviembre). Es el momento ideal para recorrer las tabernas entre Zocodover, el Barrio de los Conventos y Santo Tomé probando tapas elaboradas con caza de los Montes de Toledo, setas de temporada y carcamusas.\n\nPara el postre, acércate a la silenciosa plaza de San Clemente para comprar mazapán artesano y pastas de almendra a través del torno de madera de su convento renacentista."
-      },
-      {
-        "heading": "2. Tarde de teatro en el histórico Rojas y paseo al anochecer entre la Catedral Primada y los callejones templarios (6 y 7 de noviembre)",
-        "venue": "Entorno de la Catedral Primada, Teatro Municipal de Rojas (Plaza Mayor) y Barrio de San Miguel",
-        "location": "Calle Cardenal Cisneros, 1 y Plaza Mayor, s/n (Casco Histórico)",
-        "price": "Rutas a pie por el casco gratuitas / Funciones en el Teatro de Rojas desde 12,00 €",
-        "lat": 39.8569,
-        "lng": -4.0229,
-        "image": "images/venues/tol-teatro-de-rojas-fachada.jpg",
-        "imageAlt": "Fachada histórica del Teatro Municipal de Rojas en la Plaza Mayor de Toledo",
-        "content": "Al caer la tarde del viernes 6 o del sábado 7 de noviembre, cuando se encienden los faroles de forja sobre la piedra imperial, te proponemos combinar una función de la temporada de otoño en el encantador Teatro Municipal de Rojas (inaugurado en 1878 en la Plaza Mayor) con un paseo tranquilo alrededor de la Catedral Primada iluminada.\n\nSube después por las cuestas empedradas del antiguo barrio templario de San Miguel el Alto y los Cobertizos, donde el silencio nocturno y las vistas sobre los tejados de Toledo son inolvidables."
-      },
-      {
-        "heading": "3. Claustro plateresco y exposiciones en el Museo de Santa Cruz (gratis sábado 7 por la tarde y domingo 8 de noviembre)",
-        "venue": "Museo de Santa Cruz",
-        "location": "Calle Miguel de Cervantes, 3 (junto a la Plaza de Zocodover y el Alcázar)",
-        "price": "Entrada 100% gratuita (sábados desde las 14:00 h y domingos todo el día)",
-        "lat": 39.8594,
-        "lng": -4.0202,
-        "image": "images/venues/tol-museo-santa-cruz-claustro-plateresco.jpg",
-        "imageAlt": "Claustro plateresco de doble galería en el Museo de Santa Cruz de Toledo",
-        "content": "A pocos pasos de los arcos de la Plaza de Zocodover se levanta la fachada plateresca del antiguo Hospital de Santa Cruz, fundado a principios del siglo XVI por el Cardenal Mendoza. Tanto el sábado 7 de noviembre a partir de las 14:00 h como durante toda la mañana del domingo 8 de noviembre (de 09:00 a 15:00 h), la entrada al Museo de Santa Cruz es completamente gratuita.\n\nPodrás recorrer su famoso crucero de dos pisos con artesonados renacentistas, subir por la escalinata monumental de Alonso de Covarrubias, admirar los lienzos originales de El Greco y salir al jardín arqueológico de su claustro."
-      }
-    ],
-    "faqs": [
-      {
-        "question": "¿En qué horario es gratis el Museo de Santa Cruz de Toledo este fin de semana?",
-        "answer": "El Museo de Santa Cruz (junto a la Plaza de Zocodover) ofrece entrada 100 % gratuita los sábados a partir de las 14:00 h y durante toda la mañana del domingo (de 09:00 a 15:00 h)."
-      },
-      {
-        "question": "¿Qué precio suelen tener las tapas en las Jornadas de la Tapa de Toledo («De Tapas por Toledo»)?",
-        "answer": "Las tabernas y restaurantes participantes del Casco Histórico sirven sus tapas especiales de otoño a precios populares de entre 3,50 € y 5,00 €."
-      },
-      {
-        "question": "¿Dónde comprar mazapán artesano cerca de la Catedral Primada y Santo Tomé?",
-        "answer": "Puedes comprarlo en el torno histórico del Convento de San Clemente (Calle San Clemente, 1), en el Convento de Santo Domingo el Antiguo o en los obradores centenarios de Santo Tomé y San Telesforo en Zocodover."
-      }
-    ],
-    "imageCredit": "Wikimedia Commons"
   },
   {
     "id": "toledo-cobertizos-de-noche-y-mazapan-conventual",
