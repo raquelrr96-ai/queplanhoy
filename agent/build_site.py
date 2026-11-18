@@ -9,11 +9,15 @@ Diseño editorial limpio inspirado en revistas urbanas (Time Out, Madrid Secreto
   - /sobre-nosotros/ (Página de criterio editorial)
 """
 
-from datetime import date
+from datetime import date, datetime, timezone
+import email.utils
+import glob
 import html
 import json
 import os
 import re
+import shutil
+import subprocess
 import urllib.parse
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1142,7 +1146,7 @@ def build_article_page(art: dict, all_articles: list):
   )
   full_img_url = f"{SITE_URL}/{art['image'].lstrip('/')}"
   is_single_plan = art.get("articleType") == "single_plan"
-  today_iso = date.today().isoformat()
+  mod_iso = art.get("modifiedAt") or art["publishedAt"]
 
   article_schema = {
       "@context": "https://schema.org",
@@ -1156,7 +1160,7 @@ def build_article_page(art: dict, all_articles: list):
       "image": [full_img_url],
       "inLanguage": "es-ES",
       "datePublished": art["publishedAt"],
-      "dateModified": today_iso,
+      "dateModified": mod_iso,
       "about": {
           "@type": "City",
           "name": city_name,
@@ -2054,31 +2058,103 @@ def build_privacy_cookies_page():
     f.write(page_html)
 
 
+def _article_lastmod(art: dict, fallback: str) -> str:
+  return str(art.get("modifiedAt") or art.get("publishedAt") or fallback)
+
+
+def _format_rfc2822_date(iso_str: str, hour_offset: int = 9) -> str:
+  try:
+    dt = datetime.strptime(iso_str[:10], "%Y-%m-%d").replace(
+        hour=hour_offset % 24, minute=0, second=0, tzinfo=timezone.utc
+    )
+  except (TypeError, ValueError):
+    dt = datetime(2026, 11, 18, 9, 0, 0, tzinfo=timezone.utc)
+  return email.utils.format_datetime(dt)
+
+
+def optimize_large_images(max_kb: int = 220, quality: int = 82, max_width: int = 1280):
+  """Comprime imágenes JPG > max_kb a max_width px progresivo manteniendo >=20 KB (Core Web Vitals / Discover)."""
+  magick_bin = shutil.which("magick") or shutil.which("convert")
+  if not magick_bin:
+    return
+  img_root = os.path.join(PUBLIC_DIR, "images")
+  candidates = glob.glob(os.path.join(img_root, "**", "*.jpg"), recursive=True) + glob.glob(
+      os.path.join(img_root, "**", "*.jpeg"), recursive=True
+  )
+  optimized_count = 0
+  saved_bytes = 0
+  for path in candidates:
+    orig_size = os.path.getsize(path)
+    if orig_size <= max_kb * 1024:
+      continue
+    tmp_path = f"{path}.opt.jpg"
+    try:
+      subprocess.run(
+          [
+              magick_bin,
+              path,
+              "-strip",
+              "-interlace",
+              "Plane",
+              "-sampling-factor",
+              "4:2:0",
+              "-resize",
+              f"{max_width}x>",
+              "-quality",
+              str(quality),
+              tmp_path,
+          ],
+          check=True,
+          stdout=subprocess.DEVNULL,
+          stderr=subprocess.DEVNULL,
+      )
+      if os.path.exists(tmp_path):
+        new_size = os.path.getsize(tmp_path)
+        if 20000 <= new_size < orig_size:
+          os.replace(tmp_path, path)
+          optimized_count += 1
+          saved_bytes += orig_size - new_size
+        else:
+          os.remove(tmp_path)
+    except Exception:
+      if os.path.exists(tmp_path):
+        os.remove(tmp_path)
+  if optimized_count:
+    print(
+        f"[OK] Imágenes optimizadas para LCP/Discover: {optimized_count} archivos (-{saved_bytes // 1024} KB)."
+    )
+
+
 def regenerate_sitemap(articles: list):
   today = date.today().isoformat()
+  art_dates = [_article_lastmod(a, today) for a in articles]
+  site_lastmod = max(art_dates) if art_dates else today
   urls = [
-      f"  <url>\n    <loc>{SITE_URL}/</loc>\n    <lastmod>{today}</lastmod>\n"
+      f"  <url>\n    <loc>{SITE_URL}/</loc>\n    <lastmod>{site_lastmod}</lastmod>\n"
       "    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n "
       " </url>",
       f"  <url>\n    <loc>{SITE_URL}/mapa/</loc>\n   "
-      f" <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n   "
+      f" <lastmod>{site_lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n   "
       " <priority>0.9</priority>\n  </url>",
       f"  <url>\n    <loc>{SITE_URL}/sobre-nosotros/</loc>\n   "
-      f" <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n   "
+      " <lastmod>2026-10-07</lastmod>\n    <changefreq>monthly</changefreq>\n   "
       " <priority>0.6</priority>\n  </url>",
   ]
-  for info in CITIES.values():
+  for city_name, info in CITIES.items():
     c_slug = info["slug"]
+    city_dates = [_article_lastmod(a, today) for a in articles if a.get("city") == city_name]
+    city_lastmod = max(city_dates) if city_dates else site_lastmod
     urls.append(
         f"  <url>\n    <loc>{SITE_URL}/{c_slug}/</loc>\n   "
-        f" <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n   "
+        f" <lastmod>{city_lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n   "
         " <priority>0.9</priority>\n  </url>"
     )
   for art in articles:
     c_slug = CITIES.get(art["city"], {"slug": art["city"].lower()})["slug"]
+    art_lastmod = _article_lastmod(art, today)
     urls.append(
         f"  <url>\n    <loc>{SITE_URL}/{c_slug}/{art['slug']}/</loc>\n   "
-        f" <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n   "
+        f" <lastmod>{art_lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n   "
         " <priority>0.8</priority>\n  </url>"
     )
   sitemap_path = os.path.join(PUBLIC_DIR, "sitemap.xml")
@@ -2099,9 +2175,13 @@ def regenerate_rss_feed(articles: list):
     art_url = f"{SITE_URL}/{c_slug}/{art['slug']}/"
     img_rel = art.get("image", "").lstrip("/")
     img_url = f"{SITE_URL}/{img_rel}"
+    img_abs = os.path.join(PUBLIC_DIR, img_rel)
+    img_len = os.path.getsize(img_abs) if os.path.exists(img_abs) else 150000
     title_esc = html.escape(art["title"])
     desc_esc = html.escape(art.get("metaDescription", art.get("excerpt", "")))
-    pub_rfc = f"Sat, 10 Oct 2026 {max(0, 22 - (idx % 20)):02d}:00:00 +0000"
+    pub_rfc = _format_rfc2822_date(
+        art.get("publishedAt", "2026-11-18"), hour_offset=max(8, 20 - (idx % 12))
+    )
     items_xml.append(
         "    <item>\n"
         f"      <title>{title_esc}</title>\n"
@@ -2110,7 +2190,7 @@ def regenerate_rss_feed(articles: list):
         f"      <description>{desc_esc}</description>\n"
         f"      <category>{html.escape(art.get('city', 'España'))}</category>\n"
         f"      <pubDate>{pub_rfc}</pubDate>\n"
-        f'      <enclosure url="{img_url}" type="image/jpeg" length="150000" />\n'
+        f'      <enclosure url="{img_url}" type="image/jpeg" length="{img_len}" />\n'
         f'      <media:content url="{img_url}" medium="image" type="image/jpeg" />\n'
         "    </item>"
     )
@@ -2294,6 +2374,7 @@ def validate_articles_quality(articles: list):
 
 
 def build_all():
+  optimize_large_images()
   with open(ARTICLES_FILE, "r", encoding="utf-8") as f:
     articles = json.load(f)
 
