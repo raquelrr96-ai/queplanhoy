@@ -1158,9 +1158,73 @@ def run_thursday_scheduled_articles() -> list:
   return list(reversed(published))
 
 
+def run_monday_christmas_lead() -> list:
+  """Reposiciona el lunes en portada (y en cada hub de ciudad) las 5 guías de Mercadillos y Luces de Navidad."""
+  sched_file = os.path.join(BASE_DIR, "data", "scheduled_tuesday_articles.json")
+  scheduled = load_json(sched_file)
+  if not scheduled:
+    return []
+  existing_articles = load_json(ARTICLES_FILE)
+  sched_slugs = {a.get("slug") for a in scheduled}
+  sched_ids = {a.get("id") for a in scheduled}
+  remaining = [
+      a
+      for a in existing_articles
+      if a.get("slug") not in sched_slugs and a.get("id") not in sched_ids
+  ]
+  today_str = date.today().isoformat()
+  promoted = []
+  for art in reversed(scheduled):
+    art["publishedAt"] = today_str
+    remaining.insert(0, art)
+    promoted.append(art)
+  save_json(ARTICLES_FILE, remaining)
+  build_site.build_all()
+  return list(reversed(promoted))
+
+
+def run_wednesday_christmas_originals() -> list:
+  """Publica el miércoles las 5 guías de planes originales de Navidad 2026 (pintar bolas, cerámica y cafés especiales)."""
+  sched_file = os.path.join(
+      BASE_DIR, "data", "scheduled_wednesday_christmas_articles.json"
+  )
+  scheduled = load_json(sched_file)
+  if not scheduled:
+    return []
+  existing_articles = load_json(ARTICLES_FILE)
+  sched_slugs = {a.get("slug") for a in scheduled}
+  sched_ids = {a.get("id") for a in scheduled}
+  remaining = [
+      a
+      for a in existing_articles
+      if a.get("slug") not in sched_slugs and a.get("id") not in sched_ids
+  ]
+  today_str = date.today().isoformat()
+  published = []
+  for art in reversed(scheduled):
+    art["publishedAt"] = today_str
+    remaining.insert(0, art)
+    published.append(art)
+  save_json(ARTICLES_FILE, remaining)
+  build_site.build_all()
+  return list(reversed(published))
+
+
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(
       description="Agente SEO Generador de Artículos para HoyQuePlan"
+  )
+  parser.add_argument(
+      "--monday-christmas-lead",
+      dest="monday_christmas_lead",
+      action="store_true",
+      help="Reposiciona en portada el lunes los 5 reportajes de Mercadillos y Luces de Navidad",
+  )
+  parser.add_argument(
+      "--wednesday-christmas-originals",
+      dest="wednesday_christmas_originals",
+      action="store_true",
+      help="Publica el miércoles las 5 guías de planes originales de Navidad (cerámica, talleres y cafés)",
   )
   parser.add_argument(
       "--sunday-batch",
@@ -1215,7 +1279,21 @@ if __name__ == "__main__":
   )
   args = parser.parse_args()
 
-  if args.sunday_batch:
+  if args.monday_christmas_lead:
+    arts = run_monday_christmas_lead()
+    for a in arts:
+      print(
+          f"[OK] [{a['city']}] Mercadillos de Navidad reposicionados en portada:"
+          f" {a['title']}"
+      )
+  elif args.wednesday_christmas_originals:
+    arts = run_wednesday_christmas_originals()
+    for a in arts:
+      print(
+          f"[OK] [{a['city']}] Reportaje original de Navidad publicado:"
+          f" {a['title']}"
+      )
+  elif args.sunday_batch:
     arts = run_sunday_scheduled_articles()
     for a in arts:
       print(f"[OK] [{a['city']}] Reportaje del domingo publicado: {a['title']}")

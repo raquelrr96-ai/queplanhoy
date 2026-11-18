@@ -1,451 +1,442 @@
 [
   {
-    "id": "madrid-planes-fin-de-semana-agenda",
-    "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
-    "articleType": "multi_plan",
-    "title": "Qué hacer este fin de semana en Madrid (13 al 15 de noviembre): palacios abiertos, Beti Jai y JazzMadrid",
-    "metaTitle": "Planes Fin de Semana Madrid (13 al 15 Nov): Palacios Gratis y Beti Jai | Qué Plan Hoy",
-    "metaDescription": "Agenda verificada de planes en Madrid para el fin de semana del 13 al 15 de noviembre: visitas gratis al Frontón Beti Jai, salones del Palacio de Fernán Núñez, conciertos de JazzMadrid y CentroCentro.",
+    "id": "madrid-planes-originales-navidad-pintar-bolas-ceramica-cafes-2026",
+    "slug": "planes-originales-navidad-madrid-pintar-bolas-ceramica-cafes",
+    "articleType": "roundup",
+    "title": "Planes originales para hacer en Navidad en Madrid 2026: pintar bolas, cerámica y cafés especiales",
+    "metaTitle": "Planes Originales de Navidad en Madrid 2026: Pintar Bolas de Cerámica y Cafés Navideños | Qué Plan Hoy",
+    "metaDescription": "Sal de los típicos paseos en Madrid esta Navidad 2026: cafeterías Pottery Café para pintar bolas del árbol de cerámica, talleres de casitas de jengibre y locales con Gingerbread Latte o cafés navideños.",
     "city": "Madrid",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "🔥",
-    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
-    "readTime": "10 min",
-    "publishedAt": "2026-11-12",
-    "targetKeyword": "planes este fin de semana madrid 13 al 15 de noviembre que hacer gratis",
-    "searchVolume": "22.400 búsquedas/mes",
-    "keywordDifficulty": "Media (24/100)",
-    "image": "images/venues/madrid-palacio-fernan-nunez-mom-hero.jpg",
-    "imageAlt": "Fachada neoclásica y patio de carruajes del Palacio de Fernán Núñez en el barrio de las Letras / Lavapiés de Madrid",
-    "imageCredit": "Fotografía: Luis García (Zaqarbal) / Wikimedia Commons (CC BY-SA 3.0)",
-    "excerpt": "Llega el tercer fin de semana del mes en Madrid (del viernes 13 al domingo 15 de noviembre) con tres grandes citas culturales y patrimoniales: la apertura gratuita del restaurado Frontón Beti Jai de 1894 en Chamberí, las rutas por palacios decimonónicos como Fernán Núñez y la recta final de conciertos de JAZZMADRID y exposiciones en CentroCentro Cibeles.",
-    "priceRange": "Gratis – 15 €",
+    "category": "Planes Diferentes",
+    "categoryIcon": "🎨",
+    "readTime": "8 min",
+    "publishedAt": "2026-11-18",
+    "targetKeyword": "planes originales navidad madrid 2026 pintar bolas ceramica talleres cafeterias",
+    "searchVolume": "9.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (20/100)",
+    "image": "images/venues/mad-navidad-pintar-bolas-cafe-hero.jpg",
+    "imageAlt": "Mesa de cafetería cerámica en Madrid pintando a mano bolas de Navidad y tazas con cafés latte de invierno",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "¿Cansado de hacer siempre la misma cola en la Plaza Mayor cada diciembre? Madrid se ha llenado esta Navidad 2026 de planazos creativos para ir con amigos o en pareja: pintar tus propias bolas navideñas y vajilla en pottery cafés, montar casitas de jengibre entre flores o probar cafés especiales de jengibre y canela en cafeterías del centro.",
+    "priceRange": "Cafés desde 4 € · Talleres pintura 20 €–45 €",
     "neighborhoods": [
-      "Antón Martín / Santa Isabel",
-      "Chamberí / Almagro",
-      "Paseo del Prado / Cibeles",
-      "Conde Duque"
+      "Sol / Concepción Jerónima",
+      "Chamberí / Gaztambide",
+      "Salamanca / Serrano",
+      "Justicia / Malasaña"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "Para completar el fin de semana",
-      "title": "Entrada al Palacio de Liria de Madrid (Casa de Alba)",
-      "description": "Si te apasionan los palacios habitados del siglo XVIII y XIX, completa el fin de semana visitando los salones de Goya, Velázquez y la biblioteca del Palacio de Liria.",
-      "price": "Desde 16 € entrada con audioguía",
+      "badge": "Combina tu tarde creativa en el centro",
+      "title": "Entrada al Palacio Real o Mirador del Faro de Moncloa",
+      "description": "Después de tu sesión de cerámica navideña o merienda especiada en el centro, remata el día con una visita cultural o vistas navideñas sobre Madrid.",
+      "price": "Desde 4 € (Faro) / 14 € (Palacio Real)",
       "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2F",
       "ctaText": "Ver entradas y horarios →"
     },
-    "generatedByAgent": false,
+    "generatedByAgent": true,
     "sections": [
       {
-        "heading": "1. Visita a los salones románticos del Palacio de Fernán Núñez y el Madrid de los palacios del siglo XIX",
-        "venue": "Palacio de Fernán Núñez (Fundación de los Ferrocarriles Españoles · Calle de Santa Isabel, 44)",
-        "location": "Calle de Santa Isabel, 44 (Metro: Antón Martín - L1 / Estación del Arte - L1)",
-        "price": "Jornadas de puertas abiertas gratuitas con inscripción previa · Visitas guiadas regulares: 6 € – 10 €",
-        "lat": 40.4103,
-        "lng": -3.6974,
-        "image": "images/venues/madrid-palacio-fernan-nunez-interior.jpg",
-        "imageAlt": "Salones históricos con lámparas de cristal, tapices y alfombras de la Real Fábrica en el interior del Palacio de Fernán Núñez de Madrid",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
-        "content": "Uno de los secretos mejor guardados frente al Cine Doré y el Museo Reina Sofía es el **Palacio de Fernán Núñez** (Calle de Santa Isabel, 44), remodelado en la década de 1840 por los duques de Fernán Núñez como escenario de los grandes bailes de la aristocracia isabelina.\n\nDurante los fines de semana de mediados de noviembre enmarcados en las jornadas de difusión del patrimonio madrileño, sus salones abren al público mostrando el espectacular **Salón de Baile** inspirado en la Galería de los Espejos de Versalles, el Salón Isabelino, la escalera de roble y las alfombras originales de la Real Fábrica de Tapices. Al salir, estás a dos minutos a pie del Mercado de Antón Martín y de las tabernas históricas de la calle Ave María."
+        "heading": "1. Pintar bolas de Navidad y tazas en Pottery Cafés: Mama Pottery Café y Lumbre y Barro",
+        "venue": "Mama Pottery Café (C/ Concepción Jerónima, 11 y Pza. San Juan de la Cruz, 5) y Lumbre y Barro (C/ Gaztambide, 24)",
+        "location": "Sol / Tirso de Molina (L1) y Chamberí / Moncloa (L3, L6)",
+        "price": "Sesiones desde 18 €–35 € según la pieza elegida + café o matcha aparte",
+        "lat": 40.4139,
+        "lng": -3.7061,
+        "image": "images/venues/mad-navidad-lumbre-barro-sec1.jpg",
+        "imageAlt": "Taller de cerámica navideña en Madrid pintando bolas de cerámica blanca con acebo rojo y estrellitas",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "El plan estrella de esta Navidad en Madrid es sentarse dos horas en un taller luminoso con un café caliente al lado mientras pintas adornos únicos para tu árbol o regalos hechos a mano. En **Mama Pottery Café** (con locales en **Calle Concepción Jerónima, 11** junto a Sol y en **Plaza de San Juan de la Cruz, 5**) eliges la pieza de bizcocho cerámico —desde **bolas de Navidad**, platitos con forma de árbol o tazas invernales— y te facilitan pinceles, esponjas y esmaltes de colores antes de meterla en su horno profesional.\n\nOtra apuesta segura en Chamberí es **Lumbre y Barro** (Calle Gaztambide, 24) o **Nossa Cerámica** en Retiro (Calle Doctor Castelo, 41), que organizan monográficos específicos de **bolas navideñas pintadas bajo cubierta** donde no necesitas ninguna experiencia previa."
       },
       {
-        "heading": "2. Entrada libre al Frontón Beti Jai restaurado en Chamberí (la joya neomudéjar de 1894)",
-        "venue": "Frontón Beti Jai y su Centro de Interpretación (Calle del Marqués del Riscal, 7)",
-        "location": "Calle del Marqués del Riscal, 7 (Metro: Rubén Darío - L5 / Alonso Martínez - L4, L5, L10)",
-        "price": "Acceso 100% gratuito (Viernes, sábados y domingos de 10:00 a 14:00 h sin necesidad de reserva previa para acceso libre)",
-        "lat": 40.4316,
-        "lng": -3.6914,
-        "image": "images/venues/madrid-fronton-beti-jai-cancha.jpg",
-        "imageAlt": "Cancha al aire libre y galerías curvas de hierro forjado y ladrillo neomudéjar del Frontón Beti Jai de 1894 en Chamberí",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
-        "content": "Tras décadas oculto tras los bloques señoriales de Almagro y una meticulosa restauración municipal premiada internacionalmente, el **Frontón Beti Jai** (levantado en 1894 por el arquitecto Joaquín Rucoba, autor también del Teatro Arriaga de Bilbao) abre sus puertas de forma totalmente gratuita las mañanas de viernes, sábado y domingo.\n\nEs el único frontón industrial de pelota vasca del siglo XIX que se conserva en pie en el mundo: al cruzar su fachada neomudéjar a la **cancha central de 67 metros de largo**, te rodean cuatro plantas de galerías curvas de hierro forjado, madera y frescos decorativos con capacidad original para 4.000 espectadores, además de un nuevo museo en la primera planta donde también se recuerda que aquí ensayó Leonardo Torres Quevedo su primer mando a distancia (*Telekino*) en 1904."
+        "heading": "2. Montar casitas de jengibre y coronas naturales en Supernormal (Serrano, 112)",
+        "venue": "Supernormal · Tienda orgánica y taller floral (Calle de Serrano, 112)",
+        "location": "Calle de Serrano, 112 (El Viso / Salamanca · Metro Gregorio Marañón o República Argentina)",
+        "price": "Talleres navideños entre 45 € y 65 € con todos los materiales y bebida incluidos",
+        "lat": 40.4395,
+        "lng": -3.6869,
+        "image": "images/venues/mad-navidad-supernormal-jengibre-sec2.jpg",
+        "imageAlt": "Mesa navideña en taller artesanal decorando casitas de galleta de jengibre y coronas de abeto",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Si prefieres un ambiente botánico con olor a pino fresco, mantequilla horneada y canela, apunta los talleres de temporada de **Supernormal** (Calle de Serrano, 112). Entre noviembre y diciembre programan sesiones especiales para construir y decorar tu propia **casita de galleta de jengibre con glasa y golosinas**, además de talleres de **coronas de Navidad naturales** con eucalipto, abeto y bayas rojas.\n\nSuelen incluir un vino caliente especiado o infusión invernal mientras trabajas en mesa compartida; conviene reservar con dos semanas de antelación porque los grupos de tarde vuelan."
       },
       {
-        "heading": "3. Conciertos de otoño en CentroCentro Cibeles y fin de semana de JAZZMADRID (13 al 15 de noviembre)",
-        "venue": "CentroCentro (Palacio de Cibeles, Plaza de Cibeles, 1) y sedes de JAZZMADRID (Fernán Gómez y Condeduque)",
-        "location": "Plaza de Cibeles, 1 (Metro: Banco de España - L2) y Plaza de Colón, 4 (Metro: Colón - L4)",
-        "price": "Exposiciones de las plantas 1, 3, 4 y 5 de CentroCentro: Gratis · Conciertos de ciclo: desde 5 € – 15 €",
-        "lat": 40.4189,
-        "lng": -3.6921,
-        "image": "images/venues/madrid-centrocentro-cibeles-concierto.jpg",
-        "imageAlt": "Actuación musical bajo la bóveda acristalada del Patio de Operaciones de CentroCentro en el Palacio de Cibeles de Madrid",
-        "imageCredit": "Fotografía: Ayuntamiento de Madrid / Wikimedia Commons (CC BY 4.0)",
-        "content": "Para la tarde del sábado 14 o la mañana del domingo 15 de noviembre, el antiguo Palacio de Comunicaciones (**CentroCentro**, en la Plaza de Cibeles, 1) ofrece acceso libre y gratuito a sus plantas de exposiciones temporales de fotografía, diseño e historia urbana de Madrid, además de conciertos corales y acústicos en su auditorio y Galería de Cristal.\n\nDesde Cibeles puedes subir en diez minutos por el Paseo de Recoletos hasta el **Teatro Fernán Gómez (Centro Cultural de la Villa)** en la Plaza de Colón, sede principal junto a Condeduque del **Festival Internacional JAZZMADRID**, que este fin de semana del 13 al 15 de noviembre celebra sus conciertos centrales de otoño a las 20:00 h."
+        "heading": "3. Ruta de cafés especiales de Navidad: Gingerbread Latte, crema de roscón y chai de invierno",
+        "venue": "Cafeterías de especialidad del Centro, Justicia y Chamberí (Toma Café, Hola Coffee, Pinta en Copas y clásicos de temporada)",
+        "location": "Eje Malasaña (C/ La Palma, 49), Lavapiés (C/ Doctor Fourquet) y Chueca / Barquillo",
+        "price": "Cafés especiales de Navidad entre 3,80 € y 5,50 €",
+        "lat": 40.4265,
+        "lng": -3.7048,
+        "image": "images/venues/mad-navidad-cafes-especiales-sec3.jpg",
+        "imageAlt": "Tazas de Gingerbread Latte y capuchino especiado con canela, crema de roscón y galleta navideña en cafetería acogedora",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Cuando cae el frío de noviembre y diciembre apetece descubrir cafeterías que lanzan cartas exclusivas de invierno con **cafés especiales de Navidad**. En las barras de especialidad del centro y Chamberí vuelven recetas tan buscadas como el **Gingerbread Latte** (con sirope casero de jengibre y clavo), el **chai latte con cardamomo**, chocolates especiados con naranja confitada o lattes inspirados en turrón y crema tostada.\n\nSi quieres combinarlo con un plan creativo sin gastar mucho, muchos cafés cerámicos del eje Centro-Malasaña permiten reservar mesa solo para merendar y pintar una figura pequeña de Navidad en la misma tarde."
       }
     ],
     "faqs": [
       {
-        "question": "¿Hace falta reservar entrada para visitar gratis el Frontón Beti Jai este fin de semana?",
-        "answer": "No: el Ayuntamiento de Madrid mantiene abierto el acceso libre y gratuito tanto a la cancha histórica como al Centro de Interpretación del Frontón Beti Jai (Calle del Marqués del Riscal, 7) de martes a domingo en horario continuo de 10:00 a 14:00 h por orden de llegada."
+        "question": "¿Hay que saber dibujar para pintar bolas de Navidad en Mama Pottery Café o Lumbre y Barro?",
+        "answer": "En absoluto: en todos estos talleres te dan plantillas, lápices que desaparecen en el horno, cintas de reserva y consejos paso a paso para que cualquier bola o taza quede preciosa aunque sea tu primera vez."
       },
       {
-        "question": "¿Qué exposiciones son gratuitas en CentroCentro Cibeles del 13 al 15 de noviembre?",
-        "answer": "Todas las exposiciones temporales situadas en las plantas 1, 3, 4 y 5 de CentroCentro (Palacio de Cibeles) son de entrada 100% libre y gratuita en horario de martes a domingo de 10:00 a 20:00 h; solo el Mirador de la torre (planta 8) tiene una tarifa municipal de 3 €."
+        "question": "¿Cuánto tardan en entregarte la bola o taza de cerámica cocida en el horno?",
+        "answer": "Al aplicarse esmalte brillante y cocerse a más de 1.000 ºC, normalmente la recoges horneada y lista para colgar o usar entre 7 y 12 días después de la sesión."
       },
       {
-        "question": "¿Dónde consultar los horarios y entradas del Festival JAZZMADRID este fin de semana?",
-        "answer": "Las actuaciones principales del viernes 13, sábado 14 y domingo 15 de noviembre se reparten entre el Teatro Fernán Gómez (Plaza de Colón, 4), el Auditorio de Condeduque y CentroCentro, con precios populares entre 12 € y 25 € disponibles en la web oficial del festival y en las taquillas municipales."
+        "question": "¿Es necesario reservar con antelación estos planes navideños en Madrid?",
+        "answer": "Sí, especialmente de viernes a domingo desde mediados de noviembre hasta Reyes, ya que los turnos de tarde de pottery café y los talleres de coronas o jengibre suelen llenarse varios días antes."
       }
     ]
   },
   {
-    "id": "bcn-planes-fin-de-semana-agenda",
-    "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
-    "articleType": "multi_plan",
-    "title": "Qué hacer este fin de semana en Barcelona (13 al 15 de noviembre): L'Alternativa en el CCCB, MACBA y Palo Alto",
-    "metaTitle": "Planes Fin de Semana Barcelona (13 al 15 Nov): CCCB y Palo Alto | Qué Plan Hoy",
-    "metaDescription": "Agenda de planes en Barcelona del 13 al 15 de noviembre: Festival de Cine Independiente L'Alternativa en el CCCB, tardes gratuitas de sábado en el MACBA y mercado de diseño en los jardines de Palo Alto.",
+    "id": "bcn-planes-originales-navidad-pintar-ceramica-cafes-2026",
+    "slug": "planes-originales-navidad-barcelona-pintar-ceramica-cafes-rolls",
+    "articleType": "roundup",
+    "title": "Planes originales para Navidad en Barcelona 2026: pintar cerámica, arte UV y cafés especiales",
+    "metaTitle": "Planes Originales de Navidad en Barcelona 2026: La Pintoràmica, Arte UV y Cafés Navideños | Qué Plan Hoy",
+    "metaDescription": "Planes distintos para esta Navidad 2026 en Barcelona: pintar bolas y Caga Tió en La Pintoràmica, pintura navideña bajo luz UV en Paint Barcelona y rolls de canela con cafés especiados en El Born.",
     "city": "Barcelona",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "🔥",
-    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
-    "readTime": "9 min",
-    "publishedAt": "2026-11-12",
-    "targetKeyword": "planes este fin de semana barcelona 13 al 15 de noviembre que hacer hoy",
-    "searchVolume": "16.800 búsquedas/mes",
-    "keywordDifficulty": "Baja (19/100)",
-    "image": "images/venues/bcn-cccb-alternativa-festival-hero.jpg",
-    "imageAlt": "Patio del Centre de Cultura Contemporània de Barcelona (CCCB) con su fachada de cristal inclinada reflejando el Raval y el mar",
-    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
-    "excerpt": "Este fin de semana del 13 al 15 de noviembre Barcelona celebra dos grandes citas de otoño: el arranque del Festival de Cine Independiente L'Alternativa en el CCCB y la Filmoteca, las puertas abiertas de los sábados por la tarde en el MACBA y las galerías fabriles ajardinadas de Palo Alto en Poblenou.",
-    "priceRange": "Gratis – 9 €",
+    "category": "Planes Diferentes",
+    "categoryIcon": "🎨",
+    "readTime": "8 min",
+    "publishedAt": "2026-11-18",
+    "targetKeyword": "planes originales navidad barcelona 2026 pintar ceramica cafeterias navidad",
+    "searchVolume": "7.900 búsquedas/mes",
+    "keywordDifficulty": "Baja (21/100)",
+    "image": "images/venues/bcn-navidad-pintoramica-hero.jpg",
+    "imageAlt": "Mesa creativa en Barcelona pintando bolas navideñas y figuras de cerámica con pinceles y una taza de café",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "Más allá de las Firas tradicionales, Barcelona ofrece esta Navidad 2026 planazos perfectos para tardes frías: pintar tu propio Caga Tió o bolas del árbol en La Pintoràmica, atreverte con sesiones festivas con música y luz negra en El Born y terminar con rolls de canela recién horneados y cafés de jengibre.",
+    "priceRange": "Cafés desde 4 € · Talleres pintura 22 €–39 €",
     "neighborhoods": [
-      "El Raval (CCCB y MACBA)",
-      "Poblenou / Diagonal Mar",
-      "Barri Gòtic",
-      "Sant Antoni"
+      "Vila de Gràcia / C. d'Astúries",
+      "El Born / Bonaire y Princesa",
+      "Eixample / Sant Antoni"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "Para completar el fin de semana",
-      "title": "Entrada a Casa Batlló o La Pedrera (Casa Milà)",
-      "description": "A 10 minutos a pie del CCCB subiendo por Rambla de Catalunya: recorre las azoteas de chimeneas escultóricas de Antoni Gaudí en el Passeig de Gràcia.",
-      "price": "Desde 25 € entrada oficial",
+      "badge": "Plan completo por el Born y Eixample",
+      "title": "Entrada al Museo Picasso o Casa Batlló en invierno",
+      "description": "Aprovecha tu tarde por El Born pintando cerámica o merendando rolls navideños para entrar sin colas al Museo Picasso o ver la fachada iluminada de Casa Batlló.",
+      "price": "Desde 14 € entrada oficial",
       "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2F",
       "ctaText": "Ver entradas y horarios →"
     },
-    "generatedByAgent": false,
+    "generatedByAgent": true,
     "sections": [
       {
-        "heading": "1. Festival de Cine Independiente de Barcelona (L'Alternativa) en el CCCB y el Pati de les Dones",
-        "venue": "Centre de Cultura Contemporània de Barcelona - CCCB (Carrer deontalegre, 5 · El Raval)",
-        "location": "Carrer de Montalegre, 5 (Metro: Universitat - L1, L2 / Catalunya - L1, L3)",
-        "price": "Proyecciones y encuentros gratuitos en el Hall y Pati de les Dones · Sesiones de sala: 4 € – 8 €",
+        "heading": "1. La Pintoràmica (Gràcia y El Born): pinta tazas invernales, bolas del árbol y figuras de Caga Tió",
+        "venue": "La Pintoràmica Pottery Café (Carrer d'Astúries, 85 en Gràcia y Carrer del Bonaire, 5 en El Born)",
+        "location": "C/ d'Astúries, 85 (Metro Fontana L3) y C/ del Bonaire, 5 (Metro Jaume I L4)",
+        "price": "Piezas cerámicas desde 18 €–32 € (esmaltado y cocción incluidos)",
+        "lat": 41.4017,
+        "lng": 2.1528,
+        "image": "images/venues/bcn-navidad-pintoramica-tazas-sec1.jpg",
+        "imageAlt": "Tazas navideñas y adornos de cerámica pintados a mano sobre mesa artesanal en La Pintoràmica Barcelona",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "En **La Pintoràmica** (con dos preciosos locales en **Carrer d'Astúries, 85** en Gràcia y **Carrer del Bonaire, 5** en El Born) han convertido la merienda en una experiencia creativa inolvidable. Seleccionas en sus estanterías tazas navideñas, platos de turrón, adornos colgantes o incluso figuras de **Caga Tió** en cerámica lista para pintar.\n\nDurante **dos horas**, mientras escuchas música relajada y disfrutas de un té chai, café de especialidad o copa de vino, puedes decorarlos a tu aire sin prisas."
+      },
+      {
+        "heading": "2. Paint Barcelona en El Born: sesiones de pintura navideña y neón con música y copa",
+        "venue": "Paint Barcelona (Carrer de l'Esparteria · El Born)",
+        "location": "Carrer de l'Esparteria (Barri del Born · Metro Barceloneta o Jaume I L4)",
+        "price": "Desde 32 €–38 € (lienzo o adorno, pinturas, música y consumición)",
         "lat": 41.3842,
-        "lng": 2.1668,
-        "image": "images/venues/bcn-cccb-pati-de-les-dones.jpg",
-        "imageAlt": "Claustro histórico y fachada espejada del Pati de les Dones en el Centre de Cultura Contemporània de Barcelona (CCCB)",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
-        "content": "Durante el fin de semana del **13 al 15 de noviembre**, el **Centre de Cultura Contemporània de Barcelona (CCCB)** es el epicentro de la 33ª edición de **L'Alternativa**, el festival histórico de cine independiente y de autor de la ciudad.\n\nAdemás de los estrenos internacionales en versión original subtitulada en el Teatro del CCCB y en la vecina Filmoteca de Catalunya, el festival programa sesiones gratuitas al aire libre y en el Hall, mesas redondas con directores y proyecciones familiares matinales el sábado y el domingo. Aprovecha también el domingo entre las 15:00 y las 20:00 h para visitar gratis las grandes exposiciones temporales del CCCB y subir a su **Mirador de la quinta planta** (abierto gratis el primer domingo de mes y en jornadas especiales)."
+        "lng": 2.1835,
+        "image": "images/venues/bcn-navidad-paint-uv-sec2.jpg",
+        "imageAlt": "Estudio nocturno con pinturas fluorescentes bajo luz negra pintando motivos navideños en Barcelona",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Si buscas un plan en grupo o con amigos mucho más festivo que una cafetería tranquila, el estudio **Paint Barcelona** en El Born organiza tardeos creativos con pincel en una mano y copa en la otra. Sus sesiones temáticas navideñas y de **pintura con luz negra UV** convierten abetos, bolas y paisajes de invierno en lienzos brillantes al ritmo de playlists actuales.\n\nTambién puedes explorar otros talleres de barrio como **La Ceramicaria** si prefieres moldear adornos de barro fresco desde cero."
       },
       {
-        "heading": "2. Sábado por la tarde gratis en el MACBA y ruta de librerías y cafés por la Plaça dels Àngels",
-        "venue": "Museu d'Art Contemporani de Barcelona - MACBA (Plaça dels Àngels, 1)",
-        "location": "Plaça dels Àngels, 1 (Metro: Universitat - L1, L2 / Liceu - L3)",
-        "price": "Entrada 100% gratuita todos los sábados de 16:00 a 20:00 h (12 € resto de horarios)",
-        "lat": 41.3832,
-        "lng": 2.1669,
-        "image": "images/venues/bcn-macba-exposiciones-raval.jpg",
-        "imageAlt": "Edificio luminoso blanco diseñado por Richard Meier para el Museu d'Art Contemporani de Barcelona (MACBA) en la Plaça dels Àngels",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
-        "content": "Puerta con puerta con el CCCB se abre la luminosa **Plaça dels Àngels** y el edificio blanco racionalista proyectado por Richard Meier para el **MACBA**. Todos los **sábados del año de 16:00 a 20:00 h**, el museo abre de forma completamente gratuita sus tres plantas de exposiciones y la antigua Capella MACBA dels Àngels (siglo XVI), situada justo enfrente.\n\nAl salir a las 18:30 h, piérdete por las calles peatonales adyacentes (Carrer d'Elisabets, Doctor Dou y Pintor Fortuny) para ojear la librería La Central del Raval —instalada en la antigua capilla de la Misericordia con jardín interior— y tomar un vino natural o vermut en las bodegas históricas de Sant Antoni."
-      },
-      {
-        "heading": "3. Diseño, gastronomía y jardines industriales cubiertos de hiedra en la antigua fábrica de Palo Alto (Poblenou)",
-        "venue": "Recinto fabril de Palo Alto (Carrer dels Pellaires, 30 · Poblenou / Diagonal Mar)",
-        "location": "Carrer dels Pellaires, 30 (Metro: Selva de Mar - L4 / Tranvía T4: Selva de Mar)",
-        "price": "Entrada a jornadas de mercado y música en los jardines: 5,50 € (Menores de 12 años gratis)",
-        "lat": 41.4046,
-        "lng": 2.2108,
-        "image": "images/venues/bcn-palo-alto-poblenou-jardin.jpg",
-        "imageAlt": "Pasaje interior empedrado y naves industriales del siglo XIX cubiertas de hiedra y buganvillas en Palo Alto (Poblenou, Barcelona)",
-        "imageCredit": "Fotografía: Enfo / Wikimedia Commons (CC BY-SA 4.0)",
-        "content": "Si el sábado 14 o el domingo 15 de noviembre buscas un plan diurno al sol cerca del mar, acércate al barrio de **Poblenou** hasta la antigua fábrica textil de **Palo Alto** (Carrer dels Pellaires, 30, levantada en 1875 y rehabilitada como oasis creativo por el estudio de Javier Mariscal).\n\nSus chimeneas de ladrillo rojo, pasajes empedrados cubiertos de hiedra centenaria, buganvillas y huertos urbanos acogen talleres de artistas, exposiciones de diseño local, conciertos de jazz y soul al mediodía y *foodtrucks* gastronómicos a solo cinco minutos caminando de la playa de la Mar Bella y de la Rambla del Poblenou."
+        "heading": "3. Merienda invernal en Demasié (El Born): cinnamon rolls navideños y cafés especiados",
+        "venue": "Demasié Coffee & Cinnamon Rolls (Carrer de la Princesa, 28 · El Born)",
+        "location": "Carrer de la Princesa, 28 (A 2 min de La Pintoràmica del Born)",
+        "price": "Roll especial de canela 3,90 €–4,80 € · Cafés navideños desde 3,50 €",
+        "lat": 41.3854,
+        "lng": 2.1806,
+        "image": "images/venues/bcn-navidad-demasie-rolls-cafe-sec3.jpg",
+        "imageAlt": "Cinnamon rolls recién glaseados con canela y tazas calientes de café especiado de Navidad en El Born",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Justo al salir de pintar cerámica en el Born, a menos de dos minutos a pie, está una de las mecas de la merienda dulce de invierno en Barcelona: **Demasié** en **Carrer de la Princesa, 28**. Su vitrina saca continuamente **cinnamon rolls tiernos** —de canela clásica, galleta Lotus, pistacho, chocolate o ediciones navideñas— que encajan de maravilla con sus cafés especiales con canela y crema.\n\nPor el mismo barrio puedes alargar el paseo bajo la iluminación de la calle Argenteria hasta Santa Maria del Mar o buscar un buen café de especialidad especiado en el eje del Born y Sant Antoni."
       }
     ],
     "faqs": [
       {
-        "question": "¿Qué museos son gratis este fin de semana del 13 al 15 de noviembre en Barcelona?",
-        "answer": "El sábado 14 de noviembre de 16:00 a 20:00 h es gratuito el MACBA (Plaça dels Àngels, 1). Y el domingo 15 de noviembre a partir de las 15:00 h (hasta las 20:00 h) abren gratis el CCCB, el MUHBA Plaça del Rei, el Museu Marítim en las Drassanes Reials, el Castell de Montjuïc, el Museu de Ciències Naturals y el Jardí Botànic."
+        "question": "¿Cuál de los dos locales de La Pintoràmica conviene más para un plan navideño?",
+        "answer": "El local de Gràcia (C/ d'Astúries, 85) tiene mucho encanto de barrio junto a las luces de Fontana, mientras que el de El Born (C/ del Bonaire, 5) es ideal para combinar la cerámica con merienda en Demasié y paseo por el Gòtic."
       },
       {
-        "question": "¿Dónde ver la programación gratuita del festival L'Alternativa en el CCCB?",
-        "answer": "En la taquilla y en el vestíbulo principal del CCCB (Carrer de Montalegre, 5) puedes recoger el programa de mano con todas las proyecciones del Hall, sesiones familiares de Pequeños Experimento y coloquios de entrada libre hasta completar aforo."
+        "question": "¿Incluye bebida la entrada a Paint Barcelona?",
+        "answer": "Sí, la mayoría de sesiones 'Sip & Paint' incluyen todos los materiales pictóricos, guía del artista y al menos una bebida o vino durante el taller."
       },
       {
-        "question": "¿Cómo llegar en transporte público a Palo Alto en Poblenou?",
-        "answer": "Toma la línea amarilla L4 de Metro o el tranvía T4 hasta la parada Selva de Mar y camina 4 minutos hacia el mar por la calle Provençals hasta el Carrer dels Pellaires, 30."
+        "question": "¿Cuánto cuesta una tarde en un pottery café de Barcelona?",
+        "answer": "Depende del tamaño de la figura de cerámica que elijas: las bolas o adornos pequeños suelen rondar los 15–20 € y las tazas o platos completos entre 24 y 34 € ya con cocción incluida."
       }
     ]
   },
   {
-    "id": "vlc-planes-fin-de-semana-agenda",
-    "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
-    "articleType": "multi_plan",
-    "title": "Qué hacer este fin de semana en Valencia (13 al 15 de noviembre): Palau de la Música, Centre del Carme y Museo de la Ciudad",
-    "metaTitle": "Planes Fin de Semana Valencia (13 al 15 Nov): Palau y El Carmen | Qué Plan Hoy",
-    "metaDescription": "Planes en Valencia para el fin de semana del 13 al 15 de noviembre: conciertos de otoño en el Palau de la Música, exposiciones gratis en los claustros del Centre del Carme (CCCC) y el Palacio del Marqués de Campo.",
+    "id": "vlc-planes-originales-navidad-pottery-cafe-coronas-ruzafa-2026",
+    "slug": "planes-originales-navidad-valencia-pintar-ceramica-coronas-cafes",
+    "articleType": "roundup",
+    "title": "Planes originales de Navidad en Valencia 2026: pintar cerámica, coronas florales y cafés",
+    "metaTitle": "Planes Originales de Navidad en Valencia 2026: Pottery Café, Ceramilab y Cafés de Ruzafa | Qué Plan Hoy",
+    "metaDescription": "Propuestas creativas de Navidad en Valencia 2026: pintar adornos navideños en Mama Pottery Café y Ceramilab, hacer tu corona de abeto en Cuit y probar cafés especiados en Ruzafa.",
     "city": "Valencia",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "🔥",
-    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
-    "readTime": "9 min",
-    "publishedAt": "2026-11-12",
-    "targetKeyword": "planes este fin de semana valencia 13 al 15 de noviembre que hacer hoy",
-    "searchVolume": "11.200 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (14/100)",
-    "image": "images/venues/vlc-palau-musica-conciertos-nov-hero.jpg",
-    "imageAlt": "Bóveda acristalada del Palau de la Música de Valencia reflejada sobre el estanque del Jardín del Turia",
-    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
-    "excerpt": "Del viernes 13 al domingo 15 de noviembre Valencia combina música en directo junto al Jardín del Turia y arte gratuito en antiguos conventos y palacios: conciertos matinales y vespertinos en el Palau de la Música, exposiciones en los dos claustros del Centre del Carme (CCCC) y visita gratuita al Palacio del Marqués de Campo.",
-    "priceRange": "Gratis – 12 €",
+    "category": "Planes Diferentes",
+    "categoryIcon": "🎨",
+    "readTime": "8 min",
+    "publishedAt": "2026-11-18",
+    "targetKeyword": "planes originales navidad valencia 2026 pintar ceramica talleres cafes ruzafa",
+    "searchVolume": "6.100 búsquedas/mes",
+    "keywordDifficulty": "Baja (18/100)",
+    "image": "images/venues/vlc-navidad-pottery-cafe-hero.jpg",
+    "imageAlt": "Taller luminoso en Valencia decorado de Navidad con tazas de cerámica artesanales, pinceles y café latte",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "Este diciembre Valencia invita a cambiar las compras con prisa por planes hechos con calma: pintar bolas navideñas y tazas en Mama Pottery Café o Ceramilab, diseñar tu corona de Navidad en talleres de Ruzafa como Cuit y descubrir los cafés especiados de invierno en las mejores barras de la ciudad.",
+    "priceRange": "Cafés desde 3,50 € · Talleres 20 €–42 €",
     "neighborhoods": [
-      "Jardín del Turia / Pla del Real",
-      "Barrio del Carmen",
-      "Plaza del Arzobispo / Catedral",
-      "Ruzafa"
+      "Centro / Ciutat Vella",
+      "Ruzafa / Calle Cuba y Vivons",
+      "El Carmen / Abastos"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "Para completar el fin de semana",
-      "title": "Entrada al Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
-      "description": "A pocos minutos a pie del Centre del Carme: visita el palacio del siglo XVII rehabilitado con más de 100 obras de arte contemporáneo y restos del circo romano.",
-      "price": "Desde 10 € entrada oficial",
+      "badge": "Completa tu tarde por Ruzafa y Centro",
+      "title": "Entrada al Palacio del Marqués de Dos Aguas o Centro Hortensia Herrero",
+      "description": "Empieza la tarde admirando la fachada barroca de Dos Aguas (y su Belén napolitano en Navidad) o el Museo Hortensia Herrero antes de tu merienda creativa.",
+      "price": "Desde 3 € (Dos Aguas) / 10 € (Hortensia Herrero)",
       "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c66345%2F",
       "ctaText": "Ver entradas y horarios →"
     },
-    "generatedByAgent": false,
+    "generatedByAgent": true,
     "sections": [
       {
-        "heading": "1. Conciertos de otoño y matinales de domingo en el Palau de la Música junto al Jardín del Turia",
-        "venue": "Palau de la Música de València (Paseo de la Alameda, 30 · Jardín del Turia)",
-        "location": "Paseo de la Alameda, 30 (Metro: Aragón - L5, L7 / Alameda - L3, L5, L7, L9)",
-        "price": "Conciertos de cámara en Sala Rodrigo y matinales: Gratis o desde 5 € – 12 € · Abono Sala Iturbi: 10 € – 20 €",
-        "lat": 39.4664,
-        "lng": -0.3603,
-        "image": "images/venues/vlc-palau-musica-auditorio-interior.jpg",
-        "imageAlt": "Interior de la gran Sala José Iturbi del Palau de la Música de Valencia durante un concierto sinfónico",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY 2.0)",
-        "content": "Con sus salas principales plenamente renovadas frente a los estanques diseñados por Ricardo Bofill en el antiguo cauce del río Turia, el **Palau de la Música de València** vive del **viernes 13 al domingo 15 de noviembre** uno de los fines de semana más intensos de su temporada de otoño.\n\nAdemás del gran concierto sinfónico del viernes por la tarde en la Sala José Iturbi, el sábado y el domingo a las 11:30 h destacan los recitales de cámara de la Sala Joaquín Rodrigo y las matinales de la Banda Simfònica Municipal (muchas de ellas de entrada gratuita retirando localidad en taquilla o web). Al salir a las 13:00 h, cruza el Puente de las Flores hacia el Mercado de Colón para la hora del vermut."
+        "heading": "1. Tarde de Pottery Café y adornos del árbol en Mama Pottery Café Valencia y Ceramilab",
+        "venue": "Mama Pottery Café Valencia y talleres navideños de Ceramilab",
+        "location": "Centro / Ensanche y Ruzafa (Consultar disponibilidad semanal al reservar)",
+        "price": "Pintar pieza cerámica + esmaltado desde 20 €–32 € · Matcha y café aparte",
+        "lat": 39.4668,
+        "lng": -0.3712,
+        "image": "images/venues/vlc-navidad-ceramilab-adornos-sec1.jpg",
+        "imageAlt": "Adornos navideños de cerámica blanca pintados a mano con pinceles finos y taza de matcha en Valencia",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "La moda de los **pottery cafés** arrasa también en Valencia estas Navidades. Tanto en **Mama Pottery Café** como en los talleres de temporada de **Ceramilab**, la dinámica es tan sencilla como terapéutica: reservas una franja de tarde o fin de semana, escoges tus **adornos navideños, arbolitos o tazas de desayuno** de cerámica y los decoras a mano entre esmaltes pastel, verdes pino y rojos festivos.\n\nMientras pintas, puedes pedir un **matcha latte o café de especialidad**, convirtiendo una tarde gris en el regalo personalizado perfecto para el amigo invisible."
       },
       {
-        "heading": "2. Arte contemporáneo y conciertos gratuitos entre los claustros gótico y renacentista del Centre del Carme (CCCC)",
-        "venue": "Centre del Carme Cultura Contemporània - CCCC (Calle del Museo, 2 · Barrio del Carmen)",
-        "location": "Calle del Museo, 2 (junto a la Plaza del Carmen y las Torres de Serranos)",
-        "price": "Acceso 100% gratuito a los claustros, exposiciones y actividades (Martes a domingo de 11:00 a 21:00 h)",
-        "lat": 39.4795,
-        "lng": -0.3789,
-        "image": "images/venues/vlc-centre-del-carme-claustro-arte.jpg",
-        "imageAlt": "Claustro gótico de arcos apuntados y jardín de naranjos del antiguo Real Monasterio de Nuestra Señora del Carmen (CCCC) en Valencia",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
-        "content": "En el corazón del Barrio del Carmen, el antiguo Real Monasterio de Nuestra Señora del Carmen (fundado en 1281 y reconvertido hoy en el **Centre del Carme Cultura Contemporània - CCCC**) es el plan cultural gratuito más vivo de Valencia durante todo el fin de semana.\n\nCon horario ininterrumpido de 11:00 a 21:00 h, puedes recorrer libremente su **Claustro Gótico** (siglo XIV), su **Claustro Renacentista** lleno de naranjos, la Sala Ferreres-Goerlich y media docena de exposiciones temporales de ilustración, diseño valenciano, fotografía y arte sonoro, acompañadas los sábados al mediodía de encuentros acústicos y talleres familiares gratuitos."
+        "heading": "2. Cuit Espai Ceràmic en Ruzafa y talleres navideños de coronas naturales y barro",
+        "venue": "Cuit Espai Ceràmic (Carrer de Cuba, Ruzafa) y Kiuti Concept (Carrer dels Vivons)",
+        "location": "Barrio de Ruzafa (C/ de Cuba y C/ dels Vivons · Metro Bailén o Russafa L10)",
+        "price": "Monográficos navideños de cerámica o coronas entre 35 € y 48 €",
+        "lat": 39.4614,
+        "lng": -0.3738,
+        "image": "images/venues/vlc-navidad-cuit-coronas-sec2.jpg",
+        "imageAlt": "Taller en Ruzafa confeccionando coronas navideñas naturales de eucalipto, naranja seca y piñas",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "El barrio de **Ruzafa** concentra varios de los talleres artesanales más apetecibles para diciembre. En **Cuit Espai Ceràmic** (Calle de Cuba) —y espacios vecinos como **Kiuti Concept** en Calle dels Vivons o **Espígol Ceramics**— se organizan sesiones puntuales en diciembre para modelar portavelas navideños, platitos de turrón o coronas festivas con ramas de **eucalipto, rodajas de naranja seca valenciana y piñas**.\n\nNo hace falta traer nada: todos los materiales naturales, el alambre floral, el barro y el horneado final van incluidos en el taller."
       },
       {
-        "heading": "3. Entrada libre al Palacio del Marqués de Campo (Museo de la Ciudad) junto a la Plaza del Arzobispo",
-        "venue": "Museo de la Ciudad · Palacio del Marqués de Campo (Plaza del Arzobispo, 3)",
-        "location": "Plaza del Arzobispo, 3 (a 2 minutos a pie de la Catedral y la Plaza de la Virgen)",
-        "price": "Entrada 100% gratuita durante los fines de semana y festivos (Sábados de 10:00 a 19:00 h; domingos de 10:00 a 14:00 h)",
-        "lat": 39.4754,
-        "lng": -0.3742,
-        "image": "images/venues/vlc-palau-marques-campo-museo-ciudad.jpg",
-        "imageAlt": "Salón noble con techos pintados al fresco, lámparas de araña y mobiliario de época en el Palacio del Marqués de Campo de Valencia",
-        "imageCredit": "Fotografía: Diego Delso / Wikimedia Commons (CC BY-SA 4.0)",
-        "content": "A dos pasos del Miguelete, pero fuera del circuito habitual de turistas, el **Palacio del Marqués de Campo** (Plaza del Arzobispo, 3, sede del **Museo de la Ciudad**) abre de forma totalmente gratuita los sábados y domingos.\n\nTras cruzar su patio señorial con carruajes históricos y su escalera imperial de mármol, accederás a la planta noble isabelina con su **Salón de Baile decorado con frescos alegóricos de José Bellver**, espejos dorados, capilla privada y colecciones de pintura valenciana desde la Edad Media hasta Joaquín Sorolla e Ignacio Pinazo."
+        "heading": "3. Cafeterías con cafés especiales de invierno y repostería especiada en Ruzafa",
+        "venue": "Ruta cafetera de invierno por Ruzafa (Bluebell Coffee Co. en C/ Buenos Aires, 3 y barras locales de autor)",
+        "location": "Calle de Buenos Aires, 3 y entorno Calle Sueca / Cádiz (Ruzafa)",
+        "price": "Cafés especiales de invierno 3,40 €–4,80 € · Porciones dulces 4 €",
+        "lat": 39.4631,
+        "lng": -0.3725,
+        "image": "images/venues/vlc-navidad-cafes-ruzafa-sec3.jpg",
+        "imageAlt": "Mesa de cafetería de especialidad en Ruzafa con lattes de jengibre y especias junto a repostería de invierno",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Después del taller, Ruzafa es el mejor barrio de Valencia para hacer parada en cafeterías independientes donde en diciembre preparan bebidas pensadas para el frío: **lattes especiados con canela, jengibre y naranja**, **chai artesanal** infusionado con té negro y cardamomo o cafés filtrados de tueste propio en locales acogedores como **Bluebell Coffee Co.** (Calle Buenos Aires, 3) y los tostadores de la Calle Sueca.\n\nAcompáñalo de un bizcocho de zanahoria, pan de especias o roll de canela caliente antes de acercarte al centro a ver el árbol iluminado de la Plaza del Ayuntamiento."
       }
     ],
     "faqs": [
       {
-        "question": "¿Hay que pagar entrada para visitar el Centre del Carme (CCCC) en Valencia?",
-        "answer": "No, el acceso a los dos claustros históricos y a todas las salas de exposiciones del Centre del Carme Cultura Contemporània (Calle del Museo, 2) es siempre 100% libre y gratuito de martes a domingo entre las 11:00 y las 21:00 h."
+        "question": "¿Se puede ir en pareja o solo con amigos a los pottery cafés de Valencia?",
+        "answer": "Por supuesto: puedes reservar desde una plaza individual hasta mesas completas para grupos de amigos o citas tranquilas en pareja."
       },
       {
-        "question": "¿Qué museos municipales de Valencia son gratis los sábados y domingos?",
-        "answer": "Todos los museos y monumentos dependientes del Ayuntamiento de Valencia —incluyendo la Lonja de la Seda, las Torres de Serranos y de Quart, el Museo de la Ciudad (Palacio del Marqués de Campo), el Palacio de Cervelló y el Centro Arqueológico de l'Almoina— tienen entrada gratuita los domingos y festivos de 10:00 a 14:00 h."
+        "question": "¿Cuánto dura un taller navideño de cerámica o de coronas en Ruzafa?",
+        "answer": "La mayoría de sesiones monográficas duran entre 2 horas y 2 horas y media, tiempo de sobra para decorar dos adornos o montar una corona completa sin prisas."
       },
       {
-        "question": "¿Cómo conseguir entradas para los conciertos de fin de semana del Palau de la Música?",
-        "answer": "Puedes adquirirlas sin comisión o retirar las invitaciones gratuitas de los ciclos matinales directamente en la web oficial del Palau de la Música de València o en sus taquillas del Paseo de la Alameda, 30 desde dos horas antes de cada concierto."
+        "question": "¿Qué bebida invernal conviene pedir en los cafés especiales de Ruzafa?",
+        "answer": "Los favoritos de diciembre suelen ser el chai latte especiado con mezcla casera de canela y jengibre, el gingerbread latte y los chocolates calientes acompañados de repostería artesanal."
       }
     ]
   },
   {
-    "id": "sev-planes-fin-de-semana-agenda",
-    "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
-    "articleType": "multi_plan",
-    "title": "Qué hacer este fin de semana en Sevilla (13 al 15 de noviembre): Festival de Cine Europeo, Los Venerables y la Alameda",
-    "metaTitle": "Planes Fin de Semana Sevilla (13 al 15 Nov): Cine Europeo y Santa Cruz | Qué Plan Hoy",
-    "metaDescription": "Guía de planes en Sevilla para el fin de semana del 13 al 15 de noviembre: estrenos del Festival de Cine Europeo (SEFF), visita al Hospital de los Venerables en Santa Cruz y rutas por la Alameda.",
+    "id": "sev-planes-originales-navidad-ceramica-triana-cafes-regina-2026",
+    "slug": "planes-originales-navidad-sevilla-pintar-bolas-triana-cafes",
+    "articleType": "roundup",
+    "title": "Planes originales para Navidad en Sevilla 2026: pintar bolas en Triana y cafés especiales",
+    "metaTitle": "Planes Originales de Navidad en Sevilla 2026: Cerámica de Triana y Cafés Especiales | Qué Plan Hoy",
+    "metaDescription": "Ideas distintas en Sevilla esta Navidad 2026: pintar tus propias bolas y fuentes navideñas en talleres de cerámica de Triana (Calle Pureza y BarroAzul) y ruta de cafés especiados en Calle Regina.",
     "city": "Sevilla",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "🔥",
-    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
-    "readTime": "9 min",
-    "publishedAt": "2026-11-12",
-    "targetKeyword": "planes este fin de semana sevilla 13 al 15 de noviembre que hacer hoy",
-    "searchVolume": "10.400 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (13/100)",
-    "image": "images/venues/sev-teatro-lope-de-vega-seff-hero.jpg",
-    "imageAlt": "Fachada neobarroca iluminada del Teatro Lope de Vega y el Pabellón del Perú junto al Parque de María Luisa en Sevilla",
-    "imageCredit": "Fotografía: CarlosVdeHabsburgo / Wikimedia Commons (CC BY-SA 4.0)",
-    "excerpt": "El fin de semana del 13 al 15 de noviembre Sevilla vive las jornadas grandes del Festival de Cine Europeo (SEFF) con pases en versión original y coloquios a precios populares, que te proponemos combinar con una mañana barroca en el Hospital de los Venerables (en el corazón de Santa Cruz) y la ruta de mercados y terrazas de la Alameda de Hércules.",
-    "priceRange": "Gratis – 10 €",
+    "category": "Planes Diferentes",
+    "categoryIcon": "🎨",
+    "readTime": "8 min",
+    "publishedAt": "2026-11-18",
+    "targetKeyword": "planes originales navidad sevilla 2026 pintar ceramica triana cafeterias",
+    "searchVolume": "6.800 búsquedas/mes",
+    "keywordDifficulty": "Baja (19/100)",
+    "image": "images/venues/sev-navidad-triana-bolas-hero.jpg",
+    "imageAlt": "Mesa de taller artesano en Triana Sevilla pintando a mano bolas navideñas con motivos azules y blancos tradicionales",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "Esta Navidad 2026 Sevilla presume de su oficio más emblemático reinventado como plan de tarde: pintar bolas del árbol con trazos azul cobalto en los talleres de la calle Pureza en Triana, diseñar una fuente navideña en BarroAzul o brindar con cafés especiados y tartas invernales por la calle Regina.",
+    "priceRange": "Cafés desde 3,50 € · Talleres 25 €–45 €",
     "neighborhoods": [
-      "Parque de María Luisa / Prado",
-      "Barrio de Santa Cruz (Plaza de los Venerables)",
-      "Alameda de Hércules / Feria",
-      "Nervión / Centro"
+      "Triana / Calle Pureza y San Jacinto",
+      "Nervión / Los Remedios",
+      "Centro / Calle Regina"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "En el mismo corazón de Santa Cruz",
-      "title": "Entrada al Hospital de los Venerables y Centro Velázquez",
-      "description": "Recorre con audioguía el patio hundido barroco, la iglesia pintada al fresco por Valdés Leal y la colección del Centro Velázquez en la Plaza de los Venerables.",
-      "price": "Desde 12 € entrada completa",
+      "badge": "Junto al puente de Triana y Catedral",
+      "title": "Entrada al Centro Cerámica Triana o Paseo en Barco por el Guadalquivir",
+      "description": "Completa tu tarde creativa en Triana recorriendo los antiguos hornos de Santa Ana en el Centro Cerámica Triana o contemplando las luces desde el río.",
+      "price": "Desde 16 € paseo fluvial",
       "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c66344%2F",
       "ctaText": "Ver entradas y horarios →"
     },
-    "generatedByAgent": false,
+    "generatedByAgent": true,
     "sections": [
       {
-        "heading": "1. Fin de semana grande del Festival de Cine Europeo de Sevilla (SEFF): estrenos y coloquios por 3,50 €",
-        "venue": "Sedes del Festival de Cine Europeo de Sevilla (Cartuja Center, Cines Cervantes, MK2 Cinesur y entorno Lope de Vega)",
-        "location": "Calle Amor de Dios, 33 (Cine Cervantes en Alameda/Centro) y sedes oficiales del SEFF",
-        "price": "Entradas individuales por sesión: 3,50 € – 4,50 € · Encuentros con cineastas y mesas redondas: Gratis",
-        "lat": 37.3965,
-        "lng": -5.9938,
-        "image": "images/venues/sev-teatro-lope-de-vega-fachada-festival.jpg",
-        "imageAlt": "Vista exterior del histórico Teatro Lope de Vega de 1929 rodeado de palmeras y jardines en Sevilla",
-        "imageCredit": "Fotografía: CarlosVdeHabsburgo / Wikimedia Commons (CC BY-SA 4.0)",
-        "content": "Del **viernes 13 al domingo 15 de noviembre**, el **Festival de Cine Europeo de Sevilla (SEFF)** celebra su fin de semana central, llenando las salas históricas de la ciudad —como el **Cine Cervantes** de 1873 en la calle Amor de Dios, el Teatro Alameda o MK2 Cinesur— con los mejores estrenos del cine europeo antes de que lleguen a la cartelera comercial.\n\nLo mejor del SEFF es su ambiente cercano y sus precios populares: por apenas **3,50 € o 4,50 € la butaca**, puedes ver películas premiadas en Cannes, Venecia o San Sebastián en versión original subtitulada y quedarte al terminar la proyección al coloquio en vivo con los propios directores y actores."
+        "heading": "1. Calle Pureza en Triana: diseña y esmalta tus propias bolas navideñas con trazo sevillano",
+        "venue": "Talleres de Cerámica Sevillana en Calle Pureza y entorno de Santa Ana (Triana)",
+        "location": "Calle Pureza, Triana (A 5 min a pie de Plaza del Altozano · Metro Plaza de Cuba L1)",
+        "price": "Talleres puntuales entre 28 € y 42 € con pigmentos minerales y cocción incluidos",
+        "lat": 37.3812,
+        "lng": -6.0008,
+        "image": "images/venues/sev-navidad-pureza-taller-sec1.jpg",
+        "imageAlt": "Taller tradicional de cerámica de Triana con pinceles, pigmentos minerales cobalto y bolas de árbol recién decoradas",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "No hay lugar con más solera en España para pintar cerámica que el corazón alfarero de **Triana**. En los talleres abiertos de la **calle Pureza** y los alrededores de la parroquia de Santa Ana organizan durante la campaña navideña sesiones participativas en las que cambias el azulejo plano por **bolas de Navidad, estrellas o pequeños belenes cerámicos**.\n\nTrabajas con auténticos pigmentos cerámicos —azul cobalto, ocre Sevilla y verde cobre— guiado por ceramistas del barrio para llevarte a casa unos adornos irrepetibles."
       },
       {
-        "heading": "2. El patio barroco y los frescos de Valdés Leal en el Hospital de los Venerables (Barrio de Santa Cruz)",
-        "venue": "Hospital de los Venerables Sacerdotes y Centro Velázquez (Plaza de los Venerables, 8)",
-        "location": "Plaza de los Venerables, 8 (en el corazón peatonal del Barrio de Santa Cruz)",
-        "price": "Entrada con audioguía: 10 € – 12 € (Acceso gratuito en horario especial de domingo por la tarde con reserva previa online)",
-        "lat": 37.3853,
-        "lng": -5.9901,
-        "image": "images/venues/sev-hospital-venerables-santa-cruz.jpg",
-        "imageAlt": "Patio barroco escalonado con fuente central de azulejos, galerías de arcos y naranjos en el Hospital de los Venerables de Sevilla",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
-        "content": "Escondido en la pequeña Plaza de los Venerables, en pleno laberinto blanco del **Barrio de Santa Cruz**, el **Hospital de los Venerables Sacerdotes** (proyectado a finales del siglo XVII por Leonardo de Figueroa) es una de las joyas barrocas más deslumbrantes de Andalucía.\n\nSu patio interior —con una fuente central a la que se desciende por gradas circulares de ladrillo y azulejo sevillano bajo naranjos— da paso a una iglesia cubierta de arriba abajo con los frescos ilusionistas de **Juan de Valdés Leal** y su hijo Lucas, además del **Centro Velázquez**, donde se exhibe la *Santa Rufina* de Diego Velázquez junto a lienzos de Murillo y esculturas de Martínez Montañés."
+        "heading": "2. Pintar fuentes de polvorones y vajilla festiva en BarroAzul o Appétit Ceramics",
+        "venue": "BarroAzul Ceramics / Appétit Ceramics y talleres de pintura cerámica en Sevilla",
+        "location": "Centro / Triana y entorno San Vicente",
+        "price": "Sesiones desde 25 €–40 € según la pieza elegida",
+        "lat": 37.3921,
+        "lng": -5.9949,
+        "image": "images/venues/sev-navidad-barroazul-vajilla-sec2.jpg",
+        "imageAlt": "Platos navideños y bandejas para polvorones decoradas con acebo pintado a mano en estudio cerámico de Sevilla",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Si además de bolas para el árbol quieres estrenar mesa en Nochebuena, proyectos sevillanos como **BarroAzul** o **Appétit Ceramics** (y estudios cercanos como **Arte y Pureza**) lanzan talleres de tarde donde eliges **fuentes alargadas para turrones y mantecados**, bajoplatos o tazas de desayuno.\n\nEs uno de los planes favoritos para hacer con hermanas, padres o amigos en viernes tarde: música suave, explicación técnica rápida de esmaltes y dos horas de desconexión total."
       },
       {
-        "heading": "3. Mañana de domingo entre el mercadillo de arte y coleccionismo de la Alameda de Hércules y la Calle Feria",
-        "venue": "Alameda de Hércules y entorno de la Calle Feria / Palacio de los Marqueses de la Algaba",
-        "location": "Alameda de Hércules, s/n (Casco Antiguo Norte)",
-        "price": "Recorrido por el mercadillo dominical y visita al Palacio de los Marqueses de la Algaba: 100% gratuito",
-        "lat": 37.3988,
-        "lng": -5.9939,
-        "image": "images/venues/sev-alameda-hercules-ambiente-otono.jpg",
-        "imageAlt": "Columnas romanas de Hércules y Julio César al inicio del paseo arbolado de la Alameda de Hércules en Sevilla",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 3.0)",
-        "content": "El **domingo 15 de noviembre por la mañana** (de 09:30 a 14:30 h), el gran bulevar arbolado de la **Alameda de Hércules** —el jardín público más antiguo de Europa (1574), flanqueado por las dos columnas romanas procedentes del templo de la calle Mármoles— despliega su animado rastro y mercadillo dominical de vinilos, libros de segunda mano, cerámica, antigüedades y artesanía.\n\nCombínalo cruzando dos calles hacia la **Plaza Calderón de la Barca** para entrar **gratis** al patio y salones del **Palacio de los Marqueses de la Algaba** (Centro del Mudéjar) antes de sentarte al sol a tomar el aperitivo en las terrazas de la Alameda o de la calle Feria."
+        "heading": "3. Cafeterías especiales de Navidad en Calle Regina: cafés especiados, chai y tartas caseras",
+        "venue": "La Crème de La Crème (C/ Regina, 1), Parcería Café (C/ Calderón de la Barca) y La Farmacia Dulce",
+        "location": "Calle Regina y entorno Las Setas / Feria (Centro de Sevilla)",
+        "price": "Cafés especiales navideños desde 3,50 € · Porción de tarta 4,20 €–5 €",
+        "lat": 37.3939,
+        "lng": -5.9912,
+        "image": "images/venues/sev-navidad-cafes-regina-sec3.jpg",
+        "imageAlt": "Ventanales acogedores de cafetería en la calle Regina de Sevilla con tazas de chai especiado y tartas artesanales de invierno",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Para rematar cualquier tarde fresca en el centro, la **calle Regina** (a dos pasos de Las Setas) es un refugio infalible. Locales con encanto como **La Crème de La Crème** (Calle Regina, 1) o cafeterías vecinas como **Parcería Café** y **La Farmacia Dulce** despliegan meriendas invernales con **lattes de canela y jengibre, tés chai cremosos, chocolates calientes** y tartas caseras de zanahoria, manzana o pistacho.\n\nDespués, solo tienes que bajar hacia Plaza Nueva para ver el alumbrado navideño con el ambiente nocturno ya encendido."
       }
     ],
     "faqs": [
       {
-        "question": "¿Dónde se compran las entradas de 3,50 € para el Festival de Cine Europeo de Sevilla (SEFF)?",
-        "answer": "Están disponibles tanto en la web oficial del Festival de Cine de Sevilla (festivalcinesevilla.eu) como en las taquillas físicas del Cine Cervantes (Calle Amor de Dios, 33), Teatro Alameda y MK2 Cinesur Nervión Plaza."
+        "question": "¿Puedo llevarme mi bola o bandeja de Triana el mismo día?",
+        "answer": "En los talleres de esmaltado y cerámica al horno hay que dejar las piezas unos días para la cocción vitrificada a alta temperatura, por lo que suelen entregarse la semana siguiente (o por envío si vienes de visita)."
       },
       {
-        "question": "¿Cómo visitar gratis el Hospital de los Venerables en el Barrio de Santa Cruz?",
-        "answer": "El monumento ofrece una franja de visita gratuita los domingos por la tarde (últimos pases de la jornada) reservando previamente la entrada sin coste en su página web oficial hasta completar el cupo semanal."
+        "question": "¿Dónde aparcar o llegar en transporte público a la calle Pureza de Triana?",
+        "answer": "La estación de Metro Plaza de Cuba (Línea 1) y el tranvía hasta Archivo de Indias (cruzando el Puente de Triana en 8 minutos a pie) son las opciones más cómodas sin necesidad de coche."
       },
       {
-        "question": "¿A qué hora se celebra el mercadillo de los domingos en la Alameda de Hércules?",
-        "answer": "Los puestos se instalan todos los domingos por la mañana desde las 09:30 h hasta las 14:30 h a lo largo del paseo central de la Alameda de Hércules."
+        "question": "¿Qué cafeterías del centro de Sevilla sirven cafés especiales en Navidad?",
+        "answer": "El eje de la calle Regina (como La Crème de La Crème), junto a Feria y Arenal, concentra bares y obradores artesanales con lattes especiados, chai y bollería de temporada."
       }
     ]
   },
   {
-    "id": "tol-planes-fin-de-semana-agenda",
-    "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
-    "articleType": "multi_plan",
-    "title": "Qué hacer este fin de semana en Toledo (13 al 15 de noviembre): recta final de las Jornadas de la Tapa, Sinagoga del Tránsito y Taller del Moro",
-    "metaTitle": "Planes Fin de Semana Toledo (13 al 15 Nov): Tapas y Judería | Qué Plan Hoy",
-    "metaDescription": "Planes en Toledo para el fin de semana del 13 al 15 de noviembre: último fin de semana de las XXV Jornadas de la Tapa, entrada gratis de fin de semana a la Sinagoga del Tránsito y al Taller del Moro.",
+    "id": "tol-planes-originales-navidad-taller-mazapan-ceramica-cafes-2026",
+    "slug": "planes-originales-navidad-toledo-talleres-mazapan-ceramica-cafes",
+    "articleType": "roundup",
+    "title": "Planes originales de Navidad en Toledo 2026: taller de mazapán, cerámica y cafés entre conventos",
+    "metaTitle": "Planes Originales de Navidad en Toledo 2026: Taller de Mazapán Artesano, Cerámica y Cafés | Qué Plan Hoy",
+    "metaDescription": "Experiencias diferentes en Toledo esta Navidad 2026: amasa y hornea tu propio mazapán en un obrador histórico, pinta cerámica dorada toledana y merienda cafés especiados con dulces de convento.",
     "city": "Toledo",
-    "category": "Este Fin de Semana",
-    "categoryIcon": "🔥",
-    "weekendDates": "Viernes 13 al Domingo 15 de noviembre",
-    "readTime": "9 min",
-    "publishedAt": "2026-11-12",
-    "targetKeyword": "planes este fin de semana toledo 13 al 15 de noviembre que hacer hoy",
-    "searchVolume": "7.500 búsquedas/mes",
-    "keywordDifficulty": "Muy Baja (11/100)",
-    "image": "images/venues/tol-sinagoga-transito-juderia-hero.jpg",
-    "imageAlt": "Gran Sala de Oración con yeserías mudéjares y artesonado de madera de alerce en la Sinagoga del Tránsito (Museo Sefardí) de Toledo",
-    "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
-    "excerpt": "El fin de semana del 13 al 15 de noviembre es la última oportunidad para probar los bocados de autor de las XXV Jornadas de la Tapa de Toledo: te proponemos combinarlos con las franjas de entrada gratuita de sábado y domingo a la Sinagoga del Tránsito (Museo Sefardí), las yeserías del Taller del Moro y el parque del Circo Romano.",
-    "priceRange": "Gratis – 5 € por tapa",
+    "category": "Planes Diferentes",
+    "categoryIcon": "🎨",
+    "readTime": "8 min",
+    "publishedAt": "2026-11-18",
+    "targetKeyword": "planes originales navidad toledo 2026 taller mazapan ceramica cafeterias",
+    "searchVolume": "5.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (16/100)",
+    "image": "images/venues/tol-navidad-taller-mazapan-hero.jpg",
+    "imageAlt": "Manos amasando y moldeando figuritas artesanales de mazapán sobre piedra con almendras molidas en obrador de Toledo",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "¿Y si esta Navidad 2026 en vez de solo comprar una caja de mazapán entras en un obrador histórico a amasar y hornear tus propias figuritas? En Toledo puedes vivir talleres navideños de Mazapán IGP, sesiones de cerámica toledana con reflejos dorados y meriendas de invierno con cafés especiales y dulces de convento.",
+    "priceRange": "Cafés y dulces 3 €–6 € · Talleres 18 €–35 €",
     "neighborhoods": [
-      "Judería Mayor (San Juan de los Reyes / Tránsito)",
-      "Corral de Don Diego / Magdalena",
-      "El Salvador / Taller del Moro",
-      "Vega Baja / Circo Romano"
+      "Santo Tomé / Obrador histórico",
+      "San Juan de los Reyes / Reyes Católicos",
+      "Zocodover / Plaza de San Clemente"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "Para completar la ruta por la Judería",
-      "title": "Entrada a la Sinagoga de Santa María la Blanca y San Juan de los Reyes",
-      "description": "A solo 2 minutos a pie de la Sinagoga del Tránsito: admira el bosque de arcos blancos de herradura del siglo XII y el claustro gótico de los Reyes Católicos.",
-      "price": "Desde 4 € por monumento (o 12 € pulsera 7 monumentos)",
+      "badge": "Completa tu jornada invernal en Toledo",
+      "title": "Pulsera Turística de Toledo (7 Monumentos) o Alcázar",
+      "description": "Combina tu taller de mazapán y cerámica en el Casco Histórico con la entrada combinada a Santo Tomé, Santa María la Blanca y San Juan de los Reyes.",
+      "price": "12 € pulsera 7 monumentos",
       "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c66346%2F",
       "ctaText": "Ver entradas y horarios →"
     },
-    "generatedByAgent": false,
+    "generatedByAgent": true,
     "sections": [
       {
-        "heading": "1. Último fin de semana de las XXV Jornadas de la Tapa de Toledo y los Dehesa (13 al 15 de noviembre)",
-        "venue": "Ruta de locales de las XXV Jornadas de la Tapa (Corral de Don Diego, Barrio de Santa Teresa y Zocodover)",
-        "location": "Plaza del Corral de Don Diego, Plaza de la Magdalena y Calle Alfileritos (Casco Histórico)",
-        "price": "Tapa de autor de concurso: 3,50 € – 5,00 € · Cóctel especial de las jornadas: 6,00 € – 8,00 €",
-        "lat": 39.8588,
-        "lng": -4.0224,
-        "image": "images/venues/tol-corral-don-diego-jornadas-tapa.jpg",
-        "imageAlt": "Plaza rehabilitada y Salón Rico medieval del Corral de Don Diego en el corazón del Casco Histórico de Toledo",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
-        "content": "El **domingo 15 de noviembre** se despide la 25ª edición de las **Jornadas de la Tapa de Toledo** (organizadas por la Asociación Provincial de Hostelería y Turismo de Toledo), en la que más de cuarenta barras y restaurantes compiten por la mejor tapa del año elaborada con productos de caza de los Montes de Toledo, queso manchego, azafrán y pistacho.\n\nAprovecha el mediodía del sábado o del domingo para recorrer la zona recién rehabilitada del **Corral de Don Diego y el Salón Rico** (donde puedes ver gratis las yeserías mudéjares del palacio de los Trastámara) y enlazar las tabernas de la Plaza de la Magdalena, Tornerías y la Plaza de San Nicolás."
+        "heading": "1. Obrador en vivo: taller participativo para amasar, moldear y hornear tu propio mazapán de Toledo",
+        "venue": "Obradores artesanales del Casco Histórico (entorno Plaza de Santo Tomé y Plaza de Zocodover)",
+        "location": "Plaza de Santo Tomé y calles del Centro Histórico de Toledo",
+        "price": "Talleres concertados para familias o parejas desde 15 €–25 € por persona",
+        "lat": 39.8568,
+        "lng": -4.0285,
+        "image": "images/venues/tol-navidad-horno-mazapan-sec1.jpg",
+        "imageAlt": "Figuras de mazapán toledano recién pintadas con huevo dorado saliendo de un horno tradicional en Toledo",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Toledo guarda la experiencia navideña más deliciosa y auténtica de toda Castilla: entrar con delantal a un **obrador tradicional** para descubrir por qué el **Mazapán de Toledo IGP** se prepara exclusivamente con almendra marcona española y azúcar molida.\n\nVarios obradores históricos de la ciudad —junto a espacios didácticos del Casco— ofrecen pases especiales en campaña navideña donde los maestros confiteros te enseñan a moldear figuritas en madera tallada, rellenar la clásica **anguila de mazapán**, pintarlas con yema de huevo y verlas salir doradas y tibias del horno para llevártelas en tu propia caja."
       },
       {
-        "heading": "2. Entrada gratuita de sábado tarde y domingo mañana a la Sinagoga del Tránsito (Museo Sefardí) en la Judería",
-        "venue": "Sinagoga de Samuel ha-Leví / Sinagoga del Tránsito (Calle Samuel Leví, s/n · Judería de Toledo)",
-        "location": "Calle Samuel Leví, s/n, junto a los Jardines del Tránsito y el Museo del Greco",
-        "price": "Gratis los sábados desde las 14:00 h y los domingos de 10:00 a 15:00 h (3 € resto de horarios)",
-        "lat": 39.8557,
-        "lng": -4.0295,
-        "image": "images/venues/tol-taller-del-moro-yeserias.jpg",
-        "imageAlt": "Yeserías mudéjares caladas y arcos de herradura del siglo XIV en el interior de la Judería de Toledo",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
-        "content": "Mandada construir hacia 1357 por Samuel ha-Leví, tesorero del rey Pedro I de Castilla, la **Sinagoga del Tránsito** (sede del Museo Sefardí en el corazón de la Judería) conserva la **Gran Sala de Oración** mudéjar más rica de España, coronada por un impresionante artesonado de madera de alerce con incrustaciones de marfil y frisos de yeserías con inscripciones hebreas y motivos vegetales.\n\nComo museo estatal, la entrada es **100% gratuita todos los sábados a partir de las 14:00 h** (hasta las 18:00 h en horario de invierno) y **todos los domingos por la mañana de 10:00 a 15:00 h**, lo mismo que su vecino **Museo del Greco**, situado literalmente en la calle de al lado."
+        "heading": "2. Pintar cerámica toledana y adornos navideños inspirados en el damasquinado",
+        "venue": "Talleres artesanales de cerámica y oficios en Calle Reyes Católicos y Plaza de San Juan de los Reyes",
+        "location": "Calle de los Reyes Católicos y entorno de la Judería",
+        "price": "Talleres navideños de adorno cerámico o azulejo desde 25 €–35 €",
+        "lat": 39.8576,
+        "lng": -4.0315,
+        "image": "images/venues/tol-navidad-ceramica-damasquinado-sec2.jpg",
+        "imageAlt": "Bolas navideñas y piezas cerámicas decoradas en azul, verde y oro estilo toledano en taller artesanal",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Para traerte un recuerdo creativo distinto al imán típico, los talleres artesanos del barrio de la Judería y el eje hacia **San Juan de los Reyes** organizan actividades para aprender a decorar **bolas navideñas de cerámica o azulejos ornamentales** aplicando motivos florales y geométricos de la tradición toledana y reflejos dorados inspirados en el **damasquinado**.\n\nEs un plan pausado y muy disfrutable cuando cae la niebla sobre el Tajo a media tarde."
       },
       {
-        "heading": "3. Las bóvedas mudéjares del Taller del Moro y paseo por el parque arqueológico del Circo Romano",
-        "venue": "Taller del Moro (Calle Taller del Moro, s/n) y Parque del Circo Romano de Toledo (Avenida de Carlos III)",
-        "location": "Calle Taller del Moro, s/n (junto a Santo Tomé) y Avenida de Carlos III, s/n (Vega Baja)",
-        "price": "Parque del Circo Romano: 100% Gratis · Taller del Moro: Gratis sábados tarde y domingos mañana (o entrada general simbólica)",
-        "lat": 39.8565,
+        "heading": "3. Cafés especiados y dulces recién comprados al torno en los conventos del Casco",
+        "venue": "Cafeterías acogedoras de Zocodover / Hombre de Palo y Convento de San Clemente (Calle San Clemente, s/n)",
+        "location": "Entorno Zocodover, Plaza de San Vicente y Calle San Clemente",
+        "price": "Cafés especiales 3 €–4,50 € · Cajas de dulces conventuales desde 6 €",
+        "lat": 39.8583,
         "lng": -4.0273,
-        "image": "images/venues/tol-circo-romano-parque-otono.jpg",
-        "imageAlt": "Arcos monumentales de ladrillo y piedra del Circo Romano de Toledo rodeados de los jardines de la Vega Baja",
-        "imageCredit": "Fotografía: Wikimedia Commons (CC BY-SA 4.0)",
-        "content": "A solo tres minutos a pie de la Sinagoga del Tránsito y de la iglesia de Santo Tomé se esconde un palacio mudéjar noble del siglo XIV que casi ningún visitante de un día llega a cruzar: el **Taller del Moro** (llamado así porque durante el siglo XV sirvió de almacén y taller de cantería para las obras de la Catedral de Toledo).\n\nSus tres salones conectados por arcos de herradura apuntados conservan extraordinarias yeserías caladas de tradición almohade y nazarí y cúpulas de mocárabes. Al terminar, puedes bajar dando un paseo otoñal hacia la Puerta del Cambrón y el **Parque del Circo Romano de Toledo** (siglo I d.C.), cuyos grandes arcos de hormigón y ladrillo para las carreras de cuadrigas de *Toletum* se recorren libremente al aire libre entre jardines."
+        "image": "images/venues/tol-navidad-cafe-convento-sec3.jpg",
+        "imageAlt": "Mesa de cafetería toledana en invierno con taza de café especiado y cajita de dulces artesanales de convento",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "La mejor forma de cerrar una tarde fría en Toledo combina dos mundos: comprar primero en el torno del **Convento de San Clemente** (cuna histórica del mazapán) o de **Santo Domingo el Real** unas cajitas recién hechas de yemas, pastas de almendra y piñonates, y después resguardarte en las cafeterías con encanto del entorno de **San Vicente y Zocodover**.\n\nEn estas fechas muchas amplían su carta de invierno con **chocolates espesos, lattes aromatizados con canela y cardamomo o cafés bombón de almendra** antes de ver las luces encendidas en el Ayuntamiento."
       }
     ],
     "faqs": [
       {
-        "question": "¿Hasta qué día duran las XXV Jornadas de la Tapa de Toledo en noviembre?",
-        "answer": "El domingo 15 de noviembre de 2026 es el último día para degustar las tapas a concurso de esta 25ª edición en los más de 40 establecimientos participantes del Casco Histórico y los barrios de Santa Teresa y Buenavista."
+        "question": "¿Con cuánta antelación hay que reservar los talleres de mazapán en Navidad en Toledo?",
+        "answer": "Al coincidir con la temporada alta de los obradores toledanos (noviembre y diciembre), conviene escribir o reservar plaza al menos 1 o 2 semanas antes, sobre todo para turnos de sábado."
       },
       {
-        "question": "¿En qué horario son gratis la Sinagoga del Tránsito y el Museo del Greco el fin de semana?",
-        "answer": "Ambos museos estatales de la Judería de Toledo tienen acceso gratuito todos los sábados a partir de las 14:00 h (en noviembre cierran a las 18:00 h) y los domingos durante toda su jornada de apertura de 10:00 a 15:00 h."
+        "question": "¿Los talleres de mazapán son aptos para niños?",
+        "answer": "Sí, de hecho son uno de los mejores planes familiares navideños en Toledo: amasar y dar forma a figuras dulces encanta a niños y adultos."
       },
       {
-        "question": "¿Hay que pagar entrada para ver las ruinas del Circo Romano de Toledo?",
-        "answer": "No: el recinto del Circo Romano de Toledo está integrado dentro de un gran parque público ajardinado en la Avenida de Carlos III (Vega Baja) y se puede pasear entre sus bóvedas y graderíos de forma completamente libre y gratuita todos los días."
+        "question": "¿Qué horario tiene el torno de dulces de los conventos de Toledo en Navidad?",
+        "answer": "La mayoría, incluido San Clemente y Santo Domingo el Real, abren el torno por la mañana (aprox. 10:00 a 13:30 h) y por la tarde (16:30 a 19:00 h) todos los días de la semana."
       }
     ]
   },
@@ -460,7 +451,7 @@
     "category": "Gratis y Baratos",
     "categoryIcon": "💸",
     "readTime": "9 min",
-    "publishedAt": "2026-11-10",
+    "publishedAt": "2026-11-18",
     "targetKeyword": "mercadillos navidad madrid 2026 plaza mayor encendido luces fechas horarios",
     "searchVolume": "18.500 búsquedas/mes",
     "keywordDifficulty": "Baja (15/100)",
@@ -549,7 +540,7 @@
     "category": "Gratis y Baratos",
     "categoryIcon": "💸",
     "readTime": "9 min",
-    "publishedAt": "2026-11-10",
+    "publishedAt": "2026-11-18",
     "targetKeyword": "mercadillos navidad barcelona 2026 fira de santa llucia fechas horarios luces",
     "searchVolume": "14.200 búsquedas/mes",
     "keywordDifficulty": "Baja (14/100)",
@@ -638,7 +629,7 @@
     "category": "Gratis y Baratos",
     "categoryIcon": "💸",
     "readTime": "9 min",
-    "publishedAt": "2026-11-10",
+    "publishedAt": "2026-11-18",
     "targetKeyword": "mercadillos navidad valencia 2026 plaza de la reina luces ayuntamiento fechas",
     "searchVolume": "8.900 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (12/100)",
@@ -727,7 +718,7 @@
     "category": "Gratis y Baratos",
     "categoryIcon": "💸",
     "readTime": "9 min",
-    "publishedAt": "2026-11-10",
+    "publishedAt": "2026-11-18",
     "targetKeyword": "feria del belen sevilla 2026 horarios luces navidad dulces de convento",
     "searchVolume": "9.600 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (11/100)",
@@ -816,7 +807,7 @@
     "category": "Gratis y Baratos",
     "categoryIcon": "💸",
     "readTime": "9 min",
-    "publishedAt": "2026-11-10",
+    "publishedAt": "2026-11-18",
     "targetKeyword": "navidad en toledo 2026 luces mercadillo zocodover donde comprar mazapan",
     "searchVolume": "6.100 búsquedas/mes",
     "keywordDifficulty": "Muy Baja (10/100)",
@@ -891,6 +882,455 @@
       {
         "question": "¿Dónde aparcar gratis si vas en coche a ver las luces y comprar mazapán en Toledo?",
         "answer": "La mejor opción es dejar el coche en el aparcamiento gratuito de Safont (junto a la estación de autobuses) o en el del Paseo de la Rosa (frente a la estación de tren) y subir gratis al Casco Histórico por los remontes mecánicos de Safont o Recaredo."
+      }
+    ]
+  },
+  {
+    "id": "madrid-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
+    "articleType": "roundup",
+    "title": "Madrid este finde (13 al 15 de noviembre): Romería de El Pardo, Festival Eñe y MADRÍKINA",
+    "metaTitle": "Qué hacer en Madrid del 13 al 15 de noviembre: El Pardo, Festival Eñe y MADRÍKINA | Qué Plan Hoy",
+    "metaDescription": "Planes distintos en Madrid del 13 al 15 de noviembre: Romería popular de San Eugenio con migas gratis en El Pardo, charlas del Festival Eñe en Bellas Artes y el festival MADRÍKINA en La Nave.",
+    "city": "Madrid",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "13 al 15 de noviembre",
+    "readTime": "7 min",
+    "publishedAt": "2026-11-15",
+    "targetKeyword": "que hacer en madrid este fin de semana 13 al 15 de noviembre",
+    "searchVolume": "14.800 búsquedas/mes",
+    "keywordDifficulty": "Media (35/100)",
+    "image": "images/venues/madrid-palacio-fernan-nunez-mom-hero.jpg",
+    "imageAlt": "Ambiente tradicional otoñal en la Romería de San Eugenio en El Pardo con reparto de migas populares entre encinas",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "Si buscas salir de los museos de siempre en Madrid este fin de semana (del 13 al 15 de noviembre), la agenda trae citas que solo pasan estos tres días: la Romería de San Eugenio con migas gratis en el Monte de El Pardo, los encuentros literarios del Festival Eñe en el Círculo de Bellas Artes y la fotografía contemporánea de MADRÍKINA en La Nave.",
+    "priceRange": "Planes Gratis y Entradas 3 €–12 €",
+    "neighborhoods": [
+      "El Pardo",
+      "Alcalá / Sevilla",
+      "Villaverde / La Nave"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el fin de semana",
+      "title": "Entrada al Palacio de Liria de Madrid (Casa de Alba)",
+      "description": "Si te apetece combinar los planes al aire libre con patrimonio madrileño, recorre los salones de Goya, Velázquez y la biblioteca del Palacio de Liria con audioguía.",
+      "price": "Desde 16 € entrada con audioguía",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Romería de San Eugenio en El Pardo (domingo 15 de nov): bellotas, migas gratis y caminata por el encinar",
+        "venue": "Pradera del Cristo y Monte de El Pardo (Carretera de Fuencarral a El Pardo · Bus 601 desde Moncloa)",
+        "location": "Monte de El Pardo (Autobús EMT 601 desde Intercambiador de Moncloa, dársena isla 3)",
+        "price": "Gratis (reparto tradicional de migas y castañas por la mañana)",
+        "lat": 40.5179,
+        "lng": -3.7764,
+        "image": "images/venues/madrid-palacio-fernan-nunez-interior.jpg",
+        "imageAlt": "Sendero entre encinas centenarias y la ermita del Cristo en el Monte de El Pardo en otoño",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Cada mediados de noviembre Madrid celebra una de sus tradiciones más castizas y menos masificadas: la **Romería de San Eugenio**, conocida popularmente como la **fiesta de la bellota** en el **Monte de El Pardo**. Este domingo **15 de noviembre**, desde las 10:30 h, los alrededores del pueblo y el entorno del **Convento del Cristo de El Pardo** reúnen puestos tradicionales de castañas asadas, bellotas dulces, barquillos y reparto popular gratuito de **migas manchegas** en grandes calderos al aire libre.\n\nDespués de desayunar o tomar el aperitivo en la pradera, puedes seguir la senda llana de la **Quinta de El Pardo** o acercarte al Palacio Real de El Pardo sin salir del barrio. Toma el bus **601 desde Moncloa** (tarda unos 20 minutos) para olvidarte del aparcamiento."
+      },
+      {
+        "heading": "2. Festival Eñe 2026 en el Círculo de Bellas Artes: literatura en directo, pódcast y vistas desde la azotea",
+        "venue": "Círculo de Bellas Artes (Calle de Alcalá, 42 · Metro Banco de España / Sevilla)",
+        "location": "Calle de Alcalá, 42 (Centro · Metro Banco de España L2 o Sevilla L2)",
+        "price": "Muchas charlas con entrada libre hasta completar aforo · Azotea 5,50 €",
+        "lat": 40.4184,
+        "lng": -3.6966,
+        "image": "images/venues/madrid-centrocentro-cibeles-concierto.jpg",
+        "imageAlt": "Salón histórico iluminado en el Círculo de Bellas Artes durante un encuentro cultural literario",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "El centro neurálgico cultural de este fin de semana en Madrid cambia la música por los libros con el **Festival Eñe**, que toma las salas históricas del **Círculo de Bellas Artes** entre el viernes 13 y el domingo 15 de noviembre. Mesas redondas, entrevistas en vivo a novelistas contemporáneos, grabaciones de pódcast culturales y firmas abiertas convierten el edificio en un punto de encuentro animado sin necesidad de entrada cara.\n\nReserva al menos una hora para entrar en **La Pecera** (su mítico café con ventanales hacia Alcalá) y sube al caer la tarde a la **Azotea del Círculo** para ver el atardecer sobre la Gran Vía y el edificio Metrópolis."
+      },
+      {
+        "heading": "3. Festival MADRÍKINA en La Nave (13 y 14 de nov) y últimas Meninas gigantes por Salamanca y Centro",
+        "venue": "La Nave Madrid (Calle Cifuentes, 5 · Villaverde) y recorrido urbano de Meninas Madrid Gallery",
+        "location": "Calle Cifuentes, 5 (Metro Villaverde Bajo-Cruce L3) y eje Serrano-Velázquez-Gran Vía",
+        "price": "Entrada gratuita / exposiciones urbanas al aire libre 0 €",
+        "lat": 40.3487,
+        "lng": -3.6929,
+        "image": "images/venues/madrid-madrikina-lanave.jpg",
+        "imageAlt": "Exposición de fotografía contemporánea y charlas visuales bajo la bóveda industrial de La Nave Madrid",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Si te apetece un plan diferente lejos del circuito habitual del centro, **La Nave** acoge el **viernes 13 y sábado 14 de noviembre** el festival de fotografía, imagen y cultura visual **MADRÍKINA**, con proyecciones, charlas de fotógrafos emergentes, mercadillo de fanzines y fotolibros en un enorme espacio industrial.\n\nPara completar el domingo por el centro sin gastar un euro, puedes hacer la ruta fotográfica de **Meninas Madrid Gallery**, con decenas de esculturas gigantes pintadas por artistas y diseñadores repartidas entre Serrano, Velázquez, Goya y la Plaza de Callao, o asomarte al restaurado **Frontón Beti Jai** en Chamberí."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿A qué hora empieza la Romería de San Eugenio y el reparto de migas en El Pardo?",
+        "answer": "El ambiente romero arranca el domingo 15 de noviembre a partir de las 10:30 h en el entorno de la avenida de la Guardia y la subida al Cristo de El Pardo, con degustación popular de migas a mediodía."
+      },
+      {
+        "question": "¿Se necesita entrada previa para el Festival Eñe o MADRÍKINA?",
+        "answer": "Gran parte de las mesas redondas del Festival Eñe en el Círculo de Bellas Artes y las actividades de MADRÍKINA en La Nave ofrecen acceso gratuito hasta completar aforo (conviene llegar 20 minutos antes)."
+      },
+      {
+        "question": "¿Cómo ir en transporte público a El Pardo el domingo?",
+        "answer": "La forma más rápida es el autobús interurbano 601 desde el Intercambiador de Moncloa, que te deja en el centro de El Pardo en unos 20 minutos."
+      }
+    ]
+  },
+  {
+    "id": "bcn-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
+    "articleType": "roundup",
+    "title": "Barcelona este finde (13 al 15 de noviembre): BCN en las Alturas, What The Foc! y Feria Medieval",
+    "metaTitle": "Qué hacer en Barcelona del 13 al 15 de noviembre: Torre Bellesguard, What The Foc! y Creu Coberta | Qué Plan Hoy",
+    "metaDescription": "Planes distintos en Barcelona del 13 al 15 de noviembre: market BCN en las Alturas en Torre Bellesguard, festival de brasas What The Foc! en Estrella Damm y Feria Medieval de Creu Coberta.",
+    "city": "Barcelona",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "13 al 15 de noviembre",
+    "readTime": "7 min",
+    "publishedAt": "2026-11-15",
+    "targetKeyword": "que hacer en barcelona este fin de semana 13 al 15 de noviembre",
+    "searchVolume": "12.400 búsquedas/mes",
+    "keywordDifficulty": "Media (32/100)",
+    "image": "images/venues/bcn-cccb-alternativa-festival-hero.jpg",
+    "imageAlt": "Puestos de diseño y gastronomía en los jardines modernistas de la Torre Bellesguard durante BCN en las Alturas",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "Del 13 al 15 de noviembre Barcelona estrena citas efímeras que no se repiten el resto del año: el market BCN en las Alturas dentro de la Torre Bellesguard de Gaudí, el festival gastronómico a la brasa What The Foc! en la Antiga Fàbrica Estrella Damm (gratis), los pases de cine independiente de L'Alternativa y la Feria Medieval de Creu Coberta.",
+    "priceRange": "Planes Gratis y Entradas 3 €–6 €",
+    "neighborhoods": [
+      "Sant Gervasi / Torre Bellesguard",
+      "Sagrada Família / Antiga Fàbrica Damm",
+      "Hostafrancs / Creu Coberta",
+      "El Raval / CCCB"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el fin de semana",
+      "title": "Entrada a Casa Batlló o La Pedrera (Casa Milà)",
+      "description": "Completa tu ruta por la Barcelona modernista tras visitar la Torre Bellesguard recorriendo las azoteas escultóricas de Antoni Gaudí en el Passeig de Gràcia.",
+      "price": "Desde 25 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Festival de Cine Independiente L'Alternativa en el CCCB (del 13 al 15 de nov · pases gratuitos)",
+        "venue": "Centre de Cultura Contemporània de Barcelona - CCCB (Carrer de Montalegre, 5 · El Raval)",
+        "location": "Carrer de Montalegre, 5 (El Raval · Metro Universitat / Catalunya)",
+        "price": "Actividades y pases de patio gratis · Proyecciones en sala desde 4 €",
+        "lat": 41.3841,
+        "lng": 2.1667,
+        "image": "images/venues/bcn-cccb-pati-de-les-dones.jpg",
+        "imageAlt": "Pati de les Dones del CCCB durante una proyección al aire libre y coloquio de cine independiente",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Uno de los grandes reclamos culturales de mediados de noviembre en Barcelona es **L'Alternativa**, el festival de cine independiente que solo ocupa el **CCCB** durante unos días al año. Del **viernes 13 al domingo 15 de noviembre** podrás asistir a estrenos que rara vez llegan a cartelera comercial, encuentros con directores y varias sesiones gratuitas en el **Hall** y el **Pati de les Dones**.\n\nDespués de la proyección, cruza hacia la calle Joaquim Costa o tómate un vermut otoñal en las terrazas tranquilas de Sant Antoni antes de seguir la tarde hacia Eixample o Sant Gervasi."
+      },
+      {
+        "heading": "2. What The Foc!: festival de brasas, barbacoa y música en la Antiga Fàbrica Estrella Damm (gratis)",
+        "venue": "Antiga Fàbrica Estrella Damm (Carrer del Rosselló, 515 · Metro Dos de Maig / Sagrada Família)",
+        "location": "Carrer del Rosselló, 515 (Metro Sant Pau | Dos de Maig L5)",
+        "price": "Entrada gratuita hasta completar aforo (consumiciones y tapas aparte)",
+        "lat": 41.4095,
+        "lng": 2.1778,
+        "image": "images/venues/bcn-macba-exposiciones-raval.jpg",
+        "imageAlt": "Parrillas humeantes al aire libre en el patio industrial de la Antiga Fàbrica Estrella Damm en otoño",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "El **sábado 14 y domingo 15 de noviembre**, la histórica fábrica de ladrillo visto de **Estrella Damm** abre sus patios para celebrar **What The Foc!**, el festival de fuego, brasas y cocina a la parrilla al aire libre. Chefs y proyectos callejeros locales cocinan carnes ahumadas, verduras de temporada al carbón y bocados de street food frente a sesiones de DJ.\n\nLa entrada es **100 % gratuita** hasta completar aforo y abre en horario continuo de mediodía a noche (de 12:00 a 22:00 h), perfecto para ir con amigos o en familia a comer de pie al sol otoñal."
+      },
+      {
+        "heading": "3. BCN en las Alturas en Torre Bellesguard de Gaudí y Feria Medieval de Creu Coberta (13–15 de nov)",
+        "venue": "Torre Bellesguard (Carrer de Bellesguard, 20) y eje comercial de Creu Coberta (Hostafrancs)",
+        "location": "Carrer de Bellesguard, 20 (FGC Av. Tibidabo) y Carrer de la Creu Coberta (Metro Plaça Espanya)",
+        "price": "BCN en las Alturas ~6 € · Feria Medieval de Creu Coberta 100% gratis",
+        "lat": 41.4094,
+        "lng": 2.1268,
+        "image": "images/venues/bcn-palo-alto-poblenou-jardin.jpg",
+        "imageAlt": "Puestos artesanos, banderines y animadores de la Feria Medieval en la calle Creu Coberta de Barcelona",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Este fin de semana también puedes elegir entre dos mercados completamente distintos: en la parte alta, **BCN en las Alturas** regresa del **13 al 15 de noviembre** a los jardines de la espectacular **Torre Bellesguard de Antoni Gaudí** con firmas independientes de moda, decoración, música en directo y foodtrucks con vistas a toda la ciudad.\n\nSi prefieres un plan urbano gratuito en Sants-Hostafrancs, la **Feria Medieval de Creu Coberta** llena la avenida de artesanos, cetrería, tabernas y pasacalles el sábado 14 y domingo 15, y el domingo también se monta el **Sants Flea** de segunda mano en la Plaça de Bonet i Muixí."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿La entrada a What The Foc! en la Antiga Fàbrica Estrella Damm cuesta dinero?",
+        "answer": "No, el acceso al recinto de la calle Rosselló es gratuito hasta completar aforo tanto el sábado 14 como el domingo 15 de noviembre; únicamente pagas las tapas a la brasa y bebidas que pidas."
+      },
+      {
+        "question": "¿Se puede acceder al recinto de BCN en las Alturas en Torre Bellesguard sin coche?",
+        "answer": "Sí, puedes subir fácilmente en FGC (parada Av. Tibidabo o Sarrià) o en los autobuses V13, V15 y 196, que paran muy cerca de la entrada."
+      },
+      {
+        "question": "¿Cuándo se celebra la Feria Medieval de Creu Coberta?",
+        "answer": "Durante todo el sábado 14 y el domingo 15 de noviembre de 10:30 a 21:00 h con acceso libre por toda la calle de la Creu Coberta desde Plaça d'Espanya."
+      }
+    ]
+  },
+  {
+    "id": "vlc-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
+    "articleType": "roundup",
+    "title": "Valencia este finde (13 al 15 de noviembre): Feria Minerval, Fartarròs y clausura de la Mostra",
+    "metaTitle": "Qué hacer en Valencia del 13 al 15 de noviembre: Minerval, Fartarròs y Mostra de València | Qué Plan Hoy",
+    "metaDescription": "Planes nuevos en Valencia del 13 al 15 de noviembre: 39ª Feria gratuita de Minerales Minerval, festival del arroz creativo Fartarròs y último finde de la Mostra de València.",
+    "city": "Valencia",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "13 al 15 de noviembre",
+    "readTime": "7 min",
+    "publishedAt": "2026-11-15",
+    "targetKeyword": "que hacer en valencia este fin de semana 13 al 15 de noviembre",
+    "searchVolume": "8.900 búsquedas/mes",
+    "keywordDifficulty": "Baja (26/100)",
+    "image": "images/venues/vlc-palau-musica-conciertos-nov-hero.jpg",
+    "imageAlt": "Exposición de geodas de amatista, cuarzos y minerales brillantes en la feria Minerval de Valencia",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "Valencia cambia de tercio del 13 al 15 de noviembre con planes que solo ocurren este fin de semana: la 39ª Feria Internacional de Minerales y Fósiles MINERVAL (entrada gratis), el festival gastronómico de arroz creativo a leña Fartarròs, los últimos pases de la Mostra de València y el acceso libre al Palacio del Marqués de Campo.",
+    "priceRange": "Entrada Gratis (Degustaciones Fartarròs 4 €–7 €)",
+    "neighborhoods": [
+      "Campanar / Escuelas San José",
+      "L'Horta Nord / La Pobla de Vallbona",
+      "El Carmen / CCCC",
+      "Ciutat Vella / Plaza del Arzobispo"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar el fin de semana",
+      "title": "Entrada al Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
+      "description": "Completa la ruta cultural por Ciutat Vella visitando el palacio del siglo XVII rehabilitado con más de 100 obras de arte contemporáneo y restos del circo romano.",
+      "price": "Desde 10 € entrada oficial",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c66345%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Fartarròs 2026 en La Pobla de Vallbona (13 al 15 de nov): festival de arroz creativo a leña y música",
+        "venue": "Recinto de Fartarròs - La Pobla de Vallbona (Parque Municipal / Acceso Metrovalencia L2)",
+        "location": "La Pobla de Vallbona (A 20 min de Valencia en Metrovalencia Línea 2 parada La Pobla)",
+        "price": "Entrada al recinto 100% gratuita · Raciones desde 5 €",
+        "lat": 39.5892,
+        "lng": -0.5536,
+        "image": "images/venues/vlc-palau-musica-auditorio-interior.jpg",
+        "imageAlt": "Paellero al aire libre cocinando arroces tradicionales valencianos sobre fuego de leña de naranjo en Fartarròs",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Si el cuerpo te pide un plan gastronómico al aire libre distinto al clásico paseo por el centro, del **13 al 15 de noviembre** se celebra **Fartarròs** en **La Pobla de Vallbona** (accesible cómodamente en **Metrovalencia L2**). Es un festival dedicado al **arroz valenciano creativo cocinado a leña**, donde cocineros locales compiten con versiones arriesgadas —de setas de otoño, pato, calabaza o marisco— junto a música en vivo y talleres infantiles.\n\nLa entrada al festival es **gratuita** y funciona mediante tickets de degustación para probar varias cazuelitas de arroces en una misma comida."
+      },
+      {
+        "heading": "2. Último fin de semana de la Mostra de València y claustro de arte en el Centre del Carme (CCCC)",
+        "venue": "Sedes de la Mostra de València y Centre del Carme Cultura Contemporània (Calle del Museo, 2)",
+        "location": "Cines Babel / Filmo & Calle del Museo, 2 (Barrio del Carmen)",
+        "price": "CCCC entrada gratuita todo el finde · Proyecciones Mostra 2,50 €–5 €",
+        "lat": 39.4792,
+        "lng": -0.3792,
+        "image": "images/venues/vlc-centre-del-carme-claustro-arte.jpg",
+        "imageAlt": "Instalación artística contemporánea bajo los arcos del claustro histórico del Centre del Carme en Valencia",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Este domingo **15 de noviembre** se baja el telón de la **Mostra de València - Cinema del Mediterrani**, así que el fin de semana concentra las últimas proyecciones de películas premiadas, documentales y cortometrajes por precios populares en salas del centro.\n\nEntre pase y pase, acércate por la mañana al claustro renacentista del **Centre del Carme (CCCC)**, donde además de exposiciones gratuitas de arte contemporáneo suele haber actividades abiertas familiares y música acústica en el patio."
+      },
+      {
+        "heading": "3. 39ª Feria de Minerales MINERVAL (14 y 15 de nov, gratis) y Palacio del Marqués de Campo",
+        "venue": "Escuelas San José Jesuitas (Av. de las Cortes Valencianas, 1) y Museo de la Ciudad (Plaza del Arzobispo, 3)",
+        "location": "Av. Cortes Valencianas, 1 (Metro Túria / Campanar L1) y Plaza del Arzobispo, 3 (Ciutat Vella)",
+        "price": "Entrada 100% gratuita en ambos recintos",
+        "lat": 39.4806,
+        "lng": -0.3917,
+        "image": "images/venues/vlc-palau-marques-campo-museo-ciudad.jpg",
+        "imageAlt": "Patio señorial de piedra con escalinata noble en el Museo de la Ciudad Palacio del Marqués de Campo",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Planazo curioso tanto para coleccionistas como para ir con niños: el **sábado 14 y domingo 15 de noviembre** regresa a **Escuelas San José (Campanar)** la **39ª edición de MINERVAL**, la feria internacional de minerales, gemas, meteoritos y fósiles de Valencia con **entrada gratuita** (sábado de 10:00 a 20:30 h y domingo hasta las 20:00 h) y talleres de identificación de piedras.\n\nSi luego bajas caminando hacia el centro por las Torres de Serranos, entra gratis al **Museo de la Ciudad (Palacio del Marqués de Campo)** junto a la Catedral: abre todo el fin de semana y su escalinata barroca y exposiciones pictóricas apenas tienen turistas."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es el horario y precio de la Feria MINERVAL de Valencia 2026?",
+        "answer": "Se celebra el sábado 14 de noviembre (10:00 a 20:30 h) y el domingo 15 de noviembre (10:00 a 20:00 h) en Escuelas San José (Av. de las Cortes Valencianas, 1) con entrada libre y gratuita."
+      },
+      {
+        "question": "¿Se puede ir a Fartarròs sin coche desde el centro de Valencia?",
+        "answer": "Sí, la Línea 2 de Metrovalencia conecta directamente el centro de Valencia (Àngel Guimerà / Túria) con la estación de La Pobla de Vallbona en unos 25 minutos."
+      },
+      {
+        "question": "¿Abre el domingo gratis el Palacio del Marqués de Campo?",
+        "answer": "Sí, el Museo de la Ciudad en la Plaza del Arzobispo abre los domingos y festivos de 10:00 a 14:00 h con acceso completamente gratuito."
+      }
+    ]
+  },
+  {
+    "id": "sev-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
+    "articleType": "roundup",
+    "title": "Sevilla este finde (13 al 15 de noviembre): III Chicharfest gratis, final del SEFF y arte en Plaza del Museo",
+    "metaTitle": "Qué hacer en Sevilla del 13 al 15 de noviembre: Chicharfest, SEFF y Plaza del Museo | Qué Plan Hoy",
+    "metaDescription": "Planes distintos en Sevilla del 13 al 15 de noviembre: III festival gastronómico Chicharfest en Parque Fernando de Magallanes, recta final del SEFF y mercado de arte en Plaza del Museo.",
+    "city": "Sevilla",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "13 al 15 de noviembre",
+    "readTime": "7 min",
+    "publishedAt": "2026-11-15",
+    "targetKeyword": "que hacer en sevilla este fin de semana 13 al 15 de noviembre",
+    "searchVolume": "11.200 búsquedas/mes",
+    "keywordDifficulty": "Media (30/100)",
+    "image": "images/venues/sev-teatro-lope-de-vega-seff-hero.jpg",
+    "imageAlt": "Feria al aire libre III Chicharfest junto al Guadalquivir en el Parque Fernando de Magallanes con música y gastronomía",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "Del 13 al 15 de noviembre Sevilla sale de lo de siempre con el III Chicharfest en el Parque Fernando de Magallanes (entrada gratis junto al río), la gala de clausura del Festival de Cine Europeo de Sevilla (SEFF), conciertos íntimos en el Hospital de los Venerables y el tradicional mercado matinal de pintores de la Plaza del Museo.",
+    "priceRange": "Planes Gratis y Entradas SEFF 3,50 €",
+    "neighborhoods": [
+      "Triana / Parque Fernando de Magallanes",
+      "Prado / Teatro Lope de Vega",
+      "Santa Cruz / Venerables",
+      "Museo / Plaza del Museo"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "En el mismo corazón de Santa Cruz",
+      "title": "Entrada al Hospital de los Venerables y Centro Velázquez",
+      "description": "Recorre con audioguía el patio hundido barroco, la iglesia pintada al fresco por Valdés Leal y la colección del Centro Velázquez en la Plaza de los Venerables.",
+      "price": "Desde 12 € entrada completa",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c66344%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. III Chicharfest junto al Guadalquivir (13 al 15 de nov, gratis) y clausura del Festival de Cine (SEFF)",
+        "venue": "Parque Fernando de Magallanes (junto a Torre Sevilla) y sedes del SEFF (Lope de Vega / Cervantes / Nervión)",
+        "location": "Parque Fernando de Magallanes (Triana · junto al Puente del Cachorro) y Cines del SEFF",
+        "price": "Chicharfest entrada gratuita · Sesiones SEFF desde 3,50 €",
+        "lat": 37.3911,
+        "lng": -6.0102,
+        "image": "images/venues/sev-teatro-lope-de-vega-fachada-festival.jpg",
+        "imageAlt": "Fachada neobarroca del Teatro Lope de Vega vestida con banderolas durante las últimas jornadas del Festival de Cine de Sevilla",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "El gran plan efímero al aire libre de estos tres días en Sevilla está en la ribera del río: el **Parque Fernando de Magallanes** acoge del **13 al 15 de noviembre** el **III Chicharfest**, un festival gastronómico y cultural **con entrada gratuita** dedicado a chicharrones artesanos, chacinas andaluzas, guisos de temporada, conciertos en directo y catas al sol junto a Torre Sevilla.\n\nY en las salas de cine, este fin de semana termina el **Festival de Cine Europeo de Sevilla (SEFF)** con la entrega de su palmarés el sábado 14 y pases de las cintas ganadoras por solo **3,50 €** en cines como el Cervantes o Nervión Plaza."
+      },
+      {
+        "heading": "2. Conciertos íntimos en el Hospital de los Venerables y paseo tranquilo por los rincones ocultos de Santa Cruz",
+        "venue": "Hospital de los Venerables Sacerdotes y Centro Velázquez (Plaza de los Venerables, 8 · Santa Cruz)",
+        "location": "Plaza de los Venerables, 8 (Barrio de Santa Cruz · acceso desde Mateos Gago o Callejón del Agua)",
+        "price": "Entrada museo 12 € (con audioguía) · Conciertos según programación de tarde",
+        "lat": 37.3852,
+        "lng": -5.9901,
+        "image": "images/venues/sev-hospital-venerables-santa-cruz.jpg",
+        "imageAlt": "Patio porticado barroco con fuente central en el Hospital de los Venerables del barrio de Santa Cruz",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Para bajar el ritmo el sábado por la tarde, refúgiate en la tranquila **Plaza de los Venerables** dentro de Santa Cruz. La iglesia del **Hospital de los Venerables**, decorada íntegramente al fresco por Valdés Leal y su hijo Lucas Valdés, y su patio hundido de dos pisos con fuente central suelen acoger recitales acústicos de cámara al caer la noche.\n\nAntes de salir del barrio, asómate a la diminuta **Plaza de Santa Marta** entre naranjos amargos para ver caer la luz sobre la Giralda sin las multitudes de Mateos Gago."
+      },
+      {
+        "heading": "3. Domingo por la mañana en el Mercado de Arte al aire libre de la Plaza del Museo de Bellas Artes (gratis)",
+        "venue": "Plaza del Museo (frente al Museo de Bellas Artes de Sevilla · Barrio del Museo)",
+        "location": "Plaza del Museo, s/n (A 5 min a pie de Plaza del Duque y Reyes Católicos)",
+        "price": "Acceso 100% gratuito (Domingos de 9:30 a 14:30 h)",
+        "lat": 37.3925,
+        "lng": -5.9999,
+        "image": "images/venues/sev-alameda-hercules-ambiente-otono.jpg",
+        "imageAlt": "Caballetes y óleos al aire libre bajo los árboles en el Mercado de Arte de los domingos en la Plaza del Museo de Sevilla",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Un clásico auténtico sevillano mucho más relajado que los mercadillos habituales: cada domingo por la mañana (de 09:30 a 14:30 h), pintores y grabadores locales colocan sus **caballetes, acuarelas y óleos al aire libre** alrededor de la estatua de Murillo en la **Plaza del Museo**.\n\nAprovecha que estás justo delante de la puerta para entrar después —gratis con DNI de la UE— al antiguo convento de la Merced que alberga el **Museo de Bellas Artes**, con obras de Murillo, Zurbarán y Valdés Leal en claustros llenos de luz."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Hay que sacar entrada para entrar al Chicharfest en Parque Fernando de Magallanes?",
+        "answer": "No, la entrada al recinto del III Chicharfest (del 13 al 15 de noviembre) es libre y gratuita; únicamente se abonan las consumiciones en los puestos gastronómicos."
+      },
+      {
+        "question": "¿A qué hora es el Mercado de Arte de la Plaza del Museo de Sevilla?",
+        "answer": "Los artistas locales exponen sus obras cada domingo por la mañana aproximadamente entre las 09:30 y las 14:30 h en la Plaza del Museo, justo delante de la pinacoteca."
+      },
+      {
+        "question": "¿Es gratis el Museo de Bellas Artes de Sevilla el domingo?",
+        "answer": "Sí, el acceso al Museo de Bellas Artes de Sevilla es gratuito todos los días para ciudadanos de la Unión Europea presentando DNI o pasaporte."
+      }
+    ]
+  },
+  {
+    "id": "tol-planes-fin-de-semana-agenda",
+    "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
+    "articleType": "roundup",
+    "title": "Toledo este finde (13 al 15 de noviembre): XXV Jornadas de la Tapa, Taller del Moro y rutas gratis",
+    "metaTitle": "Qué hacer en Toledo del 13 al 15 de noviembre: Jornadas de la Tapa y Patrimonio Desconocido | Qué Plan Hoy",
+    "metaDescription": "Planes distintos en Toledo del 13 al 15 de noviembre: últimos días de las XXV Jornadas de la Tapa, entrada gratis al Taller del Moro y rutas de Patrimonio Desconocido por termas y cuevas.",
+    "city": "Toledo",
+    "category": "Este Fin de Semana",
+    "categoryIcon": "🔥",
+    "weekendDates": "13 al 15 de noviembre",
+    "readTime": "7 min",
+    "publishedAt": "2026-11-15",
+    "targetKeyword": "que hacer en toledo este fin de semana 13 al 15 de noviembre",
+    "searchVolume": "6.400 búsquedas/mes",
+    "keywordDifficulty": "Baja (22/100)",
+    "image": "images/venues/tol-sinagoga-transito-juderia-hero.jpg",
+    "imageAlt": "Tapas de otoño recién servidas en el patio de piedra del Corral de Don Diego durante las Jornadas de la Tapa de Toledo",
+    "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+    "excerpt": "Del 13 al 15 de noviembre es la última oportunidad para saborear las XXV Jornadas de la Tapa de Toledo antes de que cierren el domingo por la noche. Combina el tapeo de caza y otoño con visitas gratuitas al Taller del Moro y los recorridos de Patrimonio Desconocido por termas romanas y cuevas subterráneas.",
+    "priceRange": "Tapas especiales 3 €–4 € · Monumentos Gratis finde",
+    "neighborhoods": [
+      "Corral de Don Diego / Casco",
+      "Santa Teresa",
+      "San Román / Taller del Moro",
+      "Amador de los Ríos / Cuevas de Hércules"
+    ],
+    "affiliate": {
+      "partner": "Tiqets",
+      "badge": "Para completar la ruta por el Casco",
+      "title": "Entrada a la Sinagoga de Santa María la Blanca y San Juan de los Reyes",
+      "description": "Completa tu ruta por Toledo entrando al bosque de arcos blancos de herradura del siglo XII y al claustro gótico de los Reyes Católicos.",
+      "price": "Desde 4 € por monumento (o 12 € pulsera 7 monumentos)",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c66346%2F",
+      "ctaText": "Ver entradas y horarios →"
+    },
+    "generatedByAgent": true,
+    "sections": [
+      {
+        "heading": "1. Último finde de las XXV Jornadas de la Tapa de Toledo (hasta el domingo 15 de nov)",
+        "venue": "Establecimientos participantes (Corral de Don Diego, Calle de la Plata, Zocodover y Barrio de Santa Teresa)",
+        "location": "Casco Histórico y Avenida de la Reconquista / Barrio de Santa Teresa",
+        "price": "Tapa de concurso 3 €–4,50 € (sin entrada previa)",
+        "lat": 39.8581,
+        "lng": -4.0226,
+        "image": "images/venues/tol-corral-don-diego-jornadas-tapa.jpg",
+        "imageAlt": "Ambiente de tapeo otoñal en la plaza empedrada del Corral de Don Diego en el casco de Toledo",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Este fin de semana concluyen las **XXV Jornadas de la Tapa de Toledo**, la ruta anual en la que más de treinta bares y restaurantes del Casco y del barrio moderno de Santa Teresa compiten con elaboraciones efímeras que no están el resto del año en carta: croquetas de perdiz estofada, mini brioches de ciervo, cremas tibias de boletus o reinterpretaciones del mazapán salado.\n\nUna de las zonas más agradecidas para hacer tres paradas a pie es el **Corral de Don Diego** y la calle de la Plata, donde puedes tapear al sol en plazuelas con poco tráfico."
+      },
+      {
+        "heading": "2. Yeserías mudéjares sin colas en el Taller del Moro y entrada gratis en museos estatales",
+        "venue": "Taller del Moro (Calle Taller del Moro, s/n) y Museo del Greco / Museo Sefardí",
+        "location": "Calle Taller del Moro, s/n (A 3 min de Santo Tomé)",
+        "price": "Taller del Moro gratis todo el finde · Museos estatales gratis S desde 14 h y D mañana",
+        "lat": 39.8565,
+        "lng": -4.0282,
+        "image": "images/venues/tol-taller-del-moro-yeserias.jpg",
+        "imageAlt": "Arcos lobulados y yeserías mudéjares talladas del siglo XIV en el Taller del Moro de Toledo",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Mientras otros monumentos toledanos se llenan el fin de semana, el **Taller del Moro** permanece casi en silencio a dos pasos de Santo Tomé. Su nave palaciega del siglo XIV conserva arcos con yeserías mudéjares geométricas y artesonados policromados originales de la antigua alhóndiga y taller de piedra de la Catedral, y la entrada es **gratuita**.\n\nAprovecha también la gratuidad de **sábado tarde (desde las 14:00 h) y domingo por la mañana** en la **Sinagoga del Tránsito (Museo Sefardí)** y el **Museo del Greco**."
+      },
+      {
+        "heading": "3. Rutas gratuitas de Patrimonio Desconocido: Termas Romanas de Amador de los Ríos y Cuevas de Hércules",
+        "venue": "Termas Romanas de Amador de los Ríos (Plaza Amador de los Ríos, 5) y Cuevas de Hércules (Callejón San Ginés, 3)",
+        "location": "Entorno Catedral / San Vicente (Reservas Consorcio de Toledo)",
+        "price": "Entrada 100% gratuita (Consorcio de Toledo)",
+        "lat": 39.8588,
+        "lng": -4.0252,
+        "image": "images/venues/tol-circo-romano-parque-otono.jpg",
+        "imageAlt": "Bóvedas romanas subterráneas iluminadas en el circuito de Patrimonio Desconocido del Consorcio de Toledo",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Toledo guarda bajo tierra una ciudad entera que el **Consorcio de Toledo** abre gratis dentro de su programa **Patrimonio Desconocido**. Destaca la visita a las **Cuevas de Hércules** —una cisterna abovedada romana de casi dos mil años envuelta en leyendas visigodas— y los arcos monumentales de las **Termas Romanas de Amador de los Ríos**.\n\nSi queda hueco libre al mediodía (abren de martes a sábado y muchos domingos con pase guiado), es uno de los planes subterráneos más sorprendentes y gratis de España."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Hasta qué día duran las XXV Jornadas de la Tapa de Toledo?",
+        "answer": "Terminan precisamente este domingo 15 de noviembre de 2026 con el cierre de cocina por la noche en todos los locales inscritos tanto del Casco Histórico como de Santa Teresa."
+      },
+      {
+        "question": "¿Cuánto cuesta entrar a las Cuevas de Hércules y a las Termas Romanas?",
+        "answer": "Son espacios gestionados por el Consorcio de Toledo con entrada totalmente gratuita; conviene consultar los pases disponibles del fin de semana en su centro de atención."
+      },
+      {
+        "question": "¿Qué horario gratuito tienen los museos estatales de Toledo el fin de semana?",
+        "answer": "Tanto la Sinagoga del Tránsito (Museo Sefardí) como el Museo del Greco y el Taller del Moro ofrecen entrada gratuita los sábados a partir de las 14:00 h y los domingos de 10:00 a 15:00 h."
       }
     ]
   },
