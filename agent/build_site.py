@@ -553,21 +553,33 @@ def render_footer(root_prefix: str) -> str:
 
 
 def strip_markdown(text: str) -> str:
-  """Elimina marcas Markdown (**negrita** y *cursiva*) para metadatos y Schema.org."""
+  """Elimina marcas Markdown (**negrita**, *cursiva* y [enlaces](url)) para metadatos y Schema.org."""
   if not text:
     return ""
-  s = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
+  s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1", text)
+  s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
   s = re.sub(r"\*(.+?)\*", r"\1", s)
   return s
 
 
 def format_inline_html(text: str) -> str:
-  """Escapa HTML y convierte **negrita** en <strong> y *cursiva* en <em>."""
+  """Escapa HTML y convierte **negrita**, *cursiva* y enlaces internos [texto](/ruta/)."""
   if not text:
     return ""
   escaped = html.escape(text)
   escaped = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", escaped)
   escaped = re.sub(r"\*(.+?)\*", r"<em>\1</em>", escaped)
+
+  def _replace_internal_link(match):
+    label, href = match.group(1), match.group(2)
+    if href.startswith("/") or href.startswith(SITE_URL):
+      return (
+          f'<a href="{href}" style="color:var(--terracotta);font-weight:600;'
+          f'text-decoration:underline;text-underline-offset:3px;">{label}</a>'
+      )
+    return label
+
+  escaped = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", _replace_internal_link, escaped)
   return escaped
 
 
