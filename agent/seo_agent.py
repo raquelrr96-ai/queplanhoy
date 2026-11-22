@@ -1048,22 +1048,104 @@ def run_next_from_queue() -> dict:
   return article
 
 
-def run_wednesday_weekend_all_cities() -> list:
-  """Publica o actualiza todos los miércoles la guía 'Este Fin de Semana' para las 5 ciudades
+_SPANISH_MONTHS = {
+    "enero": 1,
+    "febrero": 2,
+    "marzo": 3,
+    "abril": 4,
+    "mayo": 5,
+    "junio": 6,
+    "julio": 7,
+    "agosto": 8,
+    "septiembre": 9,
+    "setiembre": 9,
+    "octubre": 10,
+    "noviembre": 11,
+    "diciembre": 12,
+}
 
-  (Madrid, Barcelona, Valencia, Sevilla y Toledo) desde data/scheduled_wednesday_articles.json,
-  manteniendo la URL canónica planes-este-fin-de-semana-<ciudad>-que-hacer-hoy y
-  colocándolas en portada como las guías más recientes.
+
+def _parse_weekend_end_date(weekend_dates: str, ref_today: date | None = None) -> date | None:
+  """Extrae la fecha final real de weekendDates (ej. '27 al 29 de noviembre' -> 2026-11-29)."""
+  if not weekend_dates:
+    return None
+  m = re.search(
+      r"\b(\d{1,2})\s+al\s+(?:[a-záéíóú]+\s+)?(\d{1,2})\s+de\s+([a-záéíóú]+)\b",
+      weekend_dates.lower(),
+  )
+  if not m:
+    return None
+  end_day = int(m.group(2))
+  month_name = m.group(3).strip()
+  month_num = _SPANISH_MONTHS.get(month_name)
+  if not month_num:
+    return None
+  today_d = ref_today or date.today()
+  year = today_d.year
+  if today_d.month == 12 and month_num == 1:
+    year += 1
+  elif today_d.month == 1 and month_num == 12:
+    year -= 1
+  try:
+    return date(year, month_num, end_day)
+  except ValueError:
+    return None
+
+
+def _is_weekend_batch_current(scheduled: list, ref_today: date | None = None) -> tuple[bool, str]:
+  """Verifica que TODAS las guías de 'Este Fin de Semana' correspondan al finde actual/inminente."""
+  today_d = ref_today or date.today()
+  if not scheduled:
+    return False, "Lote de fin de semana vacío."
+  for art in scheduled:
+    wd = art.get("weekendDates", "")
+    end_d = _parse_weekend_end_date(wd, today_d)
+    if end_d is None:
+      return False, f"Fecha weekendDates no válida en {art.get('slug')}: {wd!r}"
+    days_left = (end_d - today_d).days
+    if days_left < 0:
+      return False, f"Guía caducada ({wd} terminó el {end_d.isoformat()}) en {art.get('slug')}"
+    if days_left > 6:
+      return False, f"Guía aún no corresponde a este fin de semana ({wd} termina el {end_d.isoformat()})"
+  return True, "OK"
+
+
+def _demote_expired_weekends(articles: list, ref_today: date | None = None) -> tuple[list, int]:
+  """Mueve debajo de las guías navideñas/vigentes cualquier artículo de 'Este Fin de Semana' ya pasado."""
+  today_d = ref_today or date.today()
+  active = []
+  expired = []
+  for art in articles:
+    if art.get("category") == "Este Fin de Semana":
+      end_d = _parse_weekend_end_date(art.get("weekendDates", ""), today_d)
+      if end_d is not None and end_d < today_d:
+        expired.append(art)
+        continue
+    active.append(art)
+  if not expired:
+    return articles, 0
+  # Mantener los findes caducados accesibles por URL pero siempre debajo del bloque principal (top 15)
+  insert_pos = min(len(active), 15)
+  result = active[:insert_pos] + expired + active[insert_pos:]
+  return result, len(expired)
+
+
+def run_wednesday_weekend_all_cities() -> list:
+  """Publica o actualiza la guía 'Este Fin de Semana' para las 5 ciudades desde data/scheduled_wednesday_articles.json,
+
+  solo si sus weekendDates pertenecen al fin de semana actual/inminente; nunca sube lotes con fechas pasadas.
   """
   sched_file = os.path.join(
       BASE_DIR, "data", "scheduled_wednesday_articles.json"
   )
   scheduled = load_json(sched_file)
   existing_articles = load_json(ARTICLES_FILE)
-  today_str = date.today().isoformat()
+  today_d = date.today()
+  today_str = today_d.isoformat()
   published = []
 
-  if scheduled:
+  is_current, reason = _is_weekend_batch_current(scheduled, today_d)
+  if scheduled and is_current:
     sched_slugs = {a.get("slug") for a in scheduled}
     sched_ids = {a.get("id") for a in scheduled}
     remaining = [
@@ -1078,15 +1160,11 @@ def run_wednesday_weekend_all_cities() -> list:
     existing_articles = remaining
     published = list(reversed(published))
   else:
-    cities = ["Madrid", "Barcelona", "Valencia", "Sevilla", "Toledo"]
-    for city in cities:
-      canonical_slug = f"planes-este-fin-de-semana-{city.lower()}-que-hacer-hoy"
-      for a in existing_articles:
-        if a.get("slug") == canonical_slug or (
-            a.get("city") == city and a.get("category") == "Este Fin de Semana"
-        ):
-          published.append(a)
-          break
+    print(f"[WARN] Bloqueado ascenso a portada de fin de semana: {reason}")
+
+  existing_articles, demoted_cnt = _demote_expired_weekends(existing_articles, today_d)
+  if demoted_cnt:
+    print(f"[INFO] Degradados {demoted_cnt} artículos de fin de semana caducados fuera de portada.")
 
   save_json(ARTICLES_FILE, existing_articles)
   build_site.build_all()
@@ -1097,18 +1175,18 @@ def run_sunday_scheduled_articles() -> list:
   """Publica el domingo los 5 artículos extensos programados (1 por ciudad: Ruta + Cocido/Cuchara) en data/scheduled_sunday_articles.json."""
   sched_file = os.path.join(BASE_DIR, "data", "scheduled_sunday_articles.json")
   scheduled = load_json(sched_file)
-  if not scheduled:
-    return []
   existing_articles = load_json(ARTICLES_FILE)
   existing_slugs = {a.get("slug") for a in existing_articles}
   today_str = date.today().isoformat()
   published = []
-  for art in reversed(scheduled):
-    art["publishedAt"] = today_str
-    if art.get("slug") not in existing_slugs:
-      existing_articles.insert(0, art)
-      published.append(art)
-  if published:
+  if scheduled:
+    for art in reversed(scheduled):
+      art["publishedAt"] = today_str
+      if art.get("slug") not in existing_slugs:
+        existing_articles.insert(0, art)
+        published.append(art)
+  existing_articles, demoted_cnt = _demote_expired_weekends(existing_articles)
+  if published or demoted_cnt:
     save_json(ARTICLES_FILE, existing_articles)
   build_site.build_all()
   return list(reversed(published))
@@ -1118,18 +1196,18 @@ def run_tuesday_scheduled_articles() -> list:
   """Publica el martes los 5 artículos extensos programados (1 por ciudad) en data/scheduled_tuesday_articles.json."""
   sched_file = os.path.join(BASE_DIR, "data", "scheduled_tuesday_articles.json")
   scheduled = load_json(sched_file)
-  if not scheduled:
-    return []
   existing_articles = load_json(ARTICLES_FILE)
   existing_slugs = {a.get("slug") for a in existing_articles}
   today_str = date.today().isoformat()
   published = []
-  for art in reversed(scheduled):
-    art["publishedAt"] = today_str
-    if art.get("slug") not in existing_slugs:
-      existing_articles.insert(0, art)
-      published.append(art)
-  if published:
+  if scheduled:
+    for art in reversed(scheduled):
+      art["publishedAt"] = today_str
+      if art.get("slug") not in existing_slugs:
+        existing_articles.insert(0, art)
+        published.append(art)
+  existing_articles, demoted_cnt = _demote_expired_weekends(existing_articles)
+  if published or demoted_cnt:
     save_json(ARTICLES_FILE, existing_articles)
   build_site.build_all()
   return list(reversed(published))
@@ -1141,18 +1219,18 @@ def run_thursday_scheduled_articles() -> list:
       BASE_DIR, "data", "scheduled_thursday_articles.json"
   )
   scheduled = load_json(sched_file)
-  if not scheduled:
-    return []
   existing_articles = load_json(ARTICLES_FILE)
   existing_slugs = {a.get("slug") for a in existing_articles}
   today_str = date.today().isoformat()
   published = []
-  for art in reversed(scheduled):
-    art["publishedAt"] = today_str
-    if art.get("slug") not in existing_slugs:
-      existing_articles.insert(0, art)
-      published.append(art)
-  if published:
+  if scheduled:
+    for art in reversed(scheduled):
+      art["publishedAt"] = today_str
+      if art.get("slug") not in existing_slugs:
+        existing_articles.insert(0, art)
+        published.append(art)
+  existing_articles, demoted_cnt = _demote_expired_weekends(existing_articles)
+  if published or demoted_cnt:
     save_json(ARTICLES_FILE, existing_articles)
   build_site.build_all()
   return list(reversed(published))
@@ -1178,34 +1256,42 @@ def run_monday_christmas_lead() -> list:
     art["publishedAt"] = today_str
     remaining.insert(0, art)
     promoted.append(art)
+  remaining, _ = _demote_expired_weekends(remaining)
   save_json(ARTICLES_FILE, remaining)
   build_site.build_all()
   return list(reversed(promoted))
 
 
 def run_wednesday_christmas_originals() -> list:
-  """Publica el miércoles las 5 guías de planes originales de Navidad 2026 (pintar bolas, cerámica y cafés especiales)."""
-  sched_file = os.path.join(
-      BASE_DIR, "data", "scheduled_wednesday_christmas_articles.json"
-  )
-  scheduled = load_json(sched_file)
-  if not scheduled:
-    return []
-  existing_articles = load_json(ARTICLES_FILE)
-  sched_slugs = {a.get("slug") for a in scheduled}
-  sched_ids = {a.get("id") for a in scheduled}
-  remaining = [
-      a
-      for a in existing_articles
-      if a.get("slug") not in sched_slugs and a.get("id") not in sched_ids
+  """Publica el miércoles las nuevas guías navideñas programadas aún no publicadas (p.ej. Pistas de Hielo 2026) sin duplicar ni re-subir lotes anteriores."""
+  candidate_files = [
+      "scheduled_wednesday_christmas_articles.json",
+      "scheduled_wednesday_ice_rinks_articles.json",
   ]
+  existing_articles = load_json(ARTICLES_FILE)
+  existing_slugs = {a.get("slug") for a in existing_articles}
   today_str = date.today().isoformat()
   published = []
-  for art in reversed(scheduled):
-    art["publishedAt"] = today_str
-    remaining.insert(0, art)
-    published.append(art)
-  save_json(ARTICLES_FILE, remaining)
+
+  for fname in candidate_files:
+    sched_path = os.path.join(BASE_DIR, "data", fname)
+    if not os.path.exists(sched_path):
+      continue
+    scheduled = load_json(sched_path)
+    if not scheduled:
+      continue
+    pending = [a for a in scheduled if a.get("slug") not in existing_slugs]
+    if pending:
+      for art in reversed(pending):
+        art["publishedAt"] = today_str
+        existing_articles.insert(0, art)
+        existing_slugs.add(art.get("slug"))
+        published.append(art)
+      break
+
+  existing_articles, demoted_cnt = _demote_expired_weekends(existing_articles)
+  if published or demoted_cnt:
+    save_json(ARTICLES_FILE, existing_articles)
   build_site.build_all()
   return list(reversed(published))
 

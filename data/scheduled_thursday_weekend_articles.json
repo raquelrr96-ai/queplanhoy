@@ -3,448 +3,451 @@
     "id": "madrid-planes-fin-de-semana-agenda",
     "slug": "planes-este-fin-de-semana-madrid-que-hacer-hoy",
     "articleType": "roundup",
-    "title": "Madrid este finde (13 al 15 de noviembre): Romería de El Pardo, Festival Eñe y MADRÍKINA",
-    "metaTitle": "Qué hacer en Madrid del 13 al 15 de noviembre: El Pardo, Festival Eñe y MADRÍKINA | Qué Plan Hoy",
-    "metaDescription": "Planes distintos en Madrid del 13 al 15 de noviembre: Romería popular de San Eugenio con migas gratis en El Pardo, charlas del Festival Eñe en Bellas Artes y el festival MADRÍKINA en La Nave.",
+    "title": "Madrid este finde (27 al 29 de noviembre): Plaza Mayor, BioCultura y Luces",
+    "metaTitle": "Qué hacer en Madrid del 27 al 29 de noviembre: Plaza Mayor, BioCultura y Luces | Qué Plan Hoy",
+    "metaDescription": "Planes distintos en Madrid del 27 al 29 de noviembre: estreno de las 104 casetas de Plaza Mayor y hielo en Plaza de España, feria BioCultura en IFEMA y paseo nocturno por las luces recién encendidas.",
     "city": "Madrid",
     "category": "Este Fin de Semana",
     "categoryIcon": "🔥",
-    "weekendDates": "13 al 15 de noviembre",
+    "weekendDates": "27 al 29 de noviembre",
     "readTime": "7 min",
-    "publishedAt": "2026-11-15",
-    "targetKeyword": "que hacer en madrid este fin de semana 13 al 15 de noviembre",
+    "publishedAt": "2026-11-26",
+    "modifiedAt": "2026-11-26",
+    "targetKeyword": "que hacer en madrid este fin de semana 27 al 29 de noviembre",
     "searchVolume": "14.800 búsquedas/mes",
     "keywordDifficulty": "Media (35/100)",
-    "image": "images/venues/madrid-palacio-fernan-nunez-mom-hero.jpg",
-    "imageAlt": "Ambiente tradicional otoñal en la Romería de San Eugenio en El Pardo con reparto de migas populares entre encinas",
+    "image": "images/venues/mad-finde27-hero.jpg",
+    "imageAlt": "Casetas rojas del mercadillo de Navidad en la Plaza Mayor de Madrid llenas de visitantes al atardecer",
     "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-    "excerpt": "Si buscas salir de los museos de siempre en Madrid este fin de semana (del 13 al 15 de noviembre), la agenda trae citas que solo pasan estos tres días: la Romería de San Eugenio con migas gratis en el Monte de El Pardo, los encuentros literarios del Festival Eñe en el Círculo de Bellas Artes y la fotografía contemporánea de MADRÍKINA en La Nave.",
-    "priceRange": "Planes Gratis y Entradas 3 €–12 €",
+    "excerpt": "Llega el último fin de semana de noviembre (del 27 al 29 de noviembre) con Madrid ya en pleno ambiente prenavideño: se estrenan las 104 casetas tradicionales de la Plaza Mayor y La Navideña en Plaza de España, regresa la gran feria BioCultura a IFEMA y se ilumina la Gran Vía tras el encendido oficial.",
+    "priceRange": "Planes Gratis y Entradas 5 €–10 €",
     "neighborhoods": [
-      "El Pardo",
-      "Alcalá / Sevilla",
-      "Villaverde / La Nave"
+      "Plaza Mayor / Sol",
+      "Plaza de España",
+      "IFEMA / Campo de las Naciones",
+      "Gran Vía / Alcalá"
     ],
     "affiliate": {
       "partner": "Tiqets",
       "badge": "Para completar el fin de semana",
-      "title": "Entrada al Palacio de Liria de Madrid (Casa de Alba)",
-      "description": "Si te apetece combinar los planes al aire libre con patrimonio madrileño, recorre los salones de Goya, Velázquez y la biblioteca del Palacio de Liria con audioguía.",
-      "price": "Desde 16 € entrada con audioguía",
+      "title": "Entrada al Palacio de Liria o Mirador del Faro de Moncloa",
+      "description": "Combina los planes de fin de semana en Madrid con las mejores vistas panorámicas de la ciudad iluminada o un recorrido por el Palacio de Liria.",
+      "price": "Desde 4 € (Faro) / 16 € (Palacio de Liria)",
       "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-madrid-c66254%2F",
       "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": true,
-    "sections": [
-      {
-        "heading": "1. Romería de San Eugenio en El Pardo (domingo 15 de nov): bellotas, migas gratis y caminata por el encinar",
-        "venue": "Pradera del Cristo y Monte de El Pardo (Carretera de Fuencarral a El Pardo · Bus 601 desde Moncloa)",
-        "location": "Monte de El Pardo (Autobús EMT 601 desde Intercambiador de Moncloa, dársena isla 3)",
-        "price": "Gratis (reparto tradicional de migas y castañas por la mañana)",
-        "lat": 40.5179,
-        "lng": -3.7764,
-        "image": "images/venues/madrid-palacio-fernan-nunez-interior.jpg",
-        "imageAlt": "Sendero entre encinas centenarias y la ermita del Cristo en el Monte de El Pardo en otoño",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Cada mediados de noviembre Madrid celebra una de sus tradiciones más castizas y menos masificadas: la **Romería de San Eugenio**, conocida popularmente como la **fiesta de la bellota** en el **Monte de El Pardo**. Este domingo **15 de noviembre**, desde las 10:30 h, los alrededores del pueblo y el entorno del **Convento del Cristo de El Pardo** reúnen puestos tradicionales de castañas asadas, bellotas dulces, barquillos y reparto popular gratuito de **migas manchegas** en grandes calderos al aire libre.\n\nDespués de desayunar o tomar el aperitivo en la pradera, puedes seguir la senda llana de la **Quinta de El Pardo** o acercarte al Palacio Real de El Pardo sin salir del barrio. Toma el bus **601 desde Moncloa** (tarda unos 20 minutos) para olvidarte del aparcamiento."
-      },
-      {
-        "heading": "2. Festival Eñe 2026 en el Círculo de Bellas Artes: literatura en directo, pódcast y vistas desde la azotea",
-        "venue": "Círculo de Bellas Artes (Calle de Alcalá, 42 · Metro Banco de España / Sevilla)",
-        "location": "Calle de Alcalá, 42 (Centro · Metro Banco de España L2 o Sevilla L2)",
-        "price": "Muchas charlas con entrada libre hasta completar aforo · Azotea 5,50 €",
-        "lat": 40.4184,
-        "lng": -3.6966,
-        "image": "images/venues/madrid-centrocentro-cibeles-concierto.jpg",
-        "imageAlt": "Salón histórico iluminado en el Círculo de Bellas Artes durante un encuentro cultural literario",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "El centro neurálgico cultural de este fin de semana en Madrid cambia la música por los libros con el **Festival Eñe**, que toma las salas históricas del **Círculo de Bellas Artes** entre el viernes 13 y el domingo 15 de noviembre. Mesas redondas, entrevistas en vivo a novelistas contemporáneos, grabaciones de pódcast culturales y firmas abiertas convierten el edificio en un punto de encuentro animado sin necesidad de entrada cara.\n\nReserva al menos una hora para entrar en **La Pecera** (su mítico café con ventanales hacia Alcalá) y sube al caer la tarde a la **Azotea del Círculo** para ver el atardecer sobre la Gran Vía y el edificio Metrópolis."
-      },
-      {
-        "heading": "3. Festival MADRÍKINA en La Nave (13 y 14 de nov) y últimas Meninas gigantes por Salamanca y Centro",
-        "venue": "La Nave Madrid (Calle Cifuentes, 5 · Villaverde) y recorrido urbano de Meninas Madrid Gallery",
-        "location": "Calle Cifuentes, 5 (Metro Villaverde Bajo-Cruce L3) y eje Serrano-Velázquez-Gran Vía",
-        "price": "Entrada gratuita / exposiciones urbanas al aire libre 0 €",
-        "lat": 40.3487,
-        "lng": -3.6929,
-        "image": "images/venues/madrid-madrikina-lanave.jpg",
-        "imageAlt": "Exposición de fotografía contemporánea y charlas visuales bajo la bóveda industrial de La Nave Madrid",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Si te apetece un plan diferente lejos del circuito habitual del centro, **La Nave** acoge el **viernes 13 y sábado 14 de noviembre** el festival de fotografía, imagen y cultura visual **MADRÍKINA**, con proyecciones, charlas de fotógrafos emergentes, mercadillo de fanzines y fotolibros en un enorme espacio industrial.\n\nPara completar el domingo por el centro sin gastar un euro, puedes hacer la ruta fotográfica de **Meninas Madrid Gallery**, con decenas de esculturas gigantes pintadas por artistas y diseñadores repartidas entre Serrano, Velázquez, Goya y la Plaza de Callao, o asomarte al restaurado **Frontón Beti Jai** en Chamberí."
-      }
-    ],
     "faqs": [
       {
-        "question": "¿A qué hora empieza la Romería de San Eugenio y el reparto de migas en El Pardo?",
-        "answer": "El ambiente romero arranca el domingo 15 de noviembre a partir de las 10:30 h en el entorno de la avenida de la Guardia y la subida al Cristo de El Pardo, con degustación popular de migas a mediodía."
+        "question": "¿Cuál es la mejor hora para visitar el mercadillo de la Plaza Mayor este fin de semana sin agobios?",
+        "answer": "Entre las 10:30 y las 12:30 h del sábado o domingo disfrutarás de todas las casetas abiertas con mucha menos densidad de gente que a partir de las 18:00 h."
       },
       {
-        "question": "¿Se necesita entrada previa para el Festival Eñe o MADRÍKINA?",
-        "answer": "Gran parte de las mesas redondas del Festival Eñe en el Círculo de Bellas Artes y las actividades de MADRÍKINA en La Nave ofrecen acceso gratuito hasta completar aforo (conviene llegar 20 minutos antes)."
+        "question": "¿Se puede ir a BioCultura Madrid 2026 con niños?",
+        "answer": "Sí: además de puestos de alimentación ecológica, cosmética natural y artesanía, organiza talleres familiares de cocina saludable y actividades infantiles dentro del pabellón de IFEMA."
       },
       {
-        "question": "¿Cómo ir en transporte público a El Pardo el domingo?",
-        "answer": "La forma más rápida es el autobús interurbano 601 desde el Intercambiador de Moncloa, que te deja en el centro de El Pardo en unos 20 minutos."
+        "question": "¿Cuánto cuesta patinar en La Navideña de Plaza de España?",
+        "answer": "El pase de 30 minutos con alquiler de patines ronda los 9,50 € y conviene llevar guantes propios de casa, ya que son obligatorios para acceder a la pista."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "1. Estreno del Mercadillo de Plaza Mayor y hielo en La Navideña (Plaza de España)",
+        "venue": "Plaza Mayor (104 casetas) y Plaza de España",
+        "location": "Centro · Metro Sol (L1, L2, L3), Ópera (L2, L5) y Plaza de España (L3, L10)",
+        "price": "Mercadillo gratis · Pista de hielo natural ~9,50 €",
+        "lat": 40.4155,
+        "lng": -3.7074,
+        "image": "images/venues/mad-finde27-plazaespana-sec1.jpg",
+        "imageAlt": "Visitantes paseando al atardecer entre casetas de madera y gran árbol iluminado en Plaza de España Madrid",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Este último fin de semana de noviembre es el momento ideal para estrenar las **104 casetas rojas de la Plaza Mayor** antes de las aglomeraciones masivas del puente de diciembre: figuritas artesanales para el belén, zambombas y gorros divertidos bajo los soportales históricos.\n\nA diez minutos a pie, **La Navideña de Plaza de España** ya funciona a pleno rendimiento con su árbol luminoso y su pista de hielo natural de 600 m². Si quieres comparar horarios, precios y consejos con otras pistas madrileñas, consulta nuestra guía de [pistas de hielo en Madrid en Navidad 2026](/madrid/pistas-hielo-navidad-madrid-patinar-horarios-precios/)."
+      },
+      {
+        "heading": "2. BioCultura Madrid 2026: artesanía, gastronomía ecológica y talleres (26–29 nov)",
+        "venue": "BioCultura — IFEMA Madrid",
+        "location": "Av. del Partenón, 5 · Metro Feria de Madrid (L8)",
+        "price": "Entrada desde ~7 €–8 € (menores gratis hasta cierta edad)",
+        "lat": 40.4658,
+        "lng": -3.6164,
+        "image": "images/venues/mad-finde27-biocultura-sec2.jpg",
+        "imageAlt": "Feria de gastronomía ecológica y artesanía sostenible en Madrid con puestos de miel, pan artesanal y cerámica",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Para un plan completamente distinto y a cubierto si refresca, **BioCultura Madrid** celebra justo estos días (del 26 al 29 de noviembre) su gran encuentro anual en IFEMA. Reúne cientos de pequeños productores de miel serrana, aceites, quesos artesanos, panadería de masa madre, cosmética botánica y cerámica sostenible perfecta para adelantar regalos con alma.\n\nLo mejor es quedarse a alguna de las **catas comentadas o charlas de cocina de aprovechamiento**, o recorrer la zona gastronómica exterior al mediodía."
+      },
+      {
+        "heading": "3. Paseo por las luces recién estrenadas: Alcalá, Gran Vía y Cortylandia",
+        "venue": "Eje Plaza de Cibeles – Calle de Alcalá – Gran Vía – Plaza del Callao",
+        "location": "Metro Banco de España (L2), Gran Vía (L1, L5) y Callao (L3, L5)",
+        "price": "Plan gratuito al caer la tarde (encendido diario aprox. 18:00–00:00 h)",
+        "lat": 40.4191,
+        "lng": -3.6975,
+        "image": "images/venues/mad-finde27-luces-sec3.jpg",
+        "imageAlt": "Gran Vía y Calle de Alcalá en Madrid iluminadas con arcos dorados navideños a la hora azul",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Aprovecha la caída de la tarde del viernes o sábado para recorrer la ruta más agradecida de **luces recién encendidas**: empieza frente al **Edificio Metrópolis** en Alcalá, sube toda la **Gran Vía** bajo los grandes arcos dorados y desvíate hacia la fachada de **Cortylandia en la calle Maestro Victoria** si vas con peques.\n\nPara completar el itinerario sin dejarte ninguna plaza o mercadillo secundario, guarda nuestra [ruta completa por los mercadillos de Navidad y encendido de luces en Madrid](/madrid/mercadillos-navidad-madrid-plaza-mayor-encendido-luces-ruta/)."
       }
     ]
   },
   {
-    "id": "bcn-planes-fin-de-semana-agenda",
+    "id": "barcelona-planes-fin-de-semana-agenda",
     "slug": "planes-este-fin-de-semana-barcelona-que-hacer-hoy",
     "articleType": "roundup",
-    "title": "Barcelona este finde (13 al 15 de noviembre): BCN en las Alturas, What The Foc! y Feria Medieval",
-    "metaTitle": "Qué hacer en Barcelona del 13 al 15 de noviembre: Torre Bellesguard, What The Foc! y Creu Coberta | Qué Plan Hoy",
-    "metaDescription": "Planes distintos en Barcelona del 13 al 15 de noviembre: market BCN en las Alturas en Torre Bellesguard, festival de brasas What The Foc! en Estrella Damm y Feria Medieval de Creu Coberta.",
+    "title": "Barcelona este finde (27 al 29 de noviembre): Santa Llúcia, Sant Pau y Port Vell",
+    "metaTitle": "Qué hacer en Barcelona del 27 al 29 de noviembre: Santa Llúcia, Sant Pau y Port Vell | Qué Plan Hoy",
+    "metaDescription": "Planes recomendados en Barcelona del 27 al 29 de noviembre: estreno de la Fira de Santa Llúcia frente a la Catedral, recorrido nocturno de Els Llums de Sant Pau y ambiente marinero en Nadal al Port Vell.",
     "city": "Barcelona",
     "category": "Este Fin de Semana",
     "categoryIcon": "🔥",
-    "weekendDates": "13 al 15 de noviembre",
+    "weekendDates": "27 al 29 de noviembre",
     "readTime": "7 min",
-    "publishedAt": "2026-11-15",
-    "targetKeyword": "que hacer en barcelona este fin de semana 13 al 15 de noviembre",
+    "publishedAt": "2026-11-26",
+    "modifiedAt": "2026-11-26",
+    "targetKeyword": "que hacer en barcelona este fin de semana 27 al 29 de noviembre",
     "searchVolume": "12.400 búsquedas/mes",
-    "keywordDifficulty": "Media (32/100)",
-    "image": "images/venues/bcn-cccb-alternativa-festival-hero.jpg",
-    "imageAlt": "Puestos de diseño y gastronomía en los jardines modernistas de la Torre Bellesguard durante BCN en las Alturas",
+    "keywordDifficulty": "Media (33/100)",
+    "image": "images/venues/bcn-finde27-hero.jpg",
+    "imageAlt": "Puestos tradicionales de madera de la Fira de Santa Llúcia frente a la Catedral gótica de Barcelona iluminada",
     "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-    "excerpt": "Del 13 al 15 de noviembre Barcelona estrena citas efímeras que no se repiten el resto del año: el market BCN en las Alturas dentro de la Torre Bellesguard de Gaudí, el festival gastronómico a la brasa What The Foc! en la Antiga Fàbrica Estrella Damm (gratis), los pases de cine independiente de L'Alternativa y la Feria Medieval de Creu Coberta.",
-    "priceRange": "Planes Gratis y Entradas 3 €–6 €",
+    "excerpt": "Arranca el gran fin de semana prenavideño en Barcelona (del 27 al 29 de noviembre) con tres planes estrella al aire libre: la apertura de la histórica Fira de Santa Llúcia junto a la Catedral, el paseo mágico de Els Llums de Sant Pau al anochecer y las primeras paradas junto al mar en Port Vell y Sagrada Família.",
+    "priceRange": "Planes Gratis y Entradas 12 €–18 €",
     "neighborhoods": [
-      "Sant Gervasi / Torre Bellesguard",
-      "Sagrada Família / Antiga Fàbrica Damm",
-      "Hostafrancs / Creu Coberta",
-      "El Raval / CCCB"
+      "Barri Gòtic / Catedral",
+      "Guinardó / Sant Pau",
+      "Port Vell / Barceloneta",
+      "Sagrada Família"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "Para completar el fin de semana",
-      "title": "Entrada a Casa Batlló o La Pedrera (Casa Milà)",
-      "description": "Completa tu ruta por la Barcelona modernista tras visitar la Torre Bellesguard recorriendo las azoteas escultóricas de Antoni Gaudí en el Passeig de Gràcia.",
-      "price": "Desde 25 € entrada oficial",
+      "badge": "Entradas recomendadas este finde",
+      "title": "Els Llums de Sant Pau o Basílica de la Sagrada Família",
+      "description": "Reserva franja horaria anticipada para el espectáculo lumínico de Sant Pau o completa el sábado con la visita matinal a la Sagrada Família.",
+      "price": "Desde 12 € (Sant Pau) / 26 € (Sagrada Família)",
       "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-barcelona-c66342%2F",
       "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": true,
-    "sections": [
-      {
-        "heading": "1. Festival de Cine Independiente L'Alternativa en el CCCB (del 13 al 15 de nov · pases gratuitos)",
-        "venue": "Centre de Cultura Contemporània de Barcelona - CCCB (Carrer de Montalegre, 5 · El Raval)",
-        "location": "Carrer de Montalegre, 5 (El Raval · Metro Universitat / Catalunya)",
-        "price": "Actividades y pases de patio gratis · Proyecciones en sala desde 4 €",
-        "lat": 41.3841,
-        "lng": 2.1667,
-        "image": "images/venues/bcn-cccb-pati-de-les-dones.jpg",
-        "imageAlt": "Pati de les Dones del CCCB durante una proyección al aire libre y coloquio de cine independiente",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Uno de los grandes reclamos culturales de mediados de noviembre en Barcelona es **L'Alternativa**, el festival de cine independiente que solo ocupa el **CCCB** durante unos días al año. Del **viernes 13 al domingo 15 de noviembre** podrás asistir a estrenos que rara vez llegan a cartelera comercial, encuentros con directores y varias sesiones gratuitas en el **Hall** y el **Pati de les Dones**.\n\nDespués de la proyección, cruza hacia la calle Joaquim Costa o tómate un vermut otoñal en las terrazas tranquilas de Sant Antoni antes de seguir la tarde hacia Eixample o Sant Gervasi."
-      },
-      {
-        "heading": "2. What The Foc!: festival de brasas, barbacoa y música en la Antiga Fàbrica Estrella Damm (gratis)",
-        "venue": "Antiga Fàbrica Estrella Damm (Carrer del Rosselló, 515 · Metro Dos de Maig / Sagrada Família)",
-        "location": "Carrer del Rosselló, 515 (Metro Sant Pau | Dos de Maig L5)",
-        "price": "Entrada gratuita hasta completar aforo (consumiciones y tapas aparte)",
-        "lat": 41.4095,
-        "lng": 2.1778,
-        "image": "images/venues/bcn-macba-exposiciones-raval.jpg",
-        "imageAlt": "Parrillas humeantes al aire libre en el patio industrial de la Antiga Fàbrica Estrella Damm en otoño",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "El **sábado 14 y domingo 15 de noviembre**, la histórica fábrica de ladrillo visto de **Estrella Damm** abre sus patios para celebrar **What The Foc!**, el festival de fuego, brasas y cocina a la parrilla al aire libre. Chefs y proyectos callejeros locales cocinan carnes ahumadas, verduras de temporada al carbón y bocados de street food frente a sesiones de DJ.\n\nLa entrada es **100 % gratuita** hasta completar aforo y abre en horario continuo de mediodía a noche (de 12:00 a 22:00 h), perfecto para ir con amigos o en familia a comer de pie al sol otoñal."
-      },
-      {
-        "heading": "3. BCN en las Alturas en Torre Bellesguard de Gaudí y Feria Medieval de Creu Coberta (13–15 de nov)",
-        "venue": "Torre Bellesguard (Carrer de Bellesguard, 20) y eje comercial de Creu Coberta (Hostafrancs)",
-        "location": "Carrer de Bellesguard, 20 (FGC Av. Tibidabo) y Carrer de la Creu Coberta (Metro Plaça Espanya)",
-        "price": "BCN en las Alturas ~6 € · Feria Medieval de Creu Coberta 100% gratis",
-        "lat": 41.4094,
-        "lng": 2.1268,
-        "image": "images/venues/bcn-palo-alto-poblenou-jardin.jpg",
-        "imageAlt": "Puestos artesanos, banderines y animadores de la Feria Medieval en la calle Creu Coberta de Barcelona",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Este fin de semana también puedes elegir entre dos mercados completamente distintos: en la parte alta, **BCN en las Alturas** regresa del **13 al 15 de noviembre** a los jardines de la espectacular **Torre Bellesguard de Antoni Gaudí** con firmas independientes de moda, decoración, música en directo y foodtrucks con vistas a toda la ciudad.\n\nSi prefieres un plan urbano gratuito en Sants-Hostafrancs, la **Feria Medieval de Creu Coberta** llena la avenida de artesanos, cetrería, tabernas y pasacalles el sábado 14 y domingo 15, y el domingo también se monta el **Sants Flea** de segunda mano en la Plaça de Bonet i Muixí."
-      }
-    ],
     "faqs": [
       {
-        "question": "¿La entrada a What The Foc! en la Antiga Fàbrica Estrella Damm cuesta dinero?",
-        "answer": "No, el acceso al recinto de la calle Rosselló es gratuito hasta completar aforo tanto el sábado 14 como el domingo 15 de noviembre; únicamente pagas las tapas a la brasa y bebidas que pidas."
+        "question": "¿Qué horario tiene la Fira de Santa Llúcia este fin de semana?",
+        "answer": "Suele abrir todos los días de 10:00 a 21:00 h frente a la Catedral de Barcelona, ideal a media mañana para comprar muérdago, caganers o abetos sin empujones."
       },
       {
-        "question": "¿Se puede acceder al recinto de BCN en las Alturas en Torre Bellesguard sin coche?",
-        "answer": "Sí, puedes subir fácilmente en FGC (parada Av. Tibidabo o Sarrià) o en los autobuses V13, V15 y 196, que paran muy cerca de la entrada."
+        "question": "¿Conviene comprar entrada online para Els Llums de Sant Pau?",
+        "answer": "Sí, especialmente para los pases de tarde-noche de viernes, sábado y domingo entre las 18:00 y las 20:30 h, que suelen agotarse con varios días de antelación."
       },
       {
-        "question": "¿Cuándo se celebra la Feria Medieval de Creu Coberta?",
-        "answer": "Durante todo el sábado 14 y el domingo 15 de noviembre de 10:30 a 21:00 h con acceso libre por toda la calle de la Creu Coberta desde Plaça d'Espanya."
+        "question": "¿Dónde ver el encendido de las ferias y patinar en Barcelona?",
+        "answer": "Además del Port Vell y la Catedral, Westfield La Maquinista estrena justo el día 26 su pista de hielo natural de más de 800 m², perfecta para ir en grupo."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "1. Apertura de la Fira de Santa Llúcia frente a la Catedral",
+        "venue": "Plaça de la Seu (Barri Gòtic) y Fira de la Sagrada Família",
+        "location": "Metro Jaume I (L4) o Urquinaona (L1, L4) · Acceso libre",
+        "price": "Acceso gratuito · Adornos y figuras artesanas desde 3 €",
+        "lat": 41.3840,
+        "lng": 2.1762,
+        "image": "images/venues/bcn-finde27-sagrada-sec3.jpg",
+        "imageAlt": "Casetas navideñas con abetos y adornos artesanales frente a las torres iluminadas de la Sagrada Família",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Desde la última semana de noviembre la plaza de la Catedral vuelve a perfumarse de pino, musgo y eucalyptus con los **más de 300 puestos de la Fira de Santa Llúcia**, el mercado navideño más antiguo de Barcelona. Vale la pena recorrer los cuatro sectores tradicionales (pesebres y figuras, verde y vegetación, artesanía y zambombas/simbombes).\n\nSi te acercas también a la **Fira de la Sagrada Família**, recuerda consultar nuestra guía de [mercadillos de Navidad en Barcelona 2026](/barcelona/mercadillos-navidad-barcelona-fira-santa-llucia-sant-pau-luces/) y, si prefieres terminar patinando, echa un vistazo a las [pistas de hielo abiertas en Barcelona](/barcelona/pistas-hielo-navidad-barcelona-patinar-horarios-precios/)."
+      },
+      {
+        "heading": "2. Els Llums de Sant Pau: paseo nocturno entre pabellones modernistas",
+        "venue": "Recinte Modernista de Sant Pau",
+        "location": "C/ de Sant Antoni Maria Claret, 167 · Metro Sant Pau | Dos de Maig (L5)",
+        "price": "Entradas desde ~12 €–16 € según franja y día",
+        "lat": 41.4116,
+        "lng": 2.1743,
+        "image": "images/venues/bcn-finde27-santpau-sec1.jpg",
+        "imageAlt": "Instalaciones luminosas nocturnas en los jardines y pabellones modernistas de ladrillo del Recinte Modernista de Sant Pau",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Al caer la noche, los jardines y fachadas de ladrillo visto de Domènech i Montaner se transforman con **Els Llums de Sant Pau**, un circuito peatonal de instalaciones lumínicas y música envolvente para recorrer sin prisa en unos 45–60 minutos.\n\nTruco práctico: elige un pase **a partir de las 18:30 h** ya con noche cerrada para que el contraste de las cúpulas y esculturas luminosas luzca el doble."
+      },
+      {
+        "heading": "3. Nadal al Port Vell: noria gigante, veleros iluminados y brisa marina",
+        "venue": "Moll de la Fusta y Port Vell",
+        "location": "Metro Barceloneta (L4) o Drassanes (L3)",
+        "price": "Paseo gratuito por el muelle · Atracciones y puestos gastronómicos de pago",
+        "lat": 41.3792,
+        "lng": 2.1806,
+        "image": "images/venues/bcn-finde27-portvell-sec2.jpg",
+        "imageAlt": "Paseo marítimo navideño en Port Vell Barcelona a la hora azul con velero iluminado y noria brillando sobre el mar",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Si quieres un cierre costero menos agobiante que el centro comercial de Portal de l'Àngel, baja por Via Laietana hasta el **Moll de la Fusta**: allí te espera **Nadal al Port Vell** con sus embarcaciones históricas engalanadas de bombillas reflejando sobre el mar, mercadillo de diseño local y la gran noria iluminada mirando hacia Montjuïc.\n\nEs un plan redondo para la hora azul entre las 17:30 y las 19:30 h antes de cenar por la Barceloneta o el Born."
       }
     ]
   },
   {
-    "id": "vlc-planes-fin-de-semana-agenda",
+    "id": "valencia-planes-fin-de-semana-agenda",
     "slug": "planes-este-fin-de-semana-valencia-que-hacer-hoy",
     "articleType": "roundup",
-    "title": "Valencia este finde (13 al 15 de noviembre): Feria Minerval, Fartarròs y clausura de la Mostra",
-    "metaTitle": "Qué hacer en Valencia del 13 al 15 de noviembre: Minerval, Fartarròs y Mostra de València | Qué Plan Hoy",
-    "metaDescription": "Planes nuevos en Valencia del 13 al 15 de noviembre: 39ª Feria gratuita de Minerales Minerval, festival del arroz creativo Fartarròs y último finde de la Mostra de València.",
+    "title": "Valencia este finde (27 al 29 de noviembre): MuVIM, Mercado de Colón y Turia",
+    "metaTitle": "Qué hacer en Valencia del 27 al 29 de noviembre: MuVIM, Mercado de Colón y Turia | Qué Plan Hoy",
+    "metaDescription": "Agenda diferente en Valencia del 27 al 29 de noviembre: la exposición «Jaume I, regnar el futur» en el MuVIM, tarde con horchata y ambiente prenavideño en Mercado de Colón y ruta por el Turia y el Carmen.",
     "city": "Valencia",
     "category": "Este Fin de Semana",
     "categoryIcon": "🔥",
-    "weekendDates": "13 al 15 de noviembre",
+    "weekendDates": "27 al 29 de noviembre",
     "readTime": "7 min",
-    "publishedAt": "2026-11-15",
-    "targetKeyword": "que hacer en valencia este fin de semana 13 al 15 de noviembre",
-    "searchVolume": "8.900 búsquedas/mes",
+    "publishedAt": "2026-11-26",
+    "modifiedAt": "2026-11-26",
+    "targetKeyword": "que hacer en valencia este fin de semana 27 al 29 de noviembre",
+    "searchVolume": "8.100 búsquedas/mes",
     "keywordDifficulty": "Baja (26/100)",
-    "image": "images/venues/vlc-palau-musica-conciertos-nov-hero.jpg",
-    "imageAlt": "Exposición de geodas de amatista, cuarzos y minerales brillantes en la feria Minerval de Valencia",
+    "image": "images/venues/vlc-finde27-hero.jpg",
+    "imageAlt": "Paseo cultural de otoño en Valencia con árboles dorados, terrazas animadas y fachada de piedra histórica",
     "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-    "excerpt": "Valencia cambia de tercio del 13 al 15 de noviembre con planes que solo ocurren este fin de semana: la 39ª Feria Internacional de Minerales y Fósiles MINERVAL (entrada gratis), el festival gastronómico de arroz creativo a leña Fartarròs, los últimos pases de la Mostra de València y el acceso libre al Palacio del Marqués de Campo.",
-    "priceRange": "Entrada Gratis (Degustaciones Fartarròs 4 €–7 €)",
+    "excerpt": "Este último fin de semana de noviembre en Valencia (del 27 al 29 de noviembre) invita a combinar cultura gratuita y aire libre sin las prisas de diciembre: descubre la exposición «Jaume I, regnar el futur» en el MuVIM, tómate algo bajo la estructura modernista del Mercado de Colón y pedalea entre naranjos del Turia al Carmen.",
+    "priceRange": "Gratis y consumición 4 €–15 €",
     "neighborhoods": [
-      "Campanar / Escuelas San José",
-      "L'Horta Nord / La Pobla de Vallbona",
-      "El Carmen / CCCC",
-      "Ciutat Vella / Plaza del Arzobispo"
+      "Ciutat Vella / Guillem de Castro",
+      "Pla del Remei / Mercado de Colón",
+      "Jardín del Turia / El Carmen"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "Para completar el fin de semana",
-      "title": "Entrada al Centro de Arte Hortensia Herrero (Palacio de Valeriola)",
-      "description": "Completa la ruta cultural por Ciutat Vella visitando el palacio del siglo XVII rehabilitado con más de 100 obras de arte contemporáneo y restos del circo romano.",
-      "price": "Desde 10 € entrada oficial",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c66345%2F",
+      "badge": "Combina cultura y familia",
+      "title": "Entradas para el Oceanogràfic o Hemisfèric de Valencia",
+      "description": "Añade al paseo por el Jardín del Turia una mañana en la Ciudad de las Artes y las Ciencias reservando turno directo sin esperas.",
+      "price": "Desde 9 € (Hemisfèric) / 36 € (Oceanogràfic)",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-valencia-c66424%2F",
       "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": true,
-    "sections": [
-      {
-        "heading": "1. Fartarròs 2026 en La Pobla de Vallbona (13 al 15 de nov): festival de arroz creativo a leña y música",
-        "venue": "Recinto de Fartarròs - La Pobla de Vallbona (Parque Municipal / Acceso Metrovalencia L2)",
-        "location": "La Pobla de Vallbona (A 20 min de Valencia en Metrovalencia Línea 2 parada La Pobla)",
-        "price": "Entrada al recinto 100% gratuita · Raciones desde 5 €",
-        "lat": 39.5892,
-        "lng": -0.5536,
-        "image": "images/venues/vlc-palau-musica-auditorio-interior.jpg",
-        "imageAlt": "Paellero al aire libre cocinando arroces tradicionales valencianos sobre fuego de leña de naranjo en Fartarròs",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Si el cuerpo te pide un plan gastronómico al aire libre distinto al clásico paseo por el centro, del **13 al 15 de noviembre** se celebra **Fartarròs** en **La Pobla de Vallbona** (accesible cómodamente en **Metrovalencia L2**). Es un festival dedicado al **arroz valenciano creativo cocinado a leña**, donde cocineros locales compiten con versiones arriesgadas —de setas de otoño, pato, calabaza o marisco— junto a música en vivo y talleres infantiles.\n\nLa entrada al festival es **gratuita** y funciona mediante tickets de degustación para probar varias cazuelitas de arroces en una misma comida."
-      },
-      {
-        "heading": "2. Último fin de semana de la Mostra de València y claustro de arte en el Centre del Carme (CCCC)",
-        "venue": "Sedes de la Mostra de València y Centre del Carme Cultura Contemporània (Calle del Museo, 2)",
-        "location": "Cines Babel / Filmo & Calle del Museo, 2 (Barrio del Carmen)",
-        "price": "CCCC entrada gratuita todo el finde · Proyecciones Mostra 2,50 €–5 €",
-        "lat": 39.4792,
-        "lng": -0.3792,
-        "image": "images/venues/vlc-centre-del-carme-claustro-arte.jpg",
-        "imageAlt": "Instalación artística contemporánea bajo los arcos del claustro histórico del Centre del Carme en Valencia",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Este domingo **15 de noviembre** se baja el telón de la **Mostra de València - Cinema del Mediterrani**, así que el fin de semana concentra las últimas proyecciones de películas premiadas, documentales y cortometrajes por precios populares en salas del centro.\n\nEntre pase y pase, acércate por la mañana al claustro renacentista del **Centre del Carme (CCCC)**, donde además de exposiciones gratuitas de arte contemporáneo suele haber actividades abiertas familiares y música acústica en el patio."
-      },
-      {
-        "heading": "3. 39ª Feria de Minerales MINERVAL (14 y 15 de nov, gratis) y Palacio del Marqués de Campo",
-        "venue": "Escuelas San José Jesuitas (Av. de las Cortes Valencianas, 1) y Museo de la Ciudad (Plaza del Arzobispo, 3)",
-        "location": "Av. Cortes Valencianas, 1 (Metro Túria / Campanar L1) y Plaza del Arzobispo, 3 (Ciutat Vella)",
-        "price": "Entrada 100% gratuita en ambos recintos",
-        "lat": 39.4806,
-        "lng": -0.3917,
-        "image": "images/venues/vlc-palau-marques-campo-museo-ciudad.jpg",
-        "imageAlt": "Patio señorial de piedra con escalinata noble en el Museo de la Ciudad Palacio del Marqués de Campo",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Planazo curioso tanto para coleccionistas como para ir con niños: el **sábado 14 y domingo 15 de noviembre** regresa a **Escuelas San José (Campanar)** la **39ª edición de MINERVAL**, la feria internacional de minerales, gemas, meteoritos y fósiles de Valencia con **entrada gratuita** (sábado de 10:00 a 20:30 h y domingo hasta las 20:00 h) y talleres de identificación de piedras.\n\nSi luego bajas caminando hacia el centro por las Torres de Serranos, entra gratis al **Museo de la Ciudad (Palacio del Marqués de Campo)** junto a la Catedral: abre todo el fin de semana y su escalinata barroca y exposiciones pictóricas apenas tienen turistas."
-      }
-    ],
     "faqs": [
       {
-        "question": "¿Cuál es el horario y precio de la Feria MINERVAL de Valencia 2026?",
-        "answer": "Se celebra el sábado 14 de noviembre (10:00 a 20:30 h) y el domingo 15 de noviembre (10:00 a 20:00 h) en Escuelas San José (Av. de las Cortes Valencianas, 1) con entrada libre y gratuita."
+        "question": "¿La entrada al MuVIM para ver la exposición de Jaume I es gratuita?",
+        "answer": "Los domingos y festivos la entrada al MuVIM suele ser gratuita, y entre semana o sábados tiene una tarifa general simbólica muy económica (alrededor de 2 €)."
       },
       {
-        "question": "¿Se puede ir a Fartarròs sin coche desde el centro de Valencia?",
-        "answer": "Sí, la Línea 2 de Metrovalencia conecta directamente el centro de Valencia (Àngel Guimerà / Túria) con la estación de La Pobla de Vallbona en unos 25 minutos."
+        "question": "¿Ya hay ambiente navideño en Valencia este fin de semana?",
+        "answer": "Sí: tanto el eje Mercado de Colón como el entorno Ayuntamiento–Plaza de la Reina estrenan las primeras decoraciones luminosas, abetos y casetas."
       },
       {
-        "question": "¿Abre el domingo gratis el Palacio del Marqués de Campo?",
-        "answer": "Sí, el Museo de la Ciudad en la Plaza del Arzobispo abre los domingos y festivos de 10:00 a 14:00 h con acceso completamente gratuito."
+        "question": "¿Dónde alquilar bicis o patines cerca del Jardín del Turia?",
+        "answer": "Tanto en las inmediaciones de Torres de Serranos como en Ruzafa y Alameda hay decenas de puntos de alquiler por horas para recorrer todo el antiguo cauce."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "1. Exposición «Jaume I, regnar el futur» en el MuVIM",
+        "venue": "Museo Valenciano de la Ilustración y de la Modernidad (MuVIM)",
+        "location": "C/ de Quevedo, 10 · Metro Àngel Guimerà (L1, L2, L3, L5, L9) o Xàtiva",
+        "price": "Domingo entrada gratuita · Resto de días ~2 €",
+        "lat": 39.4706,
+        "lng": -0.3827,
+        "image": "images/venues/vlc-finde27-muvim-sec1.jpg",
+        "imageAlt": "Atrio luminoso de cristal del museo MuVIM en Valencia con visitantes observando paneles históricos medievales",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Si te apetece una mañana cultural distinta este fin de semana, acércate al **MuVIM** para recorrer **«Jaume I, regnar el futur»**, una muestra muy cuidada sobre el legado del monarca, las crónicas medievales y cómo la historia valenciana dialoga con el presente. El propio edificio luminoso del arquitecto Vázquez Consuegra —rodeado del jardín exterior y sus terrazas— hace la visita súper agradable.\n\nA la salida puedes cruzar hacia el centro para consultar qué pistas y puestos ya arrancan en nuestra guía de [mercadillos y luces de Navidad en Valencia](/valencia/mercadillos-navidad-valencia-plaza-reina-luces-ayuntamiento-colon/)."
+      },
+      {
+        "heading": "2. Merienda y primer ambiente prenavideño en el Mercado de Colón",
+        "venue": "Mercado de Colón",
+        "location": "C/ de Jorge Juan, 19 · Metro Colón (L3, L5, L7, L9)",
+        "price": "Acceso libre · Horchata, café de especialidad o cerveza artesanal desde 4 €",
+        "lat": 39.4689,
+        "lng": -0.3684,
+        "image": "images/venues/vlc-finde27-colon-sec2.jpg",
+        "imageAlt": "Nave modernista del Mercado de Colón en Valencia decorada con guirnaldas y terrazas con gente tomando horchata",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "A última hora de la tarde, cuando caen las luces y empiezan a encenderse las guirnaldas de los puestos, pocos sitios tienen más encanto en Valencia que el **Mercado de Colón**. Siéntate en la nave central para pedir una **horchata tradicional con fartons** o un café especial mientras disfrutas de la arquitectura modernista de hierro y cerámica.\n\nSi vas con niños, también puedes acercarte hasta la Plaza del Ayuntamiento y consultar cuándo abrirán sus atracciones en la guía de [pistas de hielo en Valencia](/valencia/pistas-hielo-navidad-valencia-patinar-horarios-precios/)."
+      },
+      {
+        "heading": "3. Paseo en bici o a pie por el Turia y tardeo en el Carmen",
+        "venue": "Jardín del Turia y Barrio del Carmen (Torres de Serranos)",
+        "location": "Tramos IV–VIII del antiguo cauce hacia Puerta de los Serranos",
+        "price": "Gratis · Tapas en terraza del Carmen ~12 €–18 €",
+        "lat": 39.4792,
+        "lng": -0.3759,
+        "image": "images/venues/vlc-finde27-carmen-sec3.jpg",
+        "imageAlt": "Plaza empedrada con terrazas de tapas, naranjos e iluminación cálida frente a las Torres de Serranos en Valencia",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Con temperaturas suaves de finales de noviembre al mediodía, aprovecha la luz dorada para cruzar el **Jardín del Turia** bajo sus puentes medievales y subir por las **Torres de Serranos** directamente al **Barrio del Carmen**.\n\nCallejear por la Plaza del Tossal, el Portal de la Valldigna y rematar en una terraza soleada entre naranjos es uno de esos clásicos sin fecha de caducidad que nunca fallan en Valencia."
       }
     ]
   },
   {
-    "id": "sev-planes-fin-de-semana-agenda",
+    "id": "sevilla-planes-fin-de-semana-agenda",
     "slug": "planes-este-fin-de-semana-sevilla-que-hacer-hoy",
     "articleType": "roundup",
-    "title": "Sevilla este finde (13 al 15 de noviembre): III Chicharfest gratis, final del SEFF y arte en Plaza del Museo",
-    "metaTitle": "Qué hacer en Sevilla del 13 al 15 de noviembre: Chicharfest, SEFF y Plaza del Museo | Qué Plan Hoy",
-    "metaDescription": "Planes distintos en Sevilla del 13 al 15 de noviembre: III festival gastronómico Chicharfest en Parque Fernando de Magallanes, recta final del SEFF y mercado de arte en Plaza del Museo.",
+    "title": "Sevilla este finde (27 al 29 de noviembre): Alcázar iluminado, Triana y Santa Cruz",
+    "metaTitle": "Qué hacer en Sevilla del 27 al 29 de noviembre: Naturaleza Encendida, Luminiscence y Triana | Qué Plan Hoy",
+    "metaDescription": "Planes distintos en Sevilla del 27 al 29 de noviembre: recorrido nocturno Naturaleza Encendida en el Real Alcázar, espectáculo inmersivo Luminiscence en San Jacinto (Triana) y paseo al atardecer por Santa Cruz.",
     "city": "Sevilla",
     "category": "Este Fin de Semana",
     "categoryIcon": "🔥",
-    "weekendDates": "13 al 15 de noviembre",
+    "weekendDates": "27 al 29 de noviembre",
     "readTime": "7 min",
-    "publishedAt": "2026-11-15",
-    "targetKeyword": "que hacer en sevilla este fin de semana 13 al 15 de noviembre",
-    "searchVolume": "11.200 búsquedas/mes",
-    "keywordDifficulty": "Media (30/100)",
-    "image": "images/venues/sev-teatro-lope-de-vega-seff-hero.jpg",
-    "imageAlt": "Feria al aire libre III Chicharfest junto al Guadalquivir en el Parque Fernando de Magallanes con música y gastronomía",
+    "publishedAt": "2026-11-26",
+    "modifiedAt": "2026-11-26",
+    "targetKeyword": "que hacer en sevilla este fin de semana 27 al 29 de noviembre",
+    "searchVolume": "9.900 búsquedas/mes",
+    "keywordDifficulty": "Baja (27/100)",
+    "image": "images/venues/sev-finde27-hero.jpg",
+    "imageAlt": "Patios y arcos mudéjares del Real Alcázar de Sevilla iluminados de noche con reflejos cálidos en estanques",
     "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-    "excerpt": "Del 13 al 15 de noviembre Sevilla sale de lo de siempre con el III Chicharfest en el Parque Fernando de Magallanes (entrada gratis junto al río), la gala de clausura del Festival de Cine Europeo de Sevilla (SEFF), conciertos íntimos en el Hospital de los Venerables y el tradicional mercado matinal de pintores de la Plaza del Museo.",
-    "priceRange": "Planes Gratis y Entradas SEFF 3,50 €",
+    "excerpt": "Sevilla despide noviembre (del 27 al 29 de noviembre) con dos espectáculos nocturnos espectaculares en escenarios históricos: el circuito botánico de Naturaleza Encendida en el Real Alcázar, las proyecciones inmersivas de Luminiscence junto a un buen rato de comedia en Triana y un paseo dorado por el barrio de Santa Cruz.",
+    "priceRange": "Paseos Gratis · Espectáculos 14 €–22 €",
     "neighborhoods": [
-      "Triana / Parque Fernando de Magallanes",
-      "Prado / Teatro Lope de Vega",
-      "Santa Cruz / Venerables",
-      "Museo / Plaza del Museo"
+      "Real Alcázar / Santa Cruz",
+      "Triana / San Jacinto",
+      "Centro / Feria del Belén"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "En el mismo corazón de Santa Cruz",
-      "title": "Entrada al Hospital de los Venerables y Centro Velázquez",
-      "description": "Recorre con audioguía el patio hundido barroco, la iglesia pintada al fresco por Valdés Leal y la colección del Centro Velázquez en la Plaza de los Venerables.",
-      "price": "Desde 12 € entrada completa",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c66344%2F",
+      "badge": "Reserva antes de que se agote",
+      "title": "Entrada diurna al Real Alcázar o Crucero por el Guadalquivir",
+      "description": "Completa tu fin de semana en Sevilla recorriendo los palacios del Real Alcázar a plena luz o navegando al atardecer frente a la Torre del Oro.",
+      "price": "Desde 18 € (Crucero) / 20 € (Alcázar)",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-sevilla-c66418%2F",
       "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": true,
-    "sections": [
-      {
-        "heading": "1. III Chicharfest junto al Guadalquivir (13 al 15 de nov, gratis) y clausura del Festival de Cine (SEFF)",
-        "venue": "Parque Fernando de Magallanes (junto a Torre Sevilla) y sedes del SEFF (Lope de Vega / Cervantes / Nervión)",
-        "location": "Parque Fernando de Magallanes (Triana · junto al Puente del Cachorro) y Cines del SEFF",
-        "price": "Chicharfest entrada gratuita · Sesiones SEFF desde 3,50 €",
-        "lat": 37.3911,
-        "lng": -6.0102,
-        "image": "images/venues/sev-teatro-lope-de-vega-fachada-festival.jpg",
-        "imageAlt": "Fachada neobarroca del Teatro Lope de Vega vestida con banderolas durante las últimas jornadas del Festival de Cine de Sevilla",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "El gran plan efímero al aire libre de estos tres días en Sevilla está en la ribera del río: el **Parque Fernando de Magallanes** acoge del **13 al 15 de noviembre** el **III Chicharfest**, un festival gastronómico y cultural **con entrada gratuita** dedicado a chicharrones artesanos, chacinas andaluzas, guisos de temporada, conciertos en directo y catas al sol junto a Torre Sevilla.\n\nY en las salas de cine, este fin de semana termina el **Festival de Cine Europeo de Sevilla (SEFF)** con la entrega de su palmarés el sábado 14 y pases de las cintas ganadoras por solo **3,50 €** en cines como el Cervantes o Nervión Plaza."
-      },
-      {
-        "heading": "2. Conciertos íntimos en el Hospital de los Venerables y paseo tranquilo por los rincones ocultos de Santa Cruz",
-        "venue": "Hospital de los Venerables Sacerdotes y Centro Velázquez (Plaza de los Venerables, 8 · Santa Cruz)",
-        "location": "Plaza de los Venerables, 8 (Barrio de Santa Cruz · acceso desde Mateos Gago o Callejón del Agua)",
-        "price": "Entrada museo 12 € (con audioguía) · Conciertos según programación de tarde",
-        "lat": 37.3852,
-        "lng": -5.9901,
-        "image": "images/venues/sev-hospital-venerables-santa-cruz.jpg",
-        "imageAlt": "Patio porticado barroco con fuente central en el Hospital de los Venerables del barrio de Santa Cruz",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Para bajar el ritmo el sábado por la tarde, refúgiate en la tranquila **Plaza de los Venerables** dentro de Santa Cruz. La iglesia del **Hospital de los Venerables**, decorada íntegramente al fresco por Valdés Leal y su hijo Lucas Valdés, y su patio hundido de dos pisos con fuente central suelen acoger recitales acústicos de cámara al caer la noche.\n\nAntes de salir del barrio, asómate a la diminuta **Plaza de Santa Marta** entre naranjos amargos para ver caer la luz sobre la Giralda sin las multitudes de Mateos Gago."
-      },
-      {
-        "heading": "3. Domingo por la mañana en el Mercado de Arte al aire libre de la Plaza del Museo de Bellas Artes (gratis)",
-        "venue": "Plaza del Museo (frente al Museo de Bellas Artes de Sevilla · Barrio del Museo)",
-        "location": "Plaza del Museo, s/n (A 5 min a pie de Plaza del Duque y Reyes Católicos)",
-        "price": "Acceso 100% gratuito (Domingos de 9:30 a 14:30 h)",
-        "lat": 37.3925,
-        "lng": -5.9999,
-        "image": "images/venues/sev-alameda-hercules-ambiente-otono.jpg",
-        "imageAlt": "Caballetes y óleos al aire libre bajo los árboles en el Mercado de Arte de los domingos en la Plaza del Museo de Sevilla",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Un clásico auténtico sevillano mucho más relajado que los mercadillos habituales: cada domingo por la mañana (de 09:30 a 14:30 h), pintores y grabadores locales colocan sus **caballetes, acuarelas y óleos al aire libre** alrededor de la estatua de Murillo en la **Plaza del Museo**.\n\nAprovecha que estás justo delante de la puerta para entrar después —gratis con DNI de la UE— al antiguo convento de la Merced que alberga el **Museo de Bellas Artes**, con obras de Murillo, Zurbarán y Valdés Leal en claustros llenos de luz."
-      }
-    ],
     "faqs": [
       {
-        "question": "¿Hay que sacar entrada para entrar al Chicharfest en Parque Fernando de Magallanes?",
-        "answer": "No, la entrada al recinto del III Chicharfest (del 13 al 15 de noviembre) es libre y gratuita; únicamente se abonan las consumiciones en los puestos gastronómicos."
+        "question": "¿Por dónde se entra a Naturaleza Encendida en el Real Alcázar?",
+        "answer": "El acceso nocturno suele habilitarse por la Puerta del Alcázar en el entorno de los Jardines de Murillo o la entrada indicada en tu entrada según el turno elegido."
       },
       {
-        "question": "¿A qué hora es el Mercado de Arte de la Plaza del Museo de Sevilla?",
-        "answer": "Los artistas locales exponen sus obras cada domingo por la mañana aproximadamente entre las 09:30 y las 14:30 h en la Plaza del Museo, justo delante de la pinacoteca."
+        "question": "¿Cuánto dura el espectáculo Luminiscence en Triana?",
+        "answer": "Alrededor de 50 minutos dentro del templo histórico de San Jacinto, combinando videomapping 360º sobre las bóvedas y banda sonora coral."
       },
       {
-        "question": "¿Es gratis el Museo de Bellas Artes de Sevilla el domingo?",
-        "answer": "Sí, el acceso al Museo de Bellas Artes de Sevilla es gratuito todos los días para ciudadanos de la Unión Europea presentando DNI o pasaporte."
+        "question": "¿Qué tiempo hace en Sevilla a finales de noviembre para planes al aire libre?",
+        "answer": "Suelen darse máximas suaves de 17–20 ºC al mediodía ideales para pasear por Santa Cruz, aunque por la noche al entrar a los jardines conviene llevar abrigo ligero."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "1. Naturaleza Encendida en el Real Alcázar de Sevilla: jardines de noche",
+        "venue": "Real Alcázar de Sevilla (Edición inspirada en «Carmen»)",
+        "location": "Patio de Banderas / Jardines de Murillo · Metro Puerta de Jerez (L1)",
+        "price": "Entradas nocturnas desde ~14 €–16 € según pase",
+        "lat": 37.3831,
+        "lng": -5.9902,
+        "image": "images/venues/sev-finde27-alcazar-sec1.jpg",
+        "imageAlt": "Sendero nocturno iluminado con instalaciones botánicas en los jardines históricos del Real Alcázar de Sevilla",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Ver los jardines centenarios del **Real Alcázar** cerrados al público general y transformados de noche con miles de puntos de luz, música y proyecciones inspiradas en *Carmen* es una de las experiencias más especiales de este fin de semana en Sevilla.\n\nLos pases son escalonados cada media hora al caer la tarde para evitar colas internas, pero los de viernes y sábado suelen volar antes. Si quieres completar la jornada en el entorno del Arenal y la Catedral, repasa nuestra guía de [Feria del Belén y dulces de convento en Sevilla](/sevilla/navidad-en-sevilla-feria-del-belen-luces-y-dulces-de-convento/)."
+      },
+      {
+        "heading": "2. Noche en Triana: inmersivo Luminiscence en San Jacinto y comedia",
+        "venue": "Iglesia de San Jacinto (Luminiscence) y Teatro Triana",
+        "location": "C/ Pagés del Corro, 88 y entorno San Jacinto · Metro Plaza de Cuba (L1)",
+        "price": "Luminiscence desde ~18 €–22 € · Teatro Triana desde ~14 €",
+        "lat": 37.3822,
+        "lng": -6.0048,
+        "image": "images/venues/sev-finde27-triana-sec2.jpg",
+        "imageAlt": "Nave histórica iluminada con velas y proyecciones arquitectónicas en bóvedas de Triana en Sevilla",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Cruzando el Puente de Triana el fin de semana concentra dos planes buenísimos bajo techo: el espectáculo inmersivo **Luminiscence** en San Jacinto —con videomapping proyectado sobre retablos y bóvedas históricas— y la cartelera de humor y música en vivo del **Teatro Triana** (con funciones de comedia como *«Un perdido en los 80»* este viernes).\n\nDespués, la calle Betis y San Jacinto ofrecen mil opciones para tapear sin salir del barrio."
+      },
+      {
+        "heading": "3. Paseo dorado por Santa Cruz, naranjos y primeras pistas invernales",
+        "venue": "Barrio de Santa Cruz y Plaza del Triunfo",
+        "location": "Centro histórico peatonal · Tranvía T1 Archivo de Indias",
+        "price": "Paseo gratuito · Tapa y café entre plazas ~6 €–12 €",
+        "lat": 37.3860,
+        "lng": -5.9912,
+        "image": "images/venues/sev-finde27-santacruz-sec3.jpg",
+        "imageAlt": "Plaza soleada con naranjos en el Barrio de Santa Cruz de Sevilla y la Giralda al fondo en hora dorada",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Para equilibrar las salidas nocturnas, dedica la mañana del sábado o domingo a perderte sin mapa desde la **Plaza de los Venerables** hasta la **Plaza de Doña Elvira** y los callejones encalados de **Santa Cruz**, donde los naranjos cargados de fruto anuncian ya el cambio de estación.\n\nY si vas en familia o buscas cuándo abre el hielo junto al río, guarda nuestra guía de [pistas de hielo en Sevilla y Sevilla On Ice](/sevilla/pistas-hielo-navidad-sevilla-patinar-horarios-precios/)."
       }
     ]
   },
   {
-    "id": "tol-planes-fin-de-semana-agenda",
+    "id": "toledo-planes-fin-de-semana-agenda",
     "slug": "planes-este-fin-de-semana-toledo-que-hacer-hoy",
     "articleType": "roundup",
-    "title": "Toledo este finde (13 al 15 de noviembre): XXV Jornadas de la Tapa, Taller del Moro y rutas gratis",
-    "metaTitle": "Qué hacer en Toledo del 13 al 15 de noviembre: Jornadas de la Tapa y Patrimonio Desconocido | Qué Plan Hoy",
-    "metaDescription": "Planes distintos en Toledo del 13 al 15 de noviembre: últimos días de las XXV Jornadas de la Tapa, entrada gratis al Taller del Moro y rutas de Patrimonio Desconocido por termas y cuevas.",
+    "title": "Toledo este finde (27 al 29 de noviembre): 40º Aniversario Patrimonio, San Marcos y concierto",
+    "metaTitle": "Qué hacer en Toledo del 27 al 29 de noviembre: Expo «Beato» en San Marcos, concierto y Puy du Fou | Qué Plan Hoy",
+    "metaDescription": "Planes reales en Toledo del 27 al 29 de noviembre: celebraciones del 40º Aniversario Ciudad Patrimonio, exposición gratuita «Beato» en San Marcos, concierto dominical en San Sebastián y Puy du Fou.",
     "city": "Toledo",
     "category": "Este Fin de Semana",
     "categoryIcon": "🔥",
-    "weekendDates": "13 al 15 de noviembre",
+    "weekendDates": "27 al 29 de noviembre",
     "readTime": "7 min",
-    "publishedAt": "2026-11-15",
-    "targetKeyword": "que hacer en toledo este fin de semana 13 al 15 de noviembre",
-    "searchVolume": "6.400 búsquedas/mes",
-    "keywordDifficulty": "Baja (22/100)",
-    "image": "images/venues/tol-sinagoga-transito-juderia-hero.jpg",
-    "imageAlt": "Tapas de otoño recién servidas en el patio de piedra del Corral de Don Diego durante las Jornadas de la Tapa de Toledo",
+    "publishedAt": "2026-11-26",
+    "modifiedAt": "2026-11-26",
+    "targetKeyword": "que hacer en toledo este fin de semana 27 al 29 de noviembre",
+    "searchVolume": "4.900 búsquedas/mes",
+    "keywordDifficulty": "Muy baja (18/100)",
+    "image": "images/venues/tol-finde27-hero.jpg",
+    "imageAlt": "Vista panorámica crepuscular del Casco Histórico de Toledo iluminado desde mirador junto al río Tajo",
     "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-    "excerpt": "Del 13 al 15 de noviembre es la última oportunidad para saborear las XXV Jornadas de la Tapa de Toledo antes de que cierren el domingo por la noche. Combina el tapeo de caza y otoño con visitas gratuitas al Taller del Moro y los recorridos de Patrimonio Desconocido por termas romanas y cuevas subterráneas.",
-    "priceRange": "Tapas especiales 3 €–4 € · Monumentos Gratis finde",
+    "excerpt": "Toledo conmemora justo esta semana el 40º Aniversario de su declaración como Ciudad Patrimonio de la Humanidad con propuestas culturales gratuitas para el fin de semana (del 27 al 29 de noviembre): la exposición inmersiva «Beato. La Catedral Transfigurada» en el Centro Cultural San Marcos, concierto clásico el domingo al mediodía en San Sebastián y escapada histórica o ruta nocturna de leyendas.",
+    "priceRange": "Cultura Gratis · Puy du Fou desde 32 €",
     "neighborhoods": [
-      "Corral de Don Diego / Casco",
-      "Santa Teresa",
-      "San Román / Taller del Moro",
-      "Amador de los Ríos / Cuevas de Hércules"
+      "Casco Histórico / San Marcos",
+      "Iglesia de San Sebastián / Carranque",
+      "Puy du Fou / Cobertizos"
     ],
     "affiliate": {
       "partner": "Tiqets",
-      "badge": "Para completar la ruta por el Casco",
-      "title": "Entrada a la Sinagoga de Santa María la Blanca y San Juan de los Reyes",
-      "description": "Completa tu ruta por Toledo entrando al bosque de arcos blancos de herradura del siglo XII y al claustro gótico de los Reyes Católicos.",
-      "price": "Desde 4 € por monumento (o 12 € pulsera 7 monumentos)",
-      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c66346%2F",
+      "badge": "Aprovecha la visita al Casco",
+      "title": "Pulsera Turística de Toledo (7 Monumentos)",
+      "description": "Accede sin colas a Santo Tomé, Santa María la Blanca, San Juan de los Reyes y el resto de joyas del 40º Aniversario Patrimonio en una sola pulsera.",
+      "price": "Desde 12 € (7 monumentos)",
+      "url": "https://tp.media/r?campaign_id=89&marker=785377&p=2074&trs=581302&u=https%3A%2F%2Fwww.tiqets.com%2Fes%2Fatracciones-toledo-c66423%2F",
       "ctaText": "Ver entradas y horarios →"
     },
     "generatedByAgent": true,
-    "sections": [
-      {
-        "heading": "1. Último finde de las XXV Jornadas de la Tapa de Toledo (hasta el domingo 15 de nov)",
-        "venue": "Establecimientos participantes (Corral de Don Diego, Calle de la Plata, Zocodover y Barrio de Santa Teresa)",
-        "location": "Casco Histórico y Avenida de la Reconquista / Barrio de Santa Teresa",
-        "price": "Tapa de concurso 3 €–4,50 € (sin entrada previa)",
-        "lat": 39.8581,
-        "lng": -4.0226,
-        "image": "images/venues/tol-corral-don-diego-jornadas-tapa.jpg",
-        "imageAlt": "Ambiente de tapeo otoñal en la plaza empedrada del Corral de Don Diego en el casco de Toledo",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Este fin de semana concluyen las **XXV Jornadas de la Tapa de Toledo**, la ruta anual en la que más de treinta bares y restaurantes del Casco y del barrio moderno de Santa Teresa compiten con elaboraciones efímeras que no están el resto del año en carta: croquetas de perdiz estofada, mini brioches de ciervo, cremas tibias de boletus o reinterpretaciones del mazapán salado.\n\nUna de las zonas más agradecidas para hacer tres paradas a pie es el **Corral de Don Diego** y la calle de la Plata, donde puedes tapear al sol en plazuelas con poco tráfico."
-      },
-      {
-        "heading": "2. Yeserías mudéjares sin colas en el Taller del Moro y entrada gratis en museos estatales",
-        "venue": "Taller del Moro (Calle Taller del Moro, s/n) y Museo del Greco / Museo Sefardí",
-        "location": "Calle Taller del Moro, s/n (A 3 min de Santo Tomé)",
-        "price": "Taller del Moro gratis todo el finde · Museos estatales gratis S desde 14 h y D mañana",
-        "lat": 39.8565,
-        "lng": -4.0282,
-        "image": "images/venues/tol-taller-del-moro-yeserias.jpg",
-        "imageAlt": "Arcos lobulados y yeserías mudéjares talladas del siglo XIV en el Taller del Moro de Toledo",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Mientras otros monumentos toledanos se llenan el fin de semana, el **Taller del Moro** permanece casi en silencio a dos pasos de Santo Tomé. Su nave palaciega del siglo XIV conserva arcos con yeserías mudéjares geométricas y artesonados policromados originales de la antigua alhóndiga y taller de piedra de la Catedral, y la entrada es **gratuita**.\n\nAprovecha también la gratuidad de **sábado tarde (desde las 14:00 h) y domingo por la mañana** en la **Sinagoga del Tránsito (Museo Sefardí)** y el **Museo del Greco**."
-      },
-      {
-        "heading": "3. Rutas gratuitas de Patrimonio Desconocido: Termas Romanas de Amador de los Ríos y Cuevas de Hércules",
-        "venue": "Termas Romanas de Amador de los Ríos (Plaza Amador de los Ríos, 5) y Cuevas de Hércules (Callejón San Ginés, 3)",
-        "location": "Entorno Catedral / San Vicente (Reservas Consorcio de Toledo)",
-        "price": "Entrada 100% gratuita (Consorcio de Toledo)",
-        "lat": 39.8588,
-        "lng": -4.0252,
-        "image": "images/venues/tol-circo-romano-parque-otono.jpg",
-        "imageAlt": "Bóvedas romanas subterráneas iluminadas en el circuito de Patrimonio Desconocido del Consorcio de Toledo",
-        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
-        "content": "Toledo guarda bajo tierra una ciudad entera que el **Consorcio de Toledo** abre gratis dentro de su programa **Patrimonio Desconocido**. Destaca la visita a las **Cuevas de Hércules** —una cisterna abovedada romana de casi dos mil años envuelta en leyendas visigodas— y los arcos monumentales de las **Termas Romanas de Amador de los Ríos**.\n\nSi queda hueco libre al mediodía (abren de martes a sábado y muchos domingos con pase guiado), es uno de los planes subterráneos más sorprendentes y gratis de España."
-      }
-    ],
     "faqs": [
       {
-        "question": "¿Hasta qué día duran las XXV Jornadas de la Tapa de Toledo?",
-        "answer": "Terminan precisamente este domingo 15 de noviembre de 2026 con el cierre de cocina por la noche en todos los locales inscritos tanto del Casco Histórico como de Santa Teresa."
+        "question": "¿Cuánto cuesta entrar a la exposición «Beato» en San Marcos y al concierto de San Sebastián?",
+        "answer": "Ambos forman parte de la programación cultural conmemorativa gratuita: entrada libre en horario de sala en San Marcos y acceso libre hasta completar aforo el domingo 29 a las 12:00 h en la Iglesia de San Sebastián."
       },
       {
-        "question": "¿Cuánto cuesta entrar a las Cuevas de Hércules y a las Termas Romanas?",
-        "answer": "Son espacios gestionados por el Consorcio de Toledo con entrada totalmente gratuita; conviene consultar los pases disponibles del fin de semana en su centro de atención."
+        "question": "¿Dónde aparcar cómodo para recorrer el Casco este fin de semana?",
+        "answer": "Los aparcamientos disuasorios gratuitos de Safont (junto a la estación de autobuses) y Azarquiel conectan en minutos con el centro mediante las escaleras mecánicas de Recaredo o el Miradero."
       },
       {
-        "question": "¿Qué horario gratuito tienen los museos estatales de Toledo el fin de semana?",
-        "answer": "Tanto la Sinagoga del Tránsito (Museo Sefardí) como el Museo del Greco y el Taller del Moro ofrecen entrada gratuita los sábados a partir de las 14:00 h y los domingos de 10:00 a 15:00 h."
+        "question": "¿Ya están abiertas las luces y puestos de mazapán en Zocodover?",
+        "answer": "El ambiente artesanal de mazapán está activo todo el año y entre finales de noviembre y diciembre se suman las luces del Casco y la oferta navideña de La Vega."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "1. 40º Aniversario Patrimonio y expo gratuita «Beato» en San Marcos",
+        "venue": "Centro Cultural San Marcos (C/ de la Trinidad, 7)",
+        "location": "A dos minutos a pie de la Catedral Primada y Santo Tomé",
+        "price": "Entrada gratuita",
+        "lat": 39.8569,
+        "lng": -4.0258,
+        "image": "images/venues/tol-finde27-sanmarcos-sec1.jpg",
+        "imageAlt": "Exposición artística con arcos mudéjares iluminados e instalaciones contemporáneas dentro del Centro Cultural San Marcos en Toledo",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Coincidiendo con el **40º Aniversario de Toledo como Ciudad Patrimonio de la Humanidad**, el antiguo templo convertido en el **Centro Cultural San Marcos** acoge la exposición gratuita **«Beato. La Catedral Transfigurada»**, un diálogo fascinante entre fotografía, iluminación y la historia de la Catedral Primada.\n\nAprovecha la proximidad con Zocodover para descubrir dónde probar los dulces artesanos en nuestra guía de [luces de Navidad y ruta del mazapán en Toledo](/toledo/navidad-en-toledo-luces-zocodover-y-ruta-mazapan-artesano/)."
+      },
+      {
+        "heading": "2. Domingo de Música y Patrimonio en la Iglesia de San Sebastián (12:00 h)",
+        "venue": "Iglesia de San Sebastián (Carrerón de San Sebastián)",
+        "location": "Entre las Tenerías y la Judería junto al mirador del Tajo",
+        "price": "Entrada libre gratuita hasta completar aforo (domingo 29 nov a las 12:00 h)",
+        "lat": 39.8543,
+        "lng": -4.0247,
+        "image": "images/venues/tol-finde27-sansebastian-sec2.jpg",
+        "imageAlt": "Concierto íntimo de cámara iluminado por luz suave entre arcos de herradura en iglesia histórica de Toledo",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Para la mañana del **domingo 29 de noviembre a las 12:00 h**, uno de los rincones mozárabes más antiguos y poco masificados de la ciudad —la **Iglesia de San Sebastián**— abre sus puertas para un recital gratuito del ciclo **Música y Patrimonio**.\n\nEscuchar música acústica entre columnas reutilizadas de época visigoda y mudéjar antes de subir a comer unas buenas carcamusas por el Casco convierte el domingo en un plan de diez."
+      },
+      {
+        "heading": "3. Espectáculos en Puy du Fou o ruta nocturna por los cobertizos",
+        "venue": "Puy du Fou España y barrio de los Cobertizos (Santo Domingo el Real)",
+        "location": "CM-40 salida 13 (Puy du Fou) o casco peatonal nocturno",
+        "price": "Rutas por cobertizos gratis por libre / guiadas 10 €–12 € · Puy du Fou según calendario",
+        "lat": 39.8394,
+        "lng": -4.0938,
+        "image": "images/venues/tol-finde27-puydufou-sec3.jpg",
+        "imageAlt": "Callejón empedrado medieval iluminado por faroles de hierro bajo un cobertizo histórico de madera en Toledo de noche",
+        "imageCredit": "Fotografía editorial: Qué Plan Hoy",
+        "content": "Al caer la tarde, elige entre dedicar el día a los grandes espectáculos históricos de **Puy du Fou España** (consultando pases de fin de semana) o quedarte en el Casco para hacer la ruta mágica por los **cobertizos silenciosos de Santo Domingo el Real y Doncellas Nobles**, cuando la ciudad vacía queda envuelta en faroles.\n\nSi también estás planeando dónde patinar en las próximas semanas, revisa nuestra guía de [pistas de hielo en Toledo](/toledo/pistas-hielo-navidad-toledo-patinar-horarios-precios/)."
       }
     ]
   }
