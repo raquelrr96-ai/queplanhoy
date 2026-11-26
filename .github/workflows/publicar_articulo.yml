@@ -10,7 +10,7 @@ on:
     - cron: '0 8 * * 1'
     # Martes a las 09:00 AM (Hora España / 08:00 UTC): verifica/publica las 5 guías de Mercadillos y Luces de Navidad 2026
     - cron: '0 8 * * 2'
-    # Miércoles a las 09:00 AM (Hora España / 08:00 UTC): publica las 5 guías de Planes Originales de Navidad 2026 (pintar bolas, cerámica y cafés especiales)
+    # Miércoles a las 09:00 AM (Hora España / 08:00 UTC): publica las 5 guías de Planes Originales de Navidad 2026
     - cron: '0 8 * * 3'
     # Jueves a las 09:00 AM (Hora España / 08:00 UTC): publica las 5 guías de planes de Este Fin de Semana por ciudad
     - cron: '0 8 * * 4'
@@ -26,12 +26,13 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   generar-y-desplegar:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Descargar código de la web
         uses: actions/checkout@v4
@@ -79,7 +80,6 @@ jobs:
         run: |
           python3 -c "import json, sys; sys.path.insert(0, 'agent'); import build_site; build_site.validate_articles_quality(json.load(open('data/articles.json', encoding='utf-8'))); print('[OK] Auditoría de calidad superada al 100%')"
 
-
       - name: Configurar GitHub Pages (Hosting 0 €/mes)
         uses: actions/configure-pages@v5
 
@@ -87,6 +87,16 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './public'
+
+  desplegar-pages:
+    needs: generar-y-desplegar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Esperar indexación del artifact de GitHub Pages
+        run: sleep 5
 
       - name: Publicar Web en Internet (GitHub Pages)
         id: deployment
