@@ -1193,19 +1193,30 @@ def run_sunday_scheduled_articles() -> list:
 
 
 def run_tuesday_scheduled_articles() -> list:
-  """Publica el martes los 5 artículos extensos programados (1 por ciudad) en data/scheduled_tuesday_articles.json."""
-  sched_file = os.path.join(BASE_DIR, "data", "scheduled_tuesday_articles.json")
-  scheduled = load_json(sched_file)
+  """Publica el martes el siguiente lote programado aún pendiente (p.ej. guías monográficas de Naturaleza Encendida) sin duplicar lotes anteriores."""
+  candidate_files = [
+      "scheduled_tuesday_articles.json",
+      "scheduled_tuesday_naturaleza_encendida.json",
+  ]
   existing_articles = load_json(ARTICLES_FILE)
   existing_slugs = {a.get("slug") for a in existing_articles}
   today_str = date.today().isoformat()
   published = []
-  if scheduled:
-    for art in reversed(scheduled):
-      art["publishedAt"] = today_str
-      if art.get("slug") not in existing_slugs:
+  for fname in candidate_files:
+    sched_path = os.path.join(BASE_DIR, "data", fname)
+    if not os.path.exists(sched_path):
+      continue
+    scheduled = load_json(sched_path)
+    if not scheduled:
+      continue
+    pending = [a for a in scheduled if a.get("slug") not in existing_slugs]
+    if pending:
+      for art in reversed(pending):
+        art["publishedAt"] = today_str
         existing_articles.insert(0, art)
+        existing_slugs.add(art.get("slug"))
         published.append(art)
+      break
   existing_articles, demoted_cnt = _demote_expired_weekends(existing_articles)
   if published or demoted_cnt:
     save_json(ARTICLES_FILE, existing_articles)
